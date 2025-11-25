@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// remplace "ombre-de-la-spirale" par TON nom de repo exact
 export default defineConfig({
   plugins: [react()],
+  base: '/ombre-de-la-spirale/',
 })
