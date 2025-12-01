@@ -1,16 +1,80 @@
-# React + Vite
+# Ombre de la Spirale
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+Ombre de la Spirale est un bloc-notes interactif pour ma campagne de JDR.
+L’objectif est d’avoir toutes les informations cruciales et toutes les notes rapide­ment accessibles au même endroit.
 
-Currently, two official plugins are available:
+## Fonctionnalités
+*   **Gestion de mes notes de campagne** : Organisation et structuration des informations liées à la campagne : personnages, lieux, événements, objets, etc.
+*   **Accès rapide** : Interface pensée pour permettre de retrouver en quelques clics les informations dont j’ai besoin en cours de partie.
+*   **Personnalisable** : Possibilité d’adapter l’organisation, les catégories et le contenu à la spécificité de chaque campagne.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Utilisées
+Ce projet a été développé en utilisant les technologies suivantes :
+*   **React**: Pour construire mon interface utilisateur.
+*   **Vite**: Un outil de build rapide qui m'offre une expérience de développement très fluide.
+*   **Tailwind CSS**: Un framework CSS utilitaire qui me permet de styliser l'application rapidement.
+*   **JavaScript/ES6+**
+*   **Autres bibliothèques/frameworks pertinents**: (par exemple, `eslint`, `postcss` pour le linting et le traitement CSS)
 
-## React Compiler
+## Configuration et Installation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Pour lancer ce projet sur votre machine locale (si vous souhaitez le reproduire ou y contribuer) :
 
-## Expanding the ESLint configuration
+1.  **Clonez le dépôt :**
+    ```bash
+    git clone https://github.com/votre-nom-utilisateur/ombre-de-la-spirale.git
+    cd ombre-de-la-spirale
+    ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2.  **Installez les dépendances :**
+    ```bash
+    npm install
+    ```
+    _ou si vous utilisez yarn :_
+    ```bash
+    yarn install
+    ```
+
+## Comment Lancer le Projet
+
+1.  **Démarrez le serveur de développement :**
+    ```bash
+    npm run dev
+    ```
+    _ou_
+    ```bash
+    yarn dev
+    ```
+    Cela ouvrira généralement l'application dans votre navigateur à l'adresse `http://localhost:5173` (ou un autre port).
+
+2.  **Build pour la production :**
+    Si vous souhaitez compiler l'application pour un déploiement :
+    ```bash
+    npm run build
+    ```
+    _ou_
+    ```bash
+    yarn build
+    ```
+    Cette commande créera les fichiers statiques prêts à être déployés.
+
+## Structure du Projet
+```
+.
+├── public/                # Mes assets statiques
+├── src/                   # Mon code source
+│   ├── assets/            # Images, icônes, etc.
+│   ├── components/        # Mes composants React réutilisables (si applicable)
+│   ├── App.jsx            # Mon composant principal de l'application
+│   ├── index.css          # Mes styles CSS globaux
+│   ├── main.jsx           # Le point d'entrée de mon application React
+│   └── ...
+├── .gitignore             # Les fichiers que j'ignore en versioning
+├── index.html             # Mon fichier HTML principal
+├── package.json           # Métadonnées et dépendances de mon projet
+├── postcss.config.js      # Ma configuration PostCSS
+├── tailwind.config.js     # Ma configuration Tailwind CSS
+├── vite.config.js         # Ma configuration Vite
+└── README.md              # Ce fichier
+```
