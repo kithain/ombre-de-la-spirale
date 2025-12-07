@@ -1,0 +1,250 @@
+================================================================================
+FEUILLE DE ROUTE UNIFIEE - "L'OMBRE DE LA SPIRALE"
+Wiki de Campagne JDR (React/Vite)
+================================================================================
+
+OBJECTIF GENERAL
+----------------
+Fusionner les meilleures propositions des équipes A et B pour :
+- Assainir l’architecture (sortir du composant monolithique CampaignWiki.jsx)
+- Mettre en place un routing moderne et une UI réutilisable
+- Ajouter des fonctionnalités utiles au MJ (recherche, mode MJ/Joueur, notes, tracker)
+- Améliorer l’UX, l’accessibilité et la performance
+
+STRUCTURE GLOBALE DES PHASES
+----------------------------
+PHASE 1 : Squelette propre & refactorisation (Architecture / Routing / UI de base)
+PHASE 2 : Etat & fonctionnalités essentielles pour le MJ
+PHASE 3 : UX / UI & Accessibilité
+PHASE 4 : Fonctions avancées MJ & enrichissement du contenu
+PHASE 5 : Performance, PWA & export
+
+================================================================================
+PHASE 1 – SQUELETTE PROPRE & REFACTO (ARCHITECTURE / ROUTING / UI DE BASE)
+================================================================================
+
+Objectif : sortir du fichier monolithique et poser une base d’application moderne, maintenable.
+
+1.1. Dépendances & utilitaires  [FAIT]
+--------------------------------------
+- Dépendances installées : clsx, tailwind-merge, react-router-dom, prop-types
+- Utilitaires créés :
+  - /src/utils/cn.js (clsx + tailwind-merge)
+  - /src/utils/constants.js (types de scènes, variantes de tags, icônes placeholder)
+
+1.2. Architecture React & routing  [FAIT]
+-----------------------------------------
+- Routing react-router-dom en place :
+  - /src/App.jsx (routes principales)
+  - /src/Layout.jsx (Header + Navigation + Contenu)
+- Routes actives : /univers, /factions, /antagoniste, /scenarios, /scenarios/:id
+- Basename géré via Vite (base = /ombre-de-la-spirale/ en prod, / en dev)
+
+1.3. Extraction des composants UI  [FAIT]
+-----------------------------------------
+- Composants réutilisables dans /src/components/ui/ :
+  - Card.jsx
+  - Tag.jsx (variants depuis constants)
+  - TabButton.jsx (NavLink)
+  - SectionTitle.jsx
+  - Button.jsx
+  - SearchBar.jsx
+  - Breadcrumb.jsx
+
+1.4. Découpage de CampaignWiki.jsx en vues  [FAIT]
+--------------------------------------------------
+- Vues créées dans /src/components/sections/ :
+  - UniverseView.jsx
+  - FactionsView.jsx
+  - AntagonistView.jsx
+  - ScenariosView.jsx
+- Sous-composants métier :
+  - /Universe/ : ZoneList.jsx, LocationDetails.jsx
+  - /Scenarios/ : SceneCard.jsx, ActAccordion.jsx, ScenarioRow.jsx
+- CampaignWiki.jsx : supprimé (logique migrée vers App.jsx + Layout.jsx)
+
+================================================================================
+PHASE 2 – ETAT & FONCTIONNALITES ESSENTIELLES POUR LE MJ
+================================================================================
+
+Objectif : rendre l’outil réellement utile en partie pour le MJ.
+
+2.1. Gestion de l'état & persistance  [FAIT]
+--------------------------------------------
+- Hook créé : /src/hooks/useLocalStorage.js [FAIT]
+- Hook créé : /src/hooks/useSearch.js [FAIT]
+
+- Persistance implémentée :
+  - Onglet / route active [FAIT]
+  - Accordéons ouverts (un seul à la fois) [FAIT]
+  - Scénario en cours [FAIT]
+  - Notes du MJ par scène [FAIT]
+  - Favoris / scènes importantes [FAIT]
+
+2.2. Recherche globale & filtres  [EN COURS]
+---------------------------------------------
+- /src/utils/searchUtils.js créé [FAIT]
+- Indexation PNJ, Lieux, Scénarios/scènes [FAIT]
+- SearchBar intégrée au Layout (recherche globale) [FAIT]
+- Fuse.js pour recherche floue [À FAIRE]
+- Filtres par type de scène (Combat, Social, Exploration, Enquête) [À FAIRE]
+
+2.3. Mode Joueur / MJ & notes personnelles  [EN COURS]
+-------------------------------------------------------
+- Notes personnelles MJ par scène [FAIT] (SceneCard.jsx avec useLocalStorage)
+- Toggle global Mode Joueur / Mode MJ [annulé]
+  - Mode Joueur : masquer spoilers (twists, motivations secrètes)
+  - Mode MJ : afficher l'intégralité
+
+2.4. Cross-linking entre entités  [EN COURS]
+---------------------------------------------
+- /src/utils/dataLinks.js créé [FAIT]
+  - makeUniverseLink(), findNpcById(), findLocationById(), findNpcLinkByName()
+- Annotations des scénarios :
+  - Scénario 1 : toutes scènes annotées (locationId/npcIds) [FAIT]
+  - Scénario 2 : toutes scènes annotées [FAIT]
+  - Scénario 3 : toutes scènes annotées [FAIT]
+  - Scénario 4 : toutes scènes annotées [FAIT]
+  - Scénario 5 : toutes scènes annotées [FAIT]
+
+- Liens affichés dans SceneCard.jsx (PNJ + Lieux cliquables) [FAIT]
+- Hiérarchies factions avec liens PNJ [FAIT] (FactionsView.jsx)
+- Univers → Fiche Antagoniste (liens PNJ) [FAIT]
+- Page Antagonistes : sections repliées (accordéon, 1 ouvert max, auto-ouverture via ?pnj=) [FAIT]
+
+- Reste à faire :
+  - Fiche PNJ → lien vers l'acte associé [FAIT]
+  - Lieu → liste des PNJ qui y sont liés [FAIT]
+- Bestiaire PNJ aligné avec données Univers/Scénarios (Thade, Thorgar, Varrus, archimage défecteur, magi loyaliste, bourgmestre, Lysa, Durnik) [FAIT]
+
+Notes futures :
+- Ajouter une table des monstres (bestiary) pour la Spirale et les mines.
+
+================================================================================
+PHASE 3 – UX / UI & ACCESSIBILITE
+================================================================================
+
+Objectif : améliorer la fluidité d’usage et respecter les bonnes pratiques d’accessibilité.
+
+3.1. Navigation & ergonomie
+---------------------------
+- Intégrer le Breadcrumb (Breadcrumb.jsx) dans les vues concernées :
+  - Exemple : Univers > Zone > Lieu > PNJ
+
+- Responsive mobile :
+  - Remplacer les simples onglets par :
+    - un menu burger pour la navigation globale
+    - ou des tabs adaptés sur petit écran (sticky, scroll horizontal, etc.)
+
+- Raccourcis clavier :
+  - Navigation entre onglets / sections :
+    - Flèches gauche/droite ou J/K
+  - Documenter ces raccourcis (ex : petite aide dans le header ou footer)
+
+3.2. Indicateurs visuels & progression
+--------------------------------------
+- Scénario en cours :
+  - Visuel distinct (bordure, tag “En cours”, surbrillance) dans ScenariosView.
+
+- Compteur de scènes par acte :
+  - Affichage du nombre de scènes dans ActAccordion.jsx
+
+- Barre de progression par scénario :
+  - Basée sur (scènes jouées / scènes totales)
+  - Affichage dans ScenarioRow.jsx ou dans la page de détail du scénario
+
+3.3. Animations & transitions
+-----------------------------
+- Créer /src/styles/animations.css :
+  - Définir les animations CSS manquantes :
+    - fadeIn
+    - slideDown
+    - etc.
+
+- (Optionnel) Intégrer framer-motion :
+  - Transitions de pages (changement de route)
+  - Animation d’ouverture/fermeture des accordéons
+  - Animations légères sur les cartes (Card.jsx) au survol
+
+3.4. Accessibilité (A11y)
+-------------------------
+- Ajouter les attributs ARIA :
+  - Sur les boutons, tabs, accordéons, menus, etc.
+  - Exemples : aria-expanded, aria-controls, role="tab", role="tablist", etc.
+
+- Navigation clavier complète :
+  - Tous les éléments interactifs atteignables via Tab / Shift+Tab
+  - Ordre de focus cohérent
+
+- Contraste :
+  - Vérifier que les couleurs clés respectent les contrastes recommandés (WCAG)
+
+- Focus visible :
+  - Styles de focus clairs et visibles sur tous les éléments interactifs
+
+================================================================================
+PHASE 4 – FONCTIONS AVANCEES MJ & ENRICHISSEMENT DU CONTENU
+================================================================================
+
+Objectif : transformer l’outil en véritable “écran du MJ”.
+
+4.1. Outils avancés pour le MJ
+------------------------------
+- Vue “Écran du MJ” / Dashboard :
+  - Vue synthétique pour la session en cours :
+    - Scénario actuellement joué
+    - Prochaines scènes prévues
+    - PNJ clés à proximité
+    - Rappels des éléments importants (indices, menaces, etc.)
+
+- Timeline interactive de la campagne :
+  - Ordre chronologique des scénarios et des scènes majeures
+  - Possibilité d’afficher les événements importants et leurs conséquences
+
+- Tracker de progression global :
+  - Indicateur de progression par scénario et pour la campagne globale
+
+4.2. Contenu & médias
+----------------------
+- Vérifier la cohérence des 7 zones :
+  - Chaque zone doit avoir au moins un lieu et des PNJ associés
+
+- Ajouter / enrichir le contenu :
+  - Images / illustrations pour les zones et lieux clés
+  - Fiches techniques PNJ (PV, CA, attaques, capacités spéciales, etc.)
+  - Cartes simplifiées des lieux (même sous forme de schémas simples)
+  - Suggestions de musiques d’ambiance par scène ou par lieu
+  - Liens entre scénarios (branchements, conséquences des choix)
+
+================================================================================
+PHASE 5 – PERFORMANCE, PWA & EXPORT
+================================================================================
+
+Objectif : finition technique, utilisation hors-ligne et partage facilité.
+
+5.1. Performance & tests
+------------------------
+- Lazy loading des vues :
+  - Utiliser React.lazy et Suspense pour UniverseView, ScenariosView, etc.
+
+- Optimisation des listes et calculs :
+  - Utiliser useMemo et useCallback pour les grandes listes et la recherche
+
+- Tests unitaires basiques :
+  - Composants UI (Card, Tag, Button, etc.)
+  - Hooks (useLocalStorage, useSearch)
+  - Fonctions utilitaires (searchUtils, dataLinks, cn, etc.)
+
+5.2. Hors-ligne, SEO & export
+-----------------------------
+- SEO (si déploiement public) :
+  - Meta tags
+  - Titres dynamiques par route (ex : “Univers – Ombre de la Spirale”)
+
+- PWA :
+  - Ajout d’un service worker
+  - Manifest PWA
+  - Mode hors-ligne pour les sessions sans internet (cache des données & assets)
+================================================================================
+FIN DE LA FEUILLE DE ROUTE UNIFIEE
+================================================================================

@@ -1,0 +1,112 @@
+import React, { useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
+import { Map } from "lucide-react";
+import { universeData } from "../../../data/universe";
+import SectionTitle from "../../ui/SectionTitle";
+import Card from "../../ui/Card";
+import ZoneList from "./ZoneList";
+import LocationDetails from "./LocationDetails";
+import { useLocalStorage } from "../../../hooks/useLocalStorage";
+
+function UniverseView() {
+  const zones = universeData.zones || [];
+  const [selectedZoneId, setSelectedZoneId] = useLocalStorage(
+    "universe-zone",
+    zones[0]?.id || null
+  );
+  const [selectedLocationId, setSelectedLocationId] = useLocalStorage("universe-loc", null);
+  const [selectedNpcId, setSelectedNpcId] = useLocalStorage("universe-pnj", null);
+  const [searchParams] = useSearchParams();
+
+  const selectedZone = zones.find((z) => z.id === selectedZoneId) || zones[0] || null;
+  const locations = selectedZone?.locations || [];
+
+  // Sync avec les query params (zone, loc, pnj) pour la navigation depuis la recherche
+  useEffect(() => {
+    const zoneParam = searchParams.get("zone");
+    const locParam = searchParams.get("loc");
+    const npcParam = searchParams.get("pnj");
+
+    if (zoneParam) {
+      const zone = zones.find((z) => String(z.id) === zoneParam);
+      if (zone) {
+        setSelectedZoneId(zone.id);
+        if (locParam) {
+          const loc = zone.locations?.find((l) => String(l.id) === locParam);
+          setSelectedLocationId(loc ? loc.id : null);
+          if (loc && npcParam) {
+            const npc = loc.npcs?.find((n) => String(n.id) === npcParam);
+            setSelectedNpcId(npc ? npc.id : null);
+          } else {
+            setSelectedNpcId(null);
+          }
+        } else {
+          setSelectedLocationId(null);
+          setSelectedNpcId(null);
+        }
+      }
+    }
+  }, [searchParams, zones]);
+
+  const handleSelectZone = (zoneId) => {
+    setSelectedZoneId(zoneId);
+    setSelectedLocationId(null);
+    setSelectedNpcId(null);
+  };
+
+  const handleSelectLocation = (locationId) => {
+    setSelectedLocationId(locationId);
+    setSelectedNpcId(null);
+  };
+
+  const handleSelectNpc = (npcId) => {
+    setSelectedNpcId((current) => (current === npcId ? null : npcId));
+  };
+
+  return (
+    <div className="space-y-8 animate-fadeIn text-stone-300">
+      <SectionTitle
+        title={universeData.title}
+        icon={Map}
+        subtitle={universeData.intro}
+      />
+
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* Atmosphère générale */}
+        <div className="lg:col-span-3 grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {universeData.sections.map((section, idx) => (
+            <Card key={idx}>
+              <h3 className="text-xl font-serif text-amber-500 mb-4 border-l-2 border-amber-700 pl-3">
+                {section.title}
+              </h3>
+              <ul className="space-y-2">
+                {section.content.map((point, i) => (
+                  <li key={i} className="flex gap-2 text-lg text-stone-300">
+                    <span className="text-amber-700 mt-1.5 w-1.5 h-1.5 rounded-full bg-amber-700 block flex-shrink-0" />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </Card>
+          ))}
+        </div>
+
+        {/* Colonne 1 : Zones */}
+        <ZoneList zones={zones} selectedZoneId={selectedZoneId} onSelect={handleSelectZone} />
+
+        {/* Colonnes 2 & 3 : Lieux et PNJ */}
+        <div className="lg:col-span-2">
+          <LocationDetails
+            locations={locations}
+            selectedLocationId={selectedLocationId}
+            onSelectLocation={handleSelectLocation}
+            selectedNpcId={selectedNpcId}
+            onSelectNpc={handleSelectNpc}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default UniverseView;
