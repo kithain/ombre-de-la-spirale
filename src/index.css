@@ -1,5 +1,151 @@
+/* Polices Google Fonts - doit être en premier */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Tu peux ajouter tes styles perso ici si tu veux */
+/* ============================================
+   L'OMBRE DE LA SPIRALE - Charte graphique
+   ============================================ */
+
+@layer base {
+  /* Variables CSS pour réutilisation */
+  :root {
+    /* Surfaces - Prune/Indigo profond (chaleureux) */
+    --color-surface: #8b888fff;
+    --color-surface-raised: #8b888fff;
+    --color-surface-overlay: #8b888fff;
+    --color-surface-border: #8b888fff;
+    
+    /* Texte - Ivoire chaud, contrastes WCAG */
+    --color-content: #fdf7ed;
+    --color-content-secondary: #f4e3d3;
+    --color-content-muted: #d8c3b5;
+    --color-content-subtle: #b08c7a;
+    
+    /* Accent doré/miel lumineux */
+    --color-accent: #f8f8f8;
+    --color-accent-light: #ffd277;
+    --color-accent-dark: #d8921a;
+    --color-accent-muted: #8a5b1f;
+    
+    /* Focus ring */
+    --focus-ring: 0 0 0 2px var(--color-surface), 0 0 0 4px var(--color-accent);
+  }
+
+  /* Reset et base */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface text-content font-sans antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  /* Typographie */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-content;
+  }
+
+  h1 { @apply text-3xl font-bold tracking-tight; }
+  h2 { @apply text-2xl font-semibold; }
+  h3 { @apply text-xl font-semibold; }
+  h4 { @apply text-lg font-medium; }
+
+  /* Liens */
+  a {
+    @apply text-accent-light hover:text-accent transition-colors;
+  }
+
+  /* Focus visible - accessibilité */
+  :focus-visible {
+    outline: none;
+    box-shadow: var(--focus-ring);
+  }
+
+  /* Scrollbar personnalisée */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-surface;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-surface-border rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-content-subtle;
+  }
+
+  /* Sélection de texte */
+  ::selection {
+    @apply bg-accent/30 text-content;
+  }
+}
+
+@layer components {
+  /* Card avec effet de bordure lumineuse */
+  .card-glow {
+    @apply relative overflow-hidden;
+    background: linear-gradient(135deg, var(--color-surface-raised) 0%, var(--color-surface) 100%);
+  }
+
+  .card-glow::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-px;
+    background: linear-gradient(90deg, transparent, var(--color-surface-border), transparent);
+  }
+
+  /* Effet de lueur sur hover */
+  .hover-glow {
+    @apply transition-shadow duration-300;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.1);
+  }
+
+  /* Badge/Tag accessible */
+  .tag-base {
+    @apply text-xs px-2.5 py-1 rounded border uppercase tracking-wider font-semibold;
+  }
+
+  /* Bouton focus ring */
+  .btn-focus {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface;
+  }
+}
+
+@layer utilities {
+  /* Texte tronqué multi-lignes */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Animation d'entrée */
+  .animate-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  /* Gradient de texte */
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, var(--color-accent-light), var(--color-accent));
+  }
+}

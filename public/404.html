@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirection…</title>
+    <meta http-equiv="refresh" content="0; url=/ombre-de-la-spirale/" />
+    <script>
+      (function () {
+        const base = "/ombre-de-la-spirale/";
+        const path = window.location.pathname.replace(/^\/ombre-de-la-spirale\//, "");
+        const target = base + path + window.location.search + window.location.hash;
+        window.location.replace(target);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
