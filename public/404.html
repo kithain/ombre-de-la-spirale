@@ -2,16 +2,22 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Redirection…</title>
-    <meta http-equiv="refresh" content="0; url=/ombre-de-la-spirale/" />
     <script>
       (function () {
+        const redirectPath = window.location.pathname + window.location.search + window.location.hash;
+        try {
+          sessionStorage.setItem("redirect", redirectPath);
+        } catch (err) {
+          /* ignore storage failures */
+        }
         const base = "/ombre-de-la-spirale/";
-        const path = window.location.pathname.replace(/^\/ombre-de-la-spirale\//, "");
-        const target = base + path + window.location.search + window.location.hash;
-        window.location.replace(target);
+        window.location.replace(base);
       })();
     </script>
   </head>
-  <body></body>
+  <body>
+    <p>Redirection…</p>
+  </body>
 </html>

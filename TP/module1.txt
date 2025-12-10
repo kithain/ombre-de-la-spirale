@@ -1,0 +1,96 @@
+Module 1 – HTML essentiel (structure & sémantique) pour débutants
+
+Objectif
+- Créer une page web structurée et lisible (humains + navigateurs).
+- Utiliser les balises sémantiques de base et organiser le contenu.
+- S’inspirer du site “L’Ombre de la Spirale” pour comprendre comment les pages sont composées.
+
+1) Ce que fait HTML
+- HTML décrit la structure du document. Le navigateur construit le DOM (arbre des éléments) et l’affiche.
+- Sur le site : la page Univers est structurée en sections (header, liste de zones, détails) ; même principe en HTML simple.
+
+2) Anatomie d’une page
+- Doctype + <html lang="fr"> + <head> (métadonnées) + <body> (contenu visible).
+- Dans <head> :
+  - <meta charset="UTF-8"> (encodage),
+  - <meta name="viewport" content="width=device-width, initial-scale=1.0"> (responsive),
+  - <title>…</title> (onglet & SEO),
+  - éventuellement un favicon (<link rel="icon" href="/favicon.svg"> comme sur le site).
+
+3) Balises de structure sémantique
+- <header>, <nav>, <main>, <section>, <article>, <aside>, <footer> : donnent du sens.
+- Titres : <h1>…<h6> ; un seul <h1> par page de préférence.
+- Paragraphe : <p> ; emphase : <strong>/<em> (sens, pas style décoratif).
+- Sur le site : le Layout rend un header/nav global ; chaque page a son <main> (via React, mais même logique HTML).
+
+4) Contenus courants
+- Liens : <a href="/univers">Univers</a> (comme la nav du site). target="_blank" + rel="noreferrer" si ouverture dans un nouvel onglet.
+- Images : <img src="..." alt="description courte"> ; alt est indispensable (accessibilité).
+- Listes : <ul>/<ol> avec <li> ; listes de définition : <dl>/<dt>/<dd> (utile pour des fiches PNJ style bestiaire).
+- Tableaux : <table> avec <thead>/<tbody>/<tfoot>, <tr>, <th>/<td>, scope="col/row" pour accessibilité.
+
+5) Formulaires (aperçu)
+- <form> + inputs : texte, email, number, textarea, select/option. Toujours associer <label for="id">.
+- Attributs utiles : required, placeholder, name, value.
+
+6) Accessibilité de base
+- Hiérarchie de titres logique (h1 > h2 > h3…).
+- Texte alternatif pour les images.
+- Labels reliés aux champs de formulaire.
+- Balises sémantiques pour limiter les <div> génériques.
+
+7) Bonnes pratiques
+- Indenter, fermer les balises, éviter les <div> sans raison.
+- Séparer structure (HTML) et style (CSS) : pas de style inline sauf cas ponctuel.
+- Valider son HTML : https://validator.w3.org
+
+8) Exemple de squelette (inspiré de la structure du site)
+  <!doctype html>
+  <html lang="fr">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Mini wiki</title>
+    </head>
+    <body>
+      <header>
+        <h1>L’Ombre de la Spirale</h1>
+        <nav>
+          <a href="#univers">Univers</a>
+          <a href="#factions">Factions</a>
+          <a href="#antagoniste">Antagoniste</a>
+          <a href="#scenarios">Scénarios</a>
+        </nav>
+      </header>
+      <main>
+        <section id="univers">
+          <h2>Univers</h2>
+          <p>Résumé de la zone principale.</p>
+          <ul>
+            <li>Zone 1</li>
+            <li>Zone 2</li>
+          </ul>
+        </section>
+        <section id="factions">
+          <h2>Factions</h2>
+          <p>Liste des organisations clés.</p>
+        </section>
+      </main>
+      <footer>
+        <p>© 2025 Wiki démo</p>
+      </footer>
+    </body>
+  </html>
+
+9) Atelier guidé (30–40 min)
+- Étape 1 : créer un dossier "cv-html".
+- Étape 2 : créer index.html avec le squelette ci-dessus.
+- Étape 3 : structurer un CV : header (nom/contact), section “Expérience”, “Formations”, “Compétences”, “Projets”.
+- Étape 4 : ajouter une photo (<img> + alt), une liste de liens (GitHub/LinkedIn), des listes pour compétences.
+- Étape 5 : valider le HTML (validator.w3.org) et corriger les erreurs.
+
+10) Checklist fin de module 1
+- Je sais créer une page avec head/body, titres, paragraphes, listes, liens, images (avec alt).
+- J’utilise les balises sémantiques (header, main, section, nav, footer).
+- J’associe labels et inputs dans un formulaire simple.
+- Mon HTML passe sans erreur au validateur.

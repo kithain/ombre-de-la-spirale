@@ -1,80 +1,71 @@
-# Ombre de la Spirale
+# L'Ombre de la Spirale
 
-## Description
-Ombre de la Spirale est un bloc-notes interactif pour ma campagne de JDR.
-L’objectif est d’avoir toutes les informations cruciales et toutes les notes rapide­ment accessibles au même endroit.
+Wiki interactif pour la campagne de jeu de rôle **L'Ombre de la Spirale** (D&D 3.5).
+
+🔗 **[Voir le site](https://kithain.github.io/ombre-de-la-spirale/)**
 
 ## Fonctionnalités
-*   **Gestion de mes notes de campagne** : Organisation et structuration des informations liées à la campagne : personnages, lieux, événements, objets, etc.
-*   **Accès rapide** : Interface pensée pour permettre de retrouver en quelques clics les informations dont j’ai besoin en cours de partie.
-*   **Personnalisable** : Possibilité d’adapter l’organisation, les catégories et le contenu à la spécificité de chaque campagne.
 
-## Technologies Utilisées
-Ce projet a été développé en utilisant les technologies suivantes :
-*   **React**: Pour construire mon interface utilisateur.
-*   **Vite**: Un outil de build rapide qui m'offre une expérience de développement très fluide.
-*   **Tailwind CSS**: Un framework CSS utilitaire qui me permet de styliser l'application rapidement.
-*   **JavaScript/ES6+**
-*   **Autres bibliothèques/frameworks pertinents**: (par exemple, `eslint`, `postcss` pour le linting et le traitement CSS)
+- **Univers** — Zones, lieux et PNJ de Val d'Ombre avec fiches détaillées
+- **Factions** — Organisations et groupes d'influence
+- **Antagoniste** — Évolution et phases de la menace principale
+- **Scénarios** — 5 scénarios complets avec actes et scènes détaillées
+- **Recherche** — Recherche fuzzy globale (Fuse.js)
+- **Navigation** — Liens croisés entre PNJ, lieux et scènes
 
-## Configuration et Installation
+## Stack technique
 
-Pour lancer ce projet sur votre machine locale (si vous souhaitez le reproduire ou y contribuer) :
+| Outil | Version |
+|-------|---------|
+| React | 19 |
+| Vite | 7 |
+| Tailwind CSS | 3.4 |
+| React Router | 7 |
+| Fuse.js | 6.6 |
+| Lucide React | icons |
 
-1.  **Clonez le dépôt :**
-    ```bash
-    git clone https://github.com/votre-nom-utilisateur/ombre-de-la-spirale.git
-    cd ombre-de-la-spirale
-    ```
+## Installation
 
-2.  **Installez les dépendances :**
-    ```bash
-    npm install
-    ```
-    _ou si vous utilisez yarn :_
-    ```bash
-    yarn install
-    ```
-
-## Comment Lancer le Projet
-
-1.  **Démarrez le serveur de développement :**
-    ```bash
-    npm run dev
-    ```
-    _ou_
-    ```bash
-    yarn dev
-    ```
-    Cela ouvrira généralement l'application dans votre navigateur à l'adresse `http://localhost:5173` (ou un autre port).
-
-2.  **Build pour la production :**
-    Si vous souhaitez compiler l'application pour un déploiement :
-    ```bash
-    npm run build
-    ```
-    _ou_
-    ```bash
-    yarn build
-    ```
-    Cette commande créera les fichiers statiques prêts à être déployés.
-
-## Structure du Projet
+```bash
+npm install
 ```
-.
-├── public/                # Mes assets statiques
-├── src/                   # Mon code source
-│   ├── assets/            # Images, icônes, etc.
-│   ├── components/        # Mes composants React réutilisables (si applicable)
-│   ├── App.jsx            # Mon composant principal de l'application
-│   ├── index.css          # Mes styles CSS globaux
-│   ├── main.jsx           # Le point d'entrée de mon application React
-│   └── ...
-├── .gitignore             # Les fichiers que j'ignore en versioning
-├── index.html             # Mon fichier HTML principal
-├── package.json           # Métadonnées et dépendances de mon projet
-├── postcss.config.js      # Ma configuration PostCSS
-├── tailwind.config.js     # Ma configuration Tailwind CSS
-├── vite.config.js         # Ma configuration Vite
-└── README.md              # Ce fichier
+
+## Développement
+
+```bash
+npm run dev
 ```
+
+Ouvre [http://localhost:5173](http://localhost:5173)
+
+## Build production
+
+```bash
+npm run build
+```
+
+Les fichiers sont générés dans `dist/`.
+
+## Déploiement
+
+Déploiement automatique sur GitHub Pages via GitHub Actions à chaque push sur `main`.
+
+```bash
+npm run deploy
+```
+
+## Structure
+
+```
+src/
+├── components/
+│   ├── sections/     # Vues principales (Universe, Factions, Antagonist, Scenarios)
+│   └── ui/           # Composants réutilisables (Card, Tag, Button, SearchBar...)
+├── data/             # Données de la campagne (zones, scénarios, PNJ, factions)
+├── hooks/            # Hooks React (useLocalStorage, useSearch)
+└── utils/            # Utilitaires (recherche, liens, constantes)
+```
+
+## Licence
+
+Projet personnel — Contenu de campagne original.

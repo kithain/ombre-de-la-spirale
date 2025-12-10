@@ -1,0 +1,87 @@
+Module 0 – Découverte & fondamentaux (débutants absolus)
+
+Objectif
+- Comprendre ce qu’est le web et ce que fait le site “L’Ombre de la Spirale” (pages liées, navigation, recherche).
+- Savoir ouvrir/éditer des fichiers, lancer un serveur local et voir le site dans le navigateur.
+- Poser le vocabulaire de base : navigateur, serveur, URL, fichiers/dossiers.
+
+1) C’est quoi le web ?
+- Le web, ce sont des pages reliées par des liens (comme les sections Univers, Factions, Antagoniste, Scénarios du site).
+- Navigateur (client) ↔ serveur : le client demande une URL, le serveur renvoie des fichiers (HTML/CSS/JS) qui affichent la page.
+- URL = protocole (https://) + domaine + chemin (/univers, /factions…) + éventuels paramètres (?zone=… pour filtrer une zone sur le site).
+
+2) Les fichiers du projet (exemple du site)
+- Un projet web est un dossier avec :
+  - `public/` : fichiers servis tels quels (ex: 404.html).
+  - `src/` : le code source React (composants, données, styles).
+  - `src/components/` : les blocs d’interface (ex: Layout, SearchBar, cartes d’Univers).
+  - `src/data/` : les contenus structurés (PNJ, bestiaire, scénarios).
+  - `index.html`, `package.json` : point d’entrée et configuration.
+- Extensions courantes : .html (structure), .css (styles), .js/.jsx (logique), .json (données), .md/.txt (docs).
+
+3) Ligne de commande minimale (PowerShell ou bash)
+- ls (ou dir) : lister les fichiers.
+- cd nom_dossier / cd .. : entrer/sortir d’un dossier.
+- pwd : afficher le chemin courant.
+- Pourquoi ? Pour se placer dans le dossier du site avant de lancer les commandes (npm install, npm run dev).
+
+4) Éditeur de code (VS Code)
+- Ouvrir le dossier du projet : File > Open Folder…
+- Panneaux utiles : Explorer (fichiers), Terminal intégré, Search.
+- Extensions utiles : ESLint (qualité JS), Prettier (formatage), Tailwind IntelliSense (le site utilise Tailwind pour les classes).
+
+5) Lancer le site en local (mode dev)
+- Pré-requis : Node.js installé.
+- Étapes :
+  1) Se placer dans le dossier du projet (cd .../ombre-de-la-spirale).
+  2) Installer les dépendances : npm install
+  3) Démarrer : npm run dev
+  4) Ouvrir l’URL affichée (souvent http://localhost:5173). On voit le site avec ses pages Univers/Factions/etc.
+- En cas d’erreur, vérifier le terminal et relire le message (souvent dépendances manquantes ou dossier incorrect).
+
+6) Lire le site pour s’inspirer
+- Layout commun : barre de navigation (Univers, Factions, Antagoniste, Scénarios) et barre de recherche.
+- Recherche : tapez un terme (ex: un PNJ) → résultat cliquable mène à la bonne page/section.
+- Pages :
+  - Univers : zones, lieux, PNJ (on peut utiliser ces contenus comme exemples de données structurées).
+  - Factions : organisations, hiérarchie.
+  - Antagoniste : ennemis/PNJ notables.
+  - Scénarios : liste des scénarios et leurs détails.
+
+7) Créer et servir une page HTML minimale (pour comprendre)
+- Exemple :
+  <!doctype html>
+  <html lang="fr">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Test web</title>
+    </head>
+    <body>
+      <h1>Bonjour web</h1>
+      <p>Ceci est ma première page.</p>
+    </body>
+  </html>
+- Double-clic sur ce fichier l’affiche dans le navigateur, mais pour les sites modernes (comme “L’Ombre de la Spirale”), on utilise le serveur de dev (npm run dev).
+
+8) Cycle de travail basique
+- Modifier un fichier → sauvegarder (Ctrl+S) → voir le résultat dans le navigateur (Ctrl+R) ou auto-refresh via le serveur de dev.
+- En cas d’erreur JS/CSS : ouvrir DevTools (F12) > Console pour lire les messages.
+
+9) Atelier guidé (20–30 min)
+- Étape 1 : ouvrir le projet dans VS Code.
+- Étape 2 : lancer npm install puis npm run dev et ouvrir l’URL locale.
+- Étape 3 : repérer dans `src/Layout.jsx` la barre de nav et changer le titre (ex: “Wiki de campagne” → “Wiki démo”).
+- Étape 4 : recharger et vérifier le changement en live.
+- Étape 5 : dans `src/components/sections/Universe/UniverseView.jsx`, repérer la liste des zones et ajouter une petite phrase d’intro (texte statique) pour voir comment le contenu apparaît.
+
+10) À retenir
+- Le web repose sur des fichiers servis via HTTP à un navigateur.
+- Savoir naviguer en ligne de commande et ouvrir un projet dans un éditeur est indispensable.
+- Le site “L’Ombre de la Spirale” est une bonne base pour observer une structure React + Tailwind : navigation, recherche, pages de données.
+
+Checklist fin de module 0
+- Je sais expliquer URL, navigateur vs serveur, et le rôle des fichiers HTML/CSS/JS.
+- J’ai ouvert le projet dans VS Code et lancé npm install / npm run dev.
+- J’ai modifié un texte dans Layout ou UniverseView et vu le résultat dans le navigateur.
+- Je sais lire la console navigateur en cas d’erreur.

@@ -184,7 +184,7 @@ function AntagonistView() {
       </Card>
 
       {noScenes.length > 0 && (
-        <Card className="border-accent-muted/40 bg-accent-surface">
+        <Card className="border-accent-muted/40 bg-surface-overlay shadow-lg">
           <h4 className="text-sm font-mono tracking-widest text-accent-light uppercase border-b border-accent-muted/40 pb-2 mb-3">
             PNJ sans apparition liée (à relier aux scènes)
           </h4>
@@ -192,7 +192,7 @@ function AntagonistView() {
             {noScenes.map((npc) => (
               <span
                 key={npc.id}
-                className="px-2 py-1 rounded border border-accent-muted/50 text-accent-light bg-accent-surface"
+                className="px-3 py-1 rounded-full border border-accent-muted/60 text-accent-light bg-accent-muted/20 shadow-[0_0_0_1px_rgba(92,32,21,0.35)]"
                 title={`${npc.zone?.name || ""} · ${npc.loc?.name || ""}`}
               >
                 {npc.name}
@@ -203,46 +203,50 @@ function AntagonistView() {
       )}
 
       {spiralMineBestiary.length > 0 && (
-        <Card className="border-accent-muted/40 bg-accent-surface">
-          <div className="flex items-center justify-between mb-3">
+        <Card className="border-accent-muted/40 bg-surface-overlay shadow-lg">
+          <div className="flex items-start justify-between mb-4">
             <div>
-              <h3 className="text-sm font-mono tracking-widest text-accent-light uppercase">
+              <h3 className="text-sm font-mono tracking-[0.12em] text-accent-light uppercase">
                 Bestiaire — Spirale & Mines
               </h3>
-              <p className="text-xs text-content-muted">
+              <p className="text-xs text-content-muted mt-1">
                 Référence rapide des créatures des zones Spirale / galeries.
               </p>
             </div>
-            <span className="text-[11px] text-accent-light border border-accent-muted/50 px-2 py-0.5 rounded">
+            <span className="text-[11px] text-accent-light border border-accent-muted/60 px-2.5 py-0.5 rounded-full bg-accent-muted/20">
               {spiralMineBestiary.length} entrées
             </span>
           </div>
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto rounded-md border border-surface-border/70 bg-surface-raised/70">
             <table className="min-w-full text-sm text-accent-light">
-              <thead className="text-xs uppercase tracking-widest text-accent-light">
-                <tr className="border-b border-accent-muted/40">
-                  <th className="text-left py-2 pr-2">Nom</th>
-                  <th className="text-left py-2 pr-2">FP</th>
-                  <th className="text-left py-2 pr-2">PV / CA</th>
-                  <th className="text-left py-2 pr-2">Attaque</th>
-                  <th className="text-left py-2">Environnement</th>
+              <thead className="text-[11px] uppercase tracking-[0.16em] text-accent-light/80">
+                <tr className="border-b border-surface-border/70 bg-surface">
+                  <th className="text-left py-3 pl-4 pr-2">Nom</th>
+                  <th className="text-left py-3 pr-2 w-16">FP</th>
+                  <th className="text-left py-3 pr-2 min-w-[160px]">PV / CA</th>
+                  <th className="text-left py-3 pr-2 min-w-[180px]">Attaque</th>
+                  <th className="text-left py-3 pr-4 min-w-[160px]">Environnement</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-accent-muted/30">
+              <tbody className="divide-y divide-surface-border/70">
                 {spiralMineBestiary.map((b) => (
-                  <tr key={b.id} className="align-top">
-                    <td className="py-2 pr-2">
-                      <span className="font-semibold">{b.name}</span>
+                  <tr key={b.id} className="align-top hover:bg-surface/60 transition-colors">
+                    <td className="py-3 pl-4 pr-2">
+                      <span className="font-semibold text-content">{b.name}</span>
                     </td>
-                    <td className="py-2 pr-2 text-accent-light">FP {b.fp ?? "–"}</td>
-                    <td className="py-2 pr-2 text-accent-light">
+                    <td className="py-3 pr-2 text-accent-light font-semibold">
+                      FP <span className="font-mono">{b.fp ?? "–"}</span>
+                    </td>
+                    <td className="py-3 pr-2 text-content-secondary">
                       {b.pv !== undefined ? `PV ${b.pv}` : "PV –"}
                       {b.ca ? ` · CA ${b.ca}` : ""}
                     </td>
-                    <td className="py-2 pr-2 text-accent-light">
+                    <td className="py-3 pr-2 text-content-secondary">
                       {b.attaque || "—"}
                     </td>
-                    <td className="py-2 text-accent-light text-xs">{b.env || "—"}</td>
+                    <td className="py-3 pr-4 text-content-secondary text-sm">
+                      {b.env || "—"}
+                    </td>
                   </tr>
                 ))}
               </tbody>

@@ -1,0 +1,70 @@
+Plan de cours (Niveau 0 ➜ Junior)
+
+Objectif général
+- Amener un débutant complet à un niveau junior capable de livrer une petite application web front.
+
+Public cible
+- Débutants complets, sans bagage technique.
+
+Format & rythme
+- 10 modules (ordre progressif), chaque module = 1 à 2 semaines.
+- Alternance cours courts + ateliers guidés + mini-projets + évaluation rapide.
+
+Modules
+0. Découverte & fondamentaux informatiques
+   - Ce qu’est le web, navigateur vs serveur, URL/HTTP, fichiers/dossiers, lignes de commande basiques.
+   - Atelier : naviguer dans un projet, ouvrir/éditer des fichiers, lancer un serveur local simple.
+
+1. HTML essentiel
+   - Structure d’une page, balises, sémantique, accessibilité de base.
+   - Atelier : page CV statique structurée.
+
+2. CSS de base
+   - Sélecteurs, boîte, flex/grid, couleurs/typo, responsive simple.
+   - Atelier : mise en page du CV + version mobile.
+
+3. JavaScript fondations
+   - Variables, types, conditions, boucles, fonctions, tableaux/objets, DOM et événements.
+   - Atelier : TODO list simple (ajout/suppression/filtre) sans framework.
+
+4. Outils du quotidien
+   - VS Code, extensions utiles, Node/npm, scripts, formatage (Prettier), lint (ESLint), Git/GitHub (init, commit, branch, PR).
+   - Atelier : cloner un repo, installer deps, formatter, pousser une branche.
+
+5. JavaScript intermédiaire
+   - Modules (import/export), async/await, fetch, promesses, gestion d’erreurs, patterns d’état.
+   - Atelier : mini-dashboard qui consomme une API publique (liste + filtre + loader + erreurs).
+
+6. React + Vite (bases)
+   - Composants, props/état, hooks de base (useState/useEffect), routing léger, composition.
+   - Atelier : recréer la TODO en React (composants, filtre, persistance localStorage).
+
+7. Design system léger & CSS moderne
+   - Tailwind ou CSS modules, tokens (couleurs/espacement), composants réutilisables (Button/Card/Input), accessibilité (focus, contrastes).
+   - Atelier : styler l’app React avec un mini design system.
+
+8. Données & API côté front
+   - Appels API, gestion du chargement/erreurs, pagination/tri/filtre, organisation des services, .env et secrets.
+   - Atelier : page “liste + détail” avec fetch réel (ex: PokéAPI) et navigation paramétrée.
+
+9. Qualité & tests
+   - Tests unitaires (Vitest/Jest), tests de composants (Testing Library), lint CI, revues de code, debug (DevTools).
+   - Atelier : ajouter 3 tests sur composants clés + workflow lint/test.
+
+10. Projet fil rouge (soutenance)
+   - Choix : wiki de campagne, catalogue produits, ou tracker de tâches.
+   - Livrable : features minimales (liste+détail+recherche), routing, fetch, état, styles cohérents, README.
+   - Soutenance : démo, explication des choix, axes d’amélioration.
+
+Évaluations & jalons
+- Fin de chaque module : quiz court + mini-livrable.
+- Milieu de parcours (après module 6) : revue de code pair-programming.
+- Final : soutenance du projet fil rouge.
+
+Ressources de base
+- MDN Web Docs, React docs, Git/GitHub docs, DevTools guides.
+
+Conseils pédagogiques
+- Montrer d’abord, faire ensemble, laisser faire : démonstration ➜ kata guidé ➜ exercice autonome.
+- Répéter les rituels : git status/commit fréquents, formatter, lire les erreurs.
+- Favoriser le feedback court : PR petites, corrections rapides, démos hebdo.

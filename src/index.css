@@ -1,5 +1,5 @@
 /* Polices Google Fonts - doit être en premier */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -12,23 +12,23 @@
 @layer base {
   /* Variables CSS pour réutilisation */
   :root {
-    /* Surfaces - Prune/Indigo profond (chaleureux) */
-    --color-surface: #8b888fff;
-    --color-surface-raised: #8b888fff;
-    --color-surface-overlay: #8b888fff;
-    --color-surface-border: #8b888fff;
+    /* Surfaces - Forge (acier/charbon) */
+    --color-surface: #101215;
+    --color-surface-raised: #161a20;
+    --color-surface-overlay: #1c222a;
+    --color-surface-border: #2c323d;
     
-    /* Texte - Ivoire chaud, contrastes WCAG */
-    --color-content: #fdf7ed;
-    --color-content-secondary: #f4e3d3;
-    --color-content-muted: #d8c3b5;
-    --color-content-subtle: #b08c7a;
+    /* Texte - Parchemin clair (contraste élevé) */
+    --color-content: #f5f1e6;
+    --color-content-secondary: #e2d7c4;
+    --color-content-muted: #bcb3a3;
+    --color-content-subtle: #8f887a;
     
-    /* Accent doré/miel lumineux */
-    --color-accent: #f8f8f8;
-    --color-accent-light: #ffd277;
-    --color-accent-dark: #d8921a;
-    --color-accent-muted: #8a5b1f;
+    /* Accent - Braises / cuivre */
+    --color-accent: #d3542a;
+    --color-accent-light: #f27f4c;
+    --color-accent-dark: #9c2f16;
+    --color-accent-muted: #5c2015;
     
     /* Focus ring */
     --focus-ring: 0 0 0 2px var(--color-surface), 0 0 0 4px var(--color-accent);
@@ -36,17 +36,24 @@
 
   /* Reset et base */
   html {
+    font-size: 17px;
     scroll-behavior: smooth;
   }
 
   body {
     @apply bg-surface text-content font-sans antialiased;
     font-feature-settings: "kern" 1, "liga" 1;
+    line-height: 1.6;
+    background: radial-gradient(circle at 18% 18%, rgba(242, 127, 76, 0.08), transparent 26%),
+      radial-gradient(circle at 82% 12%, rgba(211, 84, 42, 0.09), transparent 28%),
+      radial-gradient(circle at 50% 82%, rgba(92, 32, 21, 0.08), transparent 30%),
+      linear-gradient(145deg, #0d0f12 0%, #13171d 45%, #191f27 100%);
   }
 
   /* Typographie */
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif text-content;
+    letter-spacing: -0.01em;
   }
 
   h1 { @apply text-3xl font-bold tracking-tight; }
