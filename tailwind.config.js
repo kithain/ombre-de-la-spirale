@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Palette principale - Forge (acier/charbon)
+        // Palette principale - Forge(acier/charbon)
         surface: {
           DEFAULT: "#101215",   // Fond principal
           raised: "#161a20",    // Surfaces élevées
