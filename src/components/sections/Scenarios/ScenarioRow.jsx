@@ -56,7 +56,7 @@ function ScenarioRow({ scenario, isOpen, onToggle, targetSceneTitle }) {
 
       {isOpen && (
         <div className="p-6 border-t border-surface-border bg-surface/50">
-          <div className="mb-8 p-4 bg-accent-surface border border-accent-muted/30 rounded italic text-content-muted text-sm leading-relaxed max-w-3xl mx-auto text-center font-serif">
+          <div className="mb-8 p-4 italic text-content-muted text-sm leading-relaxed max-w-3xl mx-auto text-center font-serif">
             {scenario.synopsis}
           </div>
 

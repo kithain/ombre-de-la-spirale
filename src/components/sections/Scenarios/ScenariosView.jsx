@@ -28,7 +28,7 @@ function ScenariosView() {
       <SectionTitle
         title="Le Livre des Scénarios"
         icon={BookOpen}
-        subtitle="L'ascension de l'Ombre : Acte par Acte"
+        subtitle="Les dieux ont créé la mort par négligence, c'est un défaut de conception."
       />
       <div className="space-y-4">
         {scenariosData.map((scenario) => (
