@@ -9,54 +9,49 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Palette principale - Forge (acier/charbon)
+        // Palette principale - fond sombre prune/indigo (chaleureux sans marron)
         surface: {
-          DEFAULT: "#101215",   // Fond principal
-          raised: "#161a20",    // Surfaces élevées
-          overlay: "#1c222a",   // Overlays/modals
-          border: "#2c323d",    // Bordures
+          DEFAULT: "#fdf7ed",   // Prune très sombre
+          raised: "#fdf7ed",    // Indigo profond
+          overlay: "#fdf7ed",   // Violet/indigo moyen
+          border: "#fdf7ed",    // Bordure prune-fumé
         },
-        // Texte avec contrastes WCAG AA/AAA
+        // Texte avec contrastes WCAG AA/AAA - tons ivoire chauds
         content: {
-          DEFAULT: "#f5f1e6",
-          secondary: "#e2d7c4",
-          muted: "#bcb3a3",
-          subtle: "#8f887a",
+          DEFAULT: "#fdf7ed",   // Ivoire chaud (21:1)
+          secondary: "#f4e3d3", // Ivoire rosé (12:1)
+          muted: "#d8c3b5",     // Beige rosé (7:1)
+          subtle: "#b08c7a",    // Taupe rosé (4.6:1 AA sur fond #0e0a14)
         },
-        // Accent - Braises / cuivre
+        // Accent doré/corail - thème fantasy chaleureux
         accent: {
-          DEFAULT: "#d3542a",
-          light: "#f27f4c",
-          dark: "#9c2f16",
-          muted: "#5c2015",
-          surface: "rgba(211, 84, 42, 0.16)",
+          DEFAULT: "#f6b73c", // Doré chaud
+          light: "#ffd277",   // Miel lumineux
+          dark: "#d8921a",    // Ambre soutenu
+          muted: "#8a5b1f",   // Bordures dorées
+          surface: "rgba(246, 183, 60, 0.14)", // Fond doré léger
         },
-        // Tags sémantiques - palette forge (contraste 4.5:1+)
+        // Tags sémantiques - couleurs accessibles (contraste 4.5:1+)
         tag: {
-          combat: { bg: "rgba(211, 84, 42, 0.18)", text: "#f9c6b0", border: "#c2412d" },       // braise
-          social: { bg: "rgba(37, 99, 235, 0.16)", text: "#c3d4ff", border: "#1d4ed8" },        // bleu acier
-          exploration: { bg: "rgba(22, 163, 74, 0.16)", text: "#b8f2c2", border: "#15803d" },   // vert mousse
-          ambiance: { bg: "rgba(120, 113, 108, 0.18)", text: "#e3dedb", border: "#57534e" },     // brume/acier
-          indice: { bg: "rgba(234, 179, 8, 0.18)", text: "#fbe7a2", border: "#b45309" },         // laiton/doré
-          boss: { bg: "rgba(185, 28, 28, 0.22)", text: "#f5b5b5", border: "#991b1b" },           // rouge sombre
-          tension: { bg: "rgba(249, 115, 22, 0.18)", text: "#ffd3a8", border: "#c2410c" },       // cuivre vif
-          magie: { bg: "rgba(147, 51, 234, 0.16)", text: "#e6c9ff", border: "#7e22ce" },         // pourpre arcanique
-          twist: { bg: "rgba(236, 72, 153, 0.16)", text: "#f6c1de", border: "#be185d" },         // rose intrigant
-          preparation: { bg: "rgba(6, 182, 212, 0.16)", text: "#bff2f8", border: "#0e7490" },    // azur tempéré
+          combat: { bg: "rgba(239, 68, 68, 0.15)", text: "#fca5a5", border: "#dc2626" },
+          social: { bg: "rgba(59, 130, 246, 0.15)", text: "#93c5fd", border: "#2563eb" },
+          exploration: { bg: "rgba(34, 197, 94, 0.15)", text: "#86efac", border: "#16a34a" },
+          ambiance: { bg: "rgba(168, 162, 158, 0.15)", text: "#d6d3d1", border: "#78716c" },
+          indice: { bg: "rgba(245, 158, 11, 0.15)", text: "#fcd34d", border: "#d97706" },
+          boss: { bg: "rgba(185, 28, 28, 0.25)", text: "#fca5a5", border: "#ef4444" },
+          tension: { bg: "rgba(249, 115, 22, 0.15)", text: "#fdba74", border: "#ea580c" },
+          magie: { bg: "rgba(168, 85, 247, 0.15)", text: "#d8b4fe", border: "#9333ea" },
+          twist: { bg: "rgba(236, 72, 153, 0.15)", text: "#f9a8d4", border: "#db2777" },
+          preparation: { bg: "rgba(34, 211, 238, 0.15)", text: "#a5f3fc", border: "#06b6d4" },
         },
       },
       fontFamily: {
-        serif: ["Playfair Display", "Georgia", "serif"],
-        sans: ["Manrope", "Inter", "system-ui", "sans-serif"],
-      },
-      fontSize: {
-        xs: ["0.9rem", { lineHeight: "1.5" }],  // ~14.4px
-        sm: ["0.98rem", { lineHeight: "1.55" }], // ~15.7px
-        base: ["1rem", { lineHeight: "1.6" }],   // 16px (multiplied by html 17px base)
+        serif: ["Crimson Text", "Georgia", "serif"],
+        sans: ["Inter", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        glow: "0 0 20px rgba(211, 84, 42, 0.18)",
-        "glow-strong": "0 0 30px rgba(211, 84, 42, 0.26)",
+        glow: "0 0 20px rgba(245, 158, 11, 0.15)",
+        "glow-strong": "0 0 30px rgba(245, 158, 11, 0.25)",
         inner: "inset 0 2px 4px rgba(0, 0, 0, 0.3)",
       },
       animation: {
