@@ -18,23 +18,23 @@ export default {
         },
         // Texte avec contrastes WCAG AA/AAA
         content: {
-          DEFAULT: "#f5f1e6",
-          secondary: "#e2d7c4",
-          muted: "#bcb3a3",
-          subtle: "#8f887a",
+          DEFAULT: "#e0ddd7",    // Moins lumineux, plus doux
+          secondary: "#c4bdb1",  // Contraste adouci
+          muted: "#a29c92",      // Plus sombre pour les textes secondaires
+          subtle: "#817b72",      // Pour les éléments discrets
         },
         // Accent - Braises / cuivre
         accent: {
           DEFAULT: "#d3542a",
           light: "#f27f4c",
           dark: "#9c2f16",
-          muted: "#5c2015",
+          muted: "#6b2618",
           surface: "rgba(211, 84, 42, 0.16)",
         },
         // Tags sémantiques - palette forge (contraste 4.5:1+)
         tag: {
-          combat: { bg: "rgba(211, 84, 42, 0.18)", text: "#f9c6b0", border: "#c2412d" },       // braise
-          social: { bg: "rgba(37, 99, 235, 0.16)", text: "#c3d4ff", border: "#1d4ed8" },        // bleu acier
+          combat: { bg: "rgba(211, 84, 42, 0.18)", text: "#f5bda5", border: "#c2412d" },       // braise
+          social: { bg: "rgba(37, 99, 235, 0.16)", text: "#b8caff", border: "#1d4ed8" },        // bleu acier
           exploration: { bg: "rgba(22, 163, 74, 0.16)", text: "#b8f2c2", border: "#15803d" },   // vert mousse
           ambiance: { bg: "rgba(120, 113, 108, 0.18)", text: "#e3dedb", border: "#57534e" },     // brume/acier
           indice: { bg: "rgba(234, 179, 8, 0.18)", text: "#fbe7a2", border: "#b45309" },         // laiton/doré
