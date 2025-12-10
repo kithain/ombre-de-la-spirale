@@ -1,0 +1,188 @@
+[
+  {
+    "id": "assassin_masque",
+    "name": "assassin_masque",
+    "from": "sceneOnly"
+  },
+  {
+    "id": "aubergiste_pic_brise",
+    "name": "Brand, aubergiste du Pic Brisé",
+    "role": "Hôte bien informé qui entend toutes les conversations.",
+    "from": "universe",
+    "zone": "vieille_ville"
+  },
+  {
+    "id": "bibliothecaire_interdits",
+    "name": "Maître Selvar, gardien des Archives Interdites",
+    "role": "Gardien sourcilleux des secrets arcaniques.",
+    "from": "universe",
+    "zone": "quartier_du_savoir"
+  },
+  {
+    "id": "bourgmestre",
+    "name": "Bourgmestre de Val-d'Ombre",
+    "role": "Dirigeant officiel dépassé par les événements.",
+    "from": "universe",
+    "zone": "centre_civique"
+  },
+  {
+    "id": "bourgmestre_valdombre",
+    "name": "bourgmestre_valdombre",
+    "from": "sceneOnly"
+  },
+  {
+    "id": "capitaine_garde_temple",
+    "name": "capitaine_garde_temple",
+    "from": "sceneOnly"
+  },
+  {
+    "id": "capitaine_garde_urbaine",
+    "name": "capitaine_garde_urbaine",
+    "from": "sceneOnly"
+  },
+  {
+    "id": "charognard_errant",
+    "name": "Charognard errant",
+    "role": "Prédateur opportuniste attiré par la chair fraîche.",
+    "from": "universe",
+    "zone": "spirale"
+  },
+  {
+    "id": "chef_bandes_ruelles",
+    "name": "Rask, chef de bande de la Vieille Ville",
+    "role": "Petit seigneur du crime local.",
+    "from": "universe",
+    "zone": "vieille_ville"
+  },
+  {
+    "id": "clerc_desabuse",
+    "name": "Frère Malen, clerc désabusé",
+    "role": "Religieux qui doute autant de ses dieux que de ses supérieurs.",
+    "from": "universe",
+    "zone": "hauteurs_brumeuses"
+  },
+  {
+    "id": "contremaitre_nain_mine",
+    "name": "contremaitre_nain_mine",
+    "from": "sceneOnly"
+  },
+  {
+    "id": "durnik_guilde_mineurs",
+    "name": "durnik_guilde_mineurs",
+    "from": "sceneOnly"
+  },
+  {
+    "id": "etudiante_cabale",
+    "name": "Lyssia, étudiante de la cabale Nyx",
+    "role": "Informatrice nerveuse sur les agissements de ses anciens camarades.",
+    "from": "universe",
+    "zone": "quartier_du_savoir"
+  },
+  {
+    "id": "lysa_exploratrice_perdue",
+    "name": "lysa_exploratrice_perdue",
+    "from": "sceneOnly"
+  },
+  {
+    "id": "gardien_cimetiere",
+    "name": "gardien_cimetiere",
+    "from": "sceneOnly"
+  },
+  {
+    "id": "geode_avatar",
+    "name": "geode_avatar",
+    "from": "sceneOnly"
+  },
+  {
+    "id": "geolier_principal",
+    "name": "Maître Joran, geôlier principal",
+    "role": "Responsable de la prison, fidèle au Conseil.",
+    "from": "universe",
+    "zone": "centre_civique"
+  },
+  {
+    "id": "geometre_fou",
+    "name": "geometre_fou",
+    "from": "sceneOnly"
+  },
+  {
+    "id": "grand_pretre_nain",
+    "name": "grand_pretre_nain",
+    "from": "sceneOnly"
+  },
+  {
+    "id": "inevitable_contremetre",
+    "name": "inevitable_contremetre",
+    "from": "sceneOnly"
+  },
+  {
+    "id": "jaren_apprenti",
+    "name": "jaren_apprenti",
+    "from": "sceneOnly"
+  },
+  {
+    "id": "kaelen_vampire",
+    "name": "kaelen_vampire",
+    "from": "sceneOnly"
+  },
+  {
+    "id": "marchand_fou_mercane",
+    "name": "marchand_fou_mercane",
+    "from": "sceneOnly"
+  },
+  {
+    "id": "marchand_gris",
+    "name": "Le Marchand Gris",
+    "role": "Vendeur mystérieux d'objets dangereux.",
+    "from": "universe",
+    "zone": "quartier_du_savoir"
+  },
+  {
+    "id": "secretaire_bourgmestre",
+    "name": "Elira, secrétaire du Bourgmestre",
+    "role": "Administratrice compétente, sait tout sur la bureaucratie de la ville.",
+    "from": "universe",
+    "zone": "hauteurs_brumeuses"
+  },
+  {
+    "id": "sentinelle_reliee",
+    "name": "Sentinelle reliée",
+    "role": "Golem poreux aux veines de cristal, surveille les intrusions.",
+    "from": "universe",
+    "zone": "spirale"
+  },
+  {
+    "id": "sniv_kobold",
+    "name": "sniv_kobold",
+    "from": "sceneOnly"
+  },
+  {
+    "id": "spectre_ancien_heros",
+    "name": "Spectre d'un ancien héros nain",
+    "role": "Gardien spectral du Seuil.",
+    "from": "universe",
+    "zone": "cimetiere_et_seuil"
+  },
+  {
+    "id": "sujet_zero",
+    "name": "sujet_zero",
+    "from": "sceneOnly"
+  },
+  {
+    "id": "tenancier_taverne",
+    "name": "Mara, tenancière des Fumées Rouges",
+    "role": "Informatrice neutre, voit tout passer.",
+    "from": "universe",
+    "zone": "quartier_des_mineurs"
+  },
+  {
+    "id": "thade_coren",
+    "name": "thade_coren",
+    "from": "sceneOnly"
+  },
+  {
+    "id": "thorgar_pretre_nain",
+    "name": "thorgar_pretre_nain",
+    "from": "sceneOnly"
+  }
+]
