@@ -18,10 +18,10 @@ export default {
         },
         // Texte avec contrastes WCAG AA/AAA
         content: {
-          DEFAULT: "#e0ddd7",    // Moins lumineux, plus doux
-          secondary: "#c4bdb1",  // Contraste adouci
-          muted: "#a29c92",      // Plus sombre pour les textes secondaires
-          subtle: "#817b72",      // Pour les éléments discrets
+          DEFAULT: "#d1cdc5",    // Texte principal, légèrement adouci
+          secondary: "#b3ada4",  // Texte secondaire
+          muted: "#959088",      // Texte discret
+          subtle: "#7a756e",      // Texte très discret, pour les placeholders etc.
         },
         // Accent - Braises / cuivre
         accent: {
