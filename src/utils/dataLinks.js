@@ -1,5 +1,5 @@
-import { universeData } from "../data/universe";
-import { scenariosData } from "../data/scenarios";
+import { universeData } from "../data/universe/universe";
+import { scenariosData } from "../data/scenarios/scenarios";
 
 export function makeUniverseLink({ zoneId, locId, npcId }) {
   const params = new URLSearchParams();

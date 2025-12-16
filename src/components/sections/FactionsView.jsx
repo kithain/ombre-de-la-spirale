@@ -1,6 +1,6 @@
 import React from "react";
 import { Shield } from "lucide-react";
-import { factionsData } from "../../data/factions";
+import { factionsData } from "../../data/pnj/factions";
 import SectionTitle from "../ui/SectionTitle";
 import Card from "../ui/Card";
 import { findNpcById, makeUniverseLink } from "../../utils/dataLinks";

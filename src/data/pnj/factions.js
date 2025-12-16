@@ -1,4 +1,4 @@
-import { Users, Shield, Sparkles } from "lucide-react";
+import { Users, Shield, Sparkles, Eye } from "lucide-react";
 
 export const factionsData = [
   {
@@ -15,17 +15,25 @@ export const factionsData = [
     npcs: ["bourgmestre", "capitaine_garde_urbaine", "geolier_principal"]
   },
   {
-    name: "La Guilde des Mineurs",
-    type: "Gardiens Nains",
-    desc: "Dirigée par le Grand Maître et Haut Clerc. Ils savent intuitivement que la montagne est « malade ». Pour eux, creuser trop profond est un suicide et une trahison.",
+    name: "Faction Nains",
+    type: "Foi & Mineurs",
+    desc: "Le bloc nain réunit les mineurs et le Temple-Forgeron : gardiens du savoir ancestral, protecteurs des galeries et des reliques sacrées.",
     icon: Shield,
-    color: "text-amber-500 border-amber-900 bg-amber-950/30",
+    color: "text-amber-400 border-amber-900 bg-amber-950/30",
     hierarchy: [
-      { role: "Chef de la Guilde", npcId: "durnik_chef_mineur", notes: "Voix des mineurs, meneur de grève." },
+      { role: "Chef de la Guilde des Mineurs", npcId: "durnik_guilde_mineurs", notes: "Voix des mineurs, meneur de grève." },
       { role: "Haut Clerc / Prêtre du Temple-Forgeron", npcId: "thorgar_pretre_nain", notes: "Avertit sur la Spirale, soutien moral." },
-      { role: "Contremaître sécurité mine", npcId: "contremaitre_nain_mine", notes: "Logistique, sécurité des galeries." }
+      { role: "Contremaître sécurité mine", npcId: "contremaitre_nain_mine", notes: "Logistique, sécurité des galeries." },
+      { role: "Capitaine de la Garde du Temple", npcId: "capitaine_garde_temple", notes: "Organise la défense et les patrouilles sacrées." },
+      { role: "Gardien du Cimetière", npcId: "gardien_cimetiere", notes: "Veille sur les sépultures et détecte les profanations." }
     ],
-    npcs: ["durnik_chef_mineur", "thorgar_pretre_nain", "contremaitre_nain_mine"]
+    npcs: [
+      "durnik_guilde_mineurs",
+      "thorgar_pretre_nain",
+      "contremaitre_nain_mine",
+      "capitaine_garde_temple",
+      "gardien_cimetiere"
+    ]
   },
   {
     name: "La Guilde des Mages",
@@ -40,5 +48,18 @@ export const factionsData = [
       { role: "Apprenti favori", npcId: "kaelen_vampire", notes: "Garde du toit, bras droit vampirique." }
     ],
     npcs: ["thade_coren", "archimage_defecteur", "magi_tuteur_loyal", "kaelen_vampire", "bibliothecaire_interdits"]
+  },
+  {
+    name: "Réseau des Ombres",
+    type: "Assassins & Informateurs",
+    desc: "Intermédiaires discrets, chasseurs de primes et opportunistes qui profitent du chaos pour tirer les ficelles dans l'ombre.",
+    icon: Eye,
+    color: "text-emerald-300 border-emerald-900 bg-emerald-950/30",
+    hierarchy: [
+      { role: "Courtier invisible", npcId: "marchand_fou_mercane", notes: "Marchand d'informations et d'artefacts." },
+      { role: "Assassin Masqué", npcId: "assassin_masque", notes: "Tueur à gages lié aux complots urbains." },
+      { role: "Éclaireuse perdue", npcId: "lysa_exploratrice_perdue", notes: "Guide occasionnelle pour qui paye ou sauve sa peau." }
+    ],
+    npcs: ["marchand_fou_mercane", "assassin_masque", "lysa_exploratrice_perdue"]
   }
 ];

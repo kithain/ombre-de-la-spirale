@@ -1,8 +1,8 @@
 import Fuse from "fuse.js";
-import { universeData } from "../data/universe";
-import { scenariosData } from "../data/scenarios";
-import { factionsData } from "../data/factions";
-import { antagonistData } from "../data/antagonist";
+import { universeData } from "../data/universe/universe";
+import { scenariosData } from "../data/scenarios/scenarios";
+import { factionsData } from "../data/pnj/factions";
+import { antagonistData } from "../data/pnj/antagonist";
 
 const toText = (value) => {
   if (Array.isArray(value)) return value.filter(Boolean).join(" · ");

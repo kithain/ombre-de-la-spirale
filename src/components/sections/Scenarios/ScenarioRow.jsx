@@ -2,12 +2,14 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import ActAccordion from "./ActAccordion";
 import { useLocalStorage } from "../../../hooks/useLocalStorage";
+import { useRef } from "react";
 
 function ScenarioRow({ scenario, isOpen, onToggle, targetSceneTitle }) {
   const [openActTitle, setOpenActTitle] = useLocalStorage(
     `scenario-open-act-${scenario.id}`,
     ""
   );
+  const hasInitializedAct = useRef(false);
 
   useEffect(() => {
     if (isOpen && typeof window !== "undefined") {
@@ -18,6 +20,7 @@ function ScenarioRow({ scenario, isOpen, onToggle, targetSceneTitle }) {
   // Ensure an act is open: target scene takes precedence, else persisted, else first act.
   useEffect(() => {
     if (!isOpen) return;
+    if (hasInitializedAct.current) return;
     const actWithTarget = scenario.acts.find((act) =>
       act.scenes?.some(
         (scene) => scene.title.toLowerCase() === targetSceneTitle.toLowerCase()
@@ -25,10 +28,12 @@ function ScenarioRow({ scenario, isOpen, onToggle, targetSceneTitle }) {
     );
     if (actWithTarget) {
       setOpenActTitle(actWithTarget.title);
+      hasInitializedAct.current = true;
       return;
     }
     if (!openActTitle && scenario.acts[0]) {
       setOpenActTitle(scenario.acts[0].title);
+      hasInitializedAct.current = true;
     }
   }, [isOpen, scenario.acts, targetSceneTitle, openActTitle, setOpenActTitle]);
 

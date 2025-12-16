@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { Map } from "lucide-react";
-import { universeData } from "../../../data/universe";
+import { universeData } from "../../../data/universe/universe";
 import SectionTitle from "../../ui/SectionTitle";
 import Card from "../../ui/Card";
 import ZoneList from "./ZoneList";

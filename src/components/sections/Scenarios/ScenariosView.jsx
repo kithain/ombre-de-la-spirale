@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useParams, useSearchParams } from "react-router-dom";
 import { BookOpen } from "lucide-react";
-import { scenariosData } from "../../../data/scenarios";
+import { scenariosData } from "../../../data/scenarios/scenarios";
 import SectionTitle from "../../ui/SectionTitle";
 import ScenarioRow from "./ScenarioRow";
 import { useLocalStorage } from "../../../hooks/useLocalStorage";
