@@ -6,7 +6,7 @@ export const pnjEnnemis = [
     size: "Grand",
     type: "Créature artificielle (aberration)",
     alignment: "CN",
-    cr: 8,
+    fp: 8,
     environment: "Spirale – Laboratoire secret de Thade",
     organization: "Solitaire",
     initiative: "+1",
@@ -20,7 +20,7 @@ export const pnjEnnemis = [
     fullAttack: "2 griffes +14 (1d8+6) et morsure +12 (2d6+3)",
     space: "3 m",
     reach: "3 m",
-    specialAttacks: ["Rage contrôlée (+2 dégâts, 5 rounds)", "Prise puissante (+4 sur lutte)"],
+    specialAttacks: ["Rage contrôlée (+2 dégâts, 5 tours)", "Prise puissante (+4 sur lutte)"],
     specialQualities: [
       "Régénération 3 (supprimée par dégâts radieux ou soniques)",
       "Résistance à la magie 16",
@@ -41,7 +41,7 @@ export const pnjEnnemis = [
       specialActions: [
         {
           name: "Rage contrôlée",
-          details: "+2 dégâts pendant 5 rounds, déclenchée quand il perd >30% PV avant de changer de cible.",
+          details: "+2 dégâts pendant 5 tours, déclenchée quand il perd >30% PV avant de changer de cible.",
         },
         {
           name: "Prise puissante",
@@ -68,7 +68,7 @@ export const pnjEnnemis = [
     size: "Moyen",
     type: "Humanoïde (Humain)",
     alignment: "NM",
-    cr: 5,
+    fp: 5,
     environment: "Ruelles de Val-d'Ombre, toits",
     organization: "Solitaire ou duo",
     initiative: "+6",
@@ -129,7 +129,7 @@ export const pnjEnnemis = [
     size: "Moyen",
     type: "Humanoïde (Humain)",
     alignment: "NM",
-    cr: 1,
+    fp: 1,
     environment: "Cimetière terrasse, université",
     organization: "Escouade de 3-4",
     initiative: "+2",

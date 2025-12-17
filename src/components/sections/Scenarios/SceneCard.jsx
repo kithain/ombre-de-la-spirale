@@ -170,7 +170,7 @@ function SceneCard({ scene, highlight, expanded, onToggle }) {
                 {scene.narration.texte_a_lire && (
                   <p>
                     <strong className="text-content-secondary">À lire : </strong>
-                    {scene.narration.texte_a_lire}
+                    <span className="whitespace-pre-line">{scene.narration.texte_a_lire}</span>
                   </p>
                 )}
                 {scene.narration.contexte_mj && (
@@ -239,6 +239,11 @@ function SceneCard({ scene, highlight, expanded, onToggle }) {
                 Transitions
               </h6>
               <div className="text-sm text-content-muted space-y-1">
+                {scene.transitions.sous_titre && (
+                  <p className="italic text-content-secondary/90">
+                    {scene.transitions.sous_titre}
+                  </p>
+                )}
                 {scene.transitions.success && (
                   <p>
                     <strong className="text-content-secondary">Succès : </strong>

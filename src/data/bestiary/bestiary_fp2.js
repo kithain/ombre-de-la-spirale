@@ -54,7 +54,7 @@ export const bestiaryFp2 = [
     att_complete: "Lance Courte +6 (1d4+1, x2)",
     espace: "1,5 m",
     allonge: "1,5 m",
-    att_spé: ["Pose de Pièges Rapides (piège simple en 1 round)"],
+    att_spé: ["Pose de Pièges Rapides (piège simple en 1 tour)"],
     qual_spé: [
       "Esquive Totale",
       "Taille Petite (+1 CA, +1 Attaque, +4 Discrétion)",
@@ -65,7 +65,7 @@ export const bestiaryFp2 = [
     dons:
       "Tir de Précision, Arme de Prédilection (arbalète légère)",
     tactiques:
-      "Tire, se replie derrière un piège, harcèle à distance ; ne reste jamais au contact plus d’un round.",
+      "Tire, se replie derrière un piège, harcèle à distance ; ne reste jamais au contact plus d’un tour.",
     butin: "Arbalète légère, fioles d'huile, matériaux de pièges.",
     est_ennemi: true,
   },

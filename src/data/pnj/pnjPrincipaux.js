@@ -6,7 +6,7 @@ export const pnjPrincipaux = [
     size: "Moyen",
     type: "Humanoïde (humain)",
     alignment: "LN",
-    cr: 8,
+    fp: 8,
     environment: "Val-d'Ombre (Université, Conclave) puis Spirale",
     organization: "Solitaire (manipulateur)",
     initiative: "+2",
@@ -45,7 +45,7 @@ export const pnjPrincipaux = [
       spells: [
         {
           name: "Rayon affaiblissant",
-          details: "+9 / DD 16 Str, -2 Str/Con pendant 1 round, 4/j. Permet de fragiliser la cible principale avant l'assaut.",
+          details: "+9 / DD 16 Str, -2 Str/Con pendant 1 tour, 4/j. Permet de fragiliser la cible principale avant l'assaut.",
         },
         {
           name: "Corde animée",
@@ -59,7 +59,7 @@ export const pnjPrincipaux = [
       tacticFeats: [
         {
           name: "Science de l'initiative",
-          details: "Donne une fenêtre pour activer un sort dès le round 1 et imposer son plan tactique.",
+          details: "Donne une fenêtre pour activer un sort dès le tour 1 et imposer son plan tactique.",
         },
         {
           name: "Incantation réflexe",
@@ -76,7 +76,7 @@ export const pnjPrincipaux = [
     size: "Moyen",
     type: "Humanoïde (nain)",
     alignment: "LB",
-    cr: 5,
+    fp: 5,
     environment: "Quartier du Savoir / Temple-Forgeron",
     organization: "Solitaire ou avec 1-2 acolytes",
     initiative: "-1",
@@ -136,7 +136,7 @@ export const pnjPrincipaux = [
     size: "Moyen",
     type: "Humanoïde (Humain)",
     alignment: "NB",
-    cr: 2,
+    fp: 2,
     environment: "Vieille Ville – Auberge du Pic Brisé",
     organization: "Solitaire (avec personnel 1-2)",
     initiative: "+1",
@@ -169,7 +169,7 @@ export const pnjPrincipaux = [
     size: "Moyen",
     type: "Humanoïde (humain)",
     alignment: "NB",
-    cr: 4,
+    fp: 4,
     environment: "Quartier des Mineurs, tunnels supérieurs",
     organization: "Avec 2-4 gardes de mine",
     initiative: "+1",
@@ -201,7 +201,7 @@ export const pnjPrincipaux = [
       specialActions: [
         {
           name: "Cri d'alarme",
-          details: "1/j, effectue un test de Volonté DD 14 pour retirer les PJ du support moral (-1 moral, secoué 1d4 rounds).",
+          details: "1/j, effectue un test de Volonté DD 14 pour retirer les PJ du support moral (-1 moral, secoué 1d4 tours).",
         },
       ],
       tacticFeats: [
@@ -224,7 +224,7 @@ export const pnjPrincipaux = [
     size: "Moyen",
     type: "Humanoïde (humain)",
     alignment: "LN",
-    cr: 4,
+    fp: 4,
     environment: "Temple-Forgeron et environs",
     organization: "Escouade (capitaine + 3-6 gardes)",
     initiative: "+1",
@@ -238,7 +238,7 @@ export const pnjPrincipaux = [
     fullAttack: "épée longue +8/+3 (1d8+3)",
     space: "1,5 m",
     reach: "1,5 m",
-    specialAttacks: ["Ordre de tir (les gardes alliés gagnent +1 attaquer pour 1 round)"],
+    specialAttacks: ["Ordre de tir (les gardes alliés gagnent +1 attaquer pour 1 tour)"],
     specialQualities: ["Bonus de commandement (+1 moral aux gardes à 9 m)"],
     abilities: { str: 15, dex: 12, con: 14, int: 10, wis: 12, cha: 12 },
     skills: "Perception +6, Intimidation +7, Profession (soldat) +8",
@@ -256,7 +256,7 @@ export const pnjPrincipaux = [
       specialActions: [
         {
           name: "Ordre de tir",
-          details: "+1 aux jets d’attaque des gardes à 9 m pendant 1 round (1/j).",
+          details: "+1 aux jets d’attaque des gardes à 9 m pendant 1 tour (1/j).",
         },
       ],
       tacticFeats: [
@@ -279,7 +279,7 @@ export const pnjPrincipaux = [
     size: "Moyen",
     type: "Extérieur (loyal)",
     alignment: "LN",
-    cr: 6,
+    fp: 6,
     environment: "Spirale – Couloirs de Chair",
     organization: "Solitaire",
     initiative: "+2",
@@ -343,7 +343,7 @@ export const pnjPrincipaux = [
     size: "Moyen",
     type: "Humanoïde (humain)",
     alignment: "NB",
-    cr: 3,
+    fp: 3,
     environment: "Spirale – Premier cercle",
     organization: "Solitaire (survivante)",
     initiative: "+3",
@@ -398,7 +398,7 @@ export const pnjPrincipaux = [
     size: "Moyen",
     type: "Extérieur (Loi, Artéfact)",
     alignment: "LN",
-    cr: 6,
+    fp: 6,
     environment: "Spirale – Salle des Engrenages",
     organization: "Solitaire ou patrouille (1-2)",
     initiative: "+1",
@@ -413,9 +413,9 @@ export const pnjPrincipaux = [
       "Marteau de Gravité +12 (1d8+4 contondant) et Rayon de Stase +9 (1d6 froid, Vol. DD 17 annule Ralentissement)",
     space: "1,5 m",
     reach: "1,5 m",
-    specialAttacks: ["Rayon de Stase (Ralentissement 1 round, Volonté DD 17 annule)"],
+    specialAttacks: ["Rayon de Stase (Ralentissement 1 tour, Volonté DD 17 annule)"],
     specialQualities: [
-      "Champ Anti-magie Localisé (rayon 1,5 m, 3 rounds/jour)",
+      "Champ Anti-magie Localisé (rayon 1,5 m, 3 tours/jour)",
       "RD 5/chaotique",
       "Immunité (Artéfact) : poison, sommeil, maladie",
       "Conviction de Loi (+2 JS contre enchantements)",
@@ -459,7 +459,7 @@ export const pnjPrincipaux = [
     size: "Moyen",
     type: "Humanoïde (Humain)",
     alignment: "NB",
-    cr: 3,
+    fp: 3,
     environment: "Cimetière en terrasse",
     organization: "Solitaire",
     initiative: "+1",

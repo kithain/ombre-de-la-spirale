@@ -17,7 +17,7 @@ export const scenario1 = {
           npcIds: ["thorgar_pretre_nain", "brand_aubergiste"],
           description: {
             sous_titre:
-              "L'auberge est un bastion de tradition naine. Ici, on respecte la bière et les ancêtres.",
+              "Ici, on respecte la bière et les ancêtres.",
             visuel:
               "Poutres basses en chêne noirci, fumée de pipe épaisse, éclats de voix graves. Un panneau « MAGIE INTERDITE » est cloué au mur.",
             audio: "Le choc des chopes, le crépitement du feu, et le silence soudain quand les PJ entrent.",
@@ -27,21 +27,22 @@ export const scenario1 = {
           narration: {
             declencheur: "Thorgar fait signe aux PJ de s'approcher.",
             texte_a_lire:
-              "Le prêtre nain a les yeux cernés. « Le cimetière a été profané. Les autorités locales et la garde s'en moquent, ce ne sont que des os pour eux, mais pour les nains, c'est un sacrilège. Retrouvez les coupables. »",
+              "Le cimetière a été profané. Les autorités locales et la garde s'en moquent, Ils ne voient que des squelettes là où dorment nos pères. Mais nous ne pouvons pas laisser passer ça.\n Pour autant, pas question de souiller le Livre des Rancunes avec les noms de vulgaires pilleurs de tombes ! Ils ne méritent pas d'entrer dans notre Histoire, même en tant qu'ennemis. \n Retrouvez-les !",
             contexte_mj:
               "Insister sur le dégoût des nains. Ce n'est pas une question d'argent, mais d'honneur. Thorgar paie bien car il est désespéré.",
             objectif: "Accepter le contrat : surveiller le cimetière cette nuit.",
           },
           mecaniques: {
             defis: [
-              "Diplomatie (DD 15) : Négocier une avance pour 'équipement spécial'.",              
+              "Diplomatie (DD 15) : Négocier une avance ou une prime.",              
             ],
-            indices: ["Les tombes visées sont celles de guerriers robustes uniquement."],
+            indices: ["Les tombes visées sont celles de Thanes et des Brise-Fers connus."],
             recompenses: "200 à 300 po (groupe) + Amulette de protection contre les morts-vivants (1 usage).",
           },
           transitions: {
-            success: "Départ pour le cimetière à la tombée de la nuit.",
-            fail: "Thorgar accepte à contre-coeur mais sans avance.",
+            sous_titre: "Départ pour le cimetière à la tombée de la nuit.",
+            success: "Thorgar leur offre une avance/prime.",
+            fail: "Thorgar les engage à contre-coeur mais sans avance.",
           },
         },
         {
@@ -51,33 +52,37 @@ export const scenario1 = {
           npcIds: ["gardien_cimetiere"],
           description: {
             sous_titre: "Une nuit sans lune sur les terrasses funéraires.",
-            visuel: "Le cimetière est un dédale de tombes en terrasse. Une lanterne solitaire oscille près d'un mausolée, tenue par une silhouette massive.",
-            audio: "Le vent siffle dans les décorations en pierre.",
+            visuel: 
+              "Une grille monumentale en fer forgé bloque l'accès au cimetière. Juste derrière, une petite loge en pierre est éclairée par une lanterne posée sur un tonneau. Une silhouette massive est assise là, arbalète sur les genoux, surveillant l'entrée.",
+            audio: "Le grincement des chaînes de la grille dans le vent et le bruit sec d'un mécanisme d'arbalète qu'on arme.",
             odeur: "Terre humide et ozone (magie résiduelle sur DD15).",
-            lumiere: "Très faible, lanternes nécessaires.",
+            lumiere: "Le halo jaune de la lanterne du gardien qui découpe sa silhouette.",
           },
           narration: {
             declencheur: "Les PJ entrent dans le cimetière.",
             texte_a_lire:
-              "Le cliquetis d'une arme qu'on recharge résonne dans le brouillard. Une silhouette massive barre le chemin, une arbalette à la main. « Un pas de plus et je vous tue ! » L'homme a les traits tirés par des nuits sans sommeil. Il vous jauge rapidement. « Vous n'avez pas l'air de pilleurs de tombes... Vous êtes avec le prêtre ?",
+            "Avant même que vous ne touchiez aux barreaux, une voix rauque claque : « N'essayez même pas. J'ai une ligne de vue dégagée et je n'ai plus la patience pour les voleurs. » L'homme se lève lentement, braquant son arme à travers les grilles. « Donnez-moi une seule raison de ne pas vous clouer au portail. »",
             contexte_mj:
-              "Le Gardien (NB) est à bout de nerfs. Il connaît le cimetière par cœur. Si les PJ le calment, il devient un atout tactique majeur pour l'embuscade.",
-            objectif: "Gagner la confiance du Gardien et positionner l'embuscade.",
+              ["Le Gardien (NB) est épuisé et paranoïaque. Il ne laissera entrer personne sans une bonne raison.", 
+              "Si les PJ mentionnent Thorgar, il baisse un peu sa garde mais reste méfiant."],
+            objectif: "Convaincre le Gardien d'ouvrir la grille et Gagner sa confiance",
           },
           mecaniques: {
             defis: [
-              "Diplomatie (DD 13) : Calmer le gardien. Réussite : Il partage ses 'Connaissances (religion)' et indique l'emplacement exact de la prochaine cible.",
-              "Tactique (Intelligence ou Survie DD 14) : Identifier les meilleurs angles d'attaque parmi les tombes.",
+              "Diplomatie (DD 10) ou RP : Convaincre le gardien. Réussite : Il partage ses Connaissances et indique l'emplacement exact des tombes déjà profanées.",
+              "Perception (DD 14) : Identifier traces des pilleurs parmi les tombes.",
+              "Intelligence (DD 15) : Identifier les tombes visées.",
             ],
             indices: [
-              "Le Gardien confirme : « Ils ne prennent pas les bijoux. Ils cherchent des os spécifiques. Ça sent la sorcellerie. »",
-              "Terrain : Il indique une crypte ouverte qui offre un couvert total."
+              "Toutes les tombes visées sont des tombes de guerriers ilustres.",
+              "Le Gardien confirme : « Ils cherchent des os. »",
             ],
-            recompenses: "Avantage tactique pour la Scène 3 (Round de surprise automatique ou position surélevée). Si Diplomatie réussie : Le Gardien rejoint le combat (Allié CR 3).",
+            recompenses: "Avantage tactique pour la Scène 3 (Tour de surprise automatique ou position surélevée). Si Diplomatie réussie : Le Gardien rejoint le combat (Allié FP 3).",
           },
           transitions: {
-            success: "Les PJ sont en place. Les mercenaires arrivent (Lancement de la Scène 3 avec Surprise).",
-            fail: "Le Gardien, méfiant, fait du bruit ou refuse d'aider. Le combat de la Scène 3 commence sans effet de surprise.",
+            sous_titre: "Trouver les pilleurs",
+            success: "Le Gardien vous aide à trouver le lieu des profanations.",
+            fail: "Le Gardien refuse de vous laisser entrer et vous fait fuir.",
           },
         },
         {
@@ -87,10 +92,11 @@ export const scenario1 = {
           npcIds: ["etudiant_renvoye", "gardien_cimetiere", "brutes_cimetiere"],
           description: {
             sous_titre: "L'embuscade près de la crypte ouverte.",
-            visuel: "Trois hommes de main creusent frénétiquement tandis qu'une silhouette en robe (un étudiant) supervise nerveusement, tenant une lampe-tempête.",
+            visuel:
+              "Trois hommes de main creusent frénétiquement tandis qu'une silhouette en robe (un étudiant) supervise nerveusement, en tenant une lampe-tempête.",
             audio: "Les chuchotements paniqués de l'étudiant : « Plus vite ! Plus vite ! »",
             odeur: "Terre humide et ozone (magie résiduelle sur DD15).",
-            lumiere: "La lanterne de l'étudiant éclaire l'intérieur de la tombe.",
+            lumiere: "La lampe-tempête de l'étudiant éclaire l'intérieur de la tombe.",
           },
           narration: {
             declencheur: "Les PJ lancent l'assaut (bénéficiant de la Surprise si gagnée en Scène 2).",
@@ -98,19 +104,20 @@ export const scenario1 = {
               "À votre signal, le chaos éclate. Surpris, les mercenaires tirent leurs armes. L'étudiant, lui, lâche sa lanterne et recule, terrifié. Il ne semble pas vouloir se battre, mais protège une sacoche en cuir comme si sa vie en dépendait.",
             contexte_mj:[
               "L'étudiant est un membre junior de la Fraternité Nyx. Les hommes de main sont des brutes payées pour creuser. Si le Gardien est présent (Scène 2), il cible prioritairement les brutes avec son arbalète.",
-              "IMPORTANT : L'étudiant (stats faibles) se rendra dès qu'il est blessé ou que ses gardes tombent. Il suppliera pour sa vie. IL EST VITAL QU'IL SOIT CAPTURÉ VIVANT pour la scène suivante."],
+              "IMPORTANT : L'étudiant se rendra dès qu'il est blessé ou que ses gardes tombent. Il suppliera pour sa vie.", 
+              "IL EST VITAL QU'IL SOIT CAPTURÉ VIVANT pour la scène suivante."],
             objectif: "Vaincre les mercenaires et capturer l'étudiant pour l'interroger.",
           },
           mecaniques: {
             defis: [
-              "Intimidation (DD 12) : Pour forcer l'étudiant à se rendre sans combattre.",
-              "Dans tout les cas les brutes engagent le combat.",
-              "Magie instable : À chaque sort lancé par l'étudiant, il y a 20% de chances qu'un effet secondaire (brouillard, froid soudain) affecte la zone.",
+              "Intimidation (DD 13) : Pour forcer l'étudiant à se rendre sans combattre. Dans tout les cas les brutes engagent le combat.",
+              "Magie instable : À chaque sort lancé par l'étudiant, il y a 20% de chances (1,2,3 ou 4 sur un d20) qu'un effet secondaire (brouillard, froid soudain) affecte la zone.",
             ],
             indices: [
-              "Comportement : L'étudiant est terrifié par quelque chose de bien pire que vous.",
+              "Comportement : L'étudiant est terrifié par quelque chose de bien pire que les PJ.",
               "Sur l'étudiant : Une broche en argent terni représentant une chouette (Symbole de la fraternité Nyx).",
-              "La Sacoche : Contient des outils chirurgicaux (estampillés 'Propriété de l'Université') et une liste de courses macabre : 'Sujet A (Nain, robuste) - 2 fémurs nains, 1 crâne intact.",
+              "La Sacoche : Contient des outils chirurgicaux (estampillés 'Propriété de l'Université')",
+              "Une liste de courses macabre : 'Sujet A (Nain, robuste) - 2 fémurs nains, 1 crâne intact.",
             ],
             recompenses:
               "La broche (Clé pour l'Acte 2 et 3) et les outils (Preuve pour l'enquête).",
@@ -126,28 +133,42 @@ export const scenario1 = {
           title: "Scène 4 : L'Autopsie du Crime",
           type: "Investigation",
           locationId: "cimetiere_terrasse",
+          npcIds: ["etudiant_renvoye","gardien_cimetiere"],
           description: {
-            sous_titre: "Le corps nain n'a pas été pillé, il a été prélevé.",
-            visuel: "Le cercueil ouvert révèle un squelette auquel il manque la jambe droite.",
-            audio: "Le vent se calme.",
-            odeur: "Pas d'odeur de pourriture, mais une odeur d'alcool médical.",
-            lumiere: "Lumière des lanternes des PJ sur les os.",
+            sous_titre: "Un interrogatoire qui tourne au drame.",
+            visuel:
+              "L'étudiant est adossé à une pierre tombale. Il transpire abondamment, ses yeux dartant de gauche à droite.",
+            audio: "La respiration sifflante du prisonnier et le claquement de ses dents.",
+            odeur: "Odeur de décomposition issue du tombeau.",
+            lumiere: "Très faible, lanternes nécessaires.",
           },
           narration: {
-            declencheur: "Examen de la scène après combat.",
+            declencheur: "Tentative d'interroger le prisonnier.",
             texte_a_lire:
-              "L'os n'a pas été brisé. Il a été scié avec une précision chirurgicale. Et une rune a été peinte sur le front du cadavre.",
+              "Vous le pressez de questions. Il ouvre la bouche pour répondre, voulant négocier sa vie. Soudain, ses yeux se révulsent. Un symbole runique sous ses cheveux s'illumine violemment. Il porte les mains à sa tête en hurlant, mais aucun son ne sort.",
             contexte_mj:
-              "C'est la preuve clé : ce n'est pas du pillage, c'est de la nécromancie académique.",
-            objectif: "Confirmer la piste universitaire.",
+              "C'est le 'Vœu de Silence' de la Fraternité. S'il tente de trahir le secret, le sort détruit son esprit. Il meurt d'une hémorragie cérébrale massive sous les yeux des PJ.",
+            objectif: "Assister à la mort du prisonnier et planter l'idée d'un complot via les indices restants.",
           },
           mecaniques: {
-            defis: ["Médecine (DD 14) : Reconnaitre une découpe faite par un étudiant en anatomie.", "Arcanes (DD 15) : La rune sert à 'préserver' la fraîcheur de l'os."],
-            indices: ["Lien direct vers le Quartier du Savoir."],
+            defis: [
+              "Perception (DD11) : Memoriser la forme de la rune et son effet (pour l'explication à Thorgar).",
+              "Arcanes (DD 15) : Identifier le sort au moment de la mort. C'est un 'Sceau de Censure', une magie interdite à l'Université.",
+              "Arcanes (DD 11) : un sort de conservation sert à 'préserver' la fraîcheur de l'os.",
+            ],
+            indices: [
+              "La mort brutale de l'étudiant confirme qu'il craignait quelqu'un de très puissant.",
+              "Sur son corps : La broche de la Fraternité Nyx (Indice pour l'Acte 2).",
+              "Dans la sacoche : Des outils chirurgicaux estampillés 'Université' (Preuve pour l'Acte 2).",
+            ],
             recompenses: "XP d'enquête.",
           },
           transitions: {
-            success: "Retour voir Thorgar puis direction l'Université (Acte 2).",
+            sous_titre: "Fin de l'Acte 1.",
+            success:
+              "Les indices restent sur le corps de l'étudiant et sur la sacoche.",
+            fail:
+              "Une partie des indices sont dispersés/non récupérés.",
           },
         },
       ],

@@ -21,7 +21,7 @@ export const bestiaryFp4 = [
     att_complete: "Pique à Dessin Modifiée +6 (1d8+2)",
     espace: "1,5 m",
     allonge: "1,5 m",
-    att_spé: ["Glyphes de Désorientation (1/j, zone 3 m, Réf. DD 15 : étourdi 1 round)"],
+    att_spé: ["Glyphes de Désorientation (1/j, zone 3 m, Réf. DD 15 : étourdi 1 tour)"],
     qual_spé: [
       "Esprit Fractal (+2 JS contre illusions)",
       "Cartographie Tordue (+4 Connaissance (architecture et ingénierie))",
@@ -56,7 +56,7 @@ export const bestiaryFp4 = [
     att_complete: "Glaive +9/+4 (1d10+4, x3)",
     espace: "1,5 m",
     allonge: "3 m",
-    att_spé: ["Ordre de Barrage (+1 CA et JS aux Gardes à 9 m, 1 round)"],
+    att_spé: ["Ordre de Barrage (+1 CA et JS aux Gardes à 9 m, 1 tour)"],
     qual_spé: ["Bonus de Commandement (+1 moral aux Gardes à 9 m)"],
     carac: { for: 16, dex: 12, con: 16, int: 10, sag: 12, cha: 12 },
     compétences: "Détection +7, Intimidation +8, Profession (soldat) +9",

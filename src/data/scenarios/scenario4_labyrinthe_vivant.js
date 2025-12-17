@@ -67,7 +67,7 @@ export const scenario4 = {
           type: "Piège",
           locationId: "spirale_couloirs_chair",
           details: [
-            "Gravité change chaque round.",
+            "Gravité change chaque tour.",
             "Combat vs Gargouilles de cristal.",
           ],
         },

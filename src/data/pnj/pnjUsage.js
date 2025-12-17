@@ -7,7 +7,7 @@ export const pnjUsage = {
     spells: [
       {
         name: "Rayon affaiblissant",
-        details: "+9 / DD 16 Str, -2 Str/Con pendant 1 round, 4/j. Permet de fragiliser la cible principale avant l'assaut."
+        details: "+9 / DD 16 Str, -2 Str/Con pendant 1 tour, 4/j. Permet de fragiliser la cible principale avant l'assaut."
       },
       {
         name: "Corde animée",
@@ -21,7 +21,7 @@ export const pnjUsage = {
     feats: [
       {
         name: "Science de l'initiative",
-        details: "Donne une fenêtre pour activer un sort dès le round 1 et imposer son plan tactique."
+        details: "Donne une fenêtre pour activer un sort dès le tour 1 et imposer son plan tactique."
       },
       {
         name: "Incantation réflexe",
@@ -62,7 +62,7 @@ export const pnjUsage = {
     specialActions: [
       {
         name: "Rage contrôlée",
-        details: "+2 dégâts pendant 5 rounds, déclenchée quand il perd >30% PV avant de changer de cible."
+        details: "+2 dégâts pendant 5 tours, déclenchée quand il perd >30% PV avant de changer de cible."
       },
       {
         name: "Prise puissante",
@@ -143,7 +143,7 @@ export const pnjUsage = {
     specialActions: [
       {
         name: "Cri d'alarme",
-        details: "1/j, effectue un test de Volonté DD 14 pour retirer les PJ du support moral (-1 moral, secoué 1d4 rounds)."
+        details: "1/j, effectue un test de Volonté DD 14 pour retirer les PJ du support moral (-1 moral, secoué 1d4 tours)."
       }
     ],
     feats: [
@@ -167,7 +167,7 @@ export const pnjUsage = {
     specialActions: [
       {
         name: "Ordre de tir",
-        details: "+1 aux jets d’attaque des gardes à 9 m pendant 1 round (1/j)."
+        details: "+1 aux jets d’attaque des gardes à 9 m pendant 1 tour (1/j)."
       }
     ],
     feats: [

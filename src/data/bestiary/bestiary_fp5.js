@@ -21,7 +21,7 @@ export const bestiaryFp5 = [
     att_complete: "Contact Incorporel +8 (1d8 énergie négative)",
     espace: "1,5 m",
     allonge: "1,5 m",
-    att_spé: ["Drain de Force (1d6, Vig. DD 15 demi)", "Hurlement Antique (1/j, Vol. DD 16 : Secoué 1d4 rounds)"],
+    att_spé: ["Drain de Force (1d6, Vig. DD 15 demi)", "Hurlement Antique (1/j, Vol. DD 16 : Secoué 1d4 tours)"],
     qual_spé: ["Incorporel", "Canalisation Vulnérable", "Repos Lié au Mausolée (disparaît si relique restaurée)"],
     carac: { for: "—", dex: 22, con: "—", int: 12, sag: 14, cha: 16 },
     compétences: "Détection +10, Discrétion +12, Connaissance (histoire) +8",

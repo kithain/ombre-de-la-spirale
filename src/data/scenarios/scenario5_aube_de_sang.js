@@ -17,7 +17,7 @@ export const scenario5 = {
           npcIds: ["thade_coren"],
           details: [
             "3 Lieutenants nécromanciens.",
-            "Round de surprise complet.",
+            "Tour de surprise complet.",
           ],
         },
         {

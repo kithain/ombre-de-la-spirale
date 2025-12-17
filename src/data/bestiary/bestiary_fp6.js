@@ -23,9 +23,9 @@ export const bestiaryFp6 = [
       "Marteau de Gravité +12 (1d8+4 contondant) et Rayon de Stase +9 (1d6 froid, Vol. DD 17 annule Ralentissement)",
     espace: "1,5 m",
     allonge: "1,5 m",
-    att_spé: ["Rayon de Stase (Ralentissement 1 round, Volonté DD 17 annule)"],
+    att_spé: ["Rayon de Stase (Ralentissement 1 tour, Volonté DD 17 annule)"],
     qual_spé: [
-      "Champ Anti-magie Localisé (rayon 1,5 m, 3 rounds/jour)",
+      "Champ Anti-magie Localisé (rayon 1,5 m, 3 tours/jour)",
       "RD 5/chaotique",
       "Immunité (Artéfact) : poison, sommeil, maladie",
       "Conviction de Loi (+2 JS contre enchantements)",
@@ -69,7 +69,7 @@ export const bestiaryFp6 = [
     qual_spé: [
       "RD 5/adamantium",
       "Immunité (Artéfact) + Résistance Sonique 10",
-      "Lien de Résonance : désorientée si Symbole Nain de Confinement (–2 Attaque/CA/JS 1d4 rounds)",
+      "Lien de Résonance : désorientée si Symbole Nain de Confinement (–2 Attaque/CA/JS 1d4 tours)",
     ],
     carac: { for: 22, dex: 12, con: "—", int: 6, sag: 12, cha: 8 },
     compétences: "Détection +8, Intimidation +6",

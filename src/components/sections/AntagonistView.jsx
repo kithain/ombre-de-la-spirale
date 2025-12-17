@@ -214,7 +214,7 @@ function AntagonistView() {
   };
 
   const renderNpcStats = (npc) => {
-    const cr = npc.cr ?? npc.fp;
+    const fp = npc.fp ?? npc.cr;
     const ca = formatCaValue(npc.ca || npc.ac);
     const pv = npc.pv ?? npc.hp;
     const attaques = npc.attack || npc.attaque || npc.fullAttack || npc.att_complete;
@@ -230,7 +230,7 @@ function AntagonistView() {
     const abilities = npc.abilities || npc.carac;
 
     const tooltip = {
-      fp: "Facteur de Puissance / CR.",
+      fp: "Facteur de Puissance.",
       type: "Type et sous-types.",
       pv: "Points de Vie.",
       taille: "Taille de la créature.",
@@ -337,9 +337,9 @@ function AntagonistView() {
             <span className="text-content-muted">Dons :</span> {feats}
           </p>
         )}
-        {(npc.fp || cr !== undefined) && (
+        {fp !== undefined && fp !== null && (
           <p title={tooltip.fp}>
-            <span className="text-content-muted">FP/CR :</span> {cr ?? npc.fp}
+            <span className="text-content-muted">FP :</span> {fp}
           </p>
         )}
         {(npc.butin || npc.loot) && (

@@ -46,15 +46,14 @@ export const zoneVieilleVille = {
       ],
       npcs: [
         {
-          id: "aubergiste_pic_brise",
+          id: "brand_aubergiste",
           name: "Brand, aubergiste du Pic Brisé",
           role: "Hôte bien informé qui entend toutes les conversations.",
           isEnemy: false,
           details: [
-            "Motivation : Garder son auberge neutre et prospère.",
-            "Attitude : Jovial mais prudent, n'aime pas les bagarres gratuites.",
-            "Info : Fournit rumeurs sur le Cimetière, le Temple-Forgeron et la Garde.",
-            "Usage : Source constante de missions secondaires et de contacts."
+            "Motivation : Protéger sa réputation et éviter les ennuis avec la garde.",
+            "Attitude : Jovial en public, prudent en privé ; observe beaucoup.",
+            "Usage : Source de rumeurs, point de contact pour guider les PJ vers leurs premières pistes."
           ]
         }
       ]

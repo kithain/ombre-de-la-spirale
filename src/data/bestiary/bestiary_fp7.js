@@ -24,7 +24,7 @@ export const bestiaryFp7 = [
     allonge: "3 m (6 m avec fouet)",
     att_spé: [
       "Onde Sonique (cône 6 m, 4d6 soniques, Réf. DD 18 demi)",
-      "Plissement Spatial (zone 6 m devient terrain difficile 1 round, Vol. DD 18)",
+      "Plissement Spatial (zone 6 m devient terrain difficile 1 tour, Vol. DD 18)",
     ],
     qual_spé: [
       "Résistance Sonique 10",
