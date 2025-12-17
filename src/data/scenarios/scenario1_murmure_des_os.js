@@ -7,7 +7,7 @@ export const scenario1 = {
   acts: [
     {
       title: "ACTE 1 : L'INCIDENT DU CIMETIÈRE",
-      stake: "Comprendre que ce n'est pas un simple pillage, mais un vol de composants.",
+      stake: "Comprendre que ce n'est pas un simple pillage.",
       location: "Auberge « Le Pic Brisé ».",
       scenes: [
         {
