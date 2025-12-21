@@ -177,7 +177,7 @@ export const scenario5 = {
         {
           title: "Scène 1 : Le Cœur du Mal",
           type: "Décor",
-          locationId: "tour_des_mages",
+          locationId: "bureau_thade_coren",
           details: [
             "Bibliothèque en peau humaine.",
             "Vue panoramique.",
@@ -186,7 +186,7 @@ export const scenario5 = {
         {
           title: "Scène 2 : Le Phylactère",
           type: "Révélation",
-          locationId: "tour_des_mages",
+          locationId: "bureau_thade_coren",
           npcIds: ["thade_coren"],
           details: [
             "Phylactère = La Spirale.",
@@ -196,7 +196,7 @@ export const scenario5 = {
         {
           title: "Scène 3 : Festin des Héros",
           type: "Préparation",
-          locationId: "tour_des_mages",
+          locationId: "bureau_thade_coren",
           details: [
             "Réserve de potions ultimes.",
             "Buffs de longue durée.",
@@ -205,7 +205,7 @@ export const scenario5 = {
         {
           title: "Scène 4 : La Voix",
           type: "Social",
-          locationId: "tour_des_mages",
+          locationId: "bureau_thade_coren",
           npcIds: ["thade_coren"],
           details: [
             "Projection de Thade.",
@@ -215,7 +215,7 @@ export const scenario5 = {
         {
           title: "Scène 5 : L'Escalier",
           type: "Transition",
-          locationId: "tour_des_mages",
+          locationId: "bureau_thade_coren",
           details: [
             "Échelle de lumière.",
             "Orage magique.",

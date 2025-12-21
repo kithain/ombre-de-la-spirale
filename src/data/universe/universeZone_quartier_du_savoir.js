@@ -59,6 +59,18 @@ export const zoneQuartierDuSavoir = {
       ]
     },
     {
+      id: "valdombre_sommet_tour_mage",
+      name: "Sommet éventré de la Tour des Mages",
+      summary: "Crête brisée où le tunnel de la Spirale éventre le toit, théâtre d'irruptions violentes.",
+      details: [
+        "Ambiance : Pluie de gravats, éclairs arcaniques, vue panoramique sur la ville en flammes.",
+        "Tests : Acrobaties / Volonté pour rester debout sous les rafales magiques.",
+        "Danger : Gardes d'élite, champs de force instables, arrivée possible de Thade.",
+        "Usage : Transition entre la Spirale et l'affrontement final à la surface."
+      ],
+      npcs: []
+    },
+    {
       id: "tour_des_mages",
       name: "Tour des Mages",
       summary: "Symbole de la Guilde des Mages, cœur du pouvoir magique de la ville.",
@@ -103,6 +115,32 @@ export const zoneQuartierDuSavoir = {
             "Attitude : Arrogant, déclenche des runes de défense sans sommation.",
             "Pouvoir : Champs de force, glyphes de renvoi, serviteurs élémentaires.",
             "Usage : Mini-boss ou négociateur si convaincu que Thade trahit la Guilde."
+          ]
+        }
+      ]
+    },
+    {
+      id: "bureau_thade_coren",
+      name: "Bureau de Thade Coren",
+      summary:
+        "Appartement panoramique où Thade orchestre la guerre : bibliothèques en peau, cartes arcaniques et relais vers la Spirale.",
+      details: [
+        "Ambiance : Parfums d'encens froid, instruments de mesure sifflants, vitraux irradiant une lueur violette.",
+        "Tests : Investigation / Magie pour décoder les plans gravés sur les murs et détecter les glyphes de défense.",
+        "Danger : Serviteurs spectraux, cristaux-judas reliés à la Spirale, pièges qui inversent la gravité.",
+        "Usage : Pièce clé pour découvrir les complots de Thade, voler ses recherches ou affronter sa projection."
+      ],
+      npcs: [
+        {
+          id: "thade_coren",
+          name: "Thade Coren",
+          role: "Maître de la Spirale, cerveau de la conspiration.",
+          isEnemy: true,
+          details: [
+            "Motivation : Finaliser la fusion avec la Spirale depuis ce poste de contrôle.",
+            "Attitude : Faussement cordial, toujours en train de jauger les PJ.",
+            "Pouvoir : Peut canaliser l'énergie des pylônes de la Tour directement dans la pièce.",
+            "Indice : Conservation méticuleuse de copies des lettres scellées envoyées aux factions."
           ]
         }
       ]

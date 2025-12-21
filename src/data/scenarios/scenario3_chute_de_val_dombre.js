@@ -11,9 +11,9 @@ export const scenario3 = {
       location: "Hôtel de Ville.",
       scenes: [
         {
-          title: "Scène 1 : Le Sommet",
+          title: "Scène 1 : Le Sommet Sanglant",
           type: "Tension",
-          locationId: "hotel_de_ville_valdombre",
+          locationId: "hotel_de_ville_conseil",
           npcIds: ["bourgmestre_valdombre", "grand_pretre_nain", "thade_coren", "secretaire_bourgmestre"],
           details: [
             "Bourgmestre, Grand Prêtre nain, PJ.",
@@ -66,19 +66,19 @@ export const scenario3 = {
       location: "Rues (Nuit).",
       scenes: [
         {
-          title: "Scène 1 : Infiltration",
+          title: "Scène 1 : La Rafle",
           type: "Discrétion",
-          locationId: "rues_valdombre_nuit",
+          locationId: "quartier_artisan_patrouille",
           npcIds: ["chef_bandes_ruelles"],
           details: [
-            "Rejoindre une planque.",
-            "Patrouilles : Golems de chair.",
+            "Rejoindre une planque au milieu des ateliers mis sous scellés.",
+            "Patrouilles mixtes : gardes humains + automates de la Guilde.",
           ],
         },
         {
-          title: "Scène 2 : La Purge",
+          title: "Scène 2 : L'Éveil de la Nécropole",
           type: "Horreur",
-          locationId: "rues_valdombre_nuit",
+          locationId: "rues_valdombre_brume",
           npcIds: ["capitaine_garde_urbaine", "geolier_principal"],
           details: [
             "Rafle des nains.",
@@ -95,13 +95,13 @@ export const scenario3 = {
           ],
         },
         {
-          title: "Scène 4 : Dilemme",
+          title: "Scène 4 : Le Dilemme de Thorgar",
           type: "Choix",
-          locationId: "rues_valdombre_nuit",
+          locationId: "forge_thorgar_refuge",
           npcIds: ["thorgar_pretre_nain"],
           details: [
-            "Thorgar est encerclé ailleurs.",
-            "Sauver l'allié ou se reposer ?",
+            "Thorgar est encerclé dans son annexe de forge.",
+            "Sauver les réfugiés enfermés ou récupérer des ressources.",
           ],
         },
         {
@@ -122,12 +122,12 @@ export const scenario3 = {
       location: "Temple-Forgeron.",
       scenes: [
         {
-          title: "Scène 1 : Conseil de Guerre",
+          title: "Scène 1 : Fortification",
           type: "Stratégie",
-          locationId: "temple_forgeron",
+          locationId: "temple_moradin_enceinte",
           npcIds: ["thorgar_pretre_nain", "durnik_guilde_mineurs"],
           details: [
-            "Organiser la défense.",
+            "Organiser la défense intérieure.",
             "Atout : Explosifs de mine stockés dehors.",
           ],
         },
@@ -152,9 +152,9 @@ export const scenario3 = {
           ],
         },
         {
-          title: "Scène 4 : Première Vague",
+          title: "Scène 4 : L'Assaut Final",
           type: "Bataille",
-          locationId: "temple_forgeron",
+          locationId: "temple_moradin_parvis",
           details: [
             "Wargame simplifié.",
             "Ennemis : Béliers osseux, Wraiths.",
@@ -238,9 +238,9 @@ export const scenario3 = {
           ],
         },
         {
-          title: "Scène 2 : Le Pont",
+          title: "Scène 2 : Le Sacrifice de Durnik",
           type: "Sacrifice",
-          locationId: "cimetiere_terrasse",
+          locationId: "mausolee_pont_secret",
           npcIds: ["durnik_chef_mineur"],
           details: [
             "Gargouille bloque le passage.",
@@ -259,7 +259,7 @@ export const scenario3 = {
         {
           title: "Scène 4 : L'Abîme",
           type: "Action",
-          locationId: "mausolee_seuil",
+          locationId: "puits_spirale_abime",
           details: [
             "Ouvrir la porte scellée.",
             "Puits noir insondable.",

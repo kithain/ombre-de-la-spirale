@@ -1,4 +1,9 @@
-export const scenario2 = {
+const fs = require('fs');
+const path = require('path');
+
+const filePath = String.raw`d:\script\Scénario\HTML\ombre-de-la-spirale\src\data\scenarios\scenario2_echo_des_profondeurs.js`;
+
+const content = `export const scenario2 = {
   id: 2,
   title: "SCÉNARIO 2 : L'ÉCHO DES PROFONDEURS",
   level: "Niveaux 4-6",
@@ -26,12 +31,12 @@ export const scenario2 = {
           },
           narration: {
             declencheur: "Les PJ viennent chercher des réponses sur la mort de Jaren ou sont convoqués.",
-            texte_a_lire: `Le hall majestueux de l’université résonne d’une dispute inhabituelle. Durnik, le chef des mineurs, pointe un doigt calleux vers un cristal que Thade Coren tient avec précaution.
+            texte_a_lire: \`Le hall majestueux de l’université résonne d’une dispute inhabituelle. Durnik, le chef des mineurs, pointe un doigt calleux vers un cristal que Thade Coren tient avec précaution.
 
 - Durnik : « Par la barbe de mes ancêtres, Thade ! Ce caillou me donne la nausée ! Mes gars meurent là-dessous, ils deviennent fous, et toi tu restes là à nous vendre de la verroterie ? »
 
 - Thade : (Apercevant les PJ, avec un sourire mielleux) « Ah, vous tombez à point nommé. Voici les aventuriers qui ont "nettoyé" le cimetière, Durnik. Un peu de tenue. 
-(S'adressant aux PJ) Messieurs/Dames, le mal qui ronge la mine n'est pas de nature physique. Les mineurs ont dérangé quelque chose. Prenez ce Cristal de Stabilisation. Portez-le près de la faille, il absorbera les vibrations néfastes et protégera l'esprit des travailleurs. Considérez cela comme la contribution de l'Université pour la paix de Val-d'Ombre. »`,
+(S'adressant aux PJ) Messieurs/Dames, le mal qui ronge la mine n'est pas de nature physique. Les mineurs ont dérangé quelque chose. Prenez ce Cristal de Stabilisation. Portez-le près de la faille, il absorbera les vibrations néfastes et protégera l'esprit des travailleurs. Considérez cela comme la contribution de l'Université pour la paix de Val-d'Ombre. »\`,
             contexte_mj: "Thade joue double jeu : il veut que les PJ descendent pour tester ses théories sur la Spirale et charger le cristal.",
             objectif: "Accepter la mission d'enquête et recevoir le 'Cristal de Résonance' (mouchard).",
           },
@@ -793,3 +798,7 @@ export const scenario2 = {
     },
   ],
 };
+\`;
+
+fs.writeFileSync(filePath, content, 'utf8');
+console.log('File updated successfully');

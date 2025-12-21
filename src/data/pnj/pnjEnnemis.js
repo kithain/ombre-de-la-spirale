@@ -125,60 +125,66 @@ export const pnjEnnemis = [
   },
   {
     id: "etudiant_renvoye",
-    name: "Étudiant renvoyé",
+    name: "Jaren",
     size: "Moyen",
     type: "Humanoïde (Humain)",
-    alignment: "NM",
+    alignment: "Neutre Mauvais",
     fp: 1,
-    environment: "Cimetière terrasse, université",
-    organization: "Escouade de 3-4",
-    initiative: "+2",
+    environment: "Cimetière des Terrasses, Université de Magie",
+    organization: "Solitaire (accompagné de 3 brutes)",
+    initiative: "+6", // +2 Dex +4 Science de l'Init
     senses: "Perception +2",
     ac: "14 (+2 Dex, +2 Armure de cuir) ; contact 12, pris au dépourvu 12",
     hp: 11,
-    dv: "2d8+2",
-    js: { vig: "+1", ref: "+2", vol: "+1" },
+    dv: "2d4+2", // Magicien Niveau 2 (plus cohérent pour un étudiant)
+    js: { vig: "+1", ref: "+2", vol: "+3" }, // Volonté augmentée (classe de lanceur)
     vit: "9 m",
     abb: "+1",
     grp: "+2",
-    attaque: "Bâton +3 (1d6+1) ou Dague +3 (1d4+1)",
-    att_complete: "Bâton +3 (1d6+1) ou Dague +3 (1d4+1)",
+    attaque: "Bâton +2 (1d6+1) ou Dague +3 (1d4+1)",
+    att_complete: "Bâton +2 (1d6+1) ou Dague +3 (1d4+1)",
     espace: "1,5 m",
     allonge: "1,5 m",
-    att_spé: ["Sort mineur 1/jour (Rayon de givre +2, 1d3 froid)", "Tactique de groupe (+1 att si adjacent à un allié)"],
-    qual_spé: ["Science académique (+2 Connaissances : arcanes)"],
-    carac: { for: 12, dex: 14, con: 12, int: 12, sag: 10, cha: 8 },
-    compétences: "Connaissances (arcanes) +6, Discrétion +6, Escalade +4, Perception +2",
-    dons: "Science de l'Initiative",
+    att_spé: [
+      "Sort mineur 3/jour (Rayon de givre +3 toucher à distance, 1d3 froid)", 
+      "Tactique de groupe (+1 att si adjacent à un allié)"
+    ],
+    qual_spé: [
+      "Science académique (+2 en Connaissances : arcanes)",
+      "Vœu de Silence (Inconscient) : Si interrogé sur le Maître, subit un sort de Censure fatal."
+    ],
+    carac: { for: 12, dex: 14, con: 12, int: 15, sag: 10, cha: 8 }, // Int augmentée pour un futur nécromancien
+    compétences: "Connaissances (arcanes) +9, Discrétion +6, Art de la magie +7, Perception +2",
+    dons: "Science de l'Initiative, Incantation rapide (parchemin)",
     tactiques:
-      "Tente de surprendre, l'un lit un parchemin pendant que les autres couvrent la fuite. Cède rapidement si isolé.",
-    butin: "Broche ternie de la fraternité Nyx, carnet de commandes d'os, 1 parchemin mineur (Rayon affaiblissant).",
+      "Jaren reste à l'arrière, utilisant les stèles comme abri (couverture +4 CA). Il utilise 'Rayon de Givre' pour ralentir le PJ le plus rapide. Il privilégie la fuite dès qu'une brute tombe.",
+    butin: "Broche en argent de la fraternité Nyx, Outils chirurgicaux (estampillés Université), Liste de 'Sujets' (Nains), 1 parchemin de Rayon affaiblissant.",
     est_ennemi: true,
-    role: "Mercenaire académique impliqué dans le pillage du cimetière.",
+    role: "Étudiant désespéré et manipulé, pivot de l'enquête entre le Cimetière et l'Université.",
     tactical: {
-      bookReference: "Scénario 1 – Acte 1, Scène 3 : Les Mercenaires Érudits",
+      bookReference: "Scénario 1 – Acte 1, Scène 3 : L'Interrogatoire interrompu",
       scenarioContext:
-        "Escouade d'étudiants déchus opérant dans le cimetière. Ils cherchent à prélever des ossements pour la fraternité Nyx.",
+        "Membre junior de la Fraternité Nyx. Il est terrifié par Thade Coren mais obsédé par ses recherches sur la nécromancie.",
       spells: [
         {
           name: "Rayon de givre",
-          details: "+2 toucher, 1d3 froid ; utilisé pour ralentir un PJ menaçant pendant que le groupe se repositionne.",
+          details: "+3 toucher à distance, 1d3 froid ; réduit la vitesse de la cible de 1,5m pour 1 round.",
         },
       ],
       specialActions: [
         {
-          name: "Tactique de groupe",
-          details: "+1 aux jets d'attaque s'ils sont adjacents à un allié ; ils restent groupés derrière les tombes.",
+          name: "Appel à l'aide",
+          details: "Si Jaren tombe à moins de 5 PV, il offre sa rédition en échange de sa vie, déclenchant potentiellement la scène 4 de l'Acte 1.",
         },
       ],
       tacticFeats: [
         {
           name: "Science de l'initiative",
-          details: "Ils agissent tôt pour lancer un sort mineur ou prendre l'avantage de position.",
+          details: "Agit presque toujours en premier pour lancer un sort de diversion ou se cacher.",
         },
       ],
       tacticSummary:
-        "Commencent groupés derrière des tombes (couvert). Un lance un sort mineur pour couvrir la fuite avec le sac d'os, les autres font écran. Se rendent rapidement si isolés ou menacés.",
+        "Utilise le terrain (tombes) pour bloquer les lignes de vue. Ne cherche pas le corps à corps. S'il est acculé, il pleure et supplie, révélant sa nature de lâche manipulé.",
     },
-  },
+  }
 ];

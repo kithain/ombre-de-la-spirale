@@ -58,6 +58,42 @@ export const zoneCimetiereEtSeuil = {
           ]
         }
       ]
+    },
+    {
+      id: "mausolee_pont_secret",
+      name: "Pont Secret des Mausolées",
+      summary: "Passerelle étroite reliant deux terrasses funéraires, piégée par les nécromanciens.",
+      details: [
+        "Ambiance : Chaînes grinçantes, poussière de pierre, runes fissurées sous les pieds.",
+        "Tests : Acrobaties / Perception pour éviter les sections sabotées.",
+        "Danger : Gardiens gargouilles, charges explosives posées par Durnik.",
+        "Usage : Lieu du sacrifice héroïque bloquant l'accès au Seuil."
+      ],
+      npcs: [
+        {
+          id: "durnik_chef_mineur",
+          name: "Durnik, chef des Mineurs",
+          role: "Héros tragique tenant le pont.",
+          isEnemy: false,
+          details: [
+            "Motivation : Gagner du temps pour l'évacuation vers la Spirale.",
+            "Attitude : Résolu à mourir si nécessaire.",
+            "Usage : Offre sa vie pour faire sauter le pont, sauf intervention audacieuse."
+          ]
+        }
+      ]
+    },
+    {
+      id: "puits_spirale_abime",
+      name: "Puits de l'Abîme Spirale",
+      summary: "Ouverture verticale noire où l'on ressent l'appel de la Spirale.",
+      details: [
+        "Ambiance : Vent froid venant d'en bas, chuchotements lointains.",
+        "Tests : Volonté / Escalade pour affronter le vertige et descendre en rappel.",
+        "Danger : Tourbillons d'énergie attirant armes et âmes, assauts d'ombres.",
+        "Usage : Dernière étape avant la fuite vers la Spirale lors de la chute de la ville."
+      ],
+      npcs: []
     }
   ]
 };

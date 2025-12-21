@@ -11,7 +11,7 @@ export const scenario4 = {
       location: "Zone de Déchets.",
       scenes: [
         {
-          title: "Scène 1 : Atterrissage",
+          title: "Scène 1 : Gravité Inversée",
           type: "Cinématique",
           locationId: "spirale_zone_dechets",
           details: [
@@ -20,21 +20,21 @@ export const scenario4 = {
           ],
         },
         {
-          title: "Scène 2 : Silence des Pierres",
+          title: "Scène 2 : Les Charognards de l'Éther",
+          type: "Combat",
+          locationId: "spirale_couloirs_ether",
+          details: [
+            "Ennemis : Destrachans ou prédateurs éthérés.",
+            "Terrain : Vents inverses aspirant vers la voûte.",
+          ],
+        },
+        {
+          title: "Scène 3 : Silence des Pierres",
           type: "Exploration",
           locationId: "spirale_zone_dechets",
           details: [
             "Îles flottantes, brume violette.",
             "Règle : Ne pas dormir (l'île se désagrège).",
-          ],
-        },
-        {
-          title: "Scène 3 : Charognards",
-          type: "Combat",
-          locationId: "spirale_zone_dechets",
-          details: [
-            "Ennemis : Destrachans ou Prédateurs éthérés.",
-            "Terrain : Sol instable.",
           ],
         },
         {
@@ -72,9 +72,9 @@ export const scenario4 = {
           ],
         },
         {
-          title: "Scène 2 : Le Marchand Fou",
+          title: "Scène 2 : Le Marchand de Souvenirs",
           type: "Rencontre",
-          locationId: "spirale_couloirs_chair",
+          locationId: "spirale_carrefour_mercane",
           npcIds: ["marchand_fou_mercane"],
           details: [
             "Mercane ou Diable exilé.",
@@ -92,9 +92,9 @@ export const scenario4 = {
           ],
         },
         {
-          title: "Scène 4 : Miroir du Regret",
+          title: "Scène 4 : Le Miroir du Regret",
           type: "Puzzle",
-          locationId: "spirale_couloirs_chair",
+          locationId: "spirale_salle_miroirs",
           details: [
             "Le reflet ne bouge pas.",
             "Solution : 'Donner' une faiblesse/aveu au reflet.",
@@ -126,20 +126,20 @@ export const scenario4 = {
           ],
         },
         {
-          title: "Scène 2 : Bibliothèque des Âmes",
+          title: "Scène 2 : La Bibliothèque de Cristal",
           type: "Lore",
-          locationId: "spirale_labo_secret",
+          locationId: "spirale_bibliotheque_ames",
           details: [
             "Bocaux d'âmes.",
             "Journal : Thade remplace son cœur par un éclat de la Spirale.",
           ],
         },
         {
-          title: "Scène 3 : Salle de Production",
+          title: "Scène 3 : L'Usine à Soldats",
           type: "Horreur",
-          locationId: "spirale_labo_secret",
+          locationId: "spirale_laboratoire_clonage",
           details: [
-            "Usine à soldats (cadavres réassemblés).",
+            "Chaîne de montage de corps réassemblés.",
             "Possibilité de sabotage.",
           ],
         },
@@ -170,9 +170,9 @@ export const scenario4 = {
       location: "Salle des Engrenages.",
       scenes: [
         {
-          title: "Scène 1 : Rouages du Monde",
+          title: "Scène 1 : Mécanisme de Contrôle",
           type: "Environnement",
-          locationId: "spirale_salle_engrenages",
+          locationId: "spirale_engrenages_plenaires",
           details: [
             "Engrenages géants dans le vide.",
             "Bruit assourdissant (Malus écoute/sorts).",
@@ -181,7 +181,7 @@ export const scenario4 = {
         {
           title: "Scène 2 : La Traversée",
           type: "Skill",
-          locationId: "spirale_salle_engrenages",
+          locationId: "spirale_engrenages_plenaires",
           details: [
             "Sauts d'engrenage en engrenage.",
             "Mephits vapeur/feu.",
@@ -262,7 +262,7 @@ export const scenario4 = {
         {
           title: "Scène 5 : Irruption",
           type: "Cliffhanger",
-          locationId: "spirale_tunnel_teleport",
+          locationId: "valdombre_sommet_tour_mage",
           details: [
             "Explosion du sol de la Tour des Mages.",
             "Arrivée au milieu du QG ennemi.",

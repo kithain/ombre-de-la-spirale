@@ -34,6 +34,30 @@ export const zoneCentreCivique = {
       ]
     },
     {
+      id: "hotel_de_ville_conseil",
+      name: "Salle du Conseil Sanglant",
+      summary: "Salle ovale aux vitraux rouges où se réunissent les dirigeants lors des crises.",
+      details: [
+        "Ambiance : Cloche d'alarme, tables couvertes de cartes, odeur de sang séché.",
+        "Tests : Diplomatie / Bluff pour survivre aux accusations croisées.",
+        "Danger : Gardes du Conseil prêts à dégainer, mages de Thade dissimulés.",
+        "Usage : Déclencher le massacre du Sommet et isoler les PJ politiquement."
+      ],
+      npcs: [
+        {
+          id: "bourgmestre",
+          name: "Bourgmestre de Val-d'Ombre",
+          role: "Dirigeant sous pression extrême.",
+          isEnemy: false,
+          details: [
+            "Motivation : Éviter que la ville implose, quitte à suivre Thade.",
+            "Indice : Signatures forcées sur des décrets nocturnes.",
+            "Usage : Allié potentiel si convaincu de la trahison de Thade."
+          ]
+        }
+      ]
+    },
+    {
       id: "hotel_ville_place_conseil",
       name: "Hôtel de Ville et Place du Conseil",
       summary: "Esplanade officielle où se tiennent discours et rassemblements.",
@@ -69,6 +93,30 @@ export const zoneCentreCivique = {
         "Usage : Fuites nocturnes, purges, embuscades orchestrées par Thade."
       ],
       npcs: []
+    },
+    {
+      id: "rues_valdombre_brume",
+      name: "Rues Brumeuses Réanimées",
+      summary: "Artères noyées de brume violette où les cadavres se relèvent instantanément.",
+      details: [
+        "Ambiance : Cloches funèbres, silhouettes titubantes, parfums de chair brûlée.",
+        "Tests : Survie / Perception pour anticiper les foyers de réanimation.",
+        "Danger : Éveil simultané de zombies et de golems de chair.",
+        "Usage : Mettre en scène l'Éveil de la Nécropole et les premières pertes massives."
+      ],
+      npcs: [
+        {
+          id: "capitaine_garde_urbaine",
+          name: "Capitaine de la Garde Urbaine",
+          role: "Commandant paniqué par l'ampleur du carnage.",
+          isEnemy: true,
+          details: [
+            "Motivation : Enfermer la situation, quitte à tirer sur les civils.",
+            "Indice : Reçoit des ordres cryptés portant le sceau de Thade.",
+            "Usage : Adversaire tragique qui peut être converti ou éliminé."
+          ]
+        }
+      ]
     },
     {
       id: "prison_conseil",

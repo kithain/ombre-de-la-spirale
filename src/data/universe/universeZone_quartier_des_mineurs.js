@@ -47,6 +47,82 @@ export const zoneQuartierDesMineurs = {
       ]
     },
     {
+      id: "quartier_artisan_patrouille",
+      name: "Allée des Artisans",
+      summary:
+        "Rue principale bordée d'ateliers métallurgiques, devenue terrain de rafles improvisées.",
+      details: [
+        "Ambiance : Vapeur brûlante, marteaux arrêtés net, torches renversées.",
+        "Tests : Discrétion / Acrobaties pour se faufiler entre les barrages de caisses.",
+        "Danger : Patrouilles mixtes (gardes humains, automates de la Guilde), dénonciations forcées.",
+        "Usage : Montrer la violence de la Loi Martiale et les arrestations ciblant les Nains."
+      ],
+      npcs: [
+        {
+          id: "patrouille_mixte_conseil",
+          name: "Patrouille mixte du Conseil",
+          role: "Escouade composite chargée de briser la résistance artisanale.",
+          isEnemy: true,
+          details: [
+            "Motivation : Appliquer les ordres de Thade sous couvert du Conseil.",
+            "Tactiques : Barricader les ruelles, utiliser des immobilisations magiques.",
+            "Indice : Le chef porte un cristal relais identique à celui de Thade."
+          ]
+        }
+      ]
+    },
+    {
+      id: "entree_mine_valdombre",
+      name: "Entrée de la Mine",
+      summary:
+        "Palissade gardée et cage de descente massive, point de passage obligé entre la surface et les profondeurs.",
+      details: [
+        "Ambiance : Rugissement du treuil, fumée de torches, martèlement des boucliers des gardes.",
+        "Tests : Diplomatie / Intimidation pour franchir le piquet de grève sans violence.",
+        "Danger : Risque d'émeute, sabotage latent, surveillants prêts à déclencher l'alarme.",
+        "Usage : Contrôle d'accès vers la Mine d'Argent, négociations entre Guildes et PJ."
+      ],
+      npcs: [
+        {
+          id: "garde_portail_mine",
+          name: "Escouade de gardes du portail",
+          role: "Soldats épuisés chargés de verrouiller l'accès.",
+          isEnemy: true,
+          details: [
+            "Motivation : Obéir aux ordres contradictoires du Conseil tout en évitant un massacre.",
+            "Attitude : Nerveuse, soupçonne les PJ d'espionnage.",
+            "Usage : Obstacles physiques ou négociation sous pression.",
+            "Indice : Portent des sceaux falsifiés liés aux lettres de Thade."
+          ]
+        }
+      ]
+    },
+    {
+      id: "forge_thorgar_refuge",
+      name: "Forge-Refuge de Thorgar",
+      summary:
+        "Atelier latéral du Temple-Forgeron converti en sanctuaire provisoire pour les blessés et chefs nains.",
+      details: [
+        "Ambiance : Chaleur étouffante des fours, murmures de prières, odeur d'huile brûlée.",
+        "Tests : Premiers secours / Artisanat (forge) pour stabiliser les défenses improvisées.",
+        "Danger : Effondrement possible si les glyphes sont sabordés de l'intérieur.",
+        "Usage : Lieu des décisions morales, confrontation directe avec Thorgar sur la stratégie."
+      ],
+      npcs: [
+        {
+          id: "thorgar_pretre_nain",
+          name: "Thorgar, prêtre du Temple-Forgeron",
+          role: "Chef militaire et spirituel du quartier.",
+          isEnemy: false,
+          details: [
+            "Motivation : Sauver les civils enfermés dans les caves adjacentes.",
+            "Attitude : Partagé entre préserver les innocents et suivre les tactiques des PJ.",
+            "Usage : Déclenche le 'Dilemme de Thorgar' : tenir ou sauver les réfugiés."
+          ]
+        }
+      ]
+    },
+    {
       id: "temple_forgeron",
       name: "Temple-Forgeron des Nains",
       summary: "Forteresse-temple creusée dans la roche, cœur spirituel et militaire des Nains.",
