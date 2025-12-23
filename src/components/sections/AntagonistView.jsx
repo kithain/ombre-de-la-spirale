@@ -7,16 +7,18 @@ import NpcDetailModal from '../../features/npcs/components/NpcDetailModal';
 import { useNpcs } from '../../features/npcs/hooks/useNpcs';
 import Tag from '../ui/Tag';
 import { cn } from '../../utils/cn';
+import { parseFp } from '../../utils/npcUtils';
 
 function AntagonistView() {
   const [selectedNpc, setSelectedNpc] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [category, setCategory] = useState('all');
   const [fpFilter, setFpFilter] = useState('all');
+  const [specificFp, setSpecificFp] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
   const [searchParams] = useSearchParams();
   
-  const { npcs, getNpcsByCategory, getNpcsByFp, categories, fpFilters } = useNpcs();
+  const { npcs, getNpcsByCategory, categories } = useNpcs();
   
   // Gestion des paramètres URL
   useEffect(() => {
@@ -38,15 +40,33 @@ function AntagonistView() {
   const filteredNpcs = React.useMemo(() => {
     let filtered = getNpcsByCategory(category);
     
-    // Filtrer par FP
-    if (fpFilter !== 'all') {
+    // Filtrer par FP Spécifique
+    if (specificFp.trim()) {
+      const targetFp = parseFp(specificFp);
+      // Si c'est un nombre valide, on filtre
+      if (!isNaN(targetFp) && targetFp > 0) {
+        filtered = filtered.filter(npc => {
+          const fp = parseFp(npc.fp || npc.cr);
+          return Math.abs(fp - targetFp) < 0.01; // Comparaison approximative pour les floats
+        });
+      } else {
+        // Sinon on essaie de matcher la string exacte (ex: "1/4")
+        filtered = filtered.filter(npc => 
+          String(npc.fp || npc.cr) === specificFp.trim()
+        );
+      }
+    } 
+    // Sinon Filtrer par Plage de FP
+    else if (fpFilter !== 'all') {
       filtered = filtered.filter(npc => {
-        const fp = parseFloat(npc.fp || npc.cr || 0);
+        const fp = parseFp(npc.fp || npc.cr);
         switch (fpFilter) {
-          case 'low': return fp < 4;
-          case 'mid': return fp >= 4 && fp < 7;
-          case 'high': return fp >= 7 && fp < 10;
-          case 'boss': return fp >= 10;
+          case 'lt1': return fp < 1;
+          case '1-2': return fp >= 1 && fp <= 2;
+          case '3-4': return fp >= 3 && fp <= 4;
+          case '5-6': return fp >= 5 && fp <= 6;
+          case '7-9': return fp >= 7 && fp <= 9;
+          case '10+': return fp >= 10;
           default: return true;
         }
       });
@@ -75,12 +95,16 @@ function AntagonistView() {
   };
   
   const fpConfig = {
-    all: { label: 'Tous les FP', color: 'bg-gray-500' },
-    low: { label: 'FP 1-3', color: 'bg-green-500' },
-    mid: { label: 'FP 4-6', color: 'bg-yellow-500' },
-    high: { label: 'FP 7-9', color: 'bg-orange-500' },
-    boss: { label: 'FP 10+ (Boss)', color: 'bg-red-600' }
+    all: { label: 'Tous', color: 'bg-gray-500' },
+    lt1: { label: '< 1', color: 'bg-green-600' },
+    '1-2': { label: '1-2', color: 'bg-green-500' },
+    '3-4': { label: '3-4', color: 'bg-yellow-600' },
+    '5-6': { label: '5-6', color: 'bg-yellow-500' },
+    '7-9': { label: '7-9', color: 'bg-orange-500' },
+    '10+': { label: '10+', color: 'bg-red-600' }
   };
+  
+  const fpOptions = ['all', 'lt1', '1-2', '3-4', '5-6', '7-9', '10+'];
 
   const handleNpcClick = (npc) => {
     setSelectedNpc(npc);
@@ -159,21 +183,39 @@ function AntagonistView() {
         
         {/* Filtres par FP */}
         <div>
-          <h4 className="text-sm font-medium text-content mb-3">Niveau de puissance</h4>
+          <div className="flex items-center justify-between mb-3">
+            <h4 className="text-sm font-medium text-content">Puissance (FP)</h4>
+            <div className="flex items-center gap-2">
+               <span className="text-xs text-content-subtle">FP Exact :</span>
+               <input 
+                 type="text" 
+                 placeholder="ex: 1/4" 
+                 value={specificFp}
+                 onChange={(e) => {
+                   setSpecificFp(e.target.value);
+                   if (e.target.value) setFpFilter('all'); // Désactiver le filtre de plage si FP spécifique
+                 }}
+                 className="w-16 px-2 py-1 text-sm bg-surface border border-surface-border rounded focus:border-accent-light focus:outline-none"
+               />
+            </div>
+          </div>
           <div className="flex flex-wrap gap-2">
-            {fpFilters.map(fp => {
+            {fpOptions.map(fp => {
               const config = fpConfig[fp];
-              const isActive = fpFilter === fp;
+              const isActive = fpFilter === fp && !specificFp;
               
               return (
                 <button
                   key={fp}
-                  onClick={() => setFpFilter(fp)}
+                  onClick={() => {
+                    setFpFilter(fp);
+                    setSpecificFp(''); // Désactiver le FP spécifique
+                  }}
                   className={cn(
-                    "px-4 py-2 rounded-lg border transition-all duration-200 font-medium",
+                    "px-3 py-1.5 rounded-lg border text-sm transition-all duration-200 font-medium",
                     isActive 
-                      ? `${config.color} text-white border-transparent shadow-lg transform scale-105` 
-                      : "bg-surface border-surface-border text-content hover:border-accent-light/50 hover:shadow-md"
+                      ? `${config.color} text-white border-transparent shadow-md transform scale-105` 
+                      : "bg-surface border-surface-border text-content hover:border-accent-light/50 hover:shadow-sm"
                   )}
                 >
                   {config.label}
@@ -184,12 +226,13 @@ function AntagonistView() {
         </div>
         
         {/* Bouton de réinitialisation */}
-        {(category !== 'all' || fpFilter !== 'all' || searchQuery) && (
+        {(category !== 'all' || fpFilter !== 'all' || searchQuery || specificFp) && (
           <div className="mt-4 pt-4 border-t border-surface-border/50">
             <button
               onClick={() => {
                 setCategory('all');
                 setFpFilter('all');
+                setSpecificFp('');
                 setSearchQuery('');
               }}
               className="text-sm text-content-subtle hover:text-accent-light transition-colors"

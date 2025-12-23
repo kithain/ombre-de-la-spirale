@@ -1,7 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { X, Sword, Shield, Heart, Brain, Zap, Users, Ghost } from 'lucide-react';
 import Tag from '../../../components/ui/Tag';
 import { cn } from '../../../utils/cn';
+import { getCategoryBadge, getFpVariant } from '../../../utils/npcUtils';
+import { findNpcOccurrences } from '../../../utils/dataLinks';
 
 function NpcDetailModal({ npc, isOpen, onClose }) {
   if (!isOpen || !npc) return null;
@@ -34,8 +37,11 @@ function NpcDetailModal({ npc, isOpen, onClose }) {
   const type = npc.type;
   const alignement = npc.alignment || npc.alignement;
 
+  // Récupérer les apparitions dans les scénarios
+  const occurrences = findNpcOccurrences(npc.id);
+
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto">
+    <div className="fixed inset-0 z-[100] overflow-y-auto">
       {/* Overlay */}
       <div 
         className="fixed inset-0 bg-black/70 backdrop-blur-sm transition-opacity"
@@ -61,9 +67,12 @@ function NpcDetailModal({ npc, isOpen, onClose }) {
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
                   <h1 className="text-2xl font-serif text-accent-light font-bold">{npc.name}</h1>
-                  {npc.isMonster && (
-                    <div className="px-3 py-1 bg-red-900/30 text-red-300 text-sm rounded-full border border-red-800/50">
-                      Monstre
+                  {getCategoryBadge(npc.category) && (
+                    <div className={cn(
+                      "px-3 py-1 text-sm rounded-full border",
+                      getCategoryBadge(npc.category).className
+                    )}>
+                      {getCategoryBadge(npc.category).label}
                     </div>
                   )}
                 </div>
@@ -291,6 +300,28 @@ function NpcDetailModal({ npc, isOpen, onClose }) {
               </div>
             </div>
 
+            {/* Apparitions dans les scénarios */}
+            {occurrences && occurrences.length > 0 && (
+              <div className="mb-6">
+                <h3 className="text-lg font-serif text-accent-light font-bold mb-3">Apparitions dans les scénarios</h3>
+                <div className="bg-surface/30 rounded-lg p-4 border border-surface-border">
+                  <div className="flex flex-wrap gap-2">
+                    {occurrences.map((occ, idx) => (
+                      <Link
+                        key={idx}
+                        to={`/scenarios?scenario=${occ.scenarioId}&scene=${encodeURIComponent(occ.sceneTitle)}`}
+                        className="px-3 py-1.5 rounded border border-accent-muted/30 text-accent-light bg-accent-surface/20 hover:bg-accent-surface/40 text-sm transition-colors flex items-center gap-2"
+                        title={`${occ.scenarioTitle} · ${occ.actTitle} · ${occ.sceneTitle}`}
+                      >
+                        <span className="font-mono font-bold text-accent-light/70">{occ.scenarioId}.{occ.actNumber}.{occ.sceneNumber}</span>
+                        <span className="text-xs truncate max-w-[200px]">{occ.sceneTitle}</span>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
+
             {/* Description détaillée */}
             {npc.details?.length > 0 && (
               <div>
@@ -312,14 +343,6 @@ function NpcDetailModal({ npc, isOpen, onClose }) {
       </div>
     </div>
   );
-}
-
-function getFpVariant(fp) {
-  const num = parseFloat(fp);
-  if (num >= 10) return "Boss";
-  if (num >= 7) return "Combat";
-  if (num >= 4) return "Tension";
-  return "Social";
 }
 
 export default NpcDetailModal;

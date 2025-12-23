@@ -33,7 +33,7 @@ function Layout() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-surface via-surface-raised to-surface text-content">
-      <header className="border-b border-surface-border bg-surface/80 backdrop-blur-md sticky top-0 z-10">
+      <header className="border-b border-surface-border bg-surface/95 backdrop-blur-md sticky top-0 z-50">
         <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <div className="p-2 rounded-md bg-accent-surface border border-accent-muted text-accent">

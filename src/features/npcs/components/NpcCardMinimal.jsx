@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import Card from '../../../components/ui/Card';
 import Tag from '../../../components/ui/Tag';
 import { cn } from '../../../utils/cn';
+import { getCategoryBadge, getFpVariant } from '../../../utils/npcUtils';
 import { ChevronRight, Sword, Shield, Heart } from 'lucide-react';
 
+// Composant carte PNJ minimale avec badge de catégorie
 function NpcCardMinimal({ npc, onClick }) {
   const [isHovered, setIsHovered] = useState(false);
   
@@ -36,9 +38,12 @@ function NpcCardMinimal({ npc, onClick }) {
             <h3 className="text-lg font-serif text-accent-light font-bold truncate">
               {npc.name}
             </h3>
-            {npc.isMonster && (
-              <div className="inline-flex items-center mt-1 px-2 py-0.5 bg-red-900/20 text-red-300 text-xs rounded-full border border-red-800/30">
-                Monstre
+            {getCategoryBadge(npc.category) && (
+              <div className={cn(
+                "inline-flex items-center mt-1 px-2 py-0.5 text-xs rounded-full border",
+                getCategoryBadge(npc.category).className
+              )}>
+                {getCategoryBadge(npc.category).label}
               </div>
             )}
           </div>
@@ -81,14 +86,6 @@ function NpcCardMinimal({ npc, onClick }) {
       </div>
     </Card>
   );
-}
-
-function getFpVariant(fp) {
-  const num = parseFloat(fp);
-  if (num >= 10) return "Boss";
-  if (num >= 7) return "Combat";
-  if (num >= 4) return "Tension";
-  return "Social";
 }
 
 export default NpcCardMinimal;

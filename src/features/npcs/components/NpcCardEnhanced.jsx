@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Card from '../../../components/ui/Card';
 import Tag from '../../../components/ui/Tag';
 import { cn } from '../../../utils/cn';
+import { getCategoryBadge, getFpVariant } from '../../../utils/npcUtils';
+import { findNpcOccurrences } from '../../../utils/dataLinks';
 import { ChevronDown, ChevronUp, Sword, Shield, Heart, Brain, Zap } from 'lucide-react';
 
 function NpcCardEnhanced({ npc, isOpen, onClick }) {
@@ -32,9 +35,12 @@ function NpcCardEnhanced({ npc, isOpen, onClick }) {
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-1">
             <h3 className="text-xl font-serif text-accent-light font-bold">{npc.name}</h3>
-            {npc.isMonster && (
-              <div className="px-2 py-1 bg-red-900/30 text-red-300 text-xs rounded-full border border-red-800/50">
-                Monstre
+            {getCategoryBadge(npc.category) && (
+              <div className={cn(
+                "px-2 py-1 text-xs rounded-full border",
+                getCategoryBadge(npc.category).className
+              )}>
+                {getCategoryBadge(npc.category).label}
               </div>
             )}
           </div>
@@ -79,14 +85,6 @@ function NpcCardEnhanced({ npc, isOpen, onClick }) {
   );
 }
 
-function getFpVariant(fp) {
-  const num = parseFloat(fp);
-  if (num >= 10) return "Boss";
-  if (num >= 7) return "Combat";
-  if (num >= 4) return "Tension";
-  return "Social";
-}
-
 function NpcDetailsEnhanced({ npc }) {
   // Extraire les champs du bestiaire/PNJ
   const ca = typeof npc.ca === 'object' ? npc.ca?.total : npc.ca || npc.ac?.total || npc.ac;
@@ -116,6 +114,9 @@ function NpcDetailsEnhanced({ npc }) {
   const type = npc.type;
   const alignement = npc.alignment || npc.alignement;
   
+  // Récupérer les apparitions dans les scénarios
+  const occurrences = findNpcOccurrences(npc.id);
+
   return (
     <div className="relative z-10 mt-4 space-y-4 text-sm border-t border-surface-border/50 pt-4">
       {/* Header stats */}
@@ -295,6 +296,29 @@ function NpcDetailsEnhanced({ npc }) {
           <h4 className="text-xs uppercase tracking-widest text-content-subtle font-bold">Présentation</h4>
           <div className="bg-surface-raised/30 rounded-lg p-3 border border-surface-border/30 text-sm text-content-secondary">
             <p>{npc.role || npc.description}</p>
+          </div>
+        </div>
+      )}
+
+      {/* Apparitions dans les scénarios */}
+      {occurrences && occurrences.length > 0 && (
+        <div className="space-y-2">
+          <h4 className="text-xs uppercase tracking-widest text-content-subtle font-bold">Apparitions</h4>
+          <div className="bg-surface-raised/30 rounded-lg p-3 border border-surface-border/30">
+            <div className="flex flex-wrap gap-2">
+              {occurrences.map((occ, idx) => (
+                <Link
+                  key={idx}
+                  to={`/scenarios?scenario=${occ.scenarioId}&scene=${encodeURIComponent(occ.sceneTitle)}`}
+                  onClick={(e) => e.stopPropagation()}
+                  className="px-2 py-1 rounded border border-accent-muted/30 text-accent-light bg-accent-surface/20 hover:bg-accent-surface/40 text-xs transition-colors flex items-center gap-2"
+                  title={`${occ.scenarioTitle} · ${occ.actTitle} · ${occ.sceneTitle}`}
+                >
+                  <span className="font-mono font-bold text-accent-light/70">{occ.scenarioId}.{occ.actNumber}.{occ.sceneNumber}</span>
+                  <span className="truncate max-w-[150px]">{occ.sceneTitle}</span>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       )}
