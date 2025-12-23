@@ -19,20 +19,7 @@ export const zoneCimetiereEtSeuil = {
         "Ennemis : Pilleurs de tombes, morts-vivants, gardes nerveux.",
         "Usage : Scènes d'enquête, de garde de nuit, de premiers combats contre la nécromancie."
       ],
-      npcs: [
-        {
-          id: "gardien_cimetiere",
-          name: "Varek, gardien du cimetière",
-          role: "Employé fatigué qui a tout vu sans être cru.",
-          isEnemy: false,
-          details: [
-            "Motivation : Que les morts restent tranquilles et qu'on le laisse finir ses nuits en paix.",
-            "Attitude : Râleur mais lâche, préfère prévenir plutôt qu'intervenir.",
-            "Info : A vu des silhouettes transporter des corps entiers, pas des bijoux.",
-            "Usage : Premier témoin clé des événements du scénario 1."
-          ]
-        }
-      ]
+      npcIds: ["gardien_cimetiere"]
     },
     {
       id: "mausolee_seuil",
@@ -44,20 +31,7 @@ export const zoneCimetiereEtSeuil = {
         "Ennemis : Chevaliers morts-vivants, gardiens de l'ancien ordre.",
         "Usage : Point de non-retour de la campagne, ouverture du puits vers la Spirale."
       ],
-      npcs: [
-        {
-          id: "spectre_ancien_heros",
-          name: "Spectre d'un ancien héros nain",
-          role: "Gardien spectral du Seuil.",
-          isEnemy: true,
-          details: [
-            "Motivation : Empêcher quiconque de rouvrir le passage vers la Spirale.",
-            "Attitude : Hostile par défaut, mais peut être apaisé par des preuves de nécessité.",
-            "Combat : Combat redoutable, mais peut être évité par des rites appropriés.",
-            "Spoiler : Révèle des fragments de la véritable histoire de la première rencontre avec la Spirale."
-          ]
-        }
-      ]
+      npcIds: ["spectre_ancien_heros"]
     },
     {
       id: "mausolee_pont_secret",
@@ -69,19 +43,7 @@ export const zoneCimetiereEtSeuil = {
         "Danger : Gardiens gargouilles, charges explosives posées par Durnik.",
         "Usage : Lieu du sacrifice héroïque bloquant l'accès au Seuil."
       ],
-      npcs: [
-        {
-          id: "durnik_chef_mineur",
-          name: "Durnik, chef des Mineurs",
-          role: "Héros tragique tenant le pont.",
-          isEnemy: false,
-          details: [
-            "Motivation : Gagner du temps pour l'évacuation vers la Spirale.",
-            "Attitude : Résolu à mourir si nécessaire.",
-            "Usage : Offre sa vie pour faire sauter le pont, sauf intervention audacieuse."
-          ]
-        }
-      ]
+      npcIds: ["durnik_chef_mineur"]
     },
     {
       id: "puits_spirale_abime",
@@ -93,7 +55,7 @@ export const zoneCimetiereEtSeuil = {
         "Danger : Tourbillons d'énergie attirant armes et âmes, assauts d'ombres.",
         "Usage : Dernière étape avant la fuite vers la Spirale lors de la chute de la ville."
       ],
-      npcs: []
+      npcIds: []
     }
   ]
 };

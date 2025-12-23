@@ -79,6 +79,13 @@ export const bestiaryFp6 = [
       "Engage frontalement ; si lien de résonance perturbé, passe en mode défensif ou se replie en suivant les ordres du cœur de la Spirale.",
     butin: "Fragment cristallin résonant, schémas runiques érodés.",
     est_ennemi: true,
+    role: "Golem poreux aux veines de cristal, surveille les intrusions.",
+    details: [
+      "Motivation : Contenir la propagation de la Géode chantante.",
+      "Attitude : Attaque si le cristal de Thade résonne, sinon observe.",
+      "Indice : Réagit faiblement aux symboles nains de confinement.",
+      "Usage : Garde mobile pouvant être évitée par ruse ou négociation arcano-tech."
+    ],
   },
   {
     id: "grand_pretre_nain",

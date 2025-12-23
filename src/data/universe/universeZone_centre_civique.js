@@ -19,19 +19,7 @@ export const zoneCentreCivique = {
         "Dangers : Gardes du Conseil, mages assermentés, complots de Thade.",
         "Usage : Scènes de crise, déclarations de loi martiale, assassinats politiques."
       ],
-      npcs: [
-        {
-          id: "bourgmestre",
-          name: "Bourgmestre de Val-d'Ombre",
-          role: "Dirigeant officiel dépassé par les événements.",
-          isEnemy: false,
-          details: [
-            "Motivation : Maintenir une façade d'ordre et protéger la ville.",
-            "Attitude : Courtois mais influençable, cherche des alliés fiables.",
-            "Usage : Peut soutenir ou accuser les PJ selon les preuves et pressions."
-          ]
-        }
-      ]
+      npcIds: ["bourgmestre"]
     },
     {
       id: "hotel_de_ville_conseil",
@@ -43,19 +31,7 @@ export const zoneCentreCivique = {
         "Danger : Gardes du Conseil prêts à dégainer, mages de Thade dissimulés.",
         "Usage : Déclencher le massacre du Sommet et isoler les PJ politiquement."
       ],
-      npcs: [
-        {
-          id: "bourgmestre",
-          name: "Bourgmestre de Val-d'Ombre",
-          role: "Dirigeant sous pression extrême.",
-          isEnemy: false,
-          details: [
-            "Motivation : Éviter que la ville implose, quitte à suivre Thade.",
-            "Indice : Signatures forcées sur des décrets nocturnes.",
-            "Usage : Allié potentiel si convaincu de la trahison de Thade."
-          ]
-        }
-      ]
+      npcIds: ["bourgmestre"]
     },
     {
       id: "hotel_ville_place_conseil",
@@ -67,20 +43,7 @@ export const zoneCentreCivique = {
         "Ennemis : Gardes du Conseil, agitateurs payés, agents de Thade.",
         "Usage : Scènes de crise politique, déclarations de loi martiale, exécutions publiques."
       ],
-      npcs: [
-        {
-          id: "capitaine_garde_urbaine",
-          name: "Capitaine de la Garde Urbaine",
-          role: "Chef militaire chargé du maintien de l'ordre.",
-          isEnemy: true,
-          details: [
-            "Motivation : Garder la ville sous contrôle, quel qu'en soit le prix.",
-            "Attitude : Soupçonneux, voit les PJ comme des fauteurs de troubles potentiels.",
-            "Combat : Redoutable stratège avec de nombreux soldats sous ses ordres.",
-            "Spoiler : Instrumentalisé par Thade lors de la Nuit des Longs Couteaux."
-          ]
-        }
-      ]
+      npcIds: ["capitaine_garde_urbaine"]
     },
     {
       id: "rues_valdombre_nuit",
@@ -92,7 +55,7 @@ export const zoneCentreCivique = {
         "Tests : Discrétion / Survie urbaine pour éviter arrestations et rafles.",
         "Usage : Fuites nocturnes, purges, embuscades orchestrées par Thade."
       ],
-      npcs: []
+      npcIds: []
     },
     {
       id: "rues_valdombre_brume",
@@ -104,19 +67,7 @@ export const zoneCentreCivique = {
         "Danger : Éveil simultané de zombies et de golems de chair.",
         "Usage : Mettre en scène l'Éveil de la Nécropole et les premières pertes massives."
       ],
-      npcs: [
-        {
-          id: "capitaine_garde_urbaine",
-          name: "Capitaine de la Garde Urbaine",
-          role: "Commandant paniqué par l'ampleur du carnage.",
-          isEnemy: true,
-          details: [
-            "Motivation : Enfermer la situation, quitte à tirer sur les civils.",
-            "Indice : Reçoit des ordres cryptés portant le sceau de Thade.",
-            "Usage : Adversaire tragique qui peut être converti ou éliminé."
-          ]
-        }
-      ]
+      npcIds: ["capitaine_garde_urbaine"]
     },
     {
       id: "prison_conseil",
@@ -128,20 +79,7 @@ export const zoneCentreCivique = {
         "Ennemis : Geôliers brutaux, interrogateurs, mages assermentés.",
         "Usage : Faux procès, interrogatoires politiques, évasions spectaculaires."
       ],
-      npcs: [
-        {
-          id: "geolier_principal",
-          name: "Maître Joran, geôlier principal",
-          role: "Responsable de la prison, fidèle au Conseil.",
-          isEnemy: true,
-          details: [
-            "Motivation : Garder ses prisonniers enfermés coûte que coûte.",
-            "Attitude : Cruel avec les faibles, servile avec les puissants.",
-            "Combat : Préfère déléguer, mais connaît tous les pièges et passages de la prison.",
-            "Spoiler : Détient des prisonniers clés liés à la résistance naine."
-          ]
-        }
-      ]
+      npcIds: ["geolier_principal"]
     }
   ]
 };

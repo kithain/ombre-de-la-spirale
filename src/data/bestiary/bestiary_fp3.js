@@ -60,6 +60,12 @@ export const bestiaryFp3 = [
     tactiques: "Parle avant de frapper ; ordonne aux gardes, se replie si la situation dégénère.",
     butin: "Sceau du bourgmestre, carnet de contacts.",
     est_ennemi: false,
+    details: [
+      "Motivation : Maintenir une façade d'ordre et protéger la ville. Éviter que la ville implose, quitte à suivre Thade.",
+      "Attitude : Courtois mais influençable, cherche des alliés fiables.",
+      "Usage : Peut soutenir ou accuser les PJ selon les preuves. Allié potentiel si convaincu de la trahison de Thade.",
+      "Indice : Signatures forcées sur des décrets nocturnes."
+    ],
   },
   {
     id: "geolier_principal",
@@ -91,6 +97,12 @@ export const bestiaryFp3 = [
     tactiques: "Privilégie l’immobilisation ; appelle des renforts plutôt que d’engager seul.",
     butin: "Trousseau de clés, registre des prisonniers.",
     est_ennemi: false,
+    details: [
+      "Motivation : Garder ses prisonniers enfermés coûte que coûte.",
+      "Attitude : Cruel avec les faibles, servile avec les puissants.",
+      "Combat : Préfère déléguer, mais connaît tous les pièges et passages de la prison.",
+      "Spoiler : Détient des prisonniers clés liés à la résistance naine."
+    ],
   },
   {
     id: "marchand_gris",
@@ -153,6 +165,13 @@ export const bestiaryFp3 = [
     tactiques: "Soigne avant de combattre ; refuse les violences gratuites, peut se retirer s’il juge la cause injuste.",
     butin: "Symbole sacré terni, fioles de soins mineures.",
     est_ennemi: false,
+    role: "Religieux qui doute autant de ses dieux que de ses supérieurs.",
+    details: [
+      "Motivation : Trouver un sens à la souffrance qui s'abat sur Val-d'Ombre.",
+      "Attitude : Las, mais réceptif aux preuves concrètes apportées par les PJ.",
+      "Info : A entendu parler de visions liées à la Spirale chez certains fidèles.",
+      "Usage : Peut offrir un soutien moral, des soins et des rumeurs."
+    ],
   },
   {
     id: "chef_bandes_ruelles",
@@ -184,6 +203,13 @@ export const bestiaryFp3 = [
     tactiques: "Cherche l’avantage numérique, frappe vite puis se replie si l’opposition est solide ; appelle sa bande au moindre sifflet.",
     butin: "Bourse de racket, cimeterre ébréché.",
     est_ennemi: true,
+    role: "Petit seigneur du crime local.",
+    details: [
+      "Motivation : Contrôler les ruelles et racketter les marchands.",
+      "Attitude : Arrogant, déteste qu'on lui marche sur les pieds.",
+      "Combat : Entouré de voyous, connaît tous les raccourcis pour fuir.",
+      "Usage : Antagoniste récurrent ou allié forcé contre une menace plus grande."
+    ],
   },
   {
     id: "bourgmestre_valdombre",
@@ -246,6 +272,13 @@ export const bestiaryFp3 = [
     tactiques: "Tient la ligne pour protéger les mineurs, utilise le cri d’alarme pour regrouper.",
     butin: "Pioche lourde, plan des galeries, lampe à huile robuste.",
     est_ennemi: false,
+    role: "Nain pragmatique chargé de la sécurité des galeries.",
+    details: [
+      "Motivation : Renvoyer tout le monde vivant à la surface.",
+      "Attitude : Bourru, se méfie des aventuriers trop téméraires.",
+      "Info : Connaît les zones déjà 'maudites' de la mine.",
+      "Usage : Guide officieux pour les premières explorations."
+    ],
   },
   {
     id: "jaren_apprenti",
@@ -308,5 +341,12 @@ export const bestiaryFp3 = [
     tactiques: "Cherche à repousser ou prévenir plutôt qu’à se battre ; appelle la garde arcanique si menacé.",
     butin: "Clés des archives, grimoires de référence, glyphe d’alerte.",
     est_ennemi: false,
+    role: "Gardien sourcilleux des secrets arcaniques.",
+    details: [
+      "Motivation : Protéger les connaissances dangereuses, même contre le Conseil.",
+      "Attitude : Froid mais juste, respecte les pactes et les serments.",
+      "Info : Connaît l'existence de la Spirale et soupçonne Thade, sans pouvoir le prouver.",
+      "Prix : Exige un serment ou un sacrifice symbolique pour l'accès à certains savoirs."
+    ],
   },
 ];

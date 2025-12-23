@@ -1,5 +1,5 @@
-import { universeData } from "../data/universe/universe";
-import { scenariosData } from "../data/scenarios/scenarios";
+import { universeData, scenariosData, pnjPrincipaux, pnjEnnemis, bestiaryData } from '../data';
+import { findNpcById as findNpcInData, findNpcByName as findNpcByNameInData } from '../data';
 
 export function makeUniverseLink({ zoneId, locId, npcId }) {
   const params = new URLSearchParams();
@@ -10,16 +10,30 @@ export function makeUniverseLink({ zoneId, locId, npcId }) {
   return query ? `/univers?${query}` : "/univers";
 }
 
+/**
+ * Trouve un PNJ par ID dans les données unifiées
+ */
 export function findNpcById(npcId) {
+  // Combiner toutes les sources de PNJ
+  const allNpcs = [
+    ...(pnjPrincipaux || []).map(npc => ({ ...npc, source: 'principaux' })),
+    ...(pnjEnnemis || []).map(npc => ({ ...npc, source: 'ennemis' })),
+    ...(bestiaryData || []).map(npc => ({ ...npc, source: 'bestiary' }))
+  ];
+  
+  const npc = findNpcInData(npcId, allNpcs);
+  if (!npc) return null;
+  
+  // Chercher le lieu associé dans universe
   for (const zone of universeData.zones || []) {
     for (const loc of zone.locations || []) {
-      const npc = (loc.npcs || []).find((n) => n.id === npcId);
-      if (npc) {
-        return { npc, loc, zone };
+      if ((loc.npcIds || []).includes(npcId)) {
+        return { npc, loc, zone, source: npc.source };
       }
     }
   }
-  return null;
+  
+  return { npc, loc: null, zone: null, source: npc.source };
 }
 
 export function findNpcOccurrences(npcId) {
@@ -80,14 +94,55 @@ export function findLocationById(locId) {
 }
 
 export function findNpcLinkByName(name) {
-  const lower = name.toLowerCase();
-  for (const zone of universeData.zones || []) {
-    for (const loc of zone.locations || []) {
-      const npc = (loc.npcs || []).find((n) => n.name.toLowerCase() === lower);
-      if (npc) {
-        return makeUniverseLink({ zoneId: zone.id, locId: loc.id, npcId: npc.id });
-      }
+  // Combiner toutes les sources de PNJ
+  const allNpcs = [
+    ...(pnjPrincipaux || []),
+    ...(pnjEnnemis || []),
+    ...(bestiaryData || [])
+  ];
+  
+  const npc = findNpcByNameInData(name, allNpcs);
+  if (npc) {
+    const result = findNpcById(npc.id);
+    if (result?.zone && result?.loc) {
+      return makeUniverseLink({ zoneId: result.zone.id, locId: result.loc.id, npcId: npc.id });
     }
   }
   return null;
+}
+
+/**
+ * Récupère tous les PNJ associés à un lieu (via npcIds ou legacy npcs)
+ */
+export function getNpcsForLocation(location) {
+  const npcs = [];
+  const seen = new Set();
+  
+  // Combiner toutes les sources de PNJ
+  const allNpcs = [
+    ...(pnjPrincipaux || []),
+    ...(pnjEnnemis || []),
+    ...(bestiaryData || [])
+  ];
+  
+  // Nouveaux npcIds
+  (location.npcIds || []).forEach((id) => {
+    if (!seen.has(id)) {
+      const npc = findNpcInData(id, allNpcs);
+      if (npc) {
+        npcs.push(npc);
+        seen.add(id);
+      }
+    }
+  });
+  
+  // Legacy npcs[] (fallback)
+  (location.npcs || []).forEach((npc) => {
+    if (npc?.id && !seen.has(npc.id)) {
+      npcs.push(npc);
+      seen.add(npc.id);
+    }
+  });
+  
+  return npcs;
 }

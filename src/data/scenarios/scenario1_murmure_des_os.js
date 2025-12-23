@@ -15,7 +15,7 @@ export const scenario1 = {
           title: "Scène 1 : L'Offre du Prêtre",
           type: "Social",
           locationId: "auberge_pic_brise",
-          npcIds: ["thorgar_pretre_nain", "brand_aubergiste"],
+          npcIds: ["thorgar_pretre_nain", "aubergiste_pic_brise"],
           description: {
             sous_titre: "Ici, on respecte la bière et les ancêtres.",
             visuel:
@@ -80,7 +80,7 @@ export const scenario1 = {
           },
         },
         {
-          title: "Scène 3 : Les Pilleurs et l'Héritier",
+          title: "Scène 3 : Les Pilleurs",
           type: "Combat",
           locationId: "cimetiere_terrasse",
           npcIds: ["etudiant_renvoye", "brutes_cimetiere"],
@@ -157,7 +157,7 @@ export const scenario1 = {
           title: "Scène 1 : La Fraternité Dissoute",
           type: "Investigation",
           locationId: "universite_arcane",
-          npcIds: ["etudiant_bavard"],
+          npcIds: ["etudiant_universite"],
           description: {
             sous_titre: "L'Université est un labyrinthe de pierre blanche et de secrets.",
             visuel:

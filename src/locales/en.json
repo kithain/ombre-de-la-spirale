@@ -1,0 +1,19 @@
+{
+  "factions": {
+    "title": "Factions",
+    "subtitle": "The forces present in Val-d'Ombre",
+    "hierarchy": "Hierarchy",
+    "npcs": "NPCs"
+  },
+  "scenarios": {
+    "title": "The Book of Scenarios",
+    "subtitle": "The gods created death by negligence, it's a design flaw."
+  },
+  "universe": {
+    "title": "Universe",
+    "subtitle": "Discover the places and characters of Val-d'Ombre"
+  },
+  "search": {
+    "placeholder": "Search (NPCs, locations, scenarios...)"
+  }
+}

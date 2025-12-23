@@ -33,6 +33,13 @@ export const bestiaryFp4 = [
     tactiques: "Pose un glyphe pour couper une poursuite, frappe puis se replie. Panique si on détruit ses cartes.",
     butin: "Plans déformés de Val-d'Ombre, craies runiques.",
     est_ennemi: true,
+    role: "Source d'indices post-mortem (ou vivant, selon le timing).",
+    details: [
+      "Motivation : Cartographier l'impossible.",
+      "Indice : Journal décrivant des galeries qui s'allongent quand on ne les regarde pas.",
+      "Usage : Point de bascule vers la compréhension de l'architecture vivante de la Spirale.",
+      "Loot : Plans déformés mais précieux pour naviguer dans les profondeurs."
+    ],
   },
   {
     id: "capitaine_garde_urbaine",
@@ -64,6 +71,14 @@ export const bestiaryFp4 = [
     tactiques: "Tient la ligne, ordonne des charges ou barrages ; se replie en bon ordre.",
     butin: "Glaive, sifflet d’alarme, insigne de la garde.",
     est_ennemi: false,
+    role: "Chef militaire chargé du maintien de l'ordre.",
+    details: [
+      "Motivation : Garder la ville sous contrôle, quel qu'en soit le prix. Enfermer la situation, quitte à tirer sur les civils lors des crises.",
+      "Attitude : Soupçonneux, voit les PJ comme des fauteurs de troubles potentiels. Paniqué par l'ampleur du carnage surnaturel.",
+      "Combat : Redoutable stratège avec de nombreux soldats sous ses ordres.",
+      "Spoiler : Instrumentalisé par Thade lors de la Nuit des Longs Couteaux (reçoit des ordres cryptés).",
+      "Usage : Adversaire tragique qui peut être converti ou éliminé."
+    ],
   },
   {
     id: "durnik_chef_mineur",

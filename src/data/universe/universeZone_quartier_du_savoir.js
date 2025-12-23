@@ -19,20 +19,7 @@ export const zoneQuartierDuSavoir = {
         "Danger : Espions de Thade à l'affût de toute curiosité mal placée.",
         "Usage : Lieu de rencontres rapides avec différents érudits et étudiants."
       ],
-      npcs: [
-        {
-          id: "etudiante_cabale",
-          name: "Lyssia, étudiante de la cabale Nyx",
-          role: "Informatrice nerveuse sur les agissements de ses anciens camarades.",
-          isEnemy: false,
-          details: [
-            "Motivation : Se protéger de la disgrâce de la cabale et survivre à la purge.",
-            "Attitude : Méfiante envers les PJ liés au Temple-Forgeron.",
-            "Info : Connaît des entrées secondaires vers les laboratoires de la Tour des Mages.",
-            "Évolution : Peut devenir une alliée majeure ou une traîtresse, selon la façon dont les PJ la traitent."
-          ]
-        }
-      ]
+      npcIds: ["etudiante_cabale"]
     },
     {
       id: "tour_des_mages_toit",
@@ -44,19 +31,7 @@ export const zoneQuartierDuSavoir = {
         "Terrain : risque de chute, éclairs, gravité instable lors de la fusion.",
         "Climax : lieu de la confrontation contre Thade et la Spirale."
       ],
-      npcs: [
-        {
-          id: "kaelen_vampire",
-          name: "Kaelen, l'apprenti favori",
-          role: "Vampire mage, dernier rempart avant le sommet.",
-          isEnemy: true,
-          details: [
-            "Protecteur loyal de Thade, espère l'immortalité via la Spirale.",
-            "Contrôle des nuées d'ombres et des contre-sorts.",
-            "Peut être retourné par la promesse d'un pouvoir indépendant de Thade."
-          ]
-        }
-      ]
+      npcIds: ["kaelen_vampire"]
     },
     {
       id: "valdombre_sommet_tour_mage",
@@ -68,7 +43,7 @@ export const zoneQuartierDuSavoir = {
         "Danger : Gardes d'élite, champs de force instables, arrivée possible de Thade.",
         "Usage : Transition entre la Spirale et l'affrontement final à la surface."
       ],
-      npcs: []
+      npcIds: []
     },
     {
       id: "tour_des_mages",
@@ -80,44 +55,7 @@ export const zoneQuartierDuSavoir = {
         "Ennemis : Apprentis fanatisés, élémentaires liés, gardiens magiques.",
         "Climax : Devient théâtre du combat final contre Thade dans la campagne."
       ],
-      npcs: [
-        {
-          id: "thade_coren",
-          name: "Thade Coren",
-          role: "Antagoniste principal, professeur respecté en façade.",
-          isEnemy: true,
-          details: [
-            "Motivation : Fusionner avec la Spirale pour atteindre l'immortalité.",
-            "Masque : Froid, académique, se présente comme un allié rationnel.",
-            "Spoiler : Manipule les PJ dès les premiers scénarios en orientant leurs enquêtes.",
-            "Combat : Dans le final, utilise la Tour comme catalyseur d'énergie nécromantique."
-          ]
-        },
-        {
-          id: "archimage_defecteur",
-          name: "Archimage Défecteur",
-          role: "Ancien maître du Conseil, tente de saboter Thade de l'intérieur.",
-          isEnemy: false,
-          details: [
-            "Motivation : Stopper Thade avant la fusion avec la Spirale.",
-            "Attitude : Paranoïaque, exige des preuves de loyauté.",
-            "Pouvoir : Portails rapides, contre-mesures anti-nécromancie.",
-            "Usage : Peut fournir des clés de contournement dans la Tour."
-          ]
-        },
-        {
-          id: "magi_tuteur_loyal",
-          name: "Maître Arcaniste Loyaliste",
-          role: "Professeur resté fidèle à la Guilde, mais pas à Thade.",
-          isEnemy: true,
-          details: [
-            "Motivation : Protéger la Tour contre toute intrusion, PJ compris.",
-            "Attitude : Arrogant, déclenche des runes de défense sans sommation.",
-            "Pouvoir : Champs de force, glyphes de renvoi, serviteurs élémentaires.",
-            "Usage : Mini-boss ou négociateur si convaincu que Thade trahit la Guilde."
-          ]
-        }
-      ]
+      npcIds: ["thade_coren", "archimage_defecteur", "magi_tuteur_loyal"]
     },
     {
       id: "bureau_thade_coren",
@@ -130,20 +68,7 @@ export const zoneQuartierDuSavoir = {
         "Danger : Serviteurs spectraux, cristaux-judas reliés à la Spirale, pièges qui inversent la gravité.",
         "Usage : Pièce clé pour découvrir les complots de Thade, voler ses recherches ou affronter sa projection."
       ],
-      npcs: [
-        {
-          id: "thade_coren",
-          name: "Thade Coren",
-          role: "Maître de la Spirale, cerveau de la conspiration.",
-          isEnemy: true,
-          details: [
-            "Motivation : Finaliser la fusion avec la Spirale depuis ce poste de contrôle.",
-            "Attitude : Faussement cordial, toujours en train de jauger les PJ.",
-            "Pouvoir : Peut canaliser l'énergie des pylônes de la Tour directement dans la pièce.",
-            "Indice : Conservation méticuleuse de copies des lettres scellées envoyées aux factions."
-          ]
-        }
-      ]
+      npcIds: ["thade_coren"]
     },
     {
       id: "universite_arcane",
@@ -155,20 +80,8 @@ export const zoneQuartierDuSavoir = {
         "Ennemis : Bibliothécaires zélés, sorts de défense animant les livres et les étagères.",
         "Loot : Grimoires, parchemins de sorts, notes de recherches compromettantes."
       ],
-      npcs: [
-        {
-          id: "bibliothecaire_interdits",
-          name: "Maître Selvar, gardien des Archives Interdites",
-          role: "Gardien sourcilleux des secrets arcaniques.",
-          isEnemy: false,
-          details: [
-            "Motivation : Protéger les connaissances dangereuses, même contre le Conseil.",
-            "Attitude : Froid mais juste, respecte les pactes et les serments.",
-            "Info : Connaît l'existence de la Spirale et soupçonne Thade, sans pouvoir le prouver.",
-            "Prix : Exige un serment ou un sacrifice symbolique pour l'accès à certains savoirs."
-          ]
-        }
-      ]
+      // Nouveau système unifié : IDs vers pnjPrincipaux/pnjEnnemis
+      npcIds: ["etudiant_universite", "bibliothecaire_interdits"]
     },
     {
       id: "place_marche_noir",
@@ -180,20 +93,7 @@ export const zoneQuartierDuSavoir = {
         "Ennemis potentiels : Voleurs, assassins, espions.",
         "Loot : Composants nécromantiques, artefacts de la Spirale, informations vendues au plus offrant."
       ],
-      npcs: [
-        {
-          id: "marchand_gris",
-          name: "Le Marchand Gris",
-          role: "Vendeur mystérieux d'objets dangereux.",
-          isEnemy: true,
-          details: [
-            "Motivation : L'appât du gain et une fascination malsaine pour les reliques de la Spirale.",
-            "Attitude : Poli, presque amical, mais toujours en train d'évaluer la valeur des PJ.",
-            "Spoiler : A déjà vendu du matériel à la cabale d'apprentis nécromanciens.",
-            "Usage : Peut fournir des artefacts puissants au prix de conséquences lourdes."
-          ]
-        }
-      ]
+      npcIds: ["marchand_gris"]
     }
   ]
 };

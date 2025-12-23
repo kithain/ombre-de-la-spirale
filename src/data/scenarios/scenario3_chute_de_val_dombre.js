@@ -108,7 +108,7 @@ export const scenario3 = {
           title: "Scène 5 : Le Temple-Forteresse",
           type: "Regroupement",
           locationId: "temple_forgeron",
-          npcIds: ["thorgar_pretre_nain", "durnik_guilde_mineurs"],
+          npcIds: ["thorgar_pretre_nain", "durnik_chef_mineur"],
           details: [
             "Dernier bastion libre.",
             "Réfugiés barricadés.",
@@ -125,7 +125,7 @@ export const scenario3 = {
           title: "Scène 1 : Fortification",
           type: "Stratégie",
           locationId: "temple_moradin_enceinte",
-          npcIds: ["thorgar_pretre_nain", "durnik_guilde_mineurs"],
+          npcIds: ["thorgar_pretre_nain", "durnik_chef_mineur"],
           details: [
             "Organiser la défense intérieure.",
             "Atout : Explosifs de mine stockés dehors.",

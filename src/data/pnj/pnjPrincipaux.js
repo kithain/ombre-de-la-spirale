@@ -1,5 +1,7 @@
+import { createPnj } from "./pnjTemplate";
+
 // PNJ principaux : personnages à multiples interactions (quête, commerce, romance, intrigue)
-export const pnjPrincipaux = [
+const pnjPrincipauxRaw = [
   {
     id: "thade_coren",
     name: "Thade Coren",
@@ -38,6 +40,12 @@ export const pnjPrincipaux = [
     isEnemy: false,
     antagonist: true,
     role: "Antagoniste principal, double jeu : mécène puis manipulateur.",
+    details: [
+      "Motivation : Fusionner avec la Spirale pour atteindre l'immortalité.",
+      "Masque : Froid, académique, se présente comme un allié rationnel.",
+      "Spoiler : Manipule les PJ dès les premiers scénarios en orientant leurs enquêtes.",
+      "Combat : Dans le final, utilise la Tour comme catalyseur d'énergie nécromantique."
+    ],
     tactical: {
       bookReference: "Bestiaire : Dossier 'Thade Coren' (Chap. Manipulations & Spirale)",
       scenarioContext:
@@ -106,6 +114,12 @@ export const pnjPrincipaux = [
     loot: "Marteau de guerre gravé, reliques bénites, anneau d'acier runique (+1 CA naturelle)",
     isEnemy: false,
     role: "Allié moral, pilier du Temple.",
+    details: [
+      "Motivation : Protéger la mémoire des morts, empêcher l'ouverture de la Spirale et sauver les civils.",
+      "Attitude : Grave, inflexible sur les questions sacrées, mais reconnaissant envers les PJ.",
+      "Usage : Point d'ancrage moral, soins, informations secrètes. Déclenche le 'Dilemme de Thorgar'.",
+      "Lien : Premier à parler de la 'maladie' de la montagne."
+    ],
     tactical: {
       bookReference: "Bestiaire : Portrait 'Thorgar, prêtre du Temple-Forgeron'",
       scenarioContext:
@@ -131,7 +145,7 @@ export const pnjPrincipaux = [
     },
   },
   {
-    id: "brand_aubergiste",
+    id: "aubergiste_pic_brise",
     name: "Brand, aubergiste du Pic Brisé",
     size: "Moyen",
     type: "Humanoïde (Humain)",
@@ -162,9 +176,74 @@ export const pnjPrincipaux = [
     loot: "Clés des chambres, petite caisse de pièces, liste de clients.",
     isEnemy: false,
     role: "Hôte bien informé qui entend toutes les conversations.",
+    details: [
+      "Motivation : Protéger sa réputation et éviter les ennuis avec la garde.",
+      "Attitude : Jovial en public, prudent en privé ; observe beaucoup.",
+      "Usage : Source de rumeurs, point de contact pour guider les PJ vers leurs premières pistes."
+    ],
   },
   {
-    id: "durnik_guilde_mineurs",
+    id: "etudiant_universite",
+    name: "Althis, apprenti archiviste",
+    size: "Moyen",
+    type: "Humanoïde (humain)",
+    alignment: "NB",
+    fp: 1,
+    environment: "Université de Magie de Val-d'Ombre – Cour centrale",
+    organization: "Solitaire (parfois avec 1-2 condisciples)",
+    initiative: "+1",
+    senses: "Perception +4",
+    ac: { total: 12, touch: 11, flatFooted: 11 },
+    hp: 9,
+    hd: "2d8",
+    saves: { fort: "+1", ref: "+1", will: "+3" },
+    speed: "9 m",
+    attack: "bâton runique +1 (1d6 non létal)",
+    fullAttack: "bâton runique +1 (1d6 non létal)",
+    space: "1,5 m",
+    reach: "1,5 m",
+    specialAttacks: [],
+    specialQualities: [
+      "Mémoire prodigieuse (+2 Collecte d'infos sur l'Université)",
+      "Badge discret de la Fraternité Nyx (permet d'accéder aux couloirs étudiants la nuit)"
+    ],
+    abilities: { str: 10, dex: 12, con: 12, int: 14, wis: 12, cha: 11 },
+    skills: "Diplomatie +6, Collecte d'infos +7, Connaissance (arcane) +9, Psychologie +4",
+    feats: "Science de l'initiative, Don de négociateur",
+    tactics:
+      "Évite toute violence. Préfère parlementer, partager des rumeurs ou accompagner les PJ jusqu'au bureau de Thade si convaincu.",
+    loot: "Clé de dortoir en argent, carnet de rumeurs griffonnées, badge de Nyx (preuve implicante).",
+    isEnemy: false,
+    role: "Étudiant inquiet qui sert de premier point de contact avec l'Université.",
+    tactical: {
+      bookReference: "Scénario 1 – Acte 2, Scène 1 : La Fraternité Dissoute",
+      scenarioContext:
+        "Althis craint encore la Fraternité Nyx mais sait que Thade cache des secrets. Il accepte d'aider les PJ si ceux-ci restent discrets.",
+      spells: [],
+      specialActions: [
+        {
+          name: "Guide improvisé",
+          details:
+            "Peut accorder un bonus circonstanciel de +2 aux tests de Diplomatie ou de Collecte d'infos à l'Université s'il accompagne les PJ."
+        },
+        {
+          name: "Rumeurs étouffées",
+          details:
+            "Sur un test de Diplomatie DD 15 réussi par les PJ, Althis partage des rumeurs ciblant directement Thade Coren."
+        }
+      ],
+      tacticFeats: [
+        {
+          name: "Science de l'initiative",
+          details: "Toujours le premier à parler pour éviter que la garde universitaire ne s'en mêle."
+        }
+      ],
+      tacticSummary:
+        "Tente de calmer toute tension et oriente les PJ vers le bureau de Thade après les avoir mis en garde contre la surveillance du Conseil."
+    },
+  },
+  {
+    id: "durnik_chef_mineur",
     name: "Durnik, chef de la Guilde des Mineurs",
     size: "Moyen",
     type: "Humanoïde (humain)",
@@ -193,6 +272,13 @@ export const pnjPrincipaux = [
     loot: "Hache lourde runique, carnet de codes des tunnels, pierre de tonnerre",
     isEnemy: false,
     role: "Chef de guilde, ouvre ou ferme l'accès aux mines.",
+    details: [
+      "Motivation : Protéger les mineurs de la 'pierre malade' et des décisions du Conseil.",
+      "Attitude : Bourru mais honnête. Respecte les PJ qui prennent des risques pour les siens.",
+      "Utilisation : Donneur de quêtes pour les scénarios liés à la Mine et à la Spirale.",
+      "Test social : Difficile à convaincre si les PJ sont trop proches des Mages ou du Conseil.",
+      "Au Pont Secret : Résolu à mourir pour gagner du temps lors de l'évacuation (sacrifice héroïque)."
+    ],
     tactical: {
       bookReference: "Bestiaire : Dossier 'Durnik, chef des mineurs' (Actes 2-3)",
       scenarioContext:
@@ -248,6 +334,12 @@ export const pnjPrincipaux = [
     loot: "Épée longue gravée, plastron bleu nuit, sceau du Temple",
     isEnemy: false,
     role: "Officier pragmatique, pivot entre temple et civils.",
+    details: [
+      "Motivation : Maintenir l'ordre et éviter une guerre civile ouverte.",
+      "Attitude : Suspicion envers les PJ impliqués dans trop d'incidents.",
+      "Combat : Peut devenir un ennemi direct si les PJ se rangent ouvertement contre le Conseil.",
+      "Spoiler : Manipulé par des ordres falsifiés provenant de la faction de Thade."
+    ],
     tactical: {
       bookReference: "Bestiaire : 'Capitaine de la garde du Temple' (Quartier du Savoir)",
       scenarioContext:
@@ -511,4 +603,42 @@ export const pnjPrincipaux = [
         "Privilégie la prévention : avertit avant d’attaquer, soutient les PJ contre les profanations, puis se replie dans le mausolée si submergé.",
     },
   },
+  {
+    id: "archimage_defecteur",
+    name: "Archimage Défecteur",
+    size: "Moyen",
+    type: "Humanoïde (Humain)",
+    alignment: "N",
+    fp: 9,
+    environment: "Quartier du Savoir – Tour des Mages (cachette)",
+    organization: "Solitaire",
+    initiative: "+2",
+    senses: "Vision dans le noir (sort), Détection +10",
+    ac: { total: 18, touch: 12, flatFooted: 16 },
+    hp: 45,
+    hd: "9d4+18",
+    saves: { fort: "+5", ref: "+5", will: "+9" },
+    speed: "9 m",
+    attack: "Bâton de force +5 (1d6+1)",
+    fullAttack: "Bâton de force +5 (1d6+1)",
+    space: "1,5 m",
+    reach: "1,5 m",
+    specialAttacks: ["Sorts de Magicien NLS 9"],
+    specialQualities: ["Contre-mesures anti-nécromancie", "Portails Rapides"],
+    abilities: { str: 8, dex: 14, con: 14, int: 19, wis: 14, cha: 10 },
+    skills: "Art de la magie +16, Connaissances (arcanes) +16, Connaissances (plans) +14, Décryptage +12",
+    feats: "Ecole Renforcée (Abjuration), Extension d'effet, Magie de Guerre",
+    tactics: "Reste invisible, observe, et n'intervient que pour saboter un rituel ou fuir via un portail.",
+    loot: "Parchemin de Dissipation Suprême, Clé de contournement des protections de la Tour.",
+    isEnemy: false,
+    role: "Ancien maître du Conseil, tente de saboter Thade de l'intérieur.",
+    details: [
+      "Motivation : Stopper Thade avant la fusion avec la Spirale.",
+      "Attitude : Paranoïaque, exige des preuves de loyauté.",
+      "Pouvoir : Portails rapides, contre-mesures anti-nécromancie.",
+      "Usage : Peut fournir des clés de contournement dans la Tour."
+    ],
+  }
 ];
+
+export const pnjPrincipaux = pnjPrincipauxRaw.map((npc) => createPnj(npc));

@@ -1,0 +1,19 @@
+{
+  "factions": {
+    "title": "Factions",
+    "subtitle": "Les forces en présence à Val-d'Ombre",
+    "hierarchy": "Hiérarchie",
+    "npcs": "PNJ"
+  },
+  "scenarios": {
+    "title": "Le Livre des Scénarios",
+    "subtitle": "Les dieux ont créé la mort par négligence, c'est un défaut de conception."
+  },
+  "universe": {
+    "title": "Univers",
+    "subtitle": "Découvrez les lieux et personnages de Val-d'Ombre"
+  },
+  "search": {
+    "placeholder": "Rechercher (PNJ, lieux, scénarios...)"
+  }
+}

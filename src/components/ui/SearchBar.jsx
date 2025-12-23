@@ -2,8 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Search } from "lucide-react";
 import { cn } from "../../utils/cn";
+import { useTranslation } from "react-i18next";
 
 function SearchBar({ value, onChange, placeholder, className }) {
+  const { t } = useTranslation();
+  
   return (
     <div
       className={cn(
@@ -17,9 +20,9 @@ function SearchBar({ value, onChange, placeholder, className }) {
         type="search"
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        placeholder={placeholder}
+        placeholder={placeholder || t("search.placeholder")}
         className="bg-transparent outline-none w-full text-sm text-content placeholder:text-content-subtle"
-        aria-label={placeholder || "Recherche"}
+        aria-label={placeholder || t("search.placeholder")}
       />
     </div>
   );

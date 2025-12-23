@@ -6,22 +6,23 @@ import SectionTitle from "../../ui/SectionTitle";
 import Card from "../../ui/Card";
 import ZoneList from "./ZoneList";
 import LocationDetails from "./LocationDetails";
-import { useLocalStorage } from "../../../hooks/useLocalStorage";
+import { usePersistentState } from "../../../hooks/usePersistentState";
+
+import { getNpcsForLocation } from "../../../utils/dataLinks";
 
 function UniverseView() {
   const zones = universeData.zones || [];
-  const [selectedZoneId, setSelectedZoneId] = useLocalStorage(
+  const [selectedZoneId, setSelectedZoneId] = usePersistentState(
     "universe-zone",
     zones[0]?.id || null
   );
-  const [selectedLocationId, setSelectedLocationId] = useLocalStorage("universe-loc", null);
-  const [selectedNpcId, setSelectedNpcId] = useLocalStorage("universe-pnj", null);
+  const [selectedLocationId, setSelectedLocationId] = usePersistentState("universe-loc", null);
+  const [selectedNpcId, setSelectedNpcId] = usePersistentState("universe-pnj", null);
   const [searchParams] = useSearchParams();
 
   const selectedZone = zones.find((z) => z.id === selectedZoneId) || zones[0] || null;
   const locations = selectedZone?.locations || [];
 
-  // Sync avec les query params (zone, loc, pnj) pour la navigation depuis la recherche
   useEffect(() => {
     const zoneParam = searchParams.get("zone");
     const locParam = searchParams.get("loc");
@@ -35,7 +36,9 @@ function UniverseView() {
           const loc = zone.locations?.find((l) => String(l.id) === locParam);
           setSelectedLocationId(loc ? loc.id : null);
           if (loc && npcParam) {
-            const npc = loc.npcs?.find((n) => String(n.id) === npcParam);
+            // Utiliser getNpcsForLocation pour récupérer la liste complète (npcIds + legacy)
+            const locationNpcs = getNpcsForLocation(loc);
+            const npc = locationNpcs.find((n) => String(n.id) === npcParam);
             setSelectedNpcId(npc ? npc.id : null);
           } else {
             setSelectedNpcId(null);

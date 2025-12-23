@@ -19,20 +19,7 @@ export const zoneProfondeursMine = {
         "Ennemis : Monstres fouisseurs, créatures attirées par la magie de la Spirale.",
         "Usage : Lieu d'introduction à la menace surnaturelle dans les profondeurs."
       ],
-      npcs: [
-        {
-          id: "contremaitre_nain_mine",
-          name: "Grelm, contremaître nain",
-          role: "Nain pragmatique chargé de la sécurité des galeries.",
-          isEnemy: false,
-          details: [
-            "Motivation : Renvoyer tout le monde vivant à la surface.",
-            "Attitude : Bourru, se méfie des aventuriers trop téméraires.",
-            "Info : Connaît les zones déjà 'maudites' de la mine.",
-            "Usage : Guide officieux pour les premières explorations."
-          ]
-        }
-      ]
+      npcIds: ["contremaitre_nain_mine"]
     },
     {
       id: "galeries_silencieuses",
@@ -44,20 +31,7 @@ export const zoneProfondeursMine = {
         "Ennemis : Monstres rouilleurs, ankhegs, morts oubliés.",
         "Usage : Exploration horrifique et pistes vers la paroi de la Spirale."
       ],
-      npcs: [
-        {
-          id: "geometre_fou",
-          name: "Cadavre du géomètre fou",
-          role: "Source d'indices post-mortem.",
-          isEnemy: false,
-          details: [
-            "Motivation (de son vivant) : Cartographier l'impossible.",
-            "Indice : Journal décrivant des galeries qui s'allongent quand on ne les regarde pas.",
-            "Usage : Point de bascule vers la compréhension de l'architecture vivante de la Spirale.",
-            "Loot : Plans déformés mais précieux pour naviguer dans les profondeurs."
-          ]
-        }
-      ]
+      npcIds: ["geometre_fou"]
     }
   ]
 };

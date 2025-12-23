@@ -19,8 +19,9 @@ import { bestiaryFp17 } from "./bestiary_fp17";
 import { bestiaryFp18 } from "./bestiary_fp18";
 import { bestiaryFp19 } from "./bestiary_fp19";
 import { bestiaryFp20 } from "./bestiary_fp20";
+import { createPnj } from "../pnj/pnjTemplate";
 
-export const bestiaryData35FR = [
+const bestiaryRaw = [
   ...bestiaryFp1,
   ...bestiaryFp2,
   ...bestiaryFp3,
@@ -42,3 +43,5 @@ export const bestiaryData35FR = [
   ...bestiaryFp19,
   ...bestiaryFp20,
 ];
+
+export const bestiaryData35FR = bestiaryRaw.map((entry) => createPnj({ ...entry, est_ennemi: true }));

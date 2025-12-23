@@ -29,5 +29,12 @@ export const bestiaryFp5 = [
     tactiques: "Teste les intrus par le hurlement, frappe puis se replie dans les murs ; disparaît si on honore correctement la relique.",
     butin: "Reliques héroïques, fragments d’armes naines.",
     est_ennemi: true,
+    role: "Gardien spectral du Seuil.",
+    details: [
+      "Motivation : Empêcher quiconque de rouvrir le passage vers la Spirale.",
+      "Attitude : Hostile par défaut, mais peut être apaisé par des preuves de nécessité.",
+      "Combat : Combat redoutable, mais peut être évité par des rites appropriés.",
+      "Spoiler : Révèle des fragments de la véritable histoire de la première rencontre avec la Spirale."
+    ],
   },
 ];

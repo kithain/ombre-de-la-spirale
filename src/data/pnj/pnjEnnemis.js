@@ -1,5 +1,7 @@
+import { createPnj } from "./pnjTemplate";
+
 // PNJ ennemis : adversaires déclarés avec personnalité et interactions sociales possibles
-export const pnjEnnemis = [
+const pnjEnnemisRaw = [
   {
     id: "sujet_zero",
     name: "Sujet Zéro",
@@ -94,6 +96,12 @@ export const pnjEnnemis = [
     butin: "Lettre scellée, fiole de poison, masque rituel",
     est_ennemi: true,
     role: "Tueur à gages lié aux complots urbains.",
+    details: [
+      "Motivation : L'argent et le frisson du danger.",
+      "Attitude : Ne parle presque jamais, communique par gestes.",
+      "Combat : Spécialiste des attaques surprise et des chutes mortelles.",
+      "Spoiler : Peut être lié à une faction que les PJ croyaient alliée."
+    ],
     tactical: {
       bookReference: "Bestiaire urbain : 'Assassin Masqué' (Ruelles / Ombres)",
       scenarioContext:
@@ -123,7 +131,7 @@ export const pnjEnnemis = [
         "Frappe depuis les ombres, vise les cibles isolées, peut négocier ou s'enfuir si surpris.",
     },
   },
-  {
+    {
     id: "etudiant_renvoye",
     name: "Jaren",
     size: "Moyen",
@@ -132,59 +140,233 @@ export const pnjEnnemis = [
     fp: 1,
     environment: "Cimetière des Terrasses, Université de Magie",
     organization: "Solitaire (accompagné de 3 brutes)",
-    initiative: "+6", // +2 Dex +4 Science de l'Init
-    senses: "Perception +2",
-    ac: "14 (+2 Dex, +2 Armure de cuir) ; contact 12, pris au dépourvu 12",
-    hp: 11,
-    dv: "2d4+2", // Magicien Niveau 2 (plus cohérent pour un étudiant)
-    js: { vig: "+1", ref: "+2", vol: "+3" }, // Volonté augmentée (classe de lanceur)
+    initiative: "+6", // +2 Dex +4 Science de l'Initiative
+    senses: "Détection +2",
+    ac: "12 (+2 Dex) ; contact 12, pris au dépourvu 10", // pas d’armure (magicien)
+    hp: 5,
+    dv: "1d4+1", // Magicien Niv 1
+    js: { vig: "+1", ref: "+2", vol: "+2" },
     vit: "9 m",
-    abb: "+1",
-    grp: "+2",
-    attaque: "Bâton +2 (1d6+1) ou Dague +3 (1d4+1)",
-    att_complete: "Bâton +2 (1d6+1) ou Dague +3 (1d4+1)",
+    abb: "+0",
+    grp: "+1",
+    attaque: "Dague +1 (1d4+1) ou Bâton +1 (1d6+1)",
+    att_complete: "Dague +1 (1d4+1) ou Bâton +1 (1d6+1)",
     espace: "1,5 m",
     allonge: "1,5 m",
+
+    // En 3.5, les dons ne vont pas dans att_spé
     att_spé: [
-      "Sort mineur 3/jour (Rayon de givre +3 toucher à distance, 1d3 froid)", 
-      "Tactique de groupe (+1 att si adjacent à un allié)"
+      "Sort mineur à volonté (Rayon de givre +3 toucher à distance, 1d3 froid)",
+      "Couverture : +4 CA contre les attaques à distance derrière une stèle (terrain)",
     ],
     qual_spé: [
       "Science académique (+2 en Connaissances : arcanes)",
-      "Vœu de Silence (Inconscient) : Si interrogé sur le Maître, subit un sort de Censure fatal."
+      "Vœu de Silence (Inconscient) : si interrogé sur le Maître, déclenchement de censure (élément de scénario)",
     ],
-    carac: { for: 12, dex: 14, con: 12, int: 15, sag: 10, cha: 8 }, // Int augmentée pour un futur nécromancien
-    compétences: "Connaissances (arcanes) +9, Discrétion +6, Art de la magie +7, Perception +2",
-    dons: "Science de l'Initiative, Incantation rapide (parchemin)",
+
+    carac: { for: 12, dex: 14, con: 12, int: 15, sag: 10, cha: 8 },
+
+    compétences:
+      "Connaissances (arcanes) +9, Art de la magie +6, Discrétion +6, Détection +2",
+    dons: "Science de l'Initiative, Écriture de parchemins", // (bonus de magicien)
+
     tactiques:
-      "Jaren reste à l'arrière, utilisant les stèles comme abri (couverture +4 CA). Il utilise 'Rayon de Givre' pour ralentir le PJ le plus rapide. Il privilégie la fuite dès qu'une brute tombe.",
-    butin: "Broche en argent de la fraternité Nyx, Outils chirurgicaux (estampillés Université), Liste de 'Sujets' (Nains), 1 parchemin de Rayon affaiblissant.",
+      "Reste derrière les brutes. Tour 1 : lance Armure de mage si menacé (CA 16 ensuite). Sinon, Projectile magique sur la cible la plus blessée. Utilise Rayon de givre pour harceler et reculer. Cherche à fuir dès qu’une brute tombe.",
+
+    // Petit rappel “buff” si Armure de mage active (pour ton moteur, si tu veux gérer)
+    buffs: [
+      {
+        name: "Armure de mage",
+        effect: "+4 CA d’armure (CA passe à 16)",
+        duration: "1 heure",
+      },
+    ],
+
+    // Sorts “safe” (pas de Sommeil/Color Spray qui peuvent retourner un combat niveau 1)
+    spells_prepared: {
+      niveau0: ["Rayon de givre", "Détection de la magie", "Lumière"],
+      niveau1: ["Armure de mage", "Projectile magique"],
+    },
+
+    butin:
+      "Broche en argent (fraternité Nyx), Outils chirurgicaux (Université), Liste de 'Sujets' (Nains), 1 parchemin de Rayon affaiblissant",
     est_ennemi: true,
     role: "Étudiant désespéré et manipulé, pivot de l'enquête entre le Cimetière et l'Université.",
     tactical: {
       bookReference: "Scénario 1 – Acte 1, Scène 3 : L'Interrogatoire interrompu",
       scenarioContext:
-        "Membre junior de la Fraternité Nyx. Il est terrifié par Thade Coren mais obsédé par ses recherches sur la nécromancie.",
+        "Membre junior de la Fraternité Nyx. Terrifié par Thade Coren, mais obsédé par ses recherches.",
       spells: [
         {
           name: "Rayon de givre",
-          details: "+3 toucher à distance, 1d3 froid ; réduit la vitesse de la cible de 1,5m pour 1 round.",
+          details: "+3 toucher à distance, 1d3 froid.",
+        },
+        {
+          name: "Projectile magique",
+          details: "1 projectile (1d4+1), pas de JS.",
+        },
+        {
+          name: "Armure de mage",
+          details: "+4 CA d’armure, durée 1 heure.",
         },
       ],
       specialActions: [
         {
           name: "Appel à l'aide",
-          details: "Si Jaren tombe à moins de 5 PV, il offre sa rédition en échange de sa vie, déclenchant potentiellement la scène 4 de l'Acte 1.",
-        },
-      ],
-      tacticFeats: [
-        {
-          name: "Science de l'initiative",
-          details: "Agit presque toujours en premier pour lancer un sort de diversion ou se cacher.",
+          details:
+            "Si Jaren tombe à 3 PV ou moins, il tente de se rendre/fuir et marchande sa vie.",
         },
       ],
       tacticSummary:
-        "Utilise le terrain (tombes) pour bloquer les lignes de vue. Ne cherche pas le corps à corps. S'il est acculé, il pleure et supplie, révélant sa nature de lâche manipulé.",
+        "Terrain + brutes = écran. Jaren n’est pas un duelliste : il pique, recule, puis tente la fuite.",
     },
+  },
+  {
+    id: "contremaitre_humain",
+    name: "Varrus, contremaître humain",
+    size: "Moyen",
+    type: "Humanoïde (Humain)",
+    alignment: "LE",
+    fp: 3,
+    environment: "Quartier des Mineurs – Place Centrale",
+    organization: "Solitaire (avec 2 gardes)",
+    initiative: "+1",
+    senses: "Perception +5",
+    ac: { total: 16, touch: 11, flatFooted: 15 },
+    hp: 38,
+    hd: "5d8+10",
+    saves: { fort: "+4", ref: "+2", will: "+4" },
+    speed: "9 m",
+    attack: "Fouet +6 (1d3 non létal ou létal)",
+    fullAttack: "Fouet +6 (1d3)",
+    space: "1,5 m",
+    reach: "4,5 m (fouet)",
+    specialAttacks: ["Désarmement (Amélioré)"],
+    specialQualities: ["Autorité Tyranique (+2 Intimidation sur les mineurs)"],
+    abilities: { str: 14, dex: 12, con: 14, int: 12, sag: 10, cha: 14 },
+    skills: "Intimidation +10, Psychologie +6, Profession (contremaître) +8",
+    feats: "Maniement du fouet, Expertise du combat",
+    tactics:
+      "Reste derrière ses gardes, utilise son fouet pour désarmer ou faire trébucher les meneurs.",
+    loot: "Fouet de maître, liste noire des mineurs, lettre scellée (ordre de Thade).",
+    isEnemy: true,
+    role: "Intermédiaire entre le Conseil et les mineurs.",
+    details: [
+      "Motivation : Maintenir la production coûte que coûte pour conserver ses privilèges.",
+      "Attitude : Méprisant envers les Nains, agressif envers les PJ qui remettent en cause l'autorité.",
+      "Combat : Peut devenir un antagoniste lors d'une émeute ou d'un piquet de grève qui dégénère.",
+      "Indice : Reçoit des ordres indirectement liés à Thade via des lettres scellées."
+    ],
+  },
+  {
+    id: "patrouille_mixte_conseil",
+    name: "Patrouille Mixte du Conseil",
+    size: "Moyen",
+    type: "Humanoïde (Humain/Nain)",
+    alignment: "LN",
+    fp: 4,
+    environment: "Quartier des Mineurs – Allée des Artisans",
+    organization: "Escouade (4 gardes)",
+    initiative: "+0",
+    senses: "Perception +4",
+    ac: { total: 17, touch: 10, flatFooted: 17 },
+    hp: 30,
+    hd: "4d10+8",
+    saves: { fort: "+6", ref: "+1", will: "+1" },
+    speed: "6 m",
+    attack: "Hallebarde +6 (1d10+2)",
+    fullAttack: "Hallebarde +6 (1d10+2)",
+    space: "1,5 m",
+    reach: "3 m",
+    specialAttacks: ["Formation de mur (Couverture +4 si adjacents)"],
+    specialQualities: [],
+    abilities: { str: 15, dex: 10, con: 14, int: 10, wis: 10, cha: 10 },
+    skills: "Détection +5, Intimidation +6",
+    feats: "Robustesse, Arme de prédilection (hallebarde)",
+    tactics:
+      "Barricadent les ruelles, utilisent l'allonge des hallebardes pour tenir la foule à distance.",
+    loot: "Uniforme du Conseil, ordre d'arrestation vierge, cristal relais.",
+    isEnemy: true,
+    role: "Escouade composite chargée de briser la résistance artisanale.",
+    details: [
+      "Motivation : Appliquer les ordres de Thade sous couvert du Conseil.",
+      "Tactiques : Barricader les ruelles, utiliser des immobilisations magiques.",
+      "Indice : Le chef porte un cristal relais identique à celui de Thade."
+    ],
+  },
+  {
+    id: "garde_portail_mine",
+    name: "Escouade de Gardes du Portail",
+    size: "Moyen",
+    type: "Humanoïde (Humain)",
+    alignment: "N",
+    fp: 3,
+    environment: "Quartier des Mineurs – Entrée de la Mine",
+    organization: "Groupe (3-5)",
+    initiative: "+1",
+    senses: "Perception +5",
+    ac: { total: 16, touch: 11, flatFooted: 15 },
+    hp: 26,
+    hd: "3d10+6",
+    saves: { fort: "+5", ref: "+2", will: "+1" },
+    speed: "9 m",
+    attack: "Épée courte +5 (1d6+2)",
+    fullAttack: "Épée courte +5 (1d6+2)",
+    space: "1,5 m",
+    reach: "1,5 m",
+    specialAttacks: [],
+    specialQualities: [],
+    abilities: { str: 14, dex: 12, con: 14, int: 10, wis: 10, cha: 10 },
+    skills: "Psychologie +4, Détection +5",
+    feats: "Vigilance, Arme de prédilection",
+    tactics:
+      "Défensive stricte. Ne frappent que si on force le passage ou si une arme est tirée.",
+    loot: "Clés du treuil, lanterne, sceau falsifié.",
+    isEnemy: true,
+    role: "Soldats épuisés chargés de verrouiller l'accès.",
+    details: [
+      "Motivation : Obéir aux ordres contradictoires du Conseil tout en évitant un massacre.",
+      "Attitude : Nerveuse, soupçonne les PJ d'espionnage.",
+      "Usage : Obstacles physiques ou négociation sous pression.",
+      "Indice : Portent des sceaux falsifiés liés aux lettres de Thade."
+    ],
+  },
+  {
+    id: "magi_tuteur_loyal",
+    name: "Maître Arcaniste Loyaliste",
+    size: "Moyen",
+    type: "Humanoïde (Humain)",
+    alignment: "LN",
+    fp: 7,
+    environment: "Quartier du Savoir – Tour des Mages",
+    organization: "Solitaire (avec golems ou élémentaires)",
+    initiative: "+2",
+    senses: "Détection de la magie, Vision dans le noir",
+    ac: { total: 18, touch: 12, flatFooted: 16 },
+    hp: 45,
+    hd: "9d4+18",
+    saves: { fort: "+6", ref: "+5", will: "+8" },
+    speed: "9 m",
+    attack: "Rayon Arcanique +6 (4d6 force)",
+    fullAttack: "Rayon Arcanique +6 (4d6 force)",
+    space: "1,5 m",
+    reach: "1,5 m",
+    specialAttacks: ["Sorts de Magicien NLS 9 (Évocation/Abjuration)"],
+    specialQualities: ["Glyphes de Renvoi (1/tour, renvoie un sort de niveau 3 ou moins)"],
+    abilities: { str: 10, dex: 14, con: 14, int: 18, wis: 12, cha: 12 },
+    skills: "Art de la magie +15, Connaissances (arcanes) +15, Intimidation +10",
+    feats: "Ecole Renforcée (Évocation), vigilance",
+    tactics: "Déclenche ses glyphes sans sommation, reste à distance derrière des champs de force.",
+    loot: "Bâton de défense, parchemins de Dissipation.",
+    isEnemy: true,
+    role: "Professeur resté fidèle à la Guilde, mais pas à Thade.",
+    details: [
+      "Motivation : Protéger la Tour contre toute intrusion, PJ compris.",
+      "Attitude : Arrogant, déclenche des runes de défense sans sommation.",
+      "Pouvoir : Champs de force, glyphes de renvoi, serviteurs élémentaires.",
+      "Usage : Mini-boss ou négociateur si convaincu que Thade trahit la Guilde."
+    ],
   }
 ];
+
+export const pnjEnnemis = pnjEnnemisRaw.map((npc) => createPnj(npc));

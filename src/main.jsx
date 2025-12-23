@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
+import "./utils/i18n";
 
 const basename = import.meta.env.BASE_URL || "/";
 const redirectPath = sessionStorage.getItem("redirect");

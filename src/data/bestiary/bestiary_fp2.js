@@ -30,6 +30,12 @@ export const bestiaryFp2 = [
       "Charge les isolés, profite des effondrements pour séparer le groupe ; fuit à < 30% PV.",
     butin: "Éclats cristallins souillés (alchimie mineure), chair instable.",
     est_ennemi: true,
+    role: "Prédateur opportuniste attiré par la chair fraîche.",
+    details: [
+      "Utilise les effondrements à son avantage.",
+      "Fuit si blessé ou si la gravité se retourne.",
+      "Présage des dangers naturels de la Spirale."
+    ],
   },
   {
     id: "sniv_kobold",
@@ -67,7 +73,14 @@ export const bestiaryFp2 = [
     tactiques:
       "Tire, se replie derrière un piège, harcèle à distance ; ne reste jamais au contact plus d’un tour.",
     butin: "Arbalète légère, fioles d'huile, matériaux de pièges.",
-    est_ennemi: true,
+    est_ennemi: false,
+    role: "Guide tremblant mais utile dans le réseau d'égouts.",
+    details: [
+      "Motivation : Survivre et quitter les tunnels hantés.",
+      "Attitude : Apeuré, très superstitieux, respecte la force et les démonstrations de magie.",
+      "Utilisation : Peut éviter au groupe plusieurs combats ou embuscades s'il est bien traité.",
+      "Récompense : Indique des caches oubliées laissées par d'anciens contrebandiers."
+    ],
   },
   {
     id: "aubergiste_pic_brise",
@@ -140,6 +153,13 @@ export const bestiaryFp2 = [
       "Évite le combat ; tente de négocier ou de donner des infos contre protection.",
     butin: "Broche de la cabale, notes occultes partielles.",
     est_ennemi: false,
+    role: "Informatrice nerveuse sur les agissements de ses anciens camarades.",
+    details: [
+      "Motivation : Se protéger de la disgrâce de la cabale et survivre à la purge.",
+      "Attitude : Méfiante envers les PJ liés au Temple-Forgeron.",
+      "Info : Connaît des entrées secondaires vers les laboratoires de la Tour des Mages.",
+      "Évolution : Peut devenir une alliée majeure ou une traîtresse, selon la façon dont les PJ la traitent."
+    ],
   },
   {
     id: "secretaire_bourgmestre",

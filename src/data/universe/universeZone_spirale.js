@@ -19,32 +19,7 @@ export const zoneSpirale = {
         "Indices : Veines cristallines pulsant au rythme des résonances, inscriptions naines partiellement effacées.",
         "Usage : Première zone pour éprouver les règles de la Spirale et affronter la Géode chantante."
       ],
-      npcs: [
-        {
-          id: "sentinelle_reliee",
-          name: "Sentinelle reliée",
-          role: "Golem poreux aux veines de cristal, surveille les intrusions.",
-          isEnemy: true,
-          details: [
-            "Motivation : Contenir la propagation de la Géode chantante.",
-            "Attitude : Attaque si le cristal de Thade résonne, sinon observe.",
-            "Indice : Réagit faiblement aux symboles nains de confinement.",
-            "Usage : Garde mobile pouvant être évitée par ruse ou négociation arcano-tech."
-          ]
-        },
-        {
-          id: "exploratrice_perdue",
-          name: "Lysa, exploratrice perdue",
-          role: "Éclaireuse humaine hagarde, rescapée d'une expédition précédente.",
-          isEnemy: false,
-          details: [
-            "Motivation : Sortir vivante, avertir le Conseil de la conscience du donjon.",
-            "Attitude : Méfiante mais coopérative si on partage eau/soins.",
-            "Indice : Décrit un balcon donnant sur le 'donjon inversé'.",
-            "Usage : Guide temporaire, peut fournir une carte déformée."
-          ]
-        }
-      ]
+      npcIds: ["sentinelle_reliee", "lysa_exploratrice_perdue"]
     },
     {
       id: "spirale_engrenages_plenaires",
@@ -56,7 +31,7 @@ export const zoneSpirale = {
         "Danger : Compression brutale pour ceux qui ratent le rythme, arcs électriques aléatoires.",
         "Usage : Désamorcer le mécanisme avant de pénétrer dans la Salle des Engrenages principale."
       ],
-      npcs: []
+      npcIds: []
     },
     {
       id: "spirale_balcon_inverse",
@@ -68,7 +43,7 @@ export const zoneSpirale = {
         "Risque : Chutes imprévisibles si la gravité change brusquement.",
         "Indice : On entend le chant de la Géode résonner plus fort ici."
       ],
-      npcs: []
+      npcIds: []
     },
     {
       id: "spirale_coeur_geode",
@@ -80,20 +55,7 @@ export const zoneSpirale = {
         "Structure semi-organique : la géode se défend en modifiant l'espace.",
         "But : Détruire ou canaliser l'énergie pour stabiliser la mine."
       ],
-      npcs: [
-        {
-          id: "geode_avatar",
-          name: "Avatar de la Géode",
-          role: "Manifestation semi-consciente de la Spirale.",
-          isEnemy: true,
-          details: [
-            "Motivation : Protéger la source et étendre la résonance.",
-            "Attitude : Communique par vibrations, peut négocier via empathie magique.",
-            "Pouvoir : Déforme la géométrie, projette des ondes soniques.",
-            "Faiblesse : Perturbée par les runes naines de confinement."
-          ]
-        }
-      ]
+      npcIds: ["geode_avatar"]
     },
     {
       id: "spirale_zone_dechets",
@@ -105,19 +67,7 @@ export const zoneSpirale = {
         "Point d'entrée pour les survivants éjectés vers la Spirale.",
         "Vestiges nains indiquant que d'autres sont déjà tombés ici."
       ],
-      npcs: [
-        {
-          id: "charognard_errant",
-          name: "Charognard errant",
-          role: "Prédateur opportuniste attiré par la chair fraîche.",
-          isEnemy: true,
-          details: [
-            "Utilise les effondrements à son avantage.",
-            "Fuit si blessé ou si la gravité se retourne.",
-            "Présage des dangers naturels de la Spirale."
-          ]
-        }
-      ]
+      npcIds: ["charognard_errant"]
     },
     {
       id: "spirale_couloirs_ether",
@@ -129,7 +79,7 @@ export const zoneSpirale = {
         "Dangers : Prédateurs éthérés, bourrasques aspirant vers le plafond devenu sol.",
         "Usage : Terrain d'introduction aux règles physiques absurdes avant de rejoindre les couloirs organiques."
       ],
-      npcs: []
+      npcIds: []
     },
     {
       id: "spirale_couloirs_chair",
@@ -141,20 +91,7 @@ export const zoneSpirale = {
         "La Spirale observe : tests de volonté et de sang-froid.",
         "Accès vers le laboratoire secret plus bas."
       ],
-      npcs: [
-        {
-          id: "marchand_fou_mercane",
-          name: "Le Marchand Fou (Mercane exilé)",
-          role: "Vendeur opportuniste qui troque souvenirs et vitalité.",
-          isEnemy: false,
-          details: [
-            "Motivation : Accumuler des artefacts de la Spirale pour regagner sa stature.",
-            "Attitude : Polie mais cynique, aime les marchés tordus.",
-            "Offres : Potions instables, informations sur le laboratoire.",
-            "Danger : Peut trahir s'il voit un profit immédiat."
-          ]
-        }
-      ]
+      npcIds: ["marchand_fou_mercane"]
     },
     {
       id: "spirale_carrefour_mercane",
@@ -166,19 +103,7 @@ export const zoneSpirale = {
         "Danger : Contrats piégés qui siphonnent des niveaux ou des souvenirs des PJ.",
         "Usage : Rencontre avec le Marchand Fou, accès à des informations sur les niveaux inférieurs."
       ],
-      npcs: [
-        {
-          id: "marchand_fou_mercane",
-          name: "Mercane exilé",
-          role: "Vendeur d'artefacts mémorielles.",
-          isEnemy: false,
-          details: [
-            "Motivation : Se constituer une bibliothèque d'émotions humaines.",
-            "Attitude : Amusé, mais prêt à vendre l'emplacement des PJ à Thade.",
-            "Indice : Possède une carte incomplète du Laboratoire Secret."
-          ]
-        }
-      ]
+      npcIds: ["marchand_fou_mercane"]
     },
     {
       id: "spirale_salle_miroirs",
@@ -190,7 +115,7 @@ export const zoneSpirale = {
         "Danger : Reflets qui sortent des miroirs si l'on ment.",
         "Usage : Confronter les PJ à leurs regrets avant d'accéder au mécanisme d'ascenseur."
       ],
-      npcs: []
+      npcIds: []
     },
     {
       id: "spirale_labo_secret",
@@ -202,19 +127,7 @@ export const zoneSpirale = {
         "Archives prouvant l'usage d'éclats de Spirale sur le cœur de Thade.",
         "Pont vers les zones mécaniques plus profondes."
       ],
-      npcs: [
-        {
-          id: "sujet_zero",
-          name: "Sujet Zéro",
-          role: "Prototype vivant Troll/Démon, gardien du laboratoire.",
-          isEnemy: true,
-          details: [
-            "Régénération tant que l'éclat de Spirale reste intact.",
-            "Résistance à la magie, vulnérable aux dégâts radieux/soniques.",
-            "Peut être distrait par des commandes technomagiques corrompues."
-          ]
-        }
-      ]
+      npcIds: ["sujet_zero"]
     },
     {
       id: "spirale_bibliotheque_ames",
@@ -226,7 +139,7 @@ export const zoneSpirale = {
         "Danger : Fantômes archivistes, surtension mentale en cas de lecture prolongée.",
         "Usage : Révéler le plan d'immortalité de Thade et des indices sur la Spirale."
       ],
-      npcs: []
+      npcIds: []
     },
     {
       id: "spirale_laboratoire_clonage",
@@ -238,7 +151,7 @@ export const zoneSpirale = {
         "Danger : Berserkers fraîchement sortis des cuves, alarmes appelant Sujet Zéro.",
         "Usage : Prouver que Thade produit ses armées artificielles."
       ],
-      npcs: []
+      npcIds: []
     },
     {
       id: "spirale_salle_engrenages",
@@ -250,19 +163,7 @@ export const zoneSpirale = {
         "Passerelles nécessitant synchronisation et sang-froid.",
         "Point de sabotage critique pour affaiblir Thade."
       ],
-      npcs: [
-        {
-          id: "inevitable_contremetre",
-          name: "Inévitable Contremètre",
-          role: "Construct de Loi supervisant le flux d'énergie.",
-          isEnemy: false,
-          details: [
-            "Objectif : Maintenir le mécanisme, hostile aux perturbations.",
-            "Peut être convaincu que Thade est une anomalie à corriger.",
-            "Dispose d'outils de gravité locale et de champ anti-magie."
-          ]
-        }
-      ]
+      npcIds: ["inevitable_contremetre"]
     },
     {
       id: "spirale_tunnel_teleport",
@@ -274,7 +175,7 @@ export const zoneSpirale = {
         "Permet d'intercepter Thade pendant la remontée.",
         "Termine sur la Tour des Mages si le flux est inversé."
       ],
-      npcs: []
+      npcIds: []
     }
   ]
 };

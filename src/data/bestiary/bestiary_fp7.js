@@ -37,6 +37,13 @@ export const bestiaryFp7 = [
       "Alterne onde de zone et verrouillage d'une cible menaçante ; défend la géode principale.",
     butin: "Éclat de géode chantante, essence de résonance.",
     est_ennemi: true,
+    role: "Manifestation semi-consciente de la Spirale.",
+    details: [
+      "Motivation : Protéger la source et étendre la résonance.",
+      "Attitude : Communique par vibrations, peut négocier via empathie magique.",
+      "Pouvoir : Déforme la géométrie, projette des ondes soniques.",
+      "Faiblesse : Perturbée par les runes naines de confinement."
+    ],
   },
   {
     id: "kaelen_vampire",
@@ -79,5 +86,12 @@ export const bestiaryFp7 = [
       "Chasse isolément, frappe puis se change en brume si blessé ; use de domination pour recruter des goules.",
     butin: "Cape sombre, anneau d'opacité, notes sur la Spirale.",
     est_ennemi: true,
+    role: "Vampire mage, dernier rempart avant le sommet.",
+    details: [
+      "Protecteur loyal de Thade, espère l'immortalité via la Spirale.",
+      "Contrôle des nuées d'ombres et des contre-sorts.",
+      "Peut être retourné par la promesse d'un pouvoir indépendant de Thade.",
+    ],
+    tactical: {},
   },
 ];

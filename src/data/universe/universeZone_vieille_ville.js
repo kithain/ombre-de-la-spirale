@@ -19,20 +19,7 @@ export const zoneVieilleVille = {
         "Ennemis : Bandits, espions, créatures tapis dans l'ombre.",
         "Usage : Terrain de jeu des criminels et des complots mineurs."
       ],
-      npcs: [
-        {
-          id: "chef_bandes_ruelles",
-          name: "Rask, chef de bande de la Vieille Ville",
-          role: "Petit seigneur du crime local.",
-          isEnemy: true,
-          details: [
-            "Motivation : Contrôler les ruelles et racketter les marchands.",
-            "Attitude : Arrogant, déteste qu'on lui marche sur les pieds.",
-            "Combat : Entouré de voyous, connaît tous les raccourcis pour fuir.",
-            "Usage : Antagoniste récurrent ou allié forcé contre une menace plus grande."
-          ]
-        }
-      ]
+      npcIds: ["chef_bandes_ruelles"]
     },
     {
       id: "auberge_pic_brise",
@@ -44,19 +31,7 @@ export const zoneVieilleVille = {
         "Ennemis potentiels : Ivrognes agressifs, collecteurs de dettes.",
         "Usage : Point de rencontre initial, lieu où les PJ reçoivent leurs premières offres de mission."
       ],
-      npcs: [
-        {
-          id: "brand_aubergiste",
-          name: "Brand, aubergiste du Pic Brisé",
-          role: "Hôte bien informé qui entend toutes les conversations.",
-          isEnemy: false,
-          details: [
-            "Motivation : Protéger sa réputation et éviter les ennuis avec la garde.",
-            "Attitude : Jovial en public, prudent en privé ; observe beaucoup.",
-            "Usage : Source de rumeurs, point de contact pour guider les PJ vers leurs premières pistes."
-          ]
-        }
-      ]
+      npcIds: ["aubergiste_pic_brise"]
     }
   ]
 };

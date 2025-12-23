@@ -19,32 +19,7 @@ export const zoneQuartierDesMineurs = {
         "Ennemis potentiels : Casseurs ou briseurs de grève manipulés par Thade.",
         "Opportunités : Lancer des rumeurs, organiser une manifestation, négocier avec les meneurs de grève."
       ],
-      npcs: [
-        {
-          id: "durnik_chef_mineur",
-          name: "Durnik, chef de la Guilde des Mineurs",
-          role: "Leader syndical nain, protecteur de sa communauté.",
-          isEnemy: false,
-          details: [
-            "Motivation : Protéger les mineurs de la 'pierre malade' et des décisions du Conseil.",
-            "Attitude : Bourru mais honnête. Respecte les PJ qui prennent des risques pour les siens.",
-            "Utilisation : Donneur de quêtes pour les scénarios liés à la Mine et à la Spirale.",
-            "Test social : Difficile à convaincre si les PJ sont trop proches des Mages ou du Conseil."
-          ]
-        },
-        {
-          id: "contremaitre_humain",
-          name: "Varrus, contremaître humain",
-          role: "Intermédiaire entre le Conseil et les mineurs.",
-          isEnemy: true,
-          details: [
-            "Motivation : Maintenir la production coûte que coûte pour conserver ses privilèges.",
-            "Attitude : Méprisant envers les Nains, agressif envers les PJ qui remettent en cause l'autorité.",
-            "Combat : Peut devenir un antagoniste lors d'une émeute ou d'un piquet de grève qui dégénère.",
-            "Indice : Reçoit des ordres indirectement liés à Thade via des lettres scellées."
-          ]
-        }
-      ]
+      npcIds: ["durnik_chef_mineur", "contremaitre_humain"]
     },
     {
       id: "quartier_artisan_patrouille",
@@ -57,19 +32,7 @@ export const zoneQuartierDesMineurs = {
         "Danger : Patrouilles mixtes (gardes humains, automates de la Guilde), dénonciations forcées.",
         "Usage : Montrer la violence de la Loi Martiale et les arrestations ciblant les Nains."
       ],
-      npcs: [
-        {
-          id: "patrouille_mixte_conseil",
-          name: "Patrouille mixte du Conseil",
-          role: "Escouade composite chargée de briser la résistance artisanale.",
-          isEnemy: true,
-          details: [
-            "Motivation : Appliquer les ordres de Thade sous couvert du Conseil.",
-            "Tactiques : Barricader les ruelles, utiliser des immobilisations magiques.",
-            "Indice : Le chef porte un cristal relais identique à celui de Thade."
-          ]
-        }
-      ]
+      npcIds: ["patrouille_mixte_conseil"]
     },
     {
       id: "entree_mine_valdombre",
@@ -82,20 +45,7 @@ export const zoneQuartierDesMineurs = {
         "Danger : Risque d'émeute, sabotage latent, surveillants prêts à déclencher l'alarme.",
         "Usage : Contrôle d'accès vers la Mine d'Argent, négociations entre Guildes et PJ."
       ],
-      npcs: [
-        {
-          id: "garde_portail_mine",
-          name: "Escouade de gardes du portail",
-          role: "Soldats épuisés chargés de verrouiller l'accès.",
-          isEnemy: true,
-          details: [
-            "Motivation : Obéir aux ordres contradictoires du Conseil tout en évitant un massacre.",
-            "Attitude : Nerveuse, soupçonne les PJ d'espionnage.",
-            "Usage : Obstacles physiques ou négociation sous pression.",
-            "Indice : Portent des sceaux falsifiés liés aux lettres de Thade."
-          ]
-        }
-      ]
+      npcIds: ["garde_portail_mine"]
     },
     {
       id: "forge_thorgar_refuge",
@@ -108,19 +58,7 @@ export const zoneQuartierDesMineurs = {
         "Danger : Effondrement possible si les glyphes sont sabordés de l'intérieur.",
         "Usage : Lieu des décisions morales, confrontation directe avec Thorgar sur la stratégie."
       ],
-      npcs: [
-        {
-          id: "thorgar_pretre_nain",
-          name: "Thorgar, prêtre du Temple-Forgeron",
-          role: "Chef militaire et spirituel du quartier.",
-          isEnemy: false,
-          details: [
-            "Motivation : Sauver les civils enfermés dans les caves adjacentes.",
-            "Attitude : Partagé entre préserver les innocents et suivre les tactiques des PJ.",
-            "Usage : Déclenche le 'Dilemme de Thorgar' : tenir ou sauver les réfugiés."
-          ]
-        }
-      ]
+      npcIds: ["thorgar_pretre_nain"]
     },
     {
       id: "temple_forgeron",
@@ -132,32 +70,7 @@ export const zoneQuartierDesMineurs = {
         "Ennemis : Pendant la Nuit des Longs Couteaux, assaillants morts-vivants et fanatiques de Thade.",
         "Loot : Reliques naines, armes bénies contre les morts-vivants, accès à des bénédictions temporaires."
       ],
-      npcs: [
-        {
-          id: "thorgar_pretre_nain",
-          name: "Thorgar, prêtre du Temple-Forgeron",
-          role: "Allié clé, donneur de quêtes lié au cimetière et à la défense de la ville.",
-          isEnemy: false,
-          details: [
-            "Motivation : Protéger la mémoire des morts et empêcher l'ouverture de la Spirale.",
-            "Attitude : Grave, inflexible sur les questions sacrées, mais reconnaissant envers les PJ.",
-            "Usage : Point d'ancrage moral de la campagne, peut octroyer soins et informations secrètes.",
-            "Lien : Premier à parler de la 'maladie' de la montagne et de la folie de creuser trop profond."
-          ]
-        },
-        {
-          id: "capitaine_garde_temple",
-          name: "Capitaine de la Garde du Temple",
-          role: "Officier humain détaché, partagé entre obéissance au Conseil et respect des Nains.",
-          isEnemy: true,
-          details: [
-            "Motivation : Maintenir l'ordre et éviter une guerre civile ouverte.",
-            "Attitude : Suspicion envers les PJ impliqués dans trop d'incidents.",
-            "Combat : Peut devenir un ennemi direct si les PJ se rangent ouvertement du côté des Nains contre le Conseil.",
-            "Spoiler : Manipulé par des ordres falsifiés provenant de la faction de Thade."
-          ]
-        }
-      ]
+      npcIds: ["thorgar_pretre_nain", "capitaine_garde_temple"]
     },
     {
       id: "egouts_val_dombre",
@@ -169,20 +82,7 @@ export const zoneQuartierDesMineurs = {
         "Ennemis : Rats géants, charognards, expériences ratées de nécromancie.",
         "Usage : Voie de fuite, terrain de guérilla naine et d'infiltration discrète."
       ],
-      npcs: [
-        {
-          id: "sniv_kobold",
-          name: "Sniv, kobold égaré",
-          role: "Guide tremblant mais utile dans le réseau d'égouts.",
-          isEnemy: false,
-          details: [
-            "Motivation : Survivre et quitter les tunnels hantés.",
-            "Attitude : Apeuré, très superstitieux, respecte la force et les démonstrations de magie.",
-            "Utilisation : Peut éviter au groupe plusieurs combats ou embuscades s'il est bien traité.",
-            "Récompense : Indique des caches oubliées laissées par d'anciens contrebandiers."
-          ]
-        }
-      ]
+      npcIds: ["sniv_kobold"]
     },
     {
       id: "taverne_fumees_rouges",
@@ -194,20 +94,7 @@ export const zoneQuartierDesMineurs = {
         "Ennemis potentiels : Brutes locales, collecteurs de dettes.",
         "Opportunités : Recruter des mercenaires, régler des dettes, provoquer une diversion."
       ],
-      npcs: [
-        {
-          id: "tenancier_taverne",
-          name: "Mara, tenancière des Fumées Rouges",
-          role: "Informatrice neutre, voit tout passer.",
-          isEnemy: false,
-          details: [
-            "Motivation : Garder sa clientèle en vie juste assez longtemps pour qu'elle revienne payer.",
-            "Attitude : Cynique mais pragmatique, apprécie les PJ qui paient comptant.",
-            "Info : Vend volontiers des rumeurs sur les mouvements de la Garde et de la Guilde des Mineurs.",
-            "Secret : Cache parfois des réfugiés ou des fuyards dans ses caves."
-          ]
-        }
-      ]
+      npcIds: ["tenancier_taverne"]
     }
   ]
 };

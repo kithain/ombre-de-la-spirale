@@ -4,14 +4,14 @@ import { BookOpen } from "lucide-react";
 import { scenariosData } from "../../../data/scenarios/scenarios";
 import SectionTitle from "../../ui/SectionTitle";
 import ScenarioRow from "./ScenarioRow";
-import { useLocalStorage } from "../../../hooks/useLocalStorage";
+import { usePersistentState } from "../../../hooks/usePersistentState";
 
 function ScenariosView() {
   const params = useParams();
   const [searchParams] = useSearchParams();
   const targetSceneTitle = searchParams.get("scene") || "";
   const targetScenarioId = params.id || searchParams.get("scenario") || "";
-  const [openScenarioId, setOpenScenarioId] = useLocalStorage(
+  const [openScenarioId, setOpenScenarioId] = usePersistentState(
     "scenario-open-active",
     targetScenarioId || ""
   );

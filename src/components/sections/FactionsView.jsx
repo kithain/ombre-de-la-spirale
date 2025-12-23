@@ -1,72 +1,78 @@
 import React from "react";
 import { Shield } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { factionsData } from "../../data/pnj/factions";
 import SectionTitle from "../ui/SectionTitle";
-import Card from "../ui/Card";
+import GenericCard from "../ui/GenericCard";
+import GenericList from "../ui/GenericList";
 import { findNpcById, makeUniverseLink } from "../../utils/dataLinks";
 
 function FactionsView() {
+  const { t } = useTranslation();
+  
   return (
     <div className="space-y-6 animate-fadeIn">
       <SectionTitle
-        title="Factions"
+        title={t("factions.title")}
         icon={Shield}
-        subtitle="Les forces en présence à Val-d'Ombre"
+        subtitle={t("factions.subtitle")}
       />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {factionsData.map((faction, idx) => (
-          <Card key={idx} className={`border ${faction.color} bg-opacity-40`}>
-            <div className="flex items-center gap-3 mb-3">
-              <div className="w-10 h-10 flex items-center justify-center rounded-full bg-surface border border-surface-border">
-                {faction.icon && <faction.icon size={20} className={faction.color.split(" ")[0]} />}
-              </div>
-              <div>
-                <h3 className="text-sm font-serif text-content">{faction.name}</h3>
-                <p className="text-[11px] uppercase tracking-widest text-content-subtle">{faction.type}</p>
-              </div>
-            </div>
+        {factionsData.map((faction) => (
+          <GenericCard 
+            key={faction.name}
+            className={faction.color}
+            title={faction.name}
+            subtitle={faction.type}
+            icon={faction.icon && <faction.icon size={20} className={faction.color.split(" ")[0]} />}
+          >
             <p className="text-sm text-content-secondary leading-relaxed">{faction.desc}</p>
+            
             {faction.hierarchy?.length > 0 && (
               <div className="mt-4 space-y-2">
-                <h4 className="text-xs uppercase tracking-wide text-content-muted">Hiérarchie</h4>
-                <ul className="space-y-2">
-                  {faction.hierarchy.map((item, hIdx) => (
-                    <li
-                      key={hIdx}
-                      className="text-sm text-content bg-surface-raised/70 border border-surface-border rounded px-3 py-2"
-                    >
-                      <div className="flex flex-wrap items-center gap-2">
-                        <span className="font-semibold text-accent-light">{item.role}</span>
-                        {item.npcId && (() => {
-                          const npcLink = findNpcById(item.npcId);
-                          const label = npcLink?.npc?.name || item.npcId;
-                          const href = npcLink ? makeUniverseLink({ zoneId: npcLink.zone.id, locId: npcLink.loc.id, npcId: item.npcId }) : null;
-                          return href ? (
-                            <a
-                              href={href}
-                              title={item.npcId}
-                              className="text-sm text-content underline decoration-accent/60 decoration-dotted underline-offset-4 hover:text-accent-light transition-colors"
-                            >
-                              {label}
-                            </a>
-                          ) : (
-                            <span className="text-sm text-content" title={item.npcId}>
-                              {label}
-                            </span>
-                          );
-                        })()}
-                      </div>
-                      {item.notes && <p className="text-content-muted text-xs mt-1 leading-relaxed">{item.notes}</p>}
-                    </li>
-                  ))}
-                </ul>
+                <h4 className="text-xs uppercase tracking-wide text-content-muted">
+                  {t("factions.hierarchy")}
+                </h4>
+                <GenericList
+                  items={faction.hierarchy}
+                  renderItem={(item) => (
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="font-semibold text-accent-light">{item.role}</span>
+                      {item.npcId && (() => {
+                        const npcLink = findNpcById(item.npcId);
+                        const label = npcLink?.npc?.name || item.npcId;
+                        const href = npcLink ? makeUniverseLink({ 
+                          zoneId: npcLink.zone.id, 
+                          locId: npcLink.loc.id, 
+                          npcId: item.npcId 
+                        }) : null;
+                        
+                        return href ? (
+                          <a
+                            href={href}
+                            title={item.npcId}
+                            className="text-sm text-content underline decoration-accent/60 decoration-dotted underline-offset-4 hover:text-accent-light transition-colors"
+                          >
+                            {label}
+                          </a>
+                        ) : (
+                          <span className="text-sm text-content" title={item.npcId}>
+                            {label}
+                          </span>
+                        );
+                      })()}
+                    </div>
+                  )}
+                />
               </div>
             )}
-            {faction.npcs?.length > 0 && (
+            {faction.npcIds?.length > 0 && (
               <div className="mt-3">
-                <h4 className="text-xs uppercase tracking-wide text-content-muted">PNJ</h4>
+                <h4 className="text-xs uppercase tracking-wide text-content-muted">
+                  {t("factions.npcs")}
+                </h4>
                 <div className="flex flex-wrap gap-1.5 mt-1">
-                  {faction.npcs.map((npcId) => {
+                  {faction.npcIds.map((npcId) => {
                     const npcLink = findNpcById(npcId);
                     const label = npcLink?.npc?.name || npcId;
                     const href = npcLink ? makeUniverseLink({ zoneId: npcLink.zone.id, locId: npcLink.loc.id, npcId }) : null;
@@ -92,7 +98,7 @@ function FactionsView() {
                 </div>
               </div>
             )}
-          </Card>
+          </GenericCard>
         ))}
       </div>
     </div>

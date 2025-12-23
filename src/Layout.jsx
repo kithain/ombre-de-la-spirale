@@ -4,6 +4,7 @@ import { BookOpen, Map, Shield, Skull, ScrollText } from "lucide-react";
 import { cn } from "./utils/cn";
 import SearchBar from "./components/ui/SearchBar";
 import { useSearch } from "./hooks/useSearch";
+import { usePersistentState } from "./hooks/usePersistentState";
 
 const navItems = [
   { to: "/univers", label: "Univers", icon: Map },
@@ -16,22 +17,19 @@ function Layout() {
   const { term, setTerm, results, clear } = useSearch();
   const location = useLocation();
   const navigate = useNavigate();
+  const [lastRoute, setLastRoute] = usePersistentState("last-route", null);
 
-  // Persister la dernière route visitée et restaurer si on arrive sur /
   useEffect(() => {
     if (location.pathname !== "/") {
-      window.localStorage.setItem("last-route", location.pathname + location.search);
+      setLastRoute(location.pathname + location.search);
     }
   }, [location]);
 
   useEffect(() => {
-    if (location.pathname === "/") {
-      const last = window.localStorage.getItem("last-route");
-      if (last && last !== "/") {
-        navigate(last, { replace: true });
-      }
+    if (location.pathname === "/" && lastRoute && lastRoute !== "/") {
+      navigate(lastRoute, { replace: true });
     }
-  }, [location.pathname, navigate]);
+  }, [location.pathname, lastRoute, navigate]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-surface via-surface-raised to-surface text-content">

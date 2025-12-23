@@ -12,7 +12,7 @@ export const factionsData = [
       { role: "Capitaine de la Garde urbaine", npcId: "capitaine_garde_urbaine", notes: "Sécurité, couvre-feu, siège." },
       { role: "Geôlier du Conseil", npcId: "geolier_principal", notes: "Prisons politiques, interrogatoires." }
     ],
-    npcs: ["bourgmestre", "capitaine_garde_urbaine", "geolier_principal"]
+    npcIds: ["bourgmestre", "capitaine_garde_urbaine", "geolier_principal"]
   },
   {
     name: "Faction Nains",
@@ -21,14 +21,14 @@ export const factionsData = [
     icon: Shield,
     color: "text-amber-400 border-amber-900 bg-amber-950/30",
     hierarchy: [
-      { role: "Chef de la Guilde des Mineurs", npcId: "durnik_guilde_mineurs", notes: "Voix des mineurs, meneur de grève." },
+      { role: "Chef de la Guilde des Mineurs", npcId: "durnik_chef_mineur", notes: "Voix des mineurs, meneur de grève." },
       { role: "Haut Clerc / Prêtre du Temple-Forgeron", npcId: "thorgar_pretre_nain", notes: "Avertit sur la Spirale, soutien moral." },
       { role: "Contremaître sécurité mine", npcId: "contremaitre_nain_mine", notes: "Logistique, sécurité des galeries." },
       { role: "Capitaine de la Garde du Temple", npcId: "capitaine_garde_temple", notes: "Organise la défense et les patrouilles sacrées." },
       { role: "Gardien du Cimetière", npcId: "gardien_cimetiere", notes: "Veille sur les sépultures et détecte les profanations." }
     ],
-    npcs: [
-      "durnik_guilde_mineurs",
+    npcIds: [
+      "durnik_chef_mineur",
       "thorgar_pretre_nain",
       "contremaitre_nain_mine",
       "capitaine_garde_temple",
