@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <rect width="200" height="200" fill="#1a1a2e"/>
-  <rect x="10" y="10" width="180" height="180" fill="none" stroke="#4a4a6a" stroke-width="2" stroke-dasharray="8,4" rx="8"/>
-  <circle cx="100" cy="80" r="30" fill="none" stroke="#6a6a8a" stroke-width="2"/>
-  <path d="M70 130 L100 100 L130 130 L100 160 Z" fill="none" stroke="#6a6a8a" stroke-width="2"/>
-  <text x="100" y="185" text-anchor="middle" fill="#6a6a8a" font-family="serif" font-size="12">Image à venir</text>
-</svg>
