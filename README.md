@@ -5,8 +5,10 @@ _______________________________________________________________________________
 _______________________________________________________________________________
 
 DATE....: 2025-2026                    PLATFORM: WEB / REACT JS
-TYPE....: CAMPAIGN WIKI ENGINE         DESIGN..: KITHAIN 
+TYPE....: CAMPAIGN WIKI ENGINE         DESIGN..: KITHAIN
+```
 DEMO....: https://kithain.github.io/ombre-de-la-spirale/
+```text
 _______________________________________________________________________________
 
 
