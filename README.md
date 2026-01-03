@@ -21,9 +21,9 @@ _______________________________________________________________________________
 [ Fonctionnalités Principales ]
 
 **Univers & Lore**
-- **Géographie & Histoire** : Chronologie et cartes du monde.
-- **Lieux** : Descriptions détaillées des points d'intérêt.
-- **Systèmes** : Règles spécifiques et mécaniques de magie.
+- **Géographie & Histoire** 
+- **Lieux**
+- **Systèmes**
 
 **Personnages & Factions**
 - **PNJ & Antagonistes** : Fiches détaillées des alliés et ennemis majeurs.
