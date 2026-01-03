@@ -1,4 +1,4 @@
-```bash
+```text
 _______________________________________________________________________________
         --==  O M B R E   D E   L A   S P I R A L E  ==--
            [ W I K I   D E   C A M P A G N E D&D 3.5 ]
@@ -9,7 +9,7 @@ TYPE....: CAMPAIGN WIKI ENGINE         DESIGN..: KITHAIN
 ```
 ## Demo
 https://kithain.github.io/ombre-de-la-spirale/
-```bash
+```text
 _______________________________________________________________________________
 
 
@@ -24,7 +24,7 @@ _______________________________________________________________________________
 ```
 
 ## Univers
-```bash
+```text
 La campagne se déroule à **Val-d'Ombre**, une cité industrielle et gothique accrochée à flanc de montagne. L'histoire suit l'opposition progressive entre deux figures emblématiques :
 
 - **Thade Coren** : Magister archiviste qui voit la superstition comme un obstacle à la connaissance.
@@ -59,14 +59,14 @@ La campagne est structurée en 5 scénarios principaux :
 ```
 
 ## Fonctionnalités
-```bash
+```text
 ### Navigation
 - Interface SPA (Single Page Application) avec React Router
 - Navigation intuitive entre les sections
 ```
 
 ### Sections
-```bash
+```text
 - **Univers** : Géographie, histoire et cosmologie
 - **Factions** : Organisations et groupes politiques
 - **Antagoniste** : Profil détaillé de Thade Coren et ses objectifs
@@ -74,14 +74,14 @@ La campagne est structurée en 5 scénarios principaux :
 ```
 
 ### Design
-```bash
+```text
 - Interface responsive avec TailwindCSS
 - Design moderne et épuré
 - Icônes Lucide React pour une meilleure UX
 ```
 
 ## Stack Technique
-```bash
+```text
 - **Frontend** : React 19.2.0 avec Vite 7.2.4
 - **Styling** : TailwindCSS 3.4.18
 - **Routing** : React Router DOM 7.6.0
@@ -91,7 +91,7 @@ La campagne est structurée en 5 scénarios principaux :
 ```
 ## Installation
 
-```bash
+```text
 # Cloner le repository
 git clone https://github.com/kithain/ombre-de-la-spirale.git
 
@@ -104,7 +104,7 @@ npm run dev
 
 ## Déploiement
 
-```bash
+```text
 # Build pour production
 npm run build
 
@@ -130,7 +130,7 @@ src/
 ```
 
 ## Utilisation
-```bash
+```text
 1. **Navigation** : Utilisez le menu principal pour explorer les différentes sections
 2. **Recherche** : Trouvez rapidement des informations avec la fonction de recherche
 3. **Liens** : Cliquez sur les liens entre les éléments pour naviguer dans l'univers
