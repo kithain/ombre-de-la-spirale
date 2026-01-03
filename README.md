@@ -9,7 +9,7 @@ TYPE....: CAMPAIGN WIKI ENGINE         DESIGN..: KITHAIN
 ```
 ## Demo
 https://kithain.github.io/ombre-de-la-spirale/
-```text
+
 _______________________________________________________________________________
 
 
@@ -21,10 +21,10 @@ _______________________________________________________________________________
 - **Naviguer** facilement entre les concepts grâce aux liens croisés
 - **Consulter** rapidement les données en pleine session de jeu
 - **Explorer** un monde riche et complexe
-```
+
 
 ## Univers
-```text
+
 La campagne se déroule à **Val-d'Ombre**, une cité industrielle et gothique accrochée à flanc de montagne. L'histoire suit l'opposition progressive entre deux figures emblématiques :
 
 - **Thade Coren** : Magister archiviste qui voit la superstition comme un obstacle à la connaissance.
@@ -56,38 +56,34 @@ La campagne est structurée en 5 scénarios principaux :
 3. **Le Cœur de la Spirale** : Confrontation avec la nature de la Spirale
 4. **Le Chute de Thade** : Transformation de l'antagoniste
 5. **L'Éternité** : Résolution de la campagne
-```
+
 
 ## Fonctionnalités
-```text
+
 ### Navigation
 - Interface SPA (Single Page Application) avec React Router
 - Navigation intuitive entre les sections
-```
+
 
 ### Sections
-```text
 - **Univers** : Géographie, histoire et cosmologie
 - **Factions** : Organisations et groupes politiques
 - **Antagoniste** : Profil détaillé de Thade Coren et ses objectifs
 - **Scénarios** : Structure de la campagne en 5 scénarios
-```
 
 ### Design
-```text
 - Interface responsive avec TailwindCSS
 - Design moderne et épuré
 - Icônes Lucide React pour une meilleure UX
-```
 
 ## Stack Technique
-```text
 - **Frontend** : React 19.2.0 avec Vite 7.2.4
 - **Styling** : TailwindCSS 3.4.18
 - **Routing** : React Router DOM 7.6.0
 - **Internationalisation** : i18next 25.7.3
 - **Icons** : Lucide React 0.554.0
 - **Utilities** : clsx, tailwind-merge, fuse.js
+```
 ```
 ## Installation
 
