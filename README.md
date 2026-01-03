@@ -1,12 +1,14 @@
 ```text
-# Ombre de la Spirale
+_______________________________________________________________________________
+        --==  O M B R E   D E   L A   S P I R A L E  ==--
+           [ W I K I   D E   C A M P A G N E D&D 3.5 ]
+_______________________________________________________________________________
 
-> **Wiki de campagne D&D 3.5** - Une application web pour gérer et explorer l'univers de la campagne "L'Ombre de la Spirale"
+DATE....: 2025-2026                    PLATFORM: WEB / REACT JS
+TYPE....: CAMPAIGN WIKI ENGINE         DESIGN..: KITHAIN 
+DEMO....: https://kithain.github.io/ombre-de-la-spirale/
+_______________________________________________________________________________
 
-[![Demo](https://img.shields.io/badge/Demo-Live-brightgreen)](https://kithain.github.io/ombre-de-la-spirale/)
-[![React](https://img.shields.io/badge/React-19.2.0-blue)](https://reactjs.org/)
-[![Vite](https://img.shields.io/badge/Vite-7.2.4-646CFF)](https://vitejs.dev/)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 ## Concept
 
