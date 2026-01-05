@@ -1,0 +1,368 @@
+===============================================================================
+GUIDE DU MONDE : L'OMBRE DE LA SPIRALE
+===============================================================================
+
+Ce document est destiné au MJ. Il présente les grandes lignes de l’antagoniste,
+de la ville de Val-d’Ombre, des factions et de la géographie souterraine.
+
+
+===============================================================================
+I. L'ANTAGONISTE : THADE COREN
+L’Architecte de l’Éternité
+===============================================================================
+
+------------------------------------------------------------------------
+1. Origines et Psychologie
+------------------------------------------------------------------------
+
+Thade n’est pas un méchant guidé par la haine, mais par une rationalité
+glaciale née d’un traumatisme.
+
+- L’Héritage :
+  Issu d’une famille d’archivistes, Thade a grandi à consigner les décès de la
+  ville, enregistrant noms, dates, causes. Il développe ainsi une vision
+  comptable de la vie : chaque existence est une ligne dans un registre.
+
+- La Blessure Originelle :
+  La mort de sa sœur Lysa, emportée par une fièvre fulgurante, est son point de
+  rupture. Ni la foi des Nains, ni la médecine, ni la magie traditionnelle
+  n’ont pu la sauver.
+
+- La Révélation :
+  Thade cesse de pleurer pour analyser. Sa conclusion devient le moteur de
+  toute la campagne :
+  « La mort n’est pas une tragédie, c’est un défaut de conception du système. »
+
+
+------------------------------------------------------------------------
+2. Sa Philosophie et son But
+------------------------------------------------------------------------
+
+- L’Ordre contre le Chaos :
+  Pour Thade, la mort est l’ultime forme de désordre. Il ne cherche pas à
+  ramener Lysa (il sait qu’elle est perdue), mais à corriger le monde pour que
+  cela n’arrive plus jamais.
+
+- La Spirale comme Batterie :
+  Là où les Nains voient une malédiction sacrée, Thade voit une source
+  d’énergie infinie – la « Spirale des Éons » – capable de figer l’âme dans
+  une stase parfaite.
+
+- La Nécromancie Raisonnée :
+  Thade rejette l’esthétique « crânes et sang » des cultistes amateurs.
+  Pour lui, la nécromancie est simplement la seule science qui étudie la
+  persistance de la conscience après la mort. Tout le reste n’est que
+  superstition ou sensationnalisme.
+
+
+------------------------------------------------------------------------
+3. Son Masque Public (Début de Campagne)
+------------------------------------------------------------------------
+
+- Le Rôle :
+  Magister respecté, responsable des Archives de la Guilde et professeur
+  d’Histoire des Conflits.
+
+- La Couverture Parfaite :
+  Thade s’est positionné comme l’expert officiel de la ville en « Magies
+  interdites ». Si des tombes sont profanées (Scénario 1), c’est lui que l’on
+  appelle pour enquêter :
+  - Il surveille ses rivaux.
+  - Il étouffe ses propres expériences ratées.
+  - Il récupère les artefacts saisis par la garde.
+
+- Relation aux PJ :
+  En début de campagne, il est leur allié le plus « rationnel » face aux Nains
+  jugés « superstitieux ». Il est poli, logique, pédagogue… et parfaitement
+  glaçant.
+
+
+===============================================================================
+II. LE CADRE : VAL-D’OMBRE
+La Cité des Brumes et du Métal
+===============================================================================
+
+------------------------------------------------------------------------
+1. Atmosphère Générale
+------------------------------------------------------------------------
+
+Val-d’Ombre est une cité industrielle et gothique accrochée à flanc de
+montagne. L’air y est saturé de :
+
+- poussière de roche,
+- brume froide,
+- odeur métallique des forges.
+
+C’est une ville de verticalité, de terrasses, de fumées et d’ombres.
+Les hauteurs disparaissent souvent dans une brume blanchâtre, tandis que les
+bas-fonds résonnent des marteaux et des rails de mine.
+
+
+------------------------------------------------------------------------
+2. Les Piliers de la Ville
+------------------------------------------------------------------------
+
+La stabilité de Val-d’Ombre repose sur une trinité fragile :
+
+- La Mine d’Argent (L’Économie) :
+  Poumon financier. Sans elle, la ville se vide de sa raison d’être.
+
+- La Guilde des Mages (La Protection) :
+  - Prestige intellectuel.
+  - Force de frappe militaire.
+  - Monopole sur la magie « légale ».
+
+- Le Conseil (La Politique) :
+  Administration humaine, prise en étau entre :
+  - le marteau nain (Mine et Temple-Forgeron),
+  - l’enclume arcanique (Tour des Mages et Université).
+
+
+------------------------------------------------------------------------
+3. Géographie Urbaine
+------------------------------------------------------------------------
+
+- Quartier des Mineurs :
+  - Au niveau du sol, près des portes et de l’entrée de la mine.
+  - Bruyant, vivant, taverne sur taverne.
+  - Centré autour du Temple-Forgeron.
+  - Territoire des Nains (ouvriers, contremaîtres, familles).
+
+- Quartier du Savoir :
+  - À mi-hauteur sur la montagne.
+  - Abrite l’Université, la Tour de la Guilde des Mages, bibliothèques
+    et archives.
+  - Lieu de silence studieux, d’ambition froide et de complots académiques.
+
+- Hauteurs Brumeuses :
+  - Au sommet, au-dessus des fumées industrielles.
+  - Résidences nobles, demeures marchandes, Manoir du Bourgmestre.
+  - C’est là que se décident les grandes trahisons, loin de la suie.
+
+- Cimetière en Terrasse :
+  - Nécropole étagée à flanc de falaise.
+  - Contient l’Ossuaire des Mineurs, haut lieu sacré nain.
+  - Secret : un puits d’accès direct à la Spirale des Éons, connu de Thade
+    seul (utilisé dans les scénarios 3 et suivants).
+
+
+===============================================================================
+III. LES FACTIONS ET TENSIONS POLITIQUES
+===============================================================================
+
+------------------------------------------------------------------------
+1. Le Conseil et le Bourgmestre
+------------------------------------------------------------------------
+
+- Le Bourgmestre :
+  - Humain honnête mais dépassé.
+  - Élu par compromis entre guildes et notables.
+  - Obsédé par un objectif : maintenir la paix entre Nains et Mages pour que
+    le commerce et la mine continuent à tourner.
+
+- Le Statu Quo :
+  - Les Mages veulent plus de liberté de recherche (y compris flirter avec
+    les magies interdites).
+  - Les Nains exigent le respect de leurs traditions et de leurs tabous
+    religieux sur les profondeurs.
+  - Le Bourgmestre tente de ménager tout le monde… et devient l’outil
+    involontaire de Thade.
+
+
+------------------------------------------------------------------------
+2. La Guilde des Mineurs (Les Gardiens)
+------------------------------------------------------------------------
+
+- Leader :
+  - Grand Maître de la Guilde, aussi Haut Clerc du Temple-Forgeron.
+  - Autorité religieuse et professionnelle.
+
+- Croyances :
+  - Les Nains savent intuitivement que la montagne est « malade » en
+    profondeur.
+  - Ils ont scellé les niveaux inférieurs avec des runes sacrées.
+  - Pour eux, les anomalies sont un avertissement des anciens dieux de la
+    pierre.
+
+- Conflit :
+  - Ils voient les Mages comme des enfants imprudents jouant avec du feu.
+  - Creuser trop profond n’est pas de la curiosité, c’est du suicide.
+  - Tout affaiblissement des sceaux constitue une trahison ancestrale.
+
+
+------------------------------------------------------------------------
+3. La Guilde des Mages (Les Ambitieux)
+------------------------------------------------------------------------
+
+- Hiérarchie :
+  - Apprentis
+  - Mages Confirmés
+  - Cercle Intérieur
+  - Maître de Guilde
+
+- Loi sur la Nécromancie :
+  - Officiellement, la nécromancie est strictement interdite.
+  - Peines prévues : mort ou exil.
+  - Tabou absolu, alimenté par les récits de catastrophes anciennes.
+
+- Corruption :
+  - Depuis son poste d’archiviste, Thade Coren a lentement infiltré le
+    Cercle Intérieur.
+  - Il place ses pions parmi les Mages Confirmés.
+  - Il recrute et fanatise les étudiants brillants sous couvert de « recherche
+    théorique » sur les limites de la vie.
+  - Beaucoup de ses partisans croient sincèrement travailler pour un avenir
+    meilleur… sans comprendre le prix à payer.
+
+
+===============================================================================
+IV. LA GÉOGRAPHIE SOUTERRAINE
+===============================================================================
+
+------------------------------------------------------------------------
+1. La Mine d’Argent (La Surface du Problème)
+------------------------------------------------------------------------
+
+- Niveaux -1 à -7 :
+  - Mine classique mais labyrinthique.
+  - Rails, galeries, poches de gaz, zones effondrées.
+  - Lieu idéal pour explorations, accidents, créatures opportunistes.
+
+- Niveau -8 : Le Seuil
+  - Là où les Nains ont arrêté de creuser.
+  - Galeries murées, recouvertes de runes d’avertissement et de confinement.
+  - C’est ici que la roche naturelle cède la place à la structure étrangère
+    de la Spirale : roche noire vitrifiée, lisse, anormale.
+
+
+------------------------------------------------------------------------
+2. La Spirale des Éons (Le Super Donjon)
+------------------------------------------------------------------------
+
+- Nature :
+  - Tour inversée titanesque qui s’enfonce dans la croûte terrestre.
+  - Non pas construite pierre par pierre, mais « poussée » ou cultivée vers le
+    bas depuis une autre réalité.
+
+- Mécanique Vivante :
+  - La Spirale est un organisme architectural :
+    - Couloirs qui se déplacent,
+    - Salles qui apparaissent et disparaissent,
+    - Matériaux semi-organiques.
+  - Elle réagit aux intrusions comme un système immunitaire (créatures
+    « nettoyeuses », distorsions spatiales, etc.).
+
+- Règle d’Or :
+  - Si les aventuriers quittent la Spirale pour se reposer longtemps à la
+    surface, l’agencement des salles qu’ils ont traversées change.
+  - Chemins fermés, nouveaux parcours, dangers déplacés.
+  - Aucun plan n’est fiable sur la durée : le donjon refuse d’être cartographié.
+
+- Le Secret de Thade :
+  - Thade a découvert que la Spirale est un canal d’énergie planaire brute.
+  - Les Nains la scellent par peur et respect des anciens serments.
+  - Lui veut s’y brancher pour devenir immortel, au sens strict :
+    - figer sa conscience dans un circuit fermé avec la Spirale,
+    - s’affranchir de la décrépitude et des limites du corps.
+  - Il utilise les mineurs, les incidents et les crises (Scénario 2) pour
+    briser les sceaux nains sans se salir les mains ni s’exposer.
+
+
+===============================================================================
+V. ÉVOLUTION DE THADE COREN (Aide MJ)
+===============================================================================
+
+Pour aider le MJ à incarner Thade au fil de la campagne, voici sa progression
+en termes de ton, de posture et de pouvoir.
+
+------------------------------------------------------------------------
+Scénario 1 : L’Enquêteur
+------------------------------------------------------------------------
+
+- Masque :
+  - Thade est serviable, froid et académique.
+  - Il intervient comme expert appelé par le Conseil ou par la Guilde.
+  - Il donne la quête ou fournit les premières informations sur les profanations.
+
+- Attitude :
+  - Politesse sans chaleur.
+  - Curiosité scientifique pour les évènements macabres.
+  - Mépris affiché pour les amateurs :
+    « Quel amateurisme. Il souille notre art. »
+
+- Objectif caché :
+  - Tester les PJ.
+  - Récupérer les restes, objets ou notes utiles.
+  - Évaluer jusqu’où la ville tolérera ses « expériences ».
+
+
+------------------------------------------------------------------------
+Scénario 2 : Le Manipulateur
+------------------------------------------------------------------------
+
+- Masque :
+  - Toujours officiellement du côté de l’ordre.
+  - Il se présente comme médiateur entre Mages, Nains et Bourgmestre.
+
+- Actions clés :
+  - Il fournit aux PJ le cristal de résonance, en réalité un mouchard
+    arcanique relié à la Spirale.
+  - Il attise la peur du Bourgmestre face à la grève des Nains pour forcer
+    l’ouverture des niveaux profonds de la mine.
+
+- Discours :
+  - Justifications pseudo-rationnelles de ses choix :
+    « Si nous ne comprenons pas ce qui se passe en profondeur, nous serons
+     surpris et tués plus tard. Il vaut mieux prendre le risque maintenant. »
+
+
+------------------------------------------------------------------------
+Scénario 3 : Le Tyran
+------------------------------------------------------------------------
+
+- Masque :
+  - Il tombe presque entièrement.
+  - Thade assume ouvertement la violence au nom de l’ordre.
+
+- Actions clés :
+  - Il fait assassiner le chef des Nains (ou provoque sa mort) pour
+    « rétablir l’ordre ».
+  - Il utilise la nécromancie à grande échelle pour prendre le contrôle
+    militaire de la ville.
+
+- Discours :
+  - Il se voit comme le seul adulte responsable dans une ville d’enfants paniqués :
+    « Vous voyez du chaos, je vois une structure.
+     Obéissez, et vous serez sauvés. »
+
+- Image :
+  - Devenu seigneur de guerre nécromantique, entouré de gardes morts-vivants
+    et de mages fanatiques.
+
+
+------------------------------------------------------------------------
+Scénarios 4 & 5 : L’Entité
+------------------------------------------------------------------------
+
+- Transformation :
+  - Thade est partiellement fusionné avec la Spirale.
+  - Son corps n’est plus qu’un avatar, une interface.
+  - Il perçoit la ville, les morts et les flux d’âmes comme des données dans
+    un système.
+
+- Parole :
+  - Il ne parle plus vraiment comme un homme, mais comme un dieu de l’ordre.
+  - Vocable détaché, presque mécanique, parfois pluriel (« nous » au lieu de
+    « je »).
+  - Il considère la mort comme une variable obsolète :
+    « La mort n’existe plus. Seule la continuité importe. »
+
+- But ultime :
+  - Offrir, de force, son « don » à toute la ville :
+    - plus de mort naturelle,
+    - plus de deuil,
+    - mais plus de libre arbitre sur son propre destin.
+  - Pour lui, c’est une grâce. Pour les PJ et la plupart des habitants,
+    c’est une horreur pire que la mort.
+
+FIN DU GUIDE DU MONDE : L’OMBRE DE LA SPIRALE
