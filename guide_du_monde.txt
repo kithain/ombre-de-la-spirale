@@ -1,5 +1,7 @@
 ===============================================================================
+
 GUIDE DU MONDE : L'OMBRE DE LA SPIRALE
+
 ===============================================================================
 
 Ce document est destiné au MJ. Il présente les grandes lignes de l’antagoniste,
@@ -364,5 +366,6 @@ Scénarios 4 & 5 : L’Entité
     - mais plus de libre arbitre sur son propre destin.
   - Pour lui, c’est une grâce. Pour les PJ et la plupart des habitants,
     c’est une horreur pire que la mort.
+
 
 FIN DU GUIDE DU MONDE : L’OMBRE DE LA SPIRALE
