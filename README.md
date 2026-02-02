@@ -7,7 +7,7 @@ _______________________________________________________________________________
 DATE....: 2025-2026                    PLATFORM: WEB / REACT JS
 TYPE....: CAMPAIGN WIKI ENGINE         DESIGN..: KITHAIN
 ```
-## Demo
+## Page
 https://kithain.github.io/ombre-de-la-spirale/
 
 _______________________________________________________________________________
