@@ -1,0 +1,353 @@
+/* Polices Google Fonts - doit être en premier */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   L'OMBRE DE LA SPIRALE - Dark Fantasy UI
+   Style: Forge industrielle / Arcane sombre
+   ============================================ */
+
+@layer base {
+  /* Variables CSS pour réutilisation */
+  :root {
+    /* Surfaces - Acier forgé / Obsidienne */
+    --color-surface: #0a0c0f;
+    --color-surface-raised: #12151a;
+    --color-surface-overlay: #181c24;
+    --color-surface-border: #252a35;
+    
+    /* Texte - Parchemin vieilli */
+    --color-content: #e8e2d4;
+    --color-content-secondary: #c9c1b0;
+    --color-content-muted: #9a9285;
+    --color-content-subtle: #6d675c;
+    
+    /* Accent - Braises / Feu de forge */
+    --color-accent: #c94a1f;
+    --color-accent-light: #e86f3a;
+    --color-accent-dark: #8b2d0f;
+    --color-accent-muted: #4a1a0a;
+    
+    /* Accent secondaire - Spirale/Arcane */
+    --color-arcane: #6b4c9a;
+    --color-arcane-light: #9d7cd4;
+    --color-arcane-glow: rgba(157, 124, 212, 0.3);
+    
+    /* Focus ring */
+    --focus-ring: 0 0 0 2px var(--color-surface), 0 0 0 4px var(--color-accent);
+    
+    /* Texture noise */
+    --noise-opacity: 0.03;
+  }
+
+  /* Reset et base */
+  html {
+    font-size: 17px;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface text-content font-sans antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+    line-height: 1.6;
+    background: 
+      /* Motif nain - losanges et lignes géométriques */
+      linear-gradient(45deg, transparent 48%, rgba(53, 59, 72, 0.04) 48%, rgba(53, 59, 72, 0.04) 52%, transparent 52%),
+      linear-gradient(-45deg, transparent 48%, rgba(53, 59, 72, 0.04) 48%, rgba(53, 59, 72, 0.04) 52%, transparent 52%),
+      linear-gradient(90deg, rgba(53, 59, 72, 0.02) 1px, transparent 1px),
+      linear-gradient(rgba(53, 59, 72, 0.02) 1px, transparent 1px),
+      /* Fond principal */
+      linear-gradient(145deg, #0a0c0f 0%, #0d0f12 35%, #101215 65%, #0a0c0f 100%);
+    background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px, 100% 100%;
+    background-attachment: fixed;
+  }
+
+  /* Typographie - Style médiéval/fantasy */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-content;
+    letter-spacing: 0.02em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  h1 { @apply text-3xl font-bold tracking-wide; }
+  h2 { @apply text-2xl font-semibold; }
+  h3 { @apply text-xl font-semibold; }
+  h4 { @apply text-lg font-medium; }
+  
+  /* Paragraphes avec meilleure lisibilité */
+  p {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Liens */
+  a {
+    @apply text-accent-light hover:text-accent transition-colors;
+  }
+
+  /* Focus visible - accessibilité */
+  :focus-visible {
+    outline: none;
+    box-shadow: var(--focus-ring);
+  }
+
+  /* Scrollbar personnalisée - Style forge */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, #0a0c0f, #12151a, #0a0c0f);
+    border-left: 1px solid var(--color-surface-border);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #2a2f3a 0%, #1a1e26 100%);
+    border: 1px solid #353b48;
+    border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #353b48 0%, #252a35 100%);
+    border-color: var(--color-accent-dark);
+  }
+
+  /* Sélection de texte */
+  ::selection {
+    @apply bg-accent/30 text-content;
+  }
+}
+
+@layer components {
+  /* ========== CARTES STYLE FORGE ========== */
+  
+  /* Carte principale avec coins biseautés */
+  .card-forge {
+    @apply relative overflow-hidden;
+    background: linear-gradient(145deg, rgba(18, 21, 26, 0.95) 0%, rgba(10, 12, 15, 0.98) 100%);
+    border: 1px solid transparent;
+    border-image: linear-gradient(135deg, #353b48 0%, #1a1e26 50%, #353b48 100%) 1;
+    clip-path: polygon(
+      0 12px, 12px 0, calc(100% - 12px) 0, 100% 12px,
+      100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px)
+    );
+  }
+  
+  .card-forge::before {
+    content: '';
+    @apply absolute inset-0 pointer-events-none;
+    background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, transparent 50%);
+  }
+  
+  /* Coins décoratifs */
+  .card-forge::after {
+    content: '';
+    @apply absolute top-0 left-0 w-6 h-6 pointer-events-none;
+    background: linear-gradient(135deg, var(--color-accent-dark) 0%, transparent 70%);
+    opacity: 0.6;
+  }
+
+  /* Carte avec bordure rouillée */
+  .card-rusted {
+    @apply relative;
+    background: linear-gradient(160deg, #14171d 0%, #0c0e12 100%);
+    border: 1px solid;
+    border-color: #2a2520 #352e28 #2a2520 #1f1a16;
+    box-shadow: 
+      inset 0 1px 0 rgba(255,255,255,0.02),
+      0 4px 12px rgba(0,0,0,0.4),
+      0 0 0 1px rgba(0,0,0,0.3);
+  }
+  
+  .card-rusted::before {
+    content: '';
+    @apply absolute top-0 left-0 right-0 h-px;
+    background: linear-gradient(90deg, 
+      transparent 0%, 
+      rgba(201, 74, 31, 0.3) 20%, 
+      rgba(201, 74, 31, 0.5) 50%, 
+      rgba(201, 74, 31, 0.3) 80%, 
+      transparent 100%
+    );
+  }
+
+  /* Carte avec lueur arcanique */
+  .card-arcane {
+    @apply relative overflow-hidden;
+    background: linear-gradient(145deg, #13161c 0%, #0b0d11 100%);
+    border: 1px solid #2a2d3a;
+    box-shadow: 
+      0 0 20px rgba(107, 76, 154, 0.1),
+      inset 0 0 30px rgba(107, 76, 154, 0.03);
+  }
+  
+  .card-arcane::before {
+    content: '';
+    @apply absolute -top-1/2 -left-1/2 w-full h-full pointer-events-none;
+    background: conic-gradient(from 180deg, transparent, rgba(157, 124, 212, 0.1), transparent);
+    animation: arcane-rotate 20s linear infinite;
+  }
+  
+  @keyframes arcane-rotate {
+    to { transform: rotate(360deg); }
+  }
+
+  /* ========== BORDURES DÉCORATIVES ========== */
+  
+  .border-ornate {
+    @apply relative;
+  }
+  
+  .border-ornate::before,
+  .border-ornate::after {
+    content: '';
+    @apply absolute w-8 h-8;
+    border: 2px solid var(--color-accent-dark);
+    opacity: 0.5;
+  }
+  
+  .border-ornate::before {
+    @apply top-0 left-0;
+    border-right: none;
+    border-bottom: none;
+  }
+  
+  .border-ornate::after {
+    @apply bottom-0 right-0;
+    border-left: none;
+    border-top: none;
+  }
+
+  /* ========== SÉPARATEURS ========== */
+  
+  .divider-forge {
+    @apply relative h-px my-6;
+    background: linear-gradient(90deg, 
+      transparent 0%, 
+      #353b48 15%, 
+      var(--color-accent-dark) 50%, 
+      #353b48 85%, 
+      transparent 100%
+    );
+  }
+  
+  .divider-forge::before {
+    content: '◆';
+    @apply absolute left-1/2 -translate-x-1/2 -top-2 text-accent-dark text-xs;
+  }
+
+  /* ========== TAGS/BADGES ========== */
+  
+  .tag-base {
+    @apply text-xs px-2.5 py-1 uppercase tracking-wider font-semibold;
+    clip-path: polygon(4px 0, 100% 0, calc(100% - 4px) 100%, 0 100%);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  }
+
+  /* ========== BOUTONS ========== */
+  
+  .btn-forge {
+    @apply relative px-5 py-2.5 font-semibold uppercase tracking-wider text-sm;
+    background: linear-gradient(180deg, #2a2f3a 0%, #1a1e26 100%);
+    border: 1px solid #404550;
+    clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    transition: all 0.2s ease;
+  }
+  
+  .btn-forge:hover {
+    background: linear-gradient(180deg, #353b48 0%, #252a35 100%);
+    border-color: var(--color-accent);
+    box-shadow: 0 0 15px rgba(201, 74, 31, 0.3);
+  }
+  
+  .btn-forge::before {
+    content: '';
+    @apply absolute inset-0 pointer-events-none;
+    background: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, transparent 50%);
+  }
+
+  /* ========== INPUTS ========== */
+  
+  .input-forge {
+    @apply px-4 py-2 text-sm;
+    background: linear-gradient(180deg, #0a0c0f 0%, #12151a 100%);
+    border: 1px solid #2a2f3a;
+    border-bottom-color: #353b48;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+    transition: all 0.2s ease;
+  }
+  
+  .input-forge:focus {
+    outline: none;
+    border-color: var(--color-accent-dark);
+    box-shadow: 
+      inset 0 2px 4px rgba(0,0,0,0.3),
+      0 0 10px rgba(201, 74, 31, 0.2);
+  }
+
+  /* ========== EFFETS DE LUEUR ========== */
+  
+  .glow-ember {
+    box-shadow: 
+      0 0 10px rgba(201, 74, 31, 0.2),
+      0 0 20px rgba(201, 74, 31, 0.1),
+      0 0 30px rgba(201, 74, 31, 0.05);
+  }
+  
+  .glow-arcane {
+    box-shadow: 
+      0 0 10px rgba(107, 76, 154, 0.3),
+      0 0 20px rgba(107, 76, 154, 0.15),
+      0 0 30px rgba(107, 76, 154, 0.08);
+  }
+  
+  /* Hover glow animé */
+  .hover-glow {
+    @apply transition-all duration-300;
+  }
+  
+  .hover-glow:hover {
+    box-shadow: 
+      0 4px 20px rgba(0, 0, 0, 0.4),
+      0 0 15px rgba(201, 74, 31, 0.15);
+    border-color: rgba(201, 74, 31, 0.4) !important;
+  }
+
+  /* ========== FOCUS ========== */
+  
+  .btn-focus {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface;
+  }
+}
+
+@layer utilities {
+  /* Texte tronqué multi-lignes */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Animation d'entrée */
+  .animate-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  /* Gradient de texte */
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, var(--color-accent-light), var(--color-accent));
+  }
+}
