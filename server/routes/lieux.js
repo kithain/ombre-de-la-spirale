@@ -7,14 +7,37 @@
  * GET    /api/lieux           — Lister tous les lieux (groupés par zone)
  */
 import { Router } from "express";
-import { writeFile } from "node:fs/promises";
 import {
   chargerToutesLesZones,
   trouverLieuDansZones,
-  UNIVERSE_DIR,
 } from "../helpers.js";
 import { genererFichierZone } from "../serialiseur.js";
-import { join } from "node:path";
+import { ecrireFichierSource } from "../ecritureSecurisee.js";
+
+/**
+ * Vérifie qu'un objet lieu est sérialisable et bien formé.
+ * @returns {string|null} message d'erreur ou null si OK
+ */
+function validerObjetLieu(lieu) {
+  if (!lieu || typeof lieu !== "object" || Array.isArray(lieu)) {
+    return "Objet lieu attendu.";
+  }
+  if (typeof lieu.id !== "string" || lieu.id.trim() === "") {
+    return "lieu.id doit être une chaîne non vide.";
+  }
+  // L'id n'est pas utilisé comme chemin disque : on accepte tout caractère
+  // imprimable. On bloque uniquement les caractères de contrôle.
+  // eslint-disable-next-line no-control-regex
+  if (/[\u0000-\u001F\u007F]/.test(lieu.id)) {
+    return `lieu.id contient des caractères de contrôle interdits.`;
+  }
+  try {
+    JSON.stringify(lieu);
+  } catch (err) {
+    return `Objet lieu non sérialisable : ${err.message}`;
+  }
+  return null;
+}
 
 export const routesLieux = Router();
 
@@ -42,8 +65,12 @@ routesLieux.put("/:id", async (req, res) => {
     const { id } = req.params;
     const lieuModifie = req.body;
 
-    if (!lieuModifie || !lieuModifie.id) {
-      return res.status(400).json({ error: "Corps invalide : un objet lieu avec un id est requis." });
+    const erreurValidation = validerObjetLieu(lieuModifie);
+    if (erreurValidation) {
+      return res.status(400).json({ error: erreurValidation });
+    }
+    if (lieuModifie.id !== id) {
+      return res.status(400).json({ error: `Incohérence : id URL (${id}) ≠ lieu.id (${lieuModifie.id}).` });
     }
 
     const entry = await trouverLieuDansZones(id);
@@ -54,9 +81,9 @@ routesLieux.put("/:id", async (req, res) => {
     // Remplacer le lieu dans le tableau de la zone
     entry.data.locations[entry.indexLieu] = lieuModifie;
 
-    // Réécrire le fichier zone complet
+    // Réécrire le fichier zone complet (atomique + verrouillé + validé)
     const code = genererFichierZone(entry.nomVariable, entry.data);
-    await writeFile(entry.fichier, code, "utf-8");
+    await ecrireFichierSource(entry.fichier, code);
 
     console.log(`[lieux] PUT ${id} → ${entry.fichier}`);
     res.json({ ok: true, lieu: lieuModifie });
@@ -71,8 +98,12 @@ routesLieux.post("/", async (req, res) => {
   try {
     const { zoneId, lieu } = req.body;
 
-    if (!zoneId || !lieu?.id) {
-      return res.status(400).json({ error: "zoneId et lieu.id requis." });
+    if (typeof zoneId !== "string" || zoneId.trim() === "") {
+      return res.status(400).json({ error: "zoneId requis (chaîne non vide)." });
+    }
+    const erreurValidation = validerObjetLieu(lieu);
+    if (erreurValidation) {
+      return res.status(400).json({ error: erreurValidation });
     }
 
     const zones = await chargerToutesLesZones();
@@ -90,7 +121,7 @@ routesLieux.post("/", async (req, res) => {
     entry.data.locations.push(lieu);
 
     const code = genererFichierZone(entry.nomVariable, entry.data);
-    await writeFile(entry.fichier, code, "utf-8");
+    await ecrireFichierSource(entry.fichier, code);
 
     console.log(`[lieux] POST ${lieu.id} → zone ${zoneId}`);
     res.status(201).json({ ok: true, lieu });
@@ -112,7 +143,7 @@ routesLieux.delete("/:id", async (req, res) => {
     entry.data.locations.splice(entry.indexLieu, 1);
 
     const code = genererFichierZone(entry.nomVariable, entry.data);
-    await writeFile(entry.fichier, code, "utf-8");
+    await ecrireFichierSource(entry.fichier, code);
 
     console.log(`[lieux] DELETE ${id} → ${entry.fichier}`);
     res.json({ ok: true, id });

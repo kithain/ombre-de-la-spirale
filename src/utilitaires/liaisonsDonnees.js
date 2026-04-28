@@ -239,13 +239,22 @@ export function supprimerLieu(lieuId) {
     const idx = (zone.locations || []).findIndex((l) => l.id === lieuId);
     if (idx !== -1) {
       zone.locations.splice(idx, 1);
-      // Persister la suppression + nettoyer l'édition
+      // Persister la suppression + nettoyer l'édition.
+      // En mode éditeur, l'API supprime déjà le lieu sur disque ; on se
+      // contente alors de purger un éventuel brouillon localStorage périmé
+      // sans alimenter `lieux_supprimes` (cette liste n'a de sens qu'en
+      // mode viewer où le disque ne change pas).
+      const estEditeur =
+        typeof import.meta !== "undefined" &&
+        import.meta.env?.VITE_APP_MODE === "editeur";
       try {
-        const cle = "lieux_supprimes";
-        const supprimes = JSON.parse(localStorage.getItem(cle) || "[]");
-        if (!supprimes.includes(lieuId)) {
-          supprimes.push(lieuId);
-          localStorage.setItem(cle, JSON.stringify(supprimes));
+        if (!estEditeur) {
+          const cle = "lieux_supprimes";
+          const supprimes = JSON.parse(localStorage.getItem(cle) || "[]");
+          if (!supprimes.includes(lieuId)) {
+            supprimes.push(lieuId);
+            localStorage.setItem(cle, JSON.stringify(supprimes));
+          }
         }
         localStorage.removeItem(`lieu_edit_${lieuId}`);
       } catch { /* pas bloquant */ }

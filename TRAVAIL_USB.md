@@ -80,6 +80,9 @@ npm run preview
 
 # Validation des PNJ
 npm run validate:pnj
+
+# Lancer le mode lecture
+npm run dev
 ```
 
 ## Dépannage courant

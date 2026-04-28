@@ -10,11 +10,10 @@ import { acte3 } from "./acte3_la_detente";
 import { acte4 } from "./acte4_nuit_longs_couteaux";
 import { acte5 } from "./acte5_siege_temple";
 import { acte6 } from "./acte6_chute_temple";
-import { acte7 } from "./acte7_descente_abime";
 
 export const scenario3 = {
   ...scenario3Metadata,
-  acts: [acte1, acte2, acte3, acte4, acte5, acte6, acte7],
+  acts: [acte1, acte2, acte3, acte4, acte5, acte6],
 };
 
 // Exports individuels pour accès ciblé
@@ -25,4 +24,3 @@ export { acte3 } from "./acte3_la_detente";
 export { acte4 } from "./acte4_nuit_longs_couteaux";
 export { acte5 } from "./acte5_siege_temple";
 export { acte6 } from "./acte6_chute_temple";
-export { acte7 } from "./acte7_descente_abime";

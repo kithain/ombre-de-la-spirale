@@ -12,6 +12,7 @@ import {
   AlertTriangle,
   Users,
   AlertCircle,
+  Plus,
 } from "lucide-react";
 import { universeData } from "../../../data/universe/universe";
 import TitreSection from "../../interface/TitreSection";
@@ -22,6 +23,8 @@ import DetailsLieux from "./DetailsLieux";
 import StatsUnivers from "./StatsUnivers";
 import { utiliserEtatPersistant } from "../../../hooks/utiliserEtatPersistant";
 import { obtenirPnjPourLieu } from "../../../utilitaires/liaisonsDonnees";
+import { utiliserEditeurZoneContexte } from "../../../contextes/ContexteEditeurZoneBase";
+import { estModeEditeur } from "../../../services/api";
 
 const ICONES_SECTIONS = {
   cloud: Cloud,
@@ -36,6 +39,8 @@ const ICONES_SECTIONS = {
 
 function VueUnivers() {
   const zones = universeData.zones || [];
+  const { creerNouvelleZone, ouvrirEditeurZone } = utiliserEditeurZoneContexte();
+  const modeEditeur = estModeEditeur();
   const [idZoneSelectionnee, definirIdZone] = utiliserEtatPersistant(
     "universe-zone",
     zones[0]?.id || null,
@@ -90,6 +95,32 @@ function VueUnivers() {
   const gererSelectionLieu = (idLieu) => {
     definirIdLieu(idLieu);
     definirIdPnj(null);
+  };
+
+  const gererCreationZone = async () => {
+    const nom = window.prompt(
+      "Nom de la nouvelle zone ?\n\n" +
+        "Un id sera dérivé automatiquement (ex: \"Quartier Nord\" → quartier_nord).",
+      "",
+    );
+    if (nom === null) return; // Annulation utilisateur
+    const nomNet = nom.trim();
+    if (!nomNet) {
+      window.alert("Le nom ne peut pas être vide.");
+      return;
+    }
+    try {
+      const nouvelleZone = await creerNouvelleZone({ name: nomNet });
+      if (nouvelleZone?.id) {
+        definirIdZone(nouvelleZone.id);
+        definirIdLieu(null);
+        definirIdPnj(null);
+        // Ouvrir directement l'éditeur sur la zone fraîchement créée
+        ouvrirEditeurZone(nouvelleZone.id);
+      }
+    } catch (err) {
+      window.alert(`Création refusée : ${err.message}`);
+    }
   };
 
   return (
@@ -177,6 +208,17 @@ function VueUnivers() {
         <h2 className="text-base sm:text-xl font-serif text-accent-light whitespace-nowrap">
           Explorer les Zones
         </h2>
+        {modeEditeur && (
+          <button
+            type="button"
+            onClick={gererCreationZone}
+            className="btn-forge flex items-center gap-1.5 text-content text-xs !px-2.5 !py-1 !border-green-700 hover:!border-green-500 hover:!shadow-[0_0_15px_rgba(34,197,94,0.3)] whitespace-nowrap"
+            title="Créer une nouvelle zone"
+          >
+            <Plus size={14} />
+            Nouvelle zone
+          </button>
+        )}
         <div className="flex-1 h-px bg-gradient-to-r from-transparent via-surface-border to-transparent" />
       </div>
 

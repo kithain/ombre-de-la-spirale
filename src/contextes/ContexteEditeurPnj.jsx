@@ -29,6 +29,12 @@ async function sauvegarderParDefaut(diff, brouillonComplet) {
   // 2. Persister
   if (estModeEditeur()) {
     await apiPnj.modifier(brouillonComplet.id, brouillonComplet);
+    // Le disque est maintenant la source de vérité : on purge un éventuel
+    // brouillon localStorage devenu obsolète (sinon il serait réappliqué
+    // en mode viewer et écraserait les nouvelles valeurs).
+    try {
+      localStorage.removeItem(`pnj_edit_${brouillonComplet.id}`);
+    } catch { /* pas bloquant */ }
   } else {
     try {
       localStorage.setItem(`pnj_edit_${brouillonComplet.id}`, JSON.stringify(brouillonComplet));
@@ -55,6 +61,9 @@ async function sauvegarderCreation(diff, brouillonComplet) {
   // 2. Persister
   if (estModeEditeur()) {
     await apiPnj.creer(brouillonComplet);
+    try {
+      localStorage.removeItem(`pnj_edit_${brouillonComplet.id}`);
+    } catch { /* pas bloquant */ }
   } else {
     try {
       localStorage.setItem(`pnj_edit_${brouillonComplet.id}`, JSON.stringify(brouillonComplet));

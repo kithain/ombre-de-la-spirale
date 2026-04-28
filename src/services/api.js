@@ -152,6 +152,22 @@ export const apiImages = {
   },
 };
 
+// ─── API Zones ────────────────────────────────────────────────────────────────
+
+export const apiZones = {
+  /** Lister les zones (métadonnées sans locations) */
+  lister: () => requete("GET", "/zones"),
+
+  /** Créer une nouvelle zone (génère un fichier universeZone_<id>.js + maj du barrel) */
+  creer: (zone) => requete("POST", "/zones", { zone }),
+
+  /** Mettre à jour les métadonnées d'une zone (locations préservées côté serveur) */
+  modifier: (id, zone) => requete("PUT", `/zones/${encodeURIComponent(id)}`, zone),
+
+  /** Supprimer une zone (refusée si elle contient encore des lieux) */
+  supprimer: (id) => requete("DELETE", `/zones/${encodeURIComponent(id)}`),
+};
+
 // ─── API Scénarios ────────────────────────────────────────────────────────────
 
 export const apiScenarios = {

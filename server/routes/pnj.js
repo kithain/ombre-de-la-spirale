@@ -8,7 +8,6 @@
  * DELETE /api/pnj/:id          — Supprimer un PNJ
  */
 import { Router } from "express";
-import { writeFile } from "node:fs/promises";
 import { basename } from "node:path";
 import {
   trouverPnjDansFichiers,
@@ -19,7 +18,36 @@ import {
   FICHIERS_PNJ,
 } from "../helpers.js";
 import { genererFichierPnj } from "../serialiseur.js";
+import { ecrireFichierSource } from "../ecritureSecurisee.js";
 import { join } from "node:path";
+
+/**
+ * Vérifie qu'un objet PNJ est sérialisable et bien formé.
+ * @returns {string|null} message d'erreur ou null si OK
+ */
+function validerObjetPnj(pnj) {
+  if (!pnj || typeof pnj !== "object" || Array.isArray(pnj)) {
+    return "Objet PNJ attendu.";
+  }
+  if (typeof pnj.id !== "string" || pnj.id.trim() === "") {
+    return "pnj.id doit être une chaîne non vide.";
+  }
+  // L'id n'est jamais utilisé pour construire un chemin disque : on accepte
+  // n'importe quel caractère imprimable (les ids existants peuvent contenir
+  // des accents, ex: "contremaître_possede"). On bloque uniquement les
+  // caractères de contrôle qui casseraient la sérialisation.
+  // eslint-disable-next-line no-control-regex
+  if (/[\u0000-\u001F\u007F]/.test(pnj.id)) {
+    return `pnj.id contient des caractères de contrôle interdits.`;
+  }
+  // Test de sérialisation : détecte fonctions, BigInt, références circulaires.
+  try {
+    JSON.stringify(pnj);
+  } catch (err) {
+    return `Objet PNJ non sérialisable : ${err.message}`;
+  }
+  return null;
+}
 
 export const routesPnj = Router();
 
@@ -106,12 +134,18 @@ routesPnj.put("/:id/deplacer", async (req, res) => {
     // Retirer de la source
     source.data.splice(source.indexDansTableau, 1);
     const commentaireSource = await lireCommentaireFichier(source.fichier);
-    await writeFile(source.fichier, genererFichierPnj(source.nomVariable, commentaireSource, source.data), "utf-8");
+    await ecrireFichierSource(
+      source.fichier,
+      genererFichierPnj(source.nomVariable, commentaireSource, source.data),
+    );
 
     // Ajouter à la destination
     dataDest.push(pnjACopier);
     const commentaireDest = await lireCommentaireFichier(cheminDest);
-    await writeFile(cheminDest, genererFichierPnj(fichierDestInfo.variable, commentaireDest, dataDest), "utf-8");
+    await ecrireFichierSource(
+      cheminDest,
+      genererFichierPnj(fichierDestInfo.variable, commentaireDest, dataDest),
+    );
 
     console.log(`[pnj] DEPLACER ${id} : ${basename(source.fichier)} → ${fichierCible}`);
     res.json({ ok: true, fichier: fichierCible, pnj: pnjACopier });
@@ -127,8 +161,12 @@ routesPnj.put("/:id", async (req, res) => {
     const { id } = req.params;
     const pnjModifie = req.body;
 
-    if (!pnjModifie || !pnjModifie.id) {
-      return res.status(400).json({ error: "Corps invalide : un objet PNJ avec un id est requis." });
+    const erreurValidation = validerObjetPnj(pnjModifie);
+    if (erreurValidation) {
+      return res.status(400).json({ error: erreurValidation });
+    }
+    if (pnjModifie.id !== id) {
+      return res.status(400).json({ error: `Incohérence : id URL (${id}) ≠ pnj.id (${pnjModifie.id}).` });
     }
 
     const entry = await trouverPnjDansFichiers(id);
@@ -142,9 +180,9 @@ routesPnj.put("/:id", async (req, res) => {
     // Lire le commentaire JSDoc existant
     const commentaire = await lireCommentaireFichier(entry.fichier);
 
-    // Réécrire le fichier complet
+    // Réécrire le fichier complet (atomique + verrouillé + validé)
     const code = genererFichierPnj(entry.nomVariable, commentaire, entry.data);
-    await writeFile(entry.fichier, code, "utf-8");
+    await ecrireFichierSource(entry.fichier, code);
 
     console.log(`[pnj] PUT ${id} → ${entry.fichier}`);
     res.json({ ok: true, pnj: pnjModifie });
@@ -159,8 +197,9 @@ routesPnj.post("/", async (req, res) => {
   try {
     const { fichierCible, pnj } = req.body;
 
-    if (!pnj?.id) {
-      return res.status(400).json({ error: "pnj.id requis." });
+    const erreurValidation = validerObjetPnj(pnj);
+    if (erreurValidation) {
+      return res.status(400).json({ error: erreurValidation });
     }
 
     // Par défaut, ajouter dans pnj_globaux.js
@@ -182,7 +221,7 @@ routesPnj.post("/", async (req, res) => {
 
     const commentaire = await lireCommentaireFichier(chemin);
     const code = genererFichierPnj(fichierInfo.variable, commentaire, data);
-    await writeFile(chemin, code, "utf-8");
+    await ecrireFichierSource(chemin, code);
 
     console.log(`[pnj] POST ${pnj.id} → ${cible}`);
     res.status(201).json({ ok: true, pnj });
@@ -205,7 +244,7 @@ routesPnj.delete("/:id", async (req, res) => {
 
     const commentaire = await lireCommentaireFichier(entry.fichier);
     const code = genererFichierPnj(entry.nomVariable, commentaire, entry.data);
-    await writeFile(entry.fichier, code, "utf-8");
+    await ecrireFichierSource(entry.fichier, code);
 
     console.log(`[pnj] DELETE ${id} → ${entry.fichier}`);
     res.json({ ok: true, id });

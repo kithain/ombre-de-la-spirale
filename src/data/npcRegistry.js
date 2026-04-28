@@ -127,10 +127,21 @@ const listePnjComplete = construireListePnj();
 const indexParId = construireIndexPnj(listePnjComplete);
 const indexParNom = construireIndexNomPnj(listePnjComplete);
 
-// Restaurer les éditions persistées dans localStorage
+// Restaurer les éditions persistées dans localStorage.
+//
+// IMPORTANT — uniquement en mode viewer.
+// En mode éditeur, la source de vérité est le disque (les fichiers JS source).
+// Appliquer localStorage par-dessus écraserait les données fraîchement lues
+// avec d'anciens brouillons obsolètes — ce qui faisait revenir des PV/BBA/…
+// à des valeurs périmées après chaque rechargement.
 (function restaurerEditionsLocales() {
   try {
     if (typeof localStorage === "undefined") return;
+    const estEditeur =
+      typeof import.meta !== "undefined" &&
+      import.meta.env?.VITE_APP_MODE === "editeur";
+    if (estEditeur) return;
+
     for (let i = 0; i < localStorage.length; i++) {
       const cle = localStorage.key(i);
       if (!cle || !cle.startsWith("pnj_edit_")) continue;

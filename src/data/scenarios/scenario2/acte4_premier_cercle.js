@@ -36,7 +36,7 @@ export const acte4 = {
       mecaniques: {
         defis: ["Intelligence (DD 14) : Comprendre que la structure suit le mouvement du cristal."],
         indices: ["Le sol vibre différemment à mesure qu'on approche du centre."],
-        recompenses: "null",
+        recompenses: "",
       },
       transitions: {
         success: "Le groupe arrive à la zone d'extraction.",

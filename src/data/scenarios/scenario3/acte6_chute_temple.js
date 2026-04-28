@@ -1,202 +1,240 @@
 /**
- * Scénario 3 - Acte 6 : La Chute du Temple
- * Temple-Forgeron
+ * Scénario 3 - Acte 6 : La Fuite par l'Abîme
+ * Égouts, Ville Morte, Cimetière, Entrée de la Spirale
+ *
+ * NOTE : cet acte remplace l'ancien acte6_chute_temple (qui contenait à tort
+ * un combat final contre Thade transformé en liche, en contradiction directe
+ * avec le climax du Scénario 5). Il fusionne aussi l'ancien acte7_descente_abime
+ * en un acte unique de fuite, qui se conclut par le passage forcé dans la Spirale.
+ *
+ * Thade reste hors d'atteinte ici. Il n'apparaît que sous forme de projection
+ * narquoise pour scellr le piège : Valombre est sa nécropole, et la seule
+ * "sortie" est la Spirale — qu'il a délibérément laissée ouverte.
  */
 
 export const acte6 = {
-  title: "ACTE 6 : LA CHUTE DU TEMPLE",
-  stake: "Tenter de stopper le rituel de Thade avant de fuir.",
-  location: "Tour Arcanique et Hauteurs de Valombre.",
+  title: "ACTE 6 : LA FUITE PAR L'ABÎME",
+  stake:
+    "Évacuer les survivants du Temple-Forgeron, traverser une ville devenue nécropole, et plonger dans la Spirale comme seule issue.",
+  location: "Égouts, Rues de Valombre, Cimetière, Entrée de la Spirale.",
   scenes: [
     {
-      title: "Scène 1 : La Ville Morte",
-      type: "Exploration",
+      title: "Scène 1 : Le Passage sous l'Autel",
+      type: "Urgence / Skill Challenge",
+      image: "./images/scenes/egouts_temple.jpg",
+      locationId: "egouts_sous_temple",
+      npcIds: ["durnik_chef_mineur", "thorgar_pretre_nain"],
+      description: {
+        resume:
+          "Évacuation par le passage secret sous le Temple. Les égouts s'effondrent à mesure que le dôme presse la roche.",
+        visuel:
+          "Sous l'autel de Moradin, une dalle de granit est descellée. En dessous, un escalier en colimaçon, étroit, suintant. Les survivants — environ 50 nains et quelques humains — descendent en file. La pierre tremble. Au-dessus, on entend les béliers défoncer les portes du Temple.",
+        audio:
+          "Pleurs étouffés des enfants, ordres murmurés de Durnik, fracas du Temple qui cède au-dessus.",
+        odeur: "Égouts, humidité, sueur de panique.",
+        lumiere: "Torches vacillantes, à peine de quoi voir trois pas devant.",
+      },
+      narration: {
+        declencheur: "Décision d'évacuer après l'apparition du dôme (fin Acte 5).",
+        texte_a_lire:
+          "Durnik soulève la dalle. « Passage des Premiers Mineurs. Mes ancêtres l'ont creusé. Il mène au cimetière par le vieux drain. Au-delà... » Il hésite. « Au-delà, il y a une fissure que personne n'a osé approcher depuis des siècles. Vos amis disparus dans la mine en sont peut-être sortis. C'est notre seule chance. »\n\nThorgar bénit la dalle d'un geste rapide. « Moradin nous excusera de désacraliser son autel. Allez. »",
+        contexte_mj:
+          "Skill challenge de groupe : guider une cinquantaine de survivants dans des égouts qui s'effondrent. Chaque échec coûte 1d4 réfugiés. Encourager les choix tactiques (qui porte les blessés ? qui ouvre la marche ?). Insister sur la dignité de la fuite : ce n'est pas une déroute, c'est un sauvetage organisé.",
+        objectif: "Mener les survivants vers la sortie du cimetière.",
+      },
+      mecaniques: {
+        defis: [
+          "Skill Challenge : 5 succès avant 3 échecs.",
+          "Athlétisme DD 13 : porter les blessés / dégager les éboulements.",
+          "Connaissances (Souterrains) DD 14 : choisir la bonne galerie aux croisements.",
+          "Diplomatie DD 12 : maintenir le calme de la colonne.",
+          "Perception DD 14 : repérer les zombies qui rôdent dans les drains adjacents.",
+        ],
+        indices: [
+          "Les égouts sont anciens — naines pré-fondation, plus solides que le reste.",
+          "Une partie du chemin passe sous le cimetière. On entend des choses ramper au-dessus.",
+          "Sniv le kobold (s'il a survécu au Sc.1) peut apparaître ici comme guide impromptu.",
+        ],
+        recompenses:
+          "Selon le compteur : 80% / 60% / 40% / 20% des réfugiés survivent jusqu'au cimetière.",
+      },
+      transitions: {
+        success: "La majorité des survivants atteint le drain du cimetière.",
+        fail:
+          "Lourdes pertes. Durnik est blessé en couvrant la retraite et restera en convalescence pour le Sc.5.",
+      },
+    },
+    {
+      title: "Scène 2 : Au-dessus, la Ville Morte",
+      type: "Exploration / Horreur",
       image: "./images/scenes/ville_necropole.jpg",
       locationId: "rues_valombre_necropole",
       npcIds: [],
       description: {
-        resume: "Traversée de la ville transformée en nécropole",
-        visuel: "Brume violette, cadavres se relevant, bâtiments s'effondrant.",
-        audio: "Silence de mort, grognements, effondrements.",
-        odeur: "Décomposition, brume acide.",
-        lumiere: "Crépuscule éternel sous dôme violet.",
+        resume:
+          "Une portion du parcours passe en surface, dans une ruelle étroite. Valombre s'est éteinte.",
+        visuel:
+          "Une petite cour intérieure entre deux maisons effondrées. Le ciel est devenu une coupole violette qui filtre toute lumière naturelle. Les rues principales, visibles au bout de la ruelle, sont traversées par des colonnes de cadavres marchant en rang, chaînés par paires, dirigés vers la Tour Arcanique.",
+        audio:
+          "Aucun cri. Un silence quasi-total, brisé par le claquement régulier des chaînes et le pas mort des colonnes.",
+        odeur: "Brume violette acide, charogne, fer rouillé.",
+        lumiere: "Crépuscule éternel, teinté de violet.",
       },
       narration: {
-        declencheur: "Départ vers la Tour.",
+        declencheur: "Sortie temporaire en surface pour contourner un éboulement.",
         texte_a_lire:
-          "Valombre agonise. Durnik : 'Si nous stoppons le rituel, le dôme tombera peut-être.'",
+          "Vous émergez dans une cour. Au bout de la ruelle, vous voyez la grande rue : une procession de morts marche au pas, enchaînés deux par deux, vers la Tour qui pulse à l'horizon. Personne ne vous voit. Personne n'a plus d'yeux pour voir. Sur un mur, une affiche officielle, encore fraîche : 'PROTECTORAT DE VALOMBRE — ORDRE PUBLIC RÉTABLI — TOUS LES CITOYENS LOYAUX SE PRÉSENTERONT À L'INSCRIPTION DE LA TOUR.'\n\nC'est signé : THADE COREN, PROTECTEUR.",
         contexte_mj:
-          "Traversée atmosphérique. Skill challenge pour atteindre la Tour.",
-        objectif: "Atteindre la Tour Arcanique.",
+          "Pas de combat, pas de jet — c'est une scène d'horreur PURE. Les PJ doivent VOIR ce que Thade a fait. Insister sur le fait qu'ici, l'horreur est ADMINISTRATIVE : Thade a légalisé la nécropole. Pas de purge sanglante visible — juste des affiches officielles, des listes, des colonnes. La banalité du mal.",
+        objectif: "Comprendre l'ampleur de la chute. Replonger dans les égouts.",
       },
       mecaniques: {
         defis: [
-          "Skill Challenge : 5 succès avant 3 échecs",
-          "Acrobaties, Athlétisme, Discrétion, Survie",
+          "Volonté DD 14 : ne pas céder au désespoir (échec = -1 à toutes les actions de l'acte).",
+          "Discrétion DD 12 : retraverser la cour sans attirer l'attention des sentinelles.",
+          "Investigation DD 13 : reconnaître un visage parmi les colonnes (PNJ familier — Mara ? Un mineur connu ?).",
         ],
         indices: [
-          "Brume dense près Tour",
-          "Survivants supplient aide",
-          "Tour gardée",
-        ],
-        recompenses: "Arrivée Tour selon état.",
-      },
-      transitions: {
-        success: "Arrivent en bon état.",
-        fail: "Arrivent épuisés.",
-      },
-    },
-    {
-      title: "Scène 2 : L'Ascension",
-      type: "Infiltration",
-      image: "./images/scenes/tour_arcanique_interieur.jpg",
-      locationId: "tour_arcanique_escaliers",
-      npcIds: ["gardes_morts_vivants"],
-      description: {
-        resume: "Ascension de la Tour remplie de morts-vivants",
-        visuel: "Couloirs déserts, cadavres mages, escaliers spirale.",
-        audio: "Incantations lointaines, bourdonnement.",
-        odeur: "Sang, ozone, mort.",
-        lumiere: "Lueur violette pulsante.",
-      },
-      narration: {
-        declencheur: "Entrée Tour.",
-        texte_a_lire:
-          "La Tour est un tombeau vivant. Des mages morts patrouillent.",
-        contexte_mj:
-          "Infiltration verticale. Les PJ doivent atteindre le sommet.",
-        objectif: "Atteindre le sommet de la Tour.",
-      },
-      mecaniques: {
-        defis: [
-          "Combats : 3 étages avec 4-6 morts-vivants chacun",
-          "Discrétion DD 16 : éviter certains combats",
-          "Connaissances (Arcanes) DD 15 : comprendre le rituel",
-        ],
-        indices: [
-          "Rituel au sommet",
-          "Thade canalise Spirale",
-          "Destruction = libération",
-        ],
-        recompenses: "Information sur le rituel, progression vers sommet.",
-      },
-      transitions: {
-        success: "Atteignent le sommet.",
-        fail: "Blessés, retardés.",
-      },
-    },
-    {
-      title: "Scène 3 : Le Cœur de l'Ascension",
-      type: "Boss final",
-      image: "./images/scenes/thade_ascension.jpg",
-      locationId: "tour_arcanique_sommet",
-      npcIds: ["thade_coren_liche"],
-      description: {
-        resume: "Affrontement final avec Thade en pleine transformation",
-        visuel: "Thade mi-homme mi-liche, entouré d'énergie spirale.",
-        audio: "Incantations, éclairs, voix déformée.",
-        odeur: "Nécromancie, brûlé, pouvoir.",
-        lumiere: "Éclairs violets, aura noire.",
-      },
-      narration: {
-        declencheur: "Arrivée au sommet.",
-        texte_a_lire: "Thade : 'Vous êtes en retard. L'Ascension a commencé.'",
-        contexte_mj:
-          "Boss final. Thade se transforme en liche pendant le combat.",
-        objectif: "Arrêter Thade et détruire le rituel.",
-      },
-      mecaniques: {
-        defis: [
-          "Combat : Thade (Magicien 10) se transforme progressivement en liche",
-          "Phase 1 : Magicien 10 avec sorts de contrôle",
-          "Phase 2 : Mi-liche (RD 10/contondant, immunité mort froid)",
-          "Phase 3 : Liche complète (RD 15, aura de peur)",
-          "Rituel : Chaque round, dôme se renforce. Détruire cristal central = arrêter rituel",
-        ],
-        indices: [
-          "Cristal = cœur rituel",
-          "Thade vulnérable pendant transformation",
-          "Destruction cristal = libération",
-        ],
-        recompenses: "Victoire, sauvegarde de Valombre, XP majeur.",
-      },
-      transitions: {
-        success: "Thade vaincu, ville sauvée.",
-        fail: "Thade réussit, ville perdue.",
-      },
-    },
-    {
-      title: "Scène 4 : L'Effondrement",
-      type: "Évasion",
-      image: "./images/scenes/effondrement_tour.jpg",
-      locationId: "tour_arcanique_effondrement",
-      npcIds: [],
-      description: {
-        resume: "Fuite de la Tour qui s'effondre",
-        visuel: "Tour s'effondre, dôme se fissure, éclaircies.",
-        audio: "Explosions, craquements, cris de libération.",
-        odeur: "Air frais, poussière, fin de la corruption.",
-        lumire: "Lumière du jour, fissures dans dôme.",
-      },
-      narration: {
-        declencheur: "Défaite de Thade.",
-        texte_a_lire:
-          "La Tour s'effondre. Le dôme se fissure. La lumière revient.",
-        contexte_mj:
-          "Course-poursuite verticale. Les PJ doivent fuir la Tour qui s'effondre.",
-        objectif: "Échapper à la Tour en ruines.",
-      },
-      mecaniques: {
-        defis: [
-          "Athlétisme DD 14 : descendre rapidement",
-          "Acrobaties DD 16 : éviter débris",
-          "Vigueur DD 12 : résister à la poussière",
-        ],
-        indices: [
-          "Passage secret sous Temple = sortie sûre",
-          "Dôme se fissure = espoir",
-        ],
-        recompenses: "Évasion, fin de la menace.",
-      },
-      transitions: {
-        success: "Échappent sains et saufs.",
-        fail: "Blessés mais vivants.",
-      },
-    },
-    {
-      title: "Scène 5 : L'Aube de la Libération",
-      type: "Épilogue",
-      image: "./images/scenes/valombre_liberee.jpg",
-      locationId: "valombre_reconstruction",
-      npcIds: ["durnik_chef_mineur", "thorgar_pretre_nain"],
-      description: {
-        resume: "Valombre se relève après la chute de Thade",
-        visuel: "Ville endommagée mais libre. Survivants sortent.",
-        audio: "Cris de joie, travaux de reconstruction.",
-        odeur: "Air frais, espoir, bois coupé.",
-        lumire: "Soleil levant sur les ruines.",
-      },
-      narration: {
-        declencheur: "Sortie des égouts/ruines.",
-        texte_a_lire:
-          "Le soleil se lève sur Valombre. La ville est dévastée mais libre. Durnik : 'Vous l'avez fait. Vous nous avez sauvés.'",
-        contexte_mj:
-          "Conclusion. Les PJ sont des héros. La ville doit reconstruire.",
-        objectif: "Célébrer la victoire et préparer l'avenir.",
-      },
-      mecaniques: {
-        defis: ["Aucun. Scène de conclusion et récompenses."],
-        indices: [
-          "Thade vaincu mais pas détruit",
-          "Spirale toujours active",
-          "Prochain scénario",
+          "Toutes les affiches sont signées 'Protecteur'. Thade s'est fait remettre le pouvoir LÉGALEMENT.",
+          "Les colonnes vont vers la Tour : elle pompe quelque chose des morts.",
+          "Reconnaître un visage = motivation supplémentaire pour le Sc.5 (lien personnel).",
         ],
         recompenses:
-          "Héroïs de Valombre, récompenses majeures, passage au niveau 10.",
+          "Détermination renforcée. Bonus narratif aux jets de Volonté du Sc.5 si la Volonté est réussie ici.",
       },
       transitions: {
-        success: "Fin du Scénario 3. Vers le Scénario 4.",
-        fail: "Fin du Scénario 3. Vers le Scénario 4.",
+        success: "Retour dans les égouts, plus déterminés que jamais.",
+        fail:
+          "Repérés par une sentinelle. Combat différé à la Scène 3 (cimetière).",
+      },
+    },
+    {
+      title: "Scène 3 : Le Cimetière des Sceaux Brisés",
+      type: "Combat / Lore",
+      image: "./images/scenes/cimetiere_maudit.jpg",
+      locationId: "cimetiere_valombre",
+      npcIds: ["thanes_morts_corrompus", "horde_morts_vivants"],
+      description: {
+        resume:
+          "Le cimetière nain où tout a commencé (Sc.1) est devenu l'épicentre. Les Thanes profanés se sont relevés, mais ils gardent encore quelque chose des nains qu'ils étaient.",
+        visuel:
+          "Le cimetière des Terrasses, méconnaissable. Les tombes des Thanes sont éventrées de l'intérieur. Au centre, là où les profanations du Sc.1 ont commencé, une fissure violette pulse au sol — l'Entrée. Autour d'elle, six silhouettes en armures naines anciennes, droites, immobiles. Au loin, des hordes de morts-vivants ordinaires.",
+        audio:
+          "Les armures anciennes ne grincent pas. Les Thanes sont silencieux. Les hordes ordinaires grognent et claquent des dents.",
+        odeur: "Terre, vieux fer, ozone près de la fissure.",
+        lumiere: "Lune rouge filtrée par le dôme, lueur violette de la fissure.",
+      },
+      narration: {
+        declencheur: "Sortie du drain dans le cimetière.",
+        texte_a_lire:
+          "Vous reconnaissez le cimetière. Là où Jaren creusait, il y a une vie. Sauf qu'à présent, c'est une plaie ouverte : une fissure violette dans le sol, qui pulse comme une artère. Et autour d'elle, six Thanes anciens en armure complète, immobiles, vous regardent. Ils ne chargent pas. Ils ATTENDENT.\n\nThorgar tombe à genoux : « Par Moradin. Ils savent encore qui ils sont. Coren n'a pas pu briser leur âme — seulement leurs sceaux. »",
+        contexte_mj:
+          "Révélation importante : les Thanes profanés au Sc.1 ne sont pas devenus de simples zombies. Leur âme résiste. Si les PJ les approchent avec respect (Religion, paroles correctes), ils peuvent les laisser passer ET tenir la fissure derrière eux le temps que les réfugiés s'échappent dans la Spirale. Sinon, combat très difficile. Les hordes ordinaires en fond de scène sont la pression temporelle.",
+        objectif:
+          "Faire passer les réfugiés par la fissure. Honorer ou combattre les Thanes.",
+      },
+      mecaniques: {
+        defis: [
+          "Connaissances (Religion) DD 16 : reconnaître le rite funéraire nain et le prononcer.",
+          "Diplomatie DD 18 : parler aux Thanes (bonus +4 si Thorgar canalise une bénédiction).",
+          "Combat alternatif : 6 Thanes Profanés (FP 7) — TRÈS difficile, à éviter.",
+          "Combat secondaire : vagues de morts-vivants ordinaires (FP 1-2) qui arrivent par le portail du cimetière (3 succès en Combat / Discrétion / Tactique pour gagner du temps).",
+          "Médecine + Athlétisme DD 12 : faire passer les réfugiés blessés par la fissure (1 jet par tranche de 10 réfugiés).",
+        ],
+        indices: [
+          "Les Thanes répondent à leurs noms (gravés sur les tombes éventrées).",
+          "Si honorés, ils GARDERONT la fissure derrière les PJ — empêchant Thade de la suivre.",
+          "Sniv (si présent) peut traduire des bribes de nain ancien que les Thanes prononcent.",
+          "Thorgar peut, en sacrifice, restaurer un sceau partiel sur la fissure (réduit la corruption pour le Sc.5, mais l'épuise).",
+        ],
+        recompenses:
+          "Si Thanes honorés : la fissure est gardée derrière les PJ (bonus narratif Sc.5). Reconnaissance des Premiers Gardiens (lien direct avec Sc.4 Acte 3).",
+      },
+      transitions: {
+        success: "Tous les survivants viables passent dans la Spirale.",
+        fail:
+          "Combat dévastateur. Pertes lourdes parmi les réfugiés. La fissure reste ouverte derrière eux.",
+      },
+    },
+    {
+      title: "Scène 4 : La Voix de la Tour",
+      type: "Cinématique / Narration",
+      image: "./images/scenes/dome_violet.jpg",
+      locationId: "cimetiere_valombre_fissure",
+      npcIds: ["thade_coren_projection"],
+      description: {
+        resume:
+          "Au moment du saut, une projection de Thade s'adresse aux PJ. Pas de combat — un dernier acte de manipulation.",
+        visuel:
+          "À mi-chemin entre le sol et la fissure, une silhouette violette se condense dans l'air. Pas Thade en personne : une projection, transparente, sans poids. Il est calme, presque amical.",
+        audio:
+          "La voix de Thade arrive avec un léger décalage, comme une lettre lue à voix haute.",
+        odeur: "L'odeur de la lavande de son bureau, transportée par la brume.",
+        lumiere: "La projection émet une lueur violette douce.",
+      },
+      narration: {
+        declencheur: "Au seuil de la fissure, juste avant le saut.",
+        texte_a_lire:
+          "« Vous y êtes. Bravo. Sincèrement. Je n'attendais pas que vous teniez aussi longtemps. »\n\nThade — sa projection — vous sourit. Il n'y a pas de menace. Juste une fatigue infinie.\n\n« La Spirale est ouverte. Je l'ai laissée ouverte POUR vous. Parce que tant que vous y êtes, je sais où vous êtes. Allez-y. Cherchez. Trouvez ce que vous voulez. Quand vous reviendrez, Valombre m'appartiendra entièrement, et vous serez les derniers témoins d'un monde qui n'existera plus. Je vous préparerai un thé. »\n\nLa projection s'efface lentement. La fissure pulse, attend.",
+        contexte_mj:
+          "AUCUN combat. C'est une scène de manipulation pure et de mise en place. Thade ne dit pas la vérité complète : il ignore que les Premiers Gardiens et Sealine attendent les PJ dans la Spirale (Sc.4). Il croit les envoyer mourir. C'est SON erreur. Les joueurs doivent ressentir cela — qu'ils vont apprendre quelque chose qu'il ignore.",
+        objectif: "Sauter dans la Spirale.",
+      },
+      mecaniques: {
+        defis: [
+          "Psychologie DD 16 : sentir que Thade est SINCÈREMENT fatigué — il n'aime pas ce qu'il fait, il continue par compulsion.",
+          "Volonté DD 12 : résister à l'envie de répliquer (un PJ qui parle à la projection ne reçoit aucune information utile).",
+        ],
+        indices: [
+          "Thade ignore l'existence des Premiers Gardiens et de Sealine dans la Spirale.",
+          "Il croit envoyer les PJ à la mort. C'est une faille exploitable.",
+          "La fissure est ouverte VOLONTAIREMENT. Elle peut donc être refermée par Thade — mais seulement après le retour des PJ (cliffhanger Sc.4).",
+        ],
+        recompenses:
+          "Information stratégique cruciale : Thade ne sait pas tout. Bonus narratif à toute action surprise au Sc.5.",
+      },
+      transitions: {
+        success: "Saut dans la Spirale.",
+      },
+    },
+    {
+      title: "Scène 5 : Le Seuil",
+      type: "Transition",
+      image: "./images/scenes/entree_spirale.jpg",
+      locationId: "entree_spirale",
+      npcIds: [],
+      description: {
+        resume:
+          "Plongée dans la Spirale. Fin du Scénario 3, transition vers le Scénario 4.",
+        visuel:
+          "La fissure violette, vue de près, est un puits sans fond qui descend dans une géométrie impossible. L'air autour d'elle vibre. Un par un, les survivants sautent. Les Thanes Profanés, derrière les PJ, referment leurs rangs autour de la fissure pour la garder.",
+        audio:
+          "Bourdonnement profond, vent d'un autre monde, écho des chants funéraires nains.",
+        odeur: "Énergie sèche, ozone, quelque chose de plus ancien que la pierre.",
+        lumiere: "Lueur violette aveuglante au cœur de la fissure.",
+      },
+      narration: {
+        declencheur: "Plongée dans la fissure.",
+        texte_a_lire:
+          "Thorgar passe le premier, ses bénédictions à la main. Durnik suit avec les blessés. Mara — si elle a survécu — vous fait un signe avant de sauter. Vous êtes les derniers. Derrière vous, les Thanes Profanés se tournent vers la ville, hache levée, gardiens silencieux d'un seuil qu'ils ne laisseront plus franchir.\n\nVous sautez. La Spirale vous aspire. Le monde se retourne.",
+        contexte_mj:
+          "Fin du Scénario 3. Les PJ et les survivants entrent dans la Spirale et se retrouvent dans la chute du Sc.4 Acte 1. Insister sur la dignité du moment : ce n'est pas une défaite, c'est un repli stratégique. Ils reviendront.",
+        objectif: "Entrer dans la Spirale.",
+      },
+      mecaniques: {
+        defis: [
+          "Volonté DD 13 : ne pas se laisser submerger par les visions du saut.",
+          "Vigueur DD 12 : encaisser le choc dimensionnel.",
+        ],
+        indices: [
+          "La Spirale conserve les visiteurs différemment du temps réel (graine pour la révélation 'un mois s'est écoulé' du Sc.4 Acte 5).",
+          "Quelqu'un, dans la Spirale, attend ces visiteurs depuis longtemps.",
+        ],
+        recompenses: "Passage dans la Spirale. Fin du Scénario 3.",
+      },
+      transitions: {
+        success: "Vers le Scénario 4 : L'Écosystème Aberrant.",
+        fail: "Vers le Scénario 4, désorientés mais entrés.",
       },
     },
   ],

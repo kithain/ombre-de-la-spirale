@@ -7,6 +7,8 @@ import { createContext, useContext } from "react";
 const VALEUR_DEFAUT = {
   ouvrirEditeurZone: () => {},
   fermerEditeurZone: () => {},
+  creerNouvelleZone: () => {},
+  supprimerZoneActive: async () => false,
 };
 
 export const ContexteEditeurZone = createContext(VALEUR_DEFAUT);

@@ -21,7 +21,7 @@ import { cc } from "../../utilitaires/combinerClasses";
  * Composant EditeurZone — Modale d'édition des champs d'une zone univers
  * (name, summary, details)
  */
-function EditeurZone({ estOuvert, fermer, editeur }) {
+function EditeurZone({ estOuvert, fermer, editeur, surSupprimer }) {
   const {
     brouillon,
     estActif,
@@ -37,6 +37,27 @@ function EditeurZone({ estOuvert, fermer, editeur }) {
     peutRefaire,
     ETATS_SAUVEGARDE,
   } = editeur;
+
+  // Hook DOIT être appelé avant tout return conditionnel.
+  // Si brouillon est null on lit des valeurs vides — la fonction ne sera
+  // jamais invoquée puisqu'on retourne null juste après.
+  const idBrouillon = brouillon?.id || "";
+  const nomBrouillon = brouillon?.name || "";
+  const gererSuppression = useCallback(async () => {
+    if (!surSupprimer) return;
+    const nom = nomBrouillon || idBrouillon;
+    const confirme = window.confirm(
+      `Supprimer définitivement la zone "${nom}" ?\n\n` +
+      `Le fichier universeZone_${idBrouillon}.js sera retiré du disque et l'index universeZones.js mis à jour.\n\n` +
+      `Si la zone contient encore des lieux, la suppression sera refusée — supprimez/déplacez les lieux d'abord.`,
+    );
+    if (!confirme) return;
+    try {
+      await surSupprimer();
+    } catch (err) {
+      window.alert(`Suppression refusée : ${err.message}`);
+    }
+  }, [surSupprimer, idBrouillon, nomBrouillon]);
 
   if (!estOuvert || !estActif || !brouillon) return null;
 
@@ -134,11 +155,27 @@ function EditeurZone({ estOuvert, fermer, editeur }) {
             Réinitialiser
           </button>
 
+          {surSupprimer && (
+            <button
+              type="button"
+              onClick={gererSuppression}
+              disabled={enCoursDeSauvegarde}
+              className="btn-forge flex items-center gap-2 text-content !border-red-700 hover:!border-red-500 hover:!shadow-[0_0_15px_rgba(239,68,68,0.3)] ml-auto"
+              title="Supprimer cette zone (refusé si elle contient des lieux)"
+            >
+              <Trash2 size={16} />
+              Supprimer
+            </button>
+          )}
+
           <button
             type="button"
             onClick={fermer}
             disabled={enCoursDeSauvegarde}
-            className="btn-forge flex items-center gap-2 text-content ml-auto"
+            className={cc(
+              "btn-forge flex items-center gap-2 text-content",
+              !surSupprimer && "ml-auto",
+            )}
           >
             <X size={16} />
             Fermer

@@ -30,6 +30,13 @@ async function sauvegarderParDefaut(diff, brouillonComplet) {
   // 2. Persister
   if (estModeEditeur()) {
     await apiLieux.modifier(brouillonComplet.id, brouillonComplet);
+    // Le disque est la source de vérité : on purge un éventuel brouillon
+    // localStorage obsolète qui serait sinon réappliqué en mode viewer
+    // (cf. universe.js > appliquerModificationsLocales) et écraserait
+    // les nouvelles valeurs.
+    try {
+      localStorage.removeItem(`lieu_edit_${brouillonComplet.id}`);
+    } catch { /* pas bloquant */ }
   } else {
     try {
       localStorage.setItem(`lieu_edit_${brouillonComplet.id}`, JSON.stringify(brouillonComplet));

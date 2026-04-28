@@ -28,7 +28,13 @@ function echapperString(str) {
     .replace(/"/g, '\\"')
     .replace(/\n/g, "\\n")
     .replace(/\r/g, "\\r")
-    .replace(/\t/g, "\\t");
+    .replace(/\t/g, "\\t")
+    // Caractères de contrôle restants (\u0000-\u001F sauf \n\r\t déjà traités)
+    // + séparateurs de ligne U+2028/U+2029 qui cassent les strings JS littérales
+    .replace(
+      /[\u0000-\u0008\u000B\u000C\u000E-\u001F\u2028\u2029]/g,
+      (c) => `\\u${c.charCodeAt(0).toString(16).padStart(4, "0")}`,
+    );
 }
 
 /**

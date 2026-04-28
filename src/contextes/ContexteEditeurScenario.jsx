@@ -32,7 +32,15 @@ export function FournisseurEditeurScenario({ children }) {
   const [modeEdition, definirModeEdition] = useState(false);
 
   // Brouillons : Map<scenarioId, brouillon>
+  //
+  // En mode éditeur, la source de vérité est le disque (les fichiers acte*.js).
+  // Charger les brouillons localStorage écraserait les valeurs fraîches du
+  // disque avec d'anciennes éditions périmées (mêmes symptômes que pour les
+  // PNJ : valeurs qui "reviennent" après chaque reload). On les ignore donc
+  // en mode éditeur ; en mode viewer ils servent à conserver les modifs entre
+  // sessions sans serveur.
   const [brouillons, definirBrouillons] = useState(() => {
+    if (estModeEditeur()) return {};
     const map = {};
     for (const scenario of scenariosData) {
       const edition = chargerEditionLocale(scenario.id);

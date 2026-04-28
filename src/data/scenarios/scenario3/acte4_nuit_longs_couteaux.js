@@ -69,7 +69,7 @@ export const acte4 = {
         audio:
           "Cris des condamnés, choc des lames, puis le silence de mort. Le grognement des zombies qui se lèvent. Une incantation nécromantique murmurée par un mage masqué.",
         odeur: "Sang, chair en décomposition accélérée, ozone nécromantique.",
-        lumire:
+        lumiere:
           "Torches et la lueur violette malsaine de la brume nécromantique.",
       },
       narration: {
