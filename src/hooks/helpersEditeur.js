@@ -4,6 +4,8 @@
  * Responsabilité unique : opérations de clonage, comparaison et diff
  * sur des structures JSON sérialisables (sans fonctions ni références circulaires).
  */
+import { clonerProfond } from "../utilitaires/clonerProfond";
+export { clonerProfond };
 
 /** États possibles de la sauvegarde */
 export const ETATS_SAUVEGARDE = Object.freeze({
@@ -16,8 +18,6 @@ export const ETATS_SAUVEGARDE = Object.freeze({
 /** Taille max de l'historique undo/redo */
 export const MAX_HISTORIQUE = 50;
 
-// Re-export depuis l'utilitaire partagé (point unique de définition)
-export { clonerProfond } from "../utilitaires/clonerProfond";
 
 /**
  * Comparaison profonde simplifiée pour structures JSON.

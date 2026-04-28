@@ -19,7 +19,7 @@ export const archetypeFp3 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Enveloppement", "Paralysie", "Acide"],
+      actions_spe: [{ nom: "Enveloppement", details: "" }, { nom: "Paralysie", details: "" }, { nom: "Acide", details: "" }],
       dons_tactiques: [],
       resume_tactique: "Avance lentement et enveloppe ses proies. Difficile à voir.",
     },
@@ -81,7 +81,7 @@ export const archetypeFp3 = [
     fiche_combat: {
       sorts: [],
       actions_spe: [],
-      dons_tactiques: ["Talent (Artisanat)"],
+      dons_tactiques: [{ nom: "Talent (Artisanat)", details: "" }],
       resume_tactique: "Fuit le combat, utilise ses connaissances techniques.",
     },
     environnement: "Souterrains, montagnes",
@@ -131,8 +131,8 @@ export const archetypeFp3 = [
     meta_mj: { reference_livre: "Manuel des Monstres p.288", contexte_scenario: "Forêts, souterrains, ruines." },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Poison", "Toile"],
-      dons_tactiques: ["Attaque en finesse (bonus)"],
+      actions_spe: [{ nom: "Poison", details: "" }, { nom: "Toile", details: "" }],
+      dons_tactiques: [{ nom: "Attaque en finesse (bonus)", details: "" }],
       resume_tactique: "Tend une embuscade depuis sa toile, mord pour empoisonner.",
     },
     environnement: "Forêts tempérées ou souterrains",
@@ -188,7 +188,7 @@ export const archetypeFp3 = [
         { nom: "Sorts niveau 1 (3/jour)", details: "Injonction, soins légers, frayeur" },
       ],
       actions_spe: [],
-      dons_tactiques: ["Incantation de combat"],
+      dons_tactiques: [{ nom: "Incantation de combat", details: "" }],
       resume_tactique: "Lance injonction ou frayeur, puis reste à distance.",
     },
     environnement: "Tous",
@@ -237,8 +237,8 @@ export const archetypeFp3 = [
     meta_mj: { reference_livre: "Manuel des Joueurs p.49", contexte_scenario: "Donjons, villes, aventuriers." },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Attaque sournoise +2d6"],
-      dons_tactiques: ["Science de l'initiative", "Arme de prédilection (épée courte)"],
+      actions_spe: [{ nom: "Attaque sournoise +2d6", details: "" }],
+      dons_tactiques: [{ nom: "Science de l'initiative", details: "" }, { nom: "Arme de prédilection (épée courte)", details: "" }],
       resume_tactique: "Attaque par surprise depuis les ombres, vise les cibles isolées.",
     },
     environnement: "Tous",
@@ -310,8 +310,8 @@ export const archetypeFp3 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Maîtrise de la Terre", "Nage dans la terre", "Poussée"],
-      dons_tactiques: ["Attaque en puissance"],
+      actions_spe: [{ nom: "Maîtrise de la Terre", details: "" }, { nom: "Nage dans la terre", details: "" }, { nom: "Poussée", details: "" }],
+      dons_tactiques: [{ nom: "Attaque en puissance", details: "" }],
       resume_tactique: "Surgit du sol, frappe et se replie dans la terre. N'abandonne jamais.",
     },
     environnement: "Plan Élémentaire de la Terre",
@@ -360,8 +360,8 @@ export const archetypeFp3 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Absorption d'énergie", "Création de rejetons"],
-      dons_tactiques: ["Vigilance", "Combat en aveugle"],
+      actions_spe: [{ nom: "Absorption d'énergie", details: "" }, { nom: "Création de rejetons", details: "" }],
+      dons_tactiques: [{ nom: "Vigilance", details: "" }, { nom: "Combat en aveugle", details: "" }],
       resume_tactique: "Attaque pour drainer l'énergie, crée des rejetons.",
     },
     environnement: "Tous – Manoir Van Kel",
@@ -446,8 +446,8 @@ export const archetypeFp3 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Rouille"],
-      dons_tactiques: ["Vigilance", "Pistage"],
+      actions_spe: [{ nom: "Rouille", details: "" }],
+      dons_tactiques: [{ nom: "Vigilance", details: "" }, { nom: "Pistage", details: "" }],
       resume_tactique:
         "Attaque les objets métalliques portés, cherche à détruire armes et armures.",
     },
@@ -498,8 +498,8 @@ export const archetypeFp3 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Drain de Force", "Création de rejetons"],
-      dons_tactiques: ["Esquive"],
+      actions_spe: [{ nom: "Drain de Force", details: "" }, { nom: "Création de rejetons", details: "" }],
+      dons_tactiques: [{ nom: "Esquive", details: "" }],
       resume_tactique: "Attaque depuis les ombres pour drainer la Force. Crée des rejetons.",
     },
     environnement: "Tous",
@@ -557,8 +557,8 @@ export const archetypeFp3 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Crachat d'acide", "Étreinte"],
-      dons_tactiques: ["Vigilance", "Robustesse"],
+      actions_spe: [{ nom: "Crachat d'acide", details: "" }, { nom: "Étreinte", details: "" }],
+      dons_tactiques: [{ nom: "Vigilance", details: "" }, { nom: "Robustesse", details: "" }],
       resume_tactique: "Surgit du sol, agrippe sa proie et l'entraîne sous terre.",
     },
     environnement: "Plaines tempérées",
@@ -611,8 +611,8 @@ export const archetypeFp3 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Maîtrise de la Terre", "Nage dans la terre", "Poussée"],
-      dons_tactiques: ["Attaque en puissance"],
+      actions_spe: [{ nom: "Maîtrise de la Terre", details: "" }, { nom: "Nage dans la terre", details: "" }, { nom: "Poussée", details: "" }],
+      dons_tactiques: [{ nom: "Attaque en puissance", details: "" }],
       resume_tactique:
         "Surgit du sol, frappe violemment, repousse les ennemis. Ressemble à une statue inerte au repos.",
     },
@@ -711,7 +711,7 @@ export const archetypeFp3 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Croc-en-jambe"],
+      actions_spe: [{ nom: "Croc-en-jambe", details: "" }],
       dons_tactiques: [],
       resume_tactique: "Charge, fait tomber, déchiquette.",
     },
@@ -751,7 +751,7 @@ export const archetypeFp3 = [
     meta_mj: { reference_livre: "Manuel des Monstres p.271", contexte_scenario: "Forêts, montagnes." },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Étreinte améliorée"],
+      actions_spe: [{ nom: "Étreinte améliorée", details: "" }],
       dons_tactiques: [],
       resume_tactique: "Se dresse, griffe et mord.",
     },
@@ -795,7 +795,7 @@ export const archetypeFp3 = [
     meta_mj: { reference_livre: "Manuel des Monstres p.273", contexte_scenario: "Jungles, forêts denses." },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Étreinte améliorée"],
+      actions_spe: [{ nom: "Étreinte améliorée", details: "" }],
       dons_tactiques: [],
       resume_tactique: "Reste immobile, agrippe et déchiquette.",
     },
@@ -846,7 +846,7 @@ export const archetypeFp3 = [
     meta_mj: { reference_livre: "Manuel des Monstres p.227", contexte_scenario: "Cavernes, souterrains." },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Puanteur"],
+      actions_spe: [{ nom: "Puanteur", details: "" }],
       dons_tactiques: [],
       resume_tactique: "Utilise la puanteur pour affaiblir puis attaque.",
     },

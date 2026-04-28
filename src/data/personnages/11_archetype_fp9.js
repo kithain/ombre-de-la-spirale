@@ -19,8 +19,8 @@ export const archetypeFp9 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Souffle de feu (cône 6 m, 3d8 feu, Réf DD 17)"],
-      dons_tactiques: ["Attaque en vol", "Vigilance", "Vol stationnaire"],
+      actions_spe: [{ nom: "Souffle de feu", details: "cône 6 m, 3d8 feu, Réf DD 17" }],
+      dons_tactiques: [{ nom: "Attaque en vol", details: "" }, { nom: "Vigilance", details: "" }, { nom: "Vol stationnaire", details: "" }],
       resume_tactique: "Attaque en piqué, souffle puis mord/griffe.",
     },
     environnement: "Collines tempérées",
@@ -84,8 +84,8 @@ export const archetypeFp9 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Souffle pétrifiant (cône 18 m, Vig DD 18)"],
-      dons_tactiques: ["Attaque en puissance", "Science de la bousculade"],
+      actions_spe: [{ nom: "Souffle pétrifiant", details: "cône 18 m, Vig DD 18" }],
+      dons_tactiques: [{ nom: "Attaque en puissance", details: "" }, { nom: "Science de la bousculade", details: "" }],
       resume_tactique: "Charge, souffle pour pétrifier, piétine.",
     },
     environnement: "Plaines tempérées",
@@ -147,9 +147,9 @@ export const archetypeFp9 = [
       contexte_scenario: "Forêts enchantées, clairières féeriques.",
     },
     fiche_combat: {
-      sorts: ["Confusion", "Image permanente", "Porte dimensionnelle"],
-      actions_spe: ["Invisibilité supérieure à volonté"],
-      dons_tactiques: ["Esquive", "Souplesse du serpent"],
+      sorts: [{ nom: "Confusion", details: "" }, { nom: "Image permanente", details: "" }, { nom: "Porte dimensionnelle", details: "" }],
+      actions_spe: [{ nom: "Invisibilité supérieure à volonté", details: "" }],
+      dons_tactiques: [{ nom: "Esquive", details: "" }, { nom: "Souplesse du serpent", details: "" }],
       resume_tactique:
         "Reste invisible, lance confusion puis attaque les isolés.",
     },
@@ -211,12 +211,12 @@ export const archetypeFp9 = [
     },
     fiche_combat: {
       sorts: [
-        "Détection de la magie",
-        "Détection du Bien",
-        "Rayon d'affaiblissement",
+        { nom: "Détection de la magie", details: "" },
+        { nom: "Détection du Bien", details: "" },
+        { nom: "Rayon d'affaiblissement", details: "" },
       ],
-      actions_spe: ["Chevauchée du cauchemar", "Changement de plan"],
-      dons_tactiques: ["Attaque en finesse", "Vigilance"],
+      actions_spe: [{ nom: "Chevauchée du cauchemar", details: "" }, { nom: "Changement de plan", details: "" }],
+      dons_tactiques: [{ nom: "Attaque en finesse", details: "" }, { nom: "Vigilance", details: "" }],
       resume_tactique: "Espionne depuis l'Éthéré, attaque les dormeurs.",
     },
     environnement: "Tous plans Inférieurs",
@@ -282,8 +282,8 @@ export const archetypeFp9 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Constriction", "Étreinte améliorée"],
-      dons_tactiques: ["Arme de prédilection (coup)", "Science de la lutte"],
+      actions_spe: [{ nom: "Constriction", details: "" }, { nom: "Étreinte améliorée", details: "" }],
+      dons_tactiques: [{ nom: "Arme de prédilection (coup)", details: "" }, { nom: "Science de la lutte", details: "" }],
       resume_tactique: "Agrippe et étouffe, se soigne avec la foudre.",
     },
     environnement: "Marais tempérés et chauds",

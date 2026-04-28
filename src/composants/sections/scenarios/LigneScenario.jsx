@@ -8,6 +8,7 @@ import { cc } from "../../../utilitaires/combinerClasses";
 function LigneScenario({ scenario, estOuvert, auClic, titreSceneCible = "" }) {
   const {
     modeEdition,
+    activerModeEdition,
     estModifie,
     modifierChampScenario,
     ajouterActe,
@@ -91,16 +92,14 @@ function LigneScenario({ scenario, estOuvert, auClic, titreSceneCible = "" }) {
           </div>
         </div>
         <div className="flex items-center gap-2">
-          {modeEdition && (
-            <button
-              type="button"
-              onClick={(e) => { e.stopPropagation(); definirEditionScenario((v) => !v); }}
-              className="p-1.5 border border-surface-border text-content-muted hover:text-accent-light hover:border-accent-dark transition-colors"
-              title="Éditer le scénario"
-            >
-              <Pencil size={14} />
-            </button>
-          )}
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); activerModeEdition(); definirEditionScenario((v) => !v); }}
+            className="p-1.5 border border-surface-border text-content-muted hover:text-accent-light hover:border-accent-dark transition-colors"
+            title="Éditer le scénario"
+          >
+            <Pencil size={14} />
+          </button>
           <ChevronDown
             size={16}
             className={`text-content-subtle transition-transform duration-300 ${estOuvert ? "rotate-180" : ""}`}

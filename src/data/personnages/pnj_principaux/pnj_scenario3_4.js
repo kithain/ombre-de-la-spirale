@@ -17,7 +17,7 @@ export const pnjScenario3_4Raw = [
     organisation: "Solitaire",
     ini: "+2",
     sens: "Vision dans le noir 18 m, Détection +10",
-    ca: { total: 15, contact: 11, pris_au_depourvu: 13 },
+    ca: { total: 15, contact: 12, pris_au_depourvu: 13 },
     pv: 26,
     dv: "4d8+8",
     js: { vig: "+3", ref: "+6", vol: "+8" },
@@ -214,7 +214,7 @@ export const pnjScenario3_4Raw = [
     ini: "+0",
     sens:
       "Vision dans le noir 18 m, vision lucide, détection du chaos/mensonge",
-    ca: { total: 24, contact: 9, pris_au_depourvu: 24 },
+    ca: { total: 24, contact: 10, pris_au_depourvu: 24 },
     pv: 66,
     dv: "8d8+32",
     js: { vig: "+10", ref: "+6", vol: "+7" },

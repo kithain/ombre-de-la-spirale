@@ -19,8 +19,8 @@ export const archetypeFp5 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Absorption d'énergie", "Création de rejetons"],
-      dons_tactiques: ["Vigilance", "Combat en aveugle"],
+      actions_spe: [{ nom: "Absorption d'énergie", details: "" }, { nom: "Création de rejetons", details: "" }],
+      dons_tactiques: [{ nom: "Vigilance", details: "" }, { nom: "Combat en aveugle", details: "" }],
       resume_tactique:
         "Traverse les murs pour surprendre, draine l'énergie, crée des rejetons.",
     },
@@ -116,7 +116,7 @@ export const archetypeFp5 = [
         },
       ],
       actions_spe: [],
-      dons_tactiques: ["Science de l'initiative", "École renforcée (Évocation)"],
+      dons_tactiques: [{ nom: "Science de l'initiative", details: "" }, { nom: "École renforcée (Évocation)", details: "" }],
       resume_tactique:
         "Lance bouclier/image miroir, puis boule de feu ou éclair.",
     },
@@ -188,8 +188,8 @@ export const archetypeFp5 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Étreinte", "Constriction", "Maladie"],
-      dons_tactiques: ["Vigilance", "Robustesse"],
+      actions_spe: [{ nom: "Étreinte", details: "" }, { nom: "Constriction", details: "" }, { nom: "Maladie", details: "" }],
+      dons_tactiques: [{ nom: "Vigilance", details: "" }, { nom: "Robustesse", details: "" }],
       resume_tactique: "Agrippe avec tentacules, broie et mord.",
     },
     environnement: "Souterrains",
@@ -257,11 +257,11 @@ export const archetypeFp5 = [
     fiche_combat: {
       sorts: [],
       actions_spe: [
-        "Diminution permanente de Constitution",
-        "Création de rejetons",
-        "Aura de mort",
+        { nom: "Diminution permanente de Constitution", details: "" },
+        { nom: "Création de rejetons", details: "" },
+        { nom: "Aura de mort", details: "" },
       ],
-      dons_tactiques: ["Science de l'initiative", "Attaques réflexes"],
+      dons_tactiques: [{ nom: "Science de l'initiative", details: "" }, { nom: "Attaques réflexes", details: "" }],
       resume_tactique:
         "Draine la Constitution des vivants, crée des rejetons, fuit la lumière du soleil.",
     },
@@ -336,12 +336,12 @@ export const archetypeFp5 = [
     fiche_combat: {
       sorts: [],
       actions_spe: [
-        "Charabia",
-        "Manipulation du sol",
-        "Absorption de sang",
-        "Enveloppement",
+        { nom: "Charabia", details: "" },
+        { nom: "Manipulation du sol", details: "" },
+        { nom: "Absorption de sang", details: "" },
+        { nom: "Enveloppement", details: "" },
       ],
-      dons_tactiques: ["Attaque en finesse", "Réflexes surhumains"],
+      dons_tactiques: [{ nom: "Attaque en finesse", details: "" }, { nom: "Réflexes surhumains", details: "" }],
       resume_tactique:
         "Charabia pour confondre, ramollit le sol, agrippe et absorbe le sang.",
     },

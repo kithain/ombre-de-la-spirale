@@ -19,7 +19,7 @@ export const archetypeFp2 = [
     fiche_combat: {
       sorts: [],
       actions_spe: [],
-      dons_tactiques: ["Vigilance"],
+      dons_tactiques: [{ nom: "Vigilance", details: "" }],
       resume_tactique: "Chasse en meute, encercle les proies isolées.",
     },
     environnement: "Déserts chauds",
@@ -93,7 +93,7 @@ export const archetypeFp2 = [
         },
       ],
       actions_spe: [],
-      dons_tactiques: ["Robustesse"],
+      dons_tactiques: [{ nom: "Robustesse", details: "" }],
       resume_tactique: "Lance frayeur puis reste à distance.",
     },
     environnement: "Tous",
@@ -161,8 +161,8 @@ export const archetypeFp2 = [
       sorts: [],
       actions_spe: [],
       dons_tactiques: [
-        "Arme de prédilection (hache de guerre naine)",
-        "Attaque en puissance",
+        { nom: "Arme de prédilection (hache de guerre naine)", details: "" },
+        { nom: "Attaque en puissance", details: "" },
       ],
       resume_tactique: "Combat en formation, utilise sa stabilité.",
     },
@@ -226,8 +226,8 @@ export const archetypeFp2 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Croc-en-jambe"],
-      dons_tactiques: ["Pistage", "Arme de prédilection (morsure)"],
+      actions_spe: [{ nom: "Croc-en-jambe", details: "" }],
+      dons_tactiques: [{ nom: "Pistage", details: "" }, { nom: "Arme de prédilection (morsure)", details: "" }],
       resume_tactique:
         "Envoie quelques individus en frontal pendant que le reste encercle par les flancs.",
     },
@@ -297,7 +297,7 @@ export const archetypeFp2 = [
     fiche_combat: {
       sorts: [],
       actions_spe: [],
-      dons_tactiques: ["Arme de prédilection (hallebarde)", "Expertise du combat"],
+      dons_tactiques: [{ nom: "Arme de prédilection (hallebarde)", details: "" }, { nom: "Expertise du combat", details: "" }],
       resume_tactique:
         "Utilise l'allonge de la hallebarde pour contrôler le terrain.",
     },
@@ -654,7 +654,7 @@ export const archetypeFp2 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Toile", "Poison"],
+      actions_spe: [{ nom: "Toile", details: "" }, { nom: "Poison", details: "" }],
       dons_tactiques: [],
       resume_tactique: "Piège avec toile, mord, attend que le poison agisse.",
     },

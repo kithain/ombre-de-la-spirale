@@ -1,12 +1,11 @@
 import { useEffect } from "react";
 import { useParams, useSearchParams } from "react-router-dom";
-import { BookOpen, Pencil, PencilOff, Save } from "lucide-react";
+import { BookOpen, PencilOff, Save } from "lucide-react";
 import TitreSection from "../../interface/TitreSection";
 import LigneScenario from "./LigneScenario";
 import GestionNotes from "./GestionNotes";
 import { utiliserEtatPersistant } from "../../../hooks/utiliserEtatPersistant";
 import { utiliserEditeurScenario } from "../../../contextes/ContexteEditeurScenarioBase";
-import { cc } from "../../../utilitaires/combinerClasses";
 
 function VueScenarios() {
   const params = useParams();
@@ -40,8 +39,8 @@ function VueScenarios() {
           icone={BookOpen}
           sousTitre="Les dieux ont créé la mort par négligence, c'est un défaut de conception."
         />
-        <div className="flex items-center gap-2 flex-shrink-0">
-          {modeEdition && (
+        {modeEdition && (
+          <div className="flex items-center gap-2 flex-shrink-0">
             <button
               type="button"
               onClick={sauvegarderTout}
@@ -51,22 +50,17 @@ function VueScenarios() {
               <Save size={14} />
               Sauvegarder
             </button>
-          )}
-          <button
-            type="button"
-            onClick={basculerModeEdition}
-            className={cc(
-              "btn-forge flex items-center gap-1.5 text-xs !px-3 !py-1.5 transition-all",
-              modeEdition
-                ? "!border-amber-500 !shadow-[0_0_10px_rgba(245,158,11,0.2)] text-amber-300"
-                : "text-content",
-            )}
-            title={modeEdition ? "Désactiver le mode édition" : "Activer le mode édition"}
-          >
-            {modeEdition ? <PencilOff size={14} /> : <Pencil size={14} />}
-            {modeEdition ? "Lecture" : "Édition"}
-          </button>
-        </div>
+            <button
+              type="button"
+              onClick={basculerModeEdition}
+              className="btn-forge flex items-center gap-1.5 text-xs !px-3 !py-1.5 !border-amber-500 !shadow-[0_0_10px_rgba(245,158,11,0.2)] text-amber-300 transition-all"
+              title="Quitter le mode édition"
+            >
+              <PencilOff size={14} />
+              Lecture
+            </button>
+          </div>
+        )}
       </div>
 
       <GestionNotes />

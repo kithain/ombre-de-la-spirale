@@ -20,14 +20,14 @@ export const archetypeFp8 = [
     fiche_combat: {
       sorts: [],
       actions_spe: [
-        "Harmoniques destructrices (Chair)",
-        "Harmoniques destructrices (Nerfs)",
-        "Harmoniques destructrices (Matériau)",
+        { nom: "Harmoniques destructrices (Chair)", details: "" },
+        { nom: "Harmoniques destructrices (Nerfs)", details: "" },
+        { nom: "Harmoniques destructrices (Matériau)", details: "" },
       ],
       dons_tactiques: [
-        "Science de l'initiative",
-        "Esquive",
-        "Réflexes surhumains",
+        { nom: "Science de l'initiative", details: "" },
+        { nom: "Esquive", details: "" },
+        { nom: "Réflexes surhumains", details: "" },
       ],
       resume_tactique:
         "Attaque par surprise, détruit d'abord armures/armes métalliques, puis attaque la chair.",
@@ -99,7 +99,7 @@ export const archetypeFp8 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Lancer de rochers"],
+      actions_spe: [{ nom: "Lancer de rochers", details: "" }],
       dons_tactiques: [],
       resume_tactique: "Lance des rochers puis charge au corps à corps.",
     },
@@ -161,7 +161,7 @@ export const archetypeFp8 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Régénération des têtes"],
+      actions_spe: [{ nom: "Régénération des têtes", details: "" }],
       dons_tactiques: [],
       resume_tactique: "Mord avec toutes les têtes, régénère celles perdues.",
     },
@@ -229,7 +229,7 @@ export const archetypeFp8 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Dards"],
+      actions_spe: [{ nom: "Dards", details: "" }],
       dons_tactiques: [],
       resume_tactique: "Tire des dards en vol, puis fond pour mordre et griffer.",
     },

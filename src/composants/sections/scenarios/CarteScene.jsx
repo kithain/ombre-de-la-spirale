@@ -24,7 +24,7 @@ function CarteScene({ scene, idScenario, indexActe, indexScene, surlignee = fals
     false,
   );
   const [modaleImageOuverte, definirModaleImageOuverte] = useState(false);
-  const { modeEdition, ouvrirEditeurScene } = utiliserEditeurScenario();
+  const { activerModeEdition, ouvrirEditeurScene } = utiliserEditeurScenario();
 
   const gererClicImage = () => {
     if (scene.image) {
@@ -67,10 +67,10 @@ function CarteScene({ scene, idScenario, indexActe, indexScene, surlignee = fals
             </div>
           </div>
           <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
-            {modeEdition && idScenario != null && indexActe != null && indexScene != null && (
+            {idScenario != null && indexActe != null && indexScene != null && (
               <button
                 type="button"
-                onClick={() => ouvrirEditeurScene(idScenario, indexActe, indexScene)}
+                onClick={() => { activerModeEdition(); ouvrirEditeurScene(idScenario, indexActe, indexScene); }}
                 className="text-xs px-2 py-1 border border-surface-border text-content-muted hover:border-accent-dark hover:text-accent-light transition-colors flex items-center gap-1"
                 title="Éditer la scène"
               >

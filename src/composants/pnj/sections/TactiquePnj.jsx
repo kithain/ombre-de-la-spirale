@@ -25,7 +25,7 @@ function TactiquePnj({ pnj }) {
             <ul className="list-disc ml-4 space-y-1">
               {ficheCombat.sorts.map((s, idx) => (
                 <li key={idx}>
-                  <strong>{s.nom}</strong> — {s.details}
+                  {typeof s === "string" ? s : <><strong>{s.nom}</strong> — {s.details}</>}
                 </li>
               ))}
             </ul>

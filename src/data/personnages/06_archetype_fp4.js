@@ -21,7 +21,7 @@ export const archetypeFp4 = [
     fiche_combat: {
       sorts: [],
       actions_spe: [],
-      dons_tactiques: ["Talent (compétence)"],
+      dons_tactiques: [{ nom: "Talent (compétence)", details: "" }],
       resume_tactique: "Fuit le combat, utilise ses compétences.",
     },
     environnement: "Tous",
@@ -91,8 +91,8 @@ export const archetypeFp4 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Clignotement"],
-      dons_tactiques: ["Pistage", "Arme de prédilection (morsure)"],
+      actions_spe: [{ nom: "Clignotement", details: "" }],
+      dons_tactiques: [{ nom: "Pistage", details: "" }, { nom: "Arme de prédilection (morsure)", details: "" }],
       resume_tactique: "Clignote pour attaquer puis disparaît.",
     },
     environnement: "Plaines tempérées",
@@ -161,7 +161,7 @@ export const archetypeFp4 = [
     fiche_combat: {
       sorts: [],
       actions_spe: [],
-      dons_tactiques: ["Robustesse", "Arme de prédilection (massue)"],
+      dons_tactiques: [{ nom: "Robustesse", details: "" }, { nom: "Arme de prédilection (massue)", details: "" }],
       resume_tactique: "Charge et frappe, ne fuit que si gravement blessé.",
     },
     environnement: "Collines tempérées",
@@ -227,9 +227,9 @@ export const archetypeFp4 = [
       sorts: [],
       actions_spe: [],
       dons_tactiques: [
-        "Arme de prédilection (épée longue)",
-        "Spécialisation martiale (épée longue)",
-        "Attaque en puissance",
+        { nom: "Arme de prédilection (épée longue)", details: "" },
+        { nom: "Spécialisation martiale (épée longue)", details: "" },
+        { nom: "Attaque en puissance", details: "" },
       ],
       resume_tactique:
         "Combat au corps à corps, utilise spécialisation martiale.",
@@ -300,8 +300,8 @@ export const archetypeFp4 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Immobilité"],
-      dons_tactiques: ["Attaque en finesse", "Attaques multiples"],
+      actions_spe: [{ nom: "Immobilité", details: "" }],
+      dons_tactiques: [{ nom: "Attaque en finesse", details: "" }, { nom: "Attaques multiples", details: "" }],
       resume_tactique:
         "Reste immobile comme une statue, fond sur sa proie par surprise.",
     },
@@ -371,7 +371,7 @@ export const archetypeFp4 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Charge puissante"],
+      actions_spe: [{ nom: "Charge puissante", details: "" }],
       dons_tactiques: [],
       resume_tactique: "Charge avec les cornes, puis frappe à la hache.",
     },
@@ -437,7 +437,7 @@ export const archetypeFp4 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Combat à deux armes supérieur"],
+      actions_spe: [{ nom: "Combat à deux armes supérieur", details: "" }],
       dons_tactiques: [],
       resume_tactique: "Frappe avec deux morgensterns simultanément.",
     },
@@ -504,7 +504,7 @@ export const archetypeFp4 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Étreinte améliorée"],
+      actions_spe: [{ nom: "Étreinte améliorée", details: "" }],
       dons_tactiques: [],
       resume_tactique: "Se dresse, agrippe et déchiquette.",
     },
@@ -566,7 +566,7 @@ export const archetypeFp4 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Pétrification"],
+      actions_spe: [{ nom: "Pétrification", details: "" }],
       dons_tactiques: [],
       resume_tactique: "Vole et mord pour pétrifier.",
     },

@@ -12,6 +12,7 @@ import { scenariosData } from "../data/scenarios/scenarios";
 const VALEUR_DEFAUT = {
   modeEdition: false,
   basculerModeEdition: () => {},
+  activerModeEdition: () => {},
   scenariosFusionnes: scenariosData,
 
   estModifie: () => false,

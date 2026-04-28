@@ -7,6 +7,7 @@ import { cc } from "../../../utilitaires/combinerClasses";
 function AccordeonActe({ acte, idScenario, indexActe, estOuvert = false, auClic, titreSceneCible = "" }) {
   const {
     modeEdition,
+    activerModeEdition,
     modifierChampActe,
     ajouterScene,
     supprimerScene,
@@ -44,16 +45,14 @@ function AccordeonActe({ acte, idScenario, indexActe, estOuvert = false, auClic,
             className={`text-content-subtle transition-transform duration-300 flex-shrink-0 ${estOuvert ? "rotate-180" : ""}`}
           />
         </button>
-        {modeEdition && (
-          <button
-            type="button"
-            onClick={() => definirEditionActe((v) => !v)}
-            className="p-1 border border-surface-border text-content-muted hover:text-accent-light hover:border-accent-dark transition-colors flex-shrink-0"
-            title="\u00c9diter l'acte"
-          >
-            <Pencil size={12} />
-          </button>
-        )}
+        <button
+          type="button"
+          onClick={() => { activerModeEdition(); definirEditionActe((v) => !v); }}
+          className="p-1 border border-surface-border text-content-muted hover:text-accent-light hover:border-accent-dark transition-colors flex-shrink-0"
+          title="Éditer l'acte"
+        >
+          <Pencil size={12} />
+        </button>
       </div>
 
       <div className="flex flex-wrap gap-2 sm:gap-4 text-[10px] sm:text-xs font-mono text-content-subtle mb-3 sm:mb-4 pl-1">

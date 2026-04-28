@@ -19,7 +19,7 @@ export const archetypeFp6 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Ralentissement"],
+      actions_spe: [{ nom: "Ralentissement", details: "" }],
       dons_tactiques: [],
       resume_tactique: "Avance et frappe, utilise ralentissement.",
     },
@@ -93,10 +93,10 @@ export const archetypeFp6 = [
       sorts: [],
       actions_spe: [],
       dons_tactiques: [
-        "Arme de prédilection (épée longue)",
-        "Spécialisation martiale (épée longue)",
-        "Attaque en puissance",
-        "Fente",
+        { nom: "Arme de prédilection (épée longue)", details: "" },
+        { nom: "Spécialisation martiale (épée longue)", details: "" },
+        { nom: "Attaque en puissance", details: "" },
+        { nom: "Fente", details: "" },
       ],
       resume_tactique:
         "Combat au corps à corps, utilise fente pour atteindre les ennemis.",

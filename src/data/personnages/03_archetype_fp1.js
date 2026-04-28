@@ -57,8 +57,8 @@ export const archetypeFp1 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Maladie (Fièvre des marais)"],
-      dons_tactiques: ["Arme de prédilection (morsure)", "Vigilance"],
+      actions_spe: [{ nom: "Maladie (Fièvre des marais)", details: "" }],
+      dons_tactiques: [{ nom: "Arme de prédilection (morsure)", details: "" }, { nom: "Vigilance", details: "" }],
       resume_tactique: "Attaque en meute, submerge par le nombre, fuit si isolé.",
     },
     bonus_actifs: [],
@@ -90,7 +90,7 @@ export const archetypeFp1 = [
     fiche_combat: {
       sorts: [],
       actions_spe: [],
-      dons_tactiques: ["Vigilance"],
+      dons_tactiques: [{ nom: "Vigilance", details: "" }],
       resume_tactique:
         "Attaque en surnombre (2 contre 1 minimum), fuit sinon. Attire vers les pièges.",
     },
@@ -139,7 +139,7 @@ export const archetypeFp1 = [
     fiche_combat: {
       sorts: [],
       actions_spe: [],
-      dons_tactiques: ["Arme de prédilection"],
+      dons_tactiques: [{ nom: "Arme de prédilection", details: "" }],
       resume_tactique: "Combat en groupe, reste en formation.",
     },
     environnement: "Tous",
@@ -185,7 +185,7 @@ export const archetypeFp1 = [
     fiche_combat: {
       sorts: [],
       actions_spe: [],
-      dons_tactiques: ["Vigilance"],
+      dons_tactiques: [{ nom: "Vigilance", details: "" }],
       resume_tactique: "Embuscades, surnombre, coups bas. Fuit si le combat tourne mal.",
     },
     environnement: "Plaines tempérées",
@@ -232,8 +232,8 @@ export const archetypeFp1 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Action unique (ne peut faire qu'une action de mouvement ou d'attaque par round)"],
-      dons_tactiques: ["Robustesse"],
+      actions_spe: [{ nom: "Action unique", details: "ne peut faire qu'une action de mouvement ou d'attaque par round" }],
+      dons_tactiques: [{ nom: "Robustesse", details: "" }],
       resume_tactique: "Charge la cible la plus proche, attaque sans réfléchir.",
     },
     environnement: "Tous",
@@ -290,7 +290,7 @@ export const archetypeFp1 = [
     fiche_combat: {
       sorts: [],
       actions_spe: [],
-      dons_tactiques: ["Arme de prédilection (épée longue)", "Attaque en puissance"],
+      dons_tactiques: [{ nom: "Arme de prédilection (épée longue)", details: "" }, { nom: "Attaque en puissance", details: "" }],
       resume_tactique: "Combat au corps à corps, protège les alliés.",
     },
     environnement: "Tous",
@@ -388,7 +388,7 @@ export const archetypeFp1 = [
     fiche_combat: {
       sorts: [],
       actions_spe: [],
-      dons_tactiques: ["Science de l'initiative"],
+      dons_tactiques: [{ nom: "Science de l'initiative", details: "" }],
       resume_tactique: "Exécute les ordres, attaque jusqu'à destruction.",
     },
     environnement: "Tous",
@@ -442,8 +442,8 @@ export const archetypeFp1 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Désamorçage de pièges", "Détection de pièges"],
-      dons_tactiques: ["Vigilance"],
+      actions_spe: [{ nom: "Désamorçage de pièges", details: "" }, { nom: "Détection de pièges", details: "" }],
+      dons_tactiques: [{ nom: "Vigilance", details: "" }],
       resume_tactique: "Ne combat pas, fuit et se cache, négocie sa survie.",
     },
     environnement: "Souterrains",
@@ -491,8 +491,8 @@ export const archetypeFp1 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Paralysie (Ext)", "Fièvre des goules (Ext)"],
-      dons_tactiques: ["Attaques multiples"],
+      actions_spe: [{ nom: "Paralysie (Ext)", details: "" }, { nom: "Fièvre des goules (Ext)", details: "" }],
+      dons_tactiques: [{ nom: "Attaques multiples", details: "" }],
       resume_tactique: "Attaque par surprise, paralyse ses victimes puis dévore.",
     },
     environnement: "Tous",
@@ -697,8 +697,8 @@ export const archetypeFp1 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Maîtrise de la Terre", "Nage dans la terre"],
-      dons_tactiques: ["Attaque en puissance"],
+      actions_spe: [{ nom: "Maîtrise de la Terre", details: "" }, { nom: "Nage dans la terre", details: "" }],
+      dons_tactiques: [{ nom: "Attaque en puissance", details: "" }],
       resume_tactique:
         "Attaque en groupe, surgit du sol pour surprendre les PJ. Facile à détruire mais nombreux.",
     },

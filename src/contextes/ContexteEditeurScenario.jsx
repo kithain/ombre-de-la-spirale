@@ -303,6 +303,10 @@ export function FournisseurEditeurScenario({ children }) {
     definirModeEdition((prev) => !prev);
   }, []);
 
+  const activerModeEdition = useCallback(() => {
+    definirModeEdition(true);
+  }, []);
+
   // ── Valeur du contexte ──────────────────────────────────────────────────
 
   const valeur = useMemo(
@@ -310,6 +314,7 @@ export function FournisseurEditeurScenario({ children }) {
       // État
       modeEdition,
       basculerModeEdition,
+      activerModeEdition,
       scenariosFusionnes,
 
       // Brouillons
@@ -345,6 +350,7 @@ export function FournisseurEditeurScenario({ children }) {
     [
       modeEdition,
       basculerModeEdition,
+      activerModeEdition,
       scenariosFusionnes,
       estModifie,
       obtenirBrouillon,

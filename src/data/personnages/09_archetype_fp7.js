@@ -19,15 +19,15 @@ export const archetypeFp7 = [
     },
     fiche_combat: {
       sorts: [
-        "Lumières dansantes",
-        "Ténèbres",
-        "Détection de la magie",
-        "Détection du Bien",
-        "Lévitation",
-        "Suggestion",
+        { nom: "Lumières dansantes", details: "" },
+        { nom: "Ténèbres", details: "" },
+        { nom: "Détection de la magie", details: "" },
+        { nom: "Détection du Bien", details: "" },
+        { nom: "Lévitation", details: "" },
+        { nom: "Suggestion", details: "" },
       ],
-      actions_spe: ["Poison", "Toile"],
-      dons_tactiques: ["Combat à deux armes"],
+      actions_spe: [{ nom: "Poison", details: "" }, { nom: "Toile", details: "" }],
+      dons_tactiques: [{ nom: "Combat à deux armes", details: "" }],
       resume_tactique:
         "Lance sorts à distance, utilise toile pour immobiliser, poison mortel.",
     },
@@ -93,8 +93,8 @@ export const archetypeFp7 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Regard pétrifiant", "Poison"],
-      dons_tactiques: ["Tir de précision"],
+      actions_spe: [{ nom: "Regard pétrifiant", details: "" }, { nom: "Poison", details: "" }],
+      dons_tactiques: [{ nom: "Tir de précision", details: "" }],
       resume_tactique:
         "Utilise le regard, attaque à l'arc ceux qui détournent les yeux.",
     },
@@ -160,8 +160,8 @@ export const archetypeFp7 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Chant captivant"],
-      dons_tactiques: ["Attaque en vol"],
+      actions_spe: [{ nom: "Chant captivant", details: "" }],
+      dons_tactiques: [{ nom: "Attaque en vol", details: "" }],
       resume_tactique: "Chante pour attirer, attaque les victimes fascinées.",
     },
     environnement: "Marais et montagnes tempérés",
@@ -223,8 +223,8 @@ export const archetypeFp7 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Poison", "Étreinte améliorée"],
-      dons_tactiques: ["Attaque en vol"],
+      actions_spe: [{ nom: "Poison", details: "" }, { nom: "Étreinte améliorée", details: "" }],
+      dons_tactiques: [{ nom: "Attaque en vol", details: "" }],
       resume_tactique: "Fond en piqué, agrippe, pique avec le dard venimeux.",
     },
     environnement: "Collines chaudes",
@@ -292,8 +292,8 @@ export const archetypeFp7 = [
     },
     fiche_combat: {
       sorts: [],
-      actions_spe: ["Maîtrise de la Terre", "Nage dans la terre", "Poussée"],
-      dons_tactiques: ["Attaque en puissance", "Science du critique (coup)"],
+      actions_spe: [{ nom: "Maîtrise de la Terre", details: "" }, { nom: "Nage dans la terre", details: "" }, { nom: "Poussée", details: "" }],
+      dons_tactiques: [{ nom: "Attaque en puissance", details: "" }, { nom: "Science du critique (coup)", details: "" }],
       resume_tactique: "Surgit du sol, frappe violemment, repousse les ennemis.",
     },
     environnement: "Plan Élémentaire de la Terre",

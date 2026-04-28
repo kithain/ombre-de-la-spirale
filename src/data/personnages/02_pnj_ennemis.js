@@ -13,10 +13,10 @@ export const pnjEnnemisRaw = [
     organisation: "Solitaire ou groupe (2-4)",
     ini: "+2",
     sens: "Vision dans le noir 27 m, vision nocturne, odorat",
-    ca: { total: 16, contact: 11, pris_au_depourvu: 14 },
+    ca: { total: 16, contact: 12, pris_au_depourvu: 14 },
     pv: 63,
     dv: "6d8+36",
-    js: { vig: "+11", ref: "+4", vol: "+3" },
+    js: { vig: "+11", ref: "+4", vol: "+1" },
     rm: null,
     rd: null,
     vit: "9 m (6 c.)",
@@ -69,6 +69,7 @@ export const pnjEnnemisRaw = [
   },
   {
     id: "assassin_masque",
+    modeEntite: "pnj",
     nom: "Assassin",
     classe: "Roublard",
     niveau: 6,
@@ -78,17 +79,17 @@ export const pnjEnnemisRaw = [
     fp: 5,
     environnement: "Ruelles de Valombre, toits",
     organisation: "Solitaire ou duo",
-    ini: "+6",
+    ini: "+8",
     sens: "Détection +8",
     ca: { total: 18, contact: 14, pris_au_depourvu: 14 },
     pv: 33,
     dv: "6d6+12",
-    js: { vig: "+5", ref: "+9", vol: "+3" },
+    js: { vig: "+4", ref: "+9", vol: "+2" },
     vit: "9 m, escalade 6 m",
     bba: "+4",
     lutte: "+6",
-    attaque: "Dague +8 (1d4+2, x2) ou Arbalète Légère +8 (1d8, 19-20/x2)",
-    att_outrance: "Dague +8/+3 (1d4+2, x2) ou Arbalète Légère +8 (1d8, 19-20/x2)",
+    attaque: "Dague +9 (1d4+2, x2) ou Arbalète Légère +8 (1d8, 19-20/x2)",
+    att_outrance: "Dague +9/+4 (1d4+2, x2) ou Arbalète Légère +8 (1d8, 19-20/x2)",
     espace: "1,5 m",
     allonge: "1,5 m",
     att_spe: ["Attaque Sournoise +3d6", "Poison Enduit (Vig. DD 15)"],
@@ -144,6 +145,7 @@ export const pnjEnnemisRaw = [
   },
   {
     id: "etudiant_renvoye",
+    modeEntite: "pnj",
     nom: "Jaren",
     classe: "Magicien",
     niveau: 1,
@@ -224,6 +226,7 @@ export const pnjEnnemisRaw = [
   },
   {
     id: "contremaitre_humain",
+    modeEntite: "pnj",
     nom: "Varrus, contremaître humain",
     classe: "Expert",
     niveau: 5,
@@ -238,7 +241,7 @@ export const pnjEnnemisRaw = [
     ca: { total: 16, contact: 11, pris_au_depourvu: 15 },
     pv: 27,
     dv: "5d6+10",
-    js: { vig: "+4", ref: "+2", vol: "+4" },
+    js: { vig: "+3", ref: "+2", vol: "+4" },
     vit: "9 m",
     bba: "+3",
     lutte: "+5",
@@ -274,6 +277,7 @@ export const pnjEnnemisRaw = [
   },
   {
     id: "patrouille_mixte_conseil",
+    modeEntite: "pnj",
     nom: "Patrouille Mixte du Conseil",
     classe: "Guerrier",
     niveau: 4,
@@ -290,8 +294,8 @@ export const pnjEnnemisRaw = [
     dv: "4d10+8",
     js: { vig: "+6", ref: "+1", vol: "+1" },
     vit: "6 m",
-    attaque: "Hallebarde +6 (1d10+2)",
-    att_outrance: "Hallebarde +6 (1d10+2)",
+    attaque: "Hallebarde +7 (1d10+2)",
+    att_outrance: "Hallebarde +7 (1d10+2)",
     espace: "1,5 m",
     allonge: "3 m",
     att_spe: ["Formation de mur (Couverture +4 si adjacents)"],
@@ -319,6 +323,7 @@ export const pnjEnnemisRaw = [
   },
   {
     id: "garde_portail_mine",
+    modeEntite: "pnj",
     nom: "Escouade de Gardes du Portail",
     classe: "Guerrier",
     niveau: 3,
@@ -335,8 +340,8 @@ export const pnjEnnemisRaw = [
     dv: "3d10+6",
     js: { vig: "+5", ref: "+2", vol: "+1" },
     vit: "9 m",
-    attaque: "Épée courte +5 (1d6+2)",
-    att_outrance: "Épée courte +5 (1d6+2)",
+    attaque: "Épée courte +6 (1d6+2)",
+    att_outrance: "Épée courte +6 (1d6+2)",
     espace: "1,5 m",
     allonge: "1,5 m",
     att_spe: [],
@@ -365,6 +370,7 @@ export const pnjEnnemisRaw = [
   },
   {
     id: "magi_tuteur_loyal",
+    modeEntite: "pnj",
     nom: "Maître Arcaniste Loyaliste",
     classe: "Magicien",
     niveau: 9,
@@ -379,7 +385,7 @@ export const pnjEnnemisRaw = [
     ca: { total: 18, contact: 12, pris_au_depourvu: 16 },
     pv: 45,
     dv: "9d4+18",
-    js: { vig: "+6", ref: "+5", vol: "+8" },
+    js: { vig: "+5", ref: "+5", vol: "+7" },
     vit: "9 m",
     attaque: "Rayon Arcanique +6 (4d6 force)",
     att_outrance: "Rayon Arcanique +6 (4d6 force)",
@@ -392,7 +398,8 @@ export const pnjEnnemisRaw = [
     ],
     carac: { for: 10, dex: 14, con: 14, int: 18, sag: 12, cha: 12 },
     competences: "Art de la magie +15, Connaissances (arcanes) +15, Intimidation +10",
-    dons: "Ecole Renforcée (Évocation), vigilance",
+    dons:
+      "Ecole Renforcée (Évocation), Vigilance, Incantation de combat, Incantation silencieuse, Attaque en vol",
     tactiques:
       "Déclenche ses glyphes sans sommation, reste à distance derrière des champs de force.",
     bonus_actifs: [
@@ -417,6 +424,7 @@ export const pnjEnnemisRaw = [
   },
   {
     id: "ilse_nyx",
+    modeEntite: "pnj",
     nom: "Ilse von Reiner",
     classe: "Magicien",
     niveau: 3,
@@ -429,7 +437,7 @@ export const pnjEnnemisRaw = [
     ini: "+6",
     sens: "Détection +3",
     ca: { total: 12, contact: 12, pris_au_depourvu: 10 },
-    pv: 16,
+    pv: 15,
     dv: "3d4+3",
     js: { vig: "+2", ref: "+3", vol: "+4" },
     vit: "9 m",
@@ -489,6 +497,7 @@ export const pnjEnnemisRaw = [
   },
   {
     id: "assistant_thade_mort",
+    modeEntite: "pnj",
     nom: "Elian, l'Assistant Sacrifié",
     classe: "Magicien",
     niveau: 2,
@@ -548,6 +557,7 @@ export const pnjEnnemisRaw = [
     color: "text-red-400",
     isMonster: false,
     id: "roturier",
+    modeEntite: "pnj",
     nom: "Roturier (niveau 1)",
     classe: "",
     niveau: null,
@@ -603,6 +613,142 @@ export const pnjEnnemisRaw = [
     ogas: { occupation: "", objectif: "", attitude: "", enjeu: "" },
     disposition: "neutre",
     classes: [],
+  },
+  {
+    details: [
+      "Motivation : Fusionner avec la Spirale pour atteindre l'immortalité.",
+      "Masque : Froid, académique, se présente comme un allié rationnel.",
+      "Spoiler : Manipule les PJ dès les premiers scénarios en orientant leurs enquêtes.",
+      "Combat : Dans le final, utilise la Tour comme catalyseur d'énergie nécromantique.",
+    ],
+    quetesAnnexes: [
+      {
+        id: "quete_thade_1",
+        titre: "Les notes perdues",
+        description: "Retrouvez les notes de recherche volées de Thade Coren.",
+        statut: "disponible",
+        recompenses: "100 XP, 50 po",
+        conditions: "Avoir terminé la quête principale 'La Tour de l'Observatoire'",
+      },
+    ],
+    category: "ennemis",
+    source: "ennemis",
+    color: "text-red-400",
+    id: "thade_coren",
+    nom: "Thade Coren",
+    classe: "Magicien",
+    niveau: 10,
+    taille: "Moyen",
+    type: "Humanoïde (Humain)",
+    alignement: "CN",
+    fp: 10,
+    environnement: "Bureau de Thade Coren",
+    biome: "",
+    residence: "bureau_thade_coren",
+    lieuxRencontre: [],
+    organisation: "Solitaire (manipulateur)",
+    ini: "+6",
+    sens: "Détection +8",
+    ca: { total: 20, contact: 12, pris_au_depourvu: 18 },
+    pv: 51,
+    dv: "10d4+20",
+    js: { vig: "+5", ref: "+5", vol: "+10" },
+    rm: null,
+    rd: null,
+    vit: "9 m",
+    bba: "+5",
+    lutte: "+5",
+    attaque: "bâton ferré +6 (1d6+1 contondant)",
+    att_outrance: "bâton ferré +6/+1 (1d6+1) ou rayon affaiblissant +7 à distance",
+    espace: "1,5 m",
+    allonge: "1,5 m",
+    att_spe: [
+      "Sorts de magicien/ensorceleur (NLS 10) : contrôle, nécromancie, entrave",
+      "Rayon affaiblissant 4/jour",
+      "Sorts de Magicien (NLS 10)",
+    ],
+    qual_spe: [
+      "Préparation : +2 DD pour les sorts de contrôle lancés sur cibles affaiblies",
+      "Résistance mentale (contre Charme) +2",
+      "Buff actif : Brume de dissimulation (20% de chances de rater, 10 min)",
+      "1 don supplémentaire au niveau 1",
+      "École de magie (spécialisation)",
+      "Don supplémentaire de magicien (niv 5)",
+      "4 points de compétence supplémentaires au niveau 1",
+      "1 point de compétence supplémentaire par niveau",
+      "Familier",
+      "Don supplémentaire de magicien (niv 10)",
+    ],
+    carac: { for: 10, dex: 14, con: 14, int: 20, sag: 12, cha: 16 },
+    competences:
+      "Concentration +15, Diplomatie +12, Intimidation +11, Connaissance (arcane) +17, Connaissance (plans) +12, Psychologie +10",
+    dons:
+      "Volonté de fer, Science de l'initiative, Incantation silencieuse, Incantation réflexe, Robustesse",
+    tactiques:
+      "Commence par entraver (corde animée, immobilisation), place des rayons affaiblissants, puis négocie si avantage. En fuite, utilise brume de dissimulation et dimensions mineures.",
+    butin:
+      "Bâton ferré, notes nécromantiques, cristal mouchard, anneau de protection +1",
+    est_ennemi: true,
+    antagoniste: true,
+    role: "Antagoniste principal, double jeu : mécène puis manipulateur.",
+    image: "/images/monstres/0bcc9103-1a83-4f71-815f-36f09625dcba.png",
+    meta_mj: {
+      reference_livre: "Bestiaire : Dossier 'Thade Coren' (Chap. Manipulations & Spirale)",
+      contexte_scenario:
+        "Acte 2-3 : infiltration au Conclave, ensuite confrontation finale dans la Spirale (cercle des miroirs). Focus sur les sorts de contrôle pour déstabiliser les PJ avant de négocier.",
+    },
+    fiche_combat: {
+      sorts: [
+        {
+          nom: "Rayon affaiblissant",
+          details:
+            "+7 / DD 16 Str, -2 Str/Con pendant 1 tour, 4/j. Permet de fragiliser la cible principale avant l'assaut.",
+        },
+        {
+          nom: "Corde animée",
+          details:
+            "Prépare un piège pour restreindre un seul PJ : +12 toucher, DD 15 Force, idéal pour neutraliser un tank temporairement.",
+        },
+        {
+          nom: "Brume de dissimulation",
+          details:
+            "Prépare sa retraite ou se repositionner derrière un masque magique ; déclenchée après avoir lancé rayon ou immobilisation.",
+        },
+      ],
+      dons_tactiques: [
+        {
+          nom: "Science de l'initiative",
+          details:
+            "Donne une fenêtre pour activer un sort dès le tour 1 et imposer son plan tactique.",
+        },
+        {
+          nom: "Incantation réflexe",
+          details:
+            "Permet de lancer un sort de réaction (rayon ou téléportation mineure) quand un PJ s'approche trop.",
+        },
+      ],
+      resume_tactique:
+        "Démarre par des contrôles (corde animée, immobilisation), enchaîne avec rayon affaiblissant, puis se met en retrait pour converser/négocier. Garde une brume active pour fuir vers les étages supérieurs si mis en difficulté.",
+    },
+    bonus_actifs: [
+      {
+        nom: "Brume de dissimulation",
+        effet: "20% de chances de rater les attaques contre lui",
+        duree: "10 minutes",
+      },
+    ],
+    sorts_prepares: {},
+    ogas: {
+      occupation: "Dirige ses recherches sur la Spirale depuis son laboratoire secret",
+      objectif: "Fusionner avec la Spirale pour atteindre l'immortalité arcanique",
+      attitude:
+        "Froid et académique, se présente comme un allié rationnel mais manipule subtilement",
+      enjeu:
+        "Risque de perdre son accès à la Spirale et ses années de recherches ; peut gagner le pouvoir ultime",
+    },
+    disposition: "neutre",
+    classes: [],
     modeEntite: "pnj",
+    isMonster: false,
   },
 ];

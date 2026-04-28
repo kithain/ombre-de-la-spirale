@@ -31,7 +31,7 @@ export const pnjScenario5Raw = [
     carac: { for: 8, dex: 14, con: 14, int: 19, sag: 14, cha: 10 },
     competences:
       "Art de la magie +16, Connaissances (arcanes) +16, Connaissances (plans) +14, Décryptage +12",
-    dons: "Ecole Renforcée (Abjuration), Extension d'effet, Magie de Guerre",
+    dons: "Ecole Renforcée (Abjuration), Extension d'effet, Magie de Guerre, Incantation silencieuse, Incantation de combat",
     tactiques:
       "Reste invisible, observe, et n'intervient que pour saboter un rituel ou fuir via un portail.",
     butin: "Parchemin de Dissipation Suprême, Clé de contournement des protections de la Tour.",
