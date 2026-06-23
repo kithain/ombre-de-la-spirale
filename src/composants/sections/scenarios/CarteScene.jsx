@@ -3,6 +3,7 @@ import Etiquette from "../../interface/Etiquette";
 import { cc } from "../../../utilitaires/combinerClasses";
 import { utiliserEtatPersistant } from "../../../hooks/utiliserEtatPersistant";
 import { cleNoteScene, cleFavoriScene } from "../../../utilitaires/sceneUtils";
+import { urlImage } from "../../../utilitaires/urlImage";
 import { utiliserLiensScene } from "../../../hooks/utiliserLiensScene";
 import ModaleImageScene from "../../scenes/ModaleImageScene";
 import TransitionsScene from "../../scenes/TransitionsScene";
@@ -101,7 +102,7 @@ function CarteScene({ scene, idScenario, indexActe, indexScene, surlignee = fals
             >
               {aImage && (
                 <img
-                  src={scene.image}
+                  src={urlImage(scene.image)}
                   alt={scene.titre}
                   className="w-full h-48 md:h-64 object-cover border border-surface-border cursor-pointer hover:border-accent-muted transition-colors"
                   onClick={gererClicImage}

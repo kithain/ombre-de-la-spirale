@@ -2,6 +2,7 @@ import { useState, memo, useMemo } from "react";
 import Carte from "../interface/Carte";
 import { cc } from "../../utilitaires/combinerClasses";
 import { obtenirBadgeCategorie } from "../../utilitaires/utilitairesPnj";
+import { urlImage } from "../../utilitaires/urlImage";
 import { Heart, Swords, Shield, Tag, Zap } from "lucide-react";
 
 function resoudreTheme(pnj) {
@@ -61,7 +62,7 @@ const CartePnjMinimale = memo(function CartePnjMinimale({ pnj, auClic }) {
           <div className="flex-shrink-0">
             {pnj.image ? (
               <img
-                src={pnj.image}
+                src={urlImage(pnj.image)}
                 alt={pnj.nom}
                 className="w-20 h-20 rounded-lg border-2 border-surface-border/40 object-cover shadow-sm"
                 onError={(e) => {

@@ -2,6 +2,7 @@ import Modale from "../interface/Modale";
 import ContexteMjScene from "./ContexteMjScene";
 import ObjectifScene from "./ObjectifScene";
 import TransitionsScene from "./TransitionsScene";
+import { urlImage } from "../../utilitaires/urlImage";
 
 /**
  * Composant ModaleImageScene - Modale affichant l'image et la description d'une scène
@@ -30,7 +31,7 @@ function ModaleImageScene({ scene, estOuverte, fermer }) {
       <div className="flex flex-col items-center space-y-4">
         <div className="relative w-full">
           <img
-            src={scene.image}
+            src={urlImage(scene.image)}
             alt={scene.titre}
             className="w-full h-auto max-h-[40vh] object-contain border border-surface-border"
           />

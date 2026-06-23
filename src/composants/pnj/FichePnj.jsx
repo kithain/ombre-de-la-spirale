@@ -5,6 +5,7 @@ import {
 } from "lucide-react";
 import { cc } from "../../utilitaires/combinerClasses";
 import { formaterDegats, formaterArmure, formaterVie } from "../../data/personnages/pnjTemplate";
+import { urlImage } from "../../utilitaires/urlImage";
 
 // ─── Blocs PBTA ──────────────────────────────────────
 
@@ -152,7 +153,7 @@ const FichePnj = memo(function FichePnj({ pnj }) {
       {pnj.image && (
         <div className="flex justify-center">
           <img
-            src={pnj.image}
+            src={urlImage(pnj.image)}
             alt={pnj.nom}
             className="w-full max-w-[280px] h-auto rounded border border-surface-border shadow-lg object-cover"
           />
