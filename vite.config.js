@@ -10,7 +10,7 @@ export default defineConfig({
       },
     }),
   ],
-  base: "./",
+  base: "/ombre-de-la-spirale/",
   server: {
     port: 5173,
   },
