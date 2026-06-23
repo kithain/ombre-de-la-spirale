@@ -1,0 +1,5 @@
+# Résultats temporaires de la simulation
+_simulation/
+
+node_modules/
+dist/

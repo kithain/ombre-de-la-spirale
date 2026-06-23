@@ -1,0 +1,8 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <text x="50%" y="55%" font-family="serif" font-size="52" 
+        fill="#4c1d95" text-anchor="middle" dominant-baseline="middle" font-weight="bold" filter="blur(4px)">S</text>
+  
+  <text x="50%" y="55%" font-family="serif" font-size="50" 
+        fill="#a855f7" stroke="#faf5ff" stroke-width="1"
+        text-anchor="middle" dominant-baseline="middle" font-weight="bold">S</text>
+</svg>
