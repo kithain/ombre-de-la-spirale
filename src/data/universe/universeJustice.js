@@ -1,7 +1,7 @@
 export const universeJustice = {
   titre: "Justice de Valombre",
   sousTitre:
-    "Une justice de rang et de coutume, rendue sous l’égide du Conseil, moins soucieuse des droits de chacun que des privilèges établis",
+    "Justice de rang et de coutume, rendue sous l’égide du Conseil",
 
   vueEnsemble: [
     "Le Conseil administre les tribunaux, la Garde civique et les prisons. Il affirme garantir l’unité de la loi, mais doit composer avec les factions reconnues de Valombre.",

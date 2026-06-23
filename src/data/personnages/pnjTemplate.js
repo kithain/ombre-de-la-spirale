@@ -165,13 +165,24 @@ export function formaterArmure(armure) {
   return armure.description ? `${armure.valeur} (${armure.description})` : String(armure.valeur);
 }
 
+/** Affichage lisible des cases de vie (avec accents) */
+const DISPLAY_LABELS_VIE = Object.freeze({
+  mineure: "mineure",
+  serieuse: "sérieuse",
+  critique: "critique",
+  brise: "brisée",
+  mortelle: "mortelle",
+  en_danger: "en danger",
+  hors_jeu: "hors jeu",
+});
+
 /** Rendu texte de la vie */
 export function formaterVie(vie) {
   if (!vie) return "";
   if (vie.type === "points" && vie.max != null) {
     return `${vie.points ?? vie.max}/${vie.max}`;
   }
-  return vie.cases.join(" · ");
+  return vie.cases.map((c) => DISPLAY_LABELS_VIE[c] ?? c).join(" · ");
 }
 
 // ─── TEMPLATE EXPORTÉ POUR L'ÉDITEUR ──────────────────────────────

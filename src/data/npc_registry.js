@@ -22,7 +22,7 @@ const COULEURS_CATEGORIES = Object.freeze({
 });
 
 /**
- * Détermine la catégorie d'un PNJ selon sa origine et ses propriétés.
+ * Détermine la catégorie d'un PNJ selon son origine et ses propriétés.
  * @param {object} pnj
  * @param {string} origine - "principaux", "ennemis", "bestiary"
  * @returns {string}

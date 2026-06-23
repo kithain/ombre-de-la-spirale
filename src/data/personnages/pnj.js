@@ -173,7 +173,7 @@ export const pnjData = [
     "interpretation": {
       "accroche": "Quand les PJ la rencontrent pour la première fois, Mara consulte une carte ou une liste de noms, déjà occupée à compter les pertes possibles.",
       "objectif": "Reprendre la ville en stratège, pas en héros. Minimiser les pertes.",
-      "attitude": "Pragmatique et directe. Évaleur les PJ sur leurs actes, pas leurs paroles."
+      "attitude": "Pragmatique et directe. Évalue les PJ sur leurs actes, pas leurs paroles."
     },
     "disposition": "neutre",
     "impulsion": "Sauver le plus grand nombre, même si personne ne sort indemne.",
@@ -429,7 +429,7 @@ export const pnjData = [
   {
     "id": "aubergiste_pic_brise",
     "nom": "Brand, aubergiste Nain du Pic Brisé",
-    "role": "Hôte bien informé, origine de rumeurs de première main.",
+    "role": "Hôte bien informé, source de rumeurs de première main.",
     "categorie": "allies",
     "image": "/images/PNJ/pnj_aubergiste_pic_brise.jpg",
     "interpretation": {
@@ -799,7 +799,7 @@ export const pnjData = [
   },
   {
     "id": "etudiants_charmes",
-    "nom": "Étudiants  de l'Université",
+    "nom": "Étudiants de l'Université",
     "role": "Obstacle moral. Les PJ peuvent-ils se résoudre à frapper des victimes ?",
     "categorie": "ennemis",
     "image": "/images/PNJ/pnj_etudiants_charmes.jpg",

@@ -14,7 +14,7 @@ export const scenario2 = {
       "Thriller conspirationniste et horreur urbaine. La cité se déchire pendant que la réalité se plisse. Le ton est plus sombre, plus urgent que le Scénario 1 — les PJ ne découvrent plus, ils agissent. Mais chaque action a un coût politique, humain ou cosmique.",
     themes: [
       "La crise politique — la peur exploite le vide laissé par la vérité.",
-      "La crise clandestine — des proxys manipulés accomplissent le travail de Thade sans le savoir.",
+      "La crise clandestine — des relais involontaires manipulés accomplissent le travail de Thade sans le savoir.",
       "La crise cosmique — la réalité de Valombre commence à mentir. La Spirale filtre.",
       "Le coût de l'action — chaque choix a des victimes collatérales. Le décompte compte pour l'épilogue.",
     ],
@@ -48,7 +48,7 @@ export const scenario2 = {
       "Le choix du Scénario 1 détermine leur position : avec Thade, avec la Résistance, ou entre les deux.",
     ],
     ce_que_les_pj_doivent_decouvrir: [
-      "Thade utilise des proxys : les Endeuillés d'Edran Morn affaiblissent le sceau par le deuil, sans le savoir.",
+      "Thade utilise des relais involontaires : les Endeuillés d'Edran Morn affaiblissent le sceau par le deuil, sans le savoir.",
       "Le Champion de la Bannière Pure reçoit un soutien logistique de marchands qui veulent affaiblir les clans nains — la crise politique est instrumentalisée sans faire de lui un simple pantin.",
       "Le déphasage est la preuve visible que la Spirale filtre. Les zones déphasées s'étendront.",
       "Elian Voss, médecin de Caldris, a reproduit S-01 sur des vivants après Sealine. La Larme de Vael est le catalyseur du rituel.",
@@ -93,7 +93,7 @@ export const scenario2 = {
       {
         id: "magi_tuteur_loyal",
         nom: "Le Magi-Tuteur loyal",
-        role: "Allié caché dans la Tour. Peut guider les PJ si ils ne l'attaquent pas.",
+        role: "Allié caché dans la Tour. Peut guider les PJ s'ils ne l'attaquent pas.",
       },
     ],
     lieux_cles: [
@@ -128,7 +128,7 @@ export const scenario2 = {
   revelations_indispensables: [
     {
       id: "rev_proxies_thade",
-      titre: "Thade utilise des proxys involontaires",
+      titre: "Thade utilise des relais involontaires",
       resume:
         "Les Endeuillés d'Edran Morn affaiblissent le sceau par un rite de deuil inversé, sans le savoir. Les textes qu'ils utilisent ont été laissés circuler délibérément par Thade. Le Champion de la Bannière Pure, lui, reçoit un soutien logistique de marchands qui veulent affaiblir les clans nains et prendre influence sur la Mine — mais le chaos qu'il crée masque aussi les opérations de Thade.",
       sources: [
@@ -302,7 +302,7 @@ export const scenario2 = {
         {
           scene: "L'Assaut de la Tour",
           interaction:
-            "Le rituel au sommet accélère la fissuration. Si les PJ désorganisent la Tour, ils retardent l'ouverture complète du vortex. Si ils tardent, le sceau cède entièrement.",
+            "Le rituel au sommet accélère la fissuration. Si les PJ désorganisent la Tour, ils retardent l'ouverture complète du vortex. S'ils tardent, le sceau cède entièrement.",
         },
       ],
       leviers_pj_scenario:
@@ -359,7 +359,7 @@ export const scenario2 = {
         statut: "obligatoire",
         axe: "Clandestin",
         dependances: ["L'Émeute de la Place de la Fondation (optionnel — Edran peut être suivi depuis l'émeute)"],
-        revele: ["Le rite inversé fissure le sceau", "Les textes viennent de l'Université", "Thade utilise des proxys"],
+        revele: ["Le rite inversé fissure le sceau", "Les textes viennent de l'Université", "Thade utilise des relais involontaires"],
         note: "Si les PJ n'ont pas suivi Edran depuis l'émeute, la cave peut être trouvée par Renseignements DD 14 ou via Ursula.",
       },
       {
@@ -396,7 +396,7 @@ export const scenario2 = {
         axe: "Cosmique",
         dependances: ["La Réserve de Recherche Interdite", "Le Laboratoire d'Elian Voss"],
         revele: ["La Tour est un dispositif rituel", "Le décompte des victimes compte pour l'épilogue", "Le sommet contient le vortex"],
-        note: "5-6 rencontres tactiques. Chaque rencontre a une option non-létale. Le MJ doit tracker le nombre de victimes.",
+        note: "5-6 rencontres tactiques. Chaque rencontre a une option non-létale. Le MJ doit tenir le décompte du nombre de victimes.",
       },
       {
         titre: "Le Laboratoire de Verre",
@@ -443,7 +443,7 @@ export const scenario2 = {
         "Le scénario ne punit pas — il consigne. Chaque victime est comptée. L'épilogue du Scénario 3 en tiendra compte. Le MJ ne dit pas « vous ne devriez pas faire ça » — il décrit les conséquences.",
       proceder: [
         {
-          etape: "Tracker chaque victime",
+          etape: "Tenir le décompte de chaque victime",
           detail:
             "Noter le nom, l'étage et les circonstances. Étudiant charmé tué au lieu d'être libéré. Garde piégé tué au lieu d'être évité. Créature de la Spirale tuée au lieu d'être retournée.",
         },
@@ -515,7 +515,7 @@ export const scenario2 = {
         {
           etape: "L'axe ignoré avance",
           detail:
-            "Si les PJ ignorent le Champion : la Bannière Pure prend le contrôle de la garde. Les nains sont expulsés. Si ils ignorent les Endeuillés : le rite continue, le déphasage s'aggrave. Si ils ignorent le déphasage : les routes deviennent impraticables, l'approvisionnement s'effondre.",
+            "Si les PJ ignorent le Champion : la Bannière Pure prend le contrôle de la garde. Les nains sont expulsés. S'ils ignorent les Endeuillés : le rite continue, le déphasage s'aggrave. S'ils ignorent le déphasage : les routes deviennent impraticables, l'approvisionnement s'effondre.",
         },
         {
           etape: "Les PNJ signalent la crise ignorée",
@@ -687,7 +687,7 @@ export const scenario2 = {
         faction: "Université (loyal à Thade mais désillusionné)",
         role_court: "Allié caché dans la Tour",
         apparition: "Acte III, scène 1 (4e étage)",
-        info_cle: "Peut expliquer la Tour, la cuve et le rituel. Guide les PJ si ils ne l'attaquent pas.",
+        info_cle: "Peut expliquer la Tour, la cuve et le rituel. Guide les PJ s'ils ne l'attaquent pas.",
         dd_clés: "Pas de jet — il se présente si les PJ ne l'agressent pas.",
       },
     ],
@@ -920,7 +920,7 @@ export const scenario2 = {
           ],
 
           guide_mj: {
-            intention: "Montrer que Thade utilise des proxys. Les Endeuillés sont des outils involontaires.",
+            intention: "Montrer que Thade utilise des relais involontaires. Les Endeuillés sont des outils involontaires.",
             mise_en_place: "Cave humide, nocturne. Edran au fond. Endeuillés assis.",
             deroulement: ["Les PJ entrent et observent le rite.", "Religion pour comprendre.", "Diplomatie ou intimidation pour arrêter.", "Investigation pour trouver les textes."],
             actions_utiles: ["Convaincre Edran d'arrêter.", "Détruire les textes.", "Retourner les Endeuillés contre Thade.", "Capturer Edran pour interrogatoire."],
@@ -1106,9 +1106,9 @@ export const scenario2 = {
 
           format_livre: {
             ambiance:
-              "Sous un ancien amphithéâtre médical de l'Université, une porte métallique dissimulée derrière un panneau de bois pourri. La porte grinçe sur un couloir court qui descend vers une pièce basse, voûtée, éclairée par des lampes alchimiques vertes. L'odeur frappe d'abord : formol, cire, et quelque chose de doux en dessous — quelque chose d'organique qui ne devrait pas être là. Des colonnes de dossiers s'élèvent jusqu'au plafond. Des bocaux opaques alignés sur des étagères de fer. Une table de travail couverte de notes, de schémas, d'instruments de précision.",
+              "Sous un ancien amphithéâtre médical de l'Université, une porte métallique dissimulée derrière un panneau de bois pourri. La porte grince sur un couloir court qui descend vers une pièce basse, voûtée, éclairée par des lampes alchimiques vertes. L'odeur frappe d'abord : formol, cire, et quelque chose de doux en dessous — quelque chose d'organique qui ne devrait pas être là. Des colonnes de dossiers s'élèvent jusqu'au plafond. Des bocaux opaques alignés sur des étagères de fer. Une table de travail couverte de notes, de schémas, d'instruments de précision.",
             deroulement_narratif:
-              "À gauche, cinquante dossiers étiquetés « stabilisés ». Lecture directe : cinquante patients stabilisés par des dérivés du protocole S-01, menés après la catastrophe de Nyx. Des noms, des dates, des dosages. Les patients viennent de Caldris — le cachet de Caldris est sur chaque dossier. Sealine est S-01, la première tentative consciente de stabilisation planaire. Les patients d'Elian sont postérieurs : des reproductions et adaptations du protocole S-01. À droite, sept bocaux sans étiquette. Art de la magie DD 17 : le sérum dans les bocaux est une préparation planaire. Il stabilise le corps pendant le transit vers la Spirale. Les sept bocaux contiennent les restes des sept échecs d'Elian après S-01. Toutes ont échoué.\n\nSous une plaque amovible de la table de travail, deux dossiers cachés. Investigation DD 12 pour trouver la plaque. Le premier dossier porte un schéma ancien — un dispositif en forme de larme, avec des annotations en écriture fine et précise. Le schéma nomme la Larme de Vael. Cachet de Caldris sur le schéma. Décryptage DD 17 pour lire l'annotation : « Ne jamais alimenter cela avec des vivants. » L'écriture est celle de Sealine. Sa main. Elle savait. Elle a essayé d'empêcher Thade. Il l'a fait quand même.\n\nElian Voss est présent si les PJ arrivent de jour. Il est effrayé — un homme brisé qui sait ce qu'il a fait. Intimidation DD 14 : il révèle tout. Thade a commandé les reproductions du protocole après Nyx, Caldris fournit le matériel, la Larme est le catalyseur. Elian n'est pas un fanatique — c'est un médecin qui a franchi la ligne par peur de Thade. Si les PJ le retournent, il peut témoigner au Conseil. Si ils le tuent, ils perdent un témoin clé.",
+              "À gauche, cinquante dossiers étiquetés « stabilisés ». Lecture directe : cinquante patients stabilisés par des dérivés du protocole S-01, menés après la catastrophe de Nyx. Des noms, des dates, des dosages. Les patients viennent de Caldris — le cachet de Caldris est sur chaque dossier. Sealine est S-01, la première tentative consciente de stabilisation planaire. Les patients d'Elian sont postérieurs : des reproductions et adaptations du protocole S-01. À droite, sept bocaux sans étiquette. Art de la magie DD 17 : le sérum dans les bocaux est une préparation planaire. Il stabilise le corps pendant le transit vers la Spirale. Les sept bocaux contiennent les restes des sept échecs d'Elian après S-01. Toutes ont échoué.\n\nSous une plaque amovible de la table de travail, deux dossiers cachés. Investigation DD 12 pour trouver la plaque. Le premier dossier porte un schéma ancien — un dispositif en forme de larme, avec des annotations en écriture fine et précise. Le schéma nomme la Larme de Vael. Cachet de Caldris sur le schéma. Décryptage DD 17 pour lire l'annotation : « Ne jamais alimenter cela avec des vivants. » L'écriture est celle de Sealine. Sa main. Elle savait. Elle a essayé d'empêcher Thade. Il l'a fait quand même.\n\nElian Voss est présent si les PJ arrivent de jour. Il est effrayé — un homme brisé qui sait ce qu'il a fait. Intimidation DD 14 : il révèle tout. Thade a commandé les reproductions du protocole après Nyx, Caldris fournit le matériel, la Larme est le catalyseur. Elian n'est pas un fanatique — c'est un médecin qui a franchi la ligne par peur de Thade. Si les PJ le retournent, il peut témoigner au Conseil. S'ils le tuent, ils perdent un témoin clé.",
             notes_mj:
               "Le schéma de la Larme est visible sans jet — le nom et le cachet sont lisibles. L'annotation de Sealine nécessite Décryptage DD 17, mais Olane ou Mara peuvent la lire si les PJ leur apportent le schéma. Si les PJ ont le cachet de Caldris des notes de Jaren (Scénario 1), la confirmation est immédiate. Elian Voss est le témoin le plus précieux du scénario — le tuer ferme la porte du Conseil.",
           },
@@ -1151,7 +1151,7 @@ export const scenario2 = {
             actions_utiles: ["Récupérer le protocole S-01.", "Interroger Elian Voss.", "Prendre les bocaux comme preuves.", "Comparer avec les archives médicales."],
             fronts_heritiers: ["Front 'Le Plan de Thade' — la Larme est le catalyseur.", "Front 'Les Factions de la Crise' — Caldris est un acteur extérieur."],
             jeu_des_pnj: "Elian est un homme brisé. Il sait ce qu'il a fait. Il a peur de Thade et peur de lui-même.",
-            escalade: "Si les PJ tuent Elian, ils perdent un témoin clé. Si ils le retournent, il peut témoigner au Conseil.",
+            escalade: "Si les PJ tuent Elian, ils perdent un témoin clé. S'ils le retournent, il peut témoigner au Conseil.",
             sortie: "Les PJ quittent le laboratoire avec le protocole, la Larme et la liste. Ils ont tout sauf la Tour.",
           },
 
@@ -1192,7 +1192,7 @@ export const scenario2 = {
             deroulement_narratif:
               "Les PJ montent étage par étage. Étages 1-2 : banals, transition. Des couloirs vides, des salles désertées. L'occasion de se préparer.\n\nÉtage 3 : étudiants charmés. Trois étudiants aux yeux vides. Ils lèvent les mains et lancent des sorts — Boule de feu, Rayon de givre. Persuasion DD 16 ou Dissipation de la magie pour les libérer sans violence. Ils se réveillent désorientés. Les tuer compte comme victime pour l'épilogue.\n\nÉtage 4 : gardes piégés et magi-tuteur loyal. Les gardes sont protégés par des runes explosives — les attaquer déclenche les runes. Discrétion DD 16 pour les éviter par les couloirs latéraux. Le magi-tuteur est un allié caché — il se présente si les PJ ne l'attaquent pas. Il peut expliquer la Tour, la cuve et le rituel au sommet.\n\nÉtage 5 : créature de la Spirale. Une entité cooptée par Thade — pas hostile par nature, mais prisonnière. Diplomatie DD 15 pour la retourner. Elle se retire si les PJ la traitent avec respect. Si elle attaque, elle est puissante mais ne veut pas mourir.\n\nÉtage 6 : ardoise. Investigation DD 10. Équation préliminaire de S-01, datée de sept ans. Thade travaillait déjà sur la théorie des seuils avant la disparition de Sealine. Mais le rituel actuel naît après Nyx, quand la recherche devient obsession.\n\nÉtage 7 : porte du Laboratoire de Verre. L'air sent la lavande à saturation. Le bourdonnement du vortex est audible. Derrière la porte : le corps de Thade dans la cuve.",
             notes_mj:
-              "5-6 rencontres tactiques. Chaque rencontre a une option non-létale. Le MJ doit tracker le nombre de victimes — ce décompte détermine le ton de l'épilogue du Scénario 3. Personne dans la Tour n'est un ennemi volontaire — sauf Thade. Les étudiants sont des victimes. La créature est une prisonnière. Le magi-tuteur est un allié. Si les PJ tuent tout, l'épilogue sera sombre. Si ils minimisent les victimes, l'épilogue peut être lumineux.",
+              "5-6 rencontres tactiques. Chaque rencontre a une option non-létale. Le MJ doit tenir le décompte du nombre de victimes — ce décompte détermine le ton de l'épilogue du Scénario 3. Personne dans la Tour n'est un ennemi volontaire — sauf Thade. Les étudiants sont des victimes. La créature est une prisonnière. Le magi-tuteur est un allié. S'ils tuent tout, l'épilogue sera sombre. S'ils minimisent les victimes, l'épilogue peut être lumineux.",
           },
 
           texte_a_lire:
@@ -1206,7 +1206,7 @@ export const scenario2 = {
             secrets: [
               "Chaque étudiant charmé peut être libéré avec Dissipation de la magie ou Persuasion DD 16. Les tuer compte comme victime pour l'épilogue.",
               "La créature de la Spirale au 5e étage n'est pas hostile par nature. Elle a été séduite par Thade. Parler DD 15 peut la retourner.",
-              "Le magi tuteur loyal au 4e étage est un allié caché. Il peut guider les PJ si ils ne l'attaquent pas.",
+              "Le magi-tuteur loyal au 4e étage est un allié caché. Il peut guider les PJ s'ils ne l'attaquent pas.",
             ],
             rappels: [
               "5-6 rencontres tactiques. Chaque rencontre a une option non-létale.",
@@ -1227,11 +1227,11 @@ export const scenario2 = {
           guide_mj: {
             intention: "L'assaut de la Tour est la percée du Scénario 2 — pas l'apothéose. Les PJ atteignent le 7e étage, découvrent le corps de Thade et comprennent que le sommet est le vortex. Mais ils n'affrontent pas encore Thade dans le vortex : ils comprennent que le Scénario 3 commence maintenant.",
             mise_en_place: "La Tour est ouverte si les PJ ont un accès (Olane) ou forcée (Effraction/combat).",
-            deroulement: ["Étages 1-2 : banals, transition.", "Étage 3 : étudiants charmés.", "Étage 4 : gardes piégés + magi tuteur loyal.", "Étage 5 : créature de la Spirale.", "Étage 6 : ardoise, preuve.", "Étage 7 : porte du Laboratoire de Verre."],
-            actions_utiles: ["Libérer les étudiants charmés.", "Parler à la créature planaire.", "Trouver le magi tuteur.", "Lire l'ardoise du 6e."],
+            deroulement: ["Étages 1-2 : banals, transition.", "Étage 3 : étudiants charmés.", "Étage 4 : gardes piégés + magi-tuteur loyal.", "Étage 5 : créature de la Spirale.", "Étage 6 : ardoise, preuve.", "Étage 7 : porte du Laboratoire de Verre."],
+            actions_utiles: ["Libérer les étudiants charmés.", "Parler à la créature planaire.", "Trouver le magi-tuteur.", "Lire l'ardoise du 6e."],
             fronts_heritiers: ["Front 'Le Plan de Thade' — la Tour est le dispositif.", "Front 'Le Sceau qui cède' — le rituel est proche."],
-            jeu_des_pnj: "Les étudiants sont des victimes. La créature est une prisonnière. Le magi tuteur est un allié. Personne dans la Tour n'est un ennemi volontaire — sauf Thade.",
-            escalade: "Si les PJ tuent tout, l'épilogue sera sombre. Si ils minimisent les victimes, l'épilogue peut être lumineux.",
+            jeu_des_pnj: "Les étudiants sont des victimes. La créature est une prisonnière. Le magi-tuteur est un allié. Personne dans la Tour n'est un ennemi volontaire — sauf Thade.",
+            escalade: "Si les PJ tuent tout, l'épilogue sera sombre. S'ils minimisent les victimes, l'épilogue peut être lumineux.",
             sortie: "Les PJ atteignent la porte du Laboratoire de Verre. Derrière : le corps de Thade dans la cuve. Au-dessus : le sommet, le vortex, la Larme.",
           },
 
@@ -1280,7 +1280,7 @@ export const scenario2 = {
               "Détruire le corps interrompt la connexion entre Thade et le vortex. Il perd une phase de puissance au sommet.",
             ],
             rappels: [
-              "Le magi tuteur loyal peut expliquer la cuve si les PJ ne l'ont pas attaqué.",
+              "Le magi-tuteur loyal peut expliquer la cuve si les PJ ne l'ont pas attaqué.",
               "Si les PJ écrivent dans le cahier ouvert, Thade peut les lire au sommet. C'est un canal de communication.",
             ],
           },
@@ -1301,7 +1301,7 @@ export const scenario2 = {
             deroulement: ["Les PJ entrent et voient la cuve.", "Ils examinent le corps de Thade.", "Ils découvrent les cahiers.", "Ils décident : détruire le corps, lire les cahiers, ou écrire dans le cahier ouvert."],
             actions_utiles: ["Détruire la cuve et le corps.", "Lire les cahiers.", "Écrire à Thade dans le cahier.", "Emporter les cahiers comme preuve."],
             fronts_heritiers: ["Front 'Le Plan de Thade' — le corps est le point faible.", "Front 'Le Sceau qui cède' — le rituel est en cours au sommet."],
-            jeu_des_pnj: "Le magi tuteur peut expliquer. Sinon, les cahiers parlent pour Thade.",
+            jeu_des_pnj: "Le magi-tuteur peut expliquer. Sinon, les cahiers parlent pour Thade.",
             escalade: "Si les PJ détruisent le corps, Thade au sommet perd une phase. Mais il peut accélérer le rituel en représailles.",
             sortie: "Les PJ quittent le laboratoire. La porte du sommet est devant eux. L'air sent la lavande à saturation. Le bourdonnement du vortex est audible.",
           },

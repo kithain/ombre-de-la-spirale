@@ -200,7 +200,7 @@ export const scenario3 = {
       etat_initial:
         "Valombre est en état d'urgence. Le déphasage général paralyse les routes. La garde est débordée. Le Conseil est impuissant. Les factions — Champion, Endeuillés, Résistance — attendent l'issue. Le ciel violet terrifie la population. L'horloge est à l'étape finale.",
       manifestation_scenarios:
-        "Les rues sont vides. Les gens se barricadent. Le Champion harangue une foule terrifiée. Les Endeuillés, si ils n'ont pas été dispersés, attendent le retour des morts. Mara et la Résistance préparent l'après.",
+        "Les rues sont vides. Les gens se barricadent. Le Champion harangue une foule terrifiée. Les Endeuillés, s'ils n'ont pas été dispersés, attendent le retour des morts. Mara et la Résistance préparent l'après.",
       interactions_scenes: [
         {
           scene: "Le Monde d'Après",
@@ -291,7 +291,7 @@ export const scenario3 = {
             deroulement_narratif:
               "Thade se tient devant le vortex. Ses mains sont tendues. Son visage est paisible. Il ne regarde pas les PJ — il regarde le vortex. « Vous êtes venus », dit-il. « Je le savais. Je savais que vous viendriez. » Une pause. Puis : « Elle m'attend. »\n\nPhase 1 — Archimage Épuisé : Thade combat avec des sorts puissants mais il est épuisé par le rituel. Ses attaques sont prévisibles — Boule de feu, Rayon de givre, Mur de force. Il ne cherche pas à tuer. Il cherche à gagner du temps. Chaque round qu'il gagne rapproche le rituel de son accomplissement. Les PJ peuvent le combattre ou tenter de parler.\n\nPhase 2 — Larme se Fissure : Si les PJ ont détruit le corps dans la cuve, ou s'ils révèlent une vérité sur Sealine (les cahiers, l'annotation, les expériences, les patients, les bocaux), la Larme se fissure. Persuasion DD 18 pour lire un extrait des cahiers ou révéler une vérité. Chaque vérité réussie fissure la Larme un peu plus. Thade devient désespéré et imprévisible — ses sorts sont moins contrôlés, plus puissants, plus dangereux.\n\nPhase 3 — Épuisement : Thade s'effondre sur le marbre. Le vortex vacille. La Larme est fissurée mais pas détruite. Une forme se dessine dans l'énergie violette. Sealine. La conversation à trois commence.\n\nSi les PJ ont le magi-tuteur avec eux, il peut intervenir à la phase 2 — il dit à Thade : « Maître, arrêtez. Elle ne voudrait pas ça. » Thade hésite un round. Si les PJ ont détruit le corps dans la cuve (Scénario 2), Thade perd une phase de puissance — il passe directement à la phase 2 après 2 rounds au lieu de 4.",
             notes_mj:
-              "Le combat n'est pas un combat standard — c'est une course contre le rituel. Le MJ doit tracker le nombre de rounds. Au round 5, le rituel est à moitié accompli. Au round 10, le rituel s'accomplit. Les PJ ne le savent pas exactement, mais le bourdonnement du vortex augmente d'intensité à chaque round. Les vérités sont les armes les plus puissantes : chaque vérité réussie (Persuasion DD 18) compte comme 2 rounds de combat. Les PJ peuvent gagner la phase 2 sans combattre — en parlant.",
+              "Le combat n'est pas un combat standard — c'est une course contre le rituel. Le MJ doit tenir le décompte du nombre de rounds. Au round 5, le rituel est à moitié accompli. Au round 10, le rituel s'accomplit. Les PJ ne le savent pas exactement, mais le bourdonnement du vortex augmente d'intensité à chaque round. Les vérités sont les armes les plus puissantes : chaque vérité réussie (Persuasion DD 18) compte comme 2 rounds de combat. Les PJ peuvent gagner la phase 2 sans combattre — en parlant.",
           },
 
           texte_a_lire:
@@ -311,7 +311,7 @@ export const scenario3 = {
             rappels: [
               "Thade ne veut pas tuer les PJ. Il veut les retarder. Chaque round qu'il gagne rapproche le rituel de son accomplissement.",
               "Si les PJ ont les cahiers du Laboratoire de Verre, ils peuvent les lire à Thade. Chaque lettre fissure la Larme.",
-              "Le magi tuteur loyal peut intervenir si les PJ ne l'ont pas attaqué dans la Tour.",
+              "Le magi-tuteur loyal peut intervenir si les PJ ne l'ont pas attaqué dans la Tour.",
             ],
           },
 

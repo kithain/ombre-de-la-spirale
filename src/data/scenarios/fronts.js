@@ -10,8 +10,8 @@ import {
  * Catégories autorisées pour le champ `categorie` d'une Menace.
  */
 export const CATEGORIES_MENACE = Object.freeze({
-  "Le Cerveau": {
-    etiquette: "L'Ambitieux / Le Cerveau",
+  "L'Architecte": {
+    etiquette: "L'Ambitieux / L'Architecte",
     couleur: "text-purple-300 border-purple-800/60 bg-purple-950/30",
   },
   "Le Fléau": {
@@ -127,7 +127,7 @@ export const frontsData = [
       {
         id: "menace_retour_sealine",
         nom: "Le Retour de Sealine",
-        categorie: "Le Cerveau",
+        categorie: "L'Architecte",
         nature:
           "Thade rassemble les composants, détourne les flux et verrouille la Tour pour ouvrir le vortex.",
         objectifFinal:

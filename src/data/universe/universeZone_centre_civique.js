@@ -13,9 +13,9 @@ export const zoneCentreCivique = {
       id: "place_fondation",
       nom: "Place de la Fondation",
       resume:
-        "Une vaste place pavée où convergent les principales avenues de Valombre. En son centre s’élève la statues des fondateurs humains de Valombre. Sous leurs silhouettes de marbre, presque effacées par la pluie, affleurent des blocs nains bien plus anciens,",
+        "Une vaste place pavée où convergent les principales avenues de Valombre. En son centre s’élève la statue des fondateurs humains de Valombre. Sous leurs silhouettes de marbre, presque effacées par la pluie, affleurent des blocs nains bien plus anciens.",
       details: [
-        "Les dalles du pavement nain, claires et décoratives, demeure intact depuis des siècles, ses dalles parfaitement ajustées semblent à la fois intemporelles et indestructibles.",
+        "Les dalles du pavement nain, claires et décoratives, demeurent intactes depuis des siècles, leurs dalles parfaitement ajustées semblent à la fois intemporelles et indestructibles.",
         "Les cérémonies officielles, les proclamations et les exécutions publiques ont lieu sur une estrade de pierre blanche installée devant l’Hôtel de Ville.",
         "Des marchands ambulants vendent des cierges, des rubans aux couleurs de la ville, des médailles de saints et de petites reproductions grossières des fondateurs.",
         "Les jours de pluie, l’eau disparaît dans d’antiques rigoles naines dont les humains ignorent le fonctionnement exact.",

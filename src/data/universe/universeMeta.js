@@ -2,7 +2,7 @@ export const universeMeta = {
   id: "valombre_setting",
   titre: "VALOMBRE",
   introduction:
-    "Valombre est le verrou terrestre de la Spirale, une puissance ancienne contente sous la cité. Il y a des siècles, les clans nains, premiers habitants du royaume, scellerent la faille par un geste dont le sens s'est perdu. Les siècles ont changé les royaumes, dispersé le savoir et transformé les gestes anciens en rites que presque personne ne comprend.",
+    "Valombre est le verrou terrestre de la Spirale, une puissance ancienne contenue sous la cité. Il y a des siècles, les clans nains, premiers habitants du royaume, scellèrent la faille par un geste dont le sens s'est perdu. Les siècles ont changé les royaumes, dispersé le savoir et transformé les gestes anciens en rites que presque personne ne comprend.",
   contexte:
     "Depuis l'explosion magique de Nyx, Valombre n'est plus exactement dans le monde matériel. La cité, les mines, les routes proches et une partie des cols sont prises dans un voile de continuité : de l'intérieur, tout semble encore fonctionner ; de l'extérieur, Valombre devient difficile à atteindre, puis presque impossible. Ce n'est pas une bulle visible — le monde continue de mentir à ceux qui vivent dedans. La Spirale n'a pas encore envahi Valombre ; elle a légèrement déplacé son ancrage. La cité est encore là, mais elle n'est plus tout à fait raccordée au reste du monde. Pendant ce temps, le verrou s'affaiblit par oubli : les tombes naines sont profanées, Nyx est désigné coupable, le sceau faiblit. Les nains se souviennent des gestes, les mages veulent étudier ce qui s'éveille, les puissants cherchent à préserver l'ordre. La population humaine ignore la menace tant que les rues sont sûres et que les mines produisent. Thade Coren exploite l'Ordre de Nyx pour rassembler les fragments de la Larme de Vael dans le but de la contrôler.",
 
@@ -45,8 +45,8 @@ export const universeMeta = {
       icone: "priority_high",
       contenu: [
         "Le Serment des Sept Thanes : les profanations révèlent que les tombes ne sont pas des monuments mais les points visibles du verrou. Les PJ commencent comme outils de Thade et découvrent que nul ne tient toute la vérité.",
-        "Les Masques de l'Ordre Noir : Nyx, Caldris, le champion noir et les témoins effacés montrent que chaque faction ne possède qu'un fragment de savoir. Les PJ doivent recomposer une coalition avant que la purge ou l'ordre de Thade ne s'imposent.",
-        "La Dame de la Spirale : Sealine révèle le coût véritable du verrou. Valombre tombe sous un faux rempart public. La Tour concentre les outils volés pour rouvrir le seuil. Les PJ doivent choisir s'ils scellent, transforment ou brisent la brèche."
+        "Les Masques de Nyx : Nyx, Caldris, le Champion de la Bannière Pure et les témoins effacés montrent que chaque faction ne possède qu'un fragment de savoir. Les PJ doivent recomposer une coalition avant que la purge ou l'ordre de Thade ne s'imposent.",
+        "La Dame de la Spirale : Sealine révèle le coût véritable du verrou. Valombre tombe sous un mensonge protecteur. La Tour concentre les outils volés pour rouvrir le seuil. Les PJ doivent choisir s'ils scellent, transforment ou brisent la brèche."
       ],
     },
   ],
@@ -66,7 +66,7 @@ export const universeMeta = {
     },
     {
       nom: "Antagonistes tragiques",
-      description: "Thade, Nyx, Caldris ou le champion noir ne sont pas des méchants au sens classique. Ce sont des individus brisés par leurs idéaux, leurs pertes ou leurs échecs. Leur chute n'est pas une défaite morale, mais le reflet des forces qui déchirent Valombre.",
+      description: "Thade, Nyx, Caldris ou le Champion de la Bannière Pure ne sont pas des méchants au sens classique. Ce sont des individus brisés par leurs idéaux, leurs pertes ou leurs échecs. Leur chute n'est pas une défaite morale, mais le reflet des forces qui déchirent Valombre.",
     },
   ],
 
@@ -127,7 +127,7 @@ export const universeMeta = {
           "Sealine était une mage spécialisée dans les sorts de soin, la préservation du corps et la circulation de l'énergie vitale.",
           "Thade cherchait à vaincre la mort.",
           "Sealine cherchait à empêcher les vivants de mourir.",
-          "Cette différence fut d'abord la origine de leurs disputes, puis celle de leur complémentarité.",
+          "Cette différence fut d'abord l'origine de leurs disputes, puis celle de leur complémentarité.",
           "Thade concevait des protocoles audacieux. Sealine en identifiait les conséquences humaines. Elle l'obligeait à voir les patients derrière les calculs. Lui lui permettait d'envisager des traitements que personne d'autre n'aurait osé tenter.",
           "Ils travaillèrent ensemble, puis s'aimèrent.",
           "Thade lui révéla tout ce qu'il avait découvert sur la Spirale. Sealine fut d'abord horrifiée par son projet d'ouverture. Elle finit cependant par admettre que la puissance située derrière le passage pouvait révolutionner les soins magiques.",

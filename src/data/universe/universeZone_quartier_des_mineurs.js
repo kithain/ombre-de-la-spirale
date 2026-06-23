@@ -17,7 +17,7 @@ export const zoneQuartierDesMineurs = {
         "Carrefour principal du quartier nain, la Place des Terrasses relie les rues commerçantes, le Temple-Forgeron et la route qui mène à l’entrée de la mine.",
       details: [
         "La place est pavée de larges dalles de granit gris, usées par le passage des chariots et des générations de mineurs.",
-        "Un grand brasero de fer occupe son centre. Il sert à la fois de point de rassemblement et de origine de chaleur pendant les mois froids.",
+        "Un grand brasero de fer occupe son centre. Il sert à la fois de point de rassemblement et de source de chaleur pendant les mois froids.",
         "Des échoppes de nourriture, d’outillage et de vêtements de travail occupent les rez-de-chaussée qui entourent la place.",
         "Les annonces de la Guilde des Mineurs et les décisions concernant le quartier sont affichées sur un panneau de bois protégé par un auvent.",
       ],

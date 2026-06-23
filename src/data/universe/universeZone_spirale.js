@@ -2,7 +2,7 @@ export const zoneSpirale = {
   id: "spirale",
   nom: "La Spirale",
   resume:
-    "La Spirale est un espace situé au-delà des profondeurs de Valombre. L’air y est respirable, mais ne porte presque aucune odeur. Une lumière pâle éclaire le paysage sans que l’on puisse en identifier la origine, et les distances sont difficiles à estimer. Malgré cet environnement, une communauté humaine s’y est installée depuis plusieurs générations.",
+    "La Spirale est un espace situé au-delà des profondeurs de Valombre. L’air y est respirable, mais ne porte presque aucune odeur. Une lumière pâle éclaire le paysage sans que l’on puisse en identifier l'origine, et les distances sont difficiles à estimer. Malgré cet environnement, une communauté humaine s’y est installée depuis plusieurs générations.",
   details: [
     "Une lumière laiteuse aux reflets violets couvre le paysage en permanence. Elle ne varie ni avec les heures ni avec les déplacements.",
     "Les sons portent mal. Une voix proche reste audible, mais les bruits lointains semblent s’éteindre avant d’atteindre celui qui les écoute.",
