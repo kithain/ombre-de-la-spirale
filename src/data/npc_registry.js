@@ -6,7 +6,7 @@
  *
  * Fournit l'API de lecture en mémoire pour tous les PNJ du jeu.
  */
-import { pnjPrincipaux } from "./personnages";
+import { pnjPrincipaux } from "./personnages/indexPersonnages";
 import { creerPnj } from "./personnages/pnjTemplate";
 
 // ─── HELPERS INTERNES ───────────────────────────────────────────

@@ -7,5 +7,5 @@ export { frontsData, couchesCampagneData, CATEGORIES_MENACE } from "./scenarios/
 export {
   pnjPrincipaux,
   factionsData,
-} from "./personnages";
+} from "./personnages/indexPersonnages";
 

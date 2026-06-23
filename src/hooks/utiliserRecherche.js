@@ -1,7 +1,7 @@
 import { useState, useMemo, useCallback, useEffect, startTransition } from "react";
 import Fuse from "fuse.js";
-import { universeData, scenariosData, factionsData, frontsData, couchesCampagneData } from "../data";
-import { tousLesPnj, chercherPnjParId } from "../data/npcRegistry";
+import { universeData, scenariosData, factionsData, frontsData, couchesCampagneData } from "../data/indexDonnees";
+import { tousLesPnj, chercherPnjParId } from "../data/npc_registry";
 
 /**
  * Construit l'index de recherche à partir de toutes les données du jeu

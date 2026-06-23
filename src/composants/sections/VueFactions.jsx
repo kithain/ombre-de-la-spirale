@@ -6,7 +6,7 @@ import {
   Users as IconeUtilisateurs,
   Scroll,
 } from "lucide-react";
-import { factionsData } from "../../data/personnages";
+import { factionsData } from "../../data/personnages/indexPersonnages";
 import TitreSection from "../interface/TitreSection";
 import Carte from "../interface/Carte";
 import {

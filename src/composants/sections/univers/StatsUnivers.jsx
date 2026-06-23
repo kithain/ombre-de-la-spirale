@@ -1,5 +1,5 @@
 import { MapPin, Users, Layers, Shield, Swords, AlertCircle } from "lucide-react";
-import { compteursPnj } from "../../../data/npcRegistry";
+import { compteursPnj } from "../../../data/npc_registry";
 
 function StatsUnivers({ zones }) {
   const totalZones = zones.length;

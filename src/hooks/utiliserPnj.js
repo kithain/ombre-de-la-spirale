@@ -8,7 +8,7 @@ import {
   obtenirPnjParCategorie,
   compteursPnj,
   categoriesPnj,
-} from "../data/npcRegistry";
+} from "../data/npc_registry";
 
 export function utiliserPnj() {
   return useMemo(() => ({

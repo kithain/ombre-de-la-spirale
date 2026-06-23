@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { scenariosData } from "../../../data/scenarios/scenarios";
 import { frontsData } from "../../../data/scenarios/fronts";
-import { obtenirPnjParIds } from "../../../data/npcRegistry";
+import { obtenirPnjParIds } from "../../../data/npc_registry";
 import { trouverLieuParId } from "../../../utilitaires/liaisonsDonnees";
 import { sceneId } from "../../../utilitaires/sceneUtils";
 import { obtenirEffetsFronts } from "../../../data/scenarios/effetsFronts";

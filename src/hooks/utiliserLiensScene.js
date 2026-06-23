@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { chercherPnjParId } from "../data/npcRegistry";
+import { chercherPnjParId } from "../data/npc_registry";
 import { trouverLieuParId } from "../utilitaires/liaisonsDonnees";
 
 /**
