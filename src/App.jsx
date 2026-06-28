@@ -6,7 +6,6 @@ const VueUnivers = lazy(() => import("./composants/sections/univers/VueUnivers")
 const VueFactions = lazy(() => import("./composants/sections/VueFactions"));
 const VueAntagoniste = lazy(() => import("./composants/sections/VueAntagoniste"));
 const VueScenarios = lazy(() => import("./composants/sections/scenarios/VueScenarios"));
-const VueScenariosAnnexes = lazy(() => import("./composants/sections/quetes/VueScenariosAnnexes"));
 const VueSession = lazy(() => import("./composants/sections/session/VueSession"));
 
 /**
@@ -36,7 +35,6 @@ function App() {
         <Route path="/antagoniste" element={<Suspense fallback={<ChargementRoute />}><VueAntagoniste /></Suspense>} />
         <Route path="/scenarios" element={<Suspense fallback={<ChargementRoute />}><VueScenarios /></Suspense>} />
         <Route path="/scenarios/:id" element={<Suspense fallback={<ChargementRoute />}><VueScenarios /></Suspense>} />
-        <Route path="/scenarios-annexes" element={<Suspense fallback={<ChargementRoute />}><VueScenariosAnnexes /></Suspense>} />
         <Route path="/session" element={<Suspense fallback={<ChargementRoute />}><VueSession /></Suspense>} />
         <Route path="*" element={<Navigate to="/univers" replace />} />
       </Route>

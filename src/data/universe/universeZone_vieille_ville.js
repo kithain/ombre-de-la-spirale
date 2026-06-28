@@ -50,6 +50,32 @@ export const zoneVieilleVille = {
       idsPnj: [],
     },
     {
+      id: "armurerie_ruelle",
+      nom: "Armurerie de la Ruelle",
+      resume:
+        "Échoppe de Garrek Masque, coincée entre deux immeubles penchés dans une ruelle proche du Pic Brisé. Armures et armes d'occasion, réparées ou rachetées. Qualité moyenne, prix abordables, trocs acceptés.",
+      details: [
+        "L'enseigne est un bouclier cabossé peint en rouge, suspendu au-dessus d'une porte basse qu'il faut franchir en se penchant.",
+        "L'intérieur est encombré de casques bosselés, de cuirs cloutés et de lames resoudées, empilés sur des étagères branlantes et des tonneaux coupés.",
+        "Une odeur de rouille, d'huile de table et de cuir humide flotte en permanence. Le comptoir est couvert de pièces détachées et d'un livre de comptes tenu de travers.",
+        "Garrek garde une gourdine sous le comptoir et un chien maigre à l'arrière. Il ne pose pas de questions sur l'origine des objets qu'on lui vend.",
+      ],
+      idsPnj: ["armurier_garrek"],
+    },
+    {
+      id: "herboristerie_fendrel",
+      nom: "Herboristerie de Fendrel",
+      resume:
+        "Petite échoppe de la Vieille Ville où Fendrel vend des herbes médicinales, des cataplasmes et des remèdes bon marché. Fréquentée par les habitants qui ne peuvent pas payer l'apothicaire.",
+      details: [
+        "La devanture est étroite, peinte en vert délavé. Des bottes d'herbes sèches pendent derrière la vitre sale.",
+        "L'intérieur sent le séchoir, la menthe, le vinaigre et la terre humide. Des bocaux mal étiquetés s'alignent sur des étagères de bois qui ploient sous le poids.",
+        "Un poêle de fonte chauffe une bouilloire en permanence. La table de travail sert de comptoir, de planche à découper et de bureau.",
+        "L'arrière-salle sert de séchoir. Des grilles de bois suspendues au plafond portent des feuilles, des racines et des écorces en cours de dessiccation.",
+      ],
+      idsPnj: ["herboriste_fendrel"],
+    },
+    {
       id: "apothicairerie_ursula",
       nom: "Apothicairerie d’Ursula",
       resume:

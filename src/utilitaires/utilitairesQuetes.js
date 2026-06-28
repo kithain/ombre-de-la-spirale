@@ -3,7 +3,7 @@
  * Utilise le registre NPC comme origine unique de données
  */
 
-import { tousLesPnj } from "../data/npc_registry";
+import { tousLesPnj } from "../data/npcRegistry";
 
 /**
  * Récupère tous les PNJ qui ont des quêtes annexes

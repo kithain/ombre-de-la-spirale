@@ -15,6 +15,8 @@ import { frontsData } from "../data/scenarios/fronts";
 import { effetsFrontsParScene } from "../data/scenarios/effetsFronts";
 import { sceneId } from "./sceneUtils";
 
+const nomFrontParId = new Map(frontsData.map((f) => [f.id, f.nom]));
+
 // ─── Types de conséquences ────────────────────────────────
 
 /**
@@ -76,7 +78,7 @@ export function consequencesScene(scene) {
     resultats.push({
       source: "front",
       sourceId: effet.frontId,
-      sourceNom: effet.frontId,
+      sourceNom: nomFrontParId.get(effet.frontId) || effet.frontId,
       type: "declencheur",
       description: `${effet.effet} — ${effet.consequence}`,
       declencheur: effet.declencheur,

@@ -130,7 +130,7 @@ export const compteursPnj = listePnjComplete.reduce(
 );
 
 /** Catégories disponibles */
-export const categoriesPnj = Object.freeze(["all", "allies", "ennemis", "monstres"]);
+export const categoriesPnj = Object.freeze(["all", "allies", "ennemis", "neutres", "monstres"]);
 
 /** Obtenir plusieurs PNJ par leurs IDs */
 export function obtenirPnjParIds(ids) {

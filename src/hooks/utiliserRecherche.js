@@ -1,14 +1,25 @@
-import { useState, useMemo, useCallback, useEffect, startTransition } from "react";
+import { useState, useMemo, useCallback, useEffect } from "react";
 import Fuse from "fuse.js";
-import { universeData, scenariosData, factionsData, frontsData, couchesCampagneData } from "../data/indexDonnees";
-import { tousLesPnj, chercherPnjParId } from "../data/npc_registry";
 
 /**
- * Construit l'index de recherche à partir de toutes les données du jeu
- * @returns {Array} Liste d'entrées recherchables
+ * Construit l'index de recherche à partir de toutes les données du jeu.
+ *
+ * Les données (scénarios, PNJ, univers…) sont chargées via import() dynamique
+ * pour qu'elles ne soient pas embarquées dans le bundle d'entrée : l'index est
+ * construit après le premier affichage, sans bloquer le chargement initial.
+ * @returns {Promise<Array>} Liste d'entrées recherchables
  */
-const construireIndexRecherche = () => {
+const construireIndexRecherche = async () => {
+  const [
+    { universeData, scenariosData, factionsData, frontsData, couchesCampagneData },
+    { tousLesPnj, chercherPnjParId },
+  ] = await Promise.all([
+    import("../data/indexDonnees"),
+    import("../data/npcRegistry"),
+  ]);
+
   const entrees = [];
+  const pnjIdsIndexes = new Set();
 
   // Univers (zones, lieux, PNJ)
   universeData.zones?.forEach((zone) => {
@@ -30,6 +41,7 @@ const construireIndexRecherche = () => {
       (lieu.idsPnj || []).forEach((pnjId) => {
         const pnj = chercherPnjParId(pnjId);
         if (!pnj) return;
+        pnjIdsIndexes.add(pnjId);
         entrees.push({
           type: "PNJ",
           titre: pnj.nom,
@@ -100,7 +112,9 @@ const construireIndexRecherche = () => {
 
 
   // Tous les PNJ (normalisés via npcRegistry)
+  // Skip those already indexed via universe zones to avoid duplicates
   tousLesPnj.forEach((pnj) => {
+    if (pnjIdsIndexes.has(pnj.id)) return;
     const typeLabel =
       pnj.categorie === "monstres" ? "Créature" :
       pnj.categorie === "ennemis" ? "Ennemi" : "PNJ";
@@ -123,19 +137,23 @@ export function utiliserRecherche() {
   const [terme, definirTerme] = useState("");
 
   // Index Fuse.js construit de façon différée après le premier rendu.
-  // startTransition marque la mise à jour comme non-urgente : React peut
-  // interrompre le re-rendu si une interaction prioritaire arrive.
+  // Les données sont chargées via import() dynamique : elles ne sont donc pas
+  // dans le bundle d'entrée et n'arrivent qu'après le premier affichage.
   const [moteurRecherche, definirMoteurRecherche] = useState(null);
 
   useEffect(() => {
-    startTransition(() => {
-      const entrees = construireIndexRecherche();
+    let actif = true;
+    construireIndexRecherche().then((entrees) => {
+      if (!actif) return;
       const fuse = new Fuse(entrees, {
         threshold: 0.3,
         keys: ["titre", "description", "type"],
       });
       definirMoteurRecherche({ entrees, fuse });
     });
+    return () => {
+      actif = false;
+    };
   }, []);
 
   const resultats = useMemo(() => {

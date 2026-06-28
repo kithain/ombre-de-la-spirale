@@ -354,6 +354,15 @@ export const scenario2 = {
         note: "Peut être déclenchée par une rumeur, une invitation du Conseil, ou par les PJ qui passent par la Place. Le contenu s'adapte au choix du Scénario 1.",
       },
       {
+        titre: "Le Conseil en Crise",
+        acte: "Acte I",
+        statut: "obligatoire_flexible",
+        axe: "Public",
+        dependances: ["L'Émeute de la Place de la Fondation (le Conseil réagit à l'émeute)"],
+        revele: ["Avel Ronce est paralysé par la procédure", "Hessa Brunefer défend les Terrasses", "Maelric presse le Conseil d'agir ou de subir la quarantaine", "Olane peut apporter des preuves si les PJ la soutiennent"],
+        note: "Peut se jouer au Conseil de Valombre ou dans un lieu institutionnel équivalent. Le contenu s'adapte aux relations des PJ avec le Conseil et l'Université.",
+      },
+      {
         titre: "Les Endeuillés d'Edran Morn",
         acte: "Acte I",
         statut: "obligatoire",
@@ -868,6 +877,79 @@ export const scenario2 = {
             resume: "La Place se vide. Les nains regagnent les Terrasses. Le Champion disparaît dans un carrosse fermé.",
             reussite: "Les PJ ont calmé la foule ou identifié les acteurs cachés.",
             echec: "L'émeute a tourné à la violence. Les Terrasses se ferment. La crise s'aggrave.",
+          },
+        },
+
+        {
+          id: "s2_conseil_crise",
+          titre: "Le Conseil en Crise",
+          type: "Social",
+          resume_mj:
+            "Après l'émeute, le Conseil de Valombre convoque une session extraordinaire. Avel Ronce tente de produire du consensus sans trancher. Hessa Brunefer exige que les Terrasses ne soient pas placées sous tutelle. L'Émissaire Maelric de Caldris rappelle son ultimatum : si Valombre ne prouve pas qu'elle tient le verrou, Caldris imposera la quarantaine. Maera Olane, si les PJ la soutiennent, peut apporter des preuves sur les irrégularités de Thade. Les PJ doivent naviguer entre pression politique, preuves scientifiques et intérêts nains pour obtenir une décision — ou constater que le Conseil ne décidera rien.",
+          idLieu: "conseil_valombre",
+          idsPnj: ["avel_ronce", "hessa_brunefer", "envoye_caldris", "patrouille_mixte_conseil", "maera_olane"],
+
+          format_livre: {
+            ambiance:
+              "La salle du Conseil est vaste, voûtée, éclairée par des lampes d'ambre qui ne tremblent pas. Des bancs de pierre en demi-cercle font face à une table surélevée. Avel Ronce est assis derrière la table, un dossier ouvert devant lui, l'ordre du jour sous les doigts. Hessa Brunefer se tient debout à sa droite, les bras croisés, l'étole de délégation sur les épaules. Maelric de Caldris se tient à gauche, pâle, un peu raide, un carnet à la main. La patrouille mixte surveille les portes. Maera Olane est assise au fond de la salle, un dossier sous le bras, prête à parler si on lui donne la parole — et si on la protège.",
+            deroulement_narratif:
+              "Avel Ronce ouvre la session en annonçant que le Conseil doit « répondre aux événements de la Place de la Fondation et aux inquiétudes de nos partenaires extérieurs ». Il ne nomme ni le Champion, ni Maelric, ni les malades. Il parle de « tensions » et de « mesures appropriées ».\n\nHessa Brunefer prend la parole la première. Elle rappelle quel article de quelle charte protège les Terrasses, exige que les clans ne soient pas punis pour les actes du Champion, et menace de fermer l'accès commercial à la mine si le Conseil place les Terrasses sous tutelle.\n\nMaelric parle ensuite. Courtois, froid, il pose une carte sur la table : Valombre n'est plus atteignable par les routes normales depuis trois semaines. Les marchands ne reviennent pas. Les messagers n'arrivent plus. Si le Conseil ne peut pas prouver qu'il contrôle la situation, Caldris imposera la quarantaine dans dix jours.\n\nAvel Ronce tente de renvoyer chaque point à « la commission compétente ». Hessa s'y oppose. Maelric s'impatiente. La salle s'enlise.\n\nSi les PJ sont présents (convocation officielle, invitation d'un membre du Conseil, ou parce qu'ils se sont invités), ils peuvent :\n\n1. Appuyer Hessa : les Terrasses ne sont pas le problème. La crise vient d'ailleurs. Persuasion DD 14. Si réussi, Avel recule sur la tutelle.\n\n2. Présenter les preuves d'Olane : si Olane est là et que les PJ la soutiennent, elle expose les irrégularités de Thade (142 consultations, les outils d'Université sur les tombes, le protocole S-01). Avel Ronce veut renvoyer ça à « la commission disciplinaire de l'Université ». Olane répond que l'Université étouffe l'affaire depuis des mois. Persuasion DD 15. Si réussi, le Conseil ouvre une enquête officielle.\n\n3. Négocier avec Maelric : les PJ proposent une preuve concrète que Valombre tient le verrou (les rites de Thorgar, les os des Thanes, le sceau). Diplomatie DD 15. Si réussi, Maelric accorde un délai supplémentaire. Si échoué, il maintient l'ultimatum.\n\n4. Demander la loi martiale : les PJ poussent le Conseil à voter des mesures d'exception pour protéger les Terrasses et interdire les rassemblements du Champion. Avel accepte avec soulagement — ça lui donne l'illusion d'agir. Mais la loi martiale avance aussi le Front « Le Conseil, la Machine à Retarder ».\n\nSi les PJ ne font rien, le Conseil ne décide rien. Avel renvoie tout en commission. Hessa repart furieuse. Maelric note l'incapacité de Valombre dans son carnet.",
+            notes_mj:
+              "Cette scène donne aux PJ un accès direct aux trois forces politiques : Avel (paralysie), Hessa (défense naine), Maelric (pression extérieure). Olane est présente seulement si les PJ l'ont rencontrée dans le Scénario 1 et qu'ils la soutiennent. Si Olane n'est pas disponible, les PJ perdent l'option 2 mais peuvent encore présenter les preuves eux-mêmes avec un DD plus élevé (16 au lieu de 15). La scène peut être jouée avant ou après le Déphasage Visible — si après, Maelric peut témoigner avoir vu une rue se déformer.",
+          },
+
+          texte_a_lire:
+            "La salle du Conseil est voûtée, éclairée par des lampes d'ambre. Avel Ronce est assis derrière la table surélevée, l'ordre du jour sous les doigts. Hessa Brunefer se tient à sa droite, les bras croisés. L'Émissaire Maelric de Caldris est à gauche, pâle, un carnet à la main.\n\nAvel Ronce ouvre la session : « Le Conseil doit répondre aux tensions récentes et aux inquiétudes de nos partenaires extérieurs. »\n\nHessa Brunefer parle la première : « Les Terrasses ne seront pas placées sous tutelle. Les clans ne paieront pas pour les actes d'un étranger. »\n\nMaelric pose une carte sur la table : « Valombre n'est plus atteignable par les routes normales. Si le Conseil ne prouve pas qu'il contrôle la situation, Caldris imposera la quarantaine dans dix jours. »\n\nAvel Ronce regarde ses notes. « Nous allons examiner ces questions en commission. »",
+
+          objectif: "Obtenir une décision du Conseil — ou constater sa paralysie et trouver une autre voie.",
+
+          contexte_mj: {
+            situation:
+              "Le Conseil réagit à l'émeute et à la pression caldrisienne. Avel Ronce veut éviter toute décision qui l'expose. Hessa Brunefer protège les Terrasses. Maelric presse avec un délai. Olane, si elle est là, apporte des preuves sur Thade.",
+            secrets: [
+              "Avel Ronce n'est pas corrompu — il est dépassé. Il peut devenir un allié si les PJ lui apportent une vérité simple et présentable qui le couvre politiquement.",
+              "Hessa Brunefer sait que les nains possèdent une part du verrou, mais elle ne révélera rien devant Maelric sans garantie.",
+              "Maelric a vu le déphasage de ses propres yeux si la scène se joue après Le Déphasage Visible. Il peut en témoigner, ce qui crédibilise la crise.",
+              "Olane a été découragée de témoigner par l'Université. Si les PJ ne la protègent pas, elle se tait.",
+            ],
+            rappels: [
+              "Le Conseil ne décidera rien sans preuve présentable et sans quelqu'un pour assumer la décision politiquement.",
+              "La patrouille mixte est présente mais neutre — elle exécute les ordres du Conseil, elle ne prend pas parti.",
+            ],
+          },
+
+          defis: [
+            { competence: "Persuasion", dd: 14, reussite: "Les PJ appuient Hessa : Avel recule sur la tutelle des Terrasses.", echec: "Avel renvoie la question en commission. Hessa repart sans garantie." },
+            { competence: "Diplomatie", dd: 15, reussite: "Les PJ négocient avec Maelric : il accorde un délai supplémentaire de cinq jours.", echec: "Maelric maintient l'ultimatum. Dix jours, pas un de plus." },
+            { competence: "Persuasion", dd: 15, reussite: "Olane (ou les PJ) présentent les preuves sur Thade : le Conseil ouvre une enquête officielle.", echec: "Avel renvoie à la commission disciplinaire de l'Université. L'affaire reste interne." },
+          ],
+
+          indices: [
+            { indice: "L'ultimatum de Caldris", localisation: "Témoignage de Maelric", detection: "Automatique", information: "Valombre n'est plus atteignable par les routes normales. Caldris imposera la quarantaine dans dix jours si le Conseil ne prouve pas qu'il tient le verrou.", usage: "Presser le Conseil d'agir ou chercher une preuve de stabilité crédible." },
+            { indice: "Les irrégularités de Thade", localisation: "Dossier d'Olane", detection: "Olane doit être présente et soutenue", information: "142 consultations, outils d'Université sur les tombes, protocole S-01. L'Université étouffe l'affaire.", usage: "Forcer le Conseil à ouvrir une enquête officielle ou à agir sans l'Université." },
+          ],
+
+          guide_mj: {
+            intention: "Rendre les forces politiques jouables et concrètes. Les PJ voient que la crise n'est pas que mystique — elle est institutionnelle.",
+            mise_en_place: "Salle du Conseil de Valombre. Session extraordinaire. Avel, Hessa, Maelric, patrouille mixte. Olane si les PJ la soutiennent.",
+            deroulement: ["Avel ouvre et tente de renvoyer en commission.", "Hessa exige que les Terrasses ne soient pas punies.", "Maelric pose son ultimatum.", "Les PJ interviennent (ou non).", "Le Conseil décide — ou ne décide pas."],
+            actions_utiles: ["Appuyer Hessa sur les Terrasses.", "Soutenir Olane pour exposer Thade.", "Négocier un délai avec Maelric.", "Pousser à la loi martiale.", "Constater la paralysie et chercher une autre voie."],
+            fronts_heritiers: ["Front 'Le Conseil, la Machine à Retarder'", "Front 'La Réputation de Valombre'", "Front 'La Révélation par étapes'"],
+            jeu_des_pnj: "Avel est courtois, lent, incapable de trancher. Hessa est directe, sèche, intraitable sur les coutumes. Maelric est froid, précis, sincèrement inquiet. Olane parle vite quand elle tient une preuve, mais se tait si elle se sent exposée.",
+            escalade: "Si les PJ échouent ou ne font rien : Avel renvoie tout en commission, Hessa ferme un accès commercial, Maelric note l'incapacité de Valombre. Le Front 'Le Conseil' avance d'une étape.",
+            sortie: "Le Conseil a décidé quelque chose — ou n'a rien décidé. Les PJ savent maintenant qui pèse quoi dans la crise politique.",
+          },
+
+          reperes_de_jeu: {
+            indice_indispensable: "Les PJ doivent comprendre que le Conseil est paralysé et que la pression extérieure (Caldris) est réelle.",
+            ne_pas_bloquer_sur_un_jet: "Même si tous les jets échouent, la scène se joue. Les PJ voient la paralysie du Conseil et l'ultimatum de Maelric.",
+            question_dramatique: "Le Conseil peut-il agir — ou faut-il contourner le Conseil ?",
+          },
+
+          transitions: {
+            resume: "La session se lève. Avel range ses dossiers. Hessa repart vers les Terrasses. Maelric note quelque chose dans son carnet.",
+            reussite: "Les PJ ont obtenu une décision du Conseil — enquête, délai, ou protection des Terrasses.",
+            echec: "Le Conseil n'a rien décidé. La paralysie est visible. Les PJ doivent trouver une autre voie.",
           },
         },
 

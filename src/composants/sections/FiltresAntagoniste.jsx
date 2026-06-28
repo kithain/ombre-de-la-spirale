@@ -3,8 +3,9 @@ import { cc } from "../../utilitaires/combinerClasses";
 
 const CONFIGURATION_CATEGORIE = {
   tous: { icone: Users, etiquette: "Tous", couleur: "bg-gray-600" },
-  allies: { icone: Users, etiquette: "Alliés", couleur: "bg-blue-600" },
+  allies: { icone: Heart, etiquette: "Alliés", couleur: "bg-blue-600" },
   ennemis: { icone: Swords, etiquette: "Ennemis", couleur: "bg-red-600" },
+  neutres: { icone: Users, etiquette: "Neutres", couleur: "bg-yellow-600" },
   monstres: { icone: Ghost, etiquette: "Monstres", couleur: "bg-purple-600" },
 };
 

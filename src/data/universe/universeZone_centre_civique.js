@@ -20,7 +20,20 @@ export const zoneCentreCivique = {
         "Des marchands ambulants vendent des cierges, des rubans aux couleurs de la ville, des médailles de saints et de petites reproductions grossières des fondateurs.",
         "Les jours de pluie, l’eau disparaît dans d’antiques rigoles naines dont les humains ignorent le fonctionnement exact.",
       ],
-      idsPnj: [],
+      idsPnj: ["colporteur_vaneck"],
+    },
+    {
+      id: "echoppe_devotion_parvis",
+      nom: "Échoppe de Dévotion du Parvis",
+      resume:
+        "Comptoir de bois dressé contre le mur de la cathédrale, tenu par Pernelle Veyre. Cierges, médailles, amulettes bénies, eau lustrale et objets de piété. Tout est authentiquement béni par le clergé de Saint-Aldric.",
+      details: [
+        "Le comptoir est couvert de cierges de toutes tailles, rangés par saint et par prix. Des médailles de Saint-Aldric pendent à des crochets de fer.",
+        "Des rubans aux couleurs de la cathédrale, des prières écrites sur parchemin et de petits flacons d'eau lustrale sont disposés dans des coffrets de bois.",
+        "Pernelle connaît les horaires des offices, les noms des prêtres et les intentions de prière affichées à la cathédrale. Elle est apparentée à Géraud Veyre.",
+        "L'échoppe ferme pendant les offices. Pernelle assiste à chaque cérémonie et reprend son étal à la sortie des fidèles.",
+      ],
+      idsPnj: ["marchande_devotion"],
     },
     {
       id: "conseil_valombre",

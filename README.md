@@ -70,9 +70,9 @@ src/
 │   └── sections/           # VueFactions, VueAntagoniste
 ├── contextes/              # ContexteModalePnj, ContexteModaleLieu
 ├── data/
-│   ├── personnages/        # pnj.js, factions.js
+│   ├── personnages/        # pnj.js, factions.js, pnjTemplate.js
 │   ├── scenarios/          # 3 scénarios, fronts.js, effetsFronts.js
-│   ├── universe/           # Zones (8 fichiers), universeMeta
+│   ├── universe/           # Zones (8 fichiers), universeMeta, universeJustice
 │   └── npcRegistry.js      # Registre centralisé des PNJ
 ├── hooks/                  # utiliserRecherche, utiliserLiensScene, utiliserEtatPersistant
 ├── utilitaires/            # sceneUtils, consequences, liaisonsDonnees, indexScenario
@@ -101,6 +101,7 @@ Le script `scripts/check_orphelins.js` vérifie :
 - L'existence des images PNJ dans `public/images/PNJ/`
 - Les IDs de lieux (`idLieu`) référencés dans les scénarios
 - Les IDs de fronts (`id_front`) référencés dans les scénarios
+- Les clés de `effetsFronts.js` (sceneId, frontId, horlogeId) contre les scènes et fronts réels
 
 Le script échoue (`exit 1`) si des références orphelines sont trouvées.
 

@@ -1123,7 +1123,7 @@ export const pnjData = [
     "id": "garde_portail_mine",
     "nom": "Escouade de Gardes du Portail",
     "role": "Soldats épuisés chargés de verrouiller l'accès.",
-    "image": "/images/PNJ/pnj_patrouille_mixte_conseil.jpg",
+    "image": "/images/PNJ/pnj_garde_portail_mine.jpg",
     "interpretation": {
       "accroche": "Quand les PJ la rencontrent pour la première fois, l'escouade garde les mains près des armes et les yeux sur les autorisations.",
       "objectif": "Obéir aux ordres du Conseil tout en évitant un massacre",
@@ -2036,5 +2036,285 @@ export const pnjData = [
     "notes": "Force environnementale, pas un adversaire à abattre. Ses « cases de vie » représentent des paliers de confinement plutôt que des blessures. Liée à Sealine Vael, prisonnière au-delà du seuil. Pivot de la menace « La Spirale en Expansion » (Front 5) et de la menace « Le Glissement de l'Ancrage » (Front 6). Le déphasage de Valombre est l'expression surface de ce que la Présence fait en profondeur : la Spirale n'a pas envahi, elle a glissé l'ancrage de la cité entière.",
     "race": "manifestation planaire de la Spirale",
     "faction": "La Spirale"
+  },
+  {
+    "id": "armurier_dvalin",
+    "nom": "Dvalin Forgefer, armurier des Terrasses",
+    "role": "Armurier nain installé près de la Place des Terrasses. Il fabrique et vend armures, armes et boucliers de qualité supérieure, mais ses prix sont élevés. Travaux sur commande uniquement pour les pièces complexes.",
+    "categorie": "allies",
+    "image": "/images/PNJ/pnj_armurier_dvalin.jpg",
+    "antagoniste": false,
+    "interpretation": {
+      "accroche": "Dvalin examine toujours une arme ou une armure qu'on lui présente avant de regarder son interlocuteur. Il teste le tranchant, pèse la lame, fait sonner le métal.",
+      "objectif": "Maintenir la réputation de son armurerie et ne jamais vendre une pièce qui pourrait casser au mauvais moment.",
+      "attitude": "Sérieux, professionnel, peu bavard. Respecte les clients qui connaissent le métal. Méfiant envers ceux qui marchandent."
+    },
+    "disposition": "neutre",
+    "impulsion": "Ne livrer que du travail dont il répondrait personnellement.",
+    "degats": {
+      "valeur": 2,
+      "description": "Marteau d'atelier, tenailles chauffées",
+      "tags": ["proche", "brutal", "outils"]
+    },
+    "armure": {
+      "valeur": 2,
+      "description": "Tablier de cuir épais et gantelets de forge"
+    },
+    "vie": {
+      "type": "cases",
+      "points": null,
+      "max": null,
+      "cases": ["mineure", "serieuse", "mortelle"]
+    },
+    "etiquettes": ["armurier", "nain", "qualite", "cher", "sur-commande"],
+    "actionsMJ": [
+      "Refuser une réparation si le métal est trop corrompu",
+      "Proposer une pièce de qualité supérieure à un prix qui fait hésiter",
+      "Accepter un paiement en minerai brut plutôt qu'en monnaie"
+    ],
+    "description": "Nain massif aux mains couvertes de brûlures anciennes. Il porte un tablier de cuir noirci et travaille entouré de pièces finies suspendues aux murs. Son armurerie sent l'huile de protection et le charbon.",
+    "notes": "Dvalin vend des armures de plates, des boucliers de qualité naine et des armes en acier forgé. Ses prix sont 30 à 50% plus élevés que la norme, mais ses pièces ne se brisent pas. Il accepte les commandes spéciales si le client fournit les matériaux. Il ne fait pas de crédit.",
+    "race": "nain",
+    "faction": "Communauté Naine"
+  },
+  {
+    "id": "armurier_garrek",
+    "nom": "Garrek Masque, armurier de la Vieille Ville",
+    "role": "Armurier de la Vieille Ville. Il vend des armures et des armes de qualité moyenne, souvent réparées ou rachetées à des aventuriers morts. Ses prix sont abordables et il accepte les trocs.",
+    "categorie": "neutres",
+    "image": "/images/PNJ/pnj_armurier_garrek.jpg",
+    "antagoniste": false,
+    "interpretation": {
+      "accroche": "Garrek accueille chaque client avec un sourire un peu trop large et évalue immédiatement ce qu'il porte et ce qu'il pourrait payer.",
+      "objectif": "Faire du profit sans attirer les ennuis. Maintenir son échoppe ouverte malgré le quartier.",
+      "attitude": "Affable, commerçant, un peu filou. Ne pose pas de questions sur l'origine des objets qu'on lui vend."
+    },
+    "disposition": "neutre",
+    "impulsion": "Transformer tout ce qui entre par la porte en monnaie ou en marchandise.",
+    "degats": {
+      "valeur": 1,
+      "description": "Gourdine sous le comptoir",
+      "tags": ["proche", "non-letal", "défensif"]
+    },
+    "armure": {
+      "valeur": 1,
+      "description": "Cuir clouté usagé"
+    },
+    "vie": {
+      "type": "cases",
+      "points": null,
+      "max": null,
+      "cases": ["mineure", "serieuse", "mortelle"]
+    },
+    "etiquettes": ["armurier", "occasion", "abordable", "vieille-ville", "troc"],
+    "actionsMJ": [
+      "Proposer une armure réparée à moitié prix, sans mentionner les défauts cachés",
+      "Racheter l'équipement d'un aventurier mort pour une somme modique",
+      "Accepter un troc si l'objet proposé a une valeur revente"
+    ],
+    "description": "Homme sec aux cheveux gras, vêtu d'un gilet de cuir qui a vu mieux. Son échoppe est encombrée de pièces d'occasion, de casques bosselés et de boucliers resoudés. Une odeur de rouille et d'huile de table flotte dans l'air.",
+    "notes": "Garrek vend des cuirs cloutés, des cottes de mailles réparées, des armes d'occasion et des boucliers refaits. Qualité moyenne, prix abordables. Il rachète tout ce qu'on lui apporte sans poser de questions. Certaines pièces ont des défauts cachés (fissures, soudures fragiles). Il accepte le troc et fait crédit aux habitués du quartier.",
+    "race": "humain",
+    "faction": "Vieille Ville"
+  },
+  {
+    "id": "herboriste_fendrel",
+    "nom": "Fendrel, herboriste de la Vieille Ville",
+    "role": "Herboriste installé dans une échoppe de la Vieille Ville. Il vend des herbes médicinales, des cataplasmes, des thés et des remèdes bon marché pour ceux qui ne peuvent pas payer l'apothicaire ou le médecin.",
+    "categorie": "allies",
+    "image": "/images/PNJ/pnj_herboriste_fendrel.jpg",
+    "antagoniste": false,
+    "interpretation": {
+      "accroche": "Fendrel parle à ses plantes en les coupant, comme si chacune méritait un avertissement avant de finir en tisane.",
+      "objectif": "Gagner assez pour manger et garder son échoppe ouverte. Aider quand il peut, pas plus.",
+      "attitude": "Calme, un peu las. Connaît son métier sans en faire un art. Préfère les clients qui savent ce qu'ils veulent."
+    },
+    "disposition": "amical",
+    "impulsion": "Soigner le symptôme, pas la cause, et facturer juste assez.",
+    "degats": {
+      "valeur": 0,
+      "description": "Ciseaux de jardin, bouilloire bouillante",
+      "tags": ["proche", "improvise", "non-letal"]
+    },
+    "armure": {
+      "valeur": 0,
+      "description": ""
+    },
+    "vie": {
+      "type": "cases",
+      "points": null,
+      "max": null,
+      "cases": ["mineure", "serieuse", "mortelle"]
+    },
+    "etiquettes": ["herboriste", "remèdes", "bon-marché", "vieille-ville", "tisanes"],
+    "actionsMJ": [
+      "Proposer un remède qui soulage sans guérir vraiment",
+      "Reconnaître un symptôme que l'apothicaire aurait identifié plus vite",
+      "Vendre une herbe rare qu'il n'a pas eu le temps d'identifier"
+    ],
+    "description": "Vieil homme voûté aux doigts tachés de sève. Son échoppe sent le séchoir, la menthe et le vinaigre. Des bottes d'herbes pendent au plafond et des bocaux mal étiquetés s'alignent sur des étagères branlantes.",
+    "notes": "Fendrel vend des tisanes, des cataplasmes, des herbes séchées et des remèdes de base à prix très bas. Il soigne les petits maux du quartier. Ses préparations sont moins efficaces que celles d'Ursula, mais abordables pour les PJ qui ont peu de moyens. Il connaît les plantes de la région et peut identifier des échantillons. Il ne vend rien d'illicite mais ne pose pas de questions sur l'usage prévu.",
+    "race": "humain",
+    "faction": "Vieille Ville"
+  },
+  {
+    "id": "marchande_marenne",
+    "nom": "Marenne Doulcet, marchande d'étoffes et d'importations",
+    "role": "Marchande installée dans le Quartier Marchand Haut des Hauteurs. Elle vend des étoffes fines, des bijoux, des épices, des objets importés et des produits de luxe destinés aux familles aisées de Valombre.",
+    "categorie": "neutres",
+    "image": "/images/PNJ/pnj_marchande_marenne.jpg",
+    "antagoniste": false,
+    "interpretation": {
+      "accroche": "Marenne accueille chaque client en le regardant de haut en bas pour évaluer ce qu'il peut se permettre, puis ajuste son sourire en conséquence.",
+      "objectif": "Maintenir son réseau d'importations malgré le déphasage qui coupe les routes. Trouver des substituts avant que les stocks ne s'épuisent.",
+      "attitude": "Polie, élégante, calculatrice. Sait écouter. Vend aussi des informations avec la même courtoisie que ses étoffes."
+    },
+    "disposition": "neutre",
+    "impulsion": "Transformer chaque conversation en une transaction utile.",
+    "degats": {
+      "valeur": 0,
+      "description": "Ciseaux de couturière, aiguilles à broder",
+      "tags": ["proche", "improvise", "non-letal"]
+    },
+    "armure": {
+      "valeur": 0,
+      "description": ""
+    },
+    "vie": {
+      "type": "cases",
+      "points": null,
+      "max": null,
+      "cases": ["mineure", "serieuse", "mortelle"]
+    },
+    "etiquettes": ["marchande", "luxe", "importations", "hauteurs", "étoffes", "bijoux"],
+    "actionsMJ": [
+      "Proposer un objet de luxe qui attire l'attention dans le mauvais quartier",
+      "Révéler une information commerciale qui a une valeur politique",
+      "Mentionner que certaines cargaisons n'arrivent plus depuis des semaines"
+    ],
+    "description": "Femme élégante d'une quarantaine d'années, vêtue de soie sombre et de bijoux discrets. Sa boutique aux murs peints en bleu profond est éclairée par des lampes à huile parfumée. Les étagères présentent des rouleaux de tissu, des coffrets en bois verni et des objets importés soigneusement disposés.",
+    "notes": "Marenne vend des étoffes de qualité, des bijoux, des épices, du parfum, des objets d'art et des produits importés de Caldris ou des cités lointaines. Ses prix sont élevés. Elle accepte les commandes spéciales pour les clients de confiance. Depuis le déphasage, certains de ses stocks ne se renouvellent plus et elle cherche des sources alternatives. Elle est bien informée sur le commerce de la cité et peut vendre des rumeurs sur les maisons marchandes, les retards de cargaison et les tensions entre guildes.",
+    "race": "humaine",
+    "faction": "La Guilde Marchande"
+  },
+  {
+    "id": "libraire_penne",
+    "nom": "Aldric Penne, libraire-fournisseur de l'Université",
+    "role": "Libraire installé à proximité de l'Université Arcanique. Il vend des livres, du parchemin, de l'encre, des composants alchimiques de base et du matériel d'étude aux étudiants, aux chercheurs et aux visiteurs.",
+    "categorie": "neutres",
+    "image": "/images/PNJ/pnj_libraire_penne.jpg",
+    "antagoniste": false,
+    "interpretation": {
+      "accroche": "Aldric parle par questions rhétoriques et citations approximatives, comme s'il avait passé trop d'années entouré de professeurs.",
+      "objectif": "Maintenir son catalogue à jour et garder de bonnes relations avec l'Université, qui est son meilleur client.",
+      "attitude": "Précis, serviable, un peu pédant. Connaît les références de mémoire. Se méfie des achats anonymes de composants sensibles."
+    },
+    "disposition": "neutre",
+    "impulsion": "Classer, référencer et vendre — dans cet ordre.",
+    "degats": {
+      "valeur": 0,
+      "description": "Lourd in-folio, poids de registre",
+      "tags": ["proche", "improvise", "non-letal"]
+    },
+    "armure": {
+      "valeur": 0,
+      "description": ""
+    },
+    "vie": {
+      "type": "cases",
+      "points": null,
+      "max": null,
+      "cases": ["mineure", "serieuse", "mortelle"]
+    },
+    "etiquettes": ["libraire", "fournisseur", "université", "parchemin", "composants"],
+    "actionsMJ": [
+      "Demander à quel cours ou à quel maître la commande est destinée",
+      "Signaler qu'un ouvrage demandé a été retiré du catalogue sur ordre de l'Université",
+      "Proposer un composant rare qu'il n'a en stock qu'en petite quantité"
+    ],
+    "description": "Homme mince aux lunettes épaisses, vêtu d'une robe de bureau usée. Sa librairie est étroite, sent le papier et la cire. Des étagères du sol au plafond regorgent de livres reliés, de rouleaux de parchemin et de bocaux de composants alignés par ordre alphabétique.",
+    "notes": "Aldric vend du parchemin, de l'encre, des plumes, des livres d'étude, des composants alchimiques courants (soufre, sel, poudre de fer, cire vierge) et du matériel de laboratoire de base. Il ne vend pas de grimoires avancés ni de composants illicites, mais peut commander des ouvrages spécifiques avec l'autorisation d'un maître de l'Université. Il tient un registre de toutes les ventes et note les noms des acheteurs pour les composants sensibles. Il sait quels professeurs commandent quoi, ce qui en fait une source discrète d'informations sur les recherches en cours.",
+    "race": "humain",
+    "faction": "Université Arcanique"
+  },
+  {
+    "id": "marchande_devotion",
+    "nom": "Pernelle Veyre, marchande d'objets de dévotion",
+    "role": "Marchande installée sur le parvis de la Cathédrale Saint-Aldric. Elle vend des cierges, des médailles, des amulettes bénies, de l'eau lustrale et des objets religieux aux fidèles et aux visiteurs de la cathédrale.",
+    "categorie": "allies",
+    "image": "/images/PNJ/pnj_marchande_devotion.jpg",
+    "antagoniste": false,
+    "interpretation": {
+      "accroche": "Pernelle fait le signe de l'autel avant chaque vente, même pour une bougie, comme si chaque transaction était un petit acte de foi.",
+      "objectif": "Servir la cathédrale et ses fidèles tout en gagnant sa vie. Maintenir la qualité de ses produits religieux.",
+      "attitude": "Chaleureuse, simple, un peu superstitieuse. Connaît les saints, les prières et les usages du clergé. Méfiante envers ceux qui achètent des objets sacrés sans dévotion."
+    },
+    "disposition": "amical",
+    "impulsion": "Protéger chaque client avec un cierge et une prière, même s'il n'en a pas demandé.",
+    "degats": {
+      "valeur": 0,
+      "description": "Bâton de marche, cierge enflammé",
+      "tags": ["proche", "improvise", "non-letal"]
+    },
+    "armure": {
+      "valeur": 0,
+      "description": ""
+    },
+    "vie": {
+      "type": "cases",
+      "points": null,
+      "max": null,
+      "cases": ["mineure", "serieuse", "mortelle"]
+    },
+    "etiquettes": ["dévotion", "cierges", "amulettes", "centre-civique", "religieux"],
+    "actionsMJ": [
+      "Proposer un cierge à un saint spécifique selon le problème du PJ",
+      "Refuser de vendre un objet sacré à quelqu'un qui ne respecte pas le rite",
+      "Mentionner que le clergé a béint un stock d'eau lustrale pour une cérémonie à venir"
+    ],
+    "description": "Femme d'une cinquantaine d'années, le visage ridé par le froid et le vent du parvis. Elle porte un châle sombre et un tablier couvert de taches de cire. Son étal est un comptoir de bois dressé contre le mur de la cathédrale, couvert de cierges, de médailles, de rubans et de petits objets de piété.",
+    "notes": "Pernelle vend des cierges (de 1 sous à 1 écu selon la taille et le saint), des médailles de Saint-Aldric, des amulettes bénies (effet mineur : confiance, apaisement), de l'eau lustrale en petits flacons, des rubans aux couleurs de la cathédrale et des prières écrites sur parchemin. Elle ne vend rien de puissant au sens magique, mais ses objets sont authentiquement bénis par le clergé. Elle connaît les horaires des offices, les noms des prêtres et les intentions de prière affichées à la cathédrale. Elle est apparentée à Géraud Veyre, le prêtre de Saint-Aldric.",
+    "race": "humaine",
+    "faction": "Clergé de Saint-Aldric"
+  },
+  {
+    "id": "colporteur_vaneck",
+    "nom": "Vaneck, colporteur de la Place de la Fondation",
+    "role": "Colporteur ambulant installé sur la Place de la Fondation. Il vend des provisions de voyage, des cordes, des torches, des rations, des outils bon marché et tout ce qu'un aventurier peut besoin en route.",
+    "categorie": "neutres",
+    "image": "/images/PNJ/pnj_colporteur_vaneck.jpg",
+    "antagoniste": false,
+    "interpretation": {
+      "accroche": "Vaneck détaille le contenu de son chariot à voix haute, même quand personne ne l'écoute, comme s'il répétait ses prix pour ne pas les oublier.",
+      "objectif": "Vendre assez pour manger et dormir à l'auberge. Acheter en gros ce que les autres revendent au détail.",
+      "attitude": "Bavard, commerçant, sans prétention. Connaît les prix du marché et ne se laisse pas avoir. Sympathique mais ne fait pas crédit."
+    },
+    "disposition": "neutre",
+    "impulsion": "Tout ce qui n'est pas vendu aujourd'hui sera vendu demain à un autre.",
+    "degats": {
+      "valeur": 1,
+      "description": "Bâton ferré, manivelle de chariot",
+      "tags": ["proche", "brutal", "improvise"]
+    },
+    "armure": {
+      "valeur": 0,
+      "description": "Veste de cuir usée"
+    },
+    "vie": {
+      "type": "cases",
+      "points": null,
+      "max": null,
+      "cases": ["mineure", "serieuse", "mortelle"]
+    },
+    "etiquettes": ["colporteur", "provisions", "place-fondation", "ambulant", "bon-marché"],
+    "actionsMJ": [
+      "Proposer un lot de torches et de rations pour la route à un prix correct",
+      "Mentionner qu'un autre marchand a demandé exactement les mêmes provisions la veille",
+      "Vendre un outil bon marché qui cassera au pire moment"
+    ],
+    "description": "Homme rond et mobile, vêtu d'une veste de cuir à poches multiples. Il se déplace avec un chariot à bras couvert d'une bâche, qu'il installe chaque matin sur la Place de la Fondation. Son étal change tous les jours selon ce qu'il a trouvé ou racheté.",
+    "notes": "Vaneck vend des rations de voyage, des cordes, des torches, des briquets, des couvertures, des gourdes, des outils simples (couteaux, piolets, lampes à huile), du silex et des petits objets utilitaires. Ses prix sont corrects et ses produits de qualité variable. Il rachète les objets d'aventuriers en bon état. Il connaît les rumeurs de la place, les horaires des caravanes et les prix du marché. C'est le marchand de base pour les PJ qui ont besoin de provisions sans chercher de qualité particulière.",
+    "race": "humain",
+    "faction": "La Guilde Marchande"
   }
 ];

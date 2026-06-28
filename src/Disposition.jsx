@@ -10,7 +10,6 @@ import {
   Shield,
   Skull,
   Swords,
-  BookMarked,
   Menu,
   X,
   Play,
@@ -27,8 +26,7 @@ const elementsNavigation = [
   { vers: "/univers", etiquette: "Univers", icone: Map },
   { vers: "/factions", etiquette: "Factions", icone: Shield },
   { vers: "/antagoniste", etiquette: "Antagoniste", icone: Skull },
-  { vers: "/scenarios", etiquette: "Fronts", icone: Swords },
-  { vers: "/scenarios-annexes", etiquette: "Scénarios Annexes", icone: BookMarked },
+  { vers: "/scenarios", etiquette: "Fronts & Scénarios", icone: Swords },
 ];
 
 // Providers modales — fiches PNJ et lieux

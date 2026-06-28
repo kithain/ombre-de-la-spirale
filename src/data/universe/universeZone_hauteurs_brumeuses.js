@@ -24,6 +24,19 @@ export const zoneHauteursBrumeuses = {
       idsPnj: [],
     },
     {
+      id: "boutique_marenne_doulcet",
+      nom: "Boutique Marenne Doulcet",
+      resume:
+        "Boutique d'étoffes et d'importations installée dans le Quartier Marchand Haut. Étoffes fines, bijoux, épices, parfums et objets de luxe importés de Caldris et des cités lointaines. Prix élevés, clientèle aisée.",
+      details: [
+        "La devanture est peinte en bleu profond, encadrée de bois sculpté. Une vitrine propre présente des rouleaux de soie, des coffrets vernis et des bijoux sur fond de velours.",
+        "L'intérieur est éclairé par des lampes à huile parfumée. Les murs sont couverts d'étagères présentant des étoffes pliées, des flacons d'épices et des objets d'art soigneusement disposés.",
+        "Un comptoir de bois clair sépare la salle de vente d'une arrière-boutique où Marenne conserve ses stocks les plus précieux et ses registres de commandes.",
+        "Marenne connaît les retards de cargaison, les tensions entre maisons marchandes et les rumeurs du Beffroi. Elle vend ces informations aussi bien que ses étoffes, à ceux qui savent demander.",
+      ],
+      idsPnj: ["marchande_marenne"],
+    },
+    {
       id: "beffroi_marchande",
       nom: "Beffroi de la Marchande",
       resume:

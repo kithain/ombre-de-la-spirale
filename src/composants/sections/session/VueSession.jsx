@@ -1,4 +1,5 @@
 import { useState, useMemo } from "react";
+import { Link } from "react-router-dom";
 import {
   Swords,
   MapPin,
@@ -11,13 +12,16 @@ import {
 } from "lucide-react";
 import { scenariosData } from "../../../data/scenarios/scenarios";
 import { frontsData } from "../../../data/scenarios/fronts";
-import { obtenirPnjParIds } from "../../../data/npc_registry";
-import { trouverLieuParId } from "../../../utilitaires/liaisonsDonnees";
+import { obtenirPnjParIds } from "../../../data/npcRegistry";
+import { trouverLieuParId, creerLienUnivers } from "../../../utilitaires/liaisonsDonnees";
 import { sceneId } from "../../../utilitaires/sceneUtils";
 import { obtenirEffetsFronts } from "../../../data/scenarios/effetsFronts";
 import { consequencesFront, consequencesScene } from "../../../utilitaires/consequences";
 import HorlogeMenace from "../../scenes/HorlogeMenace";
 import { utiliserEtatPersistant } from "../../../hooks/utiliserEtatPersistant";
+import { utiliserModalePnj } from "../../../contextes/ContexteModalePnj";
+
+const nomFrontParId = new Map(frontsData.map((f) => [f.id, f.nom]));
 
 /**
  * VueSession — Vue "Session maintenant" (MVP).
@@ -34,6 +38,7 @@ import { utiliserEtatPersistant } from "../../../hooks/utiliserEtatPersistant";
  */
 
 function VueSession() {
+  const { ouvrirFichePnj } = utiliserModalePnj();
   const [idScenarioActif, definirIdScenarioActif] = utiliserEtatPersistant(
     "session-scenario",
     scenariosData[0]?.id || "",
@@ -90,6 +95,11 @@ function VueSession() {
   const effets = useMemo(
     () => (scene ? obtenirEffetsFronts(sceneId(scene)) : []),
     [scene],
+  );
+
+  const frontIdsLiesScene = useMemo(
+    () => new Set(effets.map((e) => e.frontId)),
+    [effets],
   );
 
   const consequences = useMemo(
@@ -193,9 +203,11 @@ function VueSession() {
               </div>
               <div className="flex flex-wrap gap-2">
                 {pnjPresents.map((pnj) => (
-                  <span
+                  <button
                     key={pnj.id}
-                    className={`inline-flex items-center gap-1 px-2 py-1 border text-xs ${
+                    type="button"
+                    onClick={() => ouvrirFichePnj(pnj.id)}
+                    className={`inline-flex items-center gap-1 px-2 py-1 border text-xs cursor-pointer hover:border-accent-dark transition-colors ${
                       pnj.categorie === "ennemis"
                         ? "border-red-500/60 text-red-400 bg-red-500/10"
                         : "border-blue-500/60 text-blue-400 bg-blue-500/10"
@@ -203,7 +215,7 @@ function VueSession() {
                   >
                     <Users size={12} />
                     {pnj.nom}
-                  </span>
+                  </button>
                 ))}
               </div>
             </div>
@@ -211,7 +223,10 @@ function VueSession() {
 
           {/* Lieu lié */}
           {lieuLie && (
-            <div className="border border-surface-border bg-surface/40 p-3">
+            <Link
+              to={creerLienUnivers({ idZone: lieuLie.zone?.id, idLieu: lieuLie.lieu.id })}
+              className="block border border-surface-border bg-surface/40 p-3 hover:border-emerald-600/50 transition-colors"
+            >
               <div className="flex items-center gap-2 mb-2">
                 <MapPin size={14} className="text-emerald-400" />
                 <h4 className="text-xs uppercase tracking-widest text-emerald-300 font-semibold">
@@ -229,7 +244,7 @@ function VueSession() {
                   {lieuLie.zone.nom}
                 </p>
               )}
-            </div>
+            </Link>
           )}
 
           {/* Effets de fronts sur cette scène */}
@@ -245,7 +260,7 @@ function VueSession() {
                 {effets.map((effet, i) => (
                   <div key={`${effet.frontId}-${i}`} className="border-l-2 border-amber-700/40 pl-3 py-1">
                     <div className="flex items-center gap-2 mb-1">
-                      <span className="text-xs font-mono text-amber-200">{effet.frontId}</span>
+                      <span className="text-xs font-mono text-amber-200">{nomFrontParId.get(effet.frontId) || effet.frontId}</span>
                       <span className="text-[10px] px-1.5 py-0.5 border border-amber-700/50 text-amber-300 bg-amber-900/20 uppercase tracking-wide">
                         {effet.effet}
                       </span>
@@ -298,7 +313,7 @@ function VueSession() {
             </div>
             <div className="space-y-2">
               {frontsData.map((front) => (
-                <div key={front.id} className="border border-surface-border bg-surface-raised/30">
+                <div key={front.id} className={`border bg-surface-raised/30 ${frontIdsLiesScene.has(front.id) ? "border-amber-600/50 bg-amber-950/10" : "border-surface-border"}`}>
                   <button
                     type="button"
                     onClick={() => basculerFront(front.id)}
@@ -306,6 +321,9 @@ function VueSession() {
                   >
                     <span className="text-sm font-serif font-bold text-content-secondary">
                       {front.nom}
+                      {frontIdsLiesScene.has(front.id) && (
+                        <span className="ml-2 text-[10px] text-amber-400 uppercase tracking-wide">Lié à cette scène</span>
+                      )}
                     </span>
                     <ChevronDown
                       size={14}

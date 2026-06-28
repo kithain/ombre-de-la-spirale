@@ -2,7 +2,7 @@ import { ChevronDown, Target, User, Swords, Info } from "lucide-react";
 import { cc } from "../../../utilitaires/combinerClasses";
 import { utiliserEtatPersistant } from "../../../hooks/utiliserEtatPersistant";
 import { utiliserModalePnj } from "../../../contextes/ContexteModalePnj";
-import { obtenirPnjParIds, obtenirIdsPnjOrphelins } from "../../../data/npc_registry";
+import { obtenirPnjParIds, obtenirIdsPnjOrphelins } from "../../../data/npcRegistry";
 import { CATEGORIES_MENACE } from "../../../data/scenarios/fronts";
 import HorlogeMenace from "../../scenes/HorlogeMenace";
 

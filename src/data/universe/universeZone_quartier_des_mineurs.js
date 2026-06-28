@@ -128,6 +128,19 @@ export const zoneQuartierDesMineurs = {
       idsPnj: ["sniv_kobold"],
     },
     {
+      id: "armurerie_forgefer",
+      nom: "Armurerie Forgefer",
+      resume:
+        "Atelier-boutique de Dvalin Forgefer, installé contre le mur de soutènement de la Place des Terrasses. Armures, armes et boucliers de qualité naine, fabriqués sur place. Les prix sont élevés mais le travail est irréprochable.",
+      details: [
+        "La façade est en granit sombre, sans enseigne. Seule une lame de fer forgée suspendue au-dessus de la porte indique la fonction du lieu.",
+        "L'intérieur sent l'huile de protection et le charbon. Des pièces finies (plates, boucliers, casques) sont suspendues aux murs sur des râteliers de fer.",
+        "L'enclume et le foyer occupent le fond de la pièce. Un établi de révision permet à Dvalin d'examiner les armes qu'on lui apporte.",
+        "Une petite arrière-salle sert de réserve pour les lingots, les barres de métal et les commandes en cours. Elle est fermée par une porte renforcée.",
+      ],
+      idsPnj: ["armurier_dvalin"],
+    },
+    {
       id: "archives_financieres",
       nom: "Comptoir de Change des Terrasses",
       resume:

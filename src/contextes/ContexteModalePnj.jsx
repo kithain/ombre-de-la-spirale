@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useCallback } from "react";
-import { chercherPnjParId } from "../data/npc_registry";
+import { chercherPnjParId } from "../data/npcRegistry";
 import ModaleDetailsPnj from "../composants/pnj/ModaleDetailsPnj";
 
 /**

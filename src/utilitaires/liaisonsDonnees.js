@@ -2,7 +2,7 @@ import { universeData } from "../data/universe/universe";
 import {
   chercherPnjParId as registreTrouverPnjParId,
   obtenirPnjParIds,
-} from "../data/npc_registry";
+} from "../data/npcRegistry";
 import {
   obtenirIndexOccurrencesPnj,
   obtenirIndexPnjParLieu,

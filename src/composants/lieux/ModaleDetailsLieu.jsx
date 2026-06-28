@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { User } from "lucide-react";
 import Modale from "../interface/Modale";
-import { obtenirPnjParIds, obtenirIdsPnjOrphelins } from "../../data/npc_registry";
+import { obtenirPnjParIds, obtenirIdsPnjOrphelins } from "../../data/npcRegistry";
 import { trouverOccurrencesLieu } from "../../utilitaires/liaisonsDonnees";
 import { utiliserModalePnj } from "../../contextes/ContexteModalePnj";
 

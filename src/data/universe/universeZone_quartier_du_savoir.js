@@ -23,6 +23,19 @@ export const zoneQuartierDuSavoir = {
       idsPnj: [],
     },
     {
+      id: "librairie_penne",
+      nom: "Librairie Penne",
+      resume:
+        "Librairie-fournisseur installée à proximité de l'Université Arcanique. Livres, parchemin, encre, composants alchimiques de base et matériel d'étude. Aldric Penne tient un registre de toutes les ventes, y compris les noms des acheteurs de composants sensibles.",
+      details: [
+        "La boutique est étroite, coincée entre deux bâtiments universitaires. Une enseigne discrète porte un livre ouvert gravé dans le bois.",
+        "L'intérieur sent le papier ancien et la cire. Des étagères du sol au plafond regorgent de livres reliés, de rouleaux de parchemin et de bocaux de composants alignés par ordre alphabétique.",
+        "Un comptoir étroit sert de point de vente. Aldric y tient son grand registre de ventes, ouvert en permanence.",
+        "Une arrière-salle fermée à clé conserve les ouvrages commandés par les maîtres de l'Université et les composants sensibles qui nécessitent une autorisation d'achat.",
+      ],
+      idsPnj: ["libraire_penne"],
+    },
+    {
       id: "bureau_thade_universite",
       nom: "Bureau de Thade Coren",
       resume:

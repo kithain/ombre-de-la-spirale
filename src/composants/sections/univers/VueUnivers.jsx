@@ -14,6 +14,7 @@ import {
   Users,
   AlertCircle,
   Scale,
+  Store,
 } from "lucide-react";
 import { universeData } from "../../../data/universe/universe";
 import TitreSection from "../../interface/TitreSection";
@@ -27,12 +28,14 @@ import JusticeUnivers from "./JusticeUnivers";
 import { utiliserEtatPersistant } from "../../../hooks/utiliserEtatPersistant";
 import { obtenirPnjPourLieu } from "../../../utilitaires/liaisonsDonnees";
 import { cc } from "../../../utilitaires/combinerClasses";
+import VueMarchands from "../VueMarchands";
 
 const ONGLETS = [
   { id: "apercu", etiquette: "Vue d'ensemble", icone: Cloud },
   { id: "histoire", etiquette: "Histoire de Thade", icone: BookOpen },
   { id: "zones", etiquette: "Carte & Zones", icone: Map },
   { id: "justice", etiquette: "Justice", icone: Scale },
+  { id: "marchands", etiquette: "Marchands", icone: Store },
 ];
 
 const ICONES_SECTIONS = {
@@ -313,6 +316,10 @@ function VueUnivers() {
 
       {ongletActif === "justice" && (
         <JusticeUnivers justice={universeData.justice} />
+      )}
+
+      {ongletActif === "marchands" && (
+        <VueMarchands />
       )}
     </div>
   );

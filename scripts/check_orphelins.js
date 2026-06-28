@@ -103,6 +103,48 @@ function extraireFrontIds() {
   return extraireTousIds(content, /id:\s*"(front_[^"]+)"/g);
 }
 
+// ─── 5b. Menaces : ids dans fronts.js ────────────────────
+
+function extraireMenaceIds() {
+  const frontsPath = join(rootDir, 'src', 'data', 'scenarios', 'fronts.js');
+  const content = readFileSync(frontsPath, 'utf-8');
+  return extraireTousIds(content, /id:\s*"(menace_[^"]+)"/g);
+}
+
+// ─── 5c. Scènes : ids stables dans les scénarios ──────────
+
+function extraireSceneIdsDesScenarios() {
+  const scenarioDir = join(rootDir, 'src', 'data', 'scenarios');
+  const files = readdirSync(scenarioDir).filter(f => f.startsWith('scenario') && f.endsWith('.js'));
+  const allIds = new Set();
+  for (const file of files) {
+    const content = readFileSync(join(scenarioDir, file), 'utf-8');
+    extraireTousIds(content, /id:\s*"(s\d+_[^"]+)"/g).forEach(id => allIds.add(id));
+  }
+  return [...allIds];
+}
+
+// ─── 5d. EffetsFronts : clés et références ────────────────
+
+function extraireEffetsFronts() {
+  const path = join(rootDir, 'src', 'data', 'scenarios', 'effetsFronts.js');
+  const content = readFileSync(path, 'utf-8');
+
+  // Clés = IDs de scène (lignes indentées suivies de : [)
+  const sceneIds = [];
+  const keyRegex = /^\s{2}(\w+):\s*\[/gm;
+  let keyMatch;
+  while ((keyMatch = keyRegex.exec(content)) !== null) {
+    sceneIds.push(keyMatch[1]);
+  }
+
+  // frontId et horlogeId dans chaque entrée
+  const frontIds = extraireTousIds(content, /frontId:\s*"([^"]+)"/g);
+  const horlogeIds = extraireTousIds(content, /horlogeId:\s*"([^"]+)"/g);
+
+  return { sceneIds, frontIds, horlogeIds };
+}
+
 // ─── 5. Scénarios : idsPnj, idLieu, id_front ──────────────
 
 function extraireReferencesDesScenarios() {
@@ -201,8 +243,50 @@ if (frontsOrphelins.length > 0) {
   console.log('  ✓ Aucun front orphelin dans les scénarios');
 }
 
+// --- EffetsFronts ---
+console.log('\n── 5. EffetsFronts : clés et références ────────────');
+const effets = extraireEffetsFronts();
+const menaceIds = extraireMenaceIds();
+const sceneIdsScenarios = extraireSceneIdsDesScenarios();
+console.log(`  Clés dans effetsFronts : ${effets.sceneIds.length}`);
+console.log(`  Références frontId : ${effets.frontIds.length}`);
+console.log(`  Références horlogeId : ${effets.horlogeIds.length}`);
+
+// Clés effetsFronts → scènes réelles
+const scenesEffetsOrphelines = effets.sceneIds.filter(id => !sceneIdsScenarios.includes(id));
+if (scenesEffetsOrphelines.length > 0) {
+  console.log('\n  Clés effetsFronts orphelines (scène inexistante) :');
+  for (const id of scenesEffetsOrphelines) {
+    rapporterErreur('EffetsFronts scène', `"${id}" non trouvée dans les scénarios`);
+  }
+} else {
+  console.log('  ✓ Toutes les clés effetsFronts correspondent à des scènes');
+}
+
+// frontId dans effetsFronts → fronts.js
+const frontsEffetsOrphelins = effets.frontIds.filter(id => !frontIds.includes(id));
+if (frontsEffetsOrphelins.length > 0) {
+  console.log('\n  frontId orphelins dans effetsFronts :');
+  for (const id of [...new Set(frontsEffetsOrphelins)]) {
+    rapporterErreur('EffetsFronts front', `"${id}" non trouvé dans fronts.js`);
+  }
+} else {
+  console.log('  ✓ Tous les frontId dans effetsFronts existent dans fronts.js');
+}
+
+// horlogeId dans effetsFronts → menaces dans fronts.js
+const horlogesEffetsOrphelines = effets.horlogeIds.filter(id => !menaceIds.includes(id));
+if (horlogesEffetsOrphelines.length > 0) {
+  console.log('\n  horlogeId orphelins dans effetsFronts :');
+  for (const id of [...new Set(horlogesEffetsOrphelines)]) {
+    rapporterErreur('EffetsFronts horloge', `"${id}" non trouvé dans fronts.js`);
+  }
+} else {
+  console.log('  ✓ Tous les horlogeId dans effetsFronts existent dans fronts.js');
+}
+
 // --- Détail par zone ---
-console.log('\n── 5. Détail par zone universe ──────────────────────');
+console.log('\n── 6. Détail par zone universe ──────────────────────');
 for (const [zone, ids] of Object.entries(idsByZone).sort()) {
   const bad = ids.filter(id => !pnjIds.includes(id));
   const status = bad.length > 0 ? `✗ ${bad.length} orphelin(s)` : '✓';
