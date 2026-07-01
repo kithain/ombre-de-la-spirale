@@ -8,6 +8,8 @@ import {
   obtenirIndexPnjParLieu,
   obtenirIndexOccurrencesLieu,
 } from "./indexScenario";
+import { frontsData, couchesCampagneData } from "../data/scenarios/fronts";
+import { effetsFrontsParScene } from "../data/scenarios/effetsFronts";
 
 /**
  * Crée un lien vers la page Univers avec les paramètres appropriés.
@@ -114,4 +116,99 @@ export function obtenirPnjPourLieu(lieu) {
   });
 
   return resultat;
+}
+
+/**
+ * Trouve les fronts liés à un PNJ, en distinguant :
+ * - frontsDirects : le PNJ est référencé dans forcesActives ou menaces du front
+ * - frontsViaScenes : le PNJ apparaît dans une scène qui a des effets sur ce front
+ * @param {string} pnjId - ID du PNJ
+ * @returns {{ frontsDirects: Array, frontsViaScenes: Array }}
+ */
+export function trouverFrontsLiesPnj(pnjId) {
+  if (!pnjId) return { frontsDirects: [], frontsViaScenes: [] };
+
+  const tousLesFronts = [...frontsData, ...couchesCampagneData];
+  const frontsDirects = [];
+  const idsFrontsDirects = new Set();
+
+  for (const front of tousLesFronts) {
+    let estDirect = false;
+
+    for (const force of front.forcesActives || []) {
+      if ((force.idsPnj || []).includes(pnjId)) {
+        estDirect = true;
+        break;
+      }
+    }
+
+    if (!estDirect) {
+      for (const menace of front.menaces || []) {
+        if ((menace.idsPnj || []).includes(pnjId)) {
+          estDirect = true;
+          break;
+        }
+      }
+    }
+
+    if (estDirect) {
+      frontsDirects.push({ id: front.id, nom: front.nom, type: front.type });
+      idsFrontsDirects.add(front.id);
+    }
+  }
+
+  const occurrences = trouverOccurrencesPnj(pnjId);
+  const frontsViaScenesMap = new Map();
+
+  for (const occ of occurrences) {
+    const effets = effetsFrontsParScene[occ.idScene] || [];
+    for (const effet of effets) {
+      if (!idsFrontsDirects.has(effet.frontId) && !frontsViaScenesMap.has(effet.frontId)) {
+        const front = tousLesFronts.find((f) => f.id === effet.frontId);
+        if (front) {
+          frontsViaScenesMap.set(effet.frontId, {
+            id: front.id,
+            nom: front.nom,
+            type: front.type,
+            scenes: [occ.titreScene],
+          });
+        }
+      } else if (frontsViaScenesMap.has(effet.frontId)) {
+        const entry = frontsViaScenesMap.get(effet.frontId);
+        if (!entry.scenes.includes(occ.titreScene)) {
+          entry.scenes.push(occ.titreScene);
+        }
+      }
+    }
+  }
+
+  const frontsViaScenes = Array.from(frontsViaScenesMap.values());
+
+  return { frontsDirects, frontsViaScenes };
+}
+
+/**
+ * Calcule l'usage narratif d'un PNJ à partir de ses liens de données.
+ * - "scene" : présent ou impliqué dans au moins une scène
+ * - "levier" : lié à un front ou un lieu, mais pas scénarisé
+ * - "contexte" : aucun lien connu — PNJ d'ambiance ou d'improvisation
+ * @param {string} pnjId - ID du PNJ
+ * @returns {"scene"|"levier"|"contexte"}
+ */
+export function calculerUsageNarratif(pnjId) {
+  if (!pnjId) return "contexte";
+
+  const occurrences = trouverOccurrencesPnj(pnjId);
+  if (occurrences.length > 0) return "scene";
+
+  const { frontsDirects, frontsViaScenes } = trouverFrontsLiesPnj(pnjId);
+  if (frontsDirects.length > 0 || frontsViaScenes.length > 0) return "levier";
+
+  for (const zone of universeData.zones || []) {
+    for (const lieu of zone.emplacements || []) {
+      if ((lieu.idsPnj || []).includes(pnjId)) return "levier";
+    }
+  }
+
+  return "contexte";
 }

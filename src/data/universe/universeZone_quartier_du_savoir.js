@@ -41,10 +41,13 @@ export const zoneQuartierDuSavoir = {
       resume:
         "Bureau en angle, deux étages au-dessus de l'aile de Thaumaturgie. Bibliothèque tapissée du sol au plafond, fenêtre panoramique, parfum de lavande omniprésent.",
       details: [
-        "Ambiance : lampe à huile sur le bureau, coffret plombé sur l'étagère (os T-01 à T-04), service à thé à peine touché, pas de poussière.",
+        "Ambiance : lampe à huile sur le bureau, coffret plombé sur l'étagère, service à thé à peine touché, pas de poussière.",
         "Tests : Investigation DD 13 sur le coffret. Psychologie DD 15 pour le choix des mots de Thade. Détection de la magie pour les glyphes de défense.",
         "Indices : Thade ne ment jamais directement. Il choisit ses mots. Il dit 'matériel' et pas 'recherches'. Le coffret est révélateur.",
         "Usage : engagement initial. Rapport et bourse lors du retour.",
+      ],
+      secretsMj: [
+        "Le coffret plombé contient les fragments d'os des Thanes T-01 à T-04. T-01 à T-03 viennent des profanations récentes ; T-04 est un prélèvement ancien réalisé avant que la crise ne soit visible.",
       ],
       idsPnj: ["thade_coren"],
     },

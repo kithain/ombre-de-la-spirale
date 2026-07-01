@@ -6,13 +6,13 @@
 
 ## Le pitch en une phrase
 
-Valombre est une cité naine devenue humaine, bâtie sur un verrou planaire que plus personne ne comprend ; les PJ commencent comme enquêteurs au service du Mage-Roi, découvrent qu'ils travaillent pour l'antagoniste, puis doivent choisir s'ils sauvent, transforment ou sacrifient la cité.
+Valombre est une cité naine devenue humaine, bâtie sur un verrou planaire que plus personne ne comprend ; les PJ commencent comme enquêteurs au service de Thade Coren, archimage de l'Université, découvrent qu'ils travaillent pour l'antagoniste, puis doivent choisir s'ils sauvent, transforment ou sacrifient la cité.
 
 ## Le résumé
 
 Valombre est une cité verticale en terrasses, riche de ses mines d'argent et fière de ses institutions. Mais sous les rues, les Sept Thanes nains — fondateurs morts depuis des siècles — sont les ancrages d'un sceau qui maintient close une puissance ancienne appelée la Spirale. Personne ne s'en souvient. Les rites qui préservaient le verrou sont devenus des cérémonies civiques vidées de leur sens.
 
-Thade Coren, Mage-Roi de Valombre, se souvient lui. Il a survécu à la catastrophe de Nyx, huit ans plus tôt, qui a coûté la vie à Sealine Vael — sa compagne, piégée au-delà du seuil. Depuis, Thade rassemble les fragments de la Larme de Vael, détourne les flux de l'Université et orchestre secrètement les profanations des tombes des Thanes. Son objectif : rouvrir le seuil et ramener Sealine. Le prix : la stabilité de Valombre entière.
+Thade Coren, archimage de l'Université Arcanique, se souvient lui. Il a survécu à la catastrophe de Nyx, huit ans plus tôt, qui a coûté la vie à Sealine Vael — sa compagne, piégée au-delà du seuil. Depuis, Thade rassemble les fragments de la Larme de Vael, détourne les flux de l'Université et orchestre secrètement les profanations des tombes des Thanes. Son objectif : rouvrir le seuil et ramener Sealine. Le prix : la stabilité de Valombre entière.
 
 Les PJ sont recrutés par Thade pour enquêter sur les profanations. Ils croient servir la cité. Ils découvrent progressivement que leur employeur est l'auteur du crime, que les tombes sont un verrou, que la cité est déjà partiellement déconnectée du monde — un phénomène appelé le déphasage — et que les factions qui s'affrontent (Bannière Pure, Endeuillés, Résistance, émissaire de Caldris) ne possèdent chacune qu'un fragment de la vérité.
 
@@ -34,7 +34,7 @@ Fantasy sombre narrative, pas grimdark. Tragédie amoureuse au cœur d'une enqu�
 
 ## Le rôle des PJ
 
-Les PJ commencent comme enquêteurs mandatés par le Mage-Roi. Ils sont extérieurs à Valombre — ou du moins extérieurs aux cercles de pouvoir. Ils découvrent la vérité par l'enquête, le contact avec les factions et l'expérience directe du déphasage. À la fin du Scénario 1, ils doivent choisir leur camp. Ce choix détermine la dynamique des Scénarios 2 et 3.
+Les PJ commencent comme enquêteurs mandatés par Thade Coren, archimage de l'Université. Ils sont extérieurs à Valombre — ou du moins extérieurs aux cercles de pouvoir. Ils découvrent la vérité par l'enquête, le contact avec les factions et l'expérience directe du déphasage. À la fin du Scénario 1, ils doivent choisir leur camp. Ce choix détermine la dynamique des Scénarios 2 et 3.
 
 ## L'originalité
 

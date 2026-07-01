@@ -39,14 +39,19 @@ function construireIndexOccurrences() {
           numeroScene: indexScene + 1,
           titreScene: scene.titre,
           idScene: sceneId(scene),
+          typeScene: scene.type || null,
+          idsPnj: scene.idsPnj || [],
+          idsPnjImpliques: scene.idsPnjImpliques || [],
         };
 
-        // Index par PNJ
-        if (Array.isArray(scene.idsPnj)) {
-          for (const pnjId of scene.idsPnj) {
-            if (!parPnj.has(pnjId)) parPnj.set(pnjId, []);
-            parPnj.get(pnjId).push(occurrence);
-          }
+        // Index par PNJ (présents + impliqués)
+        const tousIdsPnj = new Set([
+          ...(scene.idsPnj || []),
+          ...(scene.idsPnjImpliques || []),
+        ]);
+        for (const pnjId of tousIdsPnj) {
+          if (!parPnj.has(pnjId)) parPnj.set(pnjId, []);
+          parPnj.get(pnjId).push(occurrence);
         }
 
         // Index par lieu (PNJ visités dans chaque lieu)
@@ -55,7 +60,11 @@ function construireIndexOccurrences() {
 
           if (!parLieu.has(idLieu)) parLieu.set(idLieu, new Map());
           const cartePnj = parLieu.get(idLieu);
-          for (const pnjId of scene.idsPnj || []) {
+          const tousIdsPnjLieu = new Set([
+            ...(scene.idsPnj || []),
+            ...(scene.idsPnjImpliques || []),
+          ]);
+          for (const pnjId of tousIdsPnjLieu) {
             if (!cartePnj.has(pnjId)) cartePnj.set(pnjId, { pnjId, occurrences: [] });
             cartePnj.get(pnjId).occurrences.push(occurrence);
           }

@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, Suspense, lazy } from "react";
 import { Link } from "react-router-dom";
 import {
   Swords,
@@ -9,6 +9,8 @@ import {
   Zap,
   ChevronDown,
   Play,
+  Lock,
+  BookOpen,
 } from "lucide-react";
 import { scenariosData } from "../../../data/scenarios/scenarios";
 import { frontsData } from "../../../data/scenarios/fronts";
@@ -17,9 +19,18 @@ import { trouverLieuParId, creerLienUnivers } from "../../../utilitaires/liaison
 import { sceneId } from "../../../utilitaires/sceneUtils";
 import { obtenirEffetsFronts } from "../../../data/scenarios/effetsFronts";
 import { consequencesFront, consequencesScene } from "../../../utilitaires/consequences";
-import HorlogeMenace from "../../scenes/HorlogeMenace";
 import { utiliserEtatPersistant } from "../../../hooks/utiliserEtatPersistant";
 import { utiliserModalePnj } from "../../../contextes/ContexteModalePnj";
+
+const HorlogeMenace = lazy(() => import("../../scenes/HorlogeMenace"));
+const ContexteMjScene = lazy(() => import("../../scenes/ContexteMjScene"));
+const GuideMjScene = lazy(() => import("../../scenes/GuideMjScene"));
+const DefisScene = lazy(() => import("../../scenes/DefisScene"));
+const IndicesScene = lazy(() => import("../../scenes/IndicesScene"));
+
+const ChargementDetail = () => (
+  <div className="p-3 text-xs text-content-subtle animate-pulse">Chargement…</div>
+);
 
 const nomFrontParId = new Map(frontsData.map((f) => [f.id, f.nom]));
 
@@ -52,6 +63,9 @@ function VueSession() {
     "",
   );
   const [frontsOuverts, definirFrontsOuverts] = useState({});
+  const [contexteOuvert, definirContexteOuvert] = useState(false);
+  const [guideOuvert, definirGuideOuvert] = useState(false);
+  const [defisOuverts, definirDefisOuverts] = useState(false);
 
   const scenario = useMemo(
     () => scenariosData.find((s) => s.id === idScenarioActif),
@@ -87,6 +101,11 @@ function VueSession() {
     () => (scene ? obtenirPnjParIds(scene.idsPnj || []) : []),
     [scene],
   );
+  const pnjImpliques = useMemo(() => {
+    if (!scene?.idsPnjImpliques) return [];
+    const presents = new Set(scene.idsPnj || []);
+    return obtenirPnjParIds(scene.idsPnjImpliques.filter((id) => !presents.has(id)));
+  }, [scene]);
   const lieuLie = useMemo(
     () => (scene?.idLieu ? trouverLieuParId(scene.idLieu) : null),
     [scene],
@@ -218,6 +237,59 @@ function VueSession() {
                   </button>
                 ))}
               </div>
+              {pnjImpliques.length > 0 && (
+                <div className="mt-2 pt-2 border-t border-surface-border">
+                  <div className="text-[10px] uppercase tracking-widest text-content-subtle mb-1.5">
+                    PNJ impliqués (non présents)
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {pnjImpliques.map((pnj) => (
+                      <button
+                        key={pnj.id}
+                        type="button"
+                        onClick={() => ouvrirFichePnj(pnj.id)}
+                        className={`inline-flex items-center gap-1 px-2 py-1 border text-xs cursor-pointer opacity-60 italic hover:opacity-100 transition-opacity ${
+                          pnj.categorie === "ennemis"
+                            ? "border-red-500/40 text-red-400/70 bg-red-500/5"
+                            : "border-blue-500/40 text-blue-400/70 bg-blue-500/5"
+                        }`}
+                      >
+                        <Users size={12} />
+                        {pnj.nom}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* PNJ impliqués seulement (aucun PNJ présent) */}
+          {pnjPresents.length === 0 && pnjImpliques.length > 0 && (
+            <div className="border border-surface-border bg-surface/40 p-3">
+              <div className="flex items-center gap-2 mb-2">
+                <Users size={14} className="text-content-subtle" />
+                <h4 className="text-xs uppercase tracking-widest text-content-subtle font-semibold">
+                  PNJ impliqués ({pnjImpliques.length})
+                </h4>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {pnjImpliques.map((pnj) => (
+                  <button
+                    key={pnj.id}
+                    type="button"
+                    onClick={() => ouvrirFichePnj(pnj.id)}
+                    className={`inline-flex items-center gap-1 px-2 py-1 border text-xs cursor-pointer opacity-70 italic hover:opacity-100 transition-opacity ${
+                      pnj.categorie === "ennemis"
+                        ? "border-red-500/40 text-red-400/70 bg-red-500/5"
+                        : "border-blue-500/40 text-blue-400/70 bg-blue-500/5"
+                    }`}
+                  >
+                    <Users size={12} />
+                    {pnj.nom}
+                  </button>
+                ))}
+              </div>
             </div>
           )}
 
@@ -278,6 +350,90 @@ function VueSession() {
             </div>
           )}
 
+          {/* Contexte MJ (secrets & rappels) — dépliable */}
+          {scene?.contexte_mj && (
+            <div className="border border-red-900/30 bg-red-950/10">
+              <button
+                type="button"
+                onClick={() => definirContexteOuvert((v) => !v)}
+                className="w-full flex items-center justify-between p-2 text-left hover:bg-red-950/20 transition-colors"
+              >
+                <span className="text-xs uppercase tracking-widest text-red-300 font-semibold flex items-center gap-2">
+                  <Lock size={14} />
+                  Contexte MJ — Secrets & rappels
+                </span>
+                <ChevronDown
+                  size={14}
+                  className={`text-content-subtle transition-transform ${contexteOuvert ? "rotate-180" : ""}`}
+                />
+              </button>
+              {contexteOuvert && (
+                <div className="p-3 border-t border-red-900/20">
+                  <Suspense fallback={<ChargementDetail />}>
+                    <ContexteMjScene contexte={scene.contexte_mj} />
+                  </Suspense>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Guide MJ — dépliable (intention, déroulement, actions, escalade) */}
+          {scene?.guide_mj && (
+            <div className="border border-stone-600/30 bg-stone-900/20">
+              <button
+                type="button"
+                onClick={() => definirGuideOuvert((v) => !v)}
+                className="w-full flex items-center justify-between p-2 text-left hover:bg-stone-900/40 transition-colors"
+              >
+                <span className="text-xs uppercase tracking-widest text-stone-300 font-semibold flex items-center gap-2">
+                  <BookOpen size={14} />
+                  Guide MJ — Intention, déroulement, actions
+                </span>
+                <ChevronDown
+                  size={14}
+                  className={`text-content-subtle transition-transform ${guideOuvert ? "rotate-180" : ""}`}
+                />
+              </button>
+              {guideOuvert && (
+                <div className="p-3 border-t border-stone-600/20">
+                  <Suspense fallback={<ChargementDetail />}>
+                    <GuideMjScene guide={scene.guide_mj} />
+                  </Suspense>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Défis & indices — dépliable */}
+          {(scene?.defis?.length > 0 || scene?.indices?.length > 0) && (
+            <div className="border border-surface-border bg-surface/40">
+              <button
+                type="button"
+                onClick={() => definirDefisOuverts((v) => !v)}
+                className="w-full flex items-center justify-between p-2 text-left hover:bg-surface-raised/50 transition-colors"
+              >
+                <span className="text-xs uppercase tracking-widest text-content-muted font-semibold flex items-center gap-2">
+                  <Swords size={14} />
+                  Défis & indices
+                </span>
+                <ChevronDown
+                  size={14}
+                  className={`text-content-subtle transition-transform ${defisOuverts ? "rotate-180" : ""}`}
+                />
+              </button>
+              {defisOuverts && (
+                <div className="p-3 border-t border-surface-border space-y-3">
+                  <Suspense fallback={<ChargementDetail />}>
+                    <DefisScene defis={scene.defis} />
+                    {scene.indices?.length > 0 && (
+                      <IndicesScene indices={scene.indices} />
+                    )}
+                  </Suspense>
+                </div>
+              )}
+            </div>
+          )}
+
           {/* Transitions / Conséquences de scène */}
           {consequences.length > 0 && (
             <div className="border border-surface-border bg-surface/40 p-3">
@@ -332,12 +488,13 @@ function VueSession() {
                   </button>
                   {frontsOuverts[front.id] && (
                     <div className="p-3 border-t border-surface-border space-y-3">
-                      {(front.menaces || []).map((menace) => (
-                        <div key={menace.id}>
-                          <p className="text-xs font-semibold text-content mb-1">{menace.nom}</p>
-                          <HorlogeMenace menace={menace} />
-                        </div>
-                      ))}
+                      <Suspense fallback={<ChargementDetail />}>
+                        {(front.menaces || []).map((menace) => (
+                          <div key={menace.id}>
+                            <p className="text-xs font-semibold text-content mb-1">{menace.nom}</p>
+                            <HorlogeMenace menace={menace} />
+                          </div>
+                        ))}
                       {/* Conséquences du front */}
                       {(() => {
                         const cons = consequencesFront(front.id);
@@ -362,6 +519,7 @@ function VueSession() {
                           </div>
                         );
                       })()}
+                      </Suspense>
                     </div>
                   )}
                 </div>

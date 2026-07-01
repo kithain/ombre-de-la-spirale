@@ -15,20 +15,26 @@ export function utiliserLiensScene(scene) {
   );
 
   const pnjLies = useMemo(() => {
-    if (!Array.isArray(scene.idsPnj)) return [];
-    return scene.idsPnj.map((id) => {
+    const idsPnj = Array.isArray(scene.idsPnj) ? scene.idsPnj : [];
+    const idsImpliques = Array.isArray(scene.idsPnjImpliques) ? scene.idsPnjImpliques : [];
+    const idsDejaPresent = new Set(idsPnj);
+
+    const present = idsPnj.map((id) => {
       const pnj = chercherPnjParId(id);
-      if (!pnj) {
-        return { id, nom: id, origine: null, introuvable: true };
-      }
-      return {
-        ...pnj,
-        id,
-        nom: pnj.nom || id,
-        origine: pnj.origine,
-      };
+      if (!pnj) return { id, nom: id, origine: null, introuvable: true };
+      return { ...pnj, id, nom: pnj.nom || id, origine: pnj.origine, implique: false };
     });
-  }, [scene.idsPnj]);
+
+    const impliques = idsImpliques
+      .filter((id) => !idsDejaPresent.has(id))
+      .map((id) => {
+        const pnj = chercherPnjParId(id);
+        if (!pnj) return { id, nom: id, origine: null, introuvable: true, implique: true };
+        return { ...pnj, id, nom: pnj.nom || id, origine: pnj.origine, implique: true };
+      });
+
+    return [...present, ...impliques];
+  }, [scene.idsPnj, scene.idsPnjImpliques]);
 
   return { lieuLie, pnjLies };
 }

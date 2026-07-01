@@ -46,15 +46,19 @@ function rapporterAvertissement(categorie, message) {
 
 // ─── 1. PNJ : ids dans pnj.js ─────────────────────────────
 
+function lireTousFichiersPnj() {
+  const pnjDir = join(rootDir, 'src', 'data', 'personnages');
+  const fichiers = readdirSync(pnjDir).filter(f => f.startsWith('pnj') && f.endsWith('.js') && f !== 'pnj.js' && f !== 'pnjTemplate.js');
+  return fichiers.map(f => readFileSync(join(pnjDir, f), 'utf-8')).join('\n');
+}
+
 function extrairePnjIdsDePnjJs() {
-  const pnjPath = join(rootDir, 'src', 'data', 'personnages', 'pnj.js');
-  const content = readFileSync(pnjPath, 'utf-8');
+  const content = lireTousFichiersPnj();
   return extraireTousIds(content, /"id":\s*"([^"]+)"/g);
 }
 
 function extraireImagesPnj() {
-  const pnjPath = join(rootDir, 'src', 'data', 'personnages', 'pnj.js');
-  const content = readFileSync(pnjPath, 'utf-8');
+  const content = lireTousFichiersPnj();
   const images = [];
   const regex = /"image":\s*"([^"]+)"/g;
   let match;
@@ -143,6 +147,48 @@ function extraireEffetsFronts() {
   const horlogeIds = extraireTousIds(content, /horlogeId:\s*"([^"]+)"/g);
 
   return { sceneIds, frontIds, horlogeIds };
+}
+
+// ─── 5e. Scènes : champs obligatoires ───────────────────
+
+function extraireScenesAvecChamps() {
+  const scenarioDir = join(rootDir, 'src', 'data', 'scenarios');
+  const files = readdirSync(scenarioDir).filter(f => f.startsWith('scenario') && f.endsWith('.js'));
+  const scenes = [];
+  const champsRequis = ['titre', 'type', 'objectif', 'resume_mj'];
+  for (const file of files) {
+    const content = readFileSync(join(scenarioDir, file), 'utf-8');
+    const sceneRegex = /id:\s*"(s\d+_[^"]+)"/g;
+    let match;
+    const scenePositions = [];
+    while ((match = sceneRegex.exec(content)) !== null) {
+      scenePositions.push({ id: match[1], start: match.index });
+    }
+    for (let i = 0; i < scenePositions.length; i++) {
+      const { id, start } = scenePositions[i];
+      const end = i + 1 < scenePositions.length ? scenePositions[i + 1].start : content.length;
+      const block = content.slice(start, end);
+      const champsManquants = champsRequis.filter(champ => {
+        const champRegex = new RegExp(`${champ}:\\s*"([^"]+)"`);
+        const m = block.match(champRegex);
+        return !m || m[1].trim() === '';
+      });
+
+      const typeMatch = block.match(/type:\s*"([^"]+)"/);
+      const type = typeMatch ? typeMatch[1] : null;
+
+      const idLieuMatch = block.match(/idLieu:\s*"([^"]+)"/);
+      const idLieu = idLieuMatch ? idLieuMatch[1] : null;
+
+      const aTransitions = /transitions:\s*\{/.test(block);
+      const aGuideMj = /guide_mj:\s*\{/.test(block);
+      const aContexteMj = /contexte_mj:\s*[\{"]/ .test(block);
+      const aDefis = /defis:\s*\[/.test(block);
+
+      scenes.push({ id, file, champsManquants, type, idLieu, aTransitions, aGuideMj, aContexteMj, aDefis });
+    }
+  }
+  return scenes;
 }
 
 // ─── 5. Scénarios : idsPnj, idLieu, id_front ──────────────
@@ -285,12 +331,79 @@ if (horlogesEffetsOrphelines.length > 0) {
   console.log('  ✓ Tous les horlogeId dans effetsFronts existent dans fronts.js');
 }
 
+// --- Scènes : champs obligatoires ---
+console.log('\n── 7. Scènes : champs obligatoires ─────────────────');
+const scenesValidees = extraireScenesAvecChamps();
+const scenesIncompletes = scenesValidees.filter(s => s.champsManquants.length > 0);
+if (scenesIncompletes.length > 0) {
+  for (const s of scenesIncompletes) {
+    rapporterAvertissement('Scène champs', `"${s.id}" dans ${s.file} — manquants: ${s.champsManquants.join(', ')}`);
+  }
+} else {
+  console.log(`  ✓ Les ${scenesValidees.length} scènes ont tous les champs obligatoires (titre, type, objectif, resume_mj)`);
+}
+
+// --- Scènes : validation de jouabilité ---
+console.log('\n── 8. Scènes : jouabilité (lieu, transition, guide/contexte) ──');
+const typesCritiques = ['boss', 'twist', 'choix', 'final', 'dilemme', 'Boss', 'Twist', 'Choix', 'Dilemme', 'Conclusion'];
+let jouabiliteIssues = 0;
+
+for (const s of scenesValidees) {
+  // Check : chaque scène a un idLieu ou une justification
+  if (!s.idLieu) {
+    rapporterAvertissement('Scène lieu', `"${s.id}" — aucun idLieu défini`);
+    jouabiliteIssues++;
+  } else if (!lieuIds.includes(s.idLieu)) {
+    rapporterErreur('Scène lieu', `"${s.id}" — idLieu "${s.idLieu}" non trouvé dans les zones universe`);
+    jouabiliteIssues++;
+  }
+
+  // Check : chaque scène a une transition ou une issue
+  if (!s.aTransitions) {
+    rapporterAvertissement('Scène transition', `"${s.id}" — aucune transitions: {} définie`);
+    jouabiliteIssues++;
+  }
+
+  // Check : les scènes de type critique (boss, twist, choix, final) ont un guide_mj ou contexte_mj
+  if (s.type && typesCritiques.some(t => s.type.toLowerCase().includes(t.toLowerCase()))) {
+    if (!s.aGuideMj && !s.aContexteMj) {
+      rapporterAvertissement('Scène guide', `"${s.id}" (type=${s.type}) — ni guide_mj ni contexte_mj défini`);
+      jouabiliteIssues++;
+    }
+  }
+}
+
+if (jouabiliteIssues === 0) {
+  console.log(`  ✓ Toutes les scènes passent les checks de jouabilité`);
+} else {
+  console.log(`  ${jouabiliteIssues} problème(s) de jouabilité détecté(s)`);
+}
+
 // --- Détail par zone ---
-console.log('\n── 6. Détail par zone universe ──────────────────────');
+console.log('\n── 9. Détail par zone universe ──────────────────────');
 for (const [zone, ids] of Object.entries(idsByZone).sort()) {
   const bad = ids.filter(id => !pnjIds.includes(id));
   const status = bad.length > 0 ? `✗ ${bad.length} orphelin(s)` : '✓';
   console.log(`  ${zone}: ${ids.length} réf PNJ — ${status}`);
+}
+
+// --- Check soft : PNJ sans scène, front ni lieu ---
+console.log('\n── 10. PNJ sans lien (scène, front, lieu) ───────────');
+const pnjDansScenes = new Set(refsScenarios.pnj.map(r => r.id));
+const pnjDansFronts = new Set(extraireIdsDeTableau(
+  readFileSync(join(rootDir, 'src', 'data', 'scenarios', 'fronts.js'), 'utf-8'),
+  'idsPnj'
+));
+const pnjDansZones = new Set(zoneNpcIds);
+const pnjSansRien = pnjIds.filter(id =>
+  !pnjDansScenes.has(id) && !pnjDansFronts.has(id) && !pnjDansZones.has(id)
+);
+if (pnjSansRien.length > 0) {
+  for (const id of pnjSansRien) {
+    rapporterAvertissement('PNJ isolé', `"${id}" — ni scène, ni front, ni lieu. PNJ d'improvisation possible.`);
+  }
+} else {
+  console.log('  ✓ Tous les PNJ ont au moins un lien (scène, front ou lieu)');
 }
 
 // --- Résumé final ---

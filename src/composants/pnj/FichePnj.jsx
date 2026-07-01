@@ -6,6 +6,9 @@ import {
 import { cc } from "../../utilitaires/combinerClasses";
 import { formaterDegats, formaterArmure, formaterVie } from "../../data/personnages/pnjTemplate";
 import { urlImage } from "../../utilitaires/urlImage";
+import ApparitionsPnj from "./ApparitionsPnj";
+import FrontsLiesPnj from "./FrontsLiesPnj";
+import { calculerUsageNarratif } from "../../utilitaires/liaisonsDonnees";
 
 // ─── Blocs PBTA ──────────────────────────────────────
 
@@ -145,6 +148,30 @@ function NotesMj({ notes }) {
 
 // ─── Composant principal ─────────────────────────────
 
+const STYLES_USAGE_NARRATIF = {
+  scene: { label: "Scène", classe: "border-accent/40 bg-accent/10 text-accent-light" },
+  levier: { label: "Levier", classe: "border-amber-700/40 bg-amber-950/30 text-amber-300" },
+  contexte: { label: "Contexte", classe: "border-surface-border bg-surface/40 text-content-subtle" },
+};
+
+function BadgeUsageNarratif({ pnj }) {
+  const niveau = pnj.usageNarratif || calculerUsageNarratif(pnj.id);
+  const style = STYLES_USAGE_NARRATIF[niveau];
+  if (!style) return null;
+
+  return (
+    <div className="flex items-center gap-2 text-xs">
+      <span className="text-[10px] uppercase font-bold text-content-subtle tracking-wider opacity-80">
+        Usage
+      </span>
+      <span className={`inline-flex items-center gap-1.5 px-2 py-1 border ${style.classe}`}>
+        <Sparkles size={12} />
+        {style.label}
+      </span>
+    </div>
+  );
+}
+
 const FichePnj = memo(function FichePnj({ pnj }) {
   if (!pnj) return null;
 
@@ -177,6 +204,8 @@ const FichePnj = memo(function FichePnj({ pnj }) {
         </div>
       )}
 
+      <BadgeUsageNarratif pnj={pnj} />
+
       <BlocImpulsion impulsion={pnj.impulsion} />
 
       <GrilleCombat degats={pnj.degats} armure={pnj.armure} vie={pnj.vie} />
@@ -188,6 +217,10 @@ const FichePnj = memo(function FichePnj({ pnj }) {
       <ProfilNarratif interpretation={pnj.interpretation} description={pnj.description} />
 
       <NotesMj notes={pnj.notes} />
+
+      <ApparitionsPnj pnjId={pnj.id} />
+
+      <FrontsLiesPnj pnjId={pnj.id} />
     </div>
   );
 });

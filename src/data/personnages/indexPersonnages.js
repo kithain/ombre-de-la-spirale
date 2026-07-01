@@ -1,14 +1,14 @@
 /**
  * Index centralisé pour tous les personnages.
+ *
+ * npcRegistry.js est le seul point de normalisation (creerPnj).
+ * Ici on exporte les données brutes et les ré-exports utilitaires.
  */
 
 import { pnjData } from "./pnj";
-import { creerPnj } from "./pnjTemplate";
 
-export { creerPnj };
+export { creerPnj } from "./pnjTemplate";
 
-export const pnjPrincipaux = pnjData.map((pnj) => {
-  try { return creerPnj(pnj); } catch { return pnj; }
-});
+export const pnjPrincipaux = pnjData;
 
 export { factionsData } from "./factions";

@@ -6,6 +6,11 @@ import {
   Clock,
   Search,
   ChevronDown,
+  Package,
+  Shield,
+  Eye,
+  GitBranch,
+  AlertCircle,
 } from "lucide-react";
 
 function AidesJeuScenario({ aides }) {
@@ -13,11 +18,29 @@ function AidesJeuScenario({ aides }) {
 
   if (!aides) return null;
 
-  const onglets = [
+  const ongletsBase = [
     { id: "indices", label: "Indices", icon: Search },
     { id: "pnj", label: "PNJ", icon: Users },
     { id: "lieux", label: "Lieux", icon: MapPin },
     { id: "chronologie", label: "Chronologie", icon: Clock },
+  ];
+  const ongletsSupp = [
+    { id: "preuves", label: "Preuves", icon: Package },
+    { id: "allies", label: "Alliés", icon: Shield },
+    { id: "symptomes", label: "Symptômes", icon: Eye },
+    { id: "consequences", label: "Choix", icon: GitBranch },
+    { id: "fils", label: "Fils ouverts", icon: AlertCircle },
+  ];
+  const onglets = [
+    ...ongletsBase,
+    ...ongletsSupp.filter((t) => {
+      if (t.id === "preuves") return !!aides.preuves_transportables;
+      if (t.id === "allies") return !!aides.pnj_allies;
+      if (t.id === "symptomes") return !!aides.symptomes_fronts;
+      if (t.id === "consequences") return !!aides.consequences_choix;
+      if (t.id === "fils") return !!aides.fils_non_resolus;
+      return false;
+    }),
   ];
 
   return (
@@ -178,6 +201,152 @@ function AidesJeuScenario({ aides }) {
                   </li>
                 ))}
               </ul>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Preuves transportables */}
+      {onglet === "preuves" && aides.preuves_transportables && (
+        <div className="space-y-2">
+          {aides.preuves_transportables.map((preuve, i) => (
+            <div
+              key={i}
+              className="border border-surface-border bg-surface/60 p-3"
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-sm font-semibold text-content">
+                  {preuve.objet}
+                </span>
+                <span className="text-[10px] px-1.5 py-0.5 border border-emerald-800/30 bg-emerald-950/20 text-emerald-300">
+                  {preuve.type}
+                </span>
+              </div>
+              <p className="text-[10px] text-content-subtle font-mono mb-1">
+                {preuve.scene}
+              </p>
+              <p className="text-xs text-content-secondary leading-relaxed mb-1.5">
+                {preuve.description}
+              </p>
+              <p className="text-[11px] text-amber-300">
+                → {preuve.utilisable_pour}
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* PNJ alliés mobilisables */}
+      {onglet === "allies" && aides.pnj_allies && (
+        <div className="space-y-2">
+          {aides.pnj_allies.map((allie, i) => (
+            <div
+              key={i}
+              className="border border-surface-border bg-surface/60 p-3"
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-sm font-semibold text-content">
+                  {allie.nom}
+                </span>
+                <span className="text-[10px] px-1.5 py-0.5 border border-sky-800/30 bg-sky-950/20 text-sky-300">
+                  {allie.lieu}
+                </span>
+              </div>
+              <p className="text-xs text-content-secondary mb-1">
+                <span className="text-content-subtle">Dispo : </span>
+                {allie.disponibilite}
+              </p>
+              <p className="text-xs text-content-secondary leading-relaxed mb-1">
+                {allie.apporte}
+              </p>
+              <p className="text-[11px] text-emerald-300">
+                ⚔ {allie.mobilisable}
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Symptômes des fronts */}
+      {onglet === "symptomes" && aides.symptomes_fronts && (
+        <div className="space-y-3">
+          {aides.symptomes_fronts.map((front, i) => (
+            <div
+              key={i}
+              className="border border-surface-border bg-surface/60 p-3"
+            >
+              <h5 className="text-sm font-semibold text-rose-300 mb-2">
+                {front.front}
+              </h5>
+              <ul className="space-y-1">
+                {front.symptomes.map((symptome, j) => (
+                  <li
+                    key={j}
+                    className="text-xs text-content-secondary leading-relaxed pl-3 border-l border-rose-700/20"
+                  >
+                    <span className="text-rose-400 font-mono text-[10px]">
+                      {symptome.etape}
+                    </span>{" "}
+                    — {symptome.signe}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Conséquences des choix */}
+      {onglet === "consequences" && aides.consequences_choix && (
+        <div className="space-y-2">
+          {aides.consequences_choix.map((choix, i) => (
+            <div
+              key={i}
+              className="border border-surface-border bg-surface/60 p-3"
+            >
+              <h5 className="text-sm font-semibold text-violet-300 mb-2">
+                {choix.choix}
+              </h5>
+              <p className="text-xs text-content-secondary mb-1">
+                <span className="text-content-subtle">Immédiat : </span>
+                {choix.consequence_immediate}
+              </p>
+              <p className="text-xs text-content-secondary mb-1">
+                <span className="text-content-subtle">Long terme : </span>
+                {choix.consequence_long_terme}
+              </p>
+              <p className="text-[11px] text-amber-300">
+                ⚡ {choix.impact_front}
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Fils non résolus */}
+      {onglet === "fils" && aides.fils_non_resolus && (
+        <div className="space-y-3">
+          {aides.fils_non_resolus.map((fil, i) => (
+            <div
+              key={i}
+              className="border border-surface-border bg-surface/60 p-3"
+            >
+              <h5 className="text-sm font-semibold text-amber-300 mb-2">
+                {fil.fil}
+              </h5>
+              <ul className="space-y-1 mb-2">
+                {fil.pistes.map((piste, j) => (
+                  <li
+                    key={j}
+                    className="text-xs text-content-secondary leading-relaxed pl-3 border-l border-amber-700/20"
+                  >
+                    {piste}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-[11px] text-content-subtle italic">
+                {fil.note_mj}
+              </p>
             </div>
           ))}
         </div>

@@ -17,7 +17,7 @@ Depuis la catastrophe de Nyx (huit ans avant le début de la campagne), la Spira
 Au début du Scénario 1, les PJ croient que :
 
 - Valombre est une cité prospère avec un problème de vandalisme au cimetière.
-- Thade Coren est un Mage-Roi respecté, survivant héroïque de la catastrophe de Nyx.
+- Thade Coren est un archimage respecté de l'Université, survivant héroïque de la catastrophe de Nyx.
 - L'Ordre de Nyx était une faction nécromantique responsable de la catastrophe.
 - Les nains sont des citoyens fiers mais fermés, attachés à leurs traditions funéraires.
 - L'Université est une institution compétente et bienveillante.

@@ -44,10 +44,20 @@ export const effetsFrontsParScene = {
     },
   ],
 
-  s1_mort_jaren: [],
+  s1_mort_jaren: [
+    {
+      frontId: "front_plan_thade",
+      horlogeId: "menace_retour_sealine",
+      declencheur: "Quand Jaren est retrouvé mort. Thade élimine un témoin qui posait des questions sur le protocole S-01.",
+      effet: "+1 segment (segment 2)",
+      consequence: "Thade n'a plus d'obstacle interne à l'Université. Les enquêtes sur S-01 sont enterrées avec Jaren. Les prélèvements continuent sans témoin gênant.",
+    },
+  ],
 
+  // Pas d'avancement volontaire : scène de révélation. Les PJ apprennent le système d'ancrage, mais la connaissance ne fait pas avancer les horloges.
   s1_temple_forgeron: [],
 
+  // Pas d'avancement volontaire : investigation pure. Les PJ lisent des archives, les fronts n'avancent pas par la lecture.
   s1_archives_scellees: [],
 
   s1_bureau_olane: [
@@ -77,8 +87,10 @@ export const effetsFrontsParScene = {
     },
   ],
 
+  // Pas d'avancement volontaire : scène de rencontre. Les PJ rencontrent la Résistance, pas d'action sur les horloges.
   s1_rencontre_resistance: [],
 
+  // Pas d'avancement volontaire : point de décision. Les conséquences du choix se manifestent dans le Scénario 2, pas dans cette scène.
   s1_choix: [],
 
   // ── Scénario 2 ──────────────────────────────────────────
@@ -134,8 +146,10 @@ export const effetsFrontsParScene = {
     },
   ],
 
+  // Pas d'avancement volontaire : investigation pure. Les PJ consultent le registre des lectures de Thade.
   s2_reserve_interdite: [],
 
+  // Pas d'avancement volontaire : investigation/révélation. Les PJ découvrent le laboratoire et le protocole. Si Elian s'échappe, le MJ peut avancer manuellement la horloge de radicalisation.
   s2_laboratoire_elian: [],
 
   s2_assaut_tour: [
@@ -165,6 +179,89 @@ export const effetsFrontsParScene = {
     },
   ],
 
+  // Pas d'avancement de segment : sas dramatique. Le déphasage est déjà avancé, le rituel est en cours. La scène confirme la bascule vers le S3 sans accélérer les horloges.
+  s2_vers_s3_escalier_du_sommet: [
+    {
+      frontId: "front_dephasage",
+      horlogeId: "menace_dephasage_ancrage",
+      declencheur: "Quand les PJ atteignent le deuxième palier et sentent l'absence d'odeur.",
+      effet: "Confirmation narrative (pas de segment)",
+      consequence: "Le sommet de la Tour est déphasé. La Spirale est là. Le MJ note que le déphasage a atteint la Tour elle-même.",
+    },
+  ],
+
+  // Capsule de déphasage : les lettres doublées révèlent le décalage temporel.
+  s2_lettres_doublees: [
+    {
+      frontId: "front_cite_sous_pression",
+      horlogeId: "menace_derive_institutionnelle",
+      declencheur: "Quand Odran signale les anomalies et que Yselle confirme les lettres de crédit en double.",
+      effet: "+1 segment (segment 2)",
+      consequence: "Les institutions produisent des documents cohérents mais faux. Les registres ne correspondent plus à la réalité. La machine à retarder tourne à vide.",
+    },
+    {
+      frontId: "front_dephasage",
+      horlogeId: "menace_dephasage_revelation",
+      declencheur: "Quand les PJ rapprochent les lettres doublées du témoignage de l'émissaire de Caldris.",
+      effet: "+1 segment (étape 2)",
+      consequence: "Les lettres se répètent. Le temps de transit entre Valombre et l'extérieur se décale. Le déphasage n'est plus un phénomène visible — c'est une anomalie administrative.",
+    },
+  ],
+
+  // Capsule de déphasage : la route qui boucle prouve que la ville ne laisse pas sortir.
+  s2_route_qui_boucle: [
+    {
+      frontId: "front_sceau_qui_cede",
+      horlogeId: "menace_abandon_mine",
+      declencheur: "Quand les PJ constatent que la route ramène à Valombre et que l'air sent la Vieille Ville.",
+      effet: "+1 segment (segment 4)",
+      consequence: "Les routes deviennent non fiables. L'isolement est perceptible. Les commerçants nains notent que les convois ne reviennent pas — ou reviennent vides.",
+    },
+    {
+      frontId: "front_dephasage",
+      horlogeId: "menace_dephasage_revelation",
+      declencheur: "Quand les PJ vivent la boucle et comprennent que la route ne mène nulle part.",
+      effet: "+1 segment (étape 4)",
+      consequence: "Les routes ramènent au même point. La ville ne laisse pas sortir. Le déphasage n'est plus une rumeur — c'est un fait vécu.",
+    },
+  ],
+
+  // Capsule de déphasage : les entrepôts pleins montrent la crise économique masquée.
+  s2_entrepots_pleins: [
+    {
+      frontId: "front_cite_sous_pression",
+      horlogeId: "menace_derive_institutionnelle",
+      declencheur: "Quand Yselle admet que les convois ne partent pas et qu'elle ment pour maintenir l'ordre.",
+      effet: "+1 segment (segment 3)",
+      consequence: "Crise économique masquée. Stocks bloqués. Les institutions cachent la réalité pour éviter la panique. La confiance s'érode.",
+    },
+    {
+      frontId: "front_dephasage",
+      horlogeId: "menace_dephasage_revelation",
+      declencheur: "Quand les PJ rapprochent les entrepôts pleins des lettres doublées et de la route qui boucle.",
+      effet: "+1 segment (étape 3)",
+      consequence: "Les stocks s'accumulent. La ville produit pour un extérieur qui ne reçoit plus. Le déphasage a un coût économique que les institutions cachent.",
+    },
+  ],
+
+  // Scène politique : le Conseil sous pression. Effet principal sur la Cité, effet secondaire sur les Factions.
+  s2_conseil_sous_pression: [
+    {
+      frontId: "front_cite_sous_pression",
+      horlogeId: "menace_derive_institutionnelle",
+      declencheur: "Si les PJ échouent à influencer le Conseil ou restent silencieux.",
+      effet: "+1 segment (segment 4)",
+      consequence: "Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer.",
+    },
+    {
+      frontId: "front_factions_crise",
+      horlogeId: "menace_radicalisation_cercles",
+      declencheur: "Si le Conseil cède à la peur et vote la loi martiale.",
+      effet: "+1 segment (segment 4)",
+      consequence: "Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère.",
+    },
+  ],
+
   // ── Scénario 3 ──────────────────────────────────────────
 
   s3_vortex: [
@@ -184,8 +281,10 @@ export const effetsFrontsParScene = {
     },
   ],
 
+  // Pas d'avancement volontaire : choix final. C'est la résolution — les horloges s'arrêtent ici, le monde change selon la décision.
   s3_conversation_trois: [],
 
+  // Pas d'avancement volontaire : épilogue narratif. Aucun jet, aucune horloge. Le MJ décrit les conséquences.
   s3_monde_apres: [],
 };
 

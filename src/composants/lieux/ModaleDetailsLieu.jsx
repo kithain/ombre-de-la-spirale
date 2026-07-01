@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
 import { User } from "lucide-react";
 import Modale from "../interface/Modale";
 import { obtenirPnjParIds, obtenirIdsPnjOrphelins } from "../../data/npcRegistry";
-import { trouverOccurrencesLieu } from "../../utilitaires/liaisonsDonnees";
 import { utiliserModalePnj } from "../../contextes/ContexteModalePnj";
+import ApparitionsLieu from "./ApparitionsLieu";
 
 /**
  * Composant ModaleDetailsLieu - Modale affichant les détails complets d'un lieu
@@ -15,7 +14,6 @@ function ModaleDetailsLieu({ lieu, zone, estOuverte, fermer }) {
 
   const residents = obtenirPnjParIds(lieu.idsPnj || []);
   const pnjOrphelins = obtenirIdsPnjOrphelins(lieu.idsPnj || []);
-  const occurrences = trouverOccurrencesLieu(lieu.id);
 
   const badge = (
     <>
@@ -93,27 +91,8 @@ function ModaleDetailsLieu({ lieu, zone, estOuverte, fermer }) {
           </div>
         )}
 
-        {/* Occurrences dans les scénarios */}
-        {occurrences.length > 0 && (
-          <div className="space-y-2">
-            <h3 className="text-xs uppercase tracking-widest text-content-muted font-semibold">
-              Apparitions dans les scénarios
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {occurrences.map((occ, index) => (
-                <Link
-                  key={`${lieu.id}-${index}-${occ.titreScene}`}
-                  to={`/scenarios?scenario=${occ.idScenario}&scene=${encodeURIComponent(occ.idScene || occ.titreScene)}`}
-                  onClick={fermer}
-                  className="px-2 py-1 border border-accent-muted text-accent-light bg-accent-surface hover:bg-accent-surface/80 text-[10px] uppercase tracking-wide transition-colors"
-                  titre={`${occ.titreScenario} · ${occ.titreActe} · ${occ.titreScene}`}
-                >
-                  {occ.idScenario}.{occ.numeroActe}.{occ.numeroScene}
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
+        {/* Apparitions dans les scénarios (liens inverses riches) */}
+        <ApparitionsLieu lieuId={lieu.id} />
       </div>
     </Modale>
   );

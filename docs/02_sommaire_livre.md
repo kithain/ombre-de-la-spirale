@@ -73,7 +73,7 @@ Le livre est organisé en trois niveaux de lecture :
 # PARTIE III — LES PERSONNAGES
 
 ## 7. PNJ majeurs
-- Thade Coren, Mage-Roi de Valombre
+- Thade Coren, archimage de l'Université Arcanique
 - Sealine Vael, la Dame des Soupirs
 - Thorgar, Haut Clerc du Temple-Forgeron
 - Mara, dirigeante de la Résistance

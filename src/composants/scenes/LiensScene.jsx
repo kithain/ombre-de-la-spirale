@@ -55,12 +55,13 @@ function LiensScene({ lieuLie, pnjLies = [] }) {
           <button
             key={`${pnj.id}-${index}`}
             type="button"
-            titre={pnj.id}
+            titre={pnj.implique ? `${pnj.id} (impliqué, non présent)` : pnj.id}
             onClick={() => ouvrirFichePnj(pnj.id)}
             className={cc(
               "inline-flex items-center gap-1 px-2 py-1 border transition-colors cursor-pointer",
               obtenirClassesCouleurPnj(pnj.origine, pnj),
               pnj.hostile && "border-red-500/60 text-red-400 bg-red-500/10 hover:border-red-400 hover:text-red-300",
+              pnj.implique && "opacity-60 italic",
             )}
           >
             {pnj.hostile ? (
@@ -69,6 +70,7 @@ function LiensScene({ lieuLie, pnjLies = [] }) {
               <User className="w-4 h-4" />
             )}
             {pnj.nom}
+            {pnj.implique && <span className="text-[9px] uppercase tracking-wide">(impl.)</span>}
           </button>
         ) : (
           <span
