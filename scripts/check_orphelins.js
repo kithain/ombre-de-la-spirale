@@ -182,7 +182,7 @@ function extraireScenesAvecChamps() {
 
       const aTransitions = /transitions:\s*\{/.test(block);
       const aGuideMj = /guide_mj:\s*\{/.test(block);
-      const aContexteMj = /contexte_mj:\s*[\{"]/ .test(block);
+      const aContexteMj = /contexte_mj:\s*[{"]/.test(block);
       const aDefis = /defis:\s*\[/.test(block);
 
       scenes.push({ id, file, champsManquants, type, idLieu, aTransitions, aGuideMj, aContexteMj, aDefis });

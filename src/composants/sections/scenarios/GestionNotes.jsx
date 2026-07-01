@@ -1,6 +1,65 @@
 import { useState } from "react";
 import { Download, Upload, Trash2 } from "lucide-react";
 
+const CLES_SAUVEGARDE_CAMPAGNE = [
+  "campaign-state-v1",
+  "session-scenario",
+  "session-scene",
+  "session-note-rapide",
+  "derniere-route",
+  "current-scenario",
+  "front-open-active",
+  "scenario-open-active",
+  "universe-zone",
+  "universe-loc",
+  "universe-pnj",
+  "universe-tab",
+];
+
+const PREFIXES_SAUVEGARDE_CAMPAGNE = [
+  "scene-note-",
+  "scene-fav-",
+  "front-clock-",
+  "front-note-",
+  "scenario-open-act-",
+  "quete-pnj-",
+];
+
+function estCleSauvegardeCampagne(cle) {
+  if (typeof cle !== "string") return false;
+
+  return (
+    CLES_SAUVEGARDE_CAMPAGNE.includes(cle) ||
+    PREFIXES_SAUVEGARDE_CAMPAGNE.some((prefixe) => cle.startsWith(prefixe))
+  );
+}
+
+function telechargerJson(nomFichier, donnees) {
+  const blob = new Blob([JSON.stringify(donnees, null, 2)], {
+    type: "application/json",
+  });
+  const url = URL.createObjectURL(blob);
+  const lien = document.createElement("a");
+  lien.href = url;
+  lien.download = nomFichier;
+  document.body.appendChild(lien);
+  lien.click();
+  document.body.removeChild(lien);
+  URL.revokeObjectURL(url);
+}
+
+function collecterStockageCampagne() {
+  const stockage = {};
+
+  for (let i = 0; i < localStorage.length; i++) {
+    const cle = localStorage.key(i);
+    if (!estCleSauvegardeCampagne(cle)) continue;
+    stockage[cle] = localStorage.getItem(cle);
+  }
+
+  return stockage;
+}
+
 function GestionNotes() {
   const [message, definirMessage] = useState("");
 
@@ -28,22 +87,40 @@ function GestionNotes() {
       }
     }
 
-    const blob = new Blob([JSON.stringify(donnees, null, 2)], {
-      type: "application/json",
-    });
-    const url = URL.createObjectURL(blob);
-    const lien = document.createElement("a");
-    lien.href = url;
-    lien.download = `notes-mj-${new Date().toISOString().split("T")[0]}.json`;
-    document.body.appendChild(lien);
-    lien.click();
-    document.body.removeChild(lien);
-    URL.revokeObjectURL(url);
+    telechargerJson(
+      `notes-mj-${new Date().toISOString().split("T")[0]}.json`,
+      donnees,
+    );
 
     const nbNotes = Object.keys(donnees.notes).length;
     const nbFavoris = Object.keys(donnees.favoris).length;
     definirMessage(
       `✅ Export réussi : ${nbNotes} note(s) et ${nbFavoris} favori(s)`,
+    );
+    setTimeout(() => definirMessage(""), 3000);
+  };
+
+  const exporterSauvegardeCampagne = () => {
+    const stockage = collecterStockageCampagne();
+    const donnees = {
+      type: "ombre-de-la-spirale-sauvegarde-campagne",
+      version: "3.0",
+      dateExport: new Date().toISOString(),
+      stockage,
+      resume: {
+        nombreCles: Object.keys(stockage).length,
+        clesDirectes: CLES_SAUVEGARDE_CAMPAGNE,
+        prefixes: PREFIXES_SAUVEGARDE_CAMPAGNE,
+      },
+    };
+
+    telechargerJson(
+      `sauvegarde-campagne-${new Date().toISOString().split("T")[0]}.json`,
+      donnees,
+    );
+
+    definirMessage(
+      `✅ Sauvegarde campagne exportée : ${Object.keys(stockage).length} clé(s)`,
     );
     setTimeout(() => definirMessage(""), 3000);
   };
@@ -117,6 +194,50 @@ function GestionNotes() {
     event.target.value = "";
   };
 
+  const importerSauvegardeCampagne = (event) => {
+    const fichier = event.target.files[0];
+    if (!fichier) return;
+
+    const lecteur = new FileReader();
+    lecteur.onload = (e) => {
+      try {
+        const donnees = JSON.parse(e.target.result);
+
+        if (
+          donnees.type !== "ombre-de-la-spirale-sauvegarde-campagne" ||
+          !donnees.stockage ||
+          typeof donnees.stockage !== "object"
+        ) {
+          definirMessage("❌ Format de sauvegarde campagne invalide");
+          setTimeout(() => definirMessage(""), 3000);
+          return;
+        }
+
+        let nbClesImportees = 0;
+
+        Object.entries(donnees.stockage).forEach(([cle, valeur]) => {
+          if (!estCleSauvegardeCampagne(cle) || valeur === null) return;
+          localStorage.setItem(cle, String(valeur));
+          nbClesImportees++;
+        });
+
+        definirMessage(
+          `✅ Sauvegarde campagne importée : ${nbClesImportees} clé(s)`,
+        );
+        setTimeout(() => {
+          definirMessage("");
+          window.location.reload();
+        }, 2000);
+      } catch (erreur) {
+        console.error("Erreur import sauvegarde campagne:", erreur);
+        definirMessage("❌ Erreur lors de l'import de la sauvegarde campagne");
+        setTimeout(() => definirMessage(""), 3000);
+      }
+    };
+    lecteur.readAsText(fichier);
+    event.target.value = "";
+  };
+
   const supprimerToutesLesNotes = () => {
     if (
       !window.confirm(
@@ -167,16 +288,36 @@ function GestionNotes() {
           titre="Exporter toutes les notes et favoris"
         >
           <Download size={16} />
-          Exporter
+          Exporter notes
         </button>
 
         <label className="flex items-center gap-2 px-3 py-2 bg-blue-900/20 border border-blue-800/30 text-blue-300 hover:bg-blue-900/30 transition-colors text-sm cursor-pointer">
           <Upload size={16} />
-          Importer
+          Importer notes
           <input
             type="file"
             accept=".json"
             onChange={importerNotes}
+            className="hidden"
+          />
+        </label>
+
+        <button
+          onClick={exporterSauvegardeCampagne}
+          className="flex items-center gap-2 px-3 py-2 bg-emerald-900/20 border border-emerald-800/30 text-emerald-300 hover:bg-emerald-900/30 transition-colors text-sm"
+          titre="Exporter toute la sauvegarde de campagne"
+        >
+          <Download size={16} />
+          Exporter sauvegarde campagne
+        </button>
+
+        <label className="flex items-center gap-2 px-3 py-2 bg-cyan-900/20 border border-cyan-800/30 text-cyan-300 hover:bg-cyan-900/30 transition-colors text-sm cursor-pointer">
+          <Upload size={16} />
+          Importer sauvegarde campagne
+          <input
+            type="file"
+            accept=".json"
+            onChange={importerSauvegardeCampagne}
             className="hidden"
           />
         </label>
@@ -200,6 +341,9 @@ function GestionNotes() {
       <p className="text-xs text-content-subtle mt-2">
         💡 Les notes sont stockées localement dans votre navigateur.
         Exportez-les régulièrement pour les sauvegarder.
+      </p>
+      <p className="text-xs text-content-subtle mt-1">
+        La sauvegarde campagne transfere aussi progression, scene active, onglets, horloges et etat global entre localhost, GitHub Pages et un autre ordinateur.
       </p>
     </div>
   );
