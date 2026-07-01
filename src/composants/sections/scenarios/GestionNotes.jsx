@@ -1,64 +1,12 @@
 import { useState } from "react";
 import { Download, Upload, Trash2 } from "lucide-react";
-
-const CLES_SAUVEGARDE_CAMPAGNE = [
-  "campaign-state-v1",
-  "session-scenario",
-  "session-scene",
-  "session-note-rapide",
-  "derniere-route",
-  "current-scenario",
-  "front-open-active",
-  "scenario-open-active",
-  "universe-zone",
-  "universe-loc",
-  "universe-pnj",
-  "universe-tab",
-];
-
-const PREFIXES_SAUVEGARDE_CAMPAGNE = [
-  "scene-note-",
-  "scene-fav-",
-  "front-clock-",
-  "front-note-",
-  "scenario-open-act-",
-  "quete-pnj-",
-];
-
-function estCleSauvegardeCampagne(cle) {
-  if (typeof cle !== "string") return false;
-
-  return (
-    CLES_SAUVEGARDE_CAMPAGNE.includes(cle) ||
-    PREFIXES_SAUVEGARDE_CAMPAGNE.some((prefixe) => cle.startsWith(prefixe))
-  );
-}
-
-function telechargerJson(nomFichier, donnees) {
-  const blob = new Blob([JSON.stringify(donnees, null, 2)], {
-    type: "application/json",
-  });
-  const url = URL.createObjectURL(blob);
-  const lien = document.createElement("a");
-  lien.href = url;
-  lien.download = nomFichier;
-  document.body.appendChild(lien);
-  lien.click();
-  document.body.removeChild(lien);
-  URL.revokeObjectURL(url);
-}
-
-function collecterStockageCampagne() {
-  const stockage = {};
-
-  for (let i = 0; i < localStorage.length; i++) {
-    const cle = localStorage.key(i);
-    if (!estCleSauvegardeCampagne(cle)) continue;
-    stockage[cle] = localStorage.getItem(cle);
-  }
-
-  return stockage;
-}
+import {
+  CLES_SAUVEGARDE_CAMPAGNE,
+  PREFIXES_SAUVEGARDE_CAMPAGNE,
+  collecterStockageCampagne,
+  estCleSauvegardeCampagne,
+  telechargerJson,
+} from "../../../utilitaires/sauvegardeCampagne";
 
 function GestionNotes() {
   const [message, definirMessage] = useState("");

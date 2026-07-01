@@ -22,6 +22,7 @@ import { consequencesFront, consequencesScene } from "../../../utilitaires/conse
 import { utiliserEtatPersistant } from "../../../hooks/utiliserEtatPersistant";
 import { utiliserModalePnj } from "../../../contextes/ContexteModalePnj";
 import EtatCampagnePanel from "./EtatCampagnePanel";
+import SauvegardeCampagneActions from "../../interface/SauvegardeCampagneActions";
 
 const HorlogeMenace = lazy(() => import("../../scenes/HorlogeMenace"));
 const ContexteMjScene = lazy(() => import("../../scenes/ContexteMjScene"));
@@ -146,6 +147,8 @@ function VueSession() {
       </div>
 
       {/* Sélecteur scénario + scène */}
+      <SauvegardeCampagneActions compacte />
+
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div>
           <label className="text-xs uppercase tracking-widest text-content-subtle mb-1 block">
