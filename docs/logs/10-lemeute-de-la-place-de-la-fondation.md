@@ -6,13 +6,13 @@ Gérer l'émeute : calmer, protéger, ou exploiter.
 
 ## Sources consultées
 
-- src/data/scenarios/scenario2_masques_nyx.js : scene `s2_emeute_place`, acte "Acte I — La Crise s'Étend".
-- src/data/scenarios/effetsFronts.js : effets de fronts lies a la scene.
-- src/data/scenarios/fronts.js : fronts, horloges et consequences globales.
-- src/data/personnages/pnj.js et fichiers specialises : PNJ lies par `idsPnj`.
-- src/data/personnages/factions.js : factions affectees.
-- src/data/universe/universeZones.js : lieu lie par `idLieu` quand disponible.
-- .agents/MJ Valombre.toml, .agents/PJ Valombre 1.toml, .agents/PJ Valombre 2.toml : protocole de simulation.
+- src/data/scenarios/scenario2_masques_nyx.js : scène `s2_emeute_place`, acte "Acte I — La Crise s'Étend".
+- src/data/scenarios/effetsFronts.js : effets de fronts par scène.
+- src/data/scenarios/fronts.js : horloges et conséquences globales.
+- src/data/personnages/pnj.js et registres spécialisés : PNJ liés à la scène.
+- src/data/personnages/factions.js : factions et objectifs.
+- src/data/universe/universeZones.js : lieux liés par `idLieu`.
+- .agents/MJ Valombre.toml, .agents/PJ Valombre 1.toml, .agents/PJ Valombre 2.toml : contraintes d'incarnation.
 
 ## Nombre de boucles
 
@@ -25,10 +25,14 @@ Gérer l'émeute : calmer, protéger, ou exploiter.
 #### 1. MJ Valombre
 
 [Scène]
-La Place de la Fondation se remplit autour du Champion de la Banniere Pure.
+La Place de la Fondation est noire de monde. Le Champion de la Bannière Pure se tient sur l'estrade, en robe blanche, le visage masqué. Sa voix porte sans effort : « Valombre souffre. La maladie ronge nos quartiers. Le froid gagne nos rues. Et pendant ce temps, l'Université ferme les yeux, le Conseil tergiverse, et les étrangers profitent de notre faiblesse ! »
+
+Des huées montent de la foule. Des nains du Centre Civique reculent vers les ruelles adjacentes. La garde mixte hésite au pied de l'estrade.
 
 [Informations visibles]
-Le Champion de la Bannière Pure organise une manifestation sur la Place de la Fondation. Il accuse les nains et les étrangers d'être responsables des maladies et des anomalies. La garde hésite à intervenir. Les PJ doivent choisir : calmer la foule, protéger les nains, ou exploiter le chaos. ; Les PJ doivent savoir que le Champion exploite la crise et qu'Edran recrute dans l'ombre. ; Le Champion exploite la peur
+- Le Champion de la Bannière Pure organise une manifestation sur la Place de la Fondation. Il accuse les nains et les étrangers d'être responsables des maladies et des anomalies. La garde hésite à intervenir. Les PJ doivent choisir : calmer la foule, protéger les nains, ou exploiter le chaos.
+- Gérer l'émeute : calmer, protéger, ou exploiter.
+- Le soutien logistique du Champion
 
 [Actions possibles évidentes]
 - observer la foule et identifier les meneurs
@@ -37,85 +41,89 @@ Le Champion de la Bannière Pure organise une manifestation sur la Place de la F
 - collecter des témoignages
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Emeute ralentie mais pas eteinte
+La scène continue : Champion de la Bannière Pure sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Sniv comme guide ; Thade prélève les os pour ouvrir le seuil ; Restaurer les rites exige de récupérer les os ; La Résistance offre une voie hors Université ; Champion de la Bannière Pure
+- Indices ratés, refusés ou perdus : Transporteur clandestin exact ; Prix exact du Collecteur ; Toutes les caches de la Résistance ; Réaction immédiate de Thade ; Vote officiel définitif du Conseil
+- Décisions des PJ : Les PJ copient le dossier S-01 et cherchent Olane pour interpréter les éléments. ; Les PJ protègent Olane, ne publient pas tout trop tôt et retournent vérifier le sceau. ; Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar.
+- Conséquences visibles : Les PJ protègent Olane, ne publient pas tout trop tôt et retournent vérifier le sceau. ; Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Conséquence intermédiaire jouée dans L'Émeute de la Place de la Fondation
+- PNJ affectés : ursula_fraternite ; le_collecteur ; sniv_kobold ; champion_banniere_pure ; patrouille_mixte_conseil
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : +1 segment (segment 2). Des salles sont scellées pour « travaux ». Des cours sont annulés. Les protections ordinaires de l'Université deviennent instables. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 1). Commissions, expertises et conflits de compétence. Les responsables déplacent des preuves. Les dangers avancent sans réponse coordonnée. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 3). La dalle se déplace. Les anneaux du Puits vibrent. Des fissures apparaissent. Chaque perturbation se transmet aux autres tombes. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 1). Elian reçoit des patients « stabilisés ». Edran absorbe les familles isolées. Le Champion tient ses premiers discours. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 3). Le Champion impose un choix : pour ou contre Nyx. Edran introduit des rites interdits. Elian commence à effacer ses traces.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : Le soutien logistique du Champion manque de PNJ marchand nomme dans cette scene.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Financeurs exacts du Champion.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera cherche les failles, les angles morts et ce que les puissants essaient de garder hors champ. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : observer la foule et identifier les meneurs en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : observer la foule et identifier les meneurs, avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael protege les innocents et pose la limite morale de la scene. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : intervenir ou non dans l'émeute tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : intervenir ou non dans l'émeute, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-crise publique. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+empêcher la peur publique de devenir massacre. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 intervenir ou non dans l'émeute
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Sniv comme guide ; Thade prélève les os pour ouvrir le seuil ; Restaurer les rites exige de récupérer les os ; La Résistance offre une voie hors Université ; Champion de la Bannière Pure
+- Indices ratés, refusés ou perdus : Transporteur clandestin exact ; Prix exact du Collecteur ; Toutes les caches de la Résistance ; Réaction immédiate de Thade ; Vote officiel définitif du Conseil
+- Décisions des PJ : Les PJ copient le dossier S-01 et cherchent Olane pour interpréter les éléments. ; Les PJ protègent Olane, ne publient pas tout trop tôt et retournent vérifier le sceau. ; Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar.
+- Conséquences visibles : Les PJ protègent Olane, ne publient pas tout trop tôt et retournent vérifier le sceau. ; Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Conséquence intermédiaire jouée dans L'Émeute de la Place de la Fondation
+- PNJ affectés : ursula_fraternite ; le_collecteur ; sniv_kobold ; champion_banniere_pure ; patrouille_mixte_conseil
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : +1 segment (segment 2). Des salles sont scellées pour « travaux ». Des cours sont annulés. Les protections ordinaires de l'Université deviennent instables. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 1). Commissions, expertises et conflits de compétence. Les responsables déplacent des preuves. Les dangers avancent sans réponse coordonnée. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 3). La dalle se déplace. Les anneaux du Puits vibrent. Des fissures apparaissent. Chaque perturbation se transmet aux autres tombes. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 1). Elian reçoit des patients « stabilisés ». Edran absorbe les familles isolées. Le Champion tient ses premiers discours. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 3). Le Champion impose un choix : pour ou contre Nyx. Edran introduit des rites interdits. Elian commence à effacer ses traces.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 2
 
 #### 1. MJ Valombre
 
 [Scène]
-Kael se place entre la foule et des mineurs nains ; Nera cherche les meneurs logistiques et les signaux de coordination.
+La Place de la Fondation est noire de monde. Le Champion de la Bannière Pure se tient sur l'estrade, en robe blanche, le visage masqué. Sa voix porte sans effort : « Valombre souffre. La maladie ronge nos quartiers. Le froid gagne nos rues. Et pendant ce temps, l'Université ferme les yeux, le Conseil tergiverse, et les étrangers profitent de notre faiblesse ! »
+
+Des huées montent de la foule. Des nains du Centre Civique reculent vers les ruelles adjacentes. La garde mixte hésite au pied de l'estrade.
 
 [Informations visibles]
-Le Champion de la Bannière Pure organise une manifestation sur la Place de la Fondation. Il accuse les nains et les étrangers d'être responsables des maladies et des anomalies. La garde hésite à intervenir. Les PJ doivent choisir : calmer la foule, protéger les nains, ou exploiter le chaos. ; Les PJ doivent savoir que le Champion exploite la crise et qu'Edran recrute dans l'ombre. ; Des nains sont pris pour cibles
+- Le Champion de la Bannière Pure organise une manifestation sur la Place de la Fondation. Il accuse les nains et les étrangers d'être responsables des maladies et des anomalies. La garde hésite à intervenir. Les PJ doivent choisir : calmer la foule, protéger les nains, ou exploiter le chaos.
+- Gérer l'émeute : calmer, protéger, ou exploiter.
+- Edran Morn dans la foule
 
 [Actions possibles évidentes]
 - observer la foule et identifier les meneurs
@@ -124,85 +132,89 @@ Le Champion de la Bannière Pure organise une manifestation sur la Place de la F
 - collecter des témoignages
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Le Champion n'est pas dechu
+La scène continue : Garde divisée sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Thade prélève les os pour ouvrir le seuil ; Restaurer les rites exige de récupérer les os ; La Résistance offre une voie hors Université ; Champion de la Bannière Pure ; Garde divisée
+- Indices ratés, refusés ou perdus : Transporteur clandestin exact ; Prix exact du Collecteur ; Toutes les caches de la Résistance ; Réaction immédiate de Thade ; Vote officiel définitif du Conseil
+- Décisions des PJ : Les PJ copient le dossier S-01 et cherchent Olane pour interpréter les éléments. ; Les PJ protègent Olane, ne publient pas tout trop tôt et retournent vérifier le sceau. ; Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar.
+- Conséquences visibles : Les PJ protègent Olane, ne publient pas tout trop tôt et retournent vérifier le sceau. ; Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Conséquence intermédiaire jouée dans L'Émeute de la Place de la Fondation
+- PNJ affectés : ursula_fraternite ; le_collecteur ; sniv_kobold ; champion_banniere_pure ; patrouille_mixte_conseil
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : +1 segment (segment 2). Des salles sont scellées pour « travaux ». Des cours sont annulés. Les protections ordinaires de l'Université deviennent instables. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 1). Commissions, expertises et conflits de compétence. Les responsables déplacent des preuves. Les dangers avancent sans réponse coordonnée. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 3). La dalle se déplace. Les anneaux du Puits vibrent. Des fissures apparaissent. Chaque perturbation se transmet aux autres tombes. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 1). Elian reçoit des patients « stabilisés ». Edran absorbe les familles isolées. Le Champion tient ses premiers discours. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 3). Le Champion impose un choix : pour ou contre Nyx. Edran introduit des rites interdits. Elian commence à effacer ses traces.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : Le soutien logistique du Champion manque de PNJ marchand nomme dans cette scene.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Financeurs exacts du Champion.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera teste une approche discrete sans utiliser d'information qu'elle ne possede pas. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : observer la foule et identifier les meneurs en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : observer la foule et identifier les meneurs, avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael evalue le risque tactique avant que le groupe ne s'engage davantage. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : intervenir ou non dans l'émeute tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : intervenir ou non dans l'émeute, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-crise publique. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+empêcher la peur publique de devenir massacre. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 suivre les Endeuillés ou le Champion
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Thade prélève les os pour ouvrir le seuil ; Restaurer les rites exige de récupérer les os ; La Résistance offre une voie hors Université ; Champion de la Bannière Pure ; Garde divisée
+- Indices ratés, refusés ou perdus : Transporteur clandestin exact ; Prix exact du Collecteur ; Toutes les caches de la Résistance ; Réaction immédiate de Thade ; Vote officiel définitif du Conseil
+- Décisions des PJ : Les PJ copient le dossier S-01 et cherchent Olane pour interpréter les éléments. ; Les PJ protègent Olane, ne publient pas tout trop tôt et retournent vérifier le sceau. ; Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar.
+- Conséquences visibles : Les PJ protègent Olane, ne publient pas tout trop tôt et retournent vérifier le sceau. ; Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Conséquence intermédiaire jouée dans L'Émeute de la Place de la Fondation
+- PNJ affectés : ursula_fraternite ; le_collecteur ; sniv_kobold ; champion_banniere_pure ; patrouille_mixte_conseil
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : +1 segment (segment 2). Des salles sont scellées pour « travaux ». Des cours sont annulés. Les protections ordinaires de l'Université deviennent instables. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 1). Commissions, expertises et conflits de compétence. Les responsables déplacent des preuves. Les dangers avancent sans réponse coordonnée. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 3). La dalle se déplace. Les anneaux du Puits vibrent. Des fissures apparaissent. Chaque perturbation se transmet aux autres tombes. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 1). Elian reçoit des patients « stabilisés ». Edran absorbe les familles isolées. Le Champion tient ses premiers discours. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 3). Le Champion impose un choix : pour ou contre Nyx. Edran introduit des rites interdits. Elian commence à effacer ses traces.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 3
 
 #### 1. MJ Valombre
 
 [Scène]
-Les PJ calment une partie de la foule mais reperent des rumeurs de soutien marchand au Champion.
+La Place de la Fondation est noire de monde. Le Champion de la Bannière Pure se tient sur l'estrade, en robe blanche, le visage masqué. Sa voix porte sans effort : « Valombre souffre. La maladie ronge nos quartiers. Le froid gagne nos rues. Et pendant ce temps, l'Université ferme les yeux, le Conseil tergiverse, et les étrangers profitent de notre faiblesse ! »
+
+Des huées montent de la foule. Des nains du Centre Civique reculent vers les ruelles adjacentes. La garde mixte hésite au pied de l'estrade.
 
 [Informations visibles]
-Le Champion de la Bannière Pure organise une manifestation sur la Place de la Fondation. Il accuse les nains et les étrangers d'être responsables des maladies et des anomalies. La garde hésite à intervenir. Les PJ doivent choisir : calmer la foule, protéger les nains, ou exploiter le chaos. ; Les PJ doivent savoir que le Champion exploite la crise et qu'Edran recrute dans l'ombre. ; Rumeurs de soutien logistique marchand
+- Le Champion de la Bannière Pure organise une manifestation sur la Place de la Fondation. Il accuse les nains et les étrangers d'être responsables des maladies et des anomalies. La garde hésite à intervenir. Les PJ doivent choisir : calmer la foule, protéger les nains, ou exploiter le chaos.
+- Gérer l'émeute : calmer, protéger, ou exploiter.
+- Les PJ doivent savoir que le Champion exploite la crise et qu'Edran recrute dans l'ombre.
 
 [Actions possibles évidentes]
 - observer la foule et identifier les meneurs
@@ -211,85 +223,89 @@ Le Champion de la Bannière Pure organise une manifestation sur la Place de la F
 - collecter des témoignages
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. La garde note l'intervention des PJ
+La scène continue : Rumeurs de soutien logistique sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Restaurer les rites exige de récupérer les os ; La Résistance offre une voie hors Université ; Champion de la Bannière Pure ; Garde divisée ; Rumeurs de soutien logistique
+- Indices ratés, refusés ou perdus : Transporteur clandestin exact ; Prix exact du Collecteur ; Toutes les caches de la Résistance ; Réaction immédiate de Thade ; Vote officiel définitif du Conseil
+- Décisions des PJ : Les PJ copient le dossier S-01 et cherchent Olane pour interpréter les éléments. ; Les PJ protègent Olane, ne publient pas tout trop tôt et retournent vérifier le sceau. ; Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar.
+- Conséquences visibles : Les PJ protègent Olane, ne publient pas tout trop tôt et retournent vérifier le sceau. ; Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Conséquence intermédiaire jouée dans L'Émeute de la Place de la Fondation
+- PNJ affectés : ursula_fraternite ; le_collecteur ; sniv_kobold ; champion_banniere_pure ; patrouille_mixte_conseil
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : +1 segment (segment 2). Des salles sont scellées pour « travaux ». Des cours sont annulés. Les protections ordinaires de l'Université deviennent instables. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 1). Commissions, expertises et conflits de compétence. Les responsables déplacent des preuves. Les dangers avancent sans réponse coordonnée. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 3). La dalle se déplace. Les anneaux du Puits vibrent. Des fissures apparaissent. Chaque perturbation se transmet aux autres tombes. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 1). Elian reçoit des patients « stabilisés ». Edran absorbe les familles isolées. Le Champion tient ses premiers discours. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 3). Le Champion impose un choix : pour ou contre Nyx. Edran introduit des rites interdits. Elian commence à effacer ses traces.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : Le soutien logistique du Champion manque de PNJ marchand nomme dans cette scene.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Financeurs exacts du Champion.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera transforme les indices visibles en levier concret pour la suite. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : observer la foule et identifier les meneurs en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : observer la foule et identifier les meneurs, avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael cherche une solution droite qui ne bloque pas l'enquete. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : intervenir ou non dans l'émeute tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : intervenir ou non dans l'émeute, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-crise publique. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+empêcher la peur publique de devenir massacre. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 collecter des témoignages
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Restaurer les rites exige de récupérer les os ; La Résistance offre une voie hors Université ; Champion de la Bannière Pure ; Garde divisée ; Rumeurs de soutien logistique
+- Indices ratés, refusés ou perdus : Transporteur clandestin exact ; Prix exact du Collecteur ; Toutes les caches de la Résistance ; Réaction immédiate de Thade ; Vote officiel définitif du Conseil
+- Décisions des PJ : Les PJ copient le dossier S-01 et cherchent Olane pour interpréter les éléments. ; Les PJ protègent Olane, ne publient pas tout trop tôt et retournent vérifier le sceau. ; Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar.
+- Conséquences visibles : Les PJ protègent Olane, ne publient pas tout trop tôt et retournent vérifier le sceau. ; Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Conséquence intermédiaire jouée dans L'Émeute de la Place de la Fondation
+- PNJ affectés : ursula_fraternite ; le_collecteur ; sniv_kobold ; champion_banniere_pure ; patrouille_mixte_conseil
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : +1 segment (segment 2). Des salles sont scellées pour « travaux ». Des cours sont annulés. Les protections ordinaires de l'Université deviennent instables. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 1). Commissions, expertises et conflits de compétence. Les responsables déplacent des preuves. Les dangers avancent sans réponse coordonnée. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 3). La dalle se déplace. Les anneaux du Puits vibrent. Des fissures apparaissent. Chaque perturbation se transmet aux autres tombes. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 1). Elian reçoit des patients « stabilisés ». Edran absorbe les familles isolées. Le Champion tient ses premiers discours. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 3). Le Champion impose un choix : pour ou contre Nyx. Edran introduit des rites interdits. Elian commence à effacer ses traces.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 4
 
 #### 1. MJ Valombre
 
 [Scène]
-Ils choisissent de separer la crise politique de la crise cosmique en cherchant des preuves presentables.
+La Place de la Fondation est noire de monde. Le Champion de la Bannière Pure se tient sur l'estrade, en robe blanche, le visage masqué. Sa voix porte sans effort : « Valombre souffre. La maladie ronge nos quartiers. Le froid gagne nos rues. Et pendant ce temps, l'Université ferme les yeux, le Conseil tergiverse, et les étrangers profitent de notre faiblesse ! »
+
+Des huées montent de la foule. Des nains du Centre Civique reculent vers les ruelles adjacentes. La garde mixte hésite au pied de l'estrade.
 
 [Informations visibles]
-Le Champion de la Bannière Pure organise une manifestation sur la Place de la Fondation. Il accuse les nains et les étrangers d'être responsables des maladies et des anomalies. La garde hésite à intervenir. Les PJ doivent choisir : calmer la foule, protéger les nains, ou exploiter le chaos. ; Les PJ doivent savoir que le Champion exploite la crise et qu'Edran recrute dans l'ombre. ; La garde est divisee
+- Le Champion de la Bannière Pure organise une manifestation sur la Place de la Fondation. Il accuse les nains et les étrangers d'être responsables des maladies et des anomalies. La garde hésite à intervenir. Les PJ doivent choisir : calmer la foule, protéger les nains, ou exploiter le chaos.
+- Gérer l'émeute : calmer, protéger, ou exploiter.
+- Les PJ doivent savoir que le Champion exploite la crise et qu'Edran Morn recrute parmi les désespérés.
 
 [Actions possibles évidentes]
 - observer la foule et identifier les meneurs
@@ -298,144 +314,138 @@ Le Champion de la Bannière Pure organise une manifestation sur la Place de la F
 - collecter des témoignages
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. La garde note l'intervention des PJ
+Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : Vers `s2_conseil_crise` : porter l'urgence politique devant le Conseil.
+- Indices obtenus : Restaurer les rites exige de récupérer les os ; La Résistance offre une voie hors Université ; Champion de la Bannière Pure ; Garde divisée ; Rumeurs de soutien logistique
+- Indices ratés, refusés ou perdus : Transporteur clandestin exact ; Prix exact du Collecteur ; Toutes les caches de la Résistance ; Réaction immédiate de Thade ; Vote officiel définitif du Conseil
+- Décisions des PJ : Les PJ protègent Olane, ne publient pas tout trop tôt et retournent vérifier le sceau. ; Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique.
+- Conséquences visibles : Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Conséquence intermédiaire jouée dans L'Émeute de la Place de la Fondation ; Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique.
+- PNJ affectés : ursula_fraternite ; le_collecteur ; sniv_kobold ; champion_banniere_pure ; patrouille_mixte_conseil
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : +1 segment (segment 2). Des salles sont scellées pour « travaux ». Des cours sont annulés. Les protections ordinaires de l'Université deviennent instables. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 1). Commissions, expertises et conflits de compétence. Les responsables déplacent des preuves. Les dangers avancent sans réponse coordonnée. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 3). La dalle se déplace. Les anneaux du Puits vibrent. Des fissures apparaissent. Chaque perturbation se transmet aux autres tombes. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 1). Elian reçoit des patients « stabilisés ». Edran absorbe les familles isolées. Le Champion tient ses premiers discours. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 3). Le Champion impose un choix : pour ou contre Nyx. Edran introduit des rites interdits. Elian commence à effacer ses traces.
+- Prochaine piste choisie par les PJ : Vers `s2_conseil_crise` : porter l'urgence devant le Conseil.
 
 [Rapport de test]
-- Bug : Le soutien logistique du Champion manque de PNJ marchand nomme dans cette scene.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Financeurs exacts du Champion.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Vous avez formule votre prochain mouvement ; comment vous organisez-vous pour la transition ?
+Vous avez formulé votre prochain mouvement ; comment vous organisez-vous avant la transition ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera cherche les failles, les angles morts et ce que les puissants essaient de garder hors champ. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : observer la foule et identifier les meneurs en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : observer la foule et identifier les meneurs, avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael protege les innocents et pose la limite morale de la scene. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : intervenir ou non dans l'émeute tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : intervenir ou non dans l'émeute, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-crise publique. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+empêcher la peur publique de devenir massacre. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
-Vers `s2_conseil_crise` : porter l'urgence politique devant le Conseil.
+Vers `s2_conseil_crise` : porter l'urgence devant le Conseil.
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : Vers `s2_conseil_crise` : porter l'urgence politique devant le Conseil.
+- Indices obtenus : Restaurer les rites exige de récupérer les os ; La Résistance offre une voie hors Université ; Champion de la Bannière Pure ; Garde divisée ; Rumeurs de soutien logistique
+- Indices ratés, refusés ou perdus : Transporteur clandestin exact ; Prix exact du Collecteur ; Toutes les caches de la Résistance ; Réaction immédiate de Thade ; Vote officiel définitif du Conseil
+- Décisions des PJ : Les PJ protègent Olane, ne publient pas tout trop tôt et retournent vérifier le sceau. ; Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique.
+- Conséquences visibles : Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Conséquence intermédiaire jouée dans L'Émeute de la Place de la Fondation ; Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique.
+- PNJ affectés : ursula_fraternite ; le_collecteur ; sniv_kobold ; champion_banniere_pure ; patrouille_mixte_conseil
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : +1 segment (segment 2). Des salles sont scellées pour « travaux ». Des cours sont annulés. Les protections ordinaires de l'Université deviennent instables. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 1). Commissions, expertises et conflits de compétence. Les responsables déplacent des preuves. Les dangers avancent sans réponse coordonnée. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 3). La dalle se déplace. Les anneaux du Puits vibrent. Des fissures apparaissent. Chaque perturbation se transmet aux autres tombes. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 1). Elian reçoit des patients « stabilisés ». Edran absorbe les familles isolées. Le Champion tient ses premiers discours. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 3). Le Champion impose un choix : pour ou contre Nyx. Edran introduit des rites interdits. Elian commence à effacer ses traces.
+- Piste concrète choisie : Vers `s2_conseil_crise` : porter l'urgence devant le Conseil.
 
 
 ## Indices obtenus
 
-- Le Champion exploite la peur
-- Des nains sont pris pour cibles
-- Rumeurs de soutien logistique marchand
-- La garde est divisee
+- Champion de la Bannière Pure
+- Garde divisée
+- Rumeurs de soutien logistique
 
 ## Indices ratés, refusés ou perdus
 
-- Identite exacte des financeurs
-- Preuve publique suffisante contre le Champion
+- Financeurs exacts du Champion
+- Preuve publique suffisante
 
 ## Décisions des PJ
 
-- Proteer les nains
-- Eviter le massacre
-- Chercher le Conseil avant que la loi martiale ne soit automatique
+- Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique.
 
 ## Conséquences visibles
 
-- Emeute ralentie mais pas eteinte
-- Le Champion n'est pas dechu
-- La garde note l'intervention des PJ
+- Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique.
+- Les PNJ et factions listés ci-dessous réagissent dans le cadre visible de la scène.
 
 ## PNJ affectés
 
-- Champion de la Banniere Pure
-- Patrouilles mixtes
-- Mineurs nains
+- champion_banniere_pure
+- patrouille_mixte_conseil
 
 ## Factions affectées
 
-- Banniere Pure
-- Conseil
-- Communaute Naine
+- Le Plan de Thade
+- Les Factions de la Crise
+- Le Sceau qui cède
+- La Cité sous pression
 
 ## Fronts ou horloges modifiés
 
-- front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 1) - Elian reçoit des patients « stabilisés ». Edran absorbe les familles isolées. Le Champion tient ses premiers discours.
-- front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 3) - Le Champion impose un choix : pour ou contre Nyx. Edran introduit des rites interdits. Elian commence à effacer ses traces.
-- front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 3) - Pour rassurer la population, le Conseil désigne Nyx, les clans ou l'Université. Les informations qui compliquent ce récit sont écartées.
-
-État retenu pour la campagne :
-- front_factions_crise : 2/6 au lieu d'une escalade a 3 grace a l'apaisement partiel
+- front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 1). Elian reçoit des patients « stabilisés ». Edran absorbe les familles isolées. Le Champion tient ses premiers discours.
+- front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 3). Le Champion impose un choix : pour ou contre Nyx. Edran introduit des rites interdits. Elian commence à effacer ses traces.
+- front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 3). Pour rassurer la population, le Conseil désigne Nyx, les clans ou l'Université. Les informations qui compliquent ce récit sont écartées.
 
 ## Transition choisie par les PJ
 
-Vers `s2_conseil_crise` : porter l'urgence politique devant le Conseil.
+Vers `s2_conseil_crise` : porter l'urgence devant le Conseil.
 
 ## Manques ou incohérences détectés
 
-- Le soutien logistique du Champion manque de PNJ marchand nomme dans cette scene.
+- Indice raté/refusé/perdu pendant la simulation : Financeurs exacts du Champion.
+- Indice raté/refusé/perdu pendant la simulation : Preuve publique suffisante.
 
 ## Recommandations
 
 ### Bug
 
-- Corriger toute divergence d'ID, de lieu ou de secret signalee dans les manques ci-dessus.
+- Corriger les incohérences d'ID, de lieu ou de secret signalées ci-dessus.
 
 ### Dette technique
 
-- Ajouter un etat de campagne machine-readable pour les indices, les fronts, les PNJ allies et le decompte des victimes.
+- Ajouter un état de campagne sérialisé pour les indices, fronts, alliés, patients et victimes de la Tour.
 
 ### Amélioration UX
 
-- Separrer clairement les informations visibles PJ, les notes MJ et les secrets de campagne dans l'interface.
+- Séparer strictement les informations visibles PJ, les notes MJ et les secrets.
 
 ### Amélioration narrative
 
-- Prevoir pour chaque scene une relance de PNJ ou de front qui conserve l'agence des PJ sans bloquer la progression.
+- Ajouter à chaque scène une relance explicite de PNJ ou de front si les PJ hésitent.

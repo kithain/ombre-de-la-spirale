@@ -6,13 +6,13 @@ Atteindre le seuil du sommet en minimisant les victimes.
 
 ## Sources consultées
 
-- src/data/scenarios/scenario2_masques_nyx.js : scene `s2_assaut_tour`, acte "Acte III — La Confrontation".
-- src/data/scenarios/effetsFronts.js : effets de fronts lies a la scene.
-- src/data/scenarios/fronts.js : fronts, horloges et consequences globales.
-- src/data/personnages/pnj.js et fichiers specialises : PNJ lies par `idsPnj`.
-- src/data/personnages/factions.js : factions affectees.
-- src/data/universe/universeZones.js : lieu lie par `idLieu` quand disponible.
-- .agents/MJ Valombre.toml, .agents/PJ Valombre 1.toml, .agents/PJ Valombre 2.toml : protocole de simulation.
+- src/data/scenarios/scenario2_masques_nyx.js : scène `s2_assaut_tour`, acte "Acte III — La Confrontation".
+- src/data/scenarios/effetsFronts.js : effets de fronts par scène.
+- src/data/scenarios/fronts.js : horloges et conséquences globales.
+- src/data/personnages/pnj.js et registres spécialisés : PNJ liés à la scène.
+- src/data/personnages/factions.js : factions et objectifs.
+- src/data/universe/universeZones.js : lieux liés par `idLieu`.
+- .agents/MJ Valombre.toml, .agents/PJ Valombre 1.toml, .agents/PJ Valombre 2.toml : contraintes d'incarnation.
 
 ## Nombre de boucles
 
@@ -25,10 +25,14 @@ Atteindre le seuil du sommet en minimisant les victimes.
 #### 1. MJ Valombre
 
 [Scène]
-La Tour se verrouille : couloirs modifies, gardes pieges et etudiants charmes.
+La Tour Arcanique se dresse au cœur de l'Université. De l'extérieur, elle semble normale. De l'intérieur, elle est transformée. Les premiers étages sont banals — couloirs lambrissés, salles de cours. Mais plus vous montez, plus les murs changent. Des piliers de cristal poussent entre les pierres. Des runes brillent dans les angles. Des objets flottent dans l'air, immobiles.
+
+Au troisième étage, un étudiant vous regarde avec des yeux vides. Il lève la main. Une boule de feu apparaît.
 
 [Informations visibles]
-Les PJ montent la Tour Arcanique. Chaque étage est modifié : piliers de cristal, runes, objets en lévitation. Des étudiants charmés, des gardes piégés, des créatures planaires séduites par Thade. Chaque rencontre a une option non-létale. Le décompte des victimes compte pour l'épilogue. ; Les PJ doivent atteindre le 7e étage et savoir que le sommet contient le vortex. ; La Tour est un dispositif rituel
+- Les PJ montent la Tour Arcanique. Chaque étage est modifié : piliers de cristal, runes, objets en lévitation. Des étudiants charmés, des gardes piégés, des créatures planaires séduites par Thade. Chaque rencontre a une option non-létale. Le décompte des victimes compte pour l'épilogue.
+- Atteindre le seuil du sommet en minimisant les victimes.
+- L'ardoise du 6e étage
 
 [Actions possibles évidentes]
 - infiltrer la Tour (Discrétion, force, ou négociation avec les gardes)
@@ -37,85 +41,89 @@ Les PJ montent la Tour Arcanique. Chaque étage est modifié : piliers de crista
 - éventuellement utiliser le Champion comme force d'assaut
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Victimes faibles : etudiants liberes, gardes evites quand possible
+La scène continue : Tour comme dispositif rituel sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Schéma de la Larme de Vael ; Annotation de Sealine ; Registre des 50 patients d'Elian ; Elian comme témoin retournable ; Tour comme dispositif rituel
+- Indices ratés, refusés ou perdus : Consensus public complet ; Tous les ouvrages consultés ; Tous les responsables des accès ; Tous les patients immédiatement localisés ; Échantillons déjà déplacés
+- Décisions des PJ : Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients.
+- Conséquences visibles : Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Conséquence intermédiaire jouée dans L'Assaut de la Tour
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_dephasage / menace_dephasage_revelation : +1 segment (étape 3). Les stocks s'accumulent. La ville produit pour un extérieur qui ne reçoit plus. Le déphasage a un coût économique que les institutions cachent. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère. ; front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4). Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter. ; front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : La scene demande un decompte de victimes mais ne fournit pas de tableau standardise.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Contrôle complet de tous les étages.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera cherche les failles, les angles morts et ce que les puissants essaient de garder hors champ. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : infiltrer la Tour (Discrétion, force, ou négociation avec les gardes) en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : infiltrer la Tour (Discrétion, force, ou négociation avec les gardes), avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael protege les innocents et pose la limite morale de la scene. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : convaincre ou neutraliser le Magi-Tuteur tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : convaincre ou neutraliser le Magi-Tuteur, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-assaut non meurtrier de la Tour. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+monter sans transformer les victimes en pertes acceptables. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 convaincre ou neutraliser le Magi-Tuteur
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Schéma de la Larme de Vael ; Annotation de Sealine ; Registre des 50 patients d'Elian ; Elian comme témoin retournable ; Tour comme dispositif rituel
+- Indices ratés, refusés ou perdus : Consensus public complet ; Tous les ouvrages consultés ; Tous les responsables des accès ; Tous les patients immédiatement localisés ; Échantillons déjà déplacés
+- Décisions des PJ : Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients.
+- Conséquences visibles : Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Conséquence intermédiaire jouée dans L'Assaut de la Tour
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_dephasage / menace_dephasage_revelation : +1 segment (étape 3). Les stocks s'accumulent. La ville produit pour un extérieur qui ne reçoit plus. Le déphasage a un coût économique que les institutions cachent. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère. ; front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4). Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter. ; front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 2
 
 #### 1. MJ Valombre
 
 [Scène]
-Nera ouvre des routes et coupe des glyphes ; Kael impose une regle : liberer quand c'est possible, tuer seulement en dernier recours.
+La Tour Arcanique se dresse au cœur de l'Université. De l'extérieur, elle semble normale. De l'intérieur, elle est transformée. Les premiers étages sont banals — couloirs lambrissés, salles de cours. Mais plus vous montez, plus les murs changent. Des piliers de cristal poussent entre les pierres. Des runes brillent dans les angles. Des objets flottent dans l'air, immobiles.
+
+Au troisième étage, un étudiant vous regarde avec des yeux vides. Il lève la main. Une boule de feu apparaît.
 
 [Informations visibles]
-Les PJ montent la Tour Arcanique. Chaque étage est modifié : piliers de cristal, runes, objets en lévitation. Des étudiants charmés, des gardes piégés, des créatures planaires séduites par Thade. Chaque rencontre a une option non-létale. Le décompte des victimes compte pour l'épilogue. ; Les PJ doivent atteindre le 7e étage et savoir que le sommet contient le vortex. ; Loyalistes retournables
+- Les PJ montent la Tour Arcanique. Chaque étage est modifié : piliers de cristal, runes, objets en lévitation. Des étudiants charmés, des gardes piégés, des créatures planaires séduites par Thade. Chaque rencontre a une option non-létale. Le décompte des victimes compte pour l'épilogue.
+- Atteindre le seuil du sommet en minimisant les victimes.
+- Les PJ doivent atteindre le 7e étage et savoir que le sommet contient le vortex.
 
 [Actions possibles évidentes]
 - infiltrer la Tour (Discrétion, force, ou négociation avec les gardes)
@@ -124,85 +132,89 @@ Les PJ montent la Tour Arcanique. Chaque étage est modifié : piliers de crista
 - éventuellement utiliser le Champion comme force d'assaut
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Thade sait que les PJ montent
+La scène continue : Magi-Tuteur loyal retourné sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Annotation de Sealine ; Registre des 50 patients d'Elian ; Elian comme témoin retournable ; Tour comme dispositif rituel ; Magi-Tuteur loyal retourné
+- Indices ratés, refusés ou perdus : Consensus public complet ; Tous les ouvrages consultés ; Tous les responsables des accès ; Tous les patients immédiatement localisés ; Échantillons déjà déplacés
+- Décisions des PJ : Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients.
+- Conséquences visibles : Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Conséquence intermédiaire jouée dans L'Assaut de la Tour
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_dephasage / menace_dephasage_revelation : +1 segment (étape 3). Les stocks s'accumulent. La ville produit pour un extérieur qui ne reçoit plus. Le déphasage a un coût économique que les institutions cachent. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère. ; front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4). Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter. ; front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : La scene demande un decompte de victimes mais ne fournit pas de tableau standardise.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Contrôle complet de tous les étages.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera teste une approche discrete sans utiliser d'information qu'elle ne possede pas. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : infiltrer la Tour (Discrétion, force, ou négociation avec les gardes) en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : infiltrer la Tour (Discrétion, force, ou négociation avec les gardes), avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael evalue le risque tactique avant que le groupe ne s'engage davantage. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : convaincre ou neutraliser le Magi-Tuteur tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : convaincre ou neutraliser le Magi-Tuteur, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-assaut non meurtrier de la Tour. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+monter sans transformer les victimes en pertes acceptables. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 monter les étages vers le Laboratoire de Verre
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Annotation de Sealine ; Registre des 50 patients d'Elian ; Elian comme témoin retournable ; Tour comme dispositif rituel ; Magi-Tuteur loyal retourné
+- Indices ratés, refusés ou perdus : Consensus public complet ; Tous les ouvrages consultés ; Tous les responsables des accès ; Tous les patients immédiatement localisés ; Échantillons déjà déplacés
+- Décisions des PJ : Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients.
+- Conséquences visibles : Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Conséquence intermédiaire jouée dans L'Assaut de la Tour
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_dephasage / menace_dephasage_revelation : +1 segment (étape 3). Les stocks s'accumulent. La ville produit pour un extérieur qui ne reçoit plus. Le déphasage a un coût économique que les institutions cachent. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère. ; front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4). Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter. ; front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 3
 
 #### 1. MJ Valombre
 
 [Scène]
-Les PJ retournent un Magi-Tuteur loyal en lui montrant le schema, les patients et le registre.
+La Tour Arcanique se dresse au cœur de l'Université. De l'extérieur, elle semble normale. De l'intérieur, elle est transformée. Les premiers étages sont banals — couloirs lambrissés, salles de cours. Mais plus vous montez, plus les murs changent. Des piliers de cristal poussent entre les pierres. Des runes brillent dans les angles. Des objets flottent dans l'air, immobiles.
+
+Au troisième étage, un étudiant vous regarde avec des yeux vides. Il lève la main. Une boule de feu apparaît.
 
 [Informations visibles]
-Les PJ montent la Tour Arcanique. Chaque étage est modifié : piliers de cristal, runes, objets en lévitation. Des étudiants charmés, des gardes piégés, des créatures planaires séduites par Thade. Chaque rencontre a une option non-létale. Le décompte des victimes compte pour l'épilogue. ; Les PJ doivent atteindre le 7e étage et savoir que le sommet contient le vortex. ; Magi-Tuteur loyal epargne
+- Les PJ montent la Tour Arcanique. Chaque étage est modifié : piliers de cristal, runes, objets en lévitation. Des étudiants charmés, des gardes piégés, des créatures planaires séduites par Thade. Chaque rencontre a une option non-létale. Le décompte des victimes compte pour l'épilogue.
+- Atteindre le seuil du sommet en minimisant les victimes.
+- Les PJ doivent atteindre le Laboratoire de Verre au sommet de la Tour, idéalement avec le Magi-Tuteur comme guide.
 
 [Actions possibles évidentes]
 - infiltrer la Tour (Discrétion, force, ou négociation avec les gardes)
@@ -211,85 +223,89 @@ Les PJ montent la Tour Arcanique. Chaque étage est modifié : piliers de crista
 - éventuellement utiliser le Champion comme force d'assaut
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Le rituel accelere
+La scène continue : Décompte des victimes faible sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Annotation de Sealine ; Registre des 50 patients d'Elian ; Elian comme témoin retournable ; Tour comme dispositif rituel ; Magi-Tuteur loyal retourné
+- Indices ratés, refusés ou perdus : Consensus public complet ; Tous les ouvrages consultés ; Tous les responsables des accès ; Tous les patients immédiatement localisés ; Échantillons déjà déplacés
+- Décisions des PJ : Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients.
+- Conséquences visibles : Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Conséquence intermédiaire jouée dans L'Assaut de la Tour
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_dephasage / menace_dephasage_revelation : +1 segment (étape 3). Les stocks s'accumulent. La ville produit pour un extérieur qui ne reçoit plus. Le déphasage a un coût économique que les institutions cachent. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère. ; front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4). Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter. ; front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : La scene demande un decompte de victimes mais ne fournit pas de tableau standardise.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Contrôle complet de tous les étages.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera transforme les indices visibles en levier concret pour la suite. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : infiltrer la Tour (Discrétion, force, ou négociation avec les gardes) en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : infiltrer la Tour (Discrétion, force, ou négociation avec les gardes), avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael cherche une solution droite qui ne bloque pas l'enquete. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : convaincre ou neutraliser le Magi-Tuteur tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : convaincre ou neutraliser le Magi-Tuteur, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-assaut non meurtrier de la Tour. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+monter sans transformer les victimes en pertes acceptables. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 éventuellement utiliser le Champion comme force d'assaut
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Annotation de Sealine ; Registre des 50 patients d'Elian ; Elian comme témoin retournable ; Tour comme dispositif rituel ; Magi-Tuteur loyal retourné
+- Indices ratés, refusés ou perdus : Consensus public complet ; Tous les ouvrages consultés ; Tous les responsables des accès ; Tous les patients immédiatement localisés ; Échantillons déjà déplacés
+- Décisions des PJ : Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients.
+- Conséquences visibles : Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Conséquence intermédiaire jouée dans L'Assaut de la Tour
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_dephasage / menace_dephasage_revelation : +1 segment (étape 3). Les stocks s'accumulent. La ville produit pour un extérieur qui ne reçoit plus. Le déphasage a un coût économique que les institutions cachent. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère. ; front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4). Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter. ; front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 4
 
 #### 1. MJ Valombre
 
 [Scène]
-Ils franchissent les etages en limitant les morts et en comptant chaque victime.
+La Tour Arcanique se dresse au cœur de l'Université. De l'extérieur, elle semble normale. De l'intérieur, elle est transformée. Les premiers étages sont banals — couloirs lambrissés, salles de cours. Mais plus vous montez, plus les murs changent. Des piliers de cristal poussent entre les pierres. Des runes brillent dans les angles. Des objets flottent dans l'air, immobiles.
+
+Au troisième étage, un étudiant vous regarde avec des yeux vides. Il lève la main. Une boule de feu apparaît.
 
 [Informations visibles]
-Les PJ montent la Tour Arcanique. Chaque étage est modifié : piliers de cristal, runes, objets en lévitation. Des étudiants charmés, des gardes piégés, des créatures planaires séduites par Thade. Chaque rencontre a une option non-létale. Le décompte des victimes compte pour l'épilogue. ; Les PJ doivent atteindre le 7e étage et savoir que le sommet contient le vortex. ; Decompte des victimes tenu
+- Les PJ montent la Tour Arcanique. Chaque étage est modifié : piliers de cristal, runes, objets en lévitation. Des étudiants charmés, des gardes piégés, des créatures planaires séduites par Thade. Chaque rencontre a une option non-létale. Le décompte des victimes compte pour l'épilogue.
+- Atteindre le seuil du sommet en minimisant les victimes.
+- Les PJ doivent atteindre le Laboratoire de Verre au sommet de la Tour, idéalement avec le Magi-Tuteur comme guide.
 
 [Actions possibles évidentes]
 - infiltrer la Tour (Discrétion, force, ou négociation avec les gardes)
@@ -298,85 +314,89 @@ Les PJ montent la Tour Arcanique. Chaque étage est modifié : piliers de crista
 - éventuellement utiliser le Champion comme force d'assaut
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Le rituel accelere
+La scène continue : Décompte des victimes faible sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Registre des 50 patients d'Elian ; Elian comme témoin retournable ; Tour comme dispositif rituel ; Magi-Tuteur loyal retourné ; Décompte des victimes faible
+- Indices ratés, refusés ou perdus : Consensus public complet ; Tous les ouvrages consultés ; Tous les responsables des accès ; Tous les patients immédiatement localisés ; Échantillons déjà déplacés
+- Décisions des PJ : Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients.
+- Conséquences visibles : Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Conséquence intermédiaire jouée dans L'Assaut de la Tour
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_dephasage / menace_dephasage_revelation : +1 segment (étape 3). Les stocks s'accumulent. La ville produit pour un extérieur qui ne reçoit plus. Le déphasage a un coût économique que les institutions cachent. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère. ; front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4). Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter. ; front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : La scene demande un decompte de victimes mais ne fournit pas de tableau standardise.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Contrôle complet de tous les étages.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera cherche les failles, les angles morts et ce que les puissants essaient de garder hors champ. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : infiltrer la Tour (Discrétion, force, ou négociation avec les gardes) en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : infiltrer la Tour (Discrétion, force, ou négociation avec les gardes), avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael protege les innocents et pose la limite morale de la scene. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : convaincre ou neutraliser le Magi-Tuteur tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : convaincre ou neutraliser le Magi-Tuteur, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-assaut non meurtrier de la Tour. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+monter sans transformer les victimes en pertes acceptables. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 éventuellement utiliser le Champion comme force d'assaut
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Registre des 50 patients d'Elian ; Elian comme témoin retournable ; Tour comme dispositif rituel ; Magi-Tuteur loyal retourné ; Décompte des victimes faible
+- Indices ratés, refusés ou perdus : Consensus public complet ; Tous les ouvrages consultés ; Tous les responsables des accès ; Tous les patients immédiatement localisés ; Échantillons déjà déplacés
+- Décisions des PJ : Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients.
+- Conséquences visibles : Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Conséquence intermédiaire jouée dans L'Assaut de la Tour
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_dephasage / menace_dephasage_revelation : +1 segment (étape 3). Les stocks s'accumulent. La ville produit pour un extérieur qui ne reçoit plus. Le déphasage a un coût économique que les institutions cachent. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère. ; front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4). Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter. ; front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 5
 
 #### 1. MJ Valombre
 
 [Scène]
-La porte du Laboratoire de Verre s'ouvre sur le septieme etage.
+La Tour Arcanique se dresse au cœur de l'Université. De l'extérieur, elle semble normale. De l'intérieur, elle est transformée. Les premiers étages sont banals — couloirs lambrissés, salles de cours. Mais plus vous montez, plus les murs changent. Des piliers de cristal poussent entre les pierres. Des runes brillent dans les angles. Des objets flottent dans l'air, immobiles.
+
+Au troisième étage, un étudiant vous regarde avec des yeux vides. Il lève la main. Une boule de feu apparaît.
 
 [Informations visibles]
-Les PJ montent la Tour Arcanique. Chaque étage est modifié : piliers de cristal, runes, objets en lévitation. Des étudiants charmés, des gardes piégés, des créatures planaires séduites par Thade. Chaque rencontre a une option non-létale. Le décompte des victimes compte pour l'épilogue. ; Les PJ doivent atteindre le 7e étage et savoir que le sommet contient le vortex. ; Decompte des victimes tenu
+- Les PJ montent la Tour Arcanique. Chaque étage est modifié : piliers de cristal, runes, objets en lévitation. Des étudiants charmés, des gardes piégés, des créatures planaires séduites par Thade. Chaque rencontre a une option non-létale. Le décompte des victimes compte pour l'épilogue.
+- Atteindre le seuil du sommet en minimisant les victimes.
+- Les PJ doivent atteindre le Laboratoire de Verre au sommet de la Tour, idéalement avec le Magi-Tuteur comme guide.
 
 [Actions possibles évidentes]
 - infiltrer la Tour (Discrétion, force, ou négociation avec les gardes)
@@ -385,144 +405,139 @@ Les PJ montent la Tour Arcanique. Chaque étage est modifié : piliers de crista
 - éventuellement utiliser le Champion comme force d'assaut
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Le rituel accelere
+Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : Vers `s2_laboratoire_verre` : comprendre le corps de Thade et ses cahiers.
+- Indices obtenus : Registre des 50 patients d'Elian ; Elian comme témoin retournable ; Tour comme dispositif rituel ; Magi-Tuteur loyal retourné ; Décompte des victimes faible
+- Indices ratés, refusés ou perdus : Consensus public complet ; Tous les ouvrages consultés ; Tous les responsables des accès ; Tous les patients immédiatement localisés ; Échantillons déjà déplacés
+- Décisions des PJ : Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes.
+- Conséquences visibles : Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Conséquence intermédiaire jouée dans L'Assaut de la Tour ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes.
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_dephasage / menace_dephasage_revelation : +1 segment (étape 3). Les stocks s'accumulent. La ville produit pour un extérieur qui ne reçoit plus. Le déphasage a un coût économique que les institutions cachent. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère. ; front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4). Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter. ; front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper.
+- Prochaine piste choisie par les PJ : Vers `s2_laboratoire_verre` : comprendre le corps de Thade et les cahiers.
 
 [Rapport de test]
-- Bug : La scene demande un decompte de victimes mais ne fournit pas de tableau standardise.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Contrôle complet de tous les étages.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Vous avez formule votre prochain mouvement ; comment vous organisez-vous pour la transition ?
+Vous avez formulé votre prochain mouvement ; comment vous organisez-vous avant la transition ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera teste une approche discrete sans utiliser d'information qu'elle ne possede pas. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : infiltrer la Tour (Discrétion, force, ou négociation avec les gardes) en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : infiltrer la Tour (Discrétion, force, ou négociation avec les gardes), avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael evalue le risque tactique avant que le groupe ne s'engage davantage. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : convaincre ou neutraliser le Magi-Tuteur tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : convaincre ou neutraliser le Magi-Tuteur, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-assaut non meurtrier de la Tour. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+monter sans transformer les victimes en pertes acceptables. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
-Vers `s2_laboratoire_verre` : comprendre le corps de Thade et ses cahiers.
+Vers `s2_laboratoire_verre` : comprendre le corps de Thade et les cahiers.
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : Vers `s2_laboratoire_verre` : comprendre le corps de Thade et ses cahiers.
+- Indices obtenus : Registre des 50 patients d'Elian ; Elian comme témoin retournable ; Tour comme dispositif rituel ; Magi-Tuteur loyal retourné ; Décompte des victimes faible
+- Indices ratés, refusés ou perdus : Consensus public complet ; Tous les ouvrages consultés ; Tous les responsables des accès ; Tous les patients immédiatement localisés ; Échantillons déjà déplacés
+- Décisions des PJ : Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes.
+- Conséquences visibles : Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Conséquence intermédiaire jouée dans L'Assaut de la Tour ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes.
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_dephasage / menace_dephasage_revelation : +1 segment (étape 3). Les stocks s'accumulent. La ville produit pour un extérieur qui ne reçoit plus. Le déphasage a un coût économique que les institutions cachent. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère. ; front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4). Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter. ; front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper.
+- Piste concrète choisie : Vers `s2_laboratoire_verre` : comprendre le corps de Thade et les cahiers.
 
 
 ## Indices obtenus
 
-- La Tour est un dispositif rituel
-- Loyalistes retournables
-- Magi-Tuteur loyal epargne
-- Decompte des victimes tenu
+- Tour comme dispositif rituel
+- Magi-Tuteur loyal retourné
+- Décompte des victimes faible
 
 ## Indices ratés, refusés ou perdus
 
-- Controle complet des etages inferieurs
-- Arret immediat du rituel
+- Contrôle complet de tous les étages
+- Arrêt immédiat du rituel
 
 ## Décisions des PJ
 
-- Limiter les morts
-- Epargner le Magi-Tuteur
-- Continuer vers le Laboratoire de Verre
-- Conserver les preuves comme armes morales
+- Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes.
 
 ## Conséquences visibles
 
-- Victimes faibles : etudiants liberes, gardes evites quand possible
-- Thade sait que les PJ montent
-- Le rituel accelere
+- Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes.
+- Les PNJ et factions listés ci-dessous réagissent dans le cadre visible de la scène.
 
 ## PNJ affectés
 
-- Magi-Tuteur loyal
-- Etudiants charmes
-- Gardes pieges
+- etudiants_charmes
+- gardes_pieges
+- creature_spirale_cooptee
+- magi_tuteur_loyal
 
 ## Factions affectées
 
-- Universite Arcanique
-- Resistance
+- Le Plan de Thade
+- Les Factions de la Crise
+- Le Sceau qui cède
+- La Cité sous pression
 
 ## Fronts ou horloges modifiés
 
-- front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4) - Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter.
-- front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5) - Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper.
-
-État retenu pour la campagne :
-- front_plan_thade / menace_loyalistes_tour : verrouillage actif
-- decompte victimes : faible
+- front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4). Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter.
+- front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper.
 
 ## Transition choisie par les PJ
 
-Vers `s2_laboratoire_verre` : comprendre le corps de Thade et ses cahiers.
+Vers `s2_laboratoire_verre` : comprendre le corps de Thade et les cahiers.
 
 ## Manques ou incohérences détectés
 
-- La scene demande un decompte de victimes mais ne fournit pas de tableau standardise.
+- Indice raté/refusé/perdu pendant la simulation : Contrôle complet de tous les étages.
+- Indice raté/refusé/perdu pendant la simulation : Arrêt immédiat du rituel.
 
 ## Recommandations
 
 ### Bug
 
-- Corriger toute divergence d'ID, de lieu ou de secret signalee dans les manques ci-dessus.
+- Corriger les incohérences d'ID, de lieu ou de secret signalées ci-dessus.
 
 ### Dette technique
 
-- Ajouter un etat de campagne machine-readable pour les indices, les fronts, les PNJ allies et le decompte des victimes.
+- Ajouter un état de campagne sérialisé pour les indices, fronts, alliés, patients et victimes de la Tour.
 
 ### Amélioration UX
 
-- Separrer clairement les informations visibles PJ, les notes MJ et les secrets de campagne dans l'interface.
+- Séparer strictement les informations visibles PJ, les notes MJ et les secrets.
 
 ### Amélioration narrative
 
-- Prevoir pour chaque scene une relance de PNJ ou de front qui conserve l'agence des PJ sans bloquer la progression.
+- Ajouter à chaque scène une relance explicite de PNJ ou de front si les PJ hésitent.

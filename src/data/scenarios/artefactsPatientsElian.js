@@ -6,6 +6,40 @@ export const registrePatientsElianVoss = {
   resume:
     "Cinquante patients stabilises par des derives du protocole S-01 apres la catastrophe de Nyx. Chaque dossier porte un cachet de Caldris, une date, un dosage et une piste de localisation.",
   colonnes: ["Code", "Patient", "Origine", "Admission", "Indication", "Dosage", "Resultat", "Localisation"],
+  procedureSuivi: {
+    id: "procedure_suivi_patients_elian",
+    declencheur: "Les PJ recuperent ou copient le registre dans le laboratoire d'Elian Voss.",
+    objectif: "Transformer le registre en suivi patient par patient sans resoudre automatiquement les 50 destins.",
+    statuts: ["a_localiser", "localise", "protege", "temoin", "soins", "disparu", "decede"],
+    priorites: ["critique", "haute", "normale"],
+    etapes: [
+      {
+        id: "copier",
+        action: "Copier le registre complet",
+        resolution: "Lecture directe si les PJ fouillent les cinquante dossiers ; sinon copie partielle marquee dans les preuves.",
+      },
+      {
+        id: "triage",
+        action: "Trier les patients par risque",
+        resolution: "Medecine DD 13 ou aide d'Elian/Olane. Les disparus, dependants au serum, patients chez les Endeuilles et temoins institutionnels passent en priorite haute.",
+      },
+      {
+        id: "protection",
+        action: "Choisir qui proteger d'abord",
+        resolution: "Une scene de suivi couvre 3 patients, ou 5 si les PJ mobilisent Ursula, Mara, Olane ou Hessa.",
+      },
+      {
+        id: "temoignage",
+        action: "Obtenir des temoignages exploitables",
+        resolution: "Un patient protege peut devenir temoin si son etat le permet et si les PJ evitent la pression de Caldris, Thade ou des factions locales.",
+      },
+    ],
+    impacts: [
+      "3 patients proteges donnent un avantage narratif au Conseil ou au jugement de Thade.",
+      "1 patient critique abandonne avance le front des factions si les PJ ont ignore la piste apres recuperation.",
+      "10 patients stabilises et documentes transforment les dossiers d'Elian en preuve publique robuste.",
+    ],
+  },
   lignes: [
     { code: "S-01/R-01", patient: "Mira Veylan", origine: "Caldris, faubourg des Verriers", admission: "17 Rochepluie 812", indication: "Fievres de seuil apres rituel de sauvetage", dosage: "0,4 mesure, trois nuits", resultat: "Stabilisee, migraines violettes", localisation: "Maison des Retours, sous le nom Mira V." },
     { code: "S-01/R-02", patient: "Orel Dast", origine: "Caldris, hospice Saint-Orme", admission: "19 Rochepluie 812", indication: "Coma planaire intermittent", dosage: "0,3 mesure, cinq nuits", resultat: "Stabilise, amnesie partielle", localisation: "Hospice d'Ursula, registre des patients muets" },
@@ -59,3 +93,40 @@ export const registrePatientsElianVoss = {
     { code: "S-01/R-50", patient: "Ysmae Roncelet", origine: "Caldris, clinique des Sceaux", admission: "16 Brumepale 813", indication: "Coeur qui bat en contretemps", dosage: "0,4 mesure, six nuits", resultat: "Stabilisee, pouls de la Larme", localisation: "Laboratoire d'Elian, dernier dossier ouvert" },
   ],
 };
+
+export const suiviPatientsElianInitial = registrePatientsElianVoss.lignes.map((ligne) => ({
+  id: ligne.code,
+  nom: ligne.patient,
+  origine: ligne.origine,
+  localisation: ligne.localisation,
+  statutInitial: statutInitialPatient(ligne.localisation),
+  prioriteInitiale: prioritePatient(ligne),
+  piste: ligne.localisation,
+}));
+
+function statutInitialPatient(localisation) {
+  if (localisation.startsWith("Disparu")) return "disparu";
+  return "a_localiser";
+}
+
+function prioritePatient(ligne) {
+  const texte = `${ligne.resultat} ${ligne.localisation}`.toLowerCase();
+  if (
+    texte.includes("fragilite") ||
+    texte.includes("temoignage") ||
+    texte.includes("preuve") ||
+    texte.includes("confisque") ||
+    texte.includes("dernier dossier")
+  ) {
+    return "critique";
+  }
+  if (
+    texte.includes("disparu") ||
+    texte.includes("dependance") ||
+    texte.includes("danger") ||
+    texte.includes("endeuilles")
+  ) {
+    return "haute";
+  }
+  return "normale";
+}

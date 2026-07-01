@@ -6,13 +6,13 @@ Comprendre le rite d'Edran, stopper les Endeuillés ou les retourner contre Thad
 
 ## Sources consultées
 
-- src/data/scenarios/scenario2_masques_nyx.js : scene `s2_endeuilles_edran`, acte "Acte I — La Crise s'Étend".
-- src/data/scenarios/effetsFronts.js : effets de fronts lies a la scene.
-- src/data/scenarios/fronts.js : fronts, horloges et consequences globales.
-- src/data/personnages/pnj.js et fichiers specialises : PNJ lies par `idsPnj`.
-- src/data/personnages/factions.js : factions affectees.
-- src/data/universe/universeZones.js : lieu lie par `idLieu` quand disponible.
-- .agents/MJ Valombre.toml, .agents/PJ Valombre 1.toml, .agents/PJ Valombre 2.toml : protocole de simulation.
+- src/data/scenarios/scenario2_masques_nyx.js : scène `s2_endeuilles_edran`, acte "Acte I — La Crise s'Étend".
+- src/data/scenarios/effetsFronts.js : effets de fronts par scène.
+- src/data/scenarios/fronts.js : horloges et conséquences globales.
+- src/data/personnages/pnj.js et registres spécialisés : PNJ liés à la scène.
+- src/data/personnages/factions.js : factions et objectifs.
+- src/data/universe/universeZones.js : lieux liés par `idLieu`.
+- .agents/MJ Valombre.toml, .agents/PJ Valombre 1.toml, .agents/PJ Valombre 2.toml : contraintes d'incarnation.
 
 ## Nombre de boucles
 
@@ -25,10 +25,14 @@ Comprendre le rite d'Edran, stopper les Endeuillés ou les retourner contre Thad
 #### 1. MJ Valombre
 
 [Scène]
-Dans une cave de la Vieille Ville, Edran Morn conduit un rite pour des familles endeuillees.
+La Cave des Endeuillés est une cave humide sous un immeuble abandonné. Des chaises dépareillées autour d'une table couverte de cire. Des portraits, des bougies et des objets des morts occupent les niches. L'air lourd sent la cire brûlée et la pierre humide.
+
+Un homme en robe sombre se tient au fond. Son visage est marqué. « Vous avez perdu quelqu'un », dit-il. « Tout le monde a perdu quelqu'un. Ici, nous ne pleurons pas. Nous ouvrons. »
 
 [Informations visibles]
-Les PJ infiltrent ou confrontent les Endeuillés dans la Cave des Endeuillés de la Vieille Ville. Edran Morn prêche un rite de deuil qui accélère le déphasage. Il croit ouvrir une porte vers les morts. En réalité, il ouvre le seuil de la Spirale. ; Les PJ doivent comprendre que le rite d'Edran fissure le sceau et que les textes viennent de l'Université. ; Textes voles portant le tampon de la Reserve Interdite
+- Les PJ infiltrent ou confrontent les Endeuillés dans la Cave des Endeuillés de la Vieille Ville. Edran Morn prêche un rite de deuil qui accélère le déphasage. Il croit ouvrir une porte vers les morts. En réalité, il ouvre le seuil de la Spirale.
+- Comprendre le rite d'Edran, stopper les Endeuillés ou les retourner contre Thade.
+- Les textes volés
 
 [Actions possibles évidentes]
 - trouver les Endeuillés (Vieille Ville, rumeurs, Mara)
@@ -37,85 +41,89 @@ Les PJ infiltrent ou confrontent les Endeuillés dans la Cave des Endeuillés de
 - récupérer les textes utilisés
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Les Endeuilles ne rejoignent pas massivement le Champion
+La scène continue : Textes tamponnés Réserve Interdite sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Rumeurs de soutien logistique ; Le Conseil cherche un coupable simple ; Olane peut encore parler ; Hessa défend les clans ; Textes tamponnés Réserve Interdite
+- Indices ratés, refusés ou perdus : Vote officiel définitif du Conseil ; Financeurs exacts du Champion ; Preuve publique suffisante ; Vote définitif contre la répression ; Mandat direct contre Thade
+- Décisions des PJ : Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique. ; Les PJ obtiennent un délai, mais pas encore un mandat complet contre Thade.
+- Conséquences visibles : Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique. ; Les PJ obtiennent un délai, mais pas encore un mandat complet contre Thade. ; Conséquence intermédiaire jouée dans Les Endeuillés d'Edran Morn
+- PNJ affectés : patrouille_mixte_conseil ; avel_ronce ; hessa_brunefer ; envoye_caldris ; edran_morn
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 3). La dalle se déplace. Les anneaux du Puits vibrent. Des fissures apparaissent. Chaque perturbation se transmet aux autres tombes. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 1). Elian reçoit des patients « stabilisés ». Edran absorbe les familles isolées. Le Champion tient ses premiers discours. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 3). Le Champion impose un choix : pour ou contre Nyx. Edran introduit des rites interdits. Elian commence à effacer ses traces. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 3). Pour rassurer la population, le Conseil désigne Nyx, les clans ou l'Université. Les informations qui compliquent ce récit sont écartées. ; front_factions_crise / menace_endeuilles_radicalisation : +1 segment (segment 2). Ursula reçoit des patients qu'elle ne reconnaît pas. Des familles cherchent un proche. Le Champion obtient une victoire publique.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : Le nombre d'exemplaires des textes interdits n'est pas precise.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Qui a remis physiquement les textes.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera cherche les failles, les angles morts et ce que les puissants essaient de garder hors champ. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : trouver les Endeuillés (Vieille Ville, rumeurs, Mara) en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : trouver les Endeuillés (Vieille Ville, rumeurs, Mara), avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael protege les innocents et pose la limite morale de la scene. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : identifier le rite inversé tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : identifier le rite inversé, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-rencontre avec un deuil radicalise. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+séparer les endeuillés des manipulateurs. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 identifier le rite inversé
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Rumeurs de soutien logistique ; Le Conseil cherche un coupable simple ; Olane peut encore parler ; Hessa défend les clans ; Textes tamponnés Réserve Interdite
+- Indices ratés, refusés ou perdus : Vote officiel définitif du Conseil ; Financeurs exacts du Champion ; Preuve publique suffisante ; Vote définitif contre la répression ; Mandat direct contre Thade
+- Décisions des PJ : Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique. ; Les PJ obtiennent un délai, mais pas encore un mandat complet contre Thade.
+- Conséquences visibles : Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique. ; Les PJ obtiennent un délai, mais pas encore un mandat complet contre Thade. ; Conséquence intermédiaire jouée dans Les Endeuillés d'Edran Morn
+- PNJ affectés : patrouille_mixte_conseil ; avel_ronce ; hessa_brunefer ; envoye_caldris ; edran_morn
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 3). La dalle se déplace. Les anneaux du Puits vibrent. Des fissures apparaissent. Chaque perturbation se transmet aux autres tombes. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 1). Elian reçoit des patients « stabilisés ». Edran absorbe les familles isolées. Le Champion tient ses premiers discours. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 3). Le Champion impose un choix : pour ou contre Nyx. Edran introduit des rites interdits. Elian commence à effacer ses traces. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 3). Pour rassurer la population, le Conseil désigne Nyx, les clans ou l'Université. Les informations qui compliquent ce récit sont écartées. ; front_factions_crise / menace_endeuilles_radicalisation : +1 segment (segment 2). Ursula reçoit des patients qu'elle ne reconnaît pas. Des familles cherchent un proche. Le Champion obtient une victoire publique.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 2
 
 #### 1. MJ Valombre
 
 [Scène]
-Nera identifie des textes portant le tampon de la Reserve Interdite ; Kael parle aux familles plutot qu'au gourou seul.
+La Cave des Endeuillés est une cave humide sous un immeuble abandonné. Des chaises dépareillées autour d'une table couverte de cire. Des portraits, des bougies et des objets des morts occupent les niches. L'air lourd sent la cire brûlée et la pierre humide.
+
+Un homme en robe sombre se tient au fond. Son visage est marqué. « Vous avez perdu quelqu'un », dit-il. « Tout le monde a perdu quelqu'un. Ici, nous ne pleurons pas. Nous ouvrons. »
 
 [Informations visibles]
-Les PJ infiltrent ou confrontent les Endeuillés dans la Cave des Endeuillés de la Vieille Ville. Edran Morn prêche un rite de deuil qui accélère le déphasage. Il croit ouvrir une porte vers les morts. En réalité, il ouvre le seuil de la Spirale. ; Les PJ doivent comprendre que le rite d'Edran fissure le sceau et que les textes viennent de l'Université. ; Rite d'Edhrek-Murn inverse
+- Les PJ infiltrent ou confrontent les Endeuillés dans la Cave des Endeuillés de la Vieille Ville. Edran Morn prêche un rite de deuil qui accélère le déphasage. Il croit ouvrir une porte vers les morts. En réalité, il ouvre le seuil de la Spirale.
+- Comprendre le rite d'Edran, stopper les Endeuillés ou les retourner contre Thade.
+- Le rite inversé
 
 [Actions possibles évidentes]
 - trouver les Endeuillés (Vieille Ville, rumeurs, Mara)
@@ -124,85 +132,89 @@ Les PJ infiltrent ou confrontent les Endeuillés dans la Cave des Endeuillés de
 - récupérer les textes utilisés
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Le sceau cesse d'etre attaque par ce rite local
+La scène continue : Edhrek-Murn inversé sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Le Conseil cherche un coupable simple ; Olane peut encore parler ; Hessa défend les clans ; Textes tamponnés Réserve Interdite ; Edhrek-Murn inversé
+- Indices ratés, refusés ou perdus : Vote officiel définitif du Conseil ; Financeurs exacts du Champion ; Preuve publique suffisante ; Vote définitif contre la répression ; Mandat direct contre Thade
+- Décisions des PJ : Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique. ; Les PJ obtiennent un délai, mais pas encore un mandat complet contre Thade.
+- Conséquences visibles : Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique. ; Les PJ obtiennent un délai, mais pas encore un mandat complet contre Thade. ; Conséquence intermédiaire jouée dans Les Endeuillés d'Edran Morn
+- PNJ affectés : patrouille_mixte_conseil ; avel_ronce ; hessa_brunefer ; envoye_caldris ; edran_morn
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 3). La dalle se déplace. Les anneaux du Puits vibrent. Des fissures apparaissent. Chaque perturbation se transmet aux autres tombes. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 1). Elian reçoit des patients « stabilisés ». Edran absorbe les familles isolées. Le Champion tient ses premiers discours. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 3). Le Champion impose un choix : pour ou contre Nyx. Edran introduit des rites interdits. Elian commence à effacer ses traces. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 3). Pour rassurer la population, le Conseil désigne Nyx, les clans ou l'Université. Les informations qui compliquent ce récit sont écartées. ; front_factions_crise / menace_endeuilles_radicalisation : +1 segment (segment 2). Ursula reçoit des patients qu'elle ne reconnaît pas. Des familles cherchent un proche. Le Champion obtient une victoire publique.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : Le nombre d'exemplaires des textes interdits n'est pas precise.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Qui a remis physiquement les textes.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera teste une approche discrete sans utiliser d'information qu'elle ne possede pas. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : trouver les Endeuillés (Vieille Ville, rumeurs, Mara) en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : trouver les Endeuillés (Vieille Ville, rumeurs, Mara), avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael evalue le risque tactique avant que le groupe ne s'engage davantage. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : identifier le rite inversé tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : identifier le rite inversé, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-rencontre avec un deuil radicalise. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+séparer les endeuillés des manipulateurs. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 arrêter Edran ou le rite (combat, négociation, contre-rite)
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Le Conseil cherche un coupable simple ; Olane peut encore parler ; Hessa défend les clans ; Textes tamponnés Réserve Interdite ; Edhrek-Murn inversé
+- Indices ratés, refusés ou perdus : Vote officiel définitif du Conseil ; Financeurs exacts du Champion ; Preuve publique suffisante ; Vote définitif contre la répression ; Mandat direct contre Thade
+- Décisions des PJ : Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique. ; Les PJ obtiennent un délai, mais pas encore un mandat complet contre Thade.
+- Conséquences visibles : Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique. ; Les PJ obtiennent un délai, mais pas encore un mandat complet contre Thade. ; Conséquence intermédiaire jouée dans Les Endeuillés d'Edran Morn
+- PNJ affectés : patrouille_mixte_conseil ; avel_ronce ; hessa_brunefer ; envoye_caldris ; edran_morn
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 3). La dalle se déplace. Les anneaux du Puits vibrent. Des fissures apparaissent. Chaque perturbation se transmet aux autres tombes. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 1). Elian reçoit des patients « stabilisés ». Edran absorbe les familles isolées. Le Champion tient ses premiers discours. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 3). Le Champion impose un choix : pour ou contre Nyx. Edran introduit des rites interdits. Elian commence à effacer ses traces. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 3). Pour rassurer la population, le Conseil désigne Nyx, les clans ou l'Université. Les informations qui compliquent ce récit sont écartées. ; front_factions_crise / menace_endeuilles_radicalisation : +1 segment (segment 2). Ursula reçoit des patients qu'elle ne reconnaît pas. Des familles cherchent un proche. Le Champion obtient une victoire publique.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 3
 
 #### 1. MJ Valombre
 
 [Scène]
-Thorgar reconnait les gestes d'Edhrek-Murn inverses et les PJ montrent a Edran que son rite menace les vivants.
+La Cave des Endeuillés est une cave humide sous un immeuble abandonné. Des chaises dépareillées autour d'une table couverte de cire. Des portraits, des bougies et des objets des morts occupent les niches. L'air lourd sent la cire brûlée et la pierre humide.
+
+Un homme en robe sombre se tient au fond. Son visage est marqué. « Vous avez perdu quelqu'un », dit-il. « Tout le monde a perdu quelqu'un. Ici, nous ne pleurons pas. Nous ouvrons. »
 
 [Informations visibles]
-Les PJ infiltrent ou confrontent les Endeuillés dans la Cave des Endeuillés de la Vieille Ville. Edran Morn prêche un rite de deuil qui accélère le déphasage. Il croit ouvrir une porte vers les morts. En réalité, il ouvre le seuil de la Spirale. ; Les PJ doivent comprendre que le rite d'Edran fissure le sceau et que les textes viennent de l'Université. ; Edran est un relais involontaire
+- Les PJ infiltrent ou confrontent les Endeuillés dans la Cave des Endeuillés de la Vieille Ville. Edran Morn prêche un rite de deuil qui accélère le déphasage. Il croit ouvrir une porte vers les morts. En réalité, il ouvre le seuil de la Spirale.
+- Comprendre le rite d'Edran, stopper les Endeuillés ou les retourner contre Thade.
+- Les PJ doivent comprendre que le rite d'Edran fissure le sceau et que les textes viennent de l'Université.
 
 [Actions possibles évidentes]
 - trouver les Endeuillés (Vieille Ville, rumeurs, Mara)
@@ -211,85 +223,89 @@ Les PJ infiltrent ou confrontent les Endeuillés dans la Cave des Endeuillés de
 - récupérer les textes utilisés
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Edran devient temoin brise mais vivant
+La scène continue : Edran relais involontaire sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Olane peut encore parler ; Hessa défend les clans ; Textes tamponnés Réserve Interdite ; Edhrek-Murn inversé ; Edran relais involontaire
+- Indices ratés, refusés ou perdus : Vote officiel définitif du Conseil ; Financeurs exacts du Champion ; Preuve publique suffisante ; Vote définitif contre la répression ; Mandat direct contre Thade
+- Décisions des PJ : Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique. ; Les PJ obtiennent un délai, mais pas encore un mandat complet contre Thade.
+- Conséquences visibles : Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique. ; Les PJ obtiennent un délai, mais pas encore un mandat complet contre Thade. ; Conséquence intermédiaire jouée dans Les Endeuillés d'Edran Morn
+- PNJ affectés : patrouille_mixte_conseil ; avel_ronce ; hessa_brunefer ; envoye_caldris ; edran_morn
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 3). La dalle se déplace. Les anneaux du Puits vibrent. Des fissures apparaissent. Chaque perturbation se transmet aux autres tombes. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 1). Elian reçoit des patients « stabilisés ». Edran absorbe les familles isolées. Le Champion tient ses premiers discours. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 3). Le Champion impose un choix : pour ou contre Nyx. Edran introduit des rites interdits. Elian commence à effacer ses traces. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 3). Pour rassurer la population, le Conseil désigne Nyx, les clans ou l'Université. Les informations qui compliquent ce récit sont écartées. ; front_factions_crise / menace_endeuilles_radicalisation : +1 segment (segment 2). Ursula reçoit des patients qu'elle ne reconnaît pas. Des familles cherchent un proche. Le Champion obtient une victoire publique.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : Le nombre d'exemplaires des textes interdits n'est pas precise.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Qui a remis physiquement les textes.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera transforme les indices visibles en levier concret pour la suite. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : trouver les Endeuillés (Vieille Ville, rumeurs, Mara) en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : trouver les Endeuillés (Vieille Ville, rumeurs, Mara), avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael cherche une solution droite qui ne bloque pas l'enquete. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : identifier le rite inversé tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : identifier le rite inversé, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-rencontre avec un deuil radicalise. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+séparer les endeuillés des manipulateurs. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 récupérer les textes utilisés
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Olane peut encore parler ; Hessa défend les clans ; Textes tamponnés Réserve Interdite ; Edhrek-Murn inversé ; Edran relais involontaire
+- Indices ratés, refusés ou perdus : Vote officiel définitif du Conseil ; Financeurs exacts du Champion ; Preuve publique suffisante ; Vote définitif contre la répression ; Mandat direct contre Thade
+- Décisions des PJ : Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine. ; Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique. ; Les PJ obtiennent un délai, mais pas encore un mandat complet contre Thade.
+- Conséquences visibles : Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique. ; Les PJ obtiennent un délai, mais pas encore un mandat complet contre Thade. ; Conséquence intermédiaire jouée dans Les Endeuillés d'Edran Morn
+- PNJ affectés : patrouille_mixte_conseil ; avel_ronce ; hessa_brunefer ; envoye_caldris ; edran_morn
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 3). La dalle se déplace. Les anneaux du Puits vibrent. Des fissures apparaissent. Chaque perturbation se transmet aux autres tombes. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 1). Elian reçoit des patients « stabilisés ». Edran absorbe les familles isolées. Le Champion tient ses premiers discours. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 3). Le Champion impose un choix : pour ou contre Nyx. Edran introduit des rites interdits. Elian commence à effacer ses traces. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 3). Pour rassurer la population, le Conseil désigne Nyx, les clans ou l'Université. Les informations qui compliquent ce récit sont écartées. ; front_factions_crise / menace_endeuilles_radicalisation : +1 segment (segment 2). Ursula reçoit des patients qu'elle ne reconnaît pas. Des familles cherchent un proche. Le Champion obtient une victoire publique.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 4
 
 #### 1. MJ Valombre
 
 [Scène]
-Les textes sont saisis et les Endeuilles se dispersent sans massacre.
+La Cave des Endeuillés est une cave humide sous un immeuble abandonné. Des chaises dépareillées autour d'une table couverte de cire. Des portraits, des bougies et des objets des morts occupent les niches. L'air lourd sent la cire brûlée et la pierre humide.
+
+Un homme en robe sombre se tient au fond. Son visage est marqué. « Vous avez perdu quelqu'un », dit-il. « Tout le monde a perdu quelqu'un. Ici, nous ne pleurons pas. Nous ouvrons. »
 
 [Informations visibles]
-Les PJ infiltrent ou confrontent les Endeuillés dans la Cave des Endeuillés de la Vieille Ville. Edran Morn prêche un rite de deuil qui accélère le déphasage. Il croit ouvrir une porte vers les morts. En réalité, il ouvre le seuil de la Spirale. ; Les PJ doivent comprendre que le rite d'Edran fissure le sceau et que les textes viennent de l'Université. ; Thade a arme indirectement les Endeuilles
+- Les PJ infiltrent ou confrontent les Endeuillés dans la Cave des Endeuillés de la Vieille Ville. Edran Morn prêche un rite de deuil qui accélère le déphasage. Il croit ouvrir une porte vers les morts. En réalité, il ouvre le seuil de la Spirale.
+- Comprendre le rite d'Edran, stopper les Endeuillés ou les retourner contre Thade.
+- Les PJ doivent savoir que le rite d'Edran est un Edhrek-Murn inversé et que les textes viennent de la Réserve Interdite de l'Université.
 
 [Actions possibles évidentes]
 - trouver les Endeuillés (Vieille Ville, rumeurs, Mara)
@@ -298,143 +314,135 @@ Les PJ infiltrent ou confrontent les Endeuillés dans la Cave des Endeuillés de
 - récupérer les textes utilisés
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Edran devient temoin brise mais vivant
+Les PJ retournent Edran sans massacre et sécurisent les textes interdits.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : Vers `s2_dephasage_visible` : examiner les anomalies que la foule et les rites ont masquees.
+- Indices obtenus : Olane peut encore parler ; Hessa défend les clans ; Textes tamponnés Réserve Interdite ; Edhrek-Murn inversé ; Edran relais involontaire
+- Indices ratés, refusés ou perdus : Vote officiel définitif du Conseil ; Financeurs exacts du Champion ; Preuve publique suffisante ; Vote définitif contre la répression ; Mandat direct contre Thade
+- Décisions des PJ : Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique. ; Les PJ obtiennent un délai, mais pas encore un mandat complet contre Thade. ; Les PJ retournent Edran sans massacre et sécurisent les textes interdits.
+- Conséquences visibles : Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique. ; Les PJ obtiennent un délai, mais pas encore un mandat complet contre Thade. ; Conséquence intermédiaire jouée dans Les Endeuillés d'Edran Morn ; Les PJ retournent Edran sans massacre et sécurisent les textes interdits.
+- PNJ affectés : patrouille_mixte_conseil ; avel_ronce ; hessa_brunefer ; envoye_caldris ; edran_morn
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 3). La dalle se déplace. Les anneaux du Puits vibrent. Des fissures apparaissent. Chaque perturbation se transmet aux autres tombes. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 1). Elian reçoit des patients « stabilisés ». Edran absorbe les familles isolées. Le Champion tient ses premiers discours. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 3). Le Champion impose un choix : pour ou contre Nyx. Edran introduit des rites interdits. Elian commence à effacer ses traces. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 3). Pour rassurer la population, le Conseil désigne Nyx, les clans ou l'Université. Les informations qui compliquent ce récit sont écartées. ; front_factions_crise / menace_endeuilles_radicalisation : +1 segment (segment 2). Ursula reçoit des patients qu'elle ne reconnaît pas. Des familles cherchent un proche. Le Champion obtient une victoire publique.
+- Prochaine piste choisie par les PJ : Vers `s2_dephasage_visible` : examiner les anomalies que les factions masquent.
 
 [Rapport de test]
-- Bug : Le nombre d'exemplaires des textes interdits n'est pas precise.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Qui a remis physiquement les textes.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Vous avez formule votre prochain mouvement ; comment vous organisez-vous pour la transition ?
+Vous avez formulé votre prochain mouvement ; comment vous organisez-vous avant la transition ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera cherche les failles, les angles morts et ce que les puissants essaient de garder hors champ. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : trouver les Endeuillés (Vieille Ville, rumeurs, Mara) en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : trouver les Endeuillés (Vieille Ville, rumeurs, Mara), avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael protege les innocents et pose la limite morale de la scene. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : identifier le rite inversé tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : identifier le rite inversé, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-rencontre avec un deuil radicalise. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+séparer les endeuillés des manipulateurs. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
-Vers `s2_dephasage_visible` : examiner les anomalies que la foule et les rites ont masquees.
+Vers `s2_dephasage_visible` : examiner les anomalies que les factions masquent.
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : Vers `s2_dephasage_visible` : examiner les anomalies que la foule et les rites ont masquees.
+- Indices obtenus : Olane peut encore parler ; Hessa défend les clans ; Textes tamponnés Réserve Interdite ; Edhrek-Murn inversé ; Edran relais involontaire
+- Indices ratés, refusés ou perdus : Vote officiel définitif du Conseil ; Financeurs exacts du Champion ; Preuve publique suffisante ; Vote définitif contre la répression ; Mandat direct contre Thade
+- Décisions des PJ : Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur. ; Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique. ; Les PJ obtiennent un délai, mais pas encore un mandat complet contre Thade. ; Les PJ retournent Edran sans massacre et sécurisent les textes interdits.
+- Conséquences visibles : Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar. ; Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique. ; Les PJ obtiennent un délai, mais pas encore un mandat complet contre Thade. ; Conséquence intermédiaire jouée dans Les Endeuillés d'Edran Morn ; Les PJ retournent Edran sans massacre et sécurisent les textes interdits.
+- PNJ affectés : patrouille_mixte_conseil ; avel_ronce ; hessa_brunefer ; envoye_caldris ; edran_morn
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 3). La dalle se déplace. Les anneaux du Puits vibrent. Des fissures apparaissent. Chaque perturbation se transmet aux autres tombes. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 1). Elian reçoit des patients « stabilisés ». Edran absorbe les familles isolées. Le Champion tient ses premiers discours. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 3). Le Champion impose un choix : pour ou contre Nyx. Edran introduit des rites interdits. Elian commence à effacer ses traces. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 3). Pour rassurer la population, le Conseil désigne Nyx, les clans ou l'Université. Les informations qui compliquent ce récit sont écartées. ; front_factions_crise / menace_endeuilles_radicalisation : +1 segment (segment 2). Ursula reçoit des patients qu'elle ne reconnaît pas. Des familles cherchent un proche. Le Champion obtient une victoire publique.
+- Piste concrète choisie : Vers `s2_dephasage_visible` : examiner les anomalies que les factions masquent.
 
 
 ## Indices obtenus
 
-- Textes voles portant le tampon de la Reserve Interdite
-- Rite d'Edhrek-Murn inverse
-- Edran est un relais involontaire
-- Thade a arme indirectement les Endeuilles
+- Textes tamponnés Réserve Interdite
+- Edhrek-Murn inversé
+- Edran relais involontaire
 
 ## Indices ratés, refusés ou perdus
 
-- Qui a remis physiquement les textes a Edran
-- Tous les exemplaires des textes
+- Qui a remis physiquement les textes
+- Tous les exemplaires
 
 ## Décisions des PJ
 
-- Convaincre plutot que tuer Edran
-- Detruire ou securiser les textes
-- Comparer les tampons avec la Reserve
+- Les PJ retournent Edran sans massacre et sécurisent les textes interdits.
 
 ## Conséquences visibles
 
-- Les Endeuilles ne rejoignent pas massivement le Champion
-- Le sceau cesse d'etre attaque par ce rite local
-- Edran devient temoin brise mais vivant
+- Les PJ retournent Edran sans massacre et sécurisent les textes interdits.
+- Les PNJ et factions listés ci-dessous réagissent dans le cadre visible de la scène.
 
 ## PNJ affectés
 
-- Edran Morn
-- Thorgar
-- Familles endeuillees
+- edran_morn
 
 ## Factions affectées
 
-- Ordre de Nyx
-- Resistance
-- Universite
+- Le Plan de Thade
+- Les Factions de la Crise
+- Le Sceau qui cède
+- La Cité sous pression
 
 ## Fronts ou horloges modifiés
 
-- front_factions_crise / menace_endeuilles_radicalisation : +1 segment (segment 2) - Ursula reçoit des patients qu'elle ne reconnaît pas. Des familles cherchent un proche. Le Champion obtient une victoire publique.
-
-État retenu pour la campagne :
-- front_sceau_qui_cede : ralentissement narratif d'un segment potentiel
-- front_factions_crise : stabilise a 2/6
+- front_factions_crise / menace_endeuilles_radicalisation : +1 segment (segment 2). Ursula reçoit des patients qu'elle ne reconnaît pas. Des familles cherchent un proche. Le Champion obtient une victoire publique.
 
 ## Transition choisie par les PJ
 
-Vers `s2_dephasage_visible` : examiner les anomalies que la foule et les rites ont masquees.
+Vers `s2_dephasage_visible` : examiner les anomalies que les factions masquent.
 
 ## Manques ou incohérences détectés
 
-- Le nombre d'exemplaires des textes interdits n'est pas precise.
+- Indice raté/refusé/perdu pendant la simulation : Qui a remis physiquement les textes.
+- Indice raté/refusé/perdu pendant la simulation : Tous les exemplaires.
 
 ## Recommandations
 
 ### Bug
 
-- Corriger toute divergence d'ID, de lieu ou de secret signalee dans les manques ci-dessus.
+- Corriger les incohérences d'ID, de lieu ou de secret signalées ci-dessus.
 
 ### Dette technique
 
-- Ajouter un etat de campagne machine-readable pour les indices, les fronts, les PNJ allies et le decompte des victimes.
+- Ajouter un état de campagne sérialisé pour les indices, fronts, alliés, patients et victimes de la Tour.
 
 ### Amélioration UX
 
-- Separrer clairement les informations visibles PJ, les notes MJ et les secrets de campagne dans l'interface.
+- Séparer strictement les informations visibles PJ, les notes MJ et les secrets.
 
 ### Amélioration narrative
 
-- Prevoir pour chaque scene une relance de PNJ ou de front qui conserve l'agence des PJ sans bloquer la progression.
+- Ajouter à chaque scène une relance explicite de PNJ ou de front si les PJ hésitent.

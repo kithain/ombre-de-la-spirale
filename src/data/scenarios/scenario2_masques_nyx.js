@@ -877,11 +877,11 @@ export const scenario2 = {
         utilisable_pour: "Prouver le rôle de la Larme comme catalyseur et l'implication de Caldris. Présenter au Conseil.",
       },
       {
-        objet: "Dossiers des patients d'Elian Voss (copie partielle)",
+        objet: "Dossiers des patients d'Elian Voss (registre complet)",
         scene: "Le Laboratoire d'Elian Voss",
         type: "Physique — copie, emportable",
         description: "Cinquante dossiers « stabilisés ». Noms, dates, dosages. Cachet de Caldris sur chaque dossier.",
-        utilisable_pour: "Prouver la reproduction de S-01 sur des vivants. Présenter au Conseil ou au magi-tuteur.",
+        utilisable_pour: "Prouver la reproduction de S-01 sur des vivants. Déclencher le suivi patient par patient. Présenter au Conseil ou au magi-tuteur.",
       },
       {
         objet: "Sept bocaux (témoignage ou description)",

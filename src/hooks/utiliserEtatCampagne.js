@@ -19,6 +19,11 @@ function creerEtatVide() {
       statut: front.statutInitial || "actif",
     })),
     victimes: objetParId(etatCampagneInitial.victimes, (victime) => victime.valeurInitiale || 0),
+    patients: objetParId(etatCampagneInitial.patients, (patient) => ({
+      statut: patient.statutInitial || "a_localiser",
+      priorite: patient.prioriteInitiale || "normale",
+      note: "",
+    })),
     choix: objetParId(etatCampagneInitial.choix, (choix) => choix.valeurInitiale || ""),
   };
 }
@@ -33,6 +38,7 @@ function fusionnerEtat(etat) {
     allies: { ...base.allies, ...(etat?.allies || {}) },
     fronts: { ...base.fronts, ...(etat?.fronts || {}) },
     victimes: { ...base.victimes, ...(etat?.victimes || {}) },
+    patients: { ...base.patients, ...(etat?.patients || {}) },
     choix: { ...base.choix, ...(etat?.choix || {}) },
   };
 }
@@ -98,6 +104,19 @@ export function utiliserEtatCampagne() {
     });
   }, [definirEtatStocke]);
 
+  const definirPatient = useCallback((id, miseAJour) => {
+    definirEtatStocke((etatPrecedent) => {
+      const etatFusionne = fusionnerEtat(etatPrecedent);
+      return {
+        ...etatFusionne,
+        patients: {
+          ...etatFusionne.patients,
+          [id]: { ...etatFusionne.patients[id], ...miseAJour },
+        },
+      };
+    });
+  }, [definirEtatStocke]);
+
   const definirChoix = useCallback((id, valeur) => {
     definirEtatStocke((etatPrecedent) => {
       const etatFusionne = fusionnerEtat(etatPrecedent);
@@ -120,6 +139,7 @@ export function utiliserEtatCampagne() {
     definirAllie,
     definirFront,
     definirVictime,
+    definirPatient,
     definirChoix,
     reinitialiserEtatCampagne,
   };

@@ -6,13 +6,13 @@ Trouver la trace des recherches de Thade et comprendre ce qu'il prépare.
 
 ## Sources consultées
 
-- src/data/scenarios/scenario2_masques_nyx.js : scene `s2_reserve_interdite`, acte "Acte II — La Tour s'Éveille".
-- src/data/scenarios/effetsFronts.js : effets de fronts lies a la scene.
-- src/data/scenarios/fronts.js : fronts, horloges et consequences globales.
-- src/data/personnages/pnj.js et fichiers specialises : PNJ lies par `idsPnj`.
-- src/data/personnages/factions.js : factions affectees.
-- src/data/universe/universeZones.js : lieu lie par `idLieu` quand disponible.
-- .agents/MJ Valombre.toml, .agents/PJ Valombre 1.toml, .agents/PJ Valombre 2.toml : protocole de simulation.
+- src/data/scenarios/scenario2_masques_nyx.js : scène `s2_reserve_interdite`, acte "Acte II — La Tour s'Éveille".
+- src/data/scenarios/effetsFronts.js : effets de fronts par scène.
+- src/data/scenarios/fronts.js : horloges et conséquences globales.
+- src/data/personnages/pnj.js et registres spécialisés : PNJ liés à la scène.
+- src/data/personnages/factions.js : factions et objectifs.
+- src/data/universe/universeZones.js : lieux liés par `idLieu`.
+- .agents/MJ Valombre.toml, .agents/PJ Valombre 1.toml, .agents/PJ Valombre 2.toml : contraintes d'incarnation.
 
 ## Nombre de boucles
 
@@ -25,10 +25,14 @@ Trouver la trace des recherches de Thade et comprendre ce qu'il prépare.
 #### 1. MJ Valombre
 
 [Scène]
-La Reserve de Recherche Interdite est silencieuse, trop rangee, gardee par procedures plus que par personnes.
+La Réserve de Recherche Interdite est un niveau souterrain de la bibliothèque centrale. Froid sec, lampes à mana basses, livres aux couvertures scellées de cire blanche. L'air sent le papier ancien et la cire.
+
+Un registre est posé sur le lutrin. Les noms des Maîtres qui ont consulté les ouvrages. Celui de Thade apparaît 142 fois sur huit ans.
 
 [Informations visibles]
-Les PJ accèdent à la Réserve de Recherche Interdite de la bibliothèque. Ils y trouvent le registre des consultations de Thade : 142 séances sur huit ans, avec un effondrement après la mort de Sealine. La trace écrite de la préparation de Thade. ; Les PJ doivent savoir que Thade a consulté 142 fois la Réserve et que ses recherches portaient sur les seuils planaires. ; Registre des 142 consultations de Thade
+- Les PJ accèdent à la Réserve de Recherche Interdite de la bibliothèque. Ils y trouvent le registre des consultations de Thade : 142 séances sur huit ans, avec un effondrement après la mort de Sealine. La trace écrite de la préparation de Thade.
+- Trouver la trace des recherches de Thade et comprendre ce qu'il prépare.
+- Le registre de Thade
 
 [Actions possibles évidentes]
 - accéder à la Réserve (avec Olane ou par effraction)
@@ -37,85 +41,89 @@ Les PJ accèdent à la Réserve de Recherche Interdite de la bibliothèque. Ils 
 - comprendre que Thade a planifié pendant huit ans
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. La preuve documentaire contre Thade devient solide
+La scène continue : 142 consultations de Thade sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Guilde Marchande masque la crise ; Preuve de Caldris ; Valombre déjà piégée ; Mandat limité contre la Tour ; 142 consultations de Thade
+- Indices ratés, refusés ou perdus : Limite géographique exacte ; Complicité exacte des grandes maisons ; Réaction complète de Caldris ; Arrestation immédiate de Thade ; Consensus public complet
+- Décisions des PJ : Les PJ sauvent les habitants proches et relient les filaments au Puits de l'Abîme. ; Les PJ gardent les lettres comme preuve et décident de tester une route extérieure. ; Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale.
+- Conséquences visibles : Les PJ gardent les lettres comme preuve et décident de tester une route extérieure. ; Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Conséquence intermédiaire jouée dans La Réserve de Recherche Interdite
+- PNJ affectés : hessa_brunefer ; envoye_caldris ; edran_morn ; odran_bellec ; yselle_vaurin
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_dephasage / menace_dephasage_revelation : +1 segment (étape 4). Les routes ramènent au même point. La ville ne laisse pas sortir. Le déphasage n'est plus une rumeur — c'est un fait vécu. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 3). Crise économique masquée. Stocks bloqués. Les institutions cachent la réalité pour éviter la panique. La confiance s'érode. ; front_dephasage / menace_dephasage_revelation : +1 segment (étape 3). Les stocks s'accumulent. La ville produit pour un extérieur qui ne reçoit plus. Le déphasage a un coût économique que les institutions cachent. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : La scene mentionne parfois `s2_laboratoire_voss` en transition mais l'ID reel est `s2_laboratoire_elian`.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Tous les ouvrages consultés.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera cherche les failles, les angles morts et ce que les puissants essaient de garder hors champ. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : accéder à la Réserve (avec Olane ou par effraction) en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : accéder à la Réserve (avec Olane ou par effraction), avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael protege les innocents et pose la limite morale de la scene. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : déchiffrer les 142 séances (Connaissances) tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : déchiffrer les 142 séances (Connaissances), en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-preuve ecrite contre Thade. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+prendre la preuve écrite sans détruire le savoir. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 déchiffrer les 142 séances (Connaissances)
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Guilde Marchande masque la crise ; Preuve de Caldris ; Valombre déjà piégée ; Mandat limité contre la Tour ; 142 consultations de Thade
+- Indices ratés, refusés ou perdus : Limite géographique exacte ; Complicité exacte des grandes maisons ; Réaction complète de Caldris ; Arrestation immédiate de Thade ; Consensus public complet
+- Décisions des PJ : Les PJ sauvent les habitants proches et relient les filaments au Puits de l'Abîme. ; Les PJ gardent les lettres comme preuve et décident de tester une route extérieure. ; Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale.
+- Conséquences visibles : Les PJ gardent les lettres comme preuve et décident de tester une route extérieure. ; Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Conséquence intermédiaire jouée dans La Réserve de Recherche Interdite
+- PNJ affectés : hessa_brunefer ; envoye_caldris ; edran_morn ; odran_bellec ; yselle_vaurin
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_dephasage / menace_dephasage_revelation : +1 segment (étape 4). Les routes ramènent au même point. La ville ne laisse pas sortir. Le déphasage n'est plus une rumeur — c'est un fait vécu. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 3). Crise économique masquée. Stocks bloqués. Les institutions cachent la réalité pour éviter la panique. La confiance s'érode. ; front_dephasage / menace_dephasage_revelation : +1 segment (étape 3). Les stocks s'accumulent. La ville produit pour un extérieur qui ne reçoit plus. Le déphasage a un coût économique que les institutions cachent. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 2
 
 #### 1. MJ Valombre
 
 [Scène]
-Nera ouvre le registre ; Kael surveille et refuse de detruire les ouvrages par peur.
+La Réserve de Recherche Interdite est un niveau souterrain de la bibliothèque centrale. Froid sec, lampes à mana basses, livres aux couvertures scellées de cire blanche. L'air sent le papier ancien et la cire.
+
+Un registre est posé sur le lutrin. Les noms des Maîtres qui ont consulté les ouvrages. Celui de Thade apparaît 142 fois sur huit ans.
 
 [Informations visibles]
-Les PJ accèdent à la Réserve de Recherche Interdite de la bibliothèque. Ils y trouvent le registre des consultations de Thade : 142 séances sur huit ans, avec un effondrement après la mort de Sealine. La trace écrite de la préparation de Thade. ; Les PJ doivent savoir que Thade a consulté 142 fois la Réserve et que ses recherches portaient sur les seuils planaires. ; Themes : seuils, ancrages, resonance planaire
+- Les PJ accèdent à la Réserve de Recherche Interdite de la bibliothèque. Ils y trouvent le registre des consultations de Thade : 142 séances sur huit ans, avec un effondrement après la mort de Sealine. La trace écrite de la préparation de Thade.
+- Trouver la trace des recherches de Thade et comprendre ce qu'il prépare.
+- L'ardoise du 6e étage
 
 [Actions possibles évidentes]
 - accéder à la Réserve (avec Olane ou par effraction)
@@ -124,85 +132,89 @@ Les PJ accèdent à la Réserve de Recherche Interdite de la bibliothèque. Ils 
 - comprendre que Thade a planifié pendant huit ans
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. L'Universite ne peut plus plaider l'accident simple
+La scène continue : Seuils et ancrages sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Preuve de Caldris ; Valombre déjà piégée ; Mandat limité contre la Tour ; 142 consultations de Thade ; Seuils et ancrages
+- Indices ratés, refusés ou perdus : Limite géographique exacte ; Complicité exacte des grandes maisons ; Réaction complète de Caldris ; Arrestation immédiate de Thade ; Consensus public complet
+- Décisions des PJ : Les PJ sauvent les habitants proches et relient les filaments au Puits de l'Abîme. ; Les PJ gardent les lettres comme preuve et décident de tester une route extérieure. ; Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale.
+- Conséquences visibles : Les PJ gardent les lettres comme preuve et décident de tester une route extérieure. ; Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Conséquence intermédiaire jouée dans La Réserve de Recherche Interdite
+- PNJ affectés : hessa_brunefer ; envoye_caldris ; edran_morn ; odran_bellec ; yselle_vaurin
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_dephasage / menace_dephasage_revelation : +1 segment (étape 4). Les routes ramènent au même point. La ville ne laisse pas sortir. Le déphasage n'est plus une rumeur — c'est un fait vécu. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 3). Crise économique masquée. Stocks bloqués. Les institutions cachent la réalité pour éviter la panique. La confiance s'érode. ; front_dephasage / menace_dephasage_revelation : +1 segment (étape 3). Les stocks s'accumulent. La ville produit pour un extérieur qui ne reçoit plus. Le déphasage a un coût économique que les institutions cachent. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : La scene mentionne parfois `s2_laboratoire_voss` en transition mais l'ID reel est `s2_laboratoire_elian`.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Tous les ouvrages consultés.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera teste une approche discrete sans utiliser d'information qu'elle ne possede pas. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : accéder à la Réserve (avec Olane ou par effraction) en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : accéder à la Réserve (avec Olane ou par effraction), avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael evalue le risque tactique avant que le groupe ne s'engage davantage. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : déchiffrer les 142 séances (Connaissances) tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : déchiffrer les 142 séances (Connaissances), en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-preuve ecrite contre Thade. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+prendre la preuve écrite sans détruire le savoir. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 trouver la théorie des seuils et le protocole S-01
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Preuve de Caldris ; Valombre déjà piégée ; Mandat limité contre la Tour ; 142 consultations de Thade ; Seuils et ancrages
+- Indices ratés, refusés ou perdus : Limite géographique exacte ; Complicité exacte des grandes maisons ; Réaction complète de Caldris ; Arrestation immédiate de Thade ; Consensus public complet
+- Décisions des PJ : Les PJ sauvent les habitants proches et relient les filaments au Puits de l'Abîme. ; Les PJ gardent les lettres comme preuve et décident de tester une route extérieure. ; Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale.
+- Conséquences visibles : Les PJ gardent les lettres comme preuve et décident de tester une route extérieure. ; Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Conséquence intermédiaire jouée dans La Réserve de Recherche Interdite
+- PNJ affectés : hessa_brunefer ; envoye_caldris ; edran_morn ; odran_bellec ; yselle_vaurin
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_dephasage / menace_dephasage_revelation : +1 segment (étape 4). Les routes ramènent au même point. La ville ne laisse pas sortir. Le déphasage n'est plus une rumeur — c'est un fait vécu. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 3). Crise économique masquée. Stocks bloqués. Les institutions cachent la réalité pour éviter la panique. La confiance s'érode. ; front_dephasage / menace_dephasage_revelation : +1 segment (étape 3). Les stocks s'accumulent. La ville produit pour un extérieur qui ne reçoit plus. Le déphasage a un coût économique que les institutions cachent. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 3
 
 #### 1. MJ Valombre
 
 [Scène]
-Le nom de Thade apparait 142 fois sur huit ans, avec seuils, ancrages et resonance planaire.
+La Réserve de Recherche Interdite est un niveau souterrain de la bibliothèque centrale. Froid sec, lampes à mana basses, livres aux couvertures scellées de cire blanche. L'air sent le papier ancien et la cire.
+
+Un registre est posé sur le lutrin. Les noms des Maîtres qui ont consulté les ouvrages. Celui de Thade apparaît 142 fois sur huit ans.
 
 [Informations visibles]
-Les PJ accèdent à la Réserve de Recherche Interdite de la bibliothèque. Ils y trouvent le registre des consultations de Thade : 142 séances sur huit ans, avec un effondrement après la mort de Sealine. La trace écrite de la préparation de Thade. ; Les PJ doivent savoir que Thade a consulté 142 fois la Réserve et que ses recherches portaient sur les seuils planaires. ; Preuve de preparation methodique
+- Les PJ accèdent à la Réserve de Recherche Interdite de la bibliothèque. Ils y trouvent le registre des consultations de Thade : 142 séances sur huit ans, avec un effondrement après la mort de Sealine. La trace écrite de la préparation de Thade.
+- Trouver la trace des recherches de Thade et comprendre ce qu'il prépare.
+- « De la Persistance des Âmes Liées »
 
 [Actions possibles évidentes]
 - accéder à la Réserve (avec Olane ou par effraction)
@@ -211,85 +223,89 @@ Les PJ accèdent à la Réserve de Recherche Interdite de la bibliothèque. Ils 
 - comprendre que Thade a planifié pendant huit ans
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. L'Universite ne peut plus plaider l'accident simple
+La scène continue : Preuve de préparation méthodique sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Valombre déjà piégée ; Mandat limité contre la Tour ; 142 consultations de Thade ; Seuils et ancrages ; Preuve de préparation méthodique
+- Indices ratés, refusés ou perdus : Limite géographique exacte ; Complicité exacte des grandes maisons ; Réaction complète de Caldris ; Arrestation immédiate de Thade ; Consensus public complet
+- Décisions des PJ : Les PJ sauvent les habitants proches et relient les filaments au Puits de l'Abîme. ; Les PJ gardent les lettres comme preuve et décident de tester une route extérieure. ; Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale.
+- Conséquences visibles : Les PJ gardent les lettres comme preuve et décident de tester une route extérieure. ; Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Conséquence intermédiaire jouée dans La Réserve de Recherche Interdite
+- PNJ affectés : hessa_brunefer ; envoye_caldris ; edran_morn ; odran_bellec ; yselle_vaurin
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_dephasage / menace_dephasage_revelation : +1 segment (étape 4). Les routes ramènent au même point. La ville ne laisse pas sortir. Le déphasage n'est plus une rumeur — c'est un fait vécu. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 3). Crise économique masquée. Stocks bloqués. Les institutions cachent la réalité pour éviter la panique. La confiance s'érode. ; front_dephasage / menace_dephasage_revelation : +1 segment (étape 3). Les stocks s'accumulent. La ville produit pour un extérieur qui ne reçoit plus. Le déphasage a un coût économique que les institutions cachent. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : La scene mentionne parfois `s2_laboratoire_voss` en transition mais l'ID reel est `s2_laboratoire_elian`.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Tous les ouvrages consultés.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera transforme les indices visibles en levier concret pour la suite. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : accéder à la Réserve (avec Olane ou par effraction) en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : accéder à la Réserve (avec Olane ou par effraction), avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael cherche une solution droite qui ne bloque pas l'enquete. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : déchiffrer les 142 séances (Connaissances) tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : déchiffrer les 142 séances (Connaissances), en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-preuve ecrite contre Thade. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+prendre la preuve écrite sans détruire le savoir. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 comprendre que Thade a planifié pendant huit ans
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Valombre déjà piégée ; Mandat limité contre la Tour ; 142 consultations de Thade ; Seuils et ancrages ; Preuve de préparation méthodique
+- Indices ratés, refusés ou perdus : Limite géographique exacte ; Complicité exacte des grandes maisons ; Réaction complète de Caldris ; Arrestation immédiate de Thade ; Consensus public complet
+- Décisions des PJ : Les PJ sauvent les habitants proches et relient les filaments au Puits de l'Abîme. ; Les PJ gardent les lettres comme preuve et décident de tester une route extérieure. ; Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale.
+- Conséquences visibles : Les PJ gardent les lettres comme preuve et décident de tester une route extérieure. ; Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Conséquence intermédiaire jouée dans La Réserve de Recherche Interdite
+- PNJ affectés : hessa_brunefer ; envoye_caldris ; edran_morn ; odran_bellec ; yselle_vaurin
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_dephasage / menace_dephasage_revelation : +1 segment (étape 4). Les routes ramènent au même point. La ville ne laisse pas sortir. Le déphasage n'est plus une rumeur — c'est un fait vécu. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 3). Crise économique masquée. Stocks bloqués. Les institutions cachent la réalité pour éviter la panique. La confiance s'érode. ; front_dephasage / menace_dephasage_revelation : +1 segment (étape 3). Les stocks s'accumulent. La ville produit pour un extérieur qui ne reçoit plus. Le déphasage a un coût économique que les institutions cachent. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 4
 
 #### 1. MJ Valombre
 
 [Scène]
-Les PJ copient le registre et prennent les references utiles pour affronter la Tour.
+La Réserve de Recherche Interdite est un niveau souterrain de la bibliothèque centrale. Froid sec, lampes à mana basses, livres aux couvertures scellées de cire blanche. L'air sent le papier ancien et la cire.
+
+Un registre est posé sur le lutrin. Les noms des Maîtres qui ont consulté les ouvrages. Celui de Thade apparaît 142 fois sur huit ans.
 
 [Informations visibles]
-Les PJ accèdent à la Réserve de Recherche Interdite de la bibliothèque. Ils y trouvent le registre des consultations de Thade : 142 séances sur huit ans, avec un effondrement après la mort de Sealine. La trace écrite de la préparation de Thade. ; Les PJ doivent savoir que Thade a consulté 142 fois la Réserve et que ses recherches portaient sur les seuils planaires. ; Lien avec textes des Endeuilles
+- Les PJ accèdent à la Réserve de Recherche Interdite de la bibliothèque. Ils y trouvent le registre des consultations de Thade : 142 séances sur huit ans, avec un effondrement après la mort de Sealine. La trace écrite de la préparation de Thade.
+- Trouver la trace des recherches de Thade et comprendre ce qu'il prépare.
+- Cachet de Caldris sur trois ouvrages
 
 [Actions possibles évidentes]
 - accéder à la Réserve (avec Olane ou par effraction)
@@ -298,138 +314,135 @@ Les PJ accèdent à la Réserve de Recherche Interdite de la bibliothèque. Ils 
 - comprendre que Thade a planifié pendant huit ans
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. L'Universite ne peut plus plaider l'accident simple
+Les PJ copient le registre des 142 consultations et suivent la piste d'Elian.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : Vers `s2_laboratoire_elian` : trouver la Larme de Vael et les patients du protocole.
+- Indices obtenus : Valombre déjà piégée ; Mandat limité contre la Tour ; 142 consultations de Thade ; Seuils et ancrages ; Preuve de préparation méthodique
+- Indices ratés, refusés ou perdus : Limite géographique exacte ; Complicité exacte des grandes maisons ; Réaction complète de Caldris ; Arrestation immédiate de Thade ; Consensus public complet
+- Décisions des PJ : Les PJ gardent les lettres comme preuve et décident de tester une route extérieure. ; Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian.
+- Conséquences visibles : Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Conséquence intermédiaire jouée dans La Réserve de Recherche Interdite ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian.
+- PNJ affectés : hessa_brunefer ; envoye_caldris ; edran_morn ; odran_bellec ; yselle_vaurin
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_dephasage / menace_dephasage_revelation : +1 segment (étape 4). Les routes ramènent au même point. La ville ne laisse pas sortir. Le déphasage n'est plus une rumeur — c'est un fait vécu. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 3). Crise économique masquée. Stocks bloqués. Les institutions cachent la réalité pour éviter la panique. La confiance s'érode. ; front_dephasage / menace_dephasage_revelation : +1 segment (étape 3). Les stocks s'accumulent. La ville produit pour un extérieur qui ne reçoit plus. Le déphasage a un coût économique que les institutions cachent. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère.
+- Prochaine piste choisie par les PJ : Vers `s2_laboratoire_elian` : révéler la Larme, les patients et le coût humain.
 
 [Rapport de test]
-- Bug : La scene mentionne parfois `s2_laboratoire_voss` en transition mais l'ID reel est `s2_laboratoire_elian`.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Tous les ouvrages consultés.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Vous avez formule votre prochain mouvement ; comment vous organisez-vous pour la transition ?
+Vous avez formulé votre prochain mouvement ; comment vous organisez-vous avant la transition ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera cherche les failles, les angles morts et ce que les puissants essaient de garder hors champ. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : accéder à la Réserve (avec Olane ou par effraction) en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : accéder à la Réserve (avec Olane ou par effraction), avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael protege les innocents et pose la limite morale de la scene. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : déchiffrer les 142 séances (Connaissances) tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : déchiffrer les 142 séances (Connaissances), en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-preuve ecrite contre Thade. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+prendre la preuve écrite sans détruire le savoir. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
-Vers `s2_laboratoire_elian` : trouver la Larme de Vael et les patients du protocole.
+Vers `s2_laboratoire_elian` : révéler la Larme, les patients et le coût humain.
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : Vers `s2_laboratoire_elian` : trouver la Larme de Vael et les patients du protocole.
+- Indices obtenus : Valombre déjà piégée ; Mandat limité contre la Tour ; 142 consultations de Thade ; Seuils et ancrages ; Preuve de préparation méthodique
+- Indices ratés, refusés ou perdus : Limite géographique exacte ; Complicité exacte des grandes maisons ; Réaction complète de Caldris ; Arrestation immédiate de Thade ; Consensus public complet
+- Décisions des PJ : Les PJ gardent les lettres comme preuve et décident de tester une route extérieure. ; Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian.
+- Conséquences visibles : Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route. ; Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Conséquence intermédiaire jouée dans La Réserve de Recherche Interdite ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian.
+- PNJ affectés : hessa_brunefer ; envoye_caldris ; edran_morn ; odran_bellec ; yselle_vaurin
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_dephasage / menace_dephasage_revelation : +1 segment (étape 4). Les routes ramènent au même point. La ville ne laisse pas sortir. Le déphasage n'est plus une rumeur — c'est un fait vécu. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 3). Crise économique masquée. Stocks bloqués. Les institutions cachent la réalité pour éviter la panique. La confiance s'érode. ; front_dephasage / menace_dephasage_revelation : +1 segment (étape 3). Les stocks s'accumulent. La ville produit pour un extérieur qui ne reçoit plus. Le déphasage a un coût économique que les institutions cachent. ; front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère.
+- Piste concrète choisie : Vers `s2_laboratoire_elian` : révéler la Larme, les patients et le coût humain.
 
 
 ## Indices obtenus
 
-- Registre des 142 consultations de Thade
-- Themes : seuils, ancrages, resonance planaire
-- Preuve de preparation methodique
-- Lien avec textes des Endeuilles
+- 142 consultations de Thade
+- Seuils et ancrages
+- Preuve de préparation méthodique
 
 ## Indices ratés, refusés ou perdus
 
-- Tous les ouvrages consultes
-- Identite de tous ceux qui ont autorise l'acces
+- Tous les ouvrages consultés
+- Tous les responsables des accès
 
 ## Décisions des PJ
 
-- Copier le registre
-- Ne pas bruler la Reserve
-- Chercher le laboratoire d'Elian Voss
+- Les PJ copient le registre des 142 consultations et suivent la piste d'Elian.
 
 ## Conséquences visibles
 
-- La preuve documentaire contre Thade devient solide
-- L'Universite ne peut plus plaider l'accident simple
+- Les PJ copient le registre des 142 consultations et suivent la piste d'Elian.
+- Les PNJ et factions listés ci-dessous réagissent dans le cadre visible de la scène.
 
 ## PNJ affectés
 
-- Magi-tuteur loyal potentiel
-- Thade hors champ
+- thade_coren
 
 ## Factions affectées
 
-- Universite Arcanique
+- Le Plan de Thade
+- Les Factions de la Crise
+- Le Sceau qui cède
+- La Cité sous pression
 
 ## Fronts ou horloges modifiés
 
-- Aucun effet de front automatique source pour cette scene, ou effet volontairement narratif.
-
-État retenu pour la campagne :
-- Aucun avancement volontaire : investigation pure
+- Aucun effet de front automatique pour cette scène ou avancement volontairement narratif.
 
 ## Transition choisie par les PJ
 
-Vers `s2_laboratoire_elian` : trouver la Larme de Vael et les patients du protocole.
+Vers `s2_laboratoire_elian` : révéler la Larme, les patients et le coût humain.
 
 ## Manques ou incohérences détectés
 
-- La scene mentionne parfois `s2_laboratoire_voss` en transition mais l'ID reel est `s2_laboratoire_elian`.
+- Indice raté/refusé/perdu pendant la simulation : Tous les ouvrages consultés.
+- Indice raté/refusé/perdu pendant la simulation : Tous les responsables des accès.
 
 ## Recommandations
 
 ### Bug
 
-- Corriger toute divergence d'ID, de lieu ou de secret signalee dans les manques ci-dessus.
+- Corriger les incohérences d'ID, de lieu ou de secret signalées ci-dessus.
 
 ### Dette technique
 
-- Ajouter un etat de campagne machine-readable pour les indices, les fronts, les PNJ allies et le decompte des victimes.
+- Ajouter un état de campagne sérialisé pour les indices, fronts, alliés, patients et victimes de la Tour.
 
 ### Amélioration UX
 
-- Separrer clairement les informations visibles PJ, les notes MJ et les secrets de campagne dans l'interface.
+- Séparer strictement les informations visibles PJ, les notes MJ et les secrets.
 
 ### Amélioration narrative
 
-- Prevoir pour chaque scene une relance de PNJ ou de front qui conserve l'agence des PJ sans bloquer la progression.
+- Ajouter à chaque scène une relance explicite de PNJ ou de front si les PJ hésitent.

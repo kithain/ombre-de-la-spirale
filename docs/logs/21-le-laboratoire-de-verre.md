@@ -6,13 +6,13 @@ Décider quoi faire du corps de Thade dans la cuve.
 
 ## Sources consultées
 
-- src/data/scenarios/scenario2_masques_nyx.js : scene `s2_laboratoire_verre`, acte "Acte III — La Confrontation".
-- src/data/scenarios/effetsFronts.js : effets de fronts lies a la scene.
-- src/data/scenarios/fronts.js : fronts, horloges et consequences globales.
-- src/data/personnages/pnj.js et fichiers specialises : PNJ lies par `idsPnj`.
-- src/data/personnages/factions.js : factions affectees.
-- src/data/universe/universeZones.js : lieu lie par `idLieu` quand disponible.
-- .agents/MJ Valombre.toml, .agents/PJ Valombre 1.toml, .agents/PJ Valombre 2.toml : protocole de simulation.
+- src/data/scenarios/scenario2_masques_nyx.js : scène `s2_laboratoire_verre`, acte "Acte III — La Confrontation".
+- src/data/scenarios/effetsFronts.js : effets de fronts par scène.
+- src/data/scenarios/fronts.js : horloges et conséquences globales.
+- src/data/personnages/pnj.js et registres spécialisés : PNJ liés à la scène.
+- src/data/personnages/factions.js : factions et objectifs.
+- src/data/universe/universeZones.js : lieux liés par `idLieu`.
+- .agents/MJ Valombre.toml, .agents/PJ Valombre 1.toml, .agents/PJ Valombre 2.toml : contraintes d'incarnation.
 
 ## Nombre de boucles
 
@@ -25,10 +25,14 @@ Décider quoi faire du corps de Thade dans la cuve.
 #### 1. MJ Valombre
 
 [Scène]
-Au septieme etage, le corps de Thade flotte dans une cuve de cristal ; des cahiers bordeaux couvrent un mur.
+La rotonde est baignée d'une lumière dorée. Une cuve cylindrique en cristal occupe le centre, douze mètres de diamètre. Dedans, un corps flotte dans un liquide doré. Thade Coren. Les yeux fermés. Le visage paisible. Des tubes l'alimentent. Des runes brillent sur la cuve.
+
+Sur le mur adjacent, des cahiers reliés bordeaux alignés par date. Huit ans de cahiers. Le dernier est ouvert. Une plume écrit dedans, seule, en temps réel.
 
 [Informations visibles]
-Les PJ entrent dans le Laboratoire de Verre. Au centre : une cuve cylindrique en cristal. Dedans : le corps de Thade dans un liquide doré. Il est vivant, immobile, connecté à la Tour. Un mur de cahiers reliés bordeaux : Thade écrit à Sealine tous les jours depuis huit ans. La plume du cahier ouvert écrit en temps réel. ; Les PJ doivent savoir que le corps de Thade est dans la cuve et que le détruire affaiblit Thade au sommet. ; Corps de Thade dans la cuve
+- Les PJ entrent dans le Laboratoire de Verre. Au centre : une cuve cylindrique en cristal. Dedans : le corps de Thade dans un liquide doré. Il est vivant, immobile, connecté à la Tour. Un mur de cahiers reliés bordeaux : Thade écrit à Sealine tous les jours depuis huit ans. La plume du cahier ouvert écrit en temps réel.
+- Décider quoi faire du corps de Thade dans la cuve.
+- Les cahiers de Thade
 
 [Actions possibles évidentes]
 - examiner la cuve et le corps de Thade
@@ -37,85 +41,89 @@ Les PJ entrent dans le Laboratoire de Verre. Au centre : une cuve cylindrique en
 - préparer la montée vers le sommet
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Thade ne sera pas affaibli par destruction du corps
+La scène continue : Corps de Thade dans la cuve sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Elian comme témoin retournable ; Tour comme dispositif rituel ; Magi-Tuteur loyal retourné ; Décompte des victimes faible ; Corps de Thade dans la cuve
+- Indices ratés, refusés ou perdus : Tous les responsables des accès ; Tous les patients immédiatement localisés ; Échantillons déjà déplacés ; Contrôle complet de tous les étages ; Arrêt immédiat du rituel
+- Décisions des PJ : Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes.
+- Conséquences visibles : Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Conséquence intermédiaire jouée dans Le Laboratoire de Verre
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère. ; front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4). Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter. ; front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper. ; front_plan_thade / menace_larme_vael : +1 segment (segment 5). Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : La procedure exacte pour desactiver la cuve sans tuer Thade n'est pas fournie ; le test ne l'accorde pas.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Affaiblissement par destruction du corps.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera cherche les failles, les angles morts et ce que les puissants essaient de garder hors champ. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : examiner la cuve et le corps de Thade en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : examiner la cuve et le corps de Thade, avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael protege les innocents et pose la limite morale de la scene. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : lire les cahiers bordeaux tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : lire les cahiers bordeaux, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-revelation intime. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+comprendre Thade sans l'absoudre. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 lire les cahiers bordeaux
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Elian comme témoin retournable ; Tour comme dispositif rituel ; Magi-Tuteur loyal retourné ; Décompte des victimes faible ; Corps de Thade dans la cuve
+- Indices ratés, refusés ou perdus : Tous les responsables des accès ; Tous les patients immédiatement localisés ; Échantillons déjà déplacés ; Contrôle complet de tous les étages ; Arrêt immédiat du rituel
+- Décisions des PJ : Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes.
+- Conséquences visibles : Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Conséquence intermédiaire jouée dans Le Laboratoire de Verre
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère. ; front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4). Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter. ; front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper. ; front_plan_thade / menace_larme_vael : +1 segment (segment 5). Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 2
 
 #### 1. MJ Valombre
 
 [Scène]
-Nera verifie la cuve et les mecanismes ; Kael lit assez de cahiers pour comprendre l'homme sans l'absoudre.
+La rotonde est baignée d'une lumière dorée. Une cuve cylindrique en cristal occupe le centre, douze mètres de diamètre. Dedans, un corps flotte dans un liquide doré. Thade Coren. Les yeux fermés. Le visage paisible. Des tubes l'alimentent. Des runes brillent sur la cuve.
+
+Sur le mur adjacent, des cahiers reliés bordeaux alignés par date. Huit ans de cahiers. Le dernier est ouvert. Une plume écrit dedans, seule, en temps réel.
 
 [Informations visibles]
-Les PJ entrent dans le Laboratoire de Verre. Au centre : une cuve cylindrique en cristal. Dedans : le corps de Thade dans un liquide doré. Il est vivant, immobile, connecté à la Tour. Un mur de cahiers reliés bordeaux : Thade écrit à Sealine tous les jours depuis huit ans. La plume du cahier ouvert écrit en temps réel. ; Les PJ doivent savoir que le corps de Thade est dans la cuve et que le détruire affaiblit Thade au sommet. ; Esprit de Thade au sommet
+- Les PJ entrent dans le Laboratoire de Verre. Au centre : une cuve cylindrique en cristal. Dedans : le corps de Thade dans un liquide doré. Il est vivant, immobile, connecté à la Tour. Un mur de cahiers reliés bordeaux : Thade écrit à Sealine tous les jours depuis huit ans. La plume du cahier ouvert écrit en temps réel.
+- Décider quoi faire du corps de Thade dans la cuve.
+- Le cahier ouvert
 
 [Actions possibles évidentes]
 - examiner la cuve et le corps de Thade
@@ -124,85 +132,89 @@ Les PJ entrent dans le Laboratoire de Verre. Au centre : une cuve cylindrique en
 - préparer la montée vers le sommet
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Les PJ gagnent des armes morales
+La scène continue : Esprit au sommet sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Tour comme dispositif rituel ; Magi-Tuteur loyal retourné ; Décompte des victimes faible ; Corps de Thade dans la cuve ; Esprit au sommet
+- Indices ratés, refusés ou perdus : Tous les responsables des accès ; Tous les patients immédiatement localisés ; Échantillons déjà déplacés ; Contrôle complet de tous les étages ; Arrêt immédiat du rituel
+- Décisions des PJ : Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes.
+- Conséquences visibles : Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Conséquence intermédiaire jouée dans Le Laboratoire de Verre
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère. ; front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4). Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter. ; front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper. ; front_plan_thade / menace_larme_vael : +1 segment (segment 5). Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : La procedure exacte pour desactiver la cuve sans tuer Thade n'est pas fournie ; le test ne l'accorde pas.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Affaiblissement par destruction du corps.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera teste une approche discrete sans utiliser d'information qu'elle ne possede pas. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : examiner la cuve et le corps de Thade en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : examiner la cuve et le corps de Thade, avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael evalue le risque tactique avant que le groupe ne s'engage davantage. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : lire les cahiers bordeaux tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : lire les cahiers bordeaux, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-revelation intime. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+comprendre Thade sans l'absoudre. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 décider : détruire le corps, lire les cahiers, ou les deux
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Tour comme dispositif rituel ; Magi-Tuteur loyal retourné ; Décompte des victimes faible ; Corps de Thade dans la cuve ; Esprit au sommet
+- Indices ratés, refusés ou perdus : Tous les responsables des accès ; Tous les patients immédiatement localisés ; Échantillons déjà déplacés ; Contrôle complet de tous les étages ; Arrêt immédiat du rituel
+- Décisions des PJ : Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes.
+- Conséquences visibles : Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Conséquence intermédiaire jouée dans Le Laboratoire de Verre
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère. ; front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4). Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter. ; front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper. ; front_plan_thade / menace_larme_vael : +1 segment (segment 5). Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 3
 
 #### 1. MJ Valombre
 
 [Scène]
-Les PJ apprennent que l'esprit de Thade est au sommet et que les cahiers sont huit ans de lettres a Sealine.
+La rotonde est baignée d'une lumière dorée. Une cuve cylindrique en cristal occupe le centre, douze mètres de diamètre. Dedans, un corps flotte dans un liquide doré. Thade Coren. Les yeux fermés. Le visage paisible. Des tubes l'alimentent. Des runes brillent sur la cuve.
+
+Sur le mur adjacent, des cahiers reliés bordeaux alignés par date. Huit ans de cahiers. Le dernier est ouvert. Une plume écrit dedans, seule, en temps réel.
 
 [Informations visibles]
-Les PJ entrent dans le Laboratoire de Verre. Au centre : une cuve cylindrique en cristal. Dedans : le corps de Thade dans un liquide doré. Il est vivant, immobile, connecté à la Tour. Un mur de cahiers reliés bordeaux : Thade écrit à Sealine tous les jours depuis huit ans. La plume du cahier ouvert écrit en temps réel. ; Les PJ doivent savoir que le corps de Thade est dans la cuve et que le détruire affaiblit Thade au sommet. ; Cahiers bordeaux : lettres a Sealine
+- Les PJ entrent dans le Laboratoire de Verre. Au centre : une cuve cylindrique en cristal. Dedans : le corps de Thade dans un liquide doré. Il est vivant, immobile, connecté à la Tour. Un mur de cahiers reliés bordeaux : Thade écrit à Sealine tous les jours depuis huit ans. La plume du cahier ouvert écrit en temps réel.
+- Décider quoi faire du corps de Thade dans la cuve.
+- Les PJ doivent savoir que le corps de Thade est dans la cuve et que le détruire affaiblit Thade au sommet.
 
 [Actions possibles évidentes]
 - examiner la cuve et le corps de Thade
@@ -211,85 +223,89 @@ Les PJ entrent dans le Laboratoire de Verre. Au centre : une cuve cylindrique en
 - préparer la montée vers le sommet
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Le Magi-Tuteur respecte leur retenue
+La scène continue : Cahiers bordeaux à Sealine sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Magi-Tuteur loyal retourné ; Décompte des victimes faible ; Corps de Thade dans la cuve ; Esprit au sommet ; Cahiers bordeaux à Sealine
+- Indices ratés, refusés ou perdus : Tous les responsables des accès ; Tous les patients immédiatement localisés ; Échantillons déjà déplacés ; Contrôle complet de tous les étages ; Arrêt immédiat du rituel
+- Décisions des PJ : Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes.
+- Conséquences visibles : Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Conséquence intermédiaire jouée dans Le Laboratoire de Verre
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère. ; front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4). Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter. ; front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper. ; front_plan_thade / menace_larme_vael : +1 segment (segment 5). Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : La procedure exacte pour desactiver la cuve sans tuer Thade n'est pas fournie ; le test ne l'accorde pas.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Affaiblissement par destruction du corps.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera transforme les indices visibles en levier concret pour la suite. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : examiner la cuve et le corps de Thade en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : examiner la cuve et le corps de Thade, avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael cherche une solution droite qui ne bloque pas l'enquete. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : lire les cahiers bordeaux tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : lire les cahiers bordeaux, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-revelation intime. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+comprendre Thade sans l'absoudre. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 préparer la montée vers le sommet
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Magi-Tuteur loyal retourné ; Décompte des victimes faible ; Corps de Thade dans la cuve ; Esprit au sommet ; Cahiers bordeaux à Sealine
+- Indices ratés, refusés ou perdus : Tous les responsables des accès ; Tous les patients immédiatement localisés ; Échantillons déjà déplacés ; Contrôle complet de tous les étages ; Arrêt immédiat du rituel
+- Décisions des PJ : Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil. ; Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes.
+- Conséquences visibles : Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Conséquence intermédiaire jouée dans Le Laboratoire de Verre
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère. ; front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4). Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter. ; front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper. ; front_plan_thade / menace_larme_vael : +1 segment (segment 5). Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 4
 
 #### 1. MJ Valombre
 
 [Scène]
-Ils emportent des extraits et refusent de detruire le corps inconscient, choisissant la voie morale plus difficile.
+La rotonde est baignée d'une lumière dorée. Une cuve cylindrique en cristal occupe le centre, douze mètres de diamètre. Dedans, un corps flotte dans un liquide doré. Thade Coren. Les yeux fermés. Le visage paisible. Des tubes l'alimentent. Des runes brillent sur la cuve.
+
+Sur le mur adjacent, des cahiers reliés bordeaux alignés par date. Huit ans de cahiers. Le dernier est ouvert. Une plume écrit dedans, seule, en temps réel.
 
 [Informations visibles]
-Les PJ entrent dans le Laboratoire de Verre. Au centre : une cuve cylindrique en cristal. Dedans : le corps de Thade dans un liquide doré. Il est vivant, immobile, connecté à la Tour. Un mur de cahiers reliés bordeaux : Thade écrit à Sealine tous les jours depuis huit ans. La plume du cahier ouvert écrit en temps réel. ; Les PJ doivent savoir que le corps de Thade est dans la cuve et que le détruire affaiblit Thade au sommet. ; Thade n'est pas seulement strategique, il est brise
+- Les PJ entrent dans le Laboratoire de Verre. Au centre : une cuve cylindrique en cristal. Dedans : le corps de Thade dans un liquide doré. Il est vivant, immobile, connecté à la Tour. Un mur de cahiers reliés bordeaux : Thade écrit à Sealine tous les jours depuis huit ans. La plume du cahier ouvert écrit en temps réel.
+- Décider quoi faire du corps de Thade dans la cuve.
+- Les PJ doivent comprendre que le corps de Thade est dans la cuve et qu'il écrit à Sealine depuis 8 ans.
 
 [Actions possibles évidentes]
 - examiner la cuve et le corps de Thade
@@ -298,83 +314,82 @@ Les PJ entrent dans le Laboratoire de Verre. Au centre : une cuve cylindrique en
 - préparer la montée vers le sommet
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Le Magi-Tuteur respecte leur retenue
+Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : Vers `s2_vers_s3_escalier_du_sommet` : monter prepares mais sans avantage de corps detruit.
+- Indices obtenus : Magi-Tuteur loyal retourné ; Décompte des victimes faible ; Corps de Thade dans la cuve ; Esprit au sommet ; Cahiers bordeaux à Sealine
+- Indices ratés, refusés ou perdus : Tous les responsables des accès ; Tous les patients immédiatement localisés ; Échantillons déjà déplacés ; Contrôle complet de tous les étages ; Arrêt immédiat du rituel
+- Décisions des PJ : Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve.
+- Conséquences visibles : Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Conséquence intermédiaire jouée dans Le Laboratoire de Verre ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve.
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère. ; front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4). Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter. ; front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper. ; front_plan_thade / menace_larme_vael : +1 segment (segment 5). Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation.
+- Prochaine piste choisie par les PJ : Vers `s2_vers_s3_escalier_du_sommet` : monter préparés par les vérités, sans avantage de corps détruit.
 
 [Rapport de test]
-- Bug : La procedure exacte pour desactiver la cuve sans tuer Thade n'est pas fournie ; le test ne l'accorde pas.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Affaiblissement par destruction du corps.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Vous avez formule votre prochain mouvement ; comment vous organisez-vous pour la transition ?
+Vous avez formulé votre prochain mouvement ; comment vous organisez-vous avant la transition ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera cherche les failles, les angles morts et ce que les puissants essaient de garder hors champ. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : examiner la cuve et le corps de Thade en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : examiner la cuve et le corps de Thade, avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael protege les innocents et pose la limite morale de la scene. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : lire les cahiers bordeaux tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : lire les cahiers bordeaux, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-revelation intime. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+comprendre Thade sans l'absoudre. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
-Vers `s2_vers_s3_escalier_du_sommet` : monter prepares mais sans avantage de corps detruit.
+Vers `s2_vers_s3_escalier_du_sommet` : monter préparés par les vérités, sans avantage de corps détruit.
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : Vers `s2_vers_s3_escalier_du_sommet` : monter prepares mais sans avantage de corps detruit.
+- Indices obtenus : Magi-Tuteur loyal retourné ; Décompte des victimes faible ; Corps de Thade dans la cuve ; Esprit au sommet ; Cahiers bordeaux à Sealine
+- Indices ratés, refusés ou perdus : Tous les responsables des accès ; Tous les patients immédiatement localisés ; Échantillons déjà déplacés ; Contrôle complet de tous les étages ; Arrêt immédiat du rituel
+- Décisions des PJ : Les PJ obtiennent un mandat limité et évitent une répression générale. ; Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve.
+- Conséquences visibles : Les PJ copient le registre des 142 consultations et suivent la piste d'Elian. ; Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Conséquence intermédiaire jouée dans Le Laboratoire de Verre ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve.
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer. ; front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère. ; front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4). Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter. ; front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper. ; front_plan_thade / menace_larme_vael : +1 segment (segment 5). Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation.
+- Piste concrète choisie : Vers `s2_vers_s3_escalier_du_sommet` : monter préparés par les vérités, sans avantage de corps détruit.
 
 
 ## Indices obtenus
 
 - Corps de Thade dans la cuve
-- Esprit de Thade au sommet
-- Cahiers bordeaux : lettres a Sealine
-- Thade n'est pas seulement strategique, il est brise
+- Esprit au sommet
+- Cahiers bordeaux à Sealine
 
 ## Indices ratés, refusés ou perdus
 
@@ -383,56 +398,52 @@ Vers `s2_vers_s3_escalier_du_sommet` : monter prepares mais sans avantage de cor
 
 ## Décisions des PJ
 
-- Lire et emporter des extraits
-- Ne pas detruire le corps helpless
-- Monter affronter l'esprit de Thade avec les verites
+- Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve.
 
 ## Conséquences visibles
 
-- Thade ne sera pas affaibli par destruction du corps
-- Les PJ gagnent des armes morales
-- Le Magi-Tuteur respecte leur retenue
+- Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve.
+- Les PNJ et factions listés ci-dessous réagissent dans le cadre visible de la scène.
 
 ## PNJ affectés
 
-- Thade Coren
-- Sealine Vael mentionnee
-- Magi-Tuteur loyal
+- thade_coren
+- magi_tuteur_loyal
 
 ## Factions affectées
 
-- Universite Arcanique
+- Le Plan de Thade
+- Les Factions de la Crise
+- Le Sceau qui cède
+- La Cité sous pression
 
 ## Fronts ou horloges modifiés
 
-- front_plan_thade / menace_larme_vael : +1 segment (segment 5) - Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation.
-
-État retenu pour la campagne :
-- front_plan_thade / menace_larme_vael : 5/6
-- decompte victimes : faible, corps non detruit
+- front_plan_thade / menace_larme_vael : +1 segment (segment 5). Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation.
 
 ## Transition choisie par les PJ
 
-Vers `s2_vers_s3_escalier_du_sommet` : monter prepares mais sans avantage de corps detruit.
+Vers `s2_vers_s3_escalier_du_sommet` : monter préparés par les vérités, sans avantage de corps détruit.
 
 ## Manques ou incohérences détectés
 
-- La procedure exacte pour desactiver la cuve sans tuer Thade n'est pas fournie ; le test ne l'accorde pas.
+- Indice raté/refusé/perdu pendant la simulation : Affaiblissement par destruction du corps.
+- Indice raté/refusé/perdu pendant la simulation : Lecture exhaustive des cahiers.
 
 ## Recommandations
 
 ### Bug
 
-- Corriger toute divergence d'ID, de lieu ou de secret signalee dans les manques ci-dessus.
+- Corriger les incohérences d'ID, de lieu ou de secret signalées ci-dessus.
 
 ### Dette technique
 
-- Ajouter un etat de campagne machine-readable pour les indices, les fronts, les PNJ allies et le decompte des victimes.
+- Ajouter un état de campagne sérialisé pour les indices, fronts, alliés, patients et victimes de la Tour.
 
 ### Amélioration UX
 
-- Separrer clairement les informations visibles PJ, les notes MJ et les secrets de campagne dans l'interface.
+- Séparer strictement les informations visibles PJ, les notes MJ et les secrets.
 
 ### Amélioration narrative
 
-- Prevoir pour chaque scene une relance de PNJ ou de front qui conserve l'agence des PJ sans bloquer la progression.
+- Ajouter à chaque scène une relance explicite de PNJ ou de front si les PJ hésitent.

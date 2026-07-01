@@ -3,6 +3,7 @@ import {
   Archive,
   CheckSquare,
   GitBranch,
+  HeartPulse,
   Package,
   RotateCcw,
   Shield,
@@ -16,6 +17,7 @@ const ONGLETS = [
   { id: "preuves", etiquette: "Preuves", icone: Package },
   { id: "fronts", etiquette: "Fronts", icone: Skull },
   { id: "allies", etiquette: "Alliés", icone: Shield },
+  { id: "patients", etiquette: "Patients", icone: HeartPulse },
   { id: "victimes", etiquette: "Victimes", icone: Users },
   { id: "choix", etiquette: "Choix", icone: GitBranch },
 ];
@@ -41,6 +43,22 @@ const STATUTS_FRONTS = [
   "stabilise_entrouvert",
   "résolu",
   "epilogue",
+];
+
+const STATUTS_PATIENTS = [
+  "a_localiser",
+  "localise",
+  "protege",
+  "temoin",
+  "soins",
+  "disparu",
+  "decede",
+];
+
+const PRIORITES_PATIENTS = [
+  "critique",
+  "haute",
+  "normale",
 ];
 
 function Compteur({ valeur, total }) {
@@ -82,6 +100,7 @@ function EtatCampagnePanel() {
     definirAllie,
     definirFront,
     definirVictime,
+    definirPatient,
     definirChoix,
     reinitialiserEtatCampagne,
   } = utiliserEtatCampagne();
@@ -90,7 +109,8 @@ function EtatCampagnePanel() {
     const indicesObtenus = definition.indices.filter((indice) => etat.indices[indice.id]).length;
     const preuvesObtenues = definition.preuves.filter((preuve) => etat.preuves[preuve.id]).length;
     const victimes = Object.values(etat.victimes).reduce((total, valeur) => total + (Number(valeur) || 0), 0);
-    return { indicesObtenus, preuvesObtenues, victimes };
+    const patientsProteges = definition.patients.filter((patient) => ["protege", "temoin", "soins"].includes(etat.patients[patient.id]?.statut)).length;
+    return { indicesObtenus, preuvesObtenues, victimes, patientsProteges };
   }, [definition, etat]);
 
   return (
@@ -112,7 +132,7 @@ function EtatCampagnePanel() {
         </button>
       </div>
 
-      <div className="grid grid-cols-3 gap-2 mb-3">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-3">
         <div className="border border-surface-border bg-surface/50 p-2">
           <div className="text-[10px] uppercase tracking-widest text-content-subtle">Indices</div>
           <div className="text-sm font-mono text-content">{totaux.indicesObtenus}/{definition.indices.length}</div>
@@ -124,6 +144,10 @@ function EtatCampagnePanel() {
         <div className="border border-surface-border bg-surface/50 p-2">
           <div className="text-[10px] uppercase tracking-widest text-content-subtle">Victimes</div>
           <div className="text-sm font-mono text-content">{totaux.victimes}</div>
+        </div>
+        <div className="border border-surface-border bg-surface/50 p-2">
+          <div className="text-[10px] uppercase tracking-widest text-content-subtle">Patients</div>
+          <div className="text-sm font-mono text-content">{totaux.patientsProteges}/{definition.patients.length}</div>
         </div>
       </div>
 
@@ -264,6 +288,69 @@ function EtatCampagnePanel() {
               />
             </label>
           ))}
+        </div>
+      )}
+
+      {onglet === "patients" && (
+        <div className="space-y-2">
+          <div className="flex justify-end">
+            <Compteur valeur={totaux.patientsProteges} total={definition.patients.length} />
+          </div>
+          <div className="max-h-[32rem] overflow-auto space-y-2 pr-1">
+            {definition.patients.map((patient) => {
+              const valeur = etat.patients[patient.id] || {};
+              return (
+                <div key={patient.id} className="border border-surface-border bg-surface/50 p-2 space-y-2">
+                  <div className="flex flex-wrap items-start justify-between gap-2">
+                    <div className="min-w-0">
+                      <div className="text-xs font-semibold text-content">
+                        {patient.id} - {patient.nom}
+                      </div>
+                      <div className="text-[11px] text-content-muted leading-relaxed">
+                        {patient.piste}
+                      </div>
+                    </div>
+                    <span className="text-[10px] px-1.5 py-0.5 border border-amber-800/30 bg-amber-950/20 text-amber-300">
+                      {valeur.priorite || patient.prioriteInitiale}
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2">
+                    <label className="text-[10px] uppercase tracking-widest text-content-subtle">
+                      Statut
+                      <select
+                        value={valeur.statut || patient.statutInitial}
+                        onChange={(e) => definirPatient(patient.id, { statut: e.target.value })}
+                        className="mt-1 w-full bg-surface-raised border border-surface-border p-1.5 text-xs text-content focus:border-accent-dark focus:outline-none"
+                      >
+                        {STATUTS_PATIENTS.map((statut) => (
+                          <option key={statut} value={statut}>{statut}</option>
+                        ))}
+                      </select>
+                    </label>
+                    <label className="text-[10px] uppercase tracking-widest text-content-subtle">
+                      Priorité
+                      <select
+                        value={valeur.priorite || patient.prioriteInitiale}
+                        onChange={(e) => definirPatient(patient.id, { priorite: e.target.value })}
+                        className="mt-1 w-full bg-surface-raised border border-surface-border p-1.5 text-xs text-content focus:border-accent-dark focus:outline-none"
+                      >
+                        {PRIORITES_PATIENTS.map((priorite) => (
+                          <option key={priorite} value={priorite}>{priorite}</option>
+                        ))}
+                      </select>
+                    </label>
+                  </div>
+                  <input
+                    type="text"
+                    value={valeur.note || ""}
+                    onChange={(e) => definirPatient(patient.id, { note: e.target.value })}
+                    placeholder="Note de suivi"
+                    className="w-full bg-surface-raised border border-surface-border p-1.5 text-xs text-content placeholder:text-content-subtle focus:border-accent-dark focus:outline-none"
+                  />
+                </div>
+              );
+            })}
+          </div>
         </div>
       )}
 

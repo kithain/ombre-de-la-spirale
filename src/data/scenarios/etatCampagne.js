@@ -1,3 +1,5 @@
+import { suiviPatientsElianInitial } from "./artefactsPatientsElian";
+
 export const etatCampagneInitial = {
   version: 1,
 
@@ -264,6 +266,8 @@ export const etatCampagneInitial = {
       valeurInitiale: 0,
     },
   ],
+
+  patients: suiviPatientsElianInitial,
 
   choix: [
     {

@@ -6,13 +6,13 @@ Décider du sort de la Larme, de Sealine, de Thade et de Valombre.
 
 ## Sources consultées
 
-- src/data/scenarios/scenario3_dame_spirale.js : scene `s3_conversation_trois`, acte "Acte I — Le Sommet".
-- src/data/scenarios/effetsFronts.js : effets de fronts lies a la scene.
-- src/data/scenarios/fronts.js : fronts, horloges et consequences globales.
-- src/data/personnages/pnj.js et fichiers specialises : PNJ lies par `idsPnj`.
-- src/data/personnages/factions.js : factions affectees.
-- src/data/universe/universeZones.js : lieu lie par `idLieu` quand disponible.
-- .agents/MJ Valombre.toml, .agents/PJ Valombre 1.toml, .agents/PJ Valombre 2.toml : protocole de simulation.
+- src/data/scenarios/scenario3_dame_spirale.js : scène `s3_conversation_trois`, acte "Acte I — Le Sommet".
+- src/data/scenarios/effetsFronts.js : effets de fronts par scène.
+- src/data/scenarios/fronts.js : horloges et conséquences globales.
+- src/data/personnages/pnj.js et registres spécialisés : PNJ liés à la scène.
+- src/data/personnages/factions.js : factions et objectifs.
+- src/data/universe/universeZones.js : lieux liés par `idLieu`.
+- .agents/MJ Valombre.toml, .agents/PJ Valombre 1.toml, .agents/PJ Valombre 2.toml : contraintes d'incarnation.
 
 ## Nombre de boucles
 
@@ -25,10 +25,22 @@ Décider du sort de la Larme, de Sealine, de Thade et de Valombre.
 #### 1. MJ Valombre
 
 [Scène]
-Sealine apparait, lucide et calme ; Thade ne combat plus.
+Une forme se dessine dans le vortex. D'abord un contour, puis des détails. Une femme. Cheveux sombres, visage calme, yeux qui ont vu plus que ce qu'un visage devrait porter. Elle porte des vêtements simples — une robe de maison, des chaussures plates. Elle ressemble à quelqu'un qui préparait le thé quand tout a basculé.
+
+« Thade », dit-elle.
+
+Thade lève la tête. Ses yeux sont brisés. « Sealine. »
+
+« Je sais », dit-elle. « Je sais tout. Les patients. Les bocaux. La Larme. Je sais. »
+
+Un silence. Puis : « Et je sais pourquoi. »
+
+Elle se tourne vers vous. « Vous devez décider. Pas lui. Pas moi. Vous. »
 
 [Informations visibles]
-Sealine apparaît dans le vortex. Elle est calme, lucide, présente. Elle parle aux PJ et à Thade. Elle sait ce que Thade a fait. Elle sait ce qu'elle coûte. La conversation n'est pas un combat — c'est un choix. Trois options : détruire la Larme (Sealine est perdue, le sceau se referme), détacher la Larme sans la briser (le seuil reste entrouvert, la Spirale filtre, Sealine revient), ou laisser Thade ouvrir le seuil (la Spirale déferle, Thade franchit le seuil vers Sealine, Valombre est transformée). ; Les PJ doivent comprendre les trois options et leurs conséquences. ; Sealine est presente et lucide
+- Sealine apparaît dans le vortex. Elle est calme, lucide, présente. Elle parle aux PJ et à Thade. Elle sait ce que Thade a fait. Elle sait ce qu'elle coûte. La conversation n'est pas un combat — c'est un choix. Trois options : détruire la Larme (Sealine est perdue, le sceau se referme), détacher la Larme sans la briser (le seuil reste entrouvert, la Spirale filtre, Sealine revient), ou laisser Thade ouvrir le seuil (la Spirale déferle, Thade franchit le seuil vers Sealine, Valombre est transformée).
+- Décider du sort de la Larme, de Sealine, de Thade et de Valombre.
+- Les PJ doivent comprendre les trois options et leurs conséquences.
 
 [Actions possibles évidentes]
 - écouter Sealine expliquer les trois options
@@ -37,85 +49,97 @@ Sealine apparaît dans le vortex. Elle est calme, lucide, présente. Elle parle 
 - choisir : détruire la Larme, détacher la Larme, ou laisser Thade ouvrir le seuil
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Sealine revient fragile
+La scène continue : Sealine présente et lucide sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Sommet déphasé ; Vérités comme armes ; Larme comme catalyseur ; Sealine proche du vortex ; Sealine présente et lucide
+- Indices ratés, refusés ou perdus : Affaiblissement par destruction du corps ; Lecture exhaustive des cahiers ; Aucun nouvel indice majeur raté ; Avantage du corps détruit ; Victoire rapide sans danger
+- Décisions des PJ : Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve. ; Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes. ; Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol.
+- Conséquences visibles : Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve. ; Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes. ; Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol. ; Conséquence intermédiaire jouée dans La Conversation à Trois
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise ; Le Plan de Thade — accomplissement
+- Fronts ou horloges modifiés : front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper. ; front_plan_thade / menace_larme_vael : +1 segment (segment 5). Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation. ; front_dephasage / menace_dephasage_ancrage : Confirmation narrative (pas de segment). Le sommet de la Tour est déphasé. La Spirale est là. Le MJ note que le déphasage a atteint la Tour elle-même. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 6). Bourdonnement dans les Hauteurs. Ciel violet. Larme visible au cœur du vortex. Thade n'a plus besoin de dissimulation. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 6). Les sept tombes cessent d'agir comme un ensemble. Une lumière remonte du puits. Des sections complètes cessent d'appartenir à la mine.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : Le DD exact et les consequences d'un detachement partiel peuvent demander une table mecanique plus detaillee.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Solution parfaite sans prix.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera cherche les failles, les angles morts et ce que les puissants essaient de garder hors champ. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : écouter Sealine expliquer les trois options en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : écouter Sealine expliquer les trois options, avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael protege les innocents et pose la limite morale de la scene. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : poser des questions sur les conséquences de chaque option tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : poser des questions sur les conséquences de chaque option, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-choix moral irreversible. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+choisir un prix au lieu de chercher une solution parfaite. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 poser des questions sur les conséquences de chaque option
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Sommet déphasé ; Vérités comme armes ; Larme comme catalyseur ; Sealine proche du vortex ; Sealine présente et lucide
+- Indices ratés, refusés ou perdus : Affaiblissement par destruction du corps ; Lecture exhaustive des cahiers ; Aucun nouvel indice majeur raté ; Avantage du corps détruit ; Victoire rapide sans danger
+- Décisions des PJ : Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve. ; Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes. ; Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol.
+- Conséquences visibles : Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve. ; Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes. ; Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol. ; Conséquence intermédiaire jouée dans La Conversation à Trois
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise ; Le Plan de Thade — accomplissement
+- Fronts ou horloges modifiés : front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper. ; front_plan_thade / menace_larme_vael : +1 segment (segment 5). Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation. ; front_dephasage / menace_dephasage_ancrage : Confirmation narrative (pas de segment). Le sommet de la Tour est déphasé. La Spirale est là. Le MJ note que le déphasage a atteint la Tour elle-même. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 6). Bourdonnement dans les Hauteurs. Ciel violet. Larme visible au cœur du vortex. Thade n'a plus besoin de dissimulation. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 6). Les sept tombes cessent d'agir comme un ensemble. Une lumière remonte du puits. Des sections complètes cessent d'appartenir à la mine.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 2
 
 #### 1. MJ Valombre
 
 [Scène]
-Nera demande s'il existe une voie qui sauve quelqu'un sans livrer la ville ; Kael exige que le prix soit dit clairement.
+Une forme se dessine dans le vortex. D'abord un contour, puis des détails. Une femme. Cheveux sombres, visage calme, yeux qui ont vu plus que ce qu'un visage devrait porter. Elle porte des vêtements simples — une robe de maison, des chaussures plates. Elle ressemble à quelqu'un qui préparait le thé quand tout a basculé.
+
+« Thade », dit-elle.
+
+Thade lève la tête. Ses yeux sont brisés. « Sealine. »
+
+« Je sais », dit-elle. « Je sais tout. Les patients. Les bocaux. La Larme. Je sais. »
+
+Un silence. Puis : « Et je sais pourquoi. »
+
+Elle se tourne vers vous. « Vous devez décider. Pas lui. Pas moi. Vous. »
 
 [Informations visibles]
-Sealine apparaît dans le vortex. Elle est calme, lucide, présente. Elle parle aux PJ et à Thade. Elle sait ce que Thade a fait. Elle sait ce qu'elle coûte. La conversation n'est pas un combat — c'est un choix. Trois options : détruire la Larme (Sealine est perdue, le sceau se referme), détacher la Larme sans la briser (le seuil reste entrouvert, la Spirale filtre, Sealine revient), ou laisser Thade ouvrir le seuil (la Spirale déferle, Thade franchit le seuil vers Sealine, Valombre est transformée). ; Les PJ doivent comprendre les trois options et leurs conséquences. ; Trois options et leurs prix
+- Sealine apparaît dans le vortex. Elle est calme, lucide, présente. Elle parle aux PJ et à Thade. Elle sait ce que Thade a fait. Elle sait ce qu'elle coûte. La conversation n'est pas un combat — c'est un choix. Trois options : détruire la Larme (Sealine est perdue, le sceau se referme), détacher la Larme sans la briser (le seuil reste entrouvert, la Spirale filtre, Sealine revient), ou laisser Thade ouvrir le seuil (la Spirale déferle, Thade franchit le seuil vers Sealine, Valombre est transformée).
+- Décider du sort de la Larme, de Sealine, de Thade et de Valombre.
+- Les PJ doivent comprendre les trois options et leurs conséquences irréversibles avant de choisir.
 
 [Actions possibles évidentes]
 - écouter Sealine expliquer les trois options
@@ -124,85 +148,97 @@ Sealine apparaît dans le vortex. Elle est calme, lucide, présente. Elle parle 
 - choisir : détruire la Larme, détacher la Larme, ou laisser Thade ouvrir le seuil
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Valombre reste changee
+La scène continue : Trois options et leurs prix sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Vérités comme armes ; Larme comme catalyseur ; Sealine proche du vortex ; Sealine présente et lucide ; Trois options et leurs prix
+- Indices ratés, refusés ou perdus : Affaiblissement par destruction du corps ; Lecture exhaustive des cahiers ; Aucun nouvel indice majeur raté ; Avantage du corps détruit ; Victoire rapide sans danger
+- Décisions des PJ : Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve. ; Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes. ; Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol.
+- Conséquences visibles : Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve. ; Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes. ; Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol. ; Conséquence intermédiaire jouée dans La Conversation à Trois
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise ; Le Plan de Thade — accomplissement
+- Fronts ou horloges modifiés : front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper. ; front_plan_thade / menace_larme_vael : +1 segment (segment 5). Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation. ; front_dephasage / menace_dephasage_ancrage : Confirmation narrative (pas de segment). Le sommet de la Tour est déphasé. La Spirale est là. Le MJ note que le déphasage a atteint la Tour elle-même. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 6). Bourdonnement dans les Hauteurs. Ciel violet. Larme visible au cœur du vortex. Thade n'a plus besoin de dissimulation. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 6). Les sept tombes cessent d'agir comme un ensemble. Une lumière remonte du puits. Des sections complètes cessent d'appartenir à la mine.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : Le DD exact et les consequences d'un detachement partiel peuvent demander une table mecanique plus detaillee.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Solution parfaite sans prix.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera teste une approche discrete sans utiliser d'information qu'elle ne possede pas. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : écouter Sealine expliquer les trois options en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : écouter Sealine expliquer les trois options, avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael evalue le risque tactique avant que le groupe ne s'engage davantage. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : poser des questions sur les conséquences de chaque option tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : poser des questions sur les conséquences de chaque option, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-choix moral irreversible. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+choisir un prix au lieu de chercher une solution parfaite. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 éventuellement parler à Thade au sol
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Vérités comme armes ; Larme comme catalyseur ; Sealine proche du vortex ; Sealine présente et lucide ; Trois options et leurs prix
+- Indices ratés, refusés ou perdus : Affaiblissement par destruction du corps ; Lecture exhaustive des cahiers ; Aucun nouvel indice majeur raté ; Avantage du corps détruit ; Victoire rapide sans danger
+- Décisions des PJ : Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve. ; Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes. ; Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol.
+- Conséquences visibles : Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve. ; Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes. ; Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol. ; Conséquence intermédiaire jouée dans La Conversation à Trois
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise ; Le Plan de Thade — accomplissement
+- Fronts ou horloges modifiés : front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper. ; front_plan_thade / menace_larme_vael : +1 segment (segment 5). Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation. ; front_dephasage / menace_dephasage_ancrage : Confirmation narrative (pas de segment). Le sommet de la Tour est déphasé. La Spirale est là. Le MJ note que le déphasage a atteint la Tour elle-même. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 6). Bourdonnement dans les Hauteurs. Ciel violet. Larme visible au cœur du vortex. Thade n'a plus besoin de dissimulation. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 6). Les sept tombes cessent d'agir comme un ensemble. Une lumière remonte du puits. Des sections complètes cessent d'appartenir à la mine.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 3
 
 #### 1. MJ Valombre
 
 [Scène]
-Sealine explique les trois options : detruire, detacher, laisser ouvrir.
+Une forme se dessine dans le vortex. D'abord un contour, puis des détails. Une femme. Cheveux sombres, visage calme, yeux qui ont vu plus que ce qu'un visage devrait porter. Elle porte des vêtements simples — une robe de maison, des chaussures plates. Elle ressemble à quelqu'un qui préparait le thé quand tout a basculé.
+
+« Thade », dit-elle.
+
+Thade lève la tête. Ses yeux sont brisés. « Sealine. »
+
+« Je sais », dit-elle. « Je sais tout. Les patients. Les bocaux. La Larme. Je sais. »
+
+Un silence. Puis : « Et je sais pourquoi. »
+
+Elle se tourne vers vous. « Vous devez décider. Pas lui. Pas moi. Vous. »
 
 [Informations visibles]
-Sealine apparaît dans le vortex. Elle est calme, lucide, présente. Elle parle aux PJ et à Thade. Elle sait ce que Thade a fait. Elle sait ce qu'elle coûte. La conversation n'est pas un combat — c'est un choix. Trois options : détruire la Larme (Sealine est perdue, le sceau se referme), détacher la Larme sans la briser (le seuil reste entrouvert, la Spirale filtre, Sealine revient), ou laisser Thade ouvrir le seuil (la Spirale déferle, Thade franchit le seuil vers Sealine, Valombre est transformée). ; Les PJ doivent comprendre les trois options et leurs conséquences. ; Detacher la Larme sauve Sealine mais laisse la Spirale filtrer
+- Sealine apparaît dans le vortex. Elle est calme, lucide, présente. Elle parle aux PJ et à Thade. Elle sait ce que Thade a fait. Elle sait ce qu'elle coûte. La conversation n'est pas un combat — c'est un choix. Trois options : détruire la Larme (Sealine est perdue, le sceau se referme), détacher la Larme sans la briser (le seuil reste entrouvert, la Spirale filtre, Sealine revient), ou laisser Thade ouvrir le seuil (la Spirale déferle, Thade franchit le seuil vers Sealine, Valombre est transformée).
+- Décider du sort de la Larme, de Sealine, de Thade et de Valombre.
+- Les PJ doivent comprendre les trois options et leurs conséquences irréversibles avant de choisir.
 
 [Actions possibles évidentes]
 - écouter Sealine expliquer les trois options
@@ -211,85 +247,97 @@ Sealine apparaît dans le vortex. Elle est calme, lucide, présente. Elle parle 
 - choisir : détruire la Larme, détacher la Larme, ou laisser Thade ouvrir le seuil
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Le sceau n'est pas referme parfaitement
+La scène continue : Choix du détachement de la Larme sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Vérités comme armes ; Larme comme catalyseur ; Sealine proche du vortex ; Sealine présente et lucide ; Trois options et leurs prix
+- Indices ratés, refusés ou perdus : Affaiblissement par destruction du corps ; Lecture exhaustive des cahiers ; Aucun nouvel indice majeur raté ; Avantage du corps détruit ; Victoire rapide sans danger
+- Décisions des PJ : Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve. ; Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes. ; Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol.
+- Conséquences visibles : Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve. ; Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes. ; Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol. ; Conséquence intermédiaire jouée dans La Conversation à Trois
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise ; Le Plan de Thade — accomplissement
+- Fronts ou horloges modifiés : front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper. ; front_plan_thade / menace_larme_vael : +1 segment (segment 5). Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation. ; front_dephasage / menace_dephasage_ancrage : Confirmation narrative (pas de segment). Le sommet de la Tour est déphasé. La Spirale est là. Le MJ note que le déphasage a atteint la Tour elle-même. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 6). Bourdonnement dans les Hauteurs. Ciel violet. Larme visible au cœur du vortex. Thade n'a plus besoin de dissimulation. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 6). Les sept tombes cessent d'agir comme un ensemble. Une lumière remonte du puits. Des sections complètes cessent d'appartenir à la mine.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : Le DD exact et les consequences d'un detachement partiel peuvent demander une table mecanique plus detaillee.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Solution parfaite sans prix.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera transforme les indices visibles en levier concret pour la suite. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : écouter Sealine expliquer les trois options en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : écouter Sealine expliquer les trois options, avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael cherche une solution droite qui ne bloque pas l'enquete. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : poser des questions sur les conséquences de chaque option tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : poser des questions sur les conséquences de chaque option, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-choix moral irreversible. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+choisir un prix au lieu de chercher une solution parfaite. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 choisir : détruire la Larme, détacher la Larme, ou laisser Thade ouvrir le seuil
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Vérités comme armes ; Larme comme catalyseur ; Sealine proche du vortex ; Sealine présente et lucide ; Trois options et leurs prix
+- Indices ratés, refusés ou perdus : Affaiblissement par destruction du corps ; Lecture exhaustive des cahiers ; Aucun nouvel indice majeur raté ; Avantage du corps détruit ; Victoire rapide sans danger
+- Décisions des PJ : Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve. ; Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes. ; Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol.
+- Conséquences visibles : Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve. ; Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes. ; Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol. ; Conséquence intermédiaire jouée dans La Conversation à Trois
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise ; Le Plan de Thade — accomplissement
+- Fronts ou horloges modifiés : front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper. ; front_plan_thade / menace_larme_vael : +1 segment (segment 5). Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation. ; front_dephasage / menace_dephasage_ancrage : Confirmation narrative (pas de segment). Le sommet de la Tour est déphasé. La Spirale est là. Le MJ note que le déphasage a atteint la Tour elle-même. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 6). Bourdonnement dans les Hauteurs. Ciel violet. Larme visible au cœur du vortex. Thade n'a plus besoin de dissimulation. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 6). Les sept tombes cessent d'agir comme un ensemble. Une lumière remonte du puits. Des sections complètes cessent d'appartenir à la mine.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 4
 
 #### 1. MJ Valombre
 
 [Scène]
-Les PJ debattent longuement entre certitude du sceau et possibilite d'un monde change.
+Une forme se dessine dans le vortex. D'abord un contour, puis des détails. Une femme. Cheveux sombres, visage calme, yeux qui ont vu plus que ce qu'un visage devrait porter. Elle porte des vêtements simples — une robe de maison, des chaussures plates. Elle ressemble à quelqu'un qui préparait le thé quand tout a basculé.
+
+« Thade », dit-elle.
+
+Thade lève la tête. Ses yeux sont brisés. « Sealine. »
+
+« Je sais », dit-elle. « Je sais tout. Les patients. Les bocaux. La Larme. Je sais. »
+
+Un silence. Puis : « Et je sais pourquoi. »
+
+Elle se tourne vers vous. « Vous devez décider. Pas lui. Pas moi. Vous. »
 
 [Informations visibles]
-Sealine apparaît dans le vortex. Elle est calme, lucide, présente. Elle parle aux PJ et à Thade. Elle sait ce que Thade a fait. Elle sait ce qu'elle coûte. La conversation n'est pas un combat — c'est un choix. Trois options : détruire la Larme (Sealine est perdue, le sceau se referme), détacher la Larme sans la briser (le seuil reste entrouvert, la Spirale filtre, Sealine revient), ou laisser Thade ouvrir le seuil (la Spirale déferle, Thade franchit le seuil vers Sealine, Valombre est transformée). ; Les PJ doivent comprendre les trois options et leurs conséquences. ; Le choix appartient aux PJ
+- Sealine apparaît dans le vortex. Elle est calme, lucide, présente. Elle parle aux PJ et à Thade. Elle sait ce que Thade a fait. Elle sait ce qu'elle coûte. La conversation n'est pas un combat — c'est un choix. Trois options : détruire la Larme (Sealine est perdue, le sceau se referme), détacher la Larme sans la briser (le seuil reste entrouvert, la Spirale filtre, Sealine revient), ou laisser Thade ouvrir le seuil (la Spirale déferle, Thade franchit le seuil vers Sealine, Valombre est transformée).
+- Décider du sort de la Larme, de Sealine, de Thade et de Valombre.
+- Les PJ doivent comprendre les trois options et leurs conséquences irréversibles avant de choisir.
 
 [Actions possibles évidentes]
 - écouter Sealine expliquer les trois options
@@ -298,85 +346,97 @@ Sealine apparaît dans le vortex. Elle est calme, lucide, présente. Elle parle 
 - choisir : détruire la Larme, détacher la Larme, ou laisser Thade ouvrir le seuil
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Thade survit pour etre juge
+La scène continue : Choix du détachement de la Larme sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Larme comme catalyseur ; Sealine proche du vortex ; Sealine présente et lucide ; Trois options et leurs prix ; Choix du détachement de la Larme
+- Indices ratés, refusés ou perdus : Affaiblissement par destruction du corps ; Lecture exhaustive des cahiers ; Aucun nouvel indice majeur raté ; Avantage du corps détruit ; Victoire rapide sans danger
+- Décisions des PJ : Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve. ; Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes. ; Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol.
+- Conséquences visibles : Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve. ; Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes. ; Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol. ; Conséquence intermédiaire jouée dans La Conversation à Trois
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise ; Le Plan de Thade — accomplissement
+- Fronts ou horloges modifiés : front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper. ; front_plan_thade / menace_larme_vael : +1 segment (segment 5). Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation. ; front_dephasage / menace_dephasage_ancrage : Confirmation narrative (pas de segment). Le sommet de la Tour est déphasé. La Spirale est là. Le MJ note que le déphasage a atteint la Tour elle-même. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 6). Bourdonnement dans les Hauteurs. Ciel violet. Larme visible au cœur du vortex. Thade n'a plus besoin de dissimulation. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 6). Les sept tombes cessent d'agir comme un ensemble. Une lumière remonte du puits. Des sections complètes cessent d'appartenir à la mine.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : Le DD exact et les consequences d'un detachement partiel peuvent demander une table mecanique plus detaillee.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Solution parfaite sans prix.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera cherche les failles, les angles morts et ce que les puissants essaient de garder hors champ. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : écouter Sealine expliquer les trois options en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : écouter Sealine expliquer les trois options, avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael protege les innocents et pose la limite morale de la scene. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : poser des questions sur les conséquences de chaque option tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : poser des questions sur les conséquences de chaque option, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-choix moral irreversible. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+choisir un prix au lieu de chercher une solution parfaite. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 choisir : détruire la Larme, détacher la Larme, ou laisser Thade ouvrir le seuil
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Larme comme catalyseur ; Sealine proche du vortex ; Sealine présente et lucide ; Trois options et leurs prix ; Choix du détachement de la Larme
+- Indices ratés, refusés ou perdus : Affaiblissement par destruction du corps ; Lecture exhaustive des cahiers ; Aucun nouvel indice majeur raté ; Avantage du corps détruit ; Victoire rapide sans danger
+- Décisions des PJ : Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients. ; Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve. ; Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes. ; Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol.
+- Conséquences visibles : Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve. ; Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes. ; Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol. ; Conséquence intermédiaire jouée dans La Conversation à Trois
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise ; Le Plan de Thade — accomplissement
+- Fronts ou horloges modifiés : front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper. ; front_plan_thade / menace_larme_vael : +1 segment (segment 5). Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation. ; front_dephasage / menace_dephasage_ancrage : Confirmation narrative (pas de segment). Le sommet de la Tour est déphasé. La Spirale est là. Le MJ note que le déphasage a atteint la Tour elle-même. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 6). Bourdonnement dans les Hauteurs. Ciel violet. Larme visible au cœur du vortex. Thade n'a plus besoin de dissimulation. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 6). Les sept tombes cessent d'agir comme un ensemble. Une lumière remonte du puits. Des sections complètes cessent d'appartenir à la mine.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 5
 
 #### 1. MJ Valombre
 
 [Scène]
-Ils choisissent de detacher la Larme sans la briser, en assumant une Valombre transformee mais non livree.
+Une forme se dessine dans le vortex. D'abord un contour, puis des détails. Une femme. Cheveux sombres, visage calme, yeux qui ont vu plus que ce qu'un visage devrait porter. Elle porte des vêtements simples — une robe de maison, des chaussures plates. Elle ressemble à quelqu'un qui préparait le thé quand tout a basculé.
+
+« Thade », dit-elle.
+
+Thade lève la tête. Ses yeux sont brisés. « Sealine. »
+
+« Je sais », dit-elle. « Je sais tout. Les patients. Les bocaux. La Larme. Je sais. »
+
+Un silence. Puis : « Et je sais pourquoi. »
+
+Elle se tourne vers vous. « Vous devez décider. Pas lui. Pas moi. Vous. »
 
 [Informations visibles]
-Sealine apparaît dans le vortex. Elle est calme, lucide, présente. Elle parle aux PJ et à Thade. Elle sait ce que Thade a fait. Elle sait ce qu'elle coûte. La conversation n'est pas un combat — c'est un choix. Trois options : détruire la Larme (Sealine est perdue, le sceau se referme), détacher la Larme sans la briser (le seuil reste entrouvert, la Spirale filtre, Sealine revient), ou laisser Thade ouvrir le seuil (la Spirale déferle, Thade franchit le seuil vers Sealine, Valombre est transformée). ; Les PJ doivent comprendre les trois options et leurs conséquences. ; Le choix appartient aux PJ
+- Sealine apparaît dans le vortex. Elle est calme, lucide, présente. Elle parle aux PJ et à Thade. Elle sait ce que Thade a fait. Elle sait ce qu'elle coûte. La conversation n'est pas un combat — c'est un choix. Trois options : détruire la Larme (Sealine est perdue, le sceau se referme), détacher la Larme sans la briser (le seuil reste entrouvert, la Spirale filtre, Sealine revient), ou laisser Thade ouvrir le seuil (la Spirale déferle, Thade franchit le seuil vers Sealine, Valombre est transformée).
+- Décider du sort de la Larme, de Sealine, de Thade et de Valombre.
+- Les PJ doivent comprendre les trois options et leurs conséquences irréversibles avant de choisir.
 
 [Actions possibles évidentes]
 - écouter Sealine expliquer les trois options
@@ -385,146 +445,135 @@ Sealine apparaît dans le vortex. Elle est calme, lucide, présente. Elle parle 
 - choisir : détruire la Larme, détacher la Larme, ou laisser Thade ouvrir le seuil
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Thade survit pour etre juge
+Les PJ détachent la Larme sans la briser : Sealine revient, mais Valombre reste changée.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : Vers `s3_monde_apres` : decrire Valombre apres le choix et le faible decompte de victimes.
+- Indices obtenus : Larme comme catalyseur ; Sealine proche du vortex ; Sealine présente et lucide ; Trois options et leurs prix ; Choix du détachement de la Larme
+- Indices ratés, refusés ou perdus : Affaiblissement par destruction du corps ; Lecture exhaustive des cahiers ; Aucun nouvel indice majeur raté ; Avantage du corps détruit ; Victoire rapide sans danger
+- Décisions des PJ : Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve. ; Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes. ; Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol. ; Les PJ détachent la Larme sans la briser : Sealine revient, mais Valombre reste changée.
+- Conséquences visibles : Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve. ; Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes. ; Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol. ; Conséquence intermédiaire jouée dans La Conversation à Trois ; Les PJ détachent la Larme sans la briser : Sealine revient, mais Valombre reste changée.
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise ; Le Plan de Thade — accomplissement
+- Fronts ou horloges modifiés : front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper. ; front_plan_thade / menace_larme_vael : +1 segment (segment 5). Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation. ; front_dephasage / menace_dephasage_ancrage : Confirmation narrative (pas de segment). Le sommet de la Tour est déphasé. La Spirale est là. Le MJ note que le déphasage a atteint la Tour elle-même. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 6). Bourdonnement dans les Hauteurs. Ciel violet. Larme visible au cœur du vortex. Thade n'a plus besoin de dissimulation. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 6). Les sept tombes cessent d'agir comme un ensemble. Une lumière remonte du puits. Des sections complètes cessent d'appartenir à la mine.
+- Prochaine piste choisie par les PJ : Vers `s3_monde_apres` : décrire l'après selon ce choix et le faible décompte de victimes.
 
 [Rapport de test]
-- Bug : Le DD exact et les consequences d'un detachement partiel peuvent demander une table mecanique plus detaillee.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Solution parfaite sans prix.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Vous avez formule votre prochain mouvement ; comment vous organisez-vous pour la transition ?
+Vous avez formulé votre prochain mouvement ; comment vous organisez-vous avant la transition ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera teste une approche discrete sans utiliser d'information qu'elle ne possede pas. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : écouter Sealine expliquer les trois options en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : écouter Sealine expliquer les trois options, avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael evalue le risque tactique avant que le groupe ne s'engage davantage. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : poser des questions sur les conséquences de chaque option tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : poser des questions sur les conséquences de chaque option, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-choix moral irreversible. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+choisir un prix au lieu de chercher une solution parfaite. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
-Vers `s3_monde_apres` : decrire Valombre apres le choix et le faible decompte de victimes.
+Vers `s3_monde_apres` : décrire l'après selon ce choix et le faible décompte de victimes.
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre ; Syndicat des Brumes potentiel
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : Vers `s3_monde_apres` : decrire Valombre apres le choix et le faible decompte de victimes.
+- Indices obtenus : Larme comme catalyseur ; Sealine proche du vortex ; Sealine présente et lucide ; Trois options et leurs prix ; Choix du détachement de la Larme
+- Indices ratés, refusés ou perdus : Affaiblissement par destruction du corps ; Lecture exhaustive des cahiers ; Aucun nouvel indice majeur raté ; Avantage du corps détruit ; Victoire rapide sans danger
+- Décisions des PJ : Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes. ; Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve. ; Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes. ; Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol. ; Les PJ détachent la Larme sans la briser : Sealine revient, mais Valombre reste changée.
+- Conséquences visibles : Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve. ; Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes. ; Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol. ; Conséquence intermédiaire jouée dans La Conversation à Trois ; Les PJ détachent la Larme sans la briser : Sealine revient, mais Valombre reste changée.
+- PNJ affectés : elian_voss ; etudiants_charmes ; gardes_pieges ; creature_spirale_cooptee ; magi_tuteur_loyal
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise ; Le Plan de Thade — accomplissement
+- Fronts ou horloges modifiés : front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper. ; front_plan_thade / menace_larme_vael : +1 segment (segment 5). Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation. ; front_dephasage / menace_dephasage_ancrage : Confirmation narrative (pas de segment). Le sommet de la Tour est déphasé. La Spirale est là. Le MJ note que le déphasage a atteint la Tour elle-même. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 6). Bourdonnement dans les Hauteurs. Ciel violet. Larme visible au cœur du vortex. Thade n'a plus besoin de dissimulation. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 6). Les sept tombes cessent d'agir comme un ensemble. Une lumière remonte du puits. Des sections complètes cessent d'appartenir à la mine.
+- Piste concrète choisie : Vers `s3_monde_apres` : décrire l'après selon ce choix et le faible décompte de victimes.
 
 
 ## Indices obtenus
 
-- Sealine est presente et lucide
+- Sealine présente et lucide
 - Trois options et leurs prix
-- Detacher la Larme sauve Sealine mais laisse la Spirale filtrer
-- Le choix appartient aux PJ
+- Choix du détachement de la Larme
 
 ## Indices ratés, refusés ou perdus
 
 - Solution parfaite sans prix
-- Fermeture complete du seuil avec Sealine sauvee
+- Fermeture complète avec Sealine sauvée
 
 ## Décisions des PJ
 
-- Detacher la Larme sans la briser
-- Assumer le seuil entrouvert
-- Faire juger Thade ensuite par les vivants
+- Les PJ détachent la Larme sans la briser : Sealine revient, mais Valombre reste changée.
 
 ## Conséquences visibles
 
-- Sealine revient fragile
-- Valombre reste changee
-- Le sceau n'est pas referme parfaitement
-- Thade survit pour etre juge
+- Les PJ détachent la Larme sans la briser : Sealine revient, mais Valombre reste changée.
+- Les PNJ et factions listés ci-dessous réagissent dans le cadre visible de la scène.
 
 ## PNJ affectés
 
-- Sealine Vael
-- Thade Coren
-- Nera Ombrefil
-- Ser Kael Dorn
+- thade_coren
+- sealine_coren
 
 ## Factions affectées
 
-- Spirale
-- Conseil
-- Resistance
-- Universite
+- Le Plan de Thade — accomplissement
+- Le Sceau qui cède
+- La Cité sous pression
 
 ## Fronts ou horloges modifiés
 
-- Aucun effet de front automatique source pour cette scene, ou effet volontairement narratif.
-
-État retenu pour la campagne :
-- front_plan_thade : resolu par interruption du rituel total
-- front_sceau_qui_cede : stabilise mais entrouvert
+- Aucun effet de front automatique pour cette scène ou avancement volontairement narratif.
 
 ## Transition choisie par les PJ
 
-Vers `s3_monde_apres` : decrire Valombre apres le choix et le faible decompte de victimes.
+Vers `s3_monde_apres` : décrire l'après selon ce choix et le faible décompte de victimes.
 
 ## Manques ou incohérences détectés
 
-- Le DD exact et les consequences d'un detachement partiel peuvent demander une table mecanique plus detaillee.
+- Indice raté/refusé/perdu pendant la simulation : Solution parfaite sans prix.
+- Indice raté/refusé/perdu pendant la simulation : Fermeture complète avec Sealine sauvée.
 
 ## Recommandations
 
 ### Bug
 
-- Corriger toute divergence d'ID, de lieu ou de secret signalee dans les manques ci-dessus.
+- Corriger les incohérences d'ID, de lieu ou de secret signalées ci-dessus.
 
 ### Dette technique
 
-- Ajouter un etat de campagne machine-readable pour les indices, les fronts, les PNJ allies et le decompte des victimes.
+- Ajouter un état de campagne sérialisé pour les indices, fronts, alliés, patients et victimes de la Tour.
 
 ### Amélioration UX
 
-- Separrer clairement les informations visibles PJ, les notes MJ et les secrets de campagne dans l'interface.
+- Séparer strictement les informations visibles PJ, les notes MJ et les secrets.
 
 ### Amélioration narrative
 
-- Prevoir pour chaque scene une relance de PNJ ou de front qui conserve l'agence des PJ sans bloquer la progression.
+- Ajouter à chaque scène une relance explicite de PNJ ou de front si les PJ hésitent.

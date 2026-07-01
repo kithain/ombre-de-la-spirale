@@ -4,37 +4,37 @@
 
 ### Le Serment des Sept Thanes
 
-1. `s1_bureau_thade` - Le Bureau de Thade Coren - teste dans `01-le-bureau-de-thade-coren.md`.
-2. `s1_premiere_descente` - Première Descente aux Terrasses - teste dans `02-premiere-descente-aux-terrasses.md`.
-3. `s1_mort_jaren` - La Mort de Jaren Velt - teste dans `03-la-mort-de-jaren-velt.md`.
-4. `s1_temple_forgeron` - Le Temple-Forgeron et les Rites Perdus - teste dans `04-le-temple-forgeron-et-les-rites-perdus.md`.
-5. `s1_archives_scellees` - Les Archives Médicales Scellées - teste dans `05-les-archives-medicales-scellees.md`.
-6. `s1_bureau_olane` - Le Bureau d'Olane - teste dans `06-le-bureau-dolane.md`.
-7. `s1_retour_cimetiere` - Le Retour au Cimetière - teste dans `07-le-retour-au-cimetiere.md`.
-8. `s1_rencontre_resistance` - La Rencontre avec la Résistance - teste dans `08-la-rencontre-avec-la-resistance.md`.
-9. `s1_choix` - Le Choix - teste dans `09-le-choix.md`.
+1. `s1_bureau_thade` - Le Bureau de Thade Coren - testé dans `01-le-bureau-de-thade-coren.md`.
+2. `s1_premiere_descente` - Première Descente aux Terrasses - testé dans `02-premiere-descente-aux-terrasses.md`.
+3. `s1_mort_jaren` - La Mort de Jaren Velt - testé dans `03-la-mort-de-jaren-velt.md`.
+4. `s1_temple_forgeron` - Le Temple-Forgeron et les Rites Perdus - testé dans `04-le-temple-forgeron-et-les-rites-perdus.md`.
+5. `s1_archives_scellees` - Les Archives Médicales Scellées - testé dans `05-les-archives-medicales-scellees.md`.
+6. `s1_bureau_olane` - Le Bureau d'Olane - testé dans `06-le-bureau-dolane.md`.
+7. `s1_retour_cimetiere` - Le Retour au Cimetière - testé dans `07-le-retour-au-cimetiere.md`.
+8. `s1_rencontre_resistance` - La Rencontre avec la Résistance - testé dans `08-la-rencontre-avec-la-resistance.md`.
+9. `s1_choix` - Le Choix - testé dans `09-le-choix.md`.
 
 ### Les Masques de Nyx
 
-10. `s2_emeute_place` - L'Émeute de la Place de la Fondation - teste dans `10-lemeute-de-la-place-de-la-fondation.md`.
-11. `s2_conseil_crise` - Le Conseil en Crise - teste dans `11-le-conseil-en-crise.md`.
-12. `s2_endeuilles_edran` - Les Endeuillés d'Edran Morn - teste dans `12-les-endeuilles-dedran-morn.md`.
-13. `s2_dephasage_visible` - Le Déphasage Visible - teste dans `13-le-dephasage-visible.md`.
-14. `s2_lettres_doublees` - Les Lettres Doublées - teste dans `14-les-lettres-doublees.md`.
-15. `s2_route_qui_boucle` - La Route qui Boucle - teste dans `15-la-route-qui-boucle.md`.
-16. `s2_entrepots_pleins` - Les Entrepôts Pleins - teste dans `16-les-entrepots-pleins.md`.
-17. `s2_conseil_sous_pression` - Le Conseil sous Pression - teste dans `17-le-conseil-sous-pression.md`.
-18. `s2_reserve_interdite` - La Réserve de Recherche Interdite - teste dans `18-la-reserve-de-recherche-interdite.md`.
-19. `s2_laboratoire_elian` - Le Laboratoire d'Elian Voss - teste dans `19-le-laboratoire-delian-voss.md`.
-20. `s2_assaut_tour` - L'Assaut de la Tour - teste dans `20-lassaut-de-la-tour.md`.
-21. `s2_laboratoire_verre` - Le Laboratoire de Verre - teste dans `21-le-laboratoire-de-verre.md`.
-22. `s2_vers_s3_escalier_du_sommet` - L'Escalier du Sommet - teste dans `22-lescalier-du-sommet.md`.
+10. `s2_emeute_place` - L'Émeute de la Place de la Fondation - testé dans `10-lemeute-de-la-place-de-la-fondation.md`.
+11. `s2_conseil_crise` - Le Conseil en Crise - testé dans `11-le-conseil-en-crise.md`.
+12. `s2_endeuilles_edran` - Les Endeuillés d'Edran Morn - testé dans `12-les-endeuilles-dedran-morn.md`.
+13. `s2_dephasage_visible` - Le Déphasage Visible - testé dans `13-le-dephasage-visible.md`.
+14. `s2_lettres_doublees` - Les Lettres Doublées - testé dans `14-les-lettres-doublees.md`.
+15. `s2_route_qui_boucle` - La Route qui Boucle - testé dans `15-la-route-qui-boucle.md`.
+16. `s2_entrepots_pleins` - Les Entrepôts Pleins - testé dans `16-les-entrepots-pleins.md`.
+17. `s2_conseil_sous_pression` - Le Conseil sous Pression - testé dans `17-le-conseil-sous-pression.md`.
+18. `s2_reserve_interdite` - La Réserve de Recherche Interdite - testé dans `18-la-reserve-de-recherche-interdite.md`.
+19. `s2_laboratoire_elian` - Le Laboratoire d'Elian Voss - testé dans `19-le-laboratoire-delian-voss.md`.
+20. `s2_assaut_tour` - L'Assaut de la Tour - testé dans `20-lassaut-de-la-tour.md`.
+21. `s2_laboratoire_verre` - Le Laboratoire de Verre - testé dans `21-le-laboratoire-de-verre.md`.
+22. `s2_vers_s3_escalier_du_sommet` - L'Escalier du Sommet - testé dans `22-lescalier-du-sommet.md`.
 
 ### La Dame de la Spirale
 
-23. `s3_vortex` - Le Vortex - teste dans `23-le-vortex.md`.
-24. `s3_conversation_trois` - La Conversation à Trois - teste dans `24-la-conversation-a-trois.md`.
-25. `s3_monde_apres` - Le Monde d'Après - teste dans `25-le-monde-dapres.md`.
+23. `s3_vortex` - Le Vortex - testé dans `23-le-vortex.md`.
+24. `s3_conversation_trois` - La Conversation à Trois - testé dans `24-la-conversation-a-trois.md`.
+25. `s3_monde_apres` - Le Monde d'Après - testé dans `25-le-monde-dapres.md`.
 
 ## État global de campagne après campagne complète
 
@@ -44,420 +44,270 @@
 
 ## Indices obtenus
 
-- Profanations au Cimetière des Terrasses
-- Tombes des Sept Thanes ciblees
-- Conseil indifférent
-- Clans nains mefiants envers l'Universite
 - Mandat officiel de Thade
-- Thorgar identifie
-- Coffret de Thade a runes funeraires de conservation
-- Ciselets d'Universite utilises sous les dalles
-- Runes dans l'os des tombes touchees
-- Froid anormal du Mausolee
-- Notes de Jaren avec cachet de Caldris
-- Rune de Dissection a Distance
-- Parfum de lavande sur la scene
-- Pages arrachees dans les notes de Jaren
-- Jaren etait implique dans les prelevements
+- Tombes des Sept Thanes ciblées
+- Coffret plombé à runes funéraires de conservation
+- Outils d'Université sur les tombes
+- Runes dans l'os
+- Froid du Mausolée
+- Notes de Jaren
+- Rune de Dissection à Distance
+- Parfum de lavande
+- Pages arrachées
+- Jaren était un témoin dangereux
 - Rites d'Edhrek-Murn
 - Runes d'ancrage
-- Les tombes forment un systeme actif
-- Restaurer les rites peut ralentir le sceau
+- Tombes comme système actif
 - Dossier Coren, S. - 12-VAEL
 - Protocole S-01
-- Lien entre Thade, Nyx et Sealine
-- Reference a la litterature interdite
-- Flux arcaniques detournes vers la Tour
-- Olane isolee par l'Universite
-- Preuves utilisables si formalisees
-- La Tour devient cible d'enquete
-- Cinq tombes touchees
-- Bourdonnement du Puits de l'Abime
-- Passages vers les egouts
-- Urgence de proteger les deux dernieres tombes
-- Existence de la Resistance
-- Mara cherche la verite sur Nyx
-- Le Collecteur connait des caisses d'os
-- Sniv peut guider dans les egouts
-- Thade preleve les os pour ouvrir le seuil
-- Restaurer les rites suppose de recuperer les os
-- La Resistance offre egouts et reseau
-- Le choix des PJ determine le scenario 2
-- Le Champion exploite la peur
-- Des nains sont pris pour cibles
-- Rumeurs de soutien logistique marchand
-- La garde est divisee
+- Lien Thade - Nyx - Sealine
+- Flux arcaniques détournés vers la Tour
+- Olane isolée
+- La Tour devient cible d'enquête
+- Cinq tombes touchées
+- Bourdonnement du Puits de l'Abîme
+- Passages vers les égouts
+- Existence de la Résistance
+- Mara cherche la vérité sur Nyx
+- Caisses d'os dans les égouts
+- Sniv comme guide
+- Thade prélève les os pour ouvrir le seuil
+- Restaurer les rites exige de récupérer les os
+- La Résistance offre une voie hors Université
+- Champion de la Bannière Pure
+- Garde divisée
+- Rumeurs de soutien logistique
 - Le Conseil cherche un coupable simple
 - Olane peut encore parler
-- Hessa defend les clans
-- Une loi martiale partielle menace
-- Textes voles portant le tampon de la Reserve Interdite
-- Rite d'Edhrek-Murn inverse
-- Edran est un relais involontaire
-- Thade a arme indirectement les Endeuilles
-- Le dephasage est visible
-- Filaments planaires vers le Puits de l'Abime
-- Les routes locales mentent
-- La Spirale filtre par les fissures
-- Deux lettres venues de cites differentes repetent la meme phrase
-- Horloges et registres se desynchronisent
-- Le dephasage a une trace administrative
+- Hessa défend les clans
+- Textes tamponnés Réserve Interdite
+- Edhrek-Murn inversé
+- Edran relais involontaire
+- Déphasage visible
+- Filaments vers le Puits de l'Abîme
+- Routes locales menteuses
+- Lettres doublées
+- Horloges désynchronisées
+- Trace administrative du déphasage
 - Route qui boucle
-- Même borne retrouvee
 - Cartes contradictoires
-- Valombre n'est plus raccordee normalement aux routes
-- Stocks de minerai qui s'accumulent
-- Paiements et lettres de credit bizarres
-- Convois qui ne partent pas vraiment
-- La Guilde masque la crise
+- Valombre ne sort plus normalement
+- Stocks de minerai bloqués
+- Lettres de crédit bizarres
+- Guilde Marchande masque la crise
 - Preuve de Caldris
-- Le Conseil sait que Valombre est deja piegee
-- Mandat limite pour agir contre la Tour
-- Olane conserve un relais
-- Registre des 142 consultations de Thade
-- Themes : seuils, ancrages, resonance planaire
-- Preuve de preparation methodique
-- Lien avec textes des Endeuilles
-- Schema de la Larme de Vael
-- Annotation de Sealine : ne jamais alimenter avec des vivants
-- Dossiers des patients
-- Elian Voss peut temoigner
-- La Tour est un dispositif rituel
-- Loyalistes retournables
-- Magi-Tuteur loyal epargne
-- Decompte des victimes tenu
+- Valombre déjà piégée
+- Mandat limité contre la Tour
+- 142 consultations de Thade
+- Seuils et ancrages
+- Preuve de préparation méthodique
+- Schéma de la Larme de Vael
+- Annotation de Sealine
+- Registre des 50 patients d'Elian
+- Elian comme témoin retournable
+- Tour comme dispositif rituel
+- Magi-Tuteur loyal retourné
+- Décompte des victimes faible
 - Corps de Thade dans la cuve
-- Esprit de Thade au sommet
-- Cahiers bordeaux : lettres a Sealine
-- Thade n'est pas seulement strategique, il est brise
-- Absence d'odeur du dephasage
-- Murmure de Thade vers Sealine
-- Sommet dephase
-- Dernier moment de preparation
-- Les verites accumulees fissurent la Larme
-- La Larme est le catalyseur
-- Thade combat par amour et deni
-- Sealine est proche du vortex
-- Sealine est presente et lucide
+- Esprit au sommet
+- Cahiers bordeaux à Sealine
+- Absence d'odeur du déphasage
+- Murmure de Thade
+- Sommet déphasé
+- Vérités comme armes
+- Larme comme catalyseur
+- Sealine proche du vortex
+- Sealine présente et lucide
 - Trois options et leurs prix
-- Detacher la Larme sauve Sealine mais laisse la Spirale filtrer
-- Le choix appartient aux PJ
-- Epilogue selon option 2
+- Choix du détachement de la Larme
 - Sealine revenue fragile
-- Valombre apprend a vivre avec une Spirale filtrante
-- Faible decompte de victimes adoucit le ton
+- Thade vivant pour être jugé
+- Résistance reconnue prudemment
+- Valombre transformée
 
 ## Indices ratés, refusés ou perdus
 
-- Contenu exact du coffret plombe
+- Contenu exact du coffret
 - Nature exacte des fragments disparus
-- Preuve directe d'implication de Thade ou de l'Universite
-- Identite complete du commanditaire
-- Sens complet des runes d'ancrage
-- Role exact de Jaren
-- Auteur direct du sort
-- Contenu des pages arrachees
-- Architecture complete de la Spirale
-- Emplacement des os deja preleves
-- Interpretation complete de la Larme de Vael
-- Liste exhaustive des complicites institutionnelles
-- Identite de tous les loyalistes de la Tour
+- Commanditaire exact des profanations
+- Sens complet des runes
+- Auteur prouvable du sort
+- Contenu des pages arrachées
+- Architecture complète de la Spirale
+- Emplacement des os prélevés
+- Interprétation complète de la Larme
+- Liste complète des responsabilités internes
+- Identité de tous les loyalistes
 - Plan complet de Thade
 - Destination finale des caisses
-- Identite du transporteur clandestin
+- Transporteur clandestin exact
 - Prix exact du Collecteur
-- Toutes les caches de la Resistance
-- Reaction immediate de Thade au changement de camp
-- Position officielle du Conseil
-- Identite exacte des financeurs
-- Preuve publique suffisante contre le Champion
-- Vote definitif contre la repression
-- Mandat complet contre Thade
-- Qui a remis physiquement les textes a Edran
-- Tous les exemplaires des textes
-- Mecanisme complet du reancrage
-- Etendue exacte de la zone
-- Cause exacte de la repetition
-- Point de rupture hors de Valombre
-- Methode pour sortir durablement
-- Limite geographique exacte du voile
-- Complicite exacte des grandes maisons
-- Reaction complete de Caldris
+- Toutes les caches de la Résistance
+- Réaction immédiate de Thade
+- Vote officiel définitif du Conseil
+- Financeurs exacts du Champion
+- Preuve publique suffisante
+- Vote définitif contre la répression
+- Mandat direct contre Thade
+- Qui a remis physiquement les textes
+- Tous les exemplaires
+- Méthode complète de réancrage
+- Étendue exacte du voile
+- Cause exacte de la répétition
+- Point de rupture extérieur
+- Moyen de sortie durable
+- Limite géographique exacte
+- Complicité exacte des grandes maisons
+- Réaction complète de Caldris
+- Arrestation immédiate de Thade
 - Consensus public complet
-- Arrestation immediate de Thade
-- Tous les ouvrages consultes
-- Identite de tous ceux qui ont autorise l'acces
-- Tous les patients localises
-- Destination de certains echantillons deja deplaces
-- Controle complet des etages inferieurs
-- Arret immediat du rituel
+- Tous les ouvrages consultés
+- Tous les responsables des accès
+- Tous les patients immédiatement localisés
+- Échantillons déjà déplacés
+- Contrôle complet de tous les étages
+- Arrêt immédiat du rituel
 - Affaiblissement par destruction du corps
 - Lecture exhaustive des cahiers
-- Aucun nouvel indice majeur rate
-- Avantage de corps detruit
-- Victoire rapide par affaiblissement prealable
+- Aucun nouvel indice majeur raté
+- Avantage du corps détruit
+- Victoire rapide sans danger
 - Solution parfaite sans prix
-- Fermeture complete du seuil avec Sealine sauvee
-- Retour a une normalite parfaite
-- Responsabilite institutionnelle entierement resolue
+- Fermeture complète avec Sealine sauvée
+- Retour à une normalité parfaite
+- Responsabilité institutionnelle entièrement réglée
 
 ## Décisions des PJ
 
-- Accepter la mission initiale sans confiance aveugle
-- Partir de nuit vers les Terrasses
-- Respecter l'autorite de Thorgar sur les tombes
-- Ne pas tout remettre a Thade sans copie
-- Suivre Jaren comme temoin potentiel
-- Ne pas accuser Thade publiquement
-- Chercher une personne capable de proteger les preuves
-- Conserver les notes restantes
-- Traiter Thorgar comme un allie potentiel
-- Chercher les archives pour confirmer S-01 et les prelevements
-- Tenter de restaurer les rites si les os sont retrouves
-- Copier le dossier au lieu de l'emporter entierement
-- Aller voir Olane
-- Ne pas rapporter S-01 a Thade
-- Soutenir Olane
-- Ne pas exposer publiquement les preuves trop tot
-- Retourner au Cimetière pour evaluer l'urgence
-- Proteger les deux tombes restantes
-- Demander a Thorgar de preparer les rites
-- Chercher la Resistance ou les egouts
-- S'allier prudemment avec Mara
-- Ne pas trahir la Resistance a Thade
-- Comparer les preuves de Mara, Olane et Thorgar
-- Rejoindre la Resistance
-- Proteer le sceau avec Thorgar
-- Garder Olane comme alliee institutionnelle
-- Ne plus transmettre les decouvertes a Thade
-- Proteer les nains
-- Eviter le massacre
-- Chercher le Conseil avant que la loi martiale ne soit automatique
-- Presenter des preuves sans tout reveler
-- Chercher les Endeuilles
-- Eviter que Nyx serve de bouc emissaire global
-- Convaincre plutot que tuer Edran
-- Detruire ou securiser les textes
-- Comparer les tampons avec la Reserve
-- Sauver les habitants d'abord
-- Documenter les anomalies
-- Relier le phenomene au sceau et au Puits
-- Conserver les lettres comme preuves
-- Chercher une preuve physique par la route
-- Ne pas laisser la Guilde enterrer l'anomalie
-- Revenir avec preuve au lieu de s'epuiser
-- Comparer avec les stocks marchands
-- Prevenir Mara et Olane
-- Ne pas declencher de panique publique immediate
-- Porter les preuves au Conseil
-- Proteer les ouvriers et porteurs
-- Eviter la loi martiale totale
-- Agir vite contre la Tour
-- Utiliser les preuves sans livrer la Resistance
-- Copier le registre
-- Ne pas bruler la Reserve
-- Chercher le laboratoire d'Elian Voss
-- Epargner et retourner Elian
-- Emporter schema et copies de dossiers
-- Preparer l'assaut de la Tour
-- Limiter les morts
-- Epargner le Magi-Tuteur
-- Continuer vers le Laboratoire de Verre
-- Conserver les preuves comme armes morales
-- Lire et emporter des extraits
-- Ne pas detruire le corps helpless
-- Monter affronter l'esprit de Thade avec les verites
-- Monter
-- Garder preuves et cahiers accessibles
-- Laisser le Magi-Tuteur au palier
-- Combattre et parler
-- Ne pas tuer Thade au sol
-- Utiliser les preuves plutot que la seule force
-- Detacher la Larme sans la briser
-- Assumer le seuil entrouvert
-- Faire juger Thade ensuite par les vivants
-- Rester pour temoigner
-- Soutenir les reformes d'Olane
-- Aider Thorgar a restaurer les rites
-- Proteger Sealine sans soustraire Thade au jugement
+- Les PJ acceptent la mission, gardent le doute sur Thade et partent de nuit vers les Terrasses.
+- Les PJ coopèrent avec Thorgar, gardent une copie des notes et surveillent Jaren.
+- Les PJ conservent les notes restantes et cherchent un allié institutionnel au lieu d'accuser trop tôt.
+- Les PJ traitent Thorgar comme un allié potentiel et décident de chercher les os et les archives.
+- Les PJ copient le dossier S-01 et cherchent Olane pour interpréter les éléments.
+- Les PJ protègent Olane, ne publient pas tout trop tôt et retournent vérifier le sceau.
+- Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine.
+- Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur.
+- Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar.
+- Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique.
+- Les PJ obtiennent un délai, mais pas encore un mandat complet contre Thade.
+- Les PJ retournent Edran sans massacre et sécurisent les textes interdits.
+- Les PJ sauvent les habitants proches et relient les filaments au Puits de l'Abîme.
+- Les PJ gardent les lettres comme preuve et décident de tester une route extérieure.
+- Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route.
+- Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil.
+- Les PJ obtiennent un mandat limité et évitent une répression générale.
+- Les PJ copient le registre des 142 consultations et suivent la piste d'Elian.
+- Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients.
+- Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes.
+- Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve.
+- Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes.
+- Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol.
+- Les PJ détachent la Larme sans la briser : Sealine revient, mais Valombre reste changée.
+- Les PJ restent témoigner, soutenir les réformes et protéger le monde d'après.
 
 ## Conséquences visibles
 
-- Thade a recrute les PJ
-- Les PJ gardent un doute sur leur mandataire
-- Thorgar accepte une cooperation tendue
-- Jaren comprend qu'il est observe
-- Le Cimetière devient une scene de crise active
-- La mort de Jaren refroidit les temoins
-- L'Universite commence a refermer les portes
-- Nera et Kael se mefient ouvertement du mandat initial
-- Thorgar passe de gardien hostile a allie prudent
-- La dimension religieuse de la crise devient centrale
-- Les PJ ont une preuve documentaire sensible
-- Leur relation au mandat de Thade bascule vers la defiance
-- Olane devient alliee
-- L'Universite se crispe autour des acces sensibles
-- Thade peut apprendre que les PJ ne sont plus dociles
-- Panique contenue mais pas resolue
-- Thorgar s'engage plus clairement avec les PJ
-- La crise n'est plus discrete
-- La Resistance devient alliee
-- Thade risque de perdre le controle de l'enquete
-- Les PJ ont une voie hors Universite
-- Thade devient adversaire actif
-- Les PJ ont des ennemis a l'Universite
-- La Resistance engage ses passages
-- Emeute ralentie mais pas eteinte
-- Le Champion n'est pas dechu
-- La garde note l'intervention des PJ
-- Le Conseil temporise
-- La pression publique continue
-- Les PJ gagnent peu de temps
-- Les Endeuilles ne rejoignent pas massivement le Champion
-- Le sceau cesse d'etre attaque par ce rite local
-- Edran devient temoin brise mais vivant
-- La peur publique devient plus difficile a contenir
-- Le Champion peut exploiter les temoignages deformes
-- Les PJ ont une preuve cosmique
-- Odran devient source prudente
-- La Guilde craint la panique commerciale
-- Les PJ ont vecu la preuve
-- La peur devient strategique : la ville est piegee
-- La Guilde est contrainte de cooperer partiellement
-- La crise economique rejoint la crise cosmique
-- Le Champion perd une partie du terrain politique
-- Le Conseil n'est plus totalement aveugle
-- Thade accelerera s'il apprend le mandat
-- La preuve documentaire contre Thade devient solide
-- L'Universite ne peut plus plaider l'accident simple
-- Thade perd un agent cle
-- Le cout humain du rituel devient indiscutable
-- Kael exige un decompte des victimes a venir
-- Victimes faibles : etudiants liberes, gardes evites quand possible
-- Thade sait que les PJ montent
-- Le rituel accelere
-- Thade ne sera pas affaibli par destruction du corps
-- Les PJ gagnent des armes morales
-- Le Magi-Tuteur respecte leur retenue
-- Point de non-retour atteint
-- Le sommet attend les PJ
-- Le decompte faible des victimes est conserve
-- La Larme se fissure
-- Thade est vaincu moralement et physiquement
-- Le choix final devient possible
-- Sealine revient fragile
-- Valombre reste changee
-- Le sceau n'est pas referme parfaitement
-- Thade survit pour etre juge
-- Thade est capture et doit repondre devant la cite
-- La Resistance gagne une reconnaissance prudente
-- L'Universite doit reformer ses secrets
-- Les routes restent parfois trompeuses
+- Les PJ acceptent la mission, gardent le doute sur Thade et partent de nuit vers les Terrasses.
+- Les PJ coopèrent avec Thorgar, gardent une copie des notes et surveillent Jaren.
+- Les PJ conservent les notes restantes et cherchent un allié institutionnel au lieu d'accuser trop tôt.
+- Les PJ traitent Thorgar comme un allié potentiel et décident de chercher les os et les archives.
+- Les PJ copient le dossier S-01 et cherchent Olane pour interpréter les éléments.
+- Les PJ protègent Olane, ne publient pas tout trop tôt et retournent vérifier le sceau.
+- Les PJ demandent à Thorgar de préparer les rites et cherchent une piste souterraine.
+- Les PJ s'allient prudemment avec Mara et acceptent l'aide de Sniv et du Collecteur.
+- Les PJ rejoignent la Résistance, gardent Olane comme relais, et protègent le sceau avec Thorgar.
+- Les PJ protègent les nains, calment partiellement la foule et cherchent une preuve politique.
+- Les PJ obtiennent un délai, mais pas encore un mandat complet contre Thade.
+- Les PJ retournent Edran sans massacre et sécurisent les textes interdits.
+- Les PJ sauvent les habitants proches et relient les filaments au Puits de l'Abîme.
+- Les PJ gardent les lettres comme preuve et décident de tester une route extérieure.
+- Les PJ reviennent avec marques et témoignages au lieu de s'épuiser sur la route.
+- Les PJ protègent les ouvriers, gardent les preuves et portent le dossier au Conseil.
+- Les PJ obtiennent un mandat limité et évitent une répression générale.
+- Les PJ copient le registre des 142 consultations et suivent la piste d'Elian.
+- Les PJ retournent Elian, emportent le schéma de la Larme et copient le registre des 50 patients.
+- Les PJ libèrent plutôt qu'ils ne tuent, épargnent le Magi-Tuteur et tiennent un faible décompte de victimes.
+- Les PJ lisent les cahiers, emportent des extraits, mais ne détruisent pas le corps en cuve.
+- Les PJ montent avec les preuves, les cahiers et le faible décompte de victimes.
+- Les PJ fissurent la Larme avec les preuves et laissent Thade vivant au sol.
+- Les PJ détachent la Larme sans la briser : Sealine revient, mais Valombre reste changée.
+- Les PJ restent témoigner, soutenir les réformes et protéger le monde d'après.
 
 ## PNJ et factions
 
-PNJ affectés ou suivis :
-- Thade Coren
-- Thorgar
-- Jaren Velt
-- Thade Coren hors champ
-- Etudiants de l'Universite
-- Sealine Vael mentionnee
-- Maera Olane
-- Familles naines
-- Mara
-- Le Collecteur
-- Sniv
-- Ursula mentionnee
-- Olane hors champ
-- Thade hors champ
-- Champion de la Banniere Pure
-- Patrouilles mixtes
-- Mineurs nains
-- Avel Ronce
-- Hessa Brunefer
-- Edran Morn
-- Familles endeuillees
-- Habitants de la Vieille Ville
-- Creature de la Spirale pressentie
-- Odran Bellec
-- Eclaireur nain
-- Yselle Vaurin
-- Porteurs des entrepots
-- Maelric
-- Olane
-- Magi-tuteur loyal potentiel
-- Elian Voss
-- Magi-Tuteur loyal
-- Etudiants charmes
-- Gardes pieges
-- Sealine Vael
-- Magi-Tuteur loyal hors palier
-- Nera Ombrefil
-- Ser Kael Dorn
-- Sealine
-- Thade
+### PNJ
 
-Factions affectées :
-- Universite Arcanique
-- Communaute Naine
-- Conseil de Valombre
-- Syndicat des Brumes potentiel
-- Resistance de la Vieille Ville
-- Syndicat des Brumes
-- Resistance
-- Banniere Pure
-- Conseil
-- Universite
-- Ordre de Nyx
-- Guilde Marchande
-- Caldris
-- Spirale
+- thade_coren
+- thorgar_pretre_nain
+- jaren_velt
+- sealine_coren
+- maera_olane
+- mara_dirigeante
+- ursula_fraternite
+- le_collecteur
+- sniv_kobold
+- champion_banniere_pure
+- patrouille_mixte_conseil
+- avel_ronce
+- hessa_brunefer
+- envoye_caldris
+- edran_morn
+- odran_bellec
+- yselle_vaurin
+- elian_voss
+- etudiants_charmes
+- gardes_pieges
+- creature_spirale_cooptee
+- magi_tuteur_loyal
+
+### Factions et fronts de scénario
+
+- Le Plan de Thade
+- Le Sceau qui cède
+- La Cité sous pression
+- Les Factions de la Crise
+- Le Plan de Thade — accomplissement
 
 ## Fronts et horloges
 
-- front_plan_thade / menace_retour_sealine : 1/6
-- front_sceau_qui_cede / menace_profanation_thanes : 1/6
-- front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale
-- front_plan_thade / menace_retour_sealine : 2/6
-- front_sceau_qui_cede : stable, restauration possible mais impossible sans os
-- Aucun avancement volontaire : investigation pure
-- front_cite_sous_pression : 1/6
-- front_plan_thade : maintenu a 2/6 car Olane est protegee
-- front_sceau_qui_cede / menace_profanation_thanes : 3/6
-- Aucun avancement volontaire : scene de rencontre
-- Tous les fronts heritent du choix : depart S2 avec Resistance alliee et Universite hostile
-- front_factions_crise : 2/6 au lieu d'une escalade a 3 grace a l'apaisement partiel
-- front_cite_sous_pression : 2/6
-- front_sceau_qui_cede : ralentissement narratif d'un segment potentiel
-- front_factions_crise : stabilise a 2/6
-- front_dephasage / menace_dephasage_revelation : 1/6
-- front_sceau_qui_cede : pression maintenue
-- front_dephasage / menace_dephasage_revelation : 2/6
-- front_cite_sous_pression : 2/6 confirme
-- front_dephasage / menace_dephasage_revelation : 4/6
-- front_dephasage / menace_dephasage_revelation : 3/6 puis consolide avec les preuves
-- front_cite_sous_pression : 3/6
-- front_cite_sous_pression : stabilise a 3/6
-- front_dephasage / menace_dephasage_revelation : 5/6
-- front_plan_thade : fragilise sans segment retire mecaniquement
-- front_plan_thade / menace_loyalistes_tour : verrouillage actif
-- decompte victimes : faible
-- front_plan_thade / menace_larme_vael : 5/6
-- decompte victimes : faible, corps non detruit
-- front_dephasage : confirmation narrative, pas de segment
-- front_plan_thade / menace_retour_sealine : 6/6 en cours de resolution
-- front_sceau_qui_cede : seuil critique
-- front_plan_thade : resolu par interruption du rituel total
-- front_sceau_qui_cede : stabilise mais entrouvert
-- Tous les fronts passent en etat d'epilogue : menace principale arretee, dephasage residuel, cite en reconstruction
+- front_plan_thade / menace_retour_sealine : +1 segment (segment 1). Des fragments d'os convergent vers la Tour. Les PJ voient les outils d'Université sur les tombes.
+- front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 1). Le froid s'étend. Les runes changent. Les lanternes funéraires s'éteignent. Les rites ordinaires ne suffisent plus.
+- front_plan_thade / menace_retour_sealine : +1 segment (segment 1). Des fragments d'os convergent vers la Tour.
+- front_plan_thade / menace_retour_sealine : +1 segment (segment 2). Thade n'a plus d'obstacle interne à l'Université. Les enquêtes sur S-01 sont enterrées avec Jaren. Les prélèvements continuent sans témoin gênant.
+- Aucun effet de front automatique pour cette scène ou avancement volontairement narratif.
+- front_plan_thade / menace_retour_sealine : +1 segment (segment 2). Des salles sont scellées pour « travaux ». Des cours sont annulés. Les protections ordinaires de l'Université deviennent instables.
+- front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 1). Commissions, expertises et conflits de compétence. Les responsables déplacent des preuves. Les dangers avancent sans réponse coordonnée.
+- front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 3). La dalle se déplace. Les anneaux du Puits vibrent. Des fissures apparaissent. Chaque perturbation se transmet aux autres tombes.
+- front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 1). Elian reçoit des patients « stabilisés ». Edran absorbe les familles isolées. Le Champion tient ses premiers discours.
+- front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 3). Le Champion impose un choix : pour ou contre Nyx. Edran introduit des rites interdits. Elian commence à effacer ses traces.
+- front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 3). Pour rassurer la population, le Conseil désigne Nyx, les clans ou l'Université. Les informations qui compliquent ce récit sont écartées.
+- front_factions_crise / menace_endeuilles_radicalisation : +1 segment (segment 2). Ursula reçoit des patients qu'elle ne reconnaît pas. Des familles cherchent un proche. Le Champion obtient une victoire publique.
+- front_sceau_qui_cede / menace_abandon_mine : +1 segment (segment 5). Le poids, la chute, le son varient. Des présences planaires franchissent les zones déformées. Les méthodes minières deviennent dangereuses.
+- front_dephasage / menace_dephasage_ancrage : +1 segment (segment 4). Une route ramène au même pont, à la même borne. Ceux qui partent reviennent. La cité n'est plus raccordée.
+- front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 2). Les institutions produisent des documents cohérents mais faux. Les registres ne correspondent plus à la réalité. La machine à retarder tourne à vide.
+- front_dephasage / menace_dephasage_revelation : +1 segment (étape 2). Les lettres se répètent. Le temps de transit entre Valombre et l'extérieur se décale. Le déphasage n'est plus un phénomène visible — c'est une anomalie administrative.
+- front_sceau_qui_cede / menace_abandon_mine : +1 segment (segment 4). Les routes deviennent non fiables. L'isolement est perceptible. Les commerçants nains notent que les convois ne reviennent pas — ou reviennent vides.
+- front_dephasage / menace_dephasage_revelation : +1 segment (étape 4). Les routes ramènent au même point. La ville ne laisse pas sortir. Le déphasage n'est plus une rumeur — c'est un fait vécu.
+- front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 3). Crise économique masquée. Stocks bloqués. Les institutions cachent la réalité pour éviter la panique. La confiance s'érode.
+- front_dephasage / menace_dephasage_revelation : +1 segment (étape 3). Les stocks s'accumulent. La ville produit pour un extérieur qui ne reçoit plus. Le déphasage a un coût économique que les institutions cachent.
+- front_cite_sous_pression / menace_derive_institutionnelle : +1 segment (segment 4). Le Conseil vote la loi martiale. Les Terrasses sont placées sous surveillance. La garde ferme les accès. La machine à retarder devient une machine à réprimer.
+- front_factions_crise / menace_radicalisation_cercles : +1 segment (segment 4). Le Champion gagne une légitimité publique. La foule voit ses peurs confirmées par le Conseil. La radicalisation s'accélère.
+- front_plan_thade / menace_loyalistes_tour : +1 segment (segment 4). Les accès sont verrouillés. Les communications filtrées. Les défenseurs obéissent à des ordres qu'ils ne peuvent plus discuter.
+- front_factions_crise / menace_syndicat_instrumentalisation : +1 segment (segment 5). Une milice se forme. Les Endeuillés pratiquent un rite près des tombes. Elian prépare sa fuite. Chaque faction est prête à frapper.
+- front_plan_thade / menace_larme_vael : +1 segment (segment 5). Les objets enchantés dérivent vers la Tour. Les sorts renvoient des échos contradictoires. Les mages ressentent une seconde pulsation.
+- front_dephasage / menace_dephasage_ancrage : Confirmation narrative (pas de segment). Le sommet de la Tour est déphasé. La Spirale est là. Le MJ note que le déphasage a atteint la Tour elle-même.
+- front_plan_thade / menace_retour_sealine : +1 segment (segment 6). Bourdonnement dans les Hauteurs. Ciel violet. Larme visible au cœur du vortex. Thade n'a plus besoin de dissimulation.
+- front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 6). Les sept tombes cessent d'agir comme un ensemble. Une lumière remonte du puits. Des sections complètes cessent d'appartenir à la mine.
 
 ## Manques ou incohérences détectés
 
-- Aucune fiche mécanique complète pour Nera et Kael : tous les DD sont simulés narrativement.
-- Certains IDs de transition divergent des IDs réels, notamment `s2_laboratoire_voss` vers `s2_laboratoire_elian`.
-- Plusieurs scènes demandent un suivi de victimes, d'alliés ou de preuves sans fournir de structure d'état persistante.
-- Certains secrets apparaissent dans des champs de lieu ou de détail qui devraient être strictement réservés au MJ.
+- Aucune fiche mécanique complète pour Nera et Kael : les DD restent simulés narrativement.
+
+## Corrections structurelles ajoutées
+
+- État machine-readable dédié : `etat_campagne.json` dans les logs, avec fronts, indices, preuves, alliés, choix, victimes et suivi des patients.
+- Secrets MJ séparés : les contenus sensibles restent dans `secretsMj`, hors des champs visibles de lieu ou de détail.
+- Registre des 50 patients : procédure de suivi patient par patient ajoutée, avec statuts, priorités et règles de résolution après récupération.
 
 ## Fichiers de logs
 

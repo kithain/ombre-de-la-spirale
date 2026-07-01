@@ -6,13 +6,13 @@ Déterminer la cause de la mort, récupérer les notes et décider quoi faire.
 
 ## Sources consultées
 
-- src/data/scenarios/scenario1_sept_thanes.js : scene `s1_mort_jaren`, acte "Acte I — L'Engagement".
-- src/data/scenarios/effetsFronts.js : effets de fronts lies a la scene.
-- src/data/scenarios/fronts.js : fronts, horloges et consequences globales.
-- src/data/personnages/pnj.js et fichiers specialises : PNJ lies par `idsPnj`.
-- src/data/personnages/factions.js : factions affectees.
-- src/data/universe/universeZones.js : lieu lie par `idLieu` quand disponible.
-- .agents/MJ Valombre.toml, .agents/PJ Valombre 1.toml, .agents/PJ Valombre 2.toml : protocole de simulation.
+- src/data/scenarios/scenario1_sept_thanes.js : scène `s1_mort_jaren`, acte "Acte I — L'Engagement".
+- src/data/scenarios/effetsFronts.js : effets de fronts par scène.
+- src/data/scenarios/fronts.js : horloges et conséquences globales.
+- src/data/personnages/pnj.js et registres spécialisés : PNJ liés à la scène.
+- src/data/personnages/factions.js : factions et objectifs.
+- src/data/universe/universeZones.js : lieux liés par `idLieu`.
+- .agents/MJ Valombre.toml, .agents/PJ Valombre 1.toml, .agents/PJ Valombre 2.toml : contraintes d'incarnation.
 
 ## Nombre de boucles
 
@@ -25,10 +25,14 @@ Déterminer la cause de la mort, récupérer les notes et décider quoi faire.
 #### 1. MJ Valombre
 
 [Scène]
-Un messager appelle les PJ : Jaren est mort dans un couloir du Pavillon Nord.
+On vous trouve à l'aube. Jaren Velt est mort dans le couloir du troisième étage. Assis contre le mur, comme s'il s'était assoupi. Ses yeux sont ouverts. Son carnet est à ses côtés, ouvert à une page blanche. Aucune trace de sang, aucune trace de lutte.
+
+L'air sent la lavande.
 
 [Informations visibles]
-Le lendemain ou le surlendemain, Jaren est retrouvé mort dans le couloir du Pavillon Nord. Mort discrète, médicale. Une rune est gravée sur sa nuque. Le parfum de lavande flotte dans l'air. ; Les PJ doivent savoir que Jaren est mort, que ce n'est pas naturel et qu'une rune est sur sa nuque. ; Rune de Dissection a Distance
+- Le lendemain ou le surlendemain, Jaren est retrouvé mort dans le couloir du Pavillon Nord. Mort discrète, médicale. Une rune est gravée sur sa nuque. Le parfum de lavande flotte dans l'air.
+- Déterminer la cause de la mort, récupérer les notes et décider quoi faire.
+- La rune sur la nuque
 
 [Actions possibles évidentes]
 - examiner le corps (Médecine, Connaissances)
@@ -37,85 +41,89 @@ Le lendemain ou le surlendemain, Jaren est retrouvé mort dans le couloir du Pav
 - décider à qui rapporter la découverte
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. La mort de Jaren refroidit les temoins
+La scène continue : Rune de Dissection à Distance sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Outils d'Université sur les tombes ; Runes dans l'os ; Froid du Mausolée ; Notes de Jaren ; Rune de Dissection à Distance
+- Indices ratés, refusés ou perdus : Contenu exact du coffret ; Nature exacte des fragments disparus ; Commanditaire exact des profanations ; Sens complet des runes
+- Décisions des PJ : Les PJ acceptent la mission, gardent le doute sur Thade et partent de nuit vers les Terrasses. ; Les PJ coopèrent avec Thorgar, gardent une copie des notes et surveillent Jaren.
+- Conséquences visibles : Les PJ acceptent la mission, gardent le doute sur Thade et partent de nuit vers les Terrasses. ; Les PJ coopèrent avec Thorgar, gardent une copie des notes et surveillent Jaren. ; Conséquence intermédiaire jouée dans La Mort de Jaren Velt
+- PNJ affectés : thade_coren ; thorgar_pretre_nain ; jaren_velt
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : +1 segment (segment 1). Des fragments d'os convergent vers la Tour. Les PJ voient les outils d'Université sur les tombes. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 1). Le froid s'étend. Les runes changent. Les lanternes funéraires s'éteignent. Les rites ordinaires ne suffisent plus. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 1). Des fragments d'os convergent vers la Tour. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 2). Thade n'a plus d'obstacle interne à l'Université. Les enquêtes sur S-01 sont enterrées avec Jaren. Les prélèvements continuent sans témoin gênant.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : La scene ne donne pas de procedure claire pour securiser legalement les preuves dans l'Universite.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Auteur prouvable du sort.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera cherche les failles, les angles morts et ce que les puissants essaient de garder hors champ. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : examiner le corps (Médecine, Connaissances) en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : examiner le corps (Médecine, Connaissances), avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael protege les innocents et pose la limite morale de la scene. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : fouiller le carnet de Jaren tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : fouiller le carnet de Jaren, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-scene de crime a l'Universite. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+protéger les preuves après un meurtre propre. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 fouiller le carnet de Jaren
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Outils d'Université sur les tombes ; Runes dans l'os ; Froid du Mausolée ; Notes de Jaren ; Rune de Dissection à Distance
+- Indices ratés, refusés ou perdus : Contenu exact du coffret ; Nature exacte des fragments disparus ; Commanditaire exact des profanations ; Sens complet des runes
+- Décisions des PJ : Les PJ acceptent la mission, gardent le doute sur Thade et partent de nuit vers les Terrasses. ; Les PJ coopèrent avec Thorgar, gardent une copie des notes et surveillent Jaren.
+- Conséquences visibles : Les PJ acceptent la mission, gardent le doute sur Thade et partent de nuit vers les Terrasses. ; Les PJ coopèrent avec Thorgar, gardent une copie des notes et surveillent Jaren. ; Conséquence intermédiaire jouée dans La Mort de Jaren Velt
+- PNJ affectés : thade_coren ; thorgar_pretre_nain ; jaren_velt
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : +1 segment (segment 1). Des fragments d'os convergent vers la Tour. Les PJ voient les outils d'Université sur les tombes. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 1). Le froid s'étend. Les runes changent. Les lanternes funéraires s'éteignent. Les rites ordinaires ne suffisent plus. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 1). Des fragments d'os convergent vers la Tour. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 2). Thade n'a plus d'obstacle interne à l'Université. Les enquêtes sur S-01 sont enterrées avec Jaren. Les prélèvements continuent sans témoin gênant.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 2
 
 #### 1. MJ Valombre
 
 [Scène]
-Nera fouille les angles morts et les pages arrachees ; Kael contient les etudiants paniques.
+On vous trouve à l'aube. Jaren Velt est mort dans le couloir du troisième étage. Assis contre le mur, comme s'il s'était assoupi. Ses yeux sont ouverts. Son carnet est à ses côtés, ouvert à une page blanche. Aucune trace de sang, aucune trace de lutte.
+
+L'air sent la lavande.
 
 [Informations visibles]
-Le lendemain ou le surlendemain, Jaren est retrouvé mort dans le couloir du Pavillon Nord. Mort discrète, médicale. Une rune est gravée sur sa nuque. Le parfum de lavande flotte dans l'air. ; Les PJ doivent savoir que Jaren est mort, que ce n'est pas naturel et qu'une rune est sur sa nuque. ; Parfum de lavande sur la scene
+- Le lendemain ou le surlendemain, Jaren est retrouvé mort dans le couloir du Pavillon Nord. Mort discrète, médicale. Une rune est gravée sur sa nuque. Le parfum de lavande flotte dans l'air.
+- Déterminer la cause de la mort, récupérer les notes et décider quoi faire.
+- Le parfum de lavande
 
 [Actions possibles évidentes]
 - examiner le corps (Médecine, Connaissances)
@@ -124,85 +132,89 @@ Le lendemain ou le surlendemain, Jaren est retrouvé mort dans le couloir du Pav
 - décider à qui rapporter la découverte
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. L'Universite commence a refermer les portes
+La scène continue : Parfum de lavande sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Runes dans l'os ; Froid du Mausolée ; Notes de Jaren ; Rune de Dissection à Distance ; Parfum de lavande
+- Indices ratés, refusés ou perdus : Contenu exact du coffret ; Nature exacte des fragments disparus ; Commanditaire exact des profanations ; Sens complet des runes
+- Décisions des PJ : Les PJ acceptent la mission, gardent le doute sur Thade et partent de nuit vers les Terrasses. ; Les PJ coopèrent avec Thorgar, gardent une copie des notes et surveillent Jaren.
+- Conséquences visibles : Les PJ acceptent la mission, gardent le doute sur Thade et partent de nuit vers les Terrasses. ; Les PJ coopèrent avec Thorgar, gardent une copie des notes et surveillent Jaren. ; Conséquence intermédiaire jouée dans La Mort de Jaren Velt
+- PNJ affectés : thade_coren ; thorgar_pretre_nain ; jaren_velt
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : +1 segment (segment 1). Des fragments d'os convergent vers la Tour. Les PJ voient les outils d'Université sur les tombes. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 1). Le froid s'étend. Les runes changent. Les lanternes funéraires s'éteignent. Les rites ordinaires ne suffisent plus. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 1). Des fragments d'os convergent vers la Tour. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 2). Thade n'a plus d'obstacle interne à l'Université. Les enquêtes sur S-01 sont enterrées avec Jaren. Les prélèvements continuent sans témoin gênant.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : La scene ne donne pas de procedure claire pour securiser legalement les preuves dans l'Universite.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Auteur prouvable du sort.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera teste une approche discrete sans utiliser d'information qu'elle ne possede pas. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : examiner le corps (Médecine, Connaissances) en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : examiner le corps (Médecine, Connaissances), avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael evalue le risque tactique avant que le groupe ne s'engage davantage. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : fouiller le carnet de Jaren tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : fouiller le carnet de Jaren, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-scene de crime a l'Universite. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+protéger les preuves après un meurtre propre. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 sentir le parfum de lavande
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Runes dans l'os ; Froid du Mausolée ; Notes de Jaren ; Rune de Dissection à Distance ; Parfum de lavande
+- Indices ratés, refusés ou perdus : Contenu exact du coffret ; Nature exacte des fragments disparus ; Commanditaire exact des profanations ; Sens complet des runes
+- Décisions des PJ : Les PJ acceptent la mission, gardent le doute sur Thade et partent de nuit vers les Terrasses. ; Les PJ coopèrent avec Thorgar, gardent une copie des notes et surveillent Jaren.
+- Conséquences visibles : Les PJ acceptent la mission, gardent le doute sur Thade et partent de nuit vers les Terrasses. ; Les PJ coopèrent avec Thorgar, gardent une copie des notes et surveillent Jaren. ; Conséquence intermédiaire jouée dans La Mort de Jaren Velt
+- PNJ affectés : thade_coren ; thorgar_pretre_nain ; jaren_velt
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : +1 segment (segment 1). Des fragments d'os convergent vers la Tour. Les PJ voient les outils d'Université sur les tombes. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 1). Le froid s'étend. Les runes changent. Les lanternes funéraires s'éteignent. Les rites ordinaires ne suffisent plus. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 1). Des fragments d'os convergent vers la Tour. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 2). Thade n'a plus d'obstacle interne à l'Université. Les enquêtes sur S-01 sont enterrées avec Jaren. Les prélèvements continuent sans témoin gênant.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 3
 
 #### 1. MJ Valombre
 
 [Scène]
-Les traces de lavande et la rune de Dissection a Distance rendent le meurtre trop propre pour un accident.
+On vous trouve à l'aube. Jaren Velt est mort dans le couloir du troisième étage. Assis contre le mur, comme s'il s'était assoupi. Ses yeux sont ouverts. Son carnet est à ses côtés, ouvert à une page blanche. Aucune trace de sang, aucune trace de lutte.
+
+L'air sent la lavande.
 
 [Informations visibles]
-Le lendemain ou le surlendemain, Jaren est retrouvé mort dans le couloir du Pavillon Nord. Mort discrète, médicale. Une rune est gravée sur sa nuque. Le parfum de lavande flotte dans l'air. ; Les PJ doivent savoir que Jaren est mort, que ce n'est pas naturel et qu'une rune est sur sa nuque. ; Pages arrachees dans les notes de Jaren
+- Le lendemain ou le surlendemain, Jaren est retrouvé mort dans le couloir du Pavillon Nord. Mort discrète, médicale. Une rune est gravée sur sa nuque. Le parfum de lavande flotte dans l'air.
+- Déterminer la cause de la mort, récupérer les notes et décider quoi faire.
+- Les pages arrachées
 
 [Actions possibles évidentes]
 - examiner le corps (Médecine, Connaissances)
@@ -211,85 +223,89 @@ Le lendemain ou le surlendemain, Jaren est retrouvé mort dans le couloir du Pav
 - décider à qui rapporter la découverte
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Nera et Kael se mefient ouvertement du mandat initial
+La scène continue : Pages arrachées sans résoudre trop tôt l'ensemble de la situation.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : encore en discussion dans la scene
+- Indices obtenus : Froid du Mausolée ; Notes de Jaren ; Rune de Dissection à Distance ; Parfum de lavande ; Pages arrachées
+- Indices ratés, refusés ou perdus : Contenu exact du coffret ; Nature exacte des fragments disparus ; Commanditaire exact des profanations ; Sens complet des runes
+- Décisions des PJ : Les PJ acceptent la mission, gardent le doute sur Thade et partent de nuit vers les Terrasses. ; Les PJ coopèrent avec Thorgar, gardent une copie des notes et surveillent Jaren.
+- Conséquences visibles : Les PJ acceptent la mission, gardent le doute sur Thade et partent de nuit vers les Terrasses. ; Les PJ coopèrent avec Thorgar, gardent une copie des notes et surveillent Jaren. ; Conséquence intermédiaire jouée dans La Mort de Jaren Velt
+- PNJ affectés : thade_coren ; thorgar_pretre_nain ; jaren_velt
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : +1 segment (segment 1). Des fragments d'os convergent vers la Tour. Les PJ voient les outils d'Université sur les tombes. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 1). Le froid s'étend. Les runes changent. Les lanternes funéraires s'éteignent. Les rites ordinaires ne suffisent plus. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 1). Des fragments d'os convergent vers la Tour. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 2). Thade n'a plus d'obstacle interne à l'Université. Les enquêtes sur S-01 sont enterrées avec Jaren. Les prélèvements continuent sans témoin gênant.
+- Prochaine piste choisie par les PJ : la scène se poursuit
 
 [Rapport de test]
-- Bug : La scene ne donne pas de procedure claire pour securiser legalement les preuves dans l'Universite.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Auteur prouvable du sort.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Que faites-vous maintenant, et qu'essayez-vous de verifier avant d'aller plus loin ?
+Que faites-vous maintenant, et quelle piste voulez-vous vérifier avant d'aller plus loin ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera transforme les indices visibles en levier concret pour la suite. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : examiner le corps (Médecine, Connaissances) en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : examiner le corps (Médecine, Connaissances), avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael cherche une solution droite qui ne bloque pas l'enquete. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : fouiller le carnet de Jaren tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : fouiller le carnet de Jaren, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-scene de crime a l'Universite. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+protéger les preuves après un meurtre propre. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
 décider à qui rapporter la découverte
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : continuer la scene
+- Indices obtenus : Froid du Mausolée ; Notes de Jaren ; Rune de Dissection à Distance ; Parfum de lavande ; Pages arrachées
+- Indices ratés, refusés ou perdus : Contenu exact du coffret ; Nature exacte des fragments disparus ; Commanditaire exact des profanations ; Sens complet des runes
+- Décisions des PJ : Les PJ acceptent la mission, gardent le doute sur Thade et partent de nuit vers les Terrasses. ; Les PJ coopèrent avec Thorgar, gardent une copie des notes et surveillent Jaren.
+- Conséquences visibles : Les PJ acceptent la mission, gardent le doute sur Thade et partent de nuit vers les Terrasses. ; Les PJ coopèrent avec Thorgar, gardent une copie des notes et surveillent Jaren. ; Conséquence intermédiaire jouée dans La Mort de Jaren Velt
+- PNJ affectés : thade_coren ; thorgar_pretre_nain ; jaren_velt
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : +1 segment (segment 1). Des fragments d'os convergent vers la Tour. Les PJ voient les outils d'Université sur les tombes. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 1). Le froid s'étend. Les runes changent. Les lanternes funéraires s'éteignent. Les rites ordinaires ne suffisent plus. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 1). Des fragments d'os convergent vers la Tour. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 2). Thade n'a plus d'obstacle interne à l'Université. Les enquêtes sur S-01 sont enterrées avec Jaren. Les prélèvements continuent sans témoin gênant.
+- Piste concrète choisie : continuer la scène
 
 ### Boucle 4
 
 #### 1. MJ Valombre
 
 [Scène]
-Les PJ choisissent de proteger les preuves et de chercher un allié institutionnel au lieu d'accuser Thade sans preuve.
+On vous trouve à l'aube. Jaren Velt est mort dans le couloir du troisième étage. Assis contre le mur, comme s'il s'était assoupi. Ses yeux sont ouverts. Son carnet est à ses côtés, ouvert à une page blanche. Aucune trace de sang, aucune trace de lutte.
+
+L'air sent la lavande.
 
 [Informations visibles]
-Le lendemain ou le surlendemain, Jaren est retrouvé mort dans le couloir du Pavillon Nord. Mort discrète, médicale. Une rune est gravée sur sa nuque. Le parfum de lavande flotte dans l'air. ; Les PJ doivent savoir que Jaren est mort, que ce n'est pas naturel et qu'une rune est sur sa nuque. ; Jaren etait implique dans les prelevements
+- Le lendemain ou le surlendemain, Jaren est retrouvé mort dans le couloir du Pavillon Nord. Mort discrète, médicale. Une rune est gravée sur sa nuque. Le parfum de lavande flotte dans l'air.
+- Déterminer la cause de la mort, récupérer les notes et décider quoi faire.
+- Les PJ doivent savoir que Jaren est mort, que ce n'est pas naturel et qu'une rune est sur sa nuque.
 
 [Actions possibles évidentes]
 - examiner le corps (Médecine, Connaissances)
@@ -298,141 +314,137 @@ Le lendemain ou le surlendemain, Jaren est retrouvé mort dans le couloir du Pav
 - décider à qui rapporter la découverte
 
 [Résolution]
-La scene ne se conclut pas encore : les reactions des PNJ et des factions repondent aux actions precedentes. Nera et Kael se mefient ouvertement du mandat initial
+Les PJ conservent les notes restantes et cherchent un allié institutionnel au lieu d'accuser trop tôt.
 
 [État de campagne]
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Prochaine piste choisie par les PJ : Vers `s1_temple_forgeron` : retourner vers Thorgar pour comprendre les runes et les rites.
+- Indices obtenus : Notes de Jaren ; Rune de Dissection à Distance ; Parfum de lavande ; Pages arrachées ; Jaren était un témoin dangereux
+- Indices ratés, refusés ou perdus : Contenu exact du coffret ; Nature exacte des fragments disparus ; Commanditaire exact des profanations ; Sens complet des runes
+- Décisions des PJ : Les PJ acceptent la mission, gardent le doute sur Thade et partent de nuit vers les Terrasses. ; Les PJ coopèrent avec Thorgar, gardent une copie des notes et surveillent Jaren. ; Les PJ conservent les notes restantes et cherchent un allié institutionnel au lieu d'accuser trop tôt.
+- Conséquences visibles : Les PJ acceptent la mission, gardent le doute sur Thade et partent de nuit vers les Terrasses. ; Les PJ coopèrent avec Thorgar, gardent une copie des notes et surveillent Jaren. ; Conséquence intermédiaire jouée dans La Mort de Jaren Velt ; Les PJ conservent les notes restantes et cherchent un allié institutionnel au lieu d'accuser trop tôt.
+- PNJ affectés : thade_coren ; thorgar_pretre_nain ; jaren_velt
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : +1 segment (segment 1). Des fragments d'os convergent vers la Tour. Les PJ voient les outils d'Université sur les tombes. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 1). Le froid s'étend. Les runes changent. Les lanternes funéraires s'éteignent. Les rites ordinaires ne suffisent plus. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 1). Des fragments d'os convergent vers la Tour. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 2). Thade n'a plus d'obstacle interne à l'Université. Les enquêtes sur S-01 sont enterrées avec Jaren. Les prélèvements continuent sans témoin gênant.
+- Prochaine piste choisie par les PJ : Vers `s1_temple_forgeron` : demander à Thorgar d'interpréter les runes et les rites.
 
 [Rapport de test]
-- Bug : La scene ne donne pas de procedure claire pour securiser legalement les preuves dans l'Universite.
-- Dette technique : Les jets sont simules faute de fiches mecaniques completes pour Nera et Kael.
-- Amélioration UX : Mettre en avant les indices manipulables et les secrets MJ separes des informations visibles.
-- Amélioration narrative : La scene tient mieux quand les PNJ reagissent avant toute transition.
+- Bug : Indice raté/refusé/perdu pendant la simulation : Auteur prouvable du sort.
+- Dette technique : Les DD sont simulés faute de fiche mécanique complète pour Nera et Kael.
+- Amélioration UX : Les informations visibles, notes MJ et secrets doivent rester séparés.
+- Amélioration narrative : La boucle garde une conséquence visible sans forcer une solution unique.
 
-Vous avez formule votre prochain mouvement ; comment vous organisez-vous pour la transition ?
+Vous avez formulé votre prochain mouvement ; comment vous organisez-vous avant la transition ?
 
 #### 2. PJ Valombre 1 - Nera Ombrefil
 
 Réaction :
-Nera cherche les failles, les angles morts et ce que les puissants essaient de garder hors champ. Elle reste attentive a ce que la scene montre vraiment, sans deduire les secrets non reveles.
+Nera reste mobile, observatrice et méfiante. Elle ne déduit rien des secrets non découverts ; elle travaille à partir de ce qui vient d'être vu ou dit.
 
 Dialogue :
-"Je veux voir ce qui ne colle pas avant qu'on nous explique ce que nous sommes censes croire."
+"Je veux une preuve qui survive à la version officielle."
 
 Questions au MJ :
-Qu'est-ce que Nera peut observer concretement depuis sa position actuelle : trace, serrure, issue, temoin nerveux ou objet de valeur narrative ?
+Quelles failles, issues, traces, objets ou contradictions Nera peut-elle examiner sans s'exposer inutilement ?
 
 Action :
-Nera propose une action concrete liee a la scene : examiner le corps (Médecine, Connaissances) en privilegient discretion, timing et conservation des preuves.
+Nera tente une action concrète : examiner le corps (Médecine, Connaissances), avec discrétion et conservation des preuves.
 
 #### 3. PJ Valombre 2 - Ser Kael Dorn
 
 Réaction :
-Kael protege les innocents et pose la limite morale de la scene. Il ne conteste pas l'efficacite de Nera, mais veut eviter que le groupe ajoute une injustice a la crise.
+Kael cherche la voie droite qui protège les innocents sans rendre le groupe passif. Il accepte la prudence de Nera, mais surveille son coût moral.
 
 Dialogue :
-"Nous avancerons, mais pas au prix des gens que cette affaire broie deja."
+"Nous avançons, mais nous n'ajouterons pas une injustice à celle que nous cherchons à arrêter."
 
 Questions au MJ :
-Qui est immediatement en danger, qui detient l'autorite locale, et quelle action evite le plus de torts maintenant ?
+Qui risque d'être blessé ou accusé à tort si les PJ agissent trop vite ou trop fort ?
 
 Action :
-Kael propose une action concrete : fouiller le carnet de Jaren tout en gardant une voie de dialogue ouverte.
+Kael tente une action concrète : fouiller le carnet de Jaren, en privilégiant protection, dialogue et présence dissuasive.
 
 #### 4. Coordination des PJ
 
 Intention commune :
-scene de crime a l'Universite. Les PJ cherchent a obtenir l'indice principal sans forcer une solution unique.
+protéger les preuves après un meurtre propre. Les PJ cherchent l'indice principal sans conclure avant que les conséquences et réactions importantes soient jouées.
 
 Désaccord éventuel :
-Nera favorise la ruse et l'observation indirecte ; Kael demande que l'action reste defendable moralement. Le desaccord modifie la methode, pas l'objectif commun.
+Nera privilégie l'efficacité discrète ; Kael exige une méthode défendable devant les victimes et les alliés. Le désaccord ajuste la méthode, pas la piste.
 
 Piste concrète choisie :
-Vers `s1_temple_forgeron` : retourner vers Thorgar pour comprendre les runes et les rites.
+Vers `s1_temple_forgeron` : demander à Thorgar d'interpréter les runes et les rites.
 
 #### 5. État de campagne
 
-- Indices obtenus : Profanations au Cimetière des Terrasses ; Tombes des Sept Thanes ciblees ; Conseil indifférent ; Clans nains mefiants envers l'Universite
-- Indices ratés, refusés ou perdus : Contenu exact du coffret plombe ; Nature exacte des fragments disparus ; Preuve directe d'implication de Thade ou de l'Universite ; Identite complete du commanditaire
-- Décisions des PJ : Accepter la mission initiale sans confiance aveugle ; Partir de nuit vers les Terrasses ; Respecter l'autorite de Thorgar sur les tombes ; Ne pas tout remettre a Thade sans copie
-- Conséquences visibles : Thade a recrute les PJ ; Les PJ gardent un doute sur leur mandataire ; Thorgar accepte une cooperation tendue ; Jaren comprend qu'il est observe
-- PNJ affectés : Thade Coren ; Thorgar ; Jaren Velt ; Thade Coren hors champ
-- Factions affectées : Universite Arcanique ; Communaute Naine ; Conseil de Valombre
-- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : 1/6 ; front_sceau_qui_cede / menace_profanation_thanes : 1/6 ; front_plan_thade / menace_retour_sealine : 1/6 confirme, doublon de libelle signale ; front_plan_thade / menace_retour_sealine : 2/6
-- Piste concrète choisie : Vers `s1_temple_forgeron` : retourner vers Thorgar pour comprendre les runes et les rites.
+- Indices obtenus : Notes de Jaren ; Rune de Dissection à Distance ; Parfum de lavande ; Pages arrachées ; Jaren était un témoin dangereux
+- Indices ratés, refusés ou perdus : Contenu exact du coffret ; Nature exacte des fragments disparus ; Commanditaire exact des profanations ; Sens complet des runes
+- Décisions des PJ : Les PJ acceptent la mission, gardent le doute sur Thade et partent de nuit vers les Terrasses. ; Les PJ coopèrent avec Thorgar, gardent une copie des notes et surveillent Jaren. ; Les PJ conservent les notes restantes et cherchent un allié institutionnel au lieu d'accuser trop tôt.
+- Conséquences visibles : Les PJ acceptent la mission, gardent le doute sur Thade et partent de nuit vers les Terrasses. ; Les PJ coopèrent avec Thorgar, gardent une copie des notes et surveillent Jaren. ; Conséquence intermédiaire jouée dans La Mort de Jaren Velt ; Les PJ conservent les notes restantes et cherchent un allié institutionnel au lieu d'accuser trop tôt.
+- PNJ affectés : thade_coren ; thorgar_pretre_nain ; jaren_velt
+- Factions affectées : Le Plan de Thade ; Le Sceau qui cède ; La Cité sous pression ; Les Factions de la Crise
+- Fronts ou horloges modifiés : front_plan_thade / menace_retour_sealine : +1 segment (segment 1). Des fragments d'os convergent vers la Tour. Les PJ voient les outils d'Université sur les tombes. ; front_sceau_qui_cede / menace_profanation_thanes : +1 segment (segment 1). Le froid s'étend. Les runes changent. Les lanternes funéraires s'éteignent. Les rites ordinaires ne suffisent plus. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 1). Des fragments d'os convergent vers la Tour. ; front_plan_thade / menace_retour_sealine : +1 segment (segment 2). Thade n'a plus d'obstacle interne à l'Université. Les enquêtes sur S-01 sont enterrées avec Jaren. Les prélèvements continuent sans témoin gênant.
+- Piste concrète choisie : Vers `s1_temple_forgeron` : demander à Thorgar d'interpréter les runes et les rites.
 
 
 ## Indices obtenus
 
-- Rune de Dissection a Distance
-- Parfum de lavande sur la scene
-- Pages arrachees dans les notes de Jaren
-- Jaren etait implique dans les prelevements
+- Rune de Dissection à Distance
+- Parfum de lavande
+- Pages arrachées
+- Jaren était un témoin dangereux
 
 ## Indices ratés, refusés ou perdus
 
-- Auteur direct du sort
-- Contenu des pages arrachees
+- Auteur prouvable du sort
+- Contenu des pages arrachées
 
 ## Décisions des PJ
 
-- Ne pas accuser Thade publiquement
-- Chercher une personne capable de proteger les preuves
-- Conserver les notes restantes
+- Les PJ conservent les notes restantes et cherchent un allié institutionnel au lieu d'accuser trop tôt.
 
 ## Conséquences visibles
 
-- La mort de Jaren refroidit les temoins
-- L'Universite commence a refermer les portes
-- Nera et Kael se mefient ouvertement du mandat initial
+- Les PJ conservent les notes restantes et cherchent un allié institutionnel au lieu d'accuser trop tôt.
+- Les PNJ et factions listés ci-dessous réagissent dans le cadre visible de la scène.
 
 ## PNJ affectés
 
-- Jaren Velt
-- Thade Coren hors champ
-- Etudiants de l'Universite
+- jaren_velt
+- thade_coren
 
 ## Factions affectées
 
-- Universite Arcanique
-- Conseil de Valombre
+- Le Plan de Thade
+- Le Sceau qui cède
+- La Cité sous pression
+- Les Factions de la Crise
 
 ## Fronts ou horloges modifiés
 
-- front_plan_thade / menace_retour_sealine : +1 segment (segment 2) - Thade n'a plus d'obstacle interne à l'Université. Les enquêtes sur S-01 sont enterrées avec Jaren. Les prélèvements continuent sans témoin gênant.
-
-État retenu pour la campagne :
-- front_plan_thade / menace_retour_sealine : 2/6
+- front_plan_thade / menace_retour_sealine : +1 segment (segment 2). Thade n'a plus d'obstacle interne à l'Université. Les enquêtes sur S-01 sont enterrées avec Jaren. Les prélèvements continuent sans témoin gênant.
 
 ## Transition choisie par les PJ
 
-Vers `s1_temple_forgeron` : retourner vers Thorgar pour comprendre les runes et les rites.
+Vers `s1_temple_forgeron` : demander à Thorgar d'interpréter les runes et les rites.
 
 ## Manques ou incohérences détectés
 
-- La scene ne donne pas de procedure claire pour securiser legalement les preuves dans l'Universite.
+- Indice raté/refusé/perdu pendant la simulation : Auteur prouvable du sort.
+- Indice raté/refusé/perdu pendant la simulation : Contenu des pages arrachées.
 
 ## Recommandations
 
 ### Bug
 
-- Corriger toute divergence d'ID, de lieu ou de secret signalee dans les manques ci-dessus.
+- Corriger les incohérences d'ID, de lieu ou de secret signalées ci-dessus.
 
 ### Dette technique
 
-- Ajouter un etat de campagne machine-readable pour les indices, les fronts, les PNJ allies et le decompte des victimes.
+- Ajouter un état de campagne sérialisé pour les indices, fronts, alliés, patients et victimes de la Tour.
 
 ### Amélioration UX
 
-- Separrer clairement les informations visibles PJ, les notes MJ et les secrets de campagne dans l'interface.
+- Séparer strictement les informations visibles PJ, les notes MJ et les secrets.
 
 ### Amélioration narrative
 
-- Prevoir pour chaque scene une relance de PNJ ou de front qui conserve l'agence des PJ sans bloquer la progression.
+- Ajouter à chaque scène une relance explicite de PNJ ou de front si les PJ hésitent.
