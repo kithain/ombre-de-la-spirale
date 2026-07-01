@@ -5,6 +5,7 @@ import {
   MapPin,
   Clock,
   Search,
+  ScrollText,
   ChevronDown,
   Package,
   Shield,
@@ -25,6 +26,7 @@ function AidesJeuScenario({ aides }) {
     { id: "chronologie", label: "Chronologie", icon: Clock },
   ];
   const ongletsSupp = [
+    { id: "artefacts", label: "Artefacts", icon: ScrollText },
     { id: "preuves", label: "Preuves", icon: Package },
     { id: "allies", label: "Alliés", icon: Shield },
     { id: "symptomes", label: "Symptômes", icon: Eye },
@@ -34,6 +36,7 @@ function AidesJeuScenario({ aides }) {
   const onglets = [
     ...ongletsBase,
     ...ongletsSupp.filter((t) => {
+      if (t.id === "artefacts") return !!aides.artefacts;
       if (t.id === "preuves") return !!aides.preuves_transportables;
       if (t.id === "allies") return !!aides.pnj_allies;
       if (t.id === "symptomes") return !!aides.symptomes_fronts;
@@ -201,6 +204,82 @@ function AidesJeuScenario({ aides }) {
                   </li>
                 ))}
               </ul>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Artefacts */}
+      {onglet === "artefacts" && aides.artefacts && (
+        <div className="space-y-3">
+          {aides.artefacts.map((artefact) => (
+            <div
+              key={artefact.id}
+              className="border border-surface-border bg-surface/60 p-3"
+            >
+              <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span className="text-sm font-semibold text-content">
+                  {artefact.titre}
+                </span>
+                <span className="text-[10px] px-1.5 py-0.5 border border-cyan-800/30 bg-cyan-950/20 text-cyan-300">
+                  {artefact.type}
+                </span>
+              </div>
+              <p className="text-[10px] text-content-subtle font-mono mb-1">
+                {artefact.scene}
+              </p>
+              <p className="text-xs text-content-secondary leading-relaxed mb-3">
+                {artefact.resume}
+              </p>
+              <div className="max-h-96 overflow-auto border border-surface-border">
+                <table className="min-w-[980px] w-full text-left text-[11px]">
+                  <thead className="sticky top-0 bg-surface-raised text-content-subtle">
+                    <tr>
+                      {artefact.colonnes.map((colonne) => (
+                        <th
+                          key={colonne}
+                          className="px-2 py-1.5 font-semibold border-b border-surface-border"
+                        >
+                          {colonne}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {artefact.lignes.map((ligne) => (
+                      <tr
+                        key={ligne.code}
+                        className="border-b border-surface-border/70 last:border-b-0"
+                      >
+                        <td className="px-2 py-1.5 font-mono text-content-subtle whitespace-nowrap">
+                          {ligne.code}
+                        </td>
+                        <td className="px-2 py-1.5 text-content whitespace-nowrap">
+                          {ligne.patient}
+                        </td>
+                        <td className="px-2 py-1.5 text-content-secondary">
+                          {ligne.origine}
+                        </td>
+                        <td className="px-2 py-1.5 text-content-secondary whitespace-nowrap">
+                          {ligne.admission}
+                        </td>
+                        <td className="px-2 py-1.5 text-content-secondary">
+                          {ligne.indication}
+                        </td>
+                        <td className="px-2 py-1.5 text-content-secondary whitespace-nowrap">
+                          {ligne.dosage}
+                        </td>
+                        <td className="px-2 py-1.5 text-content-secondary">
+                          {ligne.resultat}
+                        </td>
+                        <td className="px-2 py-1.5 text-content-secondary">
+                          {ligne.localisation}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           ))}
         </div>

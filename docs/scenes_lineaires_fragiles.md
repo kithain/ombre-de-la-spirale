@@ -38,7 +38,7 @@ Ce document identifie les scènes dont la structure reste trop linéaire ou dont
 - **Atténuation** : Le fallback indique que les PJ peuvent trouver Voss directement. Mais ils manquent alors les 142 séances et la théorie des seuils.
 - **Recommandation** : Ajouter un PNJ alternatif qui peut accéder à la Réserve (par exemple, un employé de l'Université corrompu par Mara, ou un étudiant de la Résistance). Ou permettre un accès par effraction (avec des conséquences sous la loi martiale).
 
-### s2_laboratoire_voss — Fragile (dépendance Voss)
+### s2_laboratoire_elian — Fragile (dépendance Voss)
 - **Diagnostic** : Le témoignage de Voss est qualifié d'irremplaçable dans le fallback. Si Voss est mort, absent, ou refus de parler, les PJ manquent un témoignage clé.
 - **Atténuation** : Les preuves matérielles (schéma, bocaux, cachet) sont présentes même sans Voss. Olane peut interpréter le schéma.
 - **Recommandation** : Le schéma et les bocaux sont suffisants pour avancer. Le témoignage de Voss enrichit mais n'est pas strictement indispensable. Clarifier dans le fallback que les preuves matérielles suffisent pour la Tour.
@@ -74,7 +74,7 @@ Ces scènes ont une navigation multiple, des PNJ alternatifs, et des fallbacks c
 | s3_monde_apres | Épilogue | Oui (par conception) | Non | N/A |
 | s1_choix | Transition | Oui (par conception) | Non | N/A |
 | s2_reserve_interdite | Investigation | Non | Oui (Olane) | Partiellement |
-| s2_laboratoire_voss | Révélation | Non | Oui (Voss) | Partiellement |
+| s2_laboratoire_elian | Révélation | Non | Oui (Voss) | Partiellement |
 | s3_vortex | Boss | Non | Oui (vérités) | Oui |
 | s3_conversation_trois | Dilemme | Non | Oui (Sealine) | Oui |
 

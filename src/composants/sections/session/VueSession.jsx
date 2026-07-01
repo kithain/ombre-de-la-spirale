@@ -21,6 +21,7 @@ import { obtenirEffetsFronts } from "../../../data/scenarios/effetsFronts";
 import { consequencesFront, consequencesScene } from "../../../utilitaires/consequences";
 import { utiliserEtatPersistant } from "../../../hooks/utiliserEtatPersistant";
 import { utiliserModalePnj } from "../../../contextes/ContexteModalePnj";
+import EtatCampagnePanel from "./EtatCampagnePanel";
 
 const HorlogeMenace = lazy(() => import("../../scenes/HorlogeMenace"));
 const ContexteMjScene = lazy(() => import("../../scenes/ContexteMjScene"));
@@ -526,6 +527,8 @@ function VueSession() {
               ))}
             </div>
           </div>
+
+          <EtatCampagnePanel />
 
           {/* Notes rapides */}
           <div className="border border-surface-border bg-surface/40 p-4">

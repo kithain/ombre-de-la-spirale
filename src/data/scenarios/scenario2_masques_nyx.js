@@ -1,3 +1,5 @@
+import { registrePatientsElianVoss } from "./artefactsPatientsElian";
+
 /**
  * Scénario 2 — Les Masques de Nyx
  *
@@ -656,6 +658,7 @@ export const scenario2 = {
   ],
 
   aides_jeu: {
+    artefacts: [registrePatientsElianVoss],
     indices_recap: [
       {
         scene: "L'Émeute de la Place de la Fondation",
@@ -2129,7 +2132,7 @@ export const scenario2 = {
             consequence_si_manque: "Sans comprendre la pression politique, les PJ peuvent perdre du temps. Mara ou Olane peuvent les informer. La loi martiale restreint les mouvements et complique l'accès à la Tour.",
             pnj_alternatifs: ["mara_dirigeante — peut informer les PJ de la situation politique", "yselle_vaurin — peut faire pression sur le Conseil via la crise économique"],
             front_si_ignore: "La Cité sous pression — la loi martiale est votée. Les Terrasses sont sous surveillance. Les PJ perdent en liberté de mouvement.",
-            scenes_alternatives: ["s2_reserve_interdite — si les PJ contourment le Conseil et vont directement à l'Université", "s2_laboratoire_voss — si les PJ suivent la piste d'Elian Voss directement"],
+            scenes_alternatives: ["s2_reserve_interdite — si les PJ contourment le Conseil et vont directement à l'Université", "s2_laboratoire_elian — si les PJ suivent la piste d'Elian Voss directement"],
             sorties_jouables: [
               {
                 condition: "Les PJ veulent infiltrer la Réserve Interdite",
@@ -2141,7 +2144,7 @@ export const scenario2 = {
               },
               {
                 condition: "Les PJ veulent aller au Laboratoire d'Elian Voss",
-                sceneId: "s2_laboratoire_voss",
+                sceneId: "s2_laboratoire_elian",
                 type: "pnj",
                 moteur: "Elian Voss est le médecin qui a mené les expériences. Il a le schéma de la Larme de Vael.",
                 accroche_mj: "Le Conseil est géré. Mais vous avez besoin de preuves concrètes. Elian Voss. Le médecin de Caldris. Il a mené les expériences. Il a le schéma de la Larme.",
@@ -2184,7 +2187,7 @@ export const scenario2 = {
             objectif_scene: "Le Conseil peut voter la loi martiale. Caldris menace d'un blocus. Les PJ doivent présenter des preuves ou trouver une autre voie (Réserve, Voss).",
             pression: "La loi martiale est votée si les PJ n'agissent pas. Caldris impose la quarantaine. Le Champion gagne en pouvoir. Le déphasage s'étend.",
             actions_pj_attendues: ["présenter les preuves du déphasage au Conseil", "négocier avec les conseillers", "décider quelle piste suivre (Réserve, Voss, assaut)", "éventuellement confronter le Champion avec les preuves"],
-            sorties_possibles: ["vers s2_reserve_interdite (infiltrer la Réserve)", "vers s2_laboratoire_voss (aller au Laboratoire d'Elian Voss)", "vers s2_assaut_tour (confronter le Champion — risqué)"],
+            sorties_possibles: ["vers s2_reserve_interdite (infiltrer la Réserve)", "vers s2_laboratoire_elian (aller au Laboratoire d'Elian Voss)", "vers s2_assaut_tour (confronter le Champion — risqué)"],
             si_les_pj_bloquent: "Si les PJ n'y vontent pas, la loi martiale est votée. Le Conseil redevient pertinent si les PJ trouvent des preuves et veulent les présenter. La piste principale mène à la Réserve ou à Voss.",
             conditions_sortie: [
               "Les PJ ont présenté les preuves et le Conseil a ajourné la loi martiale.",
@@ -2303,11 +2306,11 @@ export const scenario2 = {
             consequence_si_manque: "Sans les 142 séances, les PJ ne savent pas que Thade travaille sur les seuils depuis 8 ans. Sans la théorie des ancrages, ils ne comprennent pas que les os des Thanes sont des ancrages physiques. Olane peut aider à interpréter.",
             pnj_alternatifs: ["maera_olane — peut décrypter les ouvrages et interpréter le protocole S-01", "mara_dirigeante — peut fournir un contexte sur les recherches interdites"],
             front_si_ignore: "Le Plan de Thade — sans la Réserve, les PJ ne comprennent pas l'ampleur du projet de Thade. La Tour s'active sans compréhension.",
-            scenes_alternatives: ["s2_laboratoire_voss — si les PJ vont directement au laboratoire d'Elian Voss sans passer par la Réserve", "s2_assaut_tour — si les PJ assautent la Tour directement"],
+            scenes_alternatives: ["s2_laboratoire_elian — si les PJ vont directement au laboratoire d'Elian Voss sans passer par la Réserve", "s2_assaut_tour — si les PJ assautent la Tour directement"],
             sorties_jouables: [
               {
                 condition: "Les PJ veulent aller au Laboratoire d'Elian Voss",
-                sceneId: "s2_laboratoire_voss",
+                sceneId: "s2_laboratoire_elian",
                 type: "indice_principal",
                 moteur: "La Réserve donne la théorie. Voss a la pratique : le schéma de la Larme, les bocaux, le protocole appliqué.",
                 accroche_mj: "Vous avez la théorie. 142 séances. Le protocole S-01. Maintenant, il faut voir ce que ça donne en pratique. Elian Voss. Le médecin de Caldris. Son laboratoire sous l'amphithéâtre.",
@@ -2331,7 +2334,7 @@ export const scenario2 = {
               },
               {
                 condition: "Les PJ n'ont pas déchiffré les ouvrages (échec)",
-                sceneId: "s2_laboratoire_voss",
+                sceneId: "s2_laboratoire_elian",
                 type: "echec",
                 moteur: "Olane peut aider à interpréter. Ou Voss peut montrer la pratique.",
                 accroche_mj: "Vous avez le registre mais pas la théorie. Olane peut vous aider. Ou alors, allez voir Voss. Lui, il a appliqué le protocole. Il peut vous montrer ce que ça donne.",
@@ -2358,7 +2361,7 @@ export const scenario2 = {
             objectif_scene: "Découvrir les 142 séances de Thade dans la Réserve, le protocole S-01, et la théorie des seuils planaires. Comprendre que Thade a planifié pendant huit ans.",
             pression: "La Tour s'active. Le déphasage s'étend. Si les PJ tardent, Thade accomplit le rituel. La loi martiale restreint l'accès si elle est votée.",
             actions_pj_attendues: ["accéder à la Réserve (avec Olane ou par effraction)", "déchiffrer les 142 séances (Connaissances)", "trouver la théorie des seuils et le protocole S-01", "comprendre que Thade a planifié pendant huit ans"],
-            sorties_possibles: ["vers s2_laboratoire_voss (Voss a la pratique)", "vers s2_assaut_tour (assaut direct de la Tour)", "vers s2_conseil_sous_pression (preuves institutionnelles au Conseil)"],
+            sorties_possibles: ["vers s2_laboratoire_elian (Voss a la pratique)", "vers s2_assaut_tour (assaut direct de la Tour)", "vers s2_conseil_sous_pression (preuves institutionnelles au Conseil)"],
             si_les_pj_bloquent: "Nécessite Olane pour y accéder. Sans Olane, Voss directement. Sans la Réserve, Voss peut partiellement compenser. Le Magi-Tuteur peut orienter.",
             conditions_sortie: [
               "Les PJ ont déchiffré les 142 séances et la théorie des seuils.",
