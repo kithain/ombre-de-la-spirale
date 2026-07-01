@@ -1,0 +1,1 @@
+import{j as e}from"./vendor-react-BeXV_HTV.js";function o({titre:r,children:s,nomClasse:t="bg-surface-raised/40"}){return e.jsxs("div",{className:`mt-3 border border-surface-border p-3 ${t}`,children:[e.jsx("h6",{className:"text-xs font-mono uppercase tracking-widest text-content-subtle mb-1",children:r}),s]})}export{o as S};
