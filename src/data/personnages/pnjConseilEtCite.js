@@ -5,16 +5,16 @@ export const pnjConseilEtCiteData = [
     "id": "envoye_caldris",
     "usageNarratif": "scene",
     "nom": "Émissaire Maelric de Caldris",
-    "role": "Porte l'ultimatum du royaume voisin. Arrivé par les Pierres du Traité — un vieux dispositif diplomatique permettant le passage de porteurs assermentés — il sait que Valombre ne répond plus normalement au monde extérieur. Si Valombre ne prouve pas qu'elle tient encore le verrou, Caldris imposera la quarantaine.",
+    "role": "Émissaire officiel de Caldris. Il vient avertir Valombre que le royaume voisin imposera une quarantaine si la cité ne prouve pas qu'elle contrôle encore la Spirale.",
     "categorie": "neutres",
-    "image": "/images/PNJ/pnj_envoye_caldris.jpg",
+    "image": "/images/PNJ/Emissaire de Caldris.png",
     "interpretation": {
-      "accroche": "Quand les PJ le rencontrent pour la première fois, Maelric note leurs réponses plus vite qu'il ne les juge, puis demande une preuve simple.",
-      "objectif": "Éviter que la Spirale franchisse les routes de Caldris, même au prix de Valombre.",
-      "attitude": "Courtois, froid, sincèrement inquiet. Demande des preuves courtes et se méfie des récits complexes."
+      "accroche": "Il prend des notes pendant qu'on lui parle, puis demande une preuve courte et vérifiable.",
+      "objectif": "Empêcher la crise de Valombre de toucher Caldris, quitte à isoler la cité.",
+      "attitude": "Courtois, froid et sincèrement inquiet. Il écoute les récits, mais ne croit qu'aux preuves qu'il peut transmettre."
     },
     "disposition": "neutre",
-    "impulsion": "Réduire une vérité complexe à une preuve exploitable.",
+    "impulsion": "Obtenir une preuve claire avant d'autoriser Caldris à agir.",
     "degats": {
       "valeur": 1,
       "description": "Rapière cérémonielle, mandat, pression diplomatique",
@@ -51,7 +51,7 @@ export const pnjConseilEtCiteData = [
       "Faire passer la prudence pour de la culpabilité",
       "Produire une carte extérieure où Valombre n'est plus atteignable depuis des semaines"
     ],
-    "description": "Maelric est la pression extérieure sous forme diplomatique. Il est arrivé par les Pierres du Traité, pâle et saignant du nez, comme tous les émissaires qui franchissent le voile de continuité. Il n'est pas venu haïr Valombre, mais réduire une crise impossible en preuves, délais et mesures de quarantaine. Caldris est la seule puissance extérieure à savoir que Valombre ne répond plus normalement au monde.",
+    "description": "Homme jeune au visage pâle, cheveux noirs soigneusement coiffés et manteau diplomatique sombre. Il porte une sacoche de cuir remplie de cartes, de mandats et de rapports. Son nez a parfois encore une trace de sang séché depuis son passage par les Pierres du Traité.",
     "notes": "Arrivé via les Pierres du Traité, un dispositif rituel datant du traité entre Caldris et Valombre. Le passage ne fonctionne que pour des porteurs assermentés, munis d'un mandat officiel et accompagnés d'un mage de frontière. Les émissaires arrivent pâles, saignants du nez, avec des souvenirs incomplets du trajet. Ils peuvent entrer, mais pas ouvrir la route aux marchands, aux armées ou aux réfugiés. Pivot de la menace « La Révélation par étapes » (Front 6) et de la menace « L'Émissaire Maelric » (Front 3).",
     "race": "humain",
     "faction": "Caldris",
@@ -62,12 +62,12 @@ export const pnjConseilEtCiteData = [
     "id": "patrouille_mixte_conseil",
     "usageNarratif": "scene",
     "nom": "Patrouille Mixte du Conseil",
-    "role": "Escouade composite chargée de briser la résistance artisanale.",
-    "image": "/images/PNJ/pnj_patrouille_mixte_conseil.jpg",
+    "role": "Patrouille envoyée par le Conseil pour rétablir l'ordre. Elle contrôle les rues, saisit les preuves et arrête les suspects au nom de la sécurité.",
+    "image": "/images/PNJ/Patrouille mixte du conseil.png",
     "interpretation": {
-      "accroche": "Quand les PJ la rencontrent pour la première fois, la patrouille transforme immédiatement la rue en poste de contrôle.",
+      "accroche": "Elle ferme une rue en quelques gestes : boucliers devant, hallebardes levées, officier au centre.",
       "objectif": "Appliquer les ordres du Conseil et briser la résistance artisanale",
-      "attitude": "Disciplinés et méthodiques, suivent les ordres sans question"
+      "attitude": "Disciplinée, méthodique et peu sensible aux explications improvisées. Elle suit les ordres tant qu'ils semblent légaux."
     },
     "impulsion": "Maintenir l'ordre public même quand l'ordre devient injuste.",
     "degats": {
@@ -105,7 +105,7 @@ export const pnjConseilEtCiteData = [
       "Confisquer une preuve au nom de la sécurité",
       "Obéir à un mandat contestable"
     ],
-    "description": "La patrouille mixte matérialise l'ordre civil de Valombre lorsqu'il devient oppressant. Elle sert à bloquer une rue, saisir une preuve, arrêter un témoin ou rappeler que la loi peut protéger l'injustice.",
+    "description": "Groupe de gardes en armures complètes, casques fermés, boucliers et hallebardes. Leur équipement mélange les couleurs du Conseil et celles des corps de garde locaux. Ils avancent serrés, avec un officier ou un sergent qui donne les ordres.",
     "notes": "",
     "race": "groupe humanoïde",
     "faction": "Conseil de Valombre",
@@ -118,9 +118,9 @@ export const pnjConseilEtCiteData = [
     "id": "yselle_vaurin",
     "usageNarratif": "scene",
     "nom": "Yselle Vaurin, première syndique",
-    "role": "Première syndique de la Guilde Marchande. Elle préside les assemblées, représente les négociants auprès du Conseil et arbitre les conflits entre les principales maisons de commerce.",
+    "role": "Première syndique de la Guilde Marchande. Elle arbitre les litiges commerciaux et protège l'influence de la Guilde auprès du Conseil.",
     "categorie": "neutres",
-    "image": "/images/PNJ/pnj_yselle_vaurin.jpg",
+    "image": "/images/PNJ/Yselle-vaurin.png",
     "antagoniste": false,
     "interpretation": {
       "accroche": "Examine toujours le sceau, la signature ou le registre posé devant elle avant de regarder son interlocuteur.",
@@ -163,7 +163,7 @@ export const pnjConseilEtCiteData = [
       "Suspendre un crédit jusqu’à ce qu’un litige soit réglé",
       "Proposer un compromis avantageux mais contraignant"
     ],
-    "description": "Femme d’une cinquantaine d’années, vêtue de robes sombres soigneusement coupées. Elle porte au cou le sceau de la Guilde et garde toujours un petit carnet relié dans une poche intérieure.",
+    "description": "Femme blonde, élégante, vêtue d'une veste bleue et d'une robe claire de grande qualité. Elle travaille près d'une fenêtre donnant sur la ville, avec des registres, des contrats et une plume toujours prêts. Son maintien est droit, son sourire rare.",
     "notes": "Yselle distingue les intérêts de la Guilde de ceux des maisons marchandes. Elle peut s’opposer à un négociant puissant si ses pratiques menacent la confiance dans les contrats.",
     "race": "humaine",
     "faction": "La Guilde Marchande"
@@ -173,9 +173,9 @@ export const pnjConseilEtCiteData = [
     "id": "odran_bellec",
     "usageNarratif": "scene",
     "nom": "Odran Bellec, maître du Beffroi",
-    "role": "Maître du Beffroi de la Marchande. Il supervise l’horloge, les cloches des marchés, les poids officiels et les registres qui fixent les heures d’ouverture et de fermeture des halles.",
+    "role": "Maître du Beffroi de la Marchande. Il surveille l'horloge, les cloches, les poids officiels et les horaires des marchés.",
     "categorie": "neutres",
-    "image": "/images/PNJ/pnj_odran_bellec.jpg",
+    "image": "/images/PNJ/Odran Bellec.png",
     "antagoniste": false,
     "interpretation": {
       "accroche": "Interrompt parfois une phrase pour écouter le mécanisme de l’horloge et compter silencieusement les battements.",
@@ -183,7 +183,7 @@ export const pnjConseilEtCiteData = [
       "attitude": "Méticuleux, littéral et rarement pressé. Il devient plus loquace dès qu’une conversation concerne un mécanisme, une heure ou une mesure."
     },
     "disposition": "neutre",
-    "impulsion": "Faire coïncider les horaires, les poids et les registres avec une précision incontestable.",
+    "impulsion": "Faire respecter les heures, les poids et les mesures officielles.",
     "degats": {
       "valeur": 1,
       "description": "Clé de mécanicien en fer",
@@ -218,7 +218,7 @@ export const pnjConseilEtCiteData = [
       "Signaler une incohérence dans un horaire ou un registre",
       "Faire sonner une cloche pour ouvrir, fermer ou interrompre un marché"
     ],
-    "description": "Homme mince aux cheveux grisonnants, vêtu d’un tablier de travail couvert de petites poches. Ses doigts portent des traces d’huile et de limaille malgré les efforts qu’il fait pour les nettoyer.",
+    "description": "Homme aux cheveux gris, veste sombre et tablier de travail rempli de petites poches. Il garde souvent une clef, un poids ou un outil d'horloger entre les doigts. Ses mains portent des traces d'huile malgré leur propreté générale.",
     "notes": "Odran conserve les anciens registres du Beffroi. Il peut vérifier l’heure d’un événement public, la fermeture d’une halle ou l’utilisation officielle d’une cloche.",
     "race": "humain",
     "faction": "La Guilde Marchande"
@@ -228,9 +228,9 @@ export const pnjConseilEtCiteData = [
     "id": "geraud_veyre",
     "usageNarratif": "levier",
     "nom": "Géraud Veyre, prévôt de Saint-Aldric",
-    "role": "Prévôt de la cathédrale Saint-Aldric. Il administre le chapitre, représente le clergé auprès du Conseil et préside les principales cérémonies religieuses de Valombre.",
+    "role": "Prévôt de la cathédrale Saint-Aldric. Il dirige les cérémonies importantes et représente le clergé dans les affaires publiques.",
     "categorie": "neutres",
-    "image": "/images/PNJ/pnj_geraud_veyre.jpg",
+    "image": "/images/PNJ/Geraud Veyre.png",
     "antagoniste": false,
     "interpretation": {
       "accroche": "Prend quelques secondes de silence avant de répondre à toute question qui engage une promesse, un jugement ou la réputation d’une personne.",
@@ -238,7 +238,7 @@ export const pnjConseilEtCiteData = [
       "attitude": "Formel et mesuré. Il écoute sans interrompre, mais distingue strictement les confidences privées des déclarations faites devant témoins."
     },
     "disposition": "neutre",
-    "impulsion": "Donner une forme publique et durable aux serments que les habitants prononcent.",
+    "impulsion": "Protéger l'autorité du clergé et le sérieux des serments publics.",
     "degats": {
       "valeur": 1,
       "description": "Bâton cérémoniel et autorité du chapitre",
@@ -274,7 +274,7 @@ export const pnjConseilEtCiteData = [
       "Opposer les usages du chapitre à une décision précipitée",
       "Accorder une audience privée sans promettre son soutien"
     ],
-    "description": "Homme âgé à la barbe courte et blanche, vêtu de robes grises bordées de bleu sombre. Il porte une chaîne d’argent ornée du livre et de l’épée de Saint-Aldric.",
+    "description": "Homme âgé à la barbe courte et blanche, vêtu de robes grises bordées de bleu sombre. Il porte une chaîne d'argent ornée du livre et de l'épée de Saint-Aldric. Son visage est calme, presque triste, mais sa voix reste ferme.",
     "notes": "Géraud n’est pas hostile au Conseil, mais il refuse que les prêtres soient traités comme des fonctionnaires municipaux. Il accorde une grande importance aux précédents et aux formulations exactes des serments.",
     "race": "humain",
     "faction": "Le Clergé de Saint-Aldric"
@@ -284,9 +284,9 @@ export const pnjConseilEtCiteData = [
     "id": "alix_marne",
     "usageNarratif": "levier",
     "nom": "Sœur Alix Marne, hospitalière",
-    "role": "Hospitalière du Clergé de Saint-Aldric. Elle organise les aumônes, visite les malades et aide les familles qui ne peuvent payer les soins ou les funérailles.",
+    "role": "Hospitalière du Clergé de Saint-Aldric. Elle visite les malades, distribue les aumônes et connaît les familles pauvres de plusieurs quartiers.",
     "categorie": "allies",
-    "image": "/images/PNJ/pnj_alix_marne.jpg",
+    "image": "/images/PNJ/Soeur Alix Marne.png",
     "antagoniste": false,
     "interpretation": {
       "accroche": "Confie régulièrement un panier, une couverture ou une liste de courses à la personne disponible la plus proche sans lui demander son rang.",
@@ -329,7 +329,7 @@ export const pnjConseilEtCiteData = [
       "Connaître une famille, un malade ou un logement oublié des registres",
       "Refuser un don accompagné de conditions humiliantes"
     ],
-    "description": "Femme robuste d’une quarantaine d’années, vêtue d’une robe religieuse simple protégée par un tablier clair. Elle porte une sacoche contenant des bandages, des listes et quelques remèdes ordinaires.",
+    "description": "Femme robuste d'une quarantaine d'années, visage doux mais énergique. Elle porte une robe religieuse simple, un tablier clair et une coiffe blanche. Une sacoche de soins, quelques listes et des bandages l'accompagnent presque toujours.",
     "notes": "Alix connaît les cuisines communes, les logements pauvres et les petites chapelles de plusieurs quartiers. Elle entretient de bonnes relations avec les guérisseurs qui soignent sans demander immédiatement de paiement.",
     "race": "humaine",
     "faction": "Le Clergé de Saint-Aldric"
@@ -339,9 +339,9 @@ export const pnjConseilEtCiteData = [
     "id": "avel_ronce",
     "usageNarratif": "scene",
     "nom": "Avel Ronce, Bourgmestre de Valombre",
-    "role": "Préside le Conseil de Valombre, promulgue ses décisions et veille à leur application. Homme d'ordre et de procédure, il croit gouverner en cherchant le consensus, sans voir que ses propres lenteurs paralysent la cité au moment où elle aurait besoin d'agir. Sous la pression, il peut voter une loi martiale partielle pour donner l'illusion de la fermeté.",
+    "role": "Bourgmestre de Valombre et président du Conseil. Il veut maintenir l'ordre, mais ses hésitations et ses procédures ralentissent les décisions urgentes.",
     "categorie": "neutres",
-    "image": "/images/PNJ/pnj_avel_ronce.jpg",
+    "image": "/images/PNJ/Avel Ronce.png",
     "antagoniste": false,
     "interpretation": {
       "accroche": "Tapote l'ordre du jour du bout des doigts et renvoie chaque urgence à « la commission compétente ».",
@@ -385,7 +385,7 @@ export const pnjConseilEtCiteData = [
       "Voter une mesure d'exception qui donne une apparence d'action",
       "Offrir aux PJ un appui officiel en échange d'une preuve présentable"
     ],
-    "description": "Homme vieillissant en robe de fonction sobre, chaîne d'office sur la poitrine. Voix posée d'orateur de séance. Garde toujours un dossier ouvert devant lui, comme un rempart.",
+    "description": "Homme vieillissant, barbe grise, robe de fonction sombre et lourde chaîne d'office sur la poitrine. Il s'assoit derrière un bureau couvert de dossiers et de sceaux. Sa posture est digne, mais son regard trahit souvent la fatigue.",
     "notes": "Avel Ronce n'est pas corrompu : il est dépassé. Il peut devenir un allié décisif si les PJ lui apportent une vérité simple et présentable qui le couvre politiquement. Pivot de la menace « Le Conseil, la Machine à Retarder » (Front 4).",
     "race": "humain",
     "faction": "Conseil de Valombre"
@@ -395,9 +395,9 @@ export const pnjConseilEtCiteData = [
     "id": "armurier_garrek",
     "usageNarratif": "levier",
     "nom": "Garrek Masque, armurier de la Vieille Ville",
-    "role": "Armurier de la Vieille Ville. Il vend des armures et des armes de qualité moyenne, souvent réparées ou rachetées à des aventuriers morts. Ses prix sont abordables et il accepte les trocs.",
+    "role": "Armurier de la Vieille Ville. Il vend des armes et armures d'occasion, souvent réparées, rachetées ou obtenues sans poser de questions.",
     "categorie": "neutres",
-    "image": "/images/PNJ/pnj_armurier_garrek.jpg",
+    "image": "/images/PNJ/Garrek Masque.png",
     "antagoniste": false,
     "interpretation": {
       "accroche": "Garrek accueille chaque client avec un sourire un peu trop large et évalue immédiatement ce qu'il porte et ce qu'il pourrait payer.",
@@ -427,7 +427,7 @@ export const pnjConseilEtCiteData = [
       "Racheter l'équipement d'un aventurier mort pour une somme modique",
       "Accepter un troc si l'objet proposé a une valeur revente"
     ],
-    "description": "Homme sec aux cheveux gras, vêtu d'un gilet de cuir qui a vu mieux. Son échoppe est encombrée de pièces d'occasion, de casques bosselés et de boucliers resoudés. Une odeur de rouille et d'huile de table flotte dans l'air.",
+    "description": "Homme sec, mal rasé, cheveux noirs en désordre et chemise ouverte sous un gilet de cuir. Son échoppe est sombre, pleine de casques cabossés, de lames réparées et d'armures pendues aux murs. Il sourit trop vite pour être complètement rassurant.",
     "notes": "Garrek vend des cuirs cloutés, des cottes de mailles réparées, des armes d'occasion et des boucliers refaits. Qualité moyenne, prix abordables. Il rachète tout ce qu'on lui apporte sans poser de questions. Certaines pièces ont des défauts cachés (fissures, soudures fragiles). Il accepte le troc et fait crédit aux habitués du quartier.",
     "race": "humain",
     "faction": "Vieille Ville"
@@ -437,9 +437,9 @@ export const pnjConseilEtCiteData = [
     "id": "herboriste_fendrel",
     "usageNarratif": "levier",
     "nom": "Fendrel, herboriste de la Vieille Ville",
-    "role": "Herboriste installé dans une échoppe de la Vieille Ville. Il vend des herbes médicinales, des cataplasmes, des thés et des remèdes bon marché pour ceux qui ne peuvent pas payer l'apothicaire ou le médecin.",
+    "role": "Herboriste de la Vieille Ville. Il vend des remèdes bon marché et reconnaît les maladies courantes du quartier.",
     "categorie": "allies",
-    "image": "/images/PNJ/pnj_herboriste_fendrel.jpg",
+    "image": "/images/PNJ/Fendrel.png",
     "antagoniste": false,
     "interpretation": {
       "accroche": "Fendrel parle à ses plantes en les coupant, comme si chacune méritait un avertissement avant de finir en tisane.",
@@ -469,7 +469,7 @@ export const pnjConseilEtCiteData = [
       "Reconnaître un symptôme que l'apothicaire aurait identifié plus vite",
       "Vendre une herbe rare qu'il n'a pas eu le temps d'identifier"
     ],
-    "description": "Vieil homme voûté aux doigts tachés de sève. Son échoppe sent le séchoir, la menthe et le vinaigre. Des bottes d'herbes pendent au plafond et des bocaux mal étiquetés s'alignent sur des étagères branlantes.",
+    "description": "Vieil homme voûté, barbe blanche clairsemée, vêtements verts et bruns tachés par les plantes. Son échoppe est remplie de pots, de feuilles séchées, de racines, de bocaux et de petits outils de coupe. Il sent la menthe, la terre humide et le vinaigre.",
     "notes": "Fendrel vend des tisanes, des cataplasmes, des herbes séchées et des remèdes de base à prix très bas. Il soigne les petits maux du quartier. Ses préparations sont moins efficaces que celles d'Ursula, mais abordables pour les PJ qui ont peu de moyens. Il connaît les plantes de la région et peut identifier des échantillons. Il ne vend rien d'illicite mais ne pose pas de questions sur l'usage prévu.",
     "race": "humain",
     "faction": "Vieille Ville"
@@ -479,9 +479,9 @@ export const pnjConseilEtCiteData = [
     "id": "marchande_marenne",
     "usageNarratif": "levier",
     "nom": "Marenne Doulcet, marchande d'étoffes et d'importations",
-    "role": "Marchande installée dans le Quartier Marchand Haut des Hauteurs. Elle vend des étoffes fines, des bijoux, des épices, des objets importés et des produits de luxe destinés aux familles aisées de Valombre.",
+    "role": "Marchande d'étoffes et d'objets importés. Ses stocks montrent vite si les routes commerciales fonctionnent encore ou non.",
     "categorie": "neutres",
-    "image": "/images/PNJ/pnj_marchande_marenne.jpg",
+    "image": "/images/PNJ/Marenne Doulcet.png",
     "antagoniste": false,
     "interpretation": {
       "accroche": "Marenne accueille chaque client en le regardant de haut en bas pour évaluer ce qu'il peut se permettre, puis ajuste son sourire en conséquence.",
@@ -511,7 +511,7 @@ export const pnjConseilEtCiteData = [
       "Révéler une information commerciale qui a une valeur politique",
       "Mentionner que certaines cargaisons n'arrivent plus depuis des semaines"
     ],
-    "description": "Femme élégante d'une quarantaine d'années, vêtue de soie sombre et de bijoux discrets. Sa boutique aux murs peints en bleu profond est éclairée par des lampes à huile parfumée. Les étagères présentent des rouleaux de tissu, des coffrets en bois verni et des objets importés soigneusement disposés.",
+    "description": "Femme élégante aux cheveux sombres, vêtue de tissus coûteux et de bijoux discrets. Elle tient une boutique chaude et parfumée, remplie d'étoffes, de coffrets, de rubans, de parfums et de petits objets importés. Elle sourit comme une négociante qui a déjà fixé son prix.",
     "notes": "Marenne vend des étoffes de qualité, des bijoux, des épices, du parfum, des objets d'art et des produits importés de Caldris ou des cités lointaines. Ses prix sont élevés. Elle accepte les commandes spéciales pour les clients de confiance. Depuis le déphasage, certains de ses stocks ne se renouvellent plus et elle cherche des sources alternatives. Elle est bien informée sur le commerce de la cité et peut vendre des rumeurs sur les maisons marchandes, les retards de cargaison et les tensions entre guildes.",
     "race": "humaine",
     "faction": "La Guilde Marchande"
@@ -521,9 +521,9 @@ export const pnjConseilEtCiteData = [
     "id": "marchande_devotion",
     "usageNarratif": "levier",
     "nom": "Pernelle Veyre, marchande d'objets de dévotion",
-    "role": "Marchande installée sur le parvis de la Cathédrale Saint-Aldric. Elle vend des cierges, des médailles, des amulettes bénies, de l'eau lustrale et des objets religieux aux fidèles et aux visiteurs de la cathédrale.",
+    "role": "Marchande d'objets de dévotion sur le parvis de la cathédrale. Elle vend cierges, médailles, rubans bénis et petites amulettes.",
     "categorie": "allies",
-    "image": "/images/PNJ/pnj_marchande_devotion.jpg",
+    "image": "/images/PNJ/Pernelle Veyre.png",
     "antagoniste": false,
     "interpretation": {
       "accroche": "Pernelle fait le signe de l'autel avant chaque vente, même pour une bougie, comme si chaque transaction était un petit acte de foi.",
@@ -553,7 +553,7 @@ export const pnjConseilEtCiteData = [
       "Refuser de vendre un objet sacré à quelqu'un qui ne respecte pas le rite",
       "Mentionner que le clergé a béint un stock d'eau lustrale pour une cérémonie à venir"
     ],
-    "description": "Femme d'une cinquantaine d'années, le visage ridé par le froid et le vent du parvis. Elle porte un châle sombre et un tablier couvert de taches de cire. Son étal est un comptoir de bois dressé contre le mur de la cathédrale, couvert de cierges, de médailles, de rubans et de petits objets de piété.",
+    "description": "Femme souriante d'une cinquantaine d'années, joues rondes, châle sombre et tablier taché de cire. Son étal est couvert de cierges, de médailles, de rubans, de petites fioles et d'images pieuses. Elle a toujours de la cire sur les doigts.",
     "notes": "Pernelle vend des cierges (de 1 sous à 1 écu selon la taille et le saint), des médailles de Saint-Aldric, des amulettes bénies (effet mineur : confiance, apaisement), de l'eau lustrale en petits flacons, des rubans aux couleurs de la cathédrale et des prières écrites sur parchemin. Elle ne vend rien de puissant au sens magique, mais ses objets sont authentiquement bénis par le clergé. Elle connaît les horaires des offices, les noms des prêtres et les intentions de prière affichées à la cathédrale. Elle est apparentée à Géraud Veyre, le prêtre de Saint-Aldric.",
     "race": "humaine",
     "faction": "Clergé de Saint-Aldric"
@@ -563,9 +563,9 @@ export const pnjConseilEtCiteData = [
     "id": "colporteur_vaneck",
     "usageNarratif": "levier",
     "nom": "Vaneck, colporteur de la Place de la Fondation",
-    "role": "Colporteur ambulant installé sur la Place de la Fondation. Il vend des provisions de voyage, des cordes, des torches, des rations, des outils bon marché et tout ce qu'un aventurier peut besoin en route.",
+    "role": "Colporteur de la Place de la Fondation. Il vend torches, cordes, rations, couvertures et petits outils aux voyageurs.",
     "categorie": "neutres",
-    "image": "/images/PNJ/pnj_colporteur_vaneck.jpg",
+    "image": "/images/PNJ/Vaneck.png",
     "antagoniste": false,
     "interpretation": {
       "accroche": "Vaneck détaille le contenu de son chariot à voix haute, même quand personne ne l'écoute, comme s'il répétait ses prix pour ne pas les oublier.",
@@ -595,7 +595,7 @@ export const pnjConseilEtCiteData = [
       "Mentionner qu'un autre marchand a demandé exactement les mêmes provisions la veille",
       "Vendre un outil bon marché qui cassera au pire moment"
     ],
-    "description": "Homme rond et mobile, vêtu d'une veste de cuir à poches multiples. Il se déplace avec un chariot à bras couvert d'une bâche, qu'il installe chaque matin sur la Place de la Fondation. Son étal change tous les jours selon ce qu'il a trouvé ou racheté.",
+    "description": "Homme rond et jovial, barbe courte, veste de cuir pleine de poches et chariot bâché à portée de main. Son étal change chaque matin : torches, cordes, sacs, rations, gourdes, couvertures et outils bon marché pendent partout autour de lui.",
     "notes": "Vaneck vend des rations de voyage, des cordes, des torches, des briquets, des couvertures, des gourdes, des outils simples (couteaux, piolets, lampes à huile), du silex et des petits objets utilitaires. Ses prix sont corrects et ses produits de qualité variable. Il rachète les objets d'aventuriers en bon état. Il connaît les rumeurs de la place, les horaires des caravanes et les prix du marché. C'est le marchand de base pour les PJ qui ont besoin de provisions sans chercher de qualité particulière.",
     "race": "humain",
     "faction": "La Guilde Marchande"

@@ -82,7 +82,7 @@ export const scenario1 = {
       {
         id: "mara_dirigeante",
         nom: "Mara",
-        role: "Dirigeante de la Résistance. Cherche la vérité sur Nyx depuis huit ans.",
+        role: "Dirigeante de la Résistance. Cherche la vérité sur Nyx depuis des années.",
       },
       {
         id: "sealine_coren",
@@ -129,7 +129,7 @@ export const scenario1 = {
         "Temple-Forgeron : Thorgar montre les gestes et identifie les runes (Acte II, scène 1).",
         "Cimetière des Terrasses : les runes dans les os sont visibles dès la première descente (Acte I, scène 2).",
       ],
-      declencheur: "Diplomatie DD 14 avec Thorgar OU Connaissances (religion) DD 15 sur les runes.",
+      declencheur: "Diplomatie Moyen avec Thorgar OU Connaissances (religion) Moyen sur les runes.",
       plan_b:
         "Si les PJ ratent Thorgar, Olane peut orienter vers les archives. Le Mausolée du Seuil et son froid anormal sont perceptibles sans jet. Thorgar finit par dire que les rites existent et que les profanations les brisent.",
       consequence_si_ratee:
@@ -141,9 +141,9 @@ export const scenario1 = {
       resume:
         "Les passages sous les dalles ont été creusés avec des ciselets d'Université, pas des outils de vandale. Quelqu'un à l'intérieur de l'institution est impliqué.",
       sources: [
-        "Cimetière des Terrasses : Investigation DD 14 sur les passages (Acte I, scène 2).",
+        "Cimetière des Terrasses : Investigation Moyen sur les passages (Acte I, scène 2).",
       ],
-      declencheur: "Investigation DD 14.",
+      declencheur: "Investigation Moyen.",
       plan_b:
         "Même en cas d'échec, Thorgar dit que trois tombes ont été touchées et que les passages viennent par en-dessous. Le MJ peut faire remarquer la précision des coupes sans révéler l'origine exacte.",
       consequence_si_ratee:
@@ -153,14 +153,14 @@ export const scenario1 = {
       id: "rev_protocol_s01",
       titre: "Le protocole S-01 relie Thade à Nyx et à Sealine",
       resume:
-        "Le dossier médical scellé de Sealine Vael (inscrit sous le nom marital Coren, S. — 12-VAEL) contient le protocole S-01, établi 28 jours avant la catastrophe de Nyx. S-01 = Sealine. Thade a exploré la 'littérature interdite' avant la catastrophe. Nyx n'était pas un accident — c'était une tentative de sauver Sealine qui a mal tourné.",
+        "Le dossier médical scellé de Sealine Vael (inscrit sous le nom marital Coren, S. — 12-VAEL) contient le protocole S-01, établi 28 jours avant la catastrophe de Nyx. S-01 = Sealine. Thade a exploré la 'littérature interdite' avant la catastrophe pour stabiliser une exposition planaire qu'il ne comprenait pas encore. Nyx n'était pas un accident : c'est la première fois qu'il a aperçu le pouvoir qu'il tente désormais de contrôler.",
       sources: [
         "Archives Médicales Scellées : dossier 'Coren, S. — 12-VAEL — Médical' (Acte II, scène 2).",
         "Notes de Jaren Velt : cachet de Caldris et écriture inconnue (Acte I, scène 2).",
       ],
-      declencheur: "Médecine DD 15 ou Investigation DD 12 dans les archives.",
+      declencheur: "Médecine Moyen ou Investigation Moyen dans les archives.",
       plan_b:
-        "Le nom 'S-01' et la référence à la 'littérature interdite' sont lisibles sans jet. Olane peut faire le lien si les PJ lui montrent le dossier. Le cachet de Caldris sur les notes de Jaren est trouvable par Discrétion DD 12.",
+        "Le nom 'S-01' et la référence à la 'littérature interdite' sont lisibles sans jet. Olane peut faire le lien si les PJ lui montrent le dossier. Le cachet de Caldris sur les notes de Jaren est trouvable par Discrétion Moyen.",
       consequence_si_ratee:
         "Les PJ ne comprennent pas le motif de Thade. Sans S-01, Thade reste un bienfaiteur incompréhensible. La confrontation du Scénario 3 perd sa dimension tragique.",
     },
@@ -174,9 +174,9 @@ export const scenario1 = {
         "Résistance : le Collecteur confirme que des caisses d'os circulent dans les égouts (Acte III, scène 2).",
         "Olane : les flux arcaniques sont détournés vers la Tour (Acte II, scène 3).",
       ],
-      declencheur: "Connaissances (mystères) DD 16 sur la rune + Renseignements DD 14 avec le Collecteur.",
+      declencheur: "Connaissances (mystères) Difficile sur la rune + Renseignements Moyen avec le Collecteur.",
       plan_b:
-        "Le parfum de lavande relie le bureau de Thade à la mort de Jaren sans jet. Le Collecteur peut confirmer les caisses d'os avec Diplomatie DD 13. Olane dit 'La Tour. Regardez la Tour.' même en cas d'échec.",
+        "Le parfum de lavande relie le bureau de Thade à la mort de Jaren sans jet. Le Collecteur peut confirmer les caisses d'os avec Diplomatie Moyen. Olane dit 'La Tour. Regardez la Tour.' même en cas d'échec.",
       consequence_si_ratee:
         "Les PJ soupçonnent l'Université mais pas Thade personnellement. Le choix du Scénario 1 (Acte III) perd sa force. Les PJ peuvent rejoindre la Résistance sans comprendre qui ils combattent.",
     },
@@ -184,11 +184,11 @@ export const scenario1 = {
       id: "rev_resistance_existe",
       titre: "La Résistance de la Vieille Ville est une alternative à l'Université",
       resume:
-        "Un réseau clandestin — Mara, Ursula, le Collecteur, Sniv — soigne les malades, cache les fugitifs et cherche la vérité sur Thade depuis huit ans. Ils ont accès aux égouts, à la pègre et aux malades — des pistes que l'Université ne peut pas fournir.",
+        "Un réseau clandestin — Mara, Ursula, le Collecteur, Sniv — soigne les malades, cache les fugitifs et cherche la vérité sur Thade depuis des années. Ils ont accès aux égouts, à la pègre et aux malades — des pistes que l'Université ne peut pas fournir.",
       sources: [
         "Maison des Retours : rencontre avec Mara et le réseau (Acte III, scène 2).",
       ],
-      declencheur: "Diplomatie DD 13 avec Mara.",
+      declencheur: "Diplomatie Moyen avec Mara.",
       plan_b:
         "Même en cas d'échec, Mara offre un repas et dit que la Résistance existe. Les PJ peuvent revenir. Sniv propose de montrer les passages des égouts indépendamment de la confiance de Mara.",
       consequence_si_ratee:
@@ -561,7 +561,7 @@ export const scenario1 = {
         {
           etape: "Alternative pour les rites",
           detail:
-            "Les rites peuvent être retrouvés dans les archives du Temple-Forgeron, mais ils nécessitent Connaissances (religion) DD 18 et plusieurs sessions de recherche. Un autre prêtre nain peut être formé, mais il faut du temps — temps que les PJ n'ont pas.",
+            "Les rites peuvent être retrouvés dans les archives du Temple-Forgeron, mais ils nécessitent Connaissances (religion) Difficile et plusieurs sessions de recherche. Un autre prêtre nain peut être formé, mais il faut du temps — temps que les PJ n'ont pas.",
         },
         {
           etape: "La Résistance comme voie",
@@ -583,12 +583,12 @@ export const scenario1 = {
         {
           etape: "Le Conseil écoute poliment",
           detail:
-            "Un conseiller reçoit les PJ. Il prend des notes. Il dit que le sujet sera examiné. Il ne ment pas — il examine. Mais l'examen est lent, procédurier, et Thade a plus de poids institutionnel que les PJ.",
+            "Un conseiller reçoit les PJ. Il prend des notes. Il dit que le sujet sera examiné. Il examine. Mais l'examen est lent, procédurier, et Thade a plus de poids institutionnel que les PJ.",
         },
         {
           etape: "Thade neutralise",
           detail:
-            "Thade, informé par ses contacts au Conseil, intervient discrètement. Il ne discrédite pas les PJ — il reformule. Il dit : « J'ai déjà engagé ces enquêteurs. Ils font un excellent travail. Le Conseil n'a pas à s'inquiéter. » Il transforme l'alerte en confirmation de sa propre diligence.",
+            "Thade, informé par ses contacts au Conseil, intervient discrètement. Il reformule. Il dit : « J'ai déjà engagé ces enquêteurs. Ils font un excellent travail. Le Conseil n'a pas à s'inquiéter. » Il transforme l'alerte en confirmation de sa propre diligence.",
         },
         {
           etape: "Olane comme voix au Conseil",
@@ -611,49 +611,49 @@ export const scenario1 = {
       {
         indice: "Ciselets d'Université",
         scene: "Première Descente aux Terrasses",
-        jet: "Investigation DD 14",
+        jet: "Investigation Moyen",
         info: "Les passages sous les dalles ont été creusés avec des outils de précision d'Université, pas des outils de vandale.",
         pointeur: "Quelqu'un à l'Université est impliqué.",
       },
       {
         indice: "Runes dans l'os",
         scene: "Première Descente aux Terrasses",
-        jet: "Médecine DD 12 ou Connaissances (religion) DD 15",
+        jet: "Médecine Moyen ou Connaissances (religion) Moyen",
         info: "Les ossements prélevés portent des runes d'ancrage gravées. Ce ne sont pas des décorations — ce sont des points de fixation rituelle.",
         pointeur: "Les tombes sont un système actif, pas des monuments.",
       },
       {
         indice: "Notes de Jaren — cachet de Caldris",
         scene: "Première Descente aux Terrasses",
-        jet: "Discrétion DD 12 ou Vol DD 14",
+        jet: "Discrétion Moyen ou Vol Moyen",
         info: "Le carnet de Jaren contient des pages en écriture inconnue et un cachet de Caldris. Certaines pages ont été arrachées après sa mort.",
         pointeur: "Jaren avait un contact extérieur. Piste pour Elian Voss (Scénario 2).",
       },
       {
         indice: "Rune de Dissection à Distance",
         scene: "La Mort de Jaren Velt",
-        jet: "Connaissances (mystères) DD 16",
+        jet: "Connaissances (mystères) Difficile",
         info: "La rune sur la nuque de Jaren est une variante publiée par Thade Coren il y a six ans. Signature arcanique identifiable.",
         pointeur: "Thade a tué Jaren. Ou quelqu'un qui utilise ses méthodes.",
       },
       {
         indice: "Parfum de lavande",
         scene: "Le Bureau de Thade Coren / La Mort de Jaren Velt",
-        jet: "Perception DD 10",
+        jet: "Perception Facile",
         info: "Le même parfum de lavande alchimique dans le bureau de Thade et sur le lieu de la mort de Jaren.",
         pointeur: "Relie Thade à la mort de Jaren. Pas une preuve, mais un indice atmosphérique.",
       },
       {
         indice: "Pages arrachées du carnet de Jaren",
         scene: "La Mort de Jaren Velt",
-        jet: "Investigation DD 13",
+        jet: "Investigation Moyen",
         info: "Les pages écrites ont été arrachées proprement après la mort. Quelqu'un a pris les notes.",
         pointeur: "Les notes contenaient des informations sur S-01 et le cachet de Caldris.",
       },
       {
         indice: "Protocole S-01",
         scene: "Les Archives Médicales Scellées",
-        jet: "Médecine DD 15 ou Investigation DD 12",
+        jet: "Médecine Moyen ou Investigation Moyen",
         info: "Dossier médical de Sealine Vael (nom marital : Coren, S. — 12-VAEL). S-01 = Sealine, premier patient. Protocole établi 28 jours avant Nyx. Mention « littérature interdite ».",
         pointeur: "Thade explorait la littérature interdite avant la catastrophe. Nyx n'était pas un accident.",
       },
@@ -667,21 +667,21 @@ export const scenario1 = {
       {
         indice: "Caisses d'os dans les égouts",
         scene: "La Rencontre avec la Résistance",
-        jet: "Renseignements DD 14 ou Diplomatie DD 13 avec le Collecteur",
+        jet: "Renseignements Moyen ou Diplomatie Moyen avec le Collecteur",
         info: "Des caisses d'os circulent dans les égouts. Cachet de Caldris et marquage d'Université. Convergent vers la Tour.",
         pointeur: "Circuit physique des ossements : Cimetière → égouts → Tour.",
       },
       {
         indice: "Runes qui changent",
         scene: "Le Retour au Cimetière",
-        jet: "Connaissances (mystères) DD 16",
+        jet: "Connaissances (mystères) Difficile",
         info: "Les runes d'ancrage sur les tombes touchées se transforment en runes d'ouverture. Quelqu'un remplace le sceau par un autre système.",
-        pointeur: "Thade ne brise pas le sceau — il le remplace par un système d'ouverture.",
+        pointeur: "Thade remplace le sceau par un système d'ouverture.",
       },
       {
         indice: "Empreinte planaire au Mausolée",
         scene: "Le Retour au Cimetière",
-        jet: "Connaissances (mystères) DD 14",
+        jet: "Connaissances (mystères) Moyen",
         info: "Le froid du Puits de l'Abîme porte une texture planaire. La Spirale filtre par les fissures du sceau.",
         pointeur: "Le sceau cède. La Spirale est déjà là, partiellement.",
       },
@@ -695,7 +695,7 @@ export const scenario1 = {
         role_court: "Mandataire / Antagoniste caché",
         apparition: "Scène 1, puis en filigrane jusqu'à la fin",
         info_cle: "Engage les PJ pour enquêter sur ses propres profanations. S-01 est son motif. La lavande est sa signature.",
-        dd_clés: "Connaissances (mystères) DD 16 pour identifier la rune de Dissection à Distance",
+        difficultes_cles: "Connaissances (mystères) Difficile pour identifier la rune de Dissection à Distance",
       },
       {
         id: "thorgar_pretre_nain",
@@ -704,7 +704,7 @@ export const scenario1 = {
         role_court: "Gardien des rites / Allié potentiel",
         apparition: "Scène 2, puis Acte II et III",
         info_cle: "Connaît les gestes d'Edhrek-Murn mais pas leur sens. Seul à pouvoir restaurer les rites.",
-        dd_clés: "Diplomatie DD 14 pour qu'il montre les gestes",
+        difficultes_cles: "Diplomatie Moyen pour qu'il montre les gestes",
       },
       {
         id: "jaren_velt",
@@ -713,7 +713,7 @@ export const scenario1 = {
         role_court: "Surveillant / Victime",
         apparition: "Scène 2, mort scène 3",
         info_cle: "Transmet les découvertes des PJ à Thade. Son carnet contient le cachet de Caldris. Tué par Dissection à Distance.",
-        dd_clés: "Discrétion DD 12 pour examiner le carnet",
+        difficultes_cles: "Discrétion Moyen pour examiner le carnet",
       },
       {
         id: "maera_olane",
@@ -722,7 +722,7 @@ export const scenario1 = {
         role_court: "Alliée institutionnelle",
         apparition: "Acte II, scène 3",
         info_cle: "Sait que les flux sont détournés. Isolée par l'institution. Peut fournir accès, données et couverture.",
-        dd_clés: "Pas de jet — elle s'ouvre si les PJ apportent des preuves",
+        difficultes_cles: "Pas de jet — elle s'ouvre si les PJ apportent des preuves",
       },
       {
         id: "mara_dirigeante",
@@ -730,8 +730,8 @@ export const scenario1 = {
         faction: "Résistance",
         role_court: "Dirigeante de la Résistance",
         apparition: "Acte III, scène 2",
-        info_cle: "Cherche la vérité sur Nyx depuis huit ans. Offre une alternative à l'Université.",
-        dd_clés: "Diplomatie DD 13 pour gagner sa confiance",
+        info_cle: "Cherche la vérité sur Nyx depuis des années. Offre une alternative à l'Université.",
+        difficultes_cles: "Diplomatie Moyen pour gagner sa confiance",
       },
       {
         id: "le_collecteur",
@@ -740,7 +740,7 @@ export const scenario1 = {
         role_court: "Récupérateur d'informations",
         apparition: "Acte III, scène 2",
         info_cle: "Connaît le circuit des caisses d'os dans les égouts. Cachet de Caldris et marquage d'Université.",
-        dd_clés: "Renseignements DD 14 ou Diplomatie DD 13",
+        difficultes_cles: "Renseignements Moyen ou Diplomatie Moyen",
       },
       {
         id: "sniv_kobold",
@@ -749,7 +749,7 @@ export const scenario1 = {
         role_court: "Guide des égouts",
         apparition: "Acte III, scène 2",
         info_cle: "Kobold qui connaît les passages souterrains. Peut montrer les passages creusés récents.",
-        dd_clés: "Pas de jet — il propose son aide spontanément",
+        difficultes_cles: "Pas de jet — il propose son aide spontanément",
       },
       {
         id: "ursula_fraternite",
@@ -758,7 +758,7 @@ export const scenario1 = {
         role_court: "Soigneuse clandestine",
         apparition: "Acte III, scène 2 (ou scène optionnelle)",
         info_cle: "Soigne les malades que l'Université refuse. Les symptômes ressemblent à ceux de Sealine.",
-        dd_clés: "Pas de jet — elle parle si les PJ cherchent des soins",
+        difficultes_cles: "Pas de jet — elle parle si les PJ cherchent des soins",
       },
     ],
 
@@ -825,11 +825,11 @@ export const scenario1 = {
       {
         phase: "Avant le scénario",
         evenements: [
-          "Il y a 8 ans : catastrophe de Nyx. Sealine se sacrifie. Thade survit.",
-          "Il y a 8 ans : Thade devient Archimage de l'Université. L'Université est reconstruite.",
+          "Il y a une trentaine d'années : catastrophe de Nyx. Sealine se sacrifie. Thade survit.",
+          "Dans les années suivantes : Thade devient le survivant officiel de Nyx, puis gravit les échelons jusqu'au rang d'archimage.",
           "Il y a 6 ans : Thade publie la variante de Dissection à Distance.",
-          "Depuis 8 ans : Thade prélève les ossements des Thanes par intermittence.",
-          "Depuis 8 ans : la Résistance se forme autour de Mara et Ursula.",
+          "Depuis plusieurs années : Thade teste des relais, accumule des ressources et prépare la reprise du protocole.",
+          "Depuis plusieurs années : la Résistance se structure autour de Mara et Ursula.",
           "Récemment : Thade accélère les prélèvements. Trois tombes touchées.",
         ],
       },
@@ -1056,7 +1056,7 @@ export const scenario1 = {
             deroulement_narratif:
               "Thade accueille les PJ avec une courtoisie précise, sans chaleur excessive. Il les installe, propose du thé, prend le temps de les regarder. Puis il va droit au fait.\n\nQuelqu'un profane les tombes du Cimetière des Terrasses. Les clans nains ne parlent pas à l'Université. Le Conseil traite cela comme du vandalisme. Ce n'est pas du vandalisme. Thade le sait. Il ne dit pas pourquoi il le sait — il présente cela comme une intuition d'archimage, un sentiment de celui qui connaît sa cité.\n\nIl offre un ordre de mission et une bourse. L'ordre donne aux PJ un accès officiel au Cimetière et aux Terrasses. La bourse est modeste — pas assez pour acheter des mercenaires, assez pour vivre. Il précise : enquêter discrètement. Ne pas alerter le Conseil. Ne pas effrayer les clans.\n\nSi les PJ posent des questions sur l'Ordre de Nyx, Thade répond avec calme. Il se présente comme un survivant, pas comme un coupable. Il a perdu des collègues. Il a perdu quelqu'un qu'il aimait. Il a reconstruit. Ce qu'il ne dit pas : il a reconstruit pour rouvrir le seuil.\n\nLe coffret plombé est visible sur l'étagère. Un œil attentif remarque les runes de conservation funéraire gravées sur le plomb. Un nez attentif remarque que la lavande n'est pas un parfum ordinaire — c'est un masque olfactif alchimique.\n\nThade ne ment jamais directement. Il omet, il cadre, il oriente. Il dit « patrimoine » et non « sépultures ». Il dit « matériel » et non « recherches ». Chaque mot est choisi. Si un PJ perçoit ce soin, c'est le premier indice : Thade construit son discours.",
             notes_mj:
-              "Cette scène est le piège. Les PJ doivent vouloir travailler pour Thade. Si le MJ joue Thade comme un méchant évident, tout le scénario s'effondre. Thade est charismatique, crédible, et sincère dans sa douleur. Ce qui le rend dangereux n'est pas le mensonge — c'est l'omission.",
+              "Cette scène est le piège. Les PJ doivent vouloir travailler pour Thade. Si le MJ joue Thade comme un méchant évident, tout le scénario s'effondre. Thade est charismatique, crédible, et sincère dans sa douleur. Ce qui le rend dangereux, c'est l'omission.",
           },
 
           texte_a_lire:
@@ -1081,13 +1081,13 @@ export const scenario1 = {
           defis: [
             {
               competence: "Psychologie",
-              dd: 15,
+              difficulte: "Moyen",
               reussite: "Thade cache quelque chose. Pas un mensonge, une omission soigneusement construite. Il parle des tombes comme de 'patrimoine' et non de 'sépultures'.",
               echec: "Thade semble sincère. Un homme brillant qui a survécu à une catastrophe et veut protéger sa cité.",
             },
             {
               competence: "Investigation",
-              dd: 13,
+              difficulte: "Moyen",
               reussite: "Le coffret plombé est marqué de runes de conservation funéraire. Son contenu ressemble à des fragments d'os.",
               echec: "Le bureau est impeccable. Rien de suspect, sauf un parfum de lavande un peu trop intense.",
             },
@@ -1097,14 +1097,14 @@ export const scenario1 = {
             {
               indice: "Le coffret plombé",
               localisation: "Étagère du bureau de Thade",
-              detection: "Investigation DD 13 ou Détection de la magie",
+              detection: "Investigation Moyen ou Détection de la magie",
               information: "Fragments d'os conservés dans un liquide alchimique. Runes de préservation funéraire naine.",
               usage: "Premier indice que Thade s'intéresse aux tombes pour plus que des raisons patrimoniales.",
             },
             {
               indice: "Le choix de mots de Thade",
               localisation: "Conversation",
-              detection: "Psychologie DD 15",
+              detection: "Psychologie Moyen",
               information: "Thade dit 'matériel' et pas 'recherches'. Il évite tout mot reliant les sépultures à un fonctionnement.",
               usage: "Signal que Thade construit son discours. Pas une preuve, mais un motif de méfiance.",
             },
@@ -1221,7 +1221,7 @@ export const scenario1 = {
             ambiance:
               "Le Cimetière des Terrasses descend en gradins sur le flanc nord de la colline, comme un amphithéâtre taillé pour les morts. Des allées de pierre grise séparent les terrasses, bordées de lanternes funéraires au verre épais. L'air est froid — plus froid qu'il ne devrait l'être en cette saison, plus froid que dans les rues de la ville à cent mètres en contrebas. Le froid vient d'en dessous. Il remonte des fondations comme une respiration lente.\n\nUn prêtre nain attend près de l'allée centrale. Il porte un tablier de forge sous sa chasuble — un homme qui travaille le métal et la pierre avant de travailler l'âme. Thorgar. Il garde ces terrasses depuis que son maître est mort, et il accomplit les rites que son maître lui a transmis sans comprendre pourquoi.\n\nJaren Velt est déjà là. Il prend des notes sur un carnet relié cuir, accroupi près d'une dalle, l'air concentré d'un étudiant appliqué. Il est serviable, anxieux, et transmettra tout ce qu'il voit à Thade le soir même.",
             deroulement_narratif:
-              "Thorgar accueille les PJ avec une réserve polie. Il accepte l'ordre de mission parce qu'il est officiel, mais il ne fait pas confiance aux humains de l'Université. Il les mène aux tombes profanées — trois des sept terrasses ont été touchées.\n\nLes dalles sont intactes. Les inscriptions sont lisibles. Mais les fondations ont été percées par en-dessous, avec des outils de précision. Des ciselets d'Université, pas des outils de vandale. Les passages sont étroits, nets, faits par quelqu'un qui connaît la pierre. Investigation DD 14 pour identifier les marques.\n\nLes restes prélevés portent des marques de rites funéraires nains très anciens — des runes gravées dans l'os lui-même. Médecine DD 12 pour les remarquer. Ces runes ne sont pas décoratives : ce sont des ancrages rituels. Thorgar peut les identifier si les PJ lui montrent, mais il ne sait plus ce qu'elles ancrent.\n\nJaren observe tout. Il prend des notes dans deux écritures — la sienne et une autre, plus ancienne. Certaines pages portent un cachet de Caldris. Discrétion DD 12 ou Vol DD 14 pour examiner le carnet sans qu'il remarque. S'il remarque, il devient nerveux et range le carnet.\n\nSi les PJ demandent à voir le Mausolée du Seuil, Thorgar hésite. Diplomatie DD 13 pour le convaincre. Le Mausolée est au centre du Cimetière, une construction basse en pierre sombre. La dalle centrale vibre. Les lanternes vacillent sans vent. Le courant d'air froid qui remonte du Puits de l'Abîme est perceptible à tous — pas besoin de jet.",
+              "Thorgar accueille les PJ avec une réserve polie. Il accepte l'ordre de mission parce qu'il est officiel, mais il ne fait pas confiance aux humains de l'Université. Il les mène aux tombes profanées — trois des sept terrasses ont été touchées.\n\nLes dalles sont intactes. Les inscriptions sont lisibles. Mais les fondations ont été percées par en-dessous, avec des outils de précision. Des ciselets d'Université, pas des outils de vandale. Les passages sont étroits, nets, faits par quelqu'un qui connaît la pierre. Investigation Moyen pour identifier les marques.\n\nLes restes prélevés portent des marques de rites funéraires nains très anciens — des runes gravées dans l'os lui-même. Médecine Moyen pour les remarquer. Ces runes ne sont pas décoratives : ce sont des ancrages rituels. Thorgar peut les identifier si les PJ lui montrent, mais il ne sait plus ce qu'elles ancrent.\n\nJaren observe tout. Il prend des notes dans deux écritures — la sienne et une autre, plus ancienne. Certaines pages portent un cachet de Caldris. Discrétion Moyen ou Vol Moyen pour examiner le carnet sans qu'il remarque. S'il remarque, il devient nerveux et range le carnet.\n\nSi les PJ demandent à voir le Mausolée du Seuil, Thorgar hésite. Diplomatie Moyen pour le convaincre. Le Mausolée est au centre du Cimetière, une construction basse en pierre sombre. La dalle centrale vibre. Les lanternes vacillent sans vent. Le courant d'air froid qui remonte du Puits de l'Abîme est perceptible à tous — pas besoin de jet.",
             notes_mj:
               "Thorgar parle peu et lentement. Il connaît les gestes mais pas leur sens. Sa frustration est palpable : il sent que quelque chose ne va pas, mais il ne peut pas le relier à un cadre explicite. Jaren est serviable, anxieux, et transmet ses notes à Thade le soir même. Si les PJ accusent Jaren sans preuve, Thorgar les fait expulser par les gardes du Temple.",
           },
@@ -1248,19 +1248,19 @@ export const scenario1 = {
           defis: [
             {
               competence: "Investigation",
-              dd: 14,
+              difficulte: "Moyen",
               reussite: "Les passages ont été creusés avec des outils de précision — des ciselets d'Université. Quelqu'un qui connaît la pierre a fait ce travail.",
               echec: "Les tombes ont été forcées par en dessous. Difficile de dire avec quels outils.",
             },
             {
               competence: "Médecine",
-              dd: 12,
+              difficulte: "Moyen",
               reussite: "Les restes prélevés portent des marques de rites funéraires nains très anciens — des runes gravées dans l'os.",
               echec: "Les ossements manquants étaient anciens. Rien de plus à dire.",
             },
             {
               competence: "Diplomatie",
-              dd: 13,
+              difficulte: "Moyen",
               reussite: "Thorgar accepte de montrer le Mausolée du Seuil. Il ne dit pas pourquoi il est important, mais il les laisse ressentir le froid.",
               echec: "Thorgar refuse l'accès au Mausolée. « Ce n'est pas pour les étrangers. »",
             },
@@ -1270,28 +1270,28 @@ export const scenario1 = {
             {
               indice: "Outils d'Université",
               localisation: "Passages sous les dalles",
-              detection: "Investigation DD 14",
+              detection: "Investigation Moyen",
               information: "Ciselets et marques de forage correspondent à du matériel d'Université.",
               usage: "Premier lien entre les profanations et l'Université.",
             },
             {
               indice: "Runes dans l'os",
               localisation: "Fragments d'os restants",
-              detection: "Médecine DD 12 ou Connaissances (histoire) DD 14",
+              detection: "Médecine Moyen ou Connaissances (histoire) Moyen",
               information: "Les os portent des runes gravées dans le tissu osseux. Ce sont des ancrages rituels.",
               usage: "Comprendre que les Thanes ne sont pas des fondateurs ordinaires.",
             },
             {
               indice: "Le froid du Mausolée",
               localisation: "Mausolée du Seuil",
-              detection: "Perception passive ou Investigation DD 10",
+              detection: "Perception passive ou Investigation Facile",
               information: "Courant d'air froid. Les lanternes funéraires vacillent.",
               usage: "Signe que quelque chose d'anormal se passe sous le Cimetière.",
             },
             {
               indice: "Les notes de Jaren",
               localisation: "Carnet de Jaren Velt",
-              detection: "Discrétion DD 12 ou Vol DD 14",
+              detection: "Discrétion Moyen ou Vol Moyen",
               information: "Jaren prend des notes dans deux écritures. Certaines pages portent un cachet de Caldris.",
               usage: "Lien entre Jaren, l'Université et un commanditaire extérieur. Piste vers S-01 et Elian Voss.",
             },
@@ -1419,7 +1419,7 @@ export const scenario1 = {
             ambiance:
               "L'aube. Le couloir du troisième étage du Pavillon Nord est éclairé par des lampes alchimiques qui n'ont pas encore été ajustées pour la journée. La lumière est jaune, irrégulière, elle fait des ombres longues. Le couloir sent la lavande — pas le parfum d'un bureau, la concentration d'un masque alchimique.\n\nJaren Velt est assis contre le mur, près d'une fenêtre. Ses yeux sont ouverts. Son visage est paisible — pas de douleur, pas de surprise. Son carnet est à ses côtés, ouvert à une page blanche. Aucune trace de sang, aucune trace de lutte. Le corps d'un homme en parfaite santé qui s'est arrêté.\n\nLe couloir est silencieux. Les autres étudiants ne sont pas encore levés. Les PJ ont été appelés — par qui ? Un message glissé sous leur porte, un mot anonyme : « Pavillon Nord. Troisième étage. Venez vite. »",
             deroulement_narratif:
-              "Les PJ arrivent avant la garde s'ils se dépêchent. C'est crucial : après le passage de la garde, le carnet sera confisqué et la scène sera nettoyée.\n\nLe corps de Jaren est intact. Médecine DD 14 : mort instantanée par arrêt cardiaque. Aucun poison, aucune blessure. Le corps d'un homme en parfaite santé dont le cœur a simplement cessé. La rune est gravée sur sa nuque — petite, précise, faite après la mort ou pendant. Connaissances (mystères) DD 16 : c'est une variante de Dissection à Distance, publiée par Thade Coren il y a six ans. La signature arcanique est identifiable.\n\nLe carnet est ouvert à une page blanche. Investigation DD 13 : les pages écrites ont été arrachées proprement. Quelqu'un a pris les notes après la mort. Les pages arrachées contenaient les notes sur S-01 et le cachet de Caldris. Qui a pris les notes ? Thade ? Elian Voss ? La réponse n'est pas immédiate — c'est une piste pour plus tard.\n\nLe parfum de lavande est le même que dans le bureau de Thade. Perception DD 10. Ce n'est pas une preuve — la lavande est utilisée dans tout l'Université — mais c'est un indice atmosphérique qui relie la scène à Thade dans l'esprit des PJ.\n\nLes PJ doivent décider : rapporter à Thade, cacher le carnet, ou chercher un autre allié. S'ils rapportent à Thade, il exprime sa tristesse avec une conviction parfaite. S'ils cachent le carnet, ils gardent un indice mais s'exposent à des soupçons. S'ils cherchent un autre allié, Olane est la meilleure option — mais ils ne la connaissent pas encore.",
+              "Les PJ arrivent avant la garde s'ils se dépêchent. C'est crucial : après le passage de la garde, le carnet sera confisqué et la scène sera nettoyée.\n\nLe corps de Jaren est intact. Médecine Moyen : mort instantanée par arrêt cardiaque. Aucun poison, aucune blessure. Le corps d'un homme en parfaite santé dont le cœur a simplement cessé. La rune est gravée sur sa nuque — petite, précise, faite après la mort ou pendant. Connaissances (mystères) Difficile : c'est une variante de Dissection à Distance, publiée par Thade Coren il y a six ans. La signature arcanique est identifiable.\n\nLe carnet est ouvert à une page blanche. Investigation Moyen : les pages écrites ont été arrachées proprement. Quelqu'un a pris les notes après la mort. Les pages arrachées contenaient les notes sur S-01 et le cachet de Caldris. Qui a pris les notes ? Thade ? Elian Voss ? La réponse n'est pas immédiate — c'est une piste pour plus tard.\n\nLe parfum de lavande est le même que dans le bureau de Thade. Perception Facile. Ce n'est pas une preuve — la lavande est utilisée dans tout l'Université — mais c'est un indice atmosphérique qui relie la scène à Thade dans l'esprit des PJ.\n\nLes PJ doivent décider : rapporter à Thade, cacher le carnet, ou chercher un autre allié. S'ils rapportent à Thade, il exprime sa tristesse avec une conviction parfaite. S'ils cachent le carnet, ils gardent un indice mais s'exposent à des soupçons. S'ils cherchent un autre allié, Olane est la meilleure option — mais ils ne la connaissent pas encore.",
             notes_mj:
               "Cette scène fait basculer la campagne. Jusqu'ici, les PJ étaient des enquêteurs. Maintenant, quelqu'un élimine les témoins gênants. Le ton change : l'enquête devient une course contre un adversaire invisible. Si les PJ accusent Thade ouvertement sans preuve, l'Université les fait taire par procédure. Le MJ doit laisser les PJ formuler leurs soupçons sans les valider ni les infirmer — la vérité viendra plus tard.",
           },
@@ -1434,7 +1434,7 @@ export const scenario1 = {
               "Jaren a été tué par Dissection à Distance — une variante publiée par Thade six ans plus tôt. Mort instantanée, médicale. Rune gravée sur la nuque.",
             secrets: [
               "Thade a fait tuer Jaren parce qu'il posait des questions sur le protocole S-01.",
-              "La rune est la signature arcanique de Thade. Connaissances (mystères) DD 16.",
+              "La rune est la signature arcanique de Thade. Connaissances (mystères) Difficile.",
               "Le carnet a été vidé de ses pages écrites. Quelqu'un a pris les notes.",
             ],
             rappels: [
@@ -1446,19 +1446,19 @@ export const scenario1 = {
           defis: [
             {
               competence: "Médecine",
-              dd: 14,
+              difficulte: "Moyen",
               reussite: "Mort instantanée par arrêt cardiaque. Aucun poison, aucune blessure. Le corps d'un homme en parfaite santé qui s'est arrêté.",
               echec: "Mort naturelle, apparemment. Son cœur a lâché.",
             },
             {
               competence: "Connaissances (mystères)",
-              dd: 16,
+              difficulte: "Difficile",
               reussite: "La rune est une variante de Dissection à Distance, publiée par Thade Coren il y a six ans. Sa signature arcanique.",
               echec: "Rune arcanique ancienne, difficile à déchiffrer. Ressemble à un glyphe de nécromancie.",
             },
             {
               competence: "Investigation",
-              dd: 13,
+              difficulte: "Moyen",
               reussite: "Les pages écrites du carnet ont été arrachées proprement. Quelqu'un a pris les notes après la mort.",
               echec: "Le carnet est ouvert à une page blanche. Rien d'écrit.",
             },
@@ -1468,21 +1468,21 @@ export const scenario1 = {
             {
               indice: "La rune sur la nuque",
               localisation: "Nuque de Jaren",
-              detection: "Connaissances (mystères) DD 16",
+              detection: "Connaissances (mystères) Difficile",
               information: "Variante de Dissection à Distance, publiée par Thade Corem. Signature identifiable.",
               usage: "Preuve que le meurtrier utilise les techniques de Thade.",
             },
             {
               indice: "Le parfum de lavande",
               localisation: "Couloir du Pavillon Nord",
-              detection: "Perception DD 10",
+              detection: "Perception Facile",
               information: "Même parfum que dans le bureau de Thade Coren.",
               usage: "Indice atmosphérique reliant la scène à Thade.",
             },
             {
               indice: "Les pages arrachées",
               localisation: "Carnet de Jaren",
-              detection: "Investigation DD 13",
+              detection: "Investigation Moyen",
               information: "Pages écrites arrachées après la mort. Les notes sur S-01 et le cachet de Caldris ont été prises.",
               usage: "Qui a pris les notes ? Thade ? Elian Voss ?",
             },
@@ -1604,6 +1604,147 @@ export const scenario1 = {
 
       scenes: [
         {
+          id: "s1_recouvrement_pic_brise",
+          titre: "Le Recouvrement du Pic Brisé",
+          type: "Conflit",
+          resume_mj:
+            "Les PJ entrent au Pic Brisé pendant un recouvrement du Syndicat. Deux hommes de main tiennent un petit receleur. Un troisième compte des pièces. La scène montre que la Vieille Ville est aussi un territoire prédateur.",
+          idLieu: "auberge_pic_brise",
+          idsPnj: ["hommes_main_pegre", "aubergiste_pic_brise"],
+
+          format_livre: {
+            ambiance:
+              "Le Pic Brisé est une auberge de la Vieille Ville. Bas plafond, murs épais, peu de lumière. L'air sent la bière, la sueur et le bois mouillé. L'aubergiste, Brand, se tient derrière le comptoir. Il ne regarde pas la scène — il regarde la porte.\n\nDeux hommes de main du Syndicat tiennent un petit receleur contre un mur. Un troisième compte lentement des pièces sur une table. Le receleur n'a pas assez payé pour un passage utilisé par un fugitif. Les hommes ne crient pas. Ils sont calmes, méthodiques. C'est pire.",
+            deroulement_narratif:
+              "Les PJ entrent pendant le recouvrement. L'aubergiste les voit mais ne dit rien. Les hommes de main les remarquent mais ne s'arrêtent pas — ils finissent d'abord.\n\nLe receleur doit de l'argent au Syndicat : il a utilisé un passage des égouts pour faire passer un fugitif sans payer le péage. Les hommes de main sont là pour récupérer la dette. Le receleur n'a pas assez. L'un des hommes dit : « Le Collecteur veut pas ton argent. Il veut ton accord. Tu travailles pour nous maintenant. »\n\nLes PJ peuvent intervenir, observer, ou négocier. S'ils interviennent, les hommes de main les identifient comme un problème. S'ils paient la dette, le Collecteur considère que les PJ acceptent le système. S'ils observent, ils obtiennent une piste mais laissent une violence se produire.",
+            notes_mj:
+              "Cette scène est une scène de pression sociale. Les hommes de main sont des employés. Le recouvrement est professionnel, pas sadique. La violence est dans le système, pas dans les coups. Si les PJ attaquent, les hommes se dispersent et reviennent plus tard en nombre. Le Syndicat garde une rancune.",
+          },
+
+          texte_a_lire:
+            "L'auberge du Pic Brisé sent la bière et le bois mouillé. Deux hommes tiennent quelqu'un contre le mur. Un troisième compte des pièces sur une table, lentement. L'aubergiste ne regarde pas. Il regarde la porte. Votre porte.",
+
+          objectif: "Montrer que la Vieille Ville est un territoire prédateur. Le Syndicat est un propriétaire.",
+
+          contexte_mj: {
+            situation:
+              "Le Syndicat contrôle les passages de la Vieille Ville. Chaque service a un prix. Les débiteurs qui ne paient pas sont récupérés publiquement — ça sert d'exemple.",
+            secrets: [
+              "Le receleur a vu passer des caisses longues, scellées, portées vers les égouts. Elles étaient marquées d'un faux sceau marchand et sentaient la chaux froide.",
+              "L'aubergiste Brand sait que le Syndicat utilise son auberge comme lieu de recouvrement. Il ne dit rien parce qu'il paie sa propre protection.",
+            ],
+            rappels: [
+              "Les hommes de main sont des indicateurs de pression. Si les PJ les combattent, le Syndicat revient.",
+              "Le receleur peut devenir un informateur utile si les PJ le sauvent.",
+            ],
+          },
+
+          defis: [
+            {
+              competence: "Intimidation",
+              difficulte: "Moyen",
+              reussite: "Les hommes de main reculent. Ils ne se battent pas — ils notent les visages. Le receleur est libre. Le Syndicat considère les PJ comme un problème.",
+              echec: "Les hommes de main ne bougent pas. L'un d'eux dit : « Vous êtes pas du Syndicat. Vous êtes pas de la garde. Vous êtes rien ici. » Le recouvrement continue.",
+            },
+            {
+              competence: "Diplomatie",
+              difficulte: "Moyen",
+              reussite: "Les hommes de main acceptent une négociation. Le receleur est libéré contre une promesse de paiement. Les PJ créent une dette envers le Syndicat.",
+              echec: "Les hommes de main refusent de négocier. « C'est pas une conversation. C'est un recouvrement. »",
+            },
+            {
+              competence: "Renseignements",
+              difficulte: "Moyen",
+              reussite: "Le receleur, s'il est sauvé, révèle ce qu'il a vu : des caisses longues, scellées, marquées d'un faux sceau marchand, portées vers les égouts. Elles sentaient la chaux froide.",
+              echec: "Le receleur est trop terrorisé pour parler. Il fuit dès qu'il peut.",
+            },
+          ],
+
+          indices: [
+            {
+              indice: "Les caisses longues dans les égouts",
+              localisation: "Témoignage du receleur",
+              detection: "Renseignements Moyen (si le receleur est sauvé)",
+              information: "Des caisses longues, scellées, marquées d'un faux sceau marchand, circulent dans les égouts. Elles sentent la chaux froide.",
+              usage: "Piste pour suivre les ossements : les caisses passent par les égouts vers un destinataire inconnu.",
+            },
+          ],
+
+          guide_mj: {
+            intention: "Montrer le Syndicat en action avant que les PJ ne rencontrent le Collecteur. La Vieille Ville a un propriétaire, et ce n'est pas la Résistance.",
+            mise_en_place: "Les PJ cherchent une chambre, un témoin, ou une piste vers les égouts. Ils entrent au Pic Brisé au mauvais moment.",
+            deroulement: [
+              "Les PJ entrent pendant le recouvrement.",
+              "Les hommes de main finissent leur travail avant de prêter attention aux PJ.",
+              "L'aubergiste ne dit rien — il regarde la porte.",
+              "Les PJ choisissent : intervenir, payer, observer, ou négocier.",
+            ],
+            actions_utiles: [
+              "Sauver le receleur (Intimidation ou Diplomatie).",
+              "Payer la dette (crée une dette des PJ envers le Syndicat).",
+              "Observer et obtenir le témoignage du receleur après le départ des hommes.",
+              "Parler à l'aubergiste après la scène (il sait des choses mais ne dit rien gratuitement).",
+            ],
+            fronts_heritiers: [
+              "Front 'Le Syndicat serre la ville' — les PJ ont vu le Syndicat en action.",
+              "Front 'Le Plan de Thade' — les caisses dans les égouts sont la piste des ossements.",
+            ],
+            jeu_des_pnj: "Les hommes de main sont calmes et professionnels. L'aubergiste est nerveux mais silencieux. Le receleur est terrifié mais reconnaissant s'il est sauvé.",
+            escalade: "Si les PJ humilient les hommes de main, le Syndicat ferme une route plus tard. Si les PJ paient, le Collecteur les considère comme des clients.",
+            sortie: "Les PJ quittent le Pic Brisé avec ou sans le receleur, avec ou sans une dette envers le Syndicat, et avec un indice sur les caisses dans les égouts.",
+          },
+
+          reperes_de_jeu: {
+            indice_indispensable: "Aucun — cette scène est optionnelle mais donne un indice utile.",
+            ne_pas_bloquer_sur_un_jet: "Même si les PJ n'interviennent pas, ils peuvent parler au receleur après le départ des hommes. L'aubergiste peut donner une piste si on lui paie un verre.",
+            question_dramatique: "Allez-vous laisser le Syndicat faire ce qu'il veut chez vous ?",
+          },
+
+          transitions: {
+            resume: "Les PJ quittent le Pic Brisé. L'aubergiste les regarde partir. Les hommes de main sont déjà partis — ou non.",
+            reussite: "Les PJ ont sauvé le receleur et obtenu un indice sur les caisses. Mais le Syndicat les a vus.",
+            echec: "Les PJ ont assisté au recouvrement sans intervenir. Le receleur est parti. L'aubergiste ne les regarde plus.",
+          },
+
+          navigation: {
+            indice_indispensable: "Aucun. Cette scène est optionnelle.",
+            consequence_si_manque: "Rien — la scène n'est pas obligatoire. Mais sans elle, les PJ n'ont pas vu le Syndicat en action avant de rencontrer le Collecteur.",
+            pnj_alternatifs: ["aubergiste_pic_brise — peut donner des informations sur le Syndicat si les PJ gagnent sa confiance"],
+            front_si_ignore: "Le Syndicat serre la ville — sans cette scène, le Syndicat reste abstrait.",
+            scenes_alternatives: ["s1_rencontre_resistance — si les PJ vont directement à la Résistance sans passer par le Pic Brisé"],
+            sorties_jouables: [
+              {
+                condition: "Les PJ veulent suivre la piste des caisses dans les égouts",
+                sceneId: "s1_peage_brek",
+                type: "indice_principal",
+                moteur: "Les PJ descendent dans les égouts pour suivre les caisses. Ils rencontrent Brek.",
+                accroche_mj: "Le receleur dit : « Les caisses passent par dessous. Mais dessous, c'est pas à vous. C'est à quelqu'un. »",
+                consequence_si_refus: "Les PJ peuvent aller à la Résistance d'abord, puis dans les égouts avec Sniv.",
+              },
+              {
+                condition: "Les PJ veulent trouver la Résistance",
+                sceneId: "s1_rencontre_resistance",
+                type: "pnj",
+                moteur: "L'aubergiste ou le receleur peut orienter les PJ vers la Maison des Retours.",
+                accroche_mj: "Le receleur dit : « Si vous cherchez des gens qui soignent, qui cachent, qui savent — la blanchisserie. Demandez Mara. »",
+                consequence_si_refus: "Les PJ peuvent trouver la Résistance par d'autres moyens.",
+              },
+            ],
+            fallback_mj: "Cette scène est optionnelle. Si les PJ ne viennent jamais au Pic Brisé, le Syndicat reste en arrière-plan jusqu'à la rencontre avec le Collecteur.",
+            objectif_scene: "Montrer le Syndicat en action et donner un indice sur les caisses dans les égouts.",
+            pression: "Aucune pression d'horloge. La pression est sociale et morale.",
+            actions_pj_attendues: ["observer ou intervenir dans le recouvrement", "parler au receleur ou à l'aubergiste", "obtenir l'indice sur les caisses"],
+            sorties_possibles: ["vers s1_peage_brek (suivre les caisses dans les égouts)", "vers s1_rencontre_resistance (trouver la Résistance)", "vers s1_temple_forgeron (continuer l'enquête à l'Université)"],
+            si_les_pj_bloquent: "Si les PJ ignorent la scène, elle n'a pas de conséquence immédiate. Le Syndicat continue ses activités hors-champ.",
+            conditions_sortie: [
+              "Les PJ ont intervenu, payé, ou observé le recouvrement.",
+              "OU les PJ ont quitté le Pic Brisé sans intervenir.",
+            ],
+            transition_defaut: "L'aubergiste essuie le comptoir. « Si vous cherchez un lit, c'est deux pièces. Si vous cherchez des ennuis, vous êtes au bon endroit. »",
+          },
+        },
+
+        {
           id: "s1_temple_forgeron",
           titre: "Le Temple-Forgeron et les Rites Perdus",
           type: "Révélation",
@@ -1616,7 +1757,7 @@ export const scenario1 = {
             ambiance:
               "Le Temple-Forgeron de Moradin est creusé dans la roche sous les Terrasses. On y descend par un escalier en spirale dont les marches sont polies par des siècles de pas nains. L'air vibre du martèlement de l'enclume sacrée — un rythme lent, régulier, qui sert de battement de cœur à la chapelle. Les murs sont couverts de bas-reliefs représentant des nains en posture de prière devant des tombes. Les visages des figures sont usés, effacés par le temps. Les inscriptions qui les accompagnaient sont illisibles.\n\nThorgar attend dans la chapelle souterraine, debout devant l'enclume. Il porte son tablier de forge. Ses mains sont posées à plat sur le métal, comme s'il puisait quelque chose dans la chaleur résiduelle. Quand les PJ entrent, il ne lève pas la tête immédiatement. Il finit un geste — un geste qui ressemble à une bénédiction mais qui n'en est pas une.",
             deroulement_narratif:
-              "Thorgar parle lentement, comme un homme qui déroule quelque chose qu'il n'a jamais formulé à voix haute. Ses maîtres lui ont transmis les gestes d'Edhrek-Murn. Sept gestes, un par Thane. Il les accomplit chaque nuit au Cimetière, sans comprendre ce qu'ils font. Il sait seulement que les nuits où il les accomplit, le froid recule. Les nuits où il ne les accomplit pas, le froid avance.\n\nDiplomatie DD 14 ou Persuasion DD 13 pour qu'il montre les gestes. Il les exécute devant les PJ — des postures de prière naine, mais avec des variations que Thorgar ne peut pas expliquer. Chaque geste correspond à une tombe. Chaque geste inclut le placement d'un fragment d'os — un fragment qui n'est plus là, parce que les profanations les ont pris.\n\nConnaissances (religion) DD 15 : les gestes sont des rites d'ancrage. Les os ne sont pas des restes — ce sont des supports rituels. Les runes dans l'os ne sont pas décoratives, ce sont des points de fixation. Les rites maintiennent le sceau en gardant les ancrages actifs. Sans les os, les rites sont vides. Sans les rites, les os sont inertes. Les deux ensemble maintiennent le verrou.\n\nThorgar ne connaît pas le mot « Spirale ». Il connaît le froid, les vibrations, le bourdonnement du Mausolée. Il sait que quelque chose remonte d'en-dessous. Il sait que les rites le repoussent. Il ne sait pas ce que c'est. Si les PJ lui disent, il ne réagit pas avec peur — il réagit avec colère. Pas contre les PJ. Contre l'idée que ses maîtres savaient et ne lui ont pas dit.\n\nSi les PJ proposent de restaurer les rites, Thorgar explique ce qu'il faut : les ossements, les gestes complets, et un prêtre qui connaît les sept postures. Il est le seul à connaître les sept postures. Sans lui, les rites meurent.",
+              "Thorgar parle lentement, comme un homme qui déroule quelque chose qu'il n'a jamais formulé à voix haute. Ses maîtres lui ont transmis les gestes d'Edhrek-Murn. Sept gestes, un par Thane. Il les accomplit chaque nuit au Cimetière, sans comprendre ce qu'ils font. Il sait seulement que les nuits où il les accomplit, le froid recule. Les nuits où il ne les accomplit pas, le froid avance.\n\nDiplomatie Moyen ou Persuasion Moyen pour qu'il montre les gestes. Il les exécute devant les PJ — des postures de prière naine, mais avec des variations que Thorgar ne peut pas expliquer. Chaque geste correspond à une tombe. Chaque geste inclut le placement d'un fragment d'os — un fragment qui n'est plus là, parce que les profanations les ont pris.\n\nConnaissances (religion) Moyen : les gestes sont des rites d'ancrage. Les os ne sont pas des restes — ce sont des supports rituels. Les runes dans l'os ne sont pas décoratives, ce sont des points de fixation. Les rites maintiennent le sceau en gardant les ancrages actifs. Sans les os, les rites sont vides. Sans les rites, les os sont inertes. Les deux ensemble maintiennent le verrou.\n\nThorgar ne connaît pas le mot « Spirale ». Il connaît le froid, les vibrations, le bourdonnement du Mausolée. Il sait que quelque chose remonte d'en-dessous. Il sait que les rites le repoussent. Il ne sait pas ce que c'est. Si les PJ lui disent, il ne réagit pas avec peur — il réagit avec colère. Pas contre les PJ. Contre l'idée que ses maîtres savaient et ne lui ont pas dit.\n\nSi les PJ proposent de restaurer les rites, Thorgar explique ce qu'il faut : les ossements, les gestes complets, et un prêtre qui connaît les sept postures. Il est le seul à connaître les sept postures. Sans lui, les rites meurent.",
             notes_mj:
               "Thorgar est le gardien d'un savoir qu'il ne comprend pas. Sa frustration est le cœur émotionnel de cette scène. Il accomplit des gestes chaque nuit sans savoir pourquoi, et le savoir qu'il protège est en train de s'effondrer sous ses pieds. Si les PJ le traitent avec respect, il devient un allié loyal. S'ils le méprisent ou le pressent, il se ferme et les rites restent un mystère.",
           },
@@ -1643,13 +1784,13 @@ export const scenario1 = {
           defis: [
             {
               competence: "Diplomatie",
-              dd: 14,
+              difficulte: "Moyen",
               reussite: "Thorgar montre les gestes d'Edhrek-Murn lentement, en nommant chaque étape. Il ne sait pas ce que chaque geste fait, mais il sait l'ordre et la forme.",
               echec: "Thorgar parle de rites et de traditions, mais refuse de montrer les gestes à des non-nains.",
             },
             {
               competence: "Connaissances (religion)",
-              dd: 15,
+              difficulte: "Moyen",
               reussite: "Les gestes ressemblent à des rites de fondation, pas des rites funéraires. On les accomplit pour maintenir une fonction que les morts assurent encore.",
               echec: "Les rites sont anciens et nains. Signification religieuse : honorer les défunts et maintenir la mémoire.",
             },
@@ -1659,14 +1800,14 @@ export const scenario1 = {
             {
               indice: "Les gestes d'Edhrek-Murn",
               localisation: "Chapelle sous la Forge",
-              detection: "Diplomatie DD 14",
+              detection: "Diplomatie Moyen",
               information: "Rites de fondation, pas funéraires. Accomplis sur les tombes pour maintenir une fonction que les défunts assurent après la mort.",
               usage: "Comprendre que les Thanes sont utilisés, pas honorés. Leurs corps sont des ancrages actifs.",
             },
             {
               indice: "Les runes dans l'os",
               localisation: "Comparaison avec les fragments du Cimetière",
-              detection: "Connaissances (religion) DD 15 ou Thorgar",
+              detection: "Connaissances (religion) Moyen ou Thorgar",
               information: "Les runes gravées dans les os correspondent aux runes d'ancrage d'Edhrek-Murn. Les os sont des composants d'un système.",
               usage: "Relier les profanations au sceau. Qui prend les os prend le verrou.",
             },
@@ -1793,9 +1934,9 @@ export const scenario1 = {
             ambiance:
               "Les Archives Médicales Scellées occupent un sous-sol bas et voûté du Pavillon Sud de l'Université. On y accède par un escalier de service que les étudiants ignorent. L'air est sec, froid, saturé de l'odeur de cuir et de produits de conservation. Des armoires métalliques alignées par décennie, étiquetées au pochoir. Une lampe alchimique bourdonne au plafond, projetant une lumière blafarde qui ne rend justice à aucune couleur.\n\nLe registre des scellés est un cahier relié cuir, posé sur un pupitre à l'entrée. Les pages sont jaunies, l'écriture est celle d'un archiviste méthodique. Les entrées récentes sont rares — l'Université ne scelle plus beaucoup de dossiers. Les entrées de l'année de la catastrophe de Nyx sont nombreuses. L'une d'elles porte la mention : « Coren, S. — 12-VAEL — Médical — Scellé par ordre du Recteur. »",
             deroulement_narratif:
-              "Les PJ peuvent obtenir l'accès de trois façons : par Olane (s'ils l'ont déjà rencontrée), par Crochetage DD 15 sur la porte du sous-sol, ou par Discrétion DD 14 pour entrer par le réseau de service. Une fois à l'intérieur, le registre est accessible sans jet.\n\nLe dossier de Sealine est dans l'armoire de la décennie correspondante. Il est scellé par un sigil mineur — pas un sort de combat, juste un verrou arcanique. Connaissances (mystères) DD 12 ou Crochetage DD 13 pour l'ouvrir. Le sigil est de conception standard, pas la signature de Thade.\n\nLe dossier contient des notes médicales, des relevés de symptômes, et un document séparé : le protocole S-01. Médecine DD 15 pour comprendre les notes médicales : Sealine présentait des symptômes d'exposition planaire chronique — fatigue, vertiges, perceptions augmentées, sensibilité au froid. Le protocole S-01 est établi 28 jours avant la catastrophe de Nyx. Il porte la mention « littérature interdite » et « approche expérimentale ».\n\nLe nom S-01 n'est pas expliqué dans le dossier. Mais les PJ peuvent déduire : S pour Sealine, 01 pour premier patient. Le protocole décrit une méthode pour « stabiliser l'ancrage d'un sujet exposé à des flux planaires continus ». Le langage est clinique, détaché, mais l'auteur est clairement Thade — la signature arcanique sur le document correspond à celle de ses publications.\n\nSi les PJ ont vu la rune sur la nuque de Jaren, ils peuvent faire le lien : Thade a exploré la littérature interdite avant Nyx. Nyx n'était pas un accident — c'était une tentative de sauver Sealine qui a mal tourné. Le protocole S-01 est le point d'origine de tout.\n\nOlane peut confirmer si les PJ lui apportent le dossier. Elle dira : « Il n'a jamais cessé. Huit ans. Il n'a jamais cessé de chercher. »",
+              "Les PJ peuvent obtenir l'accès de trois façons : par Olane (s'ils l'ont déjà rencontrée), par Crochetage Moyen sur la porte du sous-sol, ou par Discrétion Moyen pour entrer par le réseau de service. Une fois à l'intérieur, le registre est accessible sans jet.\n\nLe dossier de Sealine est dans l'armoire de la décennie correspondante. Il est scellé par un sigil mineur — pas un sort de combat, juste un verrou arcanique. Connaissances (mystères) Moyen ou Crochetage Moyen pour l'ouvrir. Le sigil est de conception standard, pas la signature de Thade.\n\nLe dossier contient des notes médicales, des relevés de symptômes, et un document séparé : le protocole S-01. Médecine Moyen pour comprendre les notes médicales : Sealine présentait des symptômes d'exposition planaire chronique — fatigue, vertiges, perceptions augmentées, sensibilité au froid. Le protocole S-01 est établi 28 jours avant la catastrophe de Nyx. Il porte la mention « littérature interdite » et « approche expérimentale ».\n\nLe nom S-01 n'est pas expliqué dans le dossier. Mais les PJ peuvent déduire : S pour Sealine, 01 pour premier patient. Le protocole décrit une méthode pour « stabiliser l'ancrage d'un sujet exposé à des flux planaires continus ». Le langage est clinique, détaché, mais l'auteur est clairement Thade — la signature arcanique sur le document correspond à celle de ses publications.\n\nSi les PJ ont vu la rune sur la nuque de Jaren, ils peuvent faire le lien : Thade a exploré la littérature interdite avant Nyx. Nyx n'était pas une simple tentative de soin : c'est la première ouverture qui lui a révélé la Spirale comme puissance contrôlable. Le protocole S-01 est le point d'origine de son obsession.\n\nOlane peut confirmer si les PJ lui apportent le dossier. Elle dira : « Il n'a jamais cessé. Une vie entière. Il n'a jamais cessé de chercher. »",
             notes_mj:
-              "Le dossier S-01 est la révélation qui transforme Thade d'antagoniste abstrait en antagoniste tragique. Les PJ comprennent que tout ce qu'il fait — les profanations, la manipulation, le mensonge par omission — est motivé par l'amour pour Sealine et la culpabilité de Nyx. Cette compréhension ne l'excuse pas, mais elle complique le choix des PJ pour la suite.\n\nCopies partielles : les PJ n'ont pas besoin de tout lire sur place. Ils peuvent emporter une copie partielle : la page de garde du dossier (nom, date, mention « littérature interdite »), le résumé du protocole (une page), et la chronologie des consultations. Ces trois éléments suffisent pour prouver le lien entre Thade, Sealine et la littérature interdite avant Nyx. Si les PJ sont pressés ou en danger, le MJ leur donne la copie partielle automatiquement. Le dossier complet peut être récupéré plus tard par Olane.",
+              "Le dossier S-01 est la révélation qui transforme Thade d'antagoniste abstrait en antagoniste tragique. Les PJ comprennent que tout ce qu'il fait — les profanations, la manipulation, le mensonge par omission — vient d'une obsession de maîtrise née à Nyx. Sealine est la blessure intime et le premier coût humain, pas l'objectif conscient du rituel actuel. Cette compréhension ne l'excuse pas, mais elle complique le choix des PJ pour la suite.\n\nCopies partielles : les PJ n'ont pas besoin de tout lire sur place. Ils peuvent emporter une copie partielle : la page de garde du dossier (nom, date, mention « littérature interdite »), le résumé du protocole (une page), et la chronologie des consultations. Ces trois éléments suffisent pour prouver le lien entre Thade, Sealine et la littérature interdite avant Nyx. Si les PJ sont pressés ou en danger, le MJ leur donne la copie partielle automatiquement. Le dossier complet peut être récupéré plus tard par Olane.",
           },
 
           texte_a_lire:
@@ -1813,21 +1954,21 @@ export const scenario1 = {
             ],
             rappels: [
               "Si les PJ ont vu le cachet de Caldris chez Jaren, ils peuvent relier S-01, Elian Voss et Caldris.",
-              "Effraction DD 12 pour entrer de nuit sans autorisation.",
+              "Effraction Moyen pour entrer de nuit sans autorisation.",
             ],
           },
 
           defis: [
             {
               competence: "Investigation",
-              dd: 12,
+              difficulte: "Moyen",
               reussite: "Le dossier est dans l'armoire, derrière un sceau administratif ancien, facile à briser.",
               echec: "Le dossier est introuvable. Peut-être déplacé. Les PJ doivent chercher ailleurs.",
             },
             {
               competence: "Médecine",
-              dd: 15,
-              reussite: "La chronologie raconte une histoire : Sealine malade, Thade cherchant un remède, méthodes échouant, puis S-01 apparaît. Le protocole n'est pas un traitement — c'est un rituel.",
+              difficulte: "Moyen",
+              reussite: "La chronologie raconte une histoire : Sealine malade, Thade cherchant un remède, méthodes échouant, puis S-01 apparaît. Le protocole est un rituel.",
               echec: "Notes médicales techniques. La maladie est réelle, mais S-01 n'est pas clair.",
             },
           ],
@@ -1836,9 +1977,9 @@ export const scenario1 = {
             {
               indice: "Le protocole S-01",
               localisation: "Dossier médical de Sealine, dernière page",
-              detection: "Médecine DD 15 ou Investigation DD 12",
+              detection: "Médecine Moyen ou Investigation Moyen",
               information: "S-01 = Sealine. Protocole établi 28 jours avant la catastrophe de Nyx.",
-              usage: "La catastrophe n'était pas un accident — c'était une tentative de sauver Sealine qui a mal tourné.",
+              usage: "La catastrophe n'était pas un accident — c'était une tentative de stabiliser Sealine par un protocole de seuil qui a révélé à Thade un pouvoir plus vaste que lui.",
             },
             {
               indice: "La littérature interdite",
@@ -1865,7 +2006,7 @@ export const scenario1 = {
               "Comparer S-01 avec le cachet de Caldris.",
             ],
             fronts_heritiers: [
-              "Front 'Le Plan de Thade' — Thade cherche à rouvrir le seuil pour Sealine.",
+              "Front 'Le Plan de Thade' — Thade cherche à rouvrir le seuil pour contrôler la Spirale.",
               "Front 'Les Factions de la Crise' — le cachet mène à Elian Voss et Maelric.",
             ],
             jeu_des_pnj: "Aucun PNJ. Les archives parlent par elles-mêmes.",
@@ -1876,7 +2017,7 @@ export const scenario1 = {
           reperes_de_jeu: {
             indice_indispensable: "Les PJ doivent savoir que S-01 = Sealine et que Thade a établi ce protocole avant Nyx.",
             ne_pas_bloquer_sur_un_jet: "Le nom 'S-01' et la référence à la 'littérature interdite' sont lisibles sans compétence médicale.",
-            question_dramatique: "Jusqu'où irait un homme brillant pour sauver la personne qu'il aime ?",
+            question_dramatique: "Jusqu'où irait un homme brillant pour prouver qu'il maîtrise ce qui l'a brisé ?",
           },
 
           transitions: {
@@ -1942,7 +2083,7 @@ export const scenario1 = {
               },
             ],
             fallback_mj: "Les Archives sont accessibles de jour (ordre de mission) ou de nuit (effraction). Si les PJ n'y vont jamais, Olane peut apporter le dossier S-01 elle-même si les PJ lui donnent assez d'indices pour le chercher. Le cachet de Caldris reste accessible via le Collecteur dans les égouts.",
-            objectif_scene: "Trouver le dossier médical de Sealine Vael et comprendre ce qu'est le protocole S-01 : la tentative de Thade pour sauver Sealine avant Nyx.",
+            objectif_scene: "Trouver le dossier médical de Sealine Vael et comprendre ce qu'est le protocole S-01 : la tentative de Thade pour stabiliser Sealine avant Nyx et l'origine de son obsession de contrôle.",
             pression: "Si les PJ entrent de nuit et sont surpris, procédure interne. Le dossier peut être déplacé si Thade surveille. Le sceau continue de céder pendant l'enquête.",
             actions_pj_attendues: ["localiser le dossier dans les armoires", "briser le sceau administratif", "lire et copier le dossier (Médecine)", "comparer S-01 avec le cachet de Caldris"],
             sorties_possibles: ["vers s1_bureau_olane (apporter le dossier à Olane)", "vers s1_retour_cimetiere (retourner voir Thorgar avec les infos)", "vers s1_rencontre_resistance (suivre le cachet de Caldris dans les égouts)"],
@@ -1970,7 +2111,7 @@ export const scenario1 = {
             ambiance:
               "Le bureau d'Olane est à l'opposé de celui de Thade. Petit, modeste, encombré de dossiers annotés et de tasses de café d'orge vides. Les murs sont couverts de graphiques, de cartes de flux arcaniques, de notes manuscrites reliées par des fils de laine. Une fenêtre étroite donne sur la cour intérieure de l'Université, pas sur la Tour. Le bureau est en désordre organisé — Olane sait où est chaque chose, mais personne d'autre ne le saurait.\n\nOlane est assise derrière son bureau, un stylo dans une main, une tasse fumante dans l'autre. Elle est petite, nerveuse, les cheveux tirés en arrière. Des cernes profondes. Le regard de quelqu'un qui n'a pas dormi depuis des semaines — pas par insomnie, par inquiétude. Elle porte les vêtements d'un fonctionnaire de l'Université, mais le regard d'une femme qui ne croit plus en l'institution qu'elle sert.",
             deroulement_narratif:
-              "Olane ne perd pas de temps. Si les PJ viennent avec des indices — la rune de Jaren, le dossier S-01, les outils d'Université — elle les écoute, elle vérifie, puis elle s'ouvre. Si les PJ viennent sans preuve, elle reste prudente : elle pose des questions, elle teste leur sérieux, elle ne révèle rien sans contrepartie.\n\nCe qu'Olane sait : les flux arcaniques de l'Université sont détournés. Pas par un étudiant, pas par un membre du Conseil. Par quelqu'un qui a un accès de haut niveau. Les relevés montrent une déviation vers la Tour Arcanique. Elle a essayé d'alerter le Conseil. Le Conseil a classé sa note comme « préoccupation technique ». Elle a essayé d'alerter le Recteur. Le Recteur lui a dit de se concentrer sur son travail.\n\nSi les PJ lui montrent le dossier S-01, Olane fait le lien. Elle dit : « Il n'a jamais cessé. Huit ans. Il n'a jamais cessé de chercher. » Elle ne dit pas le nom de Thade immédiatement — elle laisse les PJ le déduire. Puis elle confirme.\n\nOlane offre ce qu'elle peut : un accès institutionnel, une couverture légale, des données sur les flux. Elle ne peut pas affronter Thade publiquement — elle n'a pas de preuve directe, seulement des indices. Mais elle peut protéger les PJ s'ils agissent discrètement. Elle peut ralentir les procédures. Elle peut acheter du temps.\n\nSi les PJ la protègent — en gardant son nom hors de leurs rapports, en ne révélant pas leur source — elle devient une alliée durable. S'ils la compromettent, Thade la fait muter ou réduire au silence en moins d'une semaine.",
+              "Olane ne perd pas de temps. Si les PJ viennent avec des indices — la rune de Jaren, le dossier S-01, les outils d'Université — elle les écoute, elle vérifie, puis elle s'ouvre. Si les PJ viennent sans preuve, elle reste prudente : elle pose des questions, elle teste leur sérieux, elle ne révèle rien sans contrepartie.\n\nCe qu'Olane sait : les flux arcaniques de l'Université sont détournés. Pas par un étudiant, pas par un membre du Conseil. Par quelqu'un qui a un accès de haut niveau. Les relevés montrent une déviation vers la Tour Arcanique. Elle a essayé d'alerter le Conseil. Le Conseil a classé sa note comme « préoccupation technique ». Elle a essayé d'alerter le Recteur. Le Recteur lui a dit de se concentrer sur son travail.\n\nSi les PJ lui montrent le dossier S-01, Olane fait le lien. Elle dit : « Il n'a jamais cessé. Une vie entière. Il n'a jamais cessé de chercher. » Elle ne dit pas le nom de Thade immédiatement — elle laisse les PJ le déduire. Puis elle confirme.\n\nOlane offre ce qu'elle peut : un accès institutionnel, une couverture légale, des données sur les flux. Elle ne peut pas affronter Thade publiquement — elle n'a pas de preuve directe, seulement des indices. Mais elle peut protéger les PJ s'ils agissent discrètement. Elle peut ralentir les procédures. Elle peut acheter du temps.\n\nSi les PJ la protègent — en gardant son nom hors de leurs rapports, en ne révélant pas leur source — elle devient une alliée durable. S'ils la compromettent, Thade la fait muter ou réduire au silence en moins d'une semaine.",
             notes_mj:
               "Olane est le pont entre l'institution et la vérité. Sans elle, les PJ sont seuls contre l'Université. Avec elle, ils ont un pied dans le système. Le MJ doit jouer Olane comme une femme fatiguée mais lucide — pas une héroïne, pas une victime, mais une fonctionnaire qui a choisi son camp en silence depuis des mois.",
           },
@@ -1997,14 +2138,14 @@ export const scenario1 = {
           defis: [
             {
               competence: "Diplomatie",
-              dd: 14,
+              difficulte: "Moyen",
               reussite: "Olane partage ses soupçons : flux détournés vers la Tour, salles scellées, Thade a restreint ses accès.",
               echec: "Olane reste prudente. 'Anomalies temporaires.' Elle ne confirme rien.",
             },
             {
               competence: "Persuasion",
-              dd: 15,
-              reussite: "Si les PJ montrent le dossier S-01, Olane le lit en silence puis dit : 'Il n'a jamais renoncé. Huit ans.' Elle devient une alliée déterminée.",
+              difficulte: "Moyen",
+              reussite: "Si les PJ montrent le dossier S-01, Olane le lit en silence puis dit : 'Il n'a jamais renoncé. Une vie entière.' Elle devient une alliée déterminée.",
               echec: "Olane lit le dossier avec gravité mais demande du temps pour vérifier. Elle ne s'engage pas immédiatement.",
             },
           ],
@@ -2013,14 +2154,14 @@ export const scenario1 = {
             {
               indice: "Les flux détournés",
               localisation: "Chiffres d'Olane",
-              detection: "Diplomatie DD 14",
+              detection: "Diplomatie Moyen",
               information: "Flux arcaniques de plusieurs bâtiments détournés vers la Tour. Salles scellées = zones de prélèvement.",
               usage: "La Tour devient un dispositif actif, pas juste un bâtiment de recherche.",
             },
             {
               indice: "L'isolement d'Olane",
               localisation: "Conversation",
-              detection: "Perception DD 10",
+              detection: "Perception Facile",
               information: "Olane n'a plus accès à ses données. Ses collègues l'évitent. L'Université a enterré son enquête.",
               usage: "Thade ne tue pas tous ceux qui le gênent — il les neutralise institutionnellement.",
             },
@@ -2153,15 +2294,15 @@ export const scenario1 = {
 
           format_livre: {
             ambiance:
-              "Le Cimetière des Terrasses à la nuit tombée n'est plus le même lieu. Les lanternes funéraires vacillent sans vent — certaines sont éteintes, et les terrasses où elles manquent sont plongées dans une obscurité que les torches peinent à percer. Le froid a gagné. On voit sa souffle à chaque respiration. Les gradins de pierre sont couverts de givre par endroits, comme si le froid remontait non pas de l'air, mais de la pierre elle-même.\n\nLe Mausolée du Seuil est au centre, bas et sombre. La dalle centrale vibre — pas un tremblement, une pulsation lente, régulière, comme un cœur qui bat dans la fondation. Le bourdonnement du Puits de l'Abîme est audible à vingt mètres. Il n'est pas fort, mais il est partout. Il passe par les pieds, par les os, par les dents.\n\nThorgar attend au Mausolée. Il est épuisé. Les cernes d'un homme qui n'a pas dormi depuis des nuits. Il accomplit les rites chaque nuit, mais les gestes sont vides — les os ne sont plus là. Il dit : « C'est pire. Les runes changent. Les lanternes s'éteignent. Et le son... écoutez. »",
+              "Le Cimetière des Terrasses à la nuit tombée n'est plus le même lieu. Les lanternes funéraires vacillent sans vent — certaines sont éteintes, et les terrasses où elles manquent sont plongées dans une obscurité que les torches peinent à percer. Le froid a gagné. On voit son souffle à chaque respiration. Les gradins de pierre sont couverts de givre par endroits, comme si le froid remontait non pas de l'air, mais de la pierre elle-même.\n\nLe Mausolée du Seuil est au centre, bas et sombre. La dalle centrale vibre — pas un tremblement, une pulsation lente, régulière, comme un cœur qui bat dans la fondation. Le bourdonnement du Puits de l'Abîme est audible à vingt mètres. Il n'est pas fort, mais il est partout. Il passe par les pieds, par les os, par les dents.\n\nThorgar attend au Mausolée. Il est épuisé. Les cernes d'un homme qui n'a pas dormi depuis des nuits. Il accomplit les rites chaque nuit, mais les gestes sont vides — les os ne sont plus là. Il dit : « C'est pire. Les runes changent. Les lanternes s'éteignent. Et le son… écoutez. »",
             deroulement_narratif:
-              "Cinq des sept tombes sont touchées. Les deux dernières — T-06 et T-07 — sont intactes mais les passages creusés par en-dessous se rapprochent. Investigation DD 13 pour évaluer le rythme : un ou deux jours avant que les deux dernières tombes soient atteintes.\n\nLe Mausolée vibre. Perception DD 10 pour sentir la pulsation. Le Puits de l'Abîme pulse d'un froid planaire — le froid n'est plus naturel, il porte une texture, une épaisseur, comme si l'air était partiellement solide. Connaissances (mystères) DD 14 : c'est une empreinte planaire. La Spirale filtre. Pas une invasion, pas une rupture — une filtration lente, comme de l'eau qui s'infiltre par les fissures.\n\nThorgar montre les runes qui changent. Sur les tombes touchées, les runes d'ancrage se transforment — elles ne disparaissent pas, elles se réécrivent. Le nouveau motif est inconnu de Thorgar. Connaissances (mystères) DD 16 : les nouvelles runes sont des runes d'ouverture, pas d'ancrage. Quelqu'un ne se contente pas de briser le sceau — il le remplace par un autre système.\n\nSi les PJ proposent de protéger les deux dernières tombes, Thorgar explique ce qu'il faut : une garde permanente, la restauration des rites complets (qui nécessite les ossements), et un moyen de bloquer les passages par en-dessous. Les PJ peuvent se poster en sentinelles, mais le temps joue contre eux.\n\nSi les PJ interceptent des profanateurs sur place — voir la scène optionnelle « Interception de profanateurs ».",
+              "Cinq des sept tombes sont touchées. Les deux dernières — T-06 et T-07 — sont intactes mais les passages creusés par en-dessous se rapprochent. Investigation Moyen pour évaluer le rythme : un ou deux jours avant que les deux dernières tombes soient atteintes.\n\nLe Mausolée vibre. Perception Facile pour sentir la pulsation. Le Puits de l'Abîme pulse d'un froid planaire — le froid n'est plus naturel, il porte une texture, une épaisseur, comme si l'air était partiellement solide. Connaissances (mystères) Moyen : c'est une empreinte planaire. La Spirale filtre. Pas une invasion, pas une rupture — une filtration lente, comme de l'eau qui s'infiltre par les fissures.\n\nThorgar montre les runes qui changent. Sur les tombes touchées, les runes d'ancrage se transforment — elles ne disparaissent pas, elles se réécrivent. Le nouveau motif est inconnu de Thorgar. Connaissances (mystères) Difficile : les nouvelles runes sont des runes d'ouverture, pas d'ancrage. Quelqu'un ne se contente pas de briser le sceau — il le remplace par un autre système.\n\nSi les PJ proposent de protéger les deux dernières tombes, Thorgar explique ce qu'il faut : une garde permanente, la restauration des rites complets (qui nécessite les ossements), et un moyen de bloquer les passages par en-dessous. Les PJ peuvent se poster en sentinelles, mais le temps joue contre eux.\n\nSi les PJ interceptent des profanateurs sur place — voir la scène optionnelle « Interception de profanateurs ».",
             notes_mj:
               "Cette scène doit transmettre l'urgence. Le sceau n'est plus une abstraction — il est en train de céder sous les pieds des PJ. Le bourdonnement, le froid, les runes qui changent : tout est sensoriel, tout est immédiat. Les PJ doivent sentir que chaque jour compte. Le MJ peut faire avancer l'horloge du front « Le Sceau qui cède » d'un segment pendant cette scène pour souligner la pression.",
           },
 
           texte_a_lire:
-            "Le Cimetière est silencieux à la nuit tombée. Les lanternes funéraires vacillent sans vent. Le froid gagne les gradins, les allées, les marches. Vous voyez votre souffle.\n\nThorgar vous attend au Mausolée. « C'est pire. Les runes changent. Les lanternes s'éteignent. Et le son... écoutez. »\n\nUn bourdonnement sourd remonte de la dalle centrale.",
+            "Le Cimetière est silencieux à la nuit tombée. Les lanternes funéraires vacillent sans vent. Le froid gagne les gradins, les allées, les marches. Vous voyez votre souffle.\n\nThorgar vous attend au Mausolée. « C'est pire. Les runes changent. Les lanternes s'éteignent. Et le son… écoutez. »\n\nUn bourdonnement sourd remonte de la dalle centrale.",
 
           objectif: "Évaluer l'état du sceau, identifier les nouvelles profanations et comprendre que le verrou cède.",
 
@@ -2170,7 +2311,7 @@ export const scenario1 = {
               "Cinq des sept tombes sont touchées. Le sceau ne tient plus que par deux ancrages. Le Puits de l'Abîme vibre — un bourdonnement sourd remonte des profondeurs.",
             secrets: [
               "Le bourdonnement est la Spirale qui presse le sceau. Plus le sceau cède, plus la Spirale filtre.",
-              "Si les PJ descendent dans le Puits, ils sentent un froid planaire. Connaissances (mystères) DD 14 pour identifier une empreinte planaire.",
+              "Si les PJ descendent dans le Puits, ils sentent un froid planaire. Connaissances (mystères) Moyen pour identifier une empreinte planaire.",
               "Thorgar accomplit les rites incomplets chaque nuit. Sans les ossements, les rites ne restaurent pas l'ancrage.",
             ],
             rappels: [
@@ -2182,19 +2323,19 @@ export const scenario1 = {
           defis: [
             {
               competence: "Investigation",
-              dd: 14,
+              difficulte: "Moyen",
               reussite: "Cinq des sept tombes sont touchées. Les passages sont plus larges, plus récents. Toujours des outils d'Université.",
               echec: "Plus de tombes profanées. Difficile de dire combien dans l'obscurité.",
             },
             {
               competence: "Connaissances (mystères)",
-              dd: 14,
+              difficulte: "Moyen",
               reussite: "Le bourdonnement est une empreinte planaire. La Spirale presse le sceau. Une force ancienne qui cherche à revenir.",
               echec: "Bourdonnement étrange et inquiétant. Peut-être un écho des anciens rites.",
             },
             {
               competence: "Athlétisme",
-              dd: 12,
+              difficulte: "Moyen",
               reussite: "Les PJ descendent dans le Puits. Le froid augmente. À mi-chemin, un courant d'air planaire remonte des profondeurs.",
               echec: "La descente est trop difficile sans équipement. Les encoches sont trop éloignées.",
             },
@@ -2204,14 +2345,14 @@ export const scenario1 = {
             {
               indice: "Cinq tombes sur sept",
               localisation: "Terrasses des Sept Thanes",
-              detection: "Investigation DD 14",
+              detection: "Investigation Moyen",
               information: "Le sceau ne tient plus que par deux ancrages. Le verrou est proche de la rupture.",
               usage: "Urgence : si les deux dernières tombes tombent, le sceau cède entièrement.",
             },
             {
               indice: "L'empreinte planaire",
               localisation: "Puits de l'Abîme",
-              detection: "Connaissances (mystères) DD 14",
+              detection: "Connaissances (mystères) Moyen",
               information: "La Spirale n'envahit pas — elle filtre, lentement, par les fissures du verrou.",
               usage: "Comprendre la nature de la menace : pas une armée, une pression constante.",
             },
@@ -2306,11 +2447,11 @@ export const scenario1 = {
                 sceneId: "s1_choix",
                 type: "libre",
                 moteur: "Les PJ veulent alerter le Conseil directement.",
-                accroche_mj: "« Le Conseil ? Sans preuve formelle ? Avel renverra ça en commission. Mais si vous insistez... Olane peut vous accompagner. Elle a les chiffres. »",
+                accroche_mj: "« Le Conseil ? Sans preuve formelle ? Avel renverra ça en commission. Mais si vous insistez… Olane peut vous accompagner. Elle a les chiffres. »",
                 consequence_si_refus: "Sans Olane ni preuves formelles, le Conseil ne fait rien. La scène s1_choix devient un échec politique.",
               },
             ],
-            fallback_mj: "Le Retour au Cimetière est une scène d'urgence qui peut être déclenchée par Thorgar (message urgent), par Olane (données arcaniques), ou par les PJ eux-mêmes (retour volontaire). Si les PJ n'y vontent jamais, le sceau cède entièrement et le déphasage commence. Le Scénario 2 démarre dans une situation pire.",
+            fallback_mj: "Le Retour au Cimetière est une scène d'urgence qui peut être déclenchée par Thorgar (message urgent), par Olane (données arcaniques), ou par les PJ eux-mêmes (retour volontaire). Si les PJ n'y vont jamais, le sceau cède entièrement et le déphasage commence. Le Scénario 2 démarre dans une situation pire.",
             objectif_scene: "Évaluer l'état du sceau : cinq tombes sur sept touchées, le Mausolée vibre, le Puits de l'Abîme pulse d'un froid planaire. Comprendre que le verrou cède.",
             pression: "Les deux dernières tombes sont menacées. Les passages creusés par en-dessous se rapprochent. Un ou deux jours avant la rupture totale. Chaque nuit sans intervention, le front 'Le Sceau qui cède' avance.",
             actions_pj_attendues: ["compter les tombes touchées et évaluer l'état du sceau", "examiner les runes qui changent (Connaissances)", "descendre dans le Puits de l'Abîme (Athlétisme)", "proposer à Thorgar de protéger les deux dernières tombes"],
@@ -2330,17 +2471,17 @@ export const scenario1 = {
           titre: "La Rencontre avec la Résistance",
           type: "Rencontre",
           resume_mj:
-            "Les PJ découvrent la Résistance de la Vieille Ville — Mara, Ursula, le Collecteur et Sniv. Un réseau clandestin qui soigne les malades, cache les fugitifs et cherche la vérité sur Thade. Ils offrent aux PJ une alternative à l'Université.",
+            "Les PJ découvrent la Résistance de la Vieille Ville : Mara dirige, Ursula soigne, Sniv explore les égouts. Le Collecteur est là aussi — il travaille avec la Résistance, pas pour elle. Il vend des informations et des arrangements au prix qui enferme ses clients. La Résistance offre aux PJ une alternative à l'Université ; le Collecteur offre un accès criminel — à un coût.",
           idLieu: "maison_des_retours",
           idsPnj: ["mara_dirigeante", "ursula_fraternite", "le_collecteur", "sniv_kobold"],
 
           format_livre: {
             ambiance:
-              "La Maison des Retours est cachée derrière une blanchisserie de la Vieille Ville. On y accède par une cour étroite, puis par un escalier qui descend sous le niveau de la rue. L'intérieur sent le savon, la soupe et la cire à briquet. Des lits alignés contre les murs, séparés par des rideaux faits de vieux draps. Des malades — pas des blessés, des malades. Les symptômes varient : fatigue, tremblements, perceptions augmentées, sensibilité au froid. Les mêmes symptômes que Sealine, huit ans plus tôt.\n\nMara attend au centre de la pièce, debout, les bras croisés. Elle est grande, mince, les cheveux courts. Le regard fatigué mais net d'une femme qui a choisi son camp il y a longtemps et qui n'en a jamais changé. Elle porte les vêtements d'une travailleuse de la Vieille Ville — pas une rebelle, pas une soldate, une femme qui soigne et qui cache.\n\nUrsula est près d'un lit, en train de changer un pansement. Le Collecteur est dans un coin, assis sur une caisse, un carnet sur les genoux. Sniv est invisible — un kobold qui se fond dans les ombres, mais dont les yeux brillent dans la pénombre.",
+              "La Maison des Retours est cachée derrière une blanchisserie de la Vieille Ville. On y accède par une cour étroite, puis par un escalier qui descend sous le niveau de la rue. L'intérieur sent le savon, la soupe et la cire à briquet. Des lits alignés contre les murs, séparés par des rideaux faits de vieux draps. Des malades — pas des blessés, des malades. Les symptômes varient : fatigue, tremblements, perceptions augmentées, sensibilité au froid. Les mêmes symptômes que Sealine dans les vieux dossiers de Nyx.\n\nMara attend au centre de la pièce, debout, les bras croisés. Elle est grande, mince, les cheveux courts. Le regard fatigué mais net d'une femme qui a choisi son camp il y a longtemps et qui n'en a jamais changé. Elle porte les vêtements d'une travailleuse de la Vieille Ville — pas une rebelle, pas une soldate, une femme qui soigne et qui cache.\n\nUrsula est près d'un lit, en train de changer un pansement. Le Collecteur est dans un coin, assis sur une caisse, un carnet sur les genoux. Sniv est invisible — un kobold qui se fond dans les ombres, mais dont les yeux brillent dans la pénombre.",
             deroulement_narratif:
-              "Mara accueille les PJ avec une question : « Vous êtes les envoyés de l'Université ? Ou les envoyés de quelqu'un d'autre ? » La réponse détermine le ton de la conversation. Si les PJ disent qu'ils travaillent pour Thade, Mara ne les chasse pas — elle leur offre un repas et dit : « Mangez. Vous avez faim. Et pendant que vous mangez, écoutez. »\n\nMara explique ce qu'elle sait. La Résistance existe depuis la catastrophe de Nyx. Elle a commencé comme un réseau de soins — des soigneurs qui traitaient les malades que l'Université refusait. Puis elle est devenue un réseau d'information. Mara cherche la vérité sur Nyx depuis huit ans. Elle ne sait pas tout, mais elle sait que Thade n'a jamais accepté la mort de Sealine.\n\nLe Collecteur intervient si les PJ demandent des preuves. Il ouvre son carnet : des caisses d'os circulent dans les égouts. Elles portent un cachet de Caldris et un marquage d'Université. Elles convergent vers la Tour Arcanique par un réseau de passages sous les Terrasses. Renseignements DD 14 ou Diplomatie DD 13 pour qu'il donne les détails : les caisses passent la nuit, transportées par des agents que personne ne reconnaît.\n\nSniv propose de montrer les passages. Il parle peu, mais il connaît les égouts mieux que personne. Il a trouvé des passages récents — creusés dans la roche, pas dans la terre, avec des outils de précision. Les mêmes outils qu'au Cimetière.\n\nUrsula parle des malades. Elle dit : « Ce ne sont pas des malades ordinaires. Leurs symptômes ressemblent à ceux de l'année de Nyx. L'Université les ignore. Nous les soignons. » Si les PJ ont lu le dossier S-01, ils font le lien : les symptômes de Sealine, les symptômes des malades de la Vieille Ville, les symptômes de l'exposition planaire chronique.\n\nMara ne demande pas aux PJ de trahir Thade immédiatement. Elle dit : « Vous n'avez pas à choisir maintenant. Mais sachez que l'Université ne vous donnera pas la vérité. Nous, oui. »",
+              "Mara accueille les PJ avec une question : « Vous êtes les envoyés de l'Université ? Ou les envoyés de quelqu'un d'autre ? » La réponse détermine le ton de la conversation. Si les PJ disent qu'ils travaillent pour Thade, Mara ne les chasse pas — elle leur offre un repas et dit : « Mangez. Vous avez faim. Et pendant que vous mangez, écoutez. »\n\nMara explique ce qu'elle sait. La Résistance s'est structurée bien après la catastrophe de Nyx, à partir d'anciens réseaux de soins — des soigneurs qui traitaient les malades que l'Université refusait. Puis elle est devenue un réseau d'information. Mara cherche la vérité sur Nyx depuis des années. Elle ne sait pas tout, mais elle sait que Thade n'a jamais accepté la mort de Sealine.\n\nLe Collecteur intervient si les PJ demandent des preuves. Il ouvre son carnet : des caisses d'os circulent dans les égouts. Elles portent un cachet de Caldris et un marquage d'Université. Elles convergent vers la Tour Arcanique par un réseau de passages sous les Terrasses. Renseignements Moyen ou Diplomatie Moyen pour qu'il donne les détails : les caisses passent la nuit, transportées par des agents que personne ne reconnaît. Puis il ferme son carnet et dit : « Ça, c'était gratuit. La prochaine fois, vous payez. »\n\nSniv propose de montrer les passages. Il parle peu, mais il connaît les égouts mieux que personne. Il a trouvé des passages récents — creusés dans la roche, pas dans la terre, avec des outils de précision. Les mêmes outils qu'au Cimetière.\n\nUrsula parle des malades. Elle dit : « Ce ne sont pas des malades ordinaires. Leurs symptômes ressemblent aux vieux cas de Nyx. L'Université les ignore. Nous les soignons. » Si les PJ ont lu le dossier S-01, ils font le lien : les symptômes de Sealine, les symptômes des malades de la Vieille Ville, les symptômes de l'exposition planaire chronique.\n\nMara ne demande pas aux PJ de trahir Thade immédiatement. Elle dit : « Vous n'avez pas à choisir maintenant. Mais sachez que l'Université ne vous donnera pas la vérité. Nous, oui. »",
             notes_mj:
-              "La Résistance n'est pas un groupe de rebelles romantiques. C'est un réseau de survie — des gens qui soignent, qui cachent, qui observent. Mara n'est pas une chef de guerre, c'est une organisatrice. Le Collecteur n'est pas un espion, c'est un récupérateur d'informations. Sniv n'est pas un scout, c'est un kobold qui connaît les tunnels. Chacun a un rôle, aucun n'est interchangeable. Le MJ doit jouer la Résistance comme une alternative crédible à l'Université — pas meilleure, différente.",
+              "La Résistance est un réseau de survie — des gens qui soignent, qui cachent, qui observent. Mara est une organisatrice. Le Collecteur est un créancier qui travaille avec la Résistance parce que ça sert ses intérêts. Sniv est un kobold qui connaît les tunnels. Chacun a un rôle, aucun n'est interchangeable. Le Collecteur donne une information gratuite à la première rencontre — pour montrer ce qu'il sait. La suite a un prix. Le MJ doit jouer la Résistance comme une alternative crédible à l'Université — différente, avec ses propres coûts.",
           },
 
           texte_a_lire:
@@ -2350,30 +2491,31 @@ export const scenario1 = {
 
           contexte_mj: {
             situation:
-              "La Résistance est un réseau clandestin : Mara dirige, Ursula soigne, le Collecteur renseigne, Sniv explore les égouts. Ils cachent les malades, les fugitifs et ceux que Thade a rendus invisibles. Ils savent que Thade est dangereux mais n'ont pas les preuves ni le pouvoir institutionnel pour agir.",
+              "La Résistance est un réseau clandestin : Mara dirige, Ursula soigne, Sniv explore les égouts. Le Collecteur travaille avec eux — il vend des informations et des arrangements, et chaque service a un prix. Ils cachent les malades, les fugitifs et ceux que Thade a rendus invisibles. Ils savent que Thade est dangereux mais n'ont pas les preuves ni le pouvoir institutionnel pour agir.",
             secrets: [
-              "Mara a perdu des gens dans la catastrophe de Nyx. Elle cherche la vérité depuis huit ans.",
-              "Le Collecteur a des contacts dans les égouts et dans la pègre. Il sait que des fragments d'os circulent dans les réseaux clandestins — mais il ne sait pas d'où ils viennent.",
+              "Mara a perdu des gens dans les conséquences de Nyx et des reprises du protocole. Elle cherche la vérité depuis des années.",
+              "Le Collecteur sait que des fragments d'os circulent dans les réseaux clandestins. Il sait d'où ils viennent — mais cette information a un prix.",
               "Sniv a exploré les égouts sous les Terrasses et a trouvé des passages récemment creusés entre le Cimetière et la Vieille Ville.",
             ],
             rappels: [
-              "La Résistance ne fait pas confiance à l'Université. Si les PJ se présentent comme envoyés de Thade, ils seront éconduits.",
+              "La Résistance se méfie de l'Université. Si les PJ se présentent comme envoyés de Thade, ils seront éconduits.",
               "Si les PJ ont des indices (S-01, runes, cachet de Caldris), la Résistance peut les recouper avec ses propres informations.",
+              "Le Collecteur ne fait confiance à personne. Il facture.",
             ],
           },
 
           defis: [
             {
               competence: "Diplomatie",
-              dd: 13,
+              difficulte: "Moyen",
               reussite: "Mara accepte de partager ce que la Résistance sait : des passages creusés sous le Cimetière, des fragments d'os qui circulent, des malades que l'Université refuse de soigner.",
               echec: "Mara reste méfiante. Elle offre un repas mais ne partage aucune information. « Revenez quand vous saurez de quel côté vous êtes. »",
             },
             {
               competence: "Renseignements",
-              dd: 14,
-              reussite: "Le Collecteur confirme que des fragments d'os ont été vus dans les égouts, transportés par des hommes de main de la pègre vers un destinataire inconnu. Le cachet de Caldris apparaît sur certaines caisses.",
-              echec: "Le Collecteur a entendu des rumeurs sur des mouvements dans les égouts, mais rien de précis.",
+              difficulte: "Moyen",
+              reussite: "Le Collecteur confirme que des fragments d'os ont été vus dans les égouts, transportés par des hommes de main de la pègre vers un destinataire inconnu. Le cachet de Caldris apparaît sur certaines caisses. Puis il ajoute : « Ça, c'était la version gratuite. Si vous voulez l'horaire du prochain passage, on parle d'un prix. »",
+              echec: "Le Collecteur a entendu des rumeurs sur des mouvements dans les égouts, mais rien de précis. « Revenez avec de quoi payer, et je trouverai. »",
             },
           ],
 
@@ -2381,14 +2523,14 @@ export const scenario1 = {
             {
               indice: "Les passages des égouts",
               localisation: "Témoignage de Sniv",
-              detection: "Diplomatie DD 13 ou Discrétion DD 12",
+              detection: "Diplomatie Moyen ou Discrétion Moyen",
               information: "Des passages récents relient le Cimetière aux égouts de la Vieille Ville. Quelqu'un transporte des ossements par ce réseau.",
               usage: "Piste concrète pour suivre les ossements depuis le Cimetière jusqu'à leur destinataire.",
             },
             {
               indice: "Le cachet de Caldris dans les égouts",
               localisation: "Témoignage du Collecteur",
-              detection: "Renseignements DD 14",
+              detection: "Renseignements Moyen",
               information: "Des caisses marquées du cachet de Caldris circulent dans les égouts. Elles contiennent des fragments d'os.",
               usage: "Relier les ossements des Thanes au protocole S-01 et à Elian Voss via Caldris.",
             },
@@ -2503,6 +2645,166 @@ export const scenario1 = {
         },
 
         {
+          id: "s1_peage_brek",
+          titre: "Le Péage de Brek",
+          type: "Conflit",
+          resume_mj:
+            "Les PJ descendent dans les égouts pour suivre les caisses d'os vers la Tour. Ils arrivent devant une vanne contrôlée par Brek et ses hommes. On ne passe pas sans payer ou sans négocier. Le sceau cède pendant qu'ils discutent.",
+          idLieu: "egouts_terrasses",
+          idsPnj: ["contremaite_egouts", "hommes_main_pegre"],
+
+          format_livre: {
+            ambiance:
+              "Les égouts sous les Terrasses sont un réseau de tunnels voûtés, humides, éclairés par des lampes alchimiques clignotantes. L'eau coule dans des canaux latéraux. L'air sent la rouille, la pierre mouillée et la chaux.\n\nBrek se tient devant une grande vanne de fer. Il est petit, sec, avec un visage qui ne montre rien. Deux hommes de main se tiennent en retrait, mains sur les matraques. Derrière la vanne, on entend les roues d'un chariot qui roule lentement.\n\nBrek sait que les PJ sont pressés. Il sait que le sceau cède. Il s'en fiche assez pour négocier.",
+            deroulement_narratif:
+              "Brek bloque le passage. Il demande qui paie. Le passage coûte : de l'argent, une faveur, ou une information. Si les PJ refusent, Brek ferme la vanne. Les égouts deviennent un détour.\n\nSi les PJ paient, ils passent vite mais le Collecteur enregistre la dette. S'ils menacent, ils passent mais Brek ferme une route plus tard. S'ils tuent les hommes de main, le Syndicat devient hostile. S'ils convainquent Brek que Thade va détruire son réseau aussi, il devient un allié tactique — mais jamais moral.\n\nPendant la négociation, les PJ entendent le chariot derrière la vanne. Les caisses d'os passent maintenant. Chaque minute perdue est une caisse qui s'éloigne vers la Tour.",
+            notes_mj:
+              "Brek est le verrou. Cette scène montre que les égouts sont un territoire avec un propriétaire. Brek est pragmatique. Il veut être payé à temps et garder la garde hors de ses tunnels. La fissure entre Brek et le Collecteur est exploitable : si les PJ montrent à Brek que les caisses contiennent des ossements volés et que ça attire la garde, il veut s'en laver les mains. Mais le Collecteur refuse de rompre le contrat.",
+          },
+
+          texte_a_lire:
+            "La vanne de fer bloque le tunnel. Derrière, des roues grincent sur la pierre. Quelqu'un transporte quelque chose. L'homme devant la vanne est petit, sec, et ne bouge pas. « Vous voulez passer ? Tout le monde veut passer. Tout le monde paie. »",
+
+          objectif: "Passer Brek pour suivre les caisses d'os vers la Tour. Comprendre que les égouts appartiennent au Syndicat.",
+
+          contexte_mj: {
+            situation:
+              "Brek contrôle les vannes principales des égouts sous les Terrasses. Les caisses d'os de Thade passent par ses tunnels. Il ne sait pas ce qu'elles contiennent — il sait qu'elles sont payées avec des lettres de crédit universitaires et que le client paie bien.",
+            secrets: [
+              "Brek transporte les caisses de Thade sans savoir ce qu'elles contiennent. Il sait juste que ça paie bien et que ça vient de l'Université.",
+              "Si les PJ lui montrent que les caisses contiennent des ossements volés et que la garde risque de descendre, Brek veut s'en laver les mains. Mais le Collecteur refuse de rompre le contrat.",
+              "Le prochain passage de caisses a lieu cette nuit. Brek connaît l'horaire.",
+            ],
+            rappels: [
+              "Brek est un garde-barrière. Le combattre ne sert à rien — il revient.",
+              "Si les PJ ont déjà rencontré le Collecteur, Brek sait qu'ils ont négocié. Il adapte son prix.",
+            ],
+          },
+
+          defis: [
+            {
+              competence: "Diplomatie",
+              difficulte: "Moyen",
+              reussite: "Brek accepte de les laisser passer contre un prix raisonnable : une information, une faveur future, ou une petite somme. Il ouvre la vanne.",
+              echec: "Brek hausse les épaules. « Le prix, c'est le prix. Vous voulez passer, vous payez. Vous voulez pas, vous faites demi-tour. »",
+            },
+            {
+              competence: "Intimidation",
+              difficulte: "Moyen",
+              reussite: "Brek recule. Il ouvre la vanne. Mais il note les visages. Une route se fermera plus tard.",
+              echec: "Brek ne cille pas. « Vous me menacez dans mes tunnels. Vous savez combien de vannes il y a entre ici et la sortie ? » Les hommes de main avancent.",
+            },
+            {
+              competence: "Persuasion",
+              difficulte: "Difficile",
+              reussite: "Les PJ convainquent Brek que les caisses qu'il transporte contiennent des ossements volés et que ça va attirer la garde. Brek veut s'en laver les mains. Il ouvre la vanne et donne l'horaire du prochain passage. Il devient un allié tactique — mais jamais moral.",
+              echec: "Brek écoute, puis dit : « Le Collecteur dit que le client paie bien. Tant que le client paie, je transporte. Si la garde descend, c'est pas mon problème — c'est le sien. »",
+            },
+          ],
+
+          indices: [
+            {
+              indice: "L'horaire du prochain passage de caisses",
+              localisation: "Témoignage de Brek (si convaincu ou payé)",
+              detection: "Diplomatie Moyen, Intimidation Moyen, ou Persuasion Difficile",
+              information: "Les caisses passent cette nuit, par la vanne principale, vers la Tour Arcanique. Elles sont payées avec des lettres de crédit universitaires maquillées.",
+              usage: "Piste concrète pour intercepter les caisses ou confirmer le circuit Cimetière → égouts → Tour.",
+            },
+            {
+              indice: "Les lettres de crédit universitaires",
+              localisation: "Détails de Brek sur le paiement",
+              detection: "Diplomatie Moyen ou Persuasion Difficile",
+              information: "Les caisses sont payées avec des lettres de crédit de l'Université, maquillées en sceaux marchands. Le cachet de Caldris apparaît sur certaines.",
+              usage: "Relier les ossements au protocole S-01 et à Elian Voss via Caldris.",
+            },
+          ],
+
+          guide_mj: {
+            intention: "Montrer que les égouts sont un territoire contrôlé. Brek est le visage physique du Syndicat — le Collecteur est le contrat, Brek est le verrou.",
+            mise_en_place: "Les PJ descendent dans les égouts après avoir obtenu un indice sur les caisses (du receleur, du Collecteur, ou de Sniv). Ils arrivent à la vanne de Brek.",
+            deroulement: [
+              "Brek bloque la vanne. Il demande qui paie.",
+              "Les PJ négocient, menacent, ou convainquent.",
+              "Si les PJ paient : la vanne s'ouvre, mais la dette est enregistrée.",
+              "Si les PJ convainquent Brek du danger : il ouvre et donne l'horaire, mais ne devient pas un allié moral.",
+              "Derrière la vanne, les PJ voient les traces des chariots et peuvent suivre les caisses vers la Tour.",
+            ],
+            actions_utiles: [
+              "Négocier le passage (Diplomatie).",
+              "Menacer Brek (Intimidation — efficace mais coûteux plus tard).",
+              "Convaincre Brek que les caisses sont dangereuses (Persuasion — exploite la fissure Brek/Collecteur).",
+              "Forcer le passage (combat — possible mais le Syndicat devient hostile).",
+              "Trouver une route alternative (plus dangereuse, plus lente).",
+            ],
+            fronts_heritiers: [
+              "Front 'Le Syndicat serre la ville' — +1 segment si les PJ utilisent une route sans payer.",
+              "Front 'Le Plan de Thade' — les caisses convergent vers la Tour par les égouts.",
+            ],
+            jeu_des_pnj: "Brek est économe en mots, méfiant par défaut. Il ne négocie pas longtemps — il dit le prix, il attend, il ouvre ou il ferme. Les hommes de main sont en retrait, prêts à se disperser si ça tourne mal.",
+            escalade: "Si les PJ humilient ou blessent Brek, une route des égouts se ferme plus tard. Si les PJ tuent les hommes de main, le Syndicat devient hostile et le Collecteur vend des informations sur les PJ à Thade.",
+            sortie: "Les PJ passent la vanne — ou non. S'ils passent, ils peuvent suivre les caisses vers la Tour. S'ils ne passent pas, ils doivent trouver une autre route ou abandonner la piste des égouts.",
+          },
+
+          reperes_de_jeu: {
+            indice_indispensable: "Aucun — mais l'horaire du passage de caisses est un indice majeur pour confirmer le circuit des ossements.",
+            ne_pas_bloquer_sur_un_jet: "Même si tous les jets échouent, les PJ peuvent forcer le passage ou trouver une route alternative plus dangereuse. Brek ne les tue pas — il les bloque.",
+            question_dramatique: "Combien êtes-vous prêts à payer pour suivre la piste ?",
+          },
+
+          transitions: {
+            resume: "Les PJ passent la vanne ou font demi-tour. Derrière, les traces de chariots mènent vers la Tour.",
+            reussite: "Les PJ ont passé Brek et obtenu l'horaire du prochain passage. Ils peuvent intercepter les caisses ou confirmer le circuit.",
+            echec: "Les PJ n'ont pas passé Brek. Ils doivent trouver une autre route — ou abandonner la piste des égouts et se rabattre sur les preuves de l'Université.",
+          },
+
+          navigation: {
+            indice_indispensable: "Aucun. Mais sans passer Brek, les PJ n'ont pas accès à la preuve physique du circuit des ossements.",
+            consequence_si_manque: "Sans la preuve des égouts, les PJ doivent se rabattre sur les preuves documentaires (S-01, cachet de Caldris, laboratoire de Voss). Le Choix perd en force concrète.",
+            pnj_alternatifs: ["sniv_kobold — peut guider les PJ par une route alternative plus dangereuse", "le_collecteur — peut ouvrir la vanne de Brek à distance… pour un prix"],
+            front_si_ignore: "Le Syndicat serre la ville — si les PJ ignorent Brek, le Syndicat continue de transporter les caisses de Thade sans opposition.",
+            scenes_alternatives: ["s1_choix — si les PJ vont directement au choix sans suivre les caisses", "s1_retour_cimetiere — si les PJ retournent au Cimetière au lieu de descendre dans les égouts"],
+            sorties_jouables: [
+              {
+                condition: "Les PJ ont passé Brek et veulent suivre les caisses vers la Tour",
+                sceneId: "s1_choix",
+                type: "indice_principal",
+                moteur: "Les PJ ont la preuve physique : les caisses passent par les égouts vers la Tour. Le Choix est renforcé.",
+                accroche_mj: "Les traces de chariots mènent vers un puits de ventilation. Au-dessus, la Tour Arcanique. Vous savez maintenant où vont les os.",
+                consequence_si_refus: "Les PJ peuvent aller au Choix sans la preuve physique, avec seulement les preuves documentaires.",
+              },
+              {
+                condition: "Les PJ n'ont pas passé Brek et veulent trouver une autre route",
+                sceneId: "s1_choix",
+                type: "echec",
+                moteur: "Les PJ n'ont pas la preuve des égouts. Ils doivent se rabattre sur les preuves de l'Université.",
+                accroche_mj: "Brek ferme la vanne. « Revenez quand vous aurez de quoi payer. » Les égouts se taisent. Vous faites demi-tour.",
+                consequence_si_refus: "Le Choix est moins fort sans la preuve physique, mais reste jouable avec les preuves documentaires.",
+              },
+              {
+                condition: "Les PJ ont convaincu Brek et veulent l'utiliser comme allié tactique",
+                sceneId: "s1_choix",
+                type: "libre",
+                moteur: "Brek a accepté de couper la route des caisses si les PJ lui garantissent que la garde ne descendra pas.",
+                accroche_mj: "Brek dit : « Si vous bloquez le client, je ferme les vannes. Mais si la garde descend, c'est vous qui avez un problème, pas moi. »",
+                consequence_si_refus: "Brek ne bouge pas sans garantie. Le Syndicat reste neutre.",
+              },
+            ],
+            fallback_mj: "Si les PJ ne descendent jamais dans les égouts, ils peuvent encore aller au Choix avec les preuves de l'Université (S-01, cachet de Caldris, runes). Mais sans la preuve physique du circuit des ossements, le Choix est moins concret.",
+            objectif_scene: "Passer Brek pour obtenir la preuve physique du circuit des ossements et comprendre que les égouts appartiennent au Syndicat.",
+            pression: "Le sceau cède. Chaque minute perdue avec Brek est une caisse qui s'éloigne vers la Tour.",
+            actions_pj_attendues: ["négocier, menacer, ou convaincre Brek", "obtenir l'horaire du prochain passage de caisses", "passer la vanne et suivre les traces vers la Tour"],
+            sorties_possibles: ["vers s1_choix (passer avec preuve physique)", "vers s1_choix (échec — sans preuve physique)", "vers s1_choix (Brek comme allié tactique)"],
+            si_les_pj_bloquent: "Si les PJ refusent de négocier avec Brek et ne trouvent pas de route alternative, Sniv peut les guider par un passage plus dangereux. Le front 'Le Sceau qui cède' avance pendant le temps perdu.",
+            conditions_sortie: [
+              "Les PJ ont passé la vanne de Brek (payé, menacé, ou convaincu).",
+              "OU les PJ ont fait demi-tour et cherchent une autre route.",
+              "OU les PJ ont forcé le passage (le Syndicat devient hostile).",
+            ],
+            transition_defaut: "La vanne s'ouvre avec un grincement de fer rouillé. Les traces de chariots s'enfoncent dans l'obscurité vers la Tour. Vous savez où vont les os. Que faites-vous ?",
+          },
+        },
+
+        {
           id: "s1_choix",
           titre: "Le Choix",
           type: "Dilemme",
@@ -2513,9 +2815,9 @@ export const scenario1 = {
 
           format_livre: {
             ambiance:
-              "L'ancienne salle de filtration sous les égouts des Terrasses est sèche, voûtée, silencieuse. Un espace qui n'appartient ni à l'Université ni à la Résistance — un lieu neutre, choisi pour cette rencontre. La voûte est basse, les murs sont couverts de tuyaux rouillés qui ne servent plus. Une table de pierre occupe le centre. Deux chaises de chaque côté. Une lampe alchimique pose sur la table, projetant une lumière stable pour la première fois depuis des jours.\n\nMara et Thorgar se font face de chaque côté de la table. C'est la première fois qu'ils se rencontrent. Mara porte les vêtements de la Vieille Ville. Thorgar porte son tablier de forge. Ils n'ont rien en commun sauf ce qu'ils savent. Et ce qu'ils savent, c'est que le sceau cède et que quelqu'un doit agir.\n\nLes PJ entrent. La salle se tait. Tout le monde regarde les PJ. Parce que les PJ sont les seuls qui ont vu à la fois l'intérieur de l'Université et l'intérieur de la Résistance. Les seuls qui ont les preuves. Les seuls qui peuvent choisir.",
+              "L'ancienne salle de filtration sous les égouts des Terrasses est sèche, voûtée, silencieuse. Un espace qui n'appartient ni à l'Université ni à la Résistance — un lieu neutre, choisi pour cette rencontre. La voûte est basse, les murs sont couverts de tuyaux rouillés qui ne servent plus. Une table de pierre occupe le centre. Deux chaises de chaque côté. Une lampe alchimique repose sur la table, projetant une lumière stable pour la première fois depuis des jours.\n\nMara et Thorgar se font face de chaque côté de la table. C'est la première fois qu'ils se rencontrent. Mara porte les vêtements de la Vieille Ville. Thorgar porte son tablier de forge. Rien ne les unit, sinon ce qu'ils savent : le sceau cède, et quelqu'un doit agir.\n\nLes PJ entrent. La salle se tait. Tout le monde regarde les PJ. Parce que les PJ sont les seuls qui ont vu à la fois l'intérieur de l'Université et l'intérieur de la Résistance. Les seuls qui ont les preuves. Les seuls qui peuvent choisir.",
             deroulement_narratif:
-              "Mara parle la première : « Nous savons maintenant. Thade prend les os. Thade ouvre le seuil. La question est : qu'allez-vous faire ? »\n\nThorgar prend le relais : « Les rites peuvent encore être restaurés. Si nous récupérons les os. Si nous protégeons les deux dernières tombes. Mais si vous choisissez le mauvais côté, tout est perdu. »\n\nLes PJ ont trois options principales :\n\n1. Rapporter à Thade. Les PJ retournent à l'Université et remettent leurs découvertes. Thade les remercie, confirme que les profanations sont l'œuvre de vandales ou d'un culte, et leur demande de protéger les deux dernières tombes. En réalité, il accélère ses prélèvements. Les PJ restent ses outils. Cette voie mène au Scénario 2 avec un retard critique et une compréhension incomplète.\n\n2. Confronter Thade. Les PJ vont voir Thade et lui présentent ce qu'ils savent. Thade ne nie pas. Il explique. Il parle de Sealine, de Nyx, de la littérature interdite, de l'amour qui a tout détruit. Il demande aux PJ de l'aider — pas par mensonge, par vérité. Il dit : « Je peux refermer le seuil. Je peux sauver Valombre. Mais il me faut les os. » Cette voie mène à un dilemme moral direct et à une confrontation qui peut être violente ou négociée.\n\n3. Rejoindre la Résistance. Les PJ choisissent de protéger le sceau avec Thorgar et la Résistance. Ils coupent les ponts avec l'Université. Thade devient un adversaire actif. Cette voie mène au Scénario 2 avec la Résistance comme alliée principale et l'Université comme terrain hostile.\n\nLe MJ ne doit pas pousser les PJ vers une option. Chaque choix est valide et ouvre une voie différente. Le choix peut être différé — les PJ peuvent demander du temps — mais pas évité. Si les PJ refusent de choisir, le temps passe, le sceau cède davantage, et le choix devient plus urgent à chaque session.",
+              "Mara parle la première : « Nous savons maintenant. Thade prend les os. Thade ouvre le seuil. La question est : qu'allez-vous faire ? »\n\nThorgar prend le relais : « Les rites peuvent encore être restaurés. Si nous récupérons les os. Si nous protégeons les deux dernières tombes. Mais si vous choisissez le mauvais côté, tout est perdu. »\n\nLes PJ ont trois options principales :\n\n1. Rapporter à Thade. Les PJ retournent à l'Université et remettent leurs découvertes. Thade les remercie, confirme que les profanations sont l'œuvre de vandales ou d'un culte, et leur demande de protéger les deux dernières tombes. En réalité, il accélère ses prélèvements. Les PJ restent ses outils. Cette voie mène au Scénario 2 avec un retard critique et une compréhension incomplète.\n\n2. Confronter Thade. Les PJ vont voir Thade et lui présentent ce qu'ils savent. Thade ne nie pas. Il explique. Il parle de Sealine, de Nyx, de la littérature interdite, de l'amour qui a tout détruit. Il demande aux PJ de l'aider — non par mensonge, mais parce qu'il leur dit enfin la vérité. Il dit : « Je peux refermer le seuil. Je peux sauver Valombre. Mais il me faut les os. » Cette voie mène à un dilemme moral direct et à une confrontation qui peut être violente ou négociée.\n\n3. Rejoindre la Résistance. Les PJ choisissent de protéger le sceau avec Thorgar et la Résistance. Ils coupent les ponts avec l'Université. Thade devient un adversaire actif. Cette voie mène au Scénario 2 avec la Résistance comme alliée principale et l'Université comme terrain hostile.\n\nLe MJ ne doit pas pousser les PJ vers une option. Chaque choix est valide et ouvre une voie différente. Le choix peut être différé — les PJ peuvent demander du temps — mais pas évité. Si les PJ refusent de choisir, le temps passe, le sceau cède davantage, et le choix devient plus urgent à chaque session.",
             notes_mj:
               "C'est le moment pivot de la campagne. Tout ce qui suit dépend de ce choix. Le MJ doit laisser les PJ débattre entre eux, peser les options, formuler leurs doutes. Ne pas précipiter. Ne pas orienter. Si les PJ choisissent une quatrième voie — par exemple, tenter de parler à Thade ET protéger les tombes — c'est possible, mais difficile. Le MJ peut le permettre en créant une scène de négociation tendue où Thade accepte un compromis temporaire tout en continuant ses prélèvements en secret.",
           },
@@ -2542,7 +2844,7 @@ export const scenario1 = {
           defis: [
             {
               competence: "Perspicacité",
-              dd: 15,
+              difficulte: "Moyen",
               reussite: "Les PJ sentent que Mara et Thorgar disent la vérité. Pas toute la vérité — mais ce qu'ils savent, ils le disent honnêtement.",
               echec: "Difficile de savoir qui croire. Tout le monde a un agenda. L'Université, la Résistance, les nains. Les PJ doivent suivre leur instinct.",
             },
@@ -2627,7 +2929,7 @@ export const scenario1 = {
                 sceneId: "s2_emeute_place",
                 type: "libre",
                 moteur: "Le MJ peut le permettre. Thade accepte un compromis temporaire tout en continuant en secret.",
-                accroche_mj: "Thade accepte. 'Je vous donne les os des cinq tombes déjà touchées. Restaurez les rites. Mais les deux dernières... laissez-moi finir. Je peux sauver Sealine. Je peux sauver Valombre.' Le Scénario 2 commence avec un compromis fragile.",
+                accroche_mj: "Thade accepte. 'Je vous donne les os des cinq tombes déjà touchées. Restaurez les rites. Mais les deux dernières… laissez-moi finir. Je peux tenir le seuil. Je peux empêcher Valombre de subir Nyx une seconde fois.' Le Scénario 2 commence avec un compromis fragile.",
                 consequence_si_refus: "Le compromis est temporaire. Thade continue en secret. Les PJ découvrent la trahison au Scénario 2.",
               },
               {
@@ -2635,7 +2937,7 @@ export const scenario1 = {
                 sceneId: "s2_emeute_place",
                 type: "libre",
                 moteur: "Les PJ veulent une résolution politique. Le Conseil peut agir — ou non.",
-                accroche_mj: "Mara secoue la tête. 'Le Conseil ? Maelric imposera la quarantaine. Hessa fermera les Terrasses. Avel renverra ça en commission. Et Thade... Thade retournera la situation.' Mais si vous insistez, allez-y. Le Scénario 2 commence.",
+                accroche_mj: "Mara secoue la tête. 'Le Conseil ? Maelric imposera la quarantaine. Hessa fermera les Terrasses. Avel renverra ça en commission. Et Thade… Thade retournera la situation.' Mais si vous insistez, allez-y. Le Scénario 2 commence.",
                 consequence_si_refus: "Le Conseil peut ralentir Thade mais pas l'arrêter. Le Scénario 2 commence avec un contexte politique tendu.",
               },
             ],

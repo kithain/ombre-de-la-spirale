@@ -42,7 +42,7 @@ export const zoneQuartierDuSavoir = {
         "Bureau en angle, deux étages au-dessus de l'aile de Thaumaturgie. Bibliothèque tapissée du sol au plafond, fenêtre panoramique, parfum de lavande omniprésent.",
       details: [
         "Ambiance : lampe à huile sur le bureau, coffret plombé sur l'étagère, service à thé à peine touché, pas de poussière.",
-        "Tests : Investigation DD 13 sur le coffret. Psychologie DD 15 pour le choix des mots de Thade. Détection de la magie pour les glyphes de défense.",
+        "Tests : Investigation Moyen sur le coffret. Psychologie Moyen pour le choix des mots de Thade. Détection de la magie pour les glyphes de défense.",
         "Indices : Thade ne ment jamais directement. Il choisit ses mots. Il dit 'matériel' et pas 'recherches'. Le coffret est révélateur.",
         "Usage : engagement initial. Rapport et bourse lors du retour.",
       ],
@@ -70,7 +70,7 @@ export const zoneQuartierDuSavoir = {
         "Couloir lambrissé du 3e étage. Jaren y meurt médicalement, pas spectaculairement.",
       details: [
         "Ambiance : tapis usé, lampes à huile basses, jaunes et chaudes.",
-        "Tests : Médecine DD 14 (mort instantanée par sort). Connaissances (mystères) DD 16 (signature : variante de Dissection à Distance, publiée par Thade six ans plus tôt). Investigation DD 13 pour trouver la rune sur la nuque.",
+        "Tests : Médecine Moyen (mort instantanée par sort). Connaissances (mystères) Difficile (signature : variante de Dissection à Distance, publiée par Thade six ans plus tôt). Investigation Moyen pour trouver la rune sur la nuque.",
         "Usage : mort de Jaren. Aucun témoin.",
       ],
       idsPnj: [],
@@ -82,7 +82,7 @@ export const zoneQuartierDuSavoir = {
         "Sous-sol bas et voûté de l'aile administrative. Armoires métalliques classées par décennie. Aucun verrouillage spécifique.",
       details: [
         "Ambiance : odeur de papier ancien et de bois ciré. Bourdonnement d'une lampe alchimique. Silence d'aile désaffectée la nuit.",
-        "Tests : Investigation DD 12 pour trouver le dossier 'Coren, S. — 12-VAEL — Médical'. Médecine DD 15 pour comprendre la chronologie de la maladie de Sealine.",
+        "Tests : Investigation Moyen pour trouver le dossier 'Coren, S. — 12-VAEL — Médical'. Médecine Moyen pour comprendre la chronologie de la maladie de Sealine.",
         "Indices : dernière entrée de Thade : 'Méthodes conventionnelles épuisées. Explorer la littérature interdite.' Plus tard : 'S-01 : protocole établi. Premier essai dans 28 jours.'",
         "Usage : identification S-01 = Sealine.",
       ],
@@ -105,11 +105,11 @@ export const zoneQuartierDuSavoir = {
       id: "bibliotheque_recherche_interdite",
       nom: "Réserve de Recherche Interdite",
       resume:
-        "Niveau souterrain de la bibliothèque centrale. Accessible aux Maîtres de département. Corpus sur la résonance planaire consulté par Thade il y a huit ans.",
+        "Niveau souterrain de la bibliothèque centrale. Accessible aux Maîtres de département. Corpus sur la résonance planaire consulté par Thade depuis l'année de Nyx.",
       details: [
         "Ambiance : froid sec, lampes à mana basses, livres aux couvertures scellées de cire blanche.",
-        "Tests : Connaissances (mystères) DD 17 pour les textes. Effraction sous la loi martiale si non autorisée.",
-        "Indices : registre sur huit ans. Thade y a passé 142 séances. La fréquentation s'effondre à la mort de Sealine.",
+        "Tests : Connaissances (mystères) Difficile pour les textes. Effraction sous la loi martiale si non autorisée.",
+        "Indices : registre étalé sur une trentaine d'années. Thade y a passé 142 séances. La fréquentation s'effondre à la mort de Sealine.",
         "Usage : trace écrite de la préparation de Thade.",
       ],
       idsPnj: [],
@@ -122,7 +122,7 @@ export const zoneQuartierDuSavoir = {
       details: [
         "Ambiance : banale aux étages bas. Plus on monte, plus les modifications de Thade apparaissent (piliers de cristal, runes, objets en lévitation).",
         "Tests : Combat tactique 5-6 rencontres avec étudiants charmés, gardes piégés, créatures planaires séduites. CHAQUE rencontre a une option non-létale.",
-        "Indices : ardoise non effacée au 6e étage. Équation préliminaire de S-01 datée de sept ans. Thade y travaillait avant la mort de Sealine.",
+        "Indices : ardoise scellée au 6e étage. Équation préliminaire de S-01 datée de l'année de Nyx. Thade y travaillait avant la mort de Sealine.",
         "Usage : ascension de la Tour. Décompte des victimes pour l'épilogue.",
       ],
       idsPnj: ["etudiants_charmes", "gardes_pieges", "creature_spirale_cooptee", "magi_tuteur_loyal"],
@@ -134,8 +134,8 @@ export const zoneQuartierDuSavoir = {
         "Rotonde de pierre claire au cœur de la Tour, douze mètres de diamètre. Cuve cylindrique en cristal au centre. Dedans : le corps de Thade dans un liquide doré.",
       details: [
         "Ambiance : ronronnement doux des tubes alimentaires, parfum mielleux du liquide, lumière dorée diffuse. Lavande à saturation.",
-        "Tests : Investigation DD 12 pour comprendre le système. Connaissances (mystères) DD 16 : détruire le corps coûte une phase au Thade du sommet.",
-        "Indices : bureau adjacent, mur de cahiers reliés bordeaux alignés par date. Thade écrit à Sealine tous les jours depuis huit ans. La plume du cahier ouvert écrit en temps réel.",
+        "Tests : Investigation Moyen pour comprendre le système. Connaissances (mystères) Difficile : détruire le corps coûte une phase au Thade du sommet.",
+        "Indices : bureau adjacent, mur de cahiers reliés bordeaux alignés par date. Thade écrit à Sealine tous les jours depuis une trentaine d'années. La plume du cahier ouvert écrit en temps réel.",
         "Usage : décision sur le corps. Lecture optionnelle des cahiers. Message possible dans le cahier ouvert.",
       ],
       idsPnj: ["thade_coren", "magi_tuteur_loyal"],
@@ -147,7 +147,7 @@ export const zoneQuartierDuSavoir = {
         "Sous un ancien amphithéâtre médical. Porte métallique, colonnes de dossiers, bocaux opaques.",
       details: [
         "Ambiance : rangé en colonnes. À gauche, cinquante dossiers 'stabilisés'. À droite, sept bocaux sans étiquette. Deux dossiers cachés sous une plaque.",
-        "Tests : Art de la magie DD 17 pour le sérum. Décryptage DD 17 pour l'annotation de Sealine.",
+        "Tests : Art de la magie Difficile pour le sérum. Décryptage Difficile pour l'annotation de Sealine.",
         "Indices : schéma ancien nommant la Larme. Cachet de Caldris. Note barrée : 'Ne jamais alimenter cela avec des vivants.'",
         "Usage : récupération du protocole S-01 et de la liste des patients. Attaque simultanée de deux groupes.",
       ],
@@ -160,7 +160,7 @@ export const zoneQuartierDuSavoir = {
         "Plateforme circulaire au toit, marbre clair, ouverte sur le ciel violet. Au centre, le vortex : puits horizontal d'énergie. Au cœur, la Larme.",
       details: [
         "Ambiance : bourdonnement profond, vent sur le toit, parfum de lavande à saturation.",
-        "Tests : Combat en 3 phases (Archimage Épuisé / Larme se Fissure / Épuisement). Chaque vérité sur Sealine fissure la Larme.",
+        "Tests : Combat en 3 phases (Archimage épuisé / Larme se fissure / Épuisement). Chaque vérité sur Sealine fissure la Larme.",
         "Indices : Sealine peut apparaître. La conversation à trois est entre deux personnes qui se connaissent et se sont perdues.",
         "Usage : apothéose, conversation à trois, le prix.",
       ],

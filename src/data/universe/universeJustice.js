@@ -101,7 +101,7 @@ export const universeJustice = {
     {
       nom: "Cour des Échevins",
       competence:
-        "Un échevin, assisté d’un greffier et parfois de deux notables du quartier, entend les affaires ordinaires : tapage, vol mineur, dettes, violences simples, dégradations, conflits de voisinage ect...",
+        "Un échevin, assisté d’un greffier et parfois de deux notables du quartier, entend les affaires ordinaires : tapage, vol mineur, dettes, violences simples, dégradations, conflits de voisinage etc.",
       notes: [
         "Les audiences sont publiques, brèves et souvent réglées le jour même sur la place, dans une halle ou dans une salle de l’Hôtel de Ville.",
         "L’échevin tient compte du rang de l’accusé, de sa réputation, de ses antécédents et de la qualité des personnes qui acceptent de répondre de lui.",

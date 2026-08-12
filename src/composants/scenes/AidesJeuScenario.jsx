@@ -137,7 +137,7 @@ function AidesJeuScenario({ aides }) {
                 {pnj.info_cle}
               </p>
               <p className="text-[11px] text-violet-300">
-                {pnj.dd_clés}
+                {pnj.difficultes_cles}
               </p>
             </div>
           ))}

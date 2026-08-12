@@ -58,7 +58,7 @@ export const etatCampagneInitial = {
       scenarioId: "scenario2",
       sceneId: "s2_reserve_interdite",
       statutInitial: "obtenu",
-      resume: "Thade travaille les seuils et ancrages depuis huit ans.",
+      resume: "Thade travaille les seuils et ancrages depuis une trentaine d'années.",
     },
     {
       id: "schema_larme",
@@ -74,7 +74,7 @@ export const etatCampagneInitial = {
       scenarioId: "scenario2",
       sceneId: "s2_laboratoire_verre",
       statutInitial: "obtenu",
-      resume: "Huit ans de lettres à Sealine ; vérités utilisables au sommet.",
+      resume: "Une trentaine d'années de lettres à Sealine ; vérités utilisables au sommet.",
     },
     {
       id: "sealine_lucide",

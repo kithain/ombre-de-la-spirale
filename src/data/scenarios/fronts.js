@@ -60,7 +60,7 @@ export const frontsData = [
   // ─────────────────────────────────────────────────────────────
   // FRONT 1 — LE PLAN DE THADE
   // Thade Coren détourne l'Université, la Larme de Vael et la Tour
-  // pour rouvrir le seuil et ramener Sealine. Absorbe l'ancien
+  // pour rouvrir le seuil et contrôler la Spirale. Absorbe l'ancien
   // Front 1 (Thade, Larme, Loyalistes) + l'Université (Olane).
   // ─────────────────────────────────────────────────────────────
   {
@@ -71,10 +71,10 @@ export const frontsData = [
     couleur: "text-violet-300 border-violet-900 bg-violet-950/30",
 
     enjeu:
-      "Thade Coren utilise l'autorité de l'Université, les fragments de la Larme de Vael et les dispositifs de la Tour Arcanique pour forcer une ouverture vers la Spirale. S'il réussit, il ramènera peut-être Sealine, mais transformera Valombre en ancre d'un passage que nul ne saura refermer.",
+      "Thade Coren utilise l'autorité de l'Université, les fragments de la Larme de Vael et les dispositifs de la Tour Arcanique pour forcer une ouverture vers la Spirale. S'il réussit, il croira avoir prouvé que le pouvoir aperçu à Nyx peut être contrôlé, mais transformera Valombre en ancre d'un passage que nul ne saura refermer.",
 
     description:
-      "Depuis huit ans, Thade rassemble les fragments de la Larme, étudie les faiblesses du seuil et instrumentalise les survivants de Nyx. Son plan ne dépend plus seulement de l'affaiblissement des tombes : la Tour devient une machine capable de concentrer artificiellement les flux de la Spirale. Pour l'arrêter, il faut briser son dispositif, retourner ses soutiens ou l'amener à renoncer lui-même au retour de Sealine.",
+      "Depuis une trentaine d'années, Thade rassemble les connaissances, les traces de la Larme et les faiblesses du seuil. Depuis peu, il transforme cette obsession en opération ouverte : profanations, détournement des flux et instrumentalisation des survivants de Nyx. Son plan ne dépend plus seulement de l'affaiblissement des tombes : la Tour devient une machine capable de concentrer artificiellement les flux de la Spirale. Pour l'arrêter, il faut briser son dispositif, retourner ses soutiens ou l'amener à renoncer lui-même à l'idée qu'il peut maîtriser ce qu'il a seulement survécu.",
 
     questionDramatique:
       "Les PJ peuvent-ils révéler le vrai projet de Thade avant que l'Université ne devienne son rempart ?",
@@ -227,7 +227,7 @@ export const frontsData = [
     couleur: "text-red-300 border-red-900 bg-red-950/30",
 
     enjeu:
-      "Les cercles de Nyx, la pression caldrisienne et le Champion de la Bannière Pure ne forment pas un ennemi unique mais un tissu de factions aux motivations contradictoires qui se renforcent mutuellement par la peur. Si aucune main ne les sépare, elles vont se détruire mutuellement — ou déclencher une répression aveugle qui frappera aussi les innocents.",
+      "Les cercles de Nyx, la pression caldrisienne et le Champion de la Bannière Pure forment un tissu de factions aux motivations contradictoires qui se renforcent mutuellement par la peur. Si aucune main ne les sépare, elles vont se détruire mutuellement — ou déclencher une répression aveugle qui frappera aussi les innocents.",
 
     description:
       "Depuis la catastrophe qui a dispersé l'Ordre de Nyx originel, le nom est devenu un abri pour tous ceux que les institutions n'accueillent pas : Ursula soigne les pauvres dans sa cave, Elian Voss poursuit son protocole S-01 sur des patients non consentants, Edran Morn rassemble des familles endeuillées autour de pratiques de plus en plus radicales. Parallèlement, l'émissaire Maelric représente un gouvernement qui voit les routes commerciales se dégrader et une cité incapable d'expliquer ce qui se passe sous ses rues. Le Champion de la Bannière Pure, lui, est venu avec une conviction : Valombre a failli à son rôle de verrou. Ces factions ne se concertent pas, mais elles se renforcent mutuellement par la peur.",
@@ -369,14 +369,14 @@ export const frontsData = [
         nom: "Le Syndicat des Brumes",
         categorie: "L'Institution",
         nature:
-          "Réseau criminel qui vend des services à tous les cercles clandestins, rendant chaque escalade un peu plus facile.",
+          "Réseau criminel qui monétise la crise : faux papiers, cachettes, passages, armes, réactifs. Chaque service devient une dette.",
         objectifFinal:
-          "Le Syndicat accumule assez de preuves compromettantes pour devenir intouchable politiquement.",
+          "Le Syndicat accumule assez de preuves compromettantes et de dettes pour devenir le pouvoir réel de la Vieille Ville.",
         idsPnj: ["le_collecteur", "contremaite_egouts", "hommes_main_pegre"],
         noteMJ:
-          "Le Syndicat est un facilitateur, pas un moteur. Il crée des scènes (contrebande, chantage, égouts) mais n'a pas d'horloge propre. Il profite du chaos généré par les autres factions.",
-        conséquenceRemplissage: "Le Syndicat devient intouchable. Ses reconnaissances de dette lui assurent une protection permanente.",
-        annulation: "Difficile : détruire les copies compromettantes ou retourner suffisamment de débiteurs.",
+          "Le Syndicat monétise la crise. Il vend aux deux camps et cherche à rendre chaque client dépendant. Le Collecteur facture, Brek contrôle les passages, les hommes de main matérialisent la peur. Avance avec l'horloge principale : chaque escalation de la crise augmente la demande et les prix.",
+        conséquenceRemplissage: "Le Syndicat devient intouchable. Ses reconnaissances de dette lui assurent une protection permanente. Le Collecteur possède des noms, des routes et des secrets sur tous les acteurs de la crise.",
+        annulation: "Difficile : détruire les copies compromettantes, retourner suffisamment de débiteurs, ou convaincre Brek que le réseau de Thade le détruira aussi.",
       },
 
       // ── Menace secondaire : Maelric, pas d'horloge ──
@@ -713,7 +713,7 @@ export const couchesCampagneData = [
   // COUCHE 1 — LE DÉPHASAGE
   // Valombre n'est plus tout à fait dans le monde matériel.
   // La Spirale a déplacé l'ancrage de la cité entière depuis
-  // l'explosion de Nyx. De l'intérieur, tout semble normal.
+  // l'explosion de Nyx, mais devenu visible avec la crise actuelle. De l'intérieur, tout semble normal.
   // De l'extérieur, la cité devient impossible à atteindre.
   // ─────────────────────────────────────────────────────────────
   {
@@ -724,10 +724,10 @@ export const couchesCampagneData = [
   couleur: "text-indigo-300 border-indigo-900 bg-indigo-950/30",
 
   enjeu:
-    "Valombre n'attend pas d'être piégée : elle l'est déjà. Depuis l'explosion magique de Nyx, la Spirale n'a pas envahi la cité — elle a légèrement déplacé son ancrage. La cité, les mines, les routes proches et une partie des cols sont prises dans un voile de continuité. De l'intérieur, tout semble encore fonctionner. De l'extérieur, Valombre devient difficile à atteindre, puis presque impossible. Le déphasage ne coupe pas brutalement la ville : il remplace les ruptures par des explications plausibles. Si les PJ ne comprennent pas que la cité est déjà déconnectée du monde, toutes leurs décisions stratégiques reposent sur une carte qui ment.",
+    "Valombre n'attend pas d'être piégée : elle l'est déjà. Depuis l'explosion magique de Nyx, la Spirale n'a pas envahi la cité — elle a fissuré son ancrage. Cette fêlure est restée discrète pendant des décennies, puis les profanations récentes et l'alimentation de la Larme l'ont rendue visible. La cité, les mines, les routes proches et une partie des cols sont prises dans un voile de continuité. De l'intérieur, tout semble encore fonctionner. De l'extérieur, Valombre devient difficile à atteindre, puis presque impossible. Le déphasage ne coupe pas brutalement la ville : il remplace les ruptures par des explications plausibles. Si les PJ ne comprennent pas que la cité est déjà déconnectée du monde, toutes leurs décisions stratégiques reposent sur une carte qui ment.",
 
   description:
-    "Le déphasage est le résultat indirect de la catastrophe de Nyx. L'explosion n'a pas seulement brisé l'Ordre et dispersé Sealine au-delà du seuil : elle a légèrement déplacé l'ancrage planaire de Valombre entière. La Spirale n'a pas envahi — elle a glissé. La cité est encore là, ses rues, ses mines, ses tours, ses entrepôts. Mais elle n'est plus tout à fait raccordée au reste du monde. Ce n'est pas une bulle visible. C'est pire : le monde continue de mentir à ceux qui vivent dedans. Un marchand reporte son départ à cause de la brume, d'un contrôle de Caldris, d'un pont abîmé, d'une taxe. Un messager revient en jurant qu'il a roulé toute la journée, alors qu'il n'a fait qu'une boucle autour des mêmes bornes. Une lettre arrive, mais elle reprend des formules anciennes, des nouvelles vagues, des signatures attendues. Les gens ne voient pas que plus personne n'entre ou ne sort. Ils voient que les routes sont difficiles en ce moment.",
+    "Le déphasage est le résultat indirect de la catastrophe de Nyx et de la crise actuelle. L'explosion a brisé l'Ordre, dispersé Sealine au-delà du seuil et fissuré l'ancrage planaire de Valombre entière ; les prélèvements récents et la Larme ont transformé cette faiblesse ancienne en glissement visible. La Spirale n'a pas envahi — elle a glissé. La cité est encore là, ses rues, ses mines, ses tours, ses entrepôts. Mais elle n'est plus tout à fait raccordée au reste du monde. Ce n'est pas une bulle visible. C'est pire : le monde continue de mentir à ceux qui vivent dedans. Un marchand reporte son départ à cause de la brume, d'un contrôle de Caldris, d'un pont abîmé, d'une taxe. Un messager revient en jurant qu'il a roulé toute la journée, alors qu'il n'a fait qu'une boucle autour des mêmes bornes. Une lettre arrive, mais elle reprend des formules anciennes, des nouvelles vagues, des signatures attendues. Les gens ne voient pas que plus personne n'entre ou ne sort. Ils voient que les routes sont difficiles en ce moment.",
 
   questionDramatique:
     "Les PJ peuvent-ils comprendre que Valombre est déjà déconnectée du monde avant que toutes leurs décisions ne reposent sur une carte qui ment ?",
@@ -781,7 +781,7 @@ export const couchesCampagneData = [
       idsPnj: ["creature_spirale_cooptee"],
       avancement: {
         type: "B",
-        declencheurPrincipal: "Le déphasage progresse seul, hors-champ, depuis l'explosion de Nyx.",
+        declencheurPrincipal: "Le déphasage progresse seul, hors-champ, depuis l'aggravation récente de la fêlure ouverte par Nyx.",
         declencheurSecondaire: "L'ouverture du seuil par Thade ou la rupture du sceau accélèrent le déphasage.",
         avanceHorsChamp: true,
         avanceParEnquete: false,
@@ -823,9 +823,9 @@ export const couchesCampagneData = [
       nature:
         "Processus de découverte qui confronte les PJ à l'impossibilité de quitter Valombre et à la vérité que la cité est déjà piégée — non pas par un siège visible, mais par un déphasage que personne n'a remarqué.",
       objectifFinal:
-        "Les PJ comprennent que Valombre n'attend pas d'être piégée : elle l'est déjà. Cette révélation transforme toutes leurs hypothèses stratégiques — les routes ne sont pas difficiles, elles sont coupées ; le commerce ne ralentit pas, il n'existe plus ; Caldris ne menace pas, elle observe un phénomène qu'elle ne peut pas expliquer publiquement.",
+        "Les PJ comprennent que Valombre est déjà piégée. Cette révélation transforme toutes leurs hypothèses stratégiques — les routes sont coupées ; le commerce n'existe plus ; Caldris observe un phénomène qu'elle ne peut pas expliquer publiquement.",
       noteMJ:
-        "Cette horloge est un track de découverte, pas une menace active. Elle n'avance jamais par elle-même. Le MJ coche un segment uniquement quand les PJ investiguent les anomalies du déphasage et obtiennent une information correspondant à l'étape. Les PNJ listés (Maelric, Olane, Hessa) sont des sources d'information, pas des moteurs.",
+        "Cette horloge est un track de découverte, pas une menace active. Elle n'avance jamais par elle-même. Le MJ coche un segment uniquement quand les PJ investiguent les anomalies du déphasage et obtiennent une information correspondant à l'étape. Les PNJ listés (Maelric, Olane, Hessa) sont des sources d'information.",
       idsPnj: ["envoye_caldris", "maera_olane", "hessa_brunefer"],
       avancement: {
         type: "C",
@@ -867,11 +867,141 @@ export const couchesCampagneData = [
           {
             titre: "Vérité finale",
             indice:
-              "La cité n'attend pas d'être piégée : elle l'est déjà. Le déphasage n'est pas une menace future mais un fait accompli depuis l'explosion de Nyx. Toutes les explications plausibles — brume, taxes, routes instables, contrôles — étaient le mensonge du monde, pas la vérité. Les PJ doivent désormais décider quoi faire d'une cité qui ne sait pas qu'elle a déjà quitté le monde.",
+              "La cité est déjà piégée. Le déphasage est l'aboutissement visible d'une fêlure ouverte par Nyx et aggravée par la crise actuelle. Toutes les explications plausibles — brume, taxes, routes instables, contrôles — étaient le mensonge du monde. Les PJ doivent désormais décider quoi faire d'une cité qui ne sait pas qu'elle a déjà quitté le monde.",
           },
         ],
       },
     },
   ],
-},
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // FRONT 5 — LE SYNDICAT SERRE LA VILLE
+  // Front transversal, présent surtout en scénarios 1 et 2.
+  // Le Syndicat n'est pas au service du Mal cosmique ; il est au
+  // service de ses dettes, de ses routes et de son impunité.
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: "front_syndicat_serre_la_ville",
+    nom: "Le Syndicat serre la ville",
+    type: "Front criminel transversal",
+    icone: Pickaxe,
+    couleur: "text-gray-300 border-gray-700 bg-gray-950/40",
+
+    enjeu:
+      "Le Syndicat des Brumes contrôle plusieurs passages des égouts, des caves de la Vieille Ville et des routes clandestines vers les Terrasses. La crise des tombes, le déphasage et la peur publique font exploser la demande : faux papiers, cachettes, passages, armes, réactifs, protection. Le Syndicat monétise chaque besoin. Chaque service accordé devient une dette qu'il finit toujours par réclamer.",
+
+    description:
+      "Le Syndicat est une machine à dettes. Le Collecteur vend des informations et des arrangements au prix qui enferme ses clients. Brek contrôle les égouts comme un péage : on passe en payant. Les hommes de main matérialisent la peur dans les rues de la Vieille Ville. Le Syndicat vend aux deux camps — à Thade comme à la Résistance — et chaque transaction renforce son emprise. Si les institutions s'effondrent, le Syndicat devient le pouvoir réel de la Vieille Ville sans avoir besoin de prendre le Conseil.",
+
+    questionDramatique:
+      "Les PJ peuvent-ils utiliser les routes et les informations du Syndicat sans devenir ses débiteurs — ou sans laisser la Vieille Ville tomber sous son contrôle ?",
+
+    forcesActives: [
+      {
+        nom: "Le Collecteur",
+        idsPnj: ["le_collecteur"],
+        role: "Créancier poli. Ne ment presque jamais, ne menace presque jamais directement. Donne l'indice demandé, puis révèle son prix. Vend la même information à deux camps différents avec quelques heures de décalage.",
+      },
+      {
+        nom: "Brek, le Tuyau",
+        idsPnj: ["contremaite_egouts"],
+        role: "Verrou physique des égouts. Contrôle les vannes, les grilles et les cargaisons. Bloque les poursuites, exige des péages, fait jeter les preuves compromettantes dans un puits si on approche.",
+      },
+      {
+        nom: "Les hommes de main",
+        idsPnj: ["hommes_main_pegre"],
+        role: "Visage de rue du Syndicat. Récupèrent les dettes en pleine rue, cassent les doigts d'un débiteur, escortent les cargaisons, observent les PJ puis disparaissent. Des employés.",
+      },
+    ],
+
+    signesVisibles: [
+      "Les passeurs des égouts doublent leurs prix sans explication.",
+      "Des hommes de main du Syndicat récupèrent des dettes en pleine rue, devant témoins.",
+      "Des commerçants de la Vieille Ville ferment tôt, paient « une protection » ou disparaissent.",
+      "Brek impose des péages sur les passages souterrains vers les Terrasses.",
+      "Le Collecteur propose des informations utiles à des prix qui ne sont pas en argent.",
+      "Des cargaisons marquées d'un faux sceau marchand circulent la nuit dans les égouts.",
+    ],
+
+    scenesJouables: {
+      enquete: [
+        "Suivre les caisses d'os dans les égouts et découvrir que le Syndicat les transporte sans savoir ce qu'elles contiennent.",
+        "Négocier avec le Collecteur pour obtenir un registre qui relie les cargaisons de Thade, les marchands du Champion et les faux papiers de Nyx.",
+      ],
+      roleplay: [
+        "Intervenir pendant un recouvrement de dette au Pic Brisé : sauver le débiteur, payer, ou observer.",
+        "Négocier un passage avec Brek pendant que les PJ suivent une piste urgente : payer, menacer, ou convaincre.",
+      ],
+      action: [
+        "Forcer un passage bloqué par Brek pendant que le sceau cède.",
+        "Sauver un témoin ou un débiteur que Brek veut faire disparaître.",
+      ],
+    },
+
+    leviersPJ: [
+      "Payer : accès rapide aux routes et aux informations, mais dette envers le Syndicat.",
+      "Menacer : accès immédiat, mais représailles plus tard (route fermée, cargo détruit, nom vendu à un rival).",
+      "Dénoncer : appui du Conseil ou de la Garde, mais perte des routes clandestines et des informateurs.",
+      "Négocier : coût moral — service illégal, protection d'un criminel, ou silence sur une exaction.",
+      "Diviser : jouer le Collecteur contre Brek. Brek est pragmatique et veut éviter les ennuis ; le Collecteur veut garder les contrats rentables.",
+    ],
+
+    menaces: [
+      {
+        id: "menace_syndicat_horloge",
+        nom: "Le Syndicat serre la ville",
+        categorie: "L'Institution",
+        nature:
+          "Le Syndicat transforme chaque besoin des habitants et des factions en dette, en dépendance et en impunité.",
+        objectifFinal:
+          "Le Syndicat devient le pouvoir réel de la Vieille Ville. Le Collecteur possède des noms, des routes et des secrets sur tous les acteurs de la crise. Les institutions ne peuvent plus agir sans son accord tacite.",
+        idsPnj: ["le_collecteur", "contremaite_egouts", "hommes_main_pegre"],
+        avancement: {
+          type: "A",
+          declencheurPrincipal: "Le Syndicat exploite une escalade de la crise (émeute, loi martiale, déphasage visible, profanation découverte) pour augmenter ses prix, étendre son contrôle ou punir un refus.",
+          declencheurSecondaire: "Les PJ utilisent une route clandestine sans payer, demandent une information au Collecteur, ou humilient Brek.",
+          avanceHorsChamp: true,
+          avanceParEnquete: false,
+        },
+        conséquenceRemplissage: "Le Syndicat devient intouchable. Ses reconnaissances de dette lui assurent une protection permanente. Le Collecteur possède des noms, des routes et des secrets sur tous les acteurs de la crise. La Vieille Ville est à lui.",
+        annulation: "Difficile : détruire les copies compromettantes, retourner suffisamment de débiteurs, convaincre Brek que le réseau de Thade le détruira aussi, ou obtenir une intervention du Conseil avant l'étape 5.",
+        horloge: {
+          taille: 6,
+          etapes: [
+            {
+              titre: "Les passeurs doublent leurs prix",
+              indice:
+                "Les passeurs des égouts augmentent leurs tarifs. Un fugitif qui coûtait cinq pièces en coûte dix. Un passage vers les Terrasses passe de quinze à trente. Personne ne se plaint officiellement — on se plaint au Syndicat, pas de lui.",
+            },
+            {
+              titre: "Brek impose des péages dans les égouts",
+              indice:
+                "Brek installe des postes de contrôle aux vannes principales. On ne passe plus sans payer ou sans négocier. Les PJ qui utilisent les égouts rencontrent ses hommes. Le message est simple : ces tunnels appartiennent à quelqu'un.",
+            },
+            {
+              titre: "Les hommes de main récupèrent des dettes en pleine rue",
+              indice:
+                "Des hommes de main du Syndicat opèrent au grand jour dans la Vieille Ville. Ils saisissent des biens, cassent les doigts d'un débiteur, traînent un malade hors de son lit parce que son faux papier n'a pas été payé. La garde ne voit rien — ou fait semblant.",
+            },
+            {
+              titre: "Le Collecteur vend une route ou un nom à un camp adverse",
+              indice:
+                "Le Collecteur vend la même information à deux camps. Il donne aux PJ l'horaire de passage des caisses d'os — et donne le même horaire à un agent de Thade. Ou il vend le nom d'un refuge de la Résistance à la garde pour solder une vieille dette. Il facture.",
+            },
+            {
+              titre: "Le Syndicat enlève un témoin ou un débiteur utile aux PJ",
+              indice:
+                "Quelqu'un que les PJ protègent — un témoin, un débiteur sauvé, un malade soigné par Ursula — disparaît. Le Collecteur ne le nie pas. Il dit : « Il doit de l'argent. Ou des informations. Ou les deux. Vous voulez le récupérer ? Vous savez comment ça marche. »",
+            },
+            {
+              titre: "Le Syndicat devient le pouvoir réel de la Vieille Ville",
+              indice:
+                "Pendant que les institutions s'effondrent, le Syndicat est le seul réseau intact. Les commerçants paient sa protection. Les passages passent par lui. Les dettes lui obéissent. Le Collecteur n'a pas besoin du Conseil. La Vieille Ville est à lui, et le Conseil ne peut plus rien y faire sans négocier.",
+            },
+          ],
+        },
+      },
+    ],
+  },
 ];

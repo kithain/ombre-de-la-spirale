@@ -5,17 +5,17 @@ export const pnjUniversiteData = [
     "id": "thade_coren",
     "usageNarratif": "scene",
     "nom": "Thade Coren, Archimage de l'Université Arcanique",
-    "role": "Antagoniste principal. Archimage tragique et héros public dont la gloire repose sur un mensonge. Ancien membre de l'Ordre de Nyx, il a survécu à la catastrophe qui a tué Sealine et brisé l'Ordre. Devenu Archimage de l'Université, il confisque la Larme, la Spirale, les archives et le récit public pour rouvrir le seuil et ramener Sealine.",
+    "role": "Archimage de l'Université et principal responsable de la crise. Il cache depuis des années la vérité sur Nyx, Sealine et la Spirale, et veut rouvrir le seuil pour en prendre le contrôle.",
     "categorie": "ennemis",
-    "image": "/images/PNJ/pnj_thade_coren.jpg",
+    "image": "/images/PNJ/Thade.png",
     "antagoniste": true,
     "interpretation": {
-      "accroche": "Quand les PJ le rencontrent pour la première fois, Thade les reçoit dans un lieu impeccablement ordonné, avec la courtoisie d'un homme qui sait déjà ce qu'il va leur demander.",
-      "objectif": "Ramener Sealine en concentrant sur lui seul la Larme, la Spirale, les prisonniers, les archives et le récit public. Coût : Valombre entière et son âme d'archimage.",
-      "attitude": "Poli, précis, jamais cruel par plaisir. L'atrocité est dans l'efficacité, pas dans le ton. Parle comme un homme qui a déjà pleuré tout ce qu'il pouvait pleurer."
+      "accroche": "Il reçoit les PJ assis derrière un bureau impeccable, les mains posées à plat, sans hausser la voix.",
+      "objectif": "Rassembler la Larme, les archives et les prisonniers nécessaires pour ouvrir le seuil selon ses propres conditions.",
+      "attitude": "Poli, calme et très sûr de lui. Il ne menace presque jamais directement : il explique pourquoi son choix serait, selon lui, le seul raisonnable."
     },
     "disposition": "neutre",
-    "impulsion": "Thésauriser savoir, pouvoir et douleur, puis rationaliser l'horreur.",
+    "impulsion": "Contrôler la Spirale avant qu'elle ne lui échappe une seconde fois.",
     "degats": {
       "valeur": 3,
       "description": "Magie de contrôle, dissection à distance, glyphes préparés",
@@ -53,7 +53,7 @@ export const pnjUniversiteData = [
       "Isoler une preuve ou un témoin derrière une procédure",
       "Offrir aux PJ une vérité utile mais incomplète"
     ],
-    "description": "Thade incarne le pouvoir savant devenu confiscation. Il reste poli, mesuré et presque raisonnable, mais chaque décision révèle un homme prêt à sacrifier Valombre pour imposer son récit et retrouver Sealine.",
+    "description": "Homme mûr aux traits sévères, vêtu d'une robe noire richement brodée. Ses cheveux sombres sont tirés en arrière et son visage reste presque immobile lorsqu'il parle. Il travaille dans des pièces ordonnées, éclairées par des bougies et couvertes de livres, de sceaux et d'instruments arcaniques.",
     "notes": "",
     "race": "humain",
     "faction": "Université"
@@ -63,16 +63,16 @@ export const pnjUniversiteData = [
     "id": "jaren_velt",
     "usageNarratif": "scene",
     "nom": "Jaren Velt, étudiant en arcanes",
-    "role": "Outil jetable de Thade. Pas un pillard : un opérateur suivant un protocole qu'il ne comprend pas.",
+    "role": "Étudiant de l'Université utilisé par Thade pour des missions dangereuses. Il obéit parce qu'il veut être reconnu et parce qu'il a peur de perdre sa place.",
     "categorie": "ennemis",
-    "image": "/images/PNJ/pnj_jaren_velt.jpg",
+    "image": "/images/PNJ/Jaren Velt.png",
     "interpretation": {
-      "accroche": "Quand les PJ le rencontrent pour la première fois, Jaren serre trop fort ses notes ou son matériel, comme si l'ordre écrit pouvait encore le protéger.",
-      "objectif": "Compléter les prélèvements T-03 à T-07 et livrer le matériel à l'Université.",
-      "attitude": "Terrifié et désespéré, obéit par peur et par besoin de validation."
+      "accroche": "Il serre ses livres contre lui et vérifie plusieurs fois ses notes avant de répondre.",
+      "objectif": "Rapporter à Thade le matériel demandé sans être accusé d'échec ou de trahison.",
+      "attitude": "Nerveux, susceptible et facilement paniqué. Il essaie de parler comme un vrai mage, mais sa peur le trahit vite."
     },
     "disposition": "hostile",
-    "impulsion": "Obéir pour être validé, puis paniquer quand le protocole mord.",
+    "impulsion": "Obéir à Thade pour prouver qu'il mérite sa place à l'Université.",
     "degats": {
       "valeur": 1,
       "description": "Dague, sort mineur, piège académique",
@@ -107,7 +107,7 @@ export const pnjUniversiteData = [
       "Déclencher une sécurité imposée par Thade",
       "Supplier sans comprendre ce qu'il sert"
     ],
-    "description": "Jaren est un exécutant de Thade plus qu'un véritable adversaire. Sa présence montre comment l'Université transforme la peur, l'ambition et l'obéissance en outils jetables.",
+    "description": "Jeune homme maigre, les cheveux noirs en désordre, le regard cerné par le manque de sommeil. Il porte une robe d'étudiant sombre et transporte toujours des livres, des feuilles ou une sacoche trop remplie. Ses doigts sont tachés d'encre.",
     "notes": "",
     "race": "humain",
     "faction": "Université / Renégats de Thade",
@@ -118,17 +118,17 @@ export const pnjUniversiteData = [
     "id": "etudiants_charmes",
     "usageNarratif": "scene",
     "nom": "Étudiants de l'Université",
-    "role": "Obstacle moral. Les PJ peuvent-ils se résoudre à frapper des victimes ?",
+    "role": "Étudiants placés sous charme pour défendre la Tour. Ils bloquent les PJ sans être responsables de ce qu'ils font.",
     "categorie": "ennemis",
-    "image": "/images/PNJ/pnj_etudiants_charmes.jpg",
+    "image": "/images/PNJ/Etudiante de la Tour.png",
     "antagoniste": false,
     "interpretation": {
-      "accroche": "Quand les PJ les rencontrent pour la première fois, les étudiants forment un obstacle tremblant, les yeux humides et les gestes mécaniques.",
-      "objectif": "Aucun propre. Exécutent les ordres du charme.",
-      "attitude": "Mécaniques, regard vitreux. Certains pleurent."
+      "accroche": "Ils avancent en silence, les yeux humides, les mains crispées sur des livres, des bâtons ou de petits focus.",
+      "objectif": "Empêcher les intrus de passer tant que le charme les tient.",
+      "attitude": "Lents, mécaniques et absents. Certains pleurent ou murmurent des excuses sans pouvoir s'arrêter."
     },
     "disposition": "neutre",
-    "impulsion": "Bloquer les intrus sous contrainte en pleurant parfois.",
+    "impulsion": "Bloquer le passage parce que la magie les y force.",
     "degats": {
       "valeur": 1,
       "description": "Sorts mineurs, bâtons, mur de corps charmés",
@@ -163,7 +163,7 @@ export const pnjUniversiteData = [
       "Laisser une victime murmurer une demande d'aide",
       "Occuper un passage clé"
     ],
-    "description": "Les étudiants charmés sont un obstacle moral avant d'être une menace tactique. Ils forcent les PJ à choisir entre avancer vite, protéger des victimes et limiter les dégâts dans la Tour.",
+    "description": "Groupe de jeunes mages en robes d'étude bleu nuit ou noires. Ils tiennent des livres, des baguettes, des bâtons de cours ou des sacoches d'alchimie. Leurs gestes sont raides et mal coordonnés, comme s'ils luttaient contre leur propre corps.",
     "notes": "",
     "race": "humains",
     "faction": "Université"
@@ -173,17 +173,17 @@ export const pnjUniversiteData = [
     "id": "gardes_pieges",
     "usageNarratif": "scene",
     "nom": "Gardes de la Tour",
-    "role": "Protéger et servir.",
+    "role": "Gardes de l'Université chargés de tenir les portes de la Tour. Ils obéissent aux ordres, mais certains commencent à comprendre que quelque chose ne va pas.",
     "categorie": "ennemis",
-    "image": "/images/PNJ/pnj_gardes_pieges.jpg",
+    "image": "/images/PNJ/Gardes de la tour.png",
     "antagoniste": false,
     "interpretation": {
-      "accroche": "Quand les PJ les rencontrent pour la première fois, les gardes somment d'abord les intrus de reculer, comme s'ils espéraient encore ne pas devoir frapper.",
-      "objectif": "Obéir par contrainte, pas par choix. Certains espèrent être vaincus.",
-      "attitude": "Disciplinés mais hésitants. Avertissent avant de frapper."
+      "accroche": "Ils lèvent leurs hallebardes et ordonnent aux PJ de reculer avant d'engager le combat.",
+      "objectif": "Empêcher l'accès aux étages interdits sans provoquer un massacre inutile.",
+      "attitude": "Disciplinés et tendus. Ils avertissent avant de frapper et peuvent douter devant une preuve claire."
     },
     "disposition": "neutre",
-    "impulsion": "Obéir jusqu'à ce qu'une preuve rende l'ordre impossible.",
+    "impulsion": "Tenir la porte tant que l'ordre semble encore légitime.",
     "degats": {
       "valeur": 2,
       "description": "Mur de hallebardes, discipline, sommations",
@@ -219,7 +219,7 @@ export const pnjUniversiteData = [
       "Fermer une porte au nom d'un ordre légal",
       "Douter devant une preuve précise"
     ],
-    "description": "Les gardes de la Tour sont des défenseurs contraints ou manipulés. Leur discipline rend la progression dangereuse, mais leurs hésitations donnent aux PJ des occasions de les retourner ou de les épargner.",
+    "description": "Soldats en armure sombre, casque fermé ou relevé, hallebarde en main. Ils se tiennent en formation dans les couloirs de pierre de la Tour. Leurs boucliers portent les couleurs de l'Université, mais plusieurs ont le regard inquiet derrière la discipline.",
     "notes": "",
     "race": "humains",
     "faction": "Garde de la Tour"
@@ -229,14 +229,14 @@ export const pnjUniversiteData = [
     "id": "magi_tuteur_loyal",
     "usageNarratif": "scene",
     "nom": "Maître Arcaniste Loyaliste",
-    "role": "Professeur resté fidèle à la Guilde, mais pas à Thade.",
-    "image": "/images/PNJ/pnj_magi_tuteur_loyal.jpg",
+    "role": "Professeur chargé de défendre la Tour. Il s'oppose d'abord aux PJ, mais peut les aider si la trahison de Thade devient évidente.",
+    "image": "/images/PNJ/maitre arcaniste.png",
     "interpretation": {
-      "accroche": "Quand les PJ le rencontrent pour la première fois, le maître arcaniste parle au nom de l'Université avant de parler en son propre nom.",
-      "objectif": "Protéger la Tour et la Guilde des Mages contre les intrus",
-      "attitude": "Arrogant et méfiant, déclenche ses défenses sans sommation"
+      "accroche": "Il plante son bâton devant lui et exige une explication officielle avant toute discussion.",
+      "objectif": "Protéger la Tour, ses élèves et les archives de l'Université.",
+      "attitude": "Autoritaire et méfiant. Il devient moins hostile si les PJ apportent une preuve qu'il peut vérifier."
     },
-    "impulsion": "Protéger l'institution avant de comprendre qui la parasite.",
+    "impulsion": "Défendre l'Université, même contre ceux qui prétendent la sauver.",
     "degats": {
       "valeur": 3,
       "description": "Glyphes, contre-sorts, projectiles arcaniques",
@@ -272,7 +272,7 @@ export const pnjUniversiteData = [
       "Exiger une preuve formelle au milieu du danger",
       "Changer de camp si l'institution est clairement trahie"
     ],
-    "description": "Le maître arcaniste loyaliste défend l'Université avant de comprendre qu'elle a été parasitée. Il peut d'abord s'opposer aux PJ, puis devenir utile si la trahison de Thade devient indiscutable.",
+    "description": "Homme large et imposant, en robe universitaire sombre bordée de violet. Il porte une courte barbe grise, un regard dur et un bâton marqué d'un cercle arcanique lumineux. Sa tenue est impeccable, presque militaire.",
     "notes": "",
     "race": "humain",
     "faction": "Université Arcanique",
@@ -285,17 +285,17 @@ export const pnjUniversiteData = [
     "id": "maera_olane",
     "usageNarratif": "scene",
     "nom": "Maera Olane, Magistère de l'Université",
-    "role": "Enseignante et chercheuse de l'Université qui, la première, a relevé les anomalies entourant les travaux et les réquisitions de Thade. Compétente et obstinée, elle se heurte à une institution qui préfère traiter ses soupçons comme une rivalité personnelle plutôt que d'enquêter sur son membre le plus prestigieux.",
+    "role": "Professeure de l'Université qui enquête sur les irrégularités de Thade. Elle possède des preuves, mais manque d'appuis pour les faire entendre.",
     "categorie": "allies",
-    "image": "/images/PNJ/pnj_maera_olane.jpg",
+    "image": "/images/PNJ/Maera Olane.png",
     "antagoniste": false,
     "interpretation": {
-      "accroche": "Pose des questions précises et note les réponses, persuadée que les chiffres finiront par parler.",
-      "objectif": "Faire reconnaître officiellement les irrégularités de Thade avant que les preuves ne soient enterrées par l'Université.",
-      "attitude": "Rigoureuse, un peu cassante, isolée mais tenace. Méfiante après avoir vu ses alertes étouffées ; reconnaissante envers quiconque la prend au sérieux."
+      "accroche": "Elle pose une question, note la réponse, puis demande aussitôt une date, un nom ou une preuve.",
+      "objectif": "Faire reconnaître officiellement les preuves contre Thade avant que l'Université ne les enterre.",
+      "attitude": "Rigoureuse, fatiguée et parfois cassante. Elle fait confiance aux faits plus qu'aux promesses."
     },
     "disposition": "amical",
-    "impulsion": "Faire éclater une vérité documentée malgré une institution qui veut l'enterrer.",
+    "impulsion": "Faire sortir la vérité des registres avant qu'on ne les confisque.",
     "degats": {
       "valeur": 1,
       "description": "Sorts mineurs d'analyse et de protection",
@@ -332,7 +332,7 @@ export const pnjUniversiteData = [
       "Demander une protection ou un relais extérieur à l'Université",
       "Pointer l'incohérence d'une version officielle trop lisse"
     ],
-    "description": "Femme d'âge mûr en robe universitaire élimée aux coudes, encrier toujours à portée. Regard attentif derrière des verres. Parle vite quand elle tient une preuve.",
+    "description": "Femme d'âge mûr, cheveux gris tirés en arrière, robe universitaire noire usée aux manches. Elle porte de fines lunettes et garde près d'elle un encrier, des carnets et des piles de dossiers. Son bureau est rempli de livres ouverts et de notes annotées.",
     "notes": "À ne pas confondre avec Maera Coren, la mère défunte de Thade. Maera Olane est le grain de sable dans l'angle mort de l'Université. Pivot de la menace « L'Université, l'Angle Mort » (Front 4) : si elle est neutralisée, l'enquête interne se referme. Son angle mort est aggravé par le déphasage : l'Université cherche un phénomène magique dans Valombre, alors que le phénomène est Valombre elle-même. Ses sorts de détection fonctionnent à l'intérieur du référentiel déphasé, ses instruments sont pris dans la même dérive, et ses mesures restent cohérentes parce que tout ce qu'elle mesure est déphasé avec elle. Olane manque de preuves publiques parce que ses instruments mentent avec la ville.",
     "race": "humaine",
     "faction": "Université"
@@ -342,17 +342,17 @@ export const pnjUniversiteData = [
     "id": "libraire_penne",
     "usageNarratif": "levier",
     "nom": "Aldric Penne, libraire-fournisseur de l'Université",
-    "role": "Libraire installé à proximité de l'Université Arcanique. Il vend des livres, du parchemin, de l'encre, des composants alchimiques de base et du matériel d'étude aux étudiants, aux chercheurs et aux visiteurs.",
+    "role": "Libraire et fournisseur de l'Université. Il vend livres, encres et composants, et ses registres peuvent révéler qui a acheté quoi.",
     "categorie": "neutres",
-    "image": "/images/PNJ/pnj_libraire_penne.jpg",
+    "image": "/images/PNJ/Aldric Penne.png",
     "antagoniste": false,
     "interpretation": {
-      "accroche": "Aldric parle par questions rhétoriques et citations approximatives, comme s'il avait passé trop d'années entouré de professeurs.",
-      "objectif": "Maintenir son catalogue à jour et garder de bonnes relations avec l'Université, qui est son meilleur client.",
-      "attitude": "Précis, serviable, un peu pédant. Connaît les références de mémoire. Se méfie des achats anonymes de composants sensibles."
+      "accroche": "Il ajuste ses lunettes, ouvre son registre et demande le titre exact ou le nom du professeur concerné.",
+      "objectif": "Garder son commerce en règle avec l'Université et éviter d'être mêlé à une affaire dangereuse.",
+      "attitude": "Serviable, prudent et un peu pédant. Il aime corriger les titres mal cités et devient nerveux dès qu'une commande paraît illégale."
     },
     "disposition": "neutre",
-    "impulsion": "Classer, référencer et vendre — dans cet ordre.",
+    "impulsion": "Tenir ses registres propres et éviter les ennuis avec l'Université.",
     "degats": {
       "valeur": 0,
       "description": "Lourd in-folio, poids de registre",
@@ -374,7 +374,7 @@ export const pnjUniversiteData = [
       "Signaler qu'un ouvrage demandé a été retiré du catalogue sur ordre de l'Université",
       "Proposer un composant rare qu'il n'a en stock qu'en petite quantité"
     ],
-    "description": "Homme mince aux lunettes épaisses, vêtu d'une robe de bureau usée. Sa librairie est étroite, sent le papier et la cire. Des étagères du sol au plafond regorgent de livres reliés, de rouleaux de parchemin et de bocaux de composants alignés par ordre alphabétique.",
+    "description": "Homme mince aux lunettes épaisses, vêtu d'une robe de bureau brune. Il travaille derrière un comptoir couvert de livres, de plumes et de fioles étiquetées. Sa librairie est étroite, chaude, encombrée d'étagères hautes et d'odeurs de papier, de cire et d'herbes sèches.",
     "notes": "Aldric vend du parchemin, de l'encre, des plumes, des livres d'étude, des composants alchimiques courants (soufre, sel, poudre de fer, cire vierge) et du matériel de laboratoire de base. Il ne vend pas de grimoires avancés ni de composants illicites, mais peut commander des ouvrages spécifiques avec l'autorisation d'un maître de l'Université. Il tient un registre de toutes les ventes et note les noms des acheteurs pour les composants sensibles. Il sait quels professeurs commandent quoi, ce qui en fait une source discrète d'informations sur les recherches en cours.",
     "race": "humain",
     "faction": "Université Arcanique"

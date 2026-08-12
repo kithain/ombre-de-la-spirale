@@ -78,6 +78,7 @@ function validerVie(vie) {
  * @property {string} [notes]
  * @property {string} [race]
  * @property {string} [faction]
+ * @property {{lignee:string, maison?:string, role?:string}|string|null} [familleNaine] Famille noble naine, réservée aux PNJ de rang.
  * @property {string} [disposition]
  * @property {string} [origine]
  * @property {string} [couleur]
@@ -107,6 +108,7 @@ export function creerPnj(data = {}) {
       role: data.role ?? "",
       race: data.race ?? "",
       faction: data.faction ?? "",
+      familleNaine: data.familleNaine ?? null,
       categorie: data.categorie ?? "neutres",
       image: data.image ?? null,
       antagoniste: data.antagoniste === true,
@@ -193,6 +195,7 @@ export const pnjTemplate = `{
   role: "Rôle narratif court",
   race: "Humain",
   faction: "Faction / Guilde",
+  familleNaine: null,             // famille noble naine pour un PNJ de rang : { lignee: "Brunefer", role: "..." }
   categorie: "neutres",           // "allies" | "ennemis" | "monstres" | "neutres"
   image: null,
   antagoniste: false,

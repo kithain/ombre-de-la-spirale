@@ -39,7 +39,7 @@ export const scenario2 = {
         axe: "Cosmique",
         description:
           "Le déphasage devient visible. Les routes mentent, le ciel change, les distances fluctuent. La Spirale filtre par les fissures du sceau. La Tour Arcanique s'éveille. La crise cosmique est l'horloge maîtresse — si elle avance trop loin, Valombre est perdue.",
-        scenes_cles: ["Le Déphasage Visible", "L'Assaut de la Tour", "Le Laboratoire de Verre"],
+        scenes_cles: ["Le Déphasage visible", "L'Assaut de la Tour", "Le Laboratoire de Verre"],
       },
     ],
     ce_que_les_pj_savent: [
@@ -54,7 +54,7 @@ export const scenario2 = {
       "Le Champion de la Bannière Pure reçoit un soutien logistique de marchands qui veulent affaiblir les clans nains — la crise politique est instrumentalisée sans faire de lui un simple pantin.",
       "Le déphasage est la preuve visible que la Spirale filtre. Les zones déphasées s'étendront.",
       "Elian Voss, médecin de Caldris, a reproduit S-01 sur des vivants après Sealine. La Larme de Vael est le catalyseur du rituel.",
-      "Thade a consulté la Réserve Interdite 142 fois en 8 ans. Les premières recherches de Thade sur les seuils précèdent la disparition de Sealine ; le rituel actuel, lui, naît de sa perte.",
+      "Thade a consulté la Réserve Interdite 142 fois en une trentaine d'années. Les premières recherches de Thade sur les seuils précèdent la disparition de Sealine ; le rituel actuel, lui, naît de sa perte.",
       "Le corps de Thade est dans une cuve au 7e étage de la Tour. Son esprit est au sommet, dans le vortex.",
     ],
     structure_narrative: [
@@ -137,7 +137,7 @@ export const scenario2 = {
         "Cave des Endeuillés : textes volés portant le tampon de la Réserve Interdite (Acte I, scène 2).",
         "Place de la Fondation : rumeurs sur le soutien logistique du Champion (Acte I, scène 1).",
       ],
-      declencheur: "Investigation DD 13 dans la cave + Renseignements DD 14 sur le Champion.",
+      declencheur: "Investigation Moyen dans la cave + Renseignements Moyen sur le Champion.",
       plan_b:
         "Le tampon de la Réserve est visible sans jet. Mara ou Olane peuvent faire le lien entre les textes et Thade. Le soutien logistique du Champion peut être révélé par un contact dans la pègre ou par le Collecteur.",
       consequence_si_ratee:
@@ -152,9 +152,9 @@ export const scenario2 = {
         "Cave des Endeuillés : observation du rite (Acte I, scène 2).",
         "Thorgar ou un prêtre nain : comparaison avec les gestes d'Edhrek-Murn.",
       ],
-      declencheur: "Religion DD 14 pour identifier l'inversion.",
+      declencheur: "Religion Moyen pour identifier l'inversion.",
       plan_b:
-        "Si Religion échoue, Thorgar (s'il accompagne les PJ) reconnaît les gestes et dit : « C'est Edhrek-Murn... mais à l'envers. C'est une profanation. » Les textes de l'Université portent le tampon — le lien est visuel.",
+        "Si Religion échoue, Thorgar (s'il accompagne les PJ) reconnaît les gestes et dit : « C'est Edhrek-Murn… mais à l'envers. C'est une profanation. » Les textes de l'Université portent le tampon — le lien est visuel.",
       consequence_si_ratee:
         "Les PJ ne comprennent pas que le rite attaque le sceau. Ils peuvent disperser les Endeuillés sans détruire les textes, et le rite reprendra avec un nouveau gourou.",
     },
@@ -166,21 +166,21 @@ export const scenario2 = {
       sources: [
         "Zone déphasée dans la Vieille Ville (Acte I, scène 3).",
       ],
-      declencheur: "Connaissances (mystères) DD 15 ou Détection de la magie.",
+      declencheur: "Connaissances (mystères) Moyen ou Détection de la magie.",
       plan_b:
-        "Les filaments sont visibles avec Détection de la magie sans jet. Leur direction (vers le sous-sol) est observable. Le troisième écho (Perception DD 13) confirme que le son vient d'ailleurs.",
+        "Les filaments sont visibles avec Détection de la magie sans jet. Leur direction (vers le sous-sol) est observable. Le troisième écho (Perception Moyen) confirme que le son vient d'ailleurs.",
       consequence_si_ratee:
         "Les PJ ne relient pas le déphasage au sceau. Ils le traitent comme un phénomène inexplicable. La crise cosmique reste abstraite, et les PJ ne savent pas où frapper.",
     },
     {
       id: "rev_registre_142",
-      titre: "Thade a consulté la Réserve 142 fois en 8 ans",
+      titre: "Thade a consulté la Réserve 142 fois en une trentaine d'années",
       resume:
-        "Le registre de la Réserve de Recherche Interdite montre 142 séances de Thade sur 8 ans, portant sur la résonance planaire, les seuils et les ancrages rituels. La fréquentation s'effondre après la mort de Sealine — il a trouvé ce qu'il cherchait.",
+        "Le registre de la Réserve de Recherche Interdite montre 142 séances de Thade étalées sur une trentaine d'années, portant sur la résonance planaire, les seuils et les ancrages rituels. La fréquentation s'effondre après la mort de Sealine — il a trouvé ce qu'il cherchait.",
       sources: [
         "Réserve de Recherche Interdite : registre sur le lutrin (Acte II, scène 1).",
       ],
-      declencheur: "Investigation DD 13 pour lire le registre. Connaissances (mystères) DD 17 pour déchiffrer les ouvrages.",
+      declencheur: "Investigation Moyen pour lire le registre. Connaissances (mystères) Difficile pour déchiffrer les ouvrages.",
       plan_b:
         "Le registre est visible sans jet. Le nom de Thade et le nombre 142 sont lisibles. Olane peut interpréter les ouvrages si les PJ lui apportent des notes.",
       consequence_si_ratee:
@@ -195,9 +195,9 @@ export const scenario2 = {
         "Laboratoire d'Elian Voss : schéma caché sous une plaque (Acte II, scène 2).",
         "Elian Voss lui-même : interrogation ou intimidation.",
       ],
-      declencheur: "Investigation DD 12 pour trouver le schéma. Décryptage DD 17 pour lire l'annotation.",
+      declencheur: "Investigation Moyen pour trouver le schéma. Décryptage Difficile pour lire l'annotation.",
       plan_b:
-        "Le schéma est visible sans jet. Le nom « Larme de Vael » et le cachet de Caldris sont lisibles. Elian Voss, intimidé (DD 14), révèle tout. L'annotation peut être lue par Olane ou Mara.",
+        "Le schéma est visible sans jet. Le nom « Larme de Vael » et le cachet de Caldris sont lisibles. Elian Voss, intimidé (Moyen), révèle tout. L'annotation peut être lue par Olane ou Mara.",
       consequence_si_ratee:
         "Les PJ ne savent pas ce qu'est la Larme de Vael. Au Scénario 3, la confrontation au sommet perd sa dimension tragique — les PJ ne savent pas que Sealine a essayé d'empêcher Thade.",
     },
@@ -205,14 +205,14 @@ export const scenario2 = {
       id: "rev_corps_thade_cuve",
       titre: "Le corps de Thade est dans la cuve, son esprit au sommet",
       resume:
-        "Au 7e étage de la Tour, le corps de Thade flotte dans une cuve de cristal. Son esprit est au sommet, dans le vortex. Détruire le corps affaiblit Thade au sommet. Les cahiers bordeaux sont huit ans de lettres à Sealine.",
+        "Au 7e étage de la Tour, le corps de Thade flotte dans une cuve de cristal. Son esprit est au sommet, dans le vortex. Détruire le corps affaiblit Thade au sommet. Les cahiers bordeaux sont une trentaine d'années de lettres à Sealine.",
       sources: [
         "Laboratoire de Verre : cuve centrale et mur de cahiers (Acte III, scène 2).",
         "Magi-Tuteur loyal : explication si les PJ ne l'attaquent pas.",
       ],
       declencheur: "Aucun jet requis. La cuve et les cahiers sont visibles.",
       plan_b:
-        "Le magi-tuteur peut expliquer la connexion cuve-sommet. Les cahiers parlent d'eux-mêmes. Investigation DD 12 pour comprendre le système de la cuve.",
+        "Le magi-tuteur peut expliquer la connexion cuve-sommet. Les cahiers parlent d'eux-mêmes. Investigation Moyen pour comprendre le système de la cuve.",
       consequence_si_ratee:
         "Les PJ montent au sommet sans affaiblir Thade. La confrontation du Scénario 3 est plus difficile — Thade a toutes ses phases. Les PJ n'ont pas lu les cahiers, et la dimension humaine de Thade reste invisible.",
     },
@@ -275,7 +275,7 @@ export const scenario2 = {
             "Si les PJ tuent Edran, les Endeuillés rejoignent le Champion. La violence nourrit la crise. Si les PJ convainquent Edran d'arrêter, les Endeuillés se dispersent pacifiquement.",
         },
         {
-          scene: "Le Déphasage Visible",
+          scene: "Le Déphasage visible",
           interaction:
             "Le déphasage alimente la peur. Les habitants paniquent. Le Champion exploite la peur pour recruter. Si les PJ expliquent la cause du déphasage, la peur diminue.",
         },
@@ -297,7 +297,7 @@ export const scenario2 = {
             "Le rite inversé fissure le sceau. Si les PJ arrêtent le rite, le front ralentit d'une étape. Si le rite continue, le front avance d'une étape par session.",
         },
         {
-          scene: "Le Déphasage Visible",
+          scene: "Le Déphasage visible",
           interaction:
             "Les filaments planaires pointent vers le Puits de l'Abîme. Le déphasage est la preuve visible que le sceau cède. Si les PJ identifient la source, ils savent où frapper.",
         },
@@ -324,7 +324,7 @@ export const scenario2 = {
             "L'émeute justifie la loi martiale. Si les PJ calment la foule, le Conseil n'a pas de prétexte. Si l'émeute tourne à la violence, le Conseil vote la loi martiale le lendemain.",
         },
         {
-          scene: "Le Déphasage Visible",
+          scene: "Le Déphasage visible",
           interaction:
             "Le déphasage rend les routes impraticables. L'approvisionnement en argent s'effondre. Les marchands paniquent. Si les PJ expliquent la cause, la panique diminue.",
         },
@@ -371,10 +371,10 @@ export const scenario2 = {
         axe: "Clandestin",
         dependances: ["L'Émeute de la Place de la Fondation (optionnel — Edran peut être suivi depuis l'émeute)"],
         revele: ["Le rite inversé fissure le sceau", "Les textes viennent de l'Université", "Thade utilise des relais involontaires"],
-        note: "Si les PJ n'ont pas suivi Edran depuis l'émeute, la cave peut être trouvée par Renseignements DD 14 ou via Ursula.",
+        note: "Si les PJ n'ont pas suivi Edran depuis l'émeute, la cave peut être trouvée par Renseignements Moyen ou via Ursula.",
       },
       {
-        titre: "Le Déphasage Visible",
+        titre: "Le Déphasage visible",
         acte: "Acte I",
         statut: "obligatoire_flexible",
         axe: "Cosmique",
@@ -389,14 +389,14 @@ export const scenario2 = {
         axe: "Clandestin",
         dependances: ["Les Endeuillés d'Edran Morn (les textes pointent vers la Réserve)"],
         revele: ["142 consultations de Thade", "Les premières recherches sur les seuils précèdent la disparition de Sealine ; le rituel actuel naît de sa perte", "La théorie des seuils planaires"],
-        note: "L'accès dépend du choix du Scénario 1 : Olane peut fournir un accès si les PJ sont ses alliés. Sinon, Effraction DD 15.",
+        note: "L'accès dépend du choix du Scénario 1 : Olane peut fournir un accès si les PJ sont ses alliés. Sinon, Effraction Moyen.",
       },
       {
         titre: "Le Laboratoire d'Elian Voss",
         acte: "Acte II",
         statut: "obligatoire",
         axe: "Clandestin",
-        dependances: ["La Réserve de Recherche Interdite (l'ardoise du 6e étage est mentionnée)"],
+        dependances: ["La Réserve de Recherche Interdite (la trace scellée du 6e étage est mentionnée)"],
         revele: ["La Larme de Vael est le catalyseur", "Sealine savait et a essayé d'empêcher", "Thade et Elian ont reproduit S-01 sur des vivants après Sealine"],
         note: "Elian Voss est présent de jour, absent de nuit. Sa réaction dépend de la réputation des PJ.",
       },
@@ -415,7 +415,7 @@ export const scenario2 = {
         statut: "obligatoire",
         axe: "Cosmique",
         dependances: ["L'Assaut de la Tour"],
-        revele: ["Le corps de Thade est dans la cuve", "Les cahiers : 8 ans de lettres à Sealine", "Détruire le corps affaiblit Thade au sommet"],
+        revele: ["Le corps de Thade est dans la cuve", "Les cahiers : une trentaine d'années de lettres à Sealine", "Détruire le corps affaiblit Thade au sommet"],
         note: "Aucun jet requis pour voir la cuve et les cahiers. La décision de détruire le corps est morale, pas mécanique.",
       },
       {
@@ -440,7 +440,7 @@ export const scenario2 = {
         titre: "Le Marchand et la Mine",
         description:
           "Les PJ enquêtent sur le soutien logistique du Champion. Ils remontent jusqu'aux marchands qui veulent affaiblir les clans nains et prendre influence sur la Mine. Confrontation politique ou économique.",
-        declencheur: "Si les PJ cherchent qui soutient logistiquement le Champion (Renseignements DD 14).",
+        declencheur: "Si les PJ cherchent qui soutient logistiquement le Champion (Renseignements Moyen).",
         apport: "Démasquer l'instrumentalisation de la crise. Le Champion perd sa crédibilité si le soutien logistique est révélé publiquement.",
       },
       {
@@ -451,7 +451,7 @@ export const scenario2 = {
         apport: "Comprendre l'impact humain du déphasage. Ursula peut identifier les premiers cas d'assimilation par la Spirale.",
       },
       {
-        titre: "Les Lettres Doublées",
+        titre: "Les Lettres doublées",
         description:
           "Odran Bellec découvre que les lettres arrivent en double ou avec un contenu décalé dans le temps. Yselle Vaurin reçoit des lettres de crédit identiques à trois semaines d'intervalle.",
         declencheur: "Si les PJ passent par le Centre Civique ou le Beffroi pendant l'Acte I.",
@@ -481,7 +481,7 @@ export const scenario2 = {
       situation:
         "Les PJ montent la Tour en force. Ils tuent les étudiants charmés, les gardes piégés, la créature de la Spirale. Le décompte de victimes est élevé.",
       principe:
-        "Le scénario ne punit pas — il consigne. Chaque victime est comptée. L'épilogue du Scénario 3 en tiendra compte. Le MJ ne dit pas « vous ne devriez pas faire ça » — il décrit les conséquences.",
+        "Le scénario ne punit pas — il consigne. Chaque victime est comptée. L'épilogue du Scénario 3 en tiendra compte. Le MJ décrit les conséquences.",
       proceder: [
         {
           etape: "Tenir le décompte de chaque victime",
@@ -496,7 +496,7 @@ export const scenario2 = {
         {
           etape: "Le magi-tuteur réagit",
           detail:
-            "Si le magi-tuteur est encore vivant, il dit : « Vous avez tué des étudiants. Des enfants. Ils étaient prisonniers. » Il ne combat pas — il pleure. Si les PJ l'ont aussi tué, personne ne pleure.",
+            "Si le magi-tuteur est encore vivant, il dit : « Vous avez tué des étudiants. Des enfants. Ils étaient prisonniers. » Il pleure. Si les PJ l'ont aussi tué, personne ne pleure.",
         },
         {
           etape: "L'épilogue en tiendra compte",
@@ -551,7 +551,7 @@ export const scenario2 = {
       situation:
         "Les PJ se concentrent sur un seul axe (public, clandestin ou cosmique) et ignorent les deux autres. Par exemple, ils passent tout l'Acte I sur le Champion et ignorent les Endeuillés et le déphasage.",
       principe:
-        "Les trois axes avancent en parallèle. Ignorer un axe ne le met pas en pause — il avance sans les PJ. Les conséquences s'accumulent.",
+        "Les trois axes avancent en parallèle. Ignorer un axe le laisse avancer sans les PJ. Les conséquences s'accumulent.",
       proceder: [
         {
           etape: "L'axe ignoré avance",
@@ -586,7 +586,7 @@ export const scenario2 = {
       situation:
         "Les PJ veulent parler au Champion de la Bannière Pure au lieu de le combattre ou de le démasquer. Ils pensent pouvoir le raisonner ou l'utiliser.",
       principe:
-        "Le Champion est charismatique, froid et précis. Il ne crie pas — il projette. Il peut être raisonné sur les faits, mais pas sur les causes. Sa croisade reçoit un soutien logistique de marchands qui veulent affaiblir les clans nains — il n'est pas nécessairement acheté ; il accepte des soutiens qu'il juge utiles à sa mission.",
+        "Le Champion est charismatique, froid et précis. Il projette. Il peut être raisonné sur les faits, mais pas sur les causes. Sa croisade reçoit un soutien logistique de marchands qui veulent affaiblir les clans nains — il accepte des soutiens qu'il juge utiles à sa mission.",
       proceder: [
         {
           etape: "Le Champion écoute",
@@ -612,7 +612,7 @@ export const scenario2 = {
       a_ne_pas_faire: [
         "Ne pas rendre le Champion facilement raisonnable. Il croit en sa mission.",
         "Ne pas transformer le Champion en allié fiable. C'est un outil instable.",
-        "Ne pas bloquer la négociation. Le Champion parle — c'est sa méthode.",
+        "Ne pas bloquer la négociation. Le Champion parle. C'est sa méthode.",
       ],
     },
     {
@@ -631,7 +631,7 @@ export const scenario2 = {
         {
           etape: "Le seuil / le sceau",
           detail:
-            "Objet : les runes sur les dalles du cimetière. Le froid du Mausolée. Les os des Thanes avec runes gravées. Le sceau n'est pas une idée — c'est des pierres, des os, du froid. Quand le sceau cède, ce sont les pierres qui bougent et le froid qui s'étend.",
+            "Objet : les runes sur les dalles du cimetière. Le froid du Mausolée. Les os des Thanes avec runes gravées. Le sceau est des pierres, des os, du froid. Quand le sceau cède, ce sont les pierres qui bougent et le froid qui s'étend.",
         },
         {
           etape: "Le déphasage",
@@ -662,68 +662,68 @@ export const scenario2 = {
     indices_recap: [
       {
         scene: "L'Émeute de la Place de la Fondation",
-        jet: "Renseignements DD 14",
-        info: "Le Champion reçoit un soutien logistique de marchands qui veulent affaiblir les clans nains et prendre influence sur la Mine. Il n'est pas acheté — il accepte des soutiens utiles à sa croisade.",
+        jet: "Renseignements Moyen",
+        info: "Le Champion reçoit un soutien logistique de marchands qui veulent affaiblir les clans nains et prendre influence sur la Mine. Il accepte des soutiens utiles à sa croisade.",
       },
       {
         scene: "L'Émeute de la Place de la Fondation",
-        jet: "Discrétion DD 13",
+        jet: "Discrétion Moyen",
         info: "Edran Morn observe la manifestation depuis les ruelles. Il recrute parmi les plus désespérés après la foule.",
       },
       {
         scene: "Les Endeuillés d'Edran Morn",
-        jet: "Religion DD 14",
+        jet: "Religion Moyen",
         info: "Le rite d'Edran est un Edhrek-Murn inversé. Au lieu de maintenir le sceau, il le fissure.",
       },
       {
         scene: "Les Endeuillés d'Edran Morn",
-        jet: "Investigation DD 13",
+        jet: "Investigation Moyen",
         info: "Les textes portent le tampon de la Réserve de Recherche Interdite de l'Université. Thade a laissé les textes circuler.",
       },
       {
-        scene: "Le Déphasage Visible",
-        jet: "Connaissances (mystères) DD 15 ou Détection de la magie",
+        scene: "Le Déphasage visible",
+        jet: "Connaissances (mystères) Moyen ou Détection de la magie",
         info: "Des filaments violets relient la zone à un point souterrain — le Puits de l'Abîme. Le déphasage vient du sceau.",
       },
       {
-        scene: "Le Déphasage Visible",
-        jet: "Perception DD 13",
-        info: "Le troisième écho d'un son n'est pas une répétition — c'est un son de la Spirale qui filtre.",
+        scene: "Le Déphasage visible",
+        jet: "Perception Moyen",
+        info: "Le troisième écho d'un son est un son de la Spirale qui filtre.",
       },
       {
         scene: "La Réserve de Recherche Interdite",
-        jet: "Investigation DD 13",
-        info: "142 séances de Thade sur 8 ans. Sujets : résonance planaire, seuils, ancrages. Effondrement après la mort de Sealine.",
+        jet: "Investigation Moyen",
+        info: "142 séances de Thade étalées sur une trentaine d'années. Sujets : résonance planaire, seuils, ancrages. Effondrement après la mort de Sealine.",
       },
       {
         scene: "La Réserve de Recherche Interdite",
-        jet: "Connaissances (mystères) DD 17",
+        jet: "Connaissances (mystères) Difficile",
         info: "Les ouvrages décrivent un rituel de seuil avec ancrages physiques. Le protocole S-01 est une application de ce rituel.",
       },
       {
         scene: "Le Laboratoire d'Elian Voss",
-        jet: "Investigation DD 12",
+        jet: "Investigation Moyen",
         info: "Schéma de la Larme de Vael. Cachet de Caldris. La Larme est le catalyseur du rituel.",
       },
       {
         scene: "Le Laboratoire d'Elian Voss",
-        jet: "Décryptage DD 17",
+        jet: "Décryptage Difficile",
         info: "Annotation de Sealine : « Ne jamais alimenter cela avec des vivants. » Elle savait. Thade l'a fait quand même.",
       },
       {
         scene: "Le Laboratoire d'Elian Voss",
-        jet: "Intimidation DD 14",
+        jet: "Intimidation Moyen",
         info: "Elian Voss révèle tout : Thade a commandé le protocole, Caldris fournit le matériel, la Larme est le catalyseur.",
       },
       {
         scene: "L'Assaut de la Tour",
-        jet: "Investigation DD 10",
-        info: "Ardoise du 6e étage : équation préliminaire de S-01 datée de sept ans. Les premières recherches de Thade sur les seuils précèdent la disparition de Sealine.",
+        jet: "Investigation Facile",
+        info: "Trace scellée du 6e étage : équation préliminaire de S-01 datée de l'année de Nyx. Les premières recherches de Thade sur les seuils précèdent la disparition de Sealine.",
       },
       {
         scene: "Le Laboratoire de Verre",
         jet: "Aucun jet requis",
-        info: "Le corps de Thade est dans la cuve. Les cahiers bordeaux sont 8 ans de lettres à Sealine. La plume écrit en temps réel.",
+        info: "Le corps de Thade est dans la cuve. Les cahiers bordeaux sont une trentaine d'années de lettres à Sealine. La plume écrit en temps réel.",
       },
     ],
     pnj_recap: [
@@ -734,7 +734,7 @@ export const scenario2 = {
         role_court: "Fanatique charismatique / Crise publique",
         apparition: "Acte I, scène 1",
         info_cle: "Exploite la peur. Soutenu logistiquement par des marchands qui veulent affaiblir les clans nains. Peut être démasqué ou détourné vers l'Université.",
-        dd_clés: "Diplomatie DD 15 pour calmer l'émeute. Renseignements DD 14 pour le soutien logistique.",
+        difficultes_cles: "Diplomatie Moyen pour calmer l'émeute. Renseignements Moyen pour le soutien logistique.",
       },
       {
         id: "edran_morn",
@@ -743,7 +743,7 @@ export const scenario2 = {
         role_court: "Gourou du deuil / Crise clandestine",
         apparition: "Acte I, scène 2",
         info_cle: "Rite inversé d'Edhrek-Murn qui fissure le sceau. Textes volés de l'Université. Sincère dans son deuil.",
-        dd_clés: "Religion DD 14 pour identifier l'inversion. Diplomatie DD 16 pour le convaincre d'arrêter.",
+        difficultes_cles: "Religion Moyen pour identifier l'inversion. Diplomatie Difficile pour le convaincre d'arrêter.",
       },
       {
         id: "elian_voss",
@@ -752,7 +752,7 @@ export const scenario2 = {
         role_court: "Médecin brisé / Témoin clé",
         apparition: "Acte II, scène 2",
         info_cle: "A mené les expériences sur des vivants. Schéma de la Larme de Vael. Retournable. Témoin le plus précieux.",
-        dd_clés: "Intimidation DD 14 pour le retourner. Art de la magie DD 17 pour les bocaux.",
+        difficultes_cles: "Intimidation Moyen pour le retourner. Art de la magie Difficile pour les bocaux.",
       },
       {
         id: "maera_olane",
@@ -761,7 +761,7 @@ export const scenario2 = {
         role_court: "Alliée institutionnelle",
         apparition: "Acte II (accès à la Réserve)",
         info_cle: "Peut fournir accès, couverture et données. Sa protection dépend des PJ. Si elle est arrêtée, les PJ perdent tout soutien institutionnel.",
-        dd_clés: "Pas de jet — elle s'ouvre si les PJ apportent des preuves.",
+        difficultes_cles: "Pas de jet — elle s'ouvre si les PJ apportent des preuves.",
       },
       {
         id: "magi_tuteur_loyal",
@@ -770,7 +770,7 @@ export const scenario2 = {
         role_court: "Allié caché dans la Tour",
         apparition: "Acte III, scène 1 (4e étage)",
         info_cle: "Peut expliquer la Tour, la cuve et le rituel. Guide les PJ s'ils ne l'attaquent pas.",
-        dd_clés: "Pas de jet — il se présente si les PJ ne l'agressent pas.",
+        difficultes_cles: "Pas de jet — il se présente si les PJ ne l'agressent pas.",
       },
     ],
     lieux_recap: [
@@ -789,7 +789,7 @@ export const scenario2 = {
       {
         id: "vieille_ville_ruelles",
         nom: "Ruelles déphasées de la Vieille Ville",
-        scenes: ["Le Déphasage Visible"],
+        scenes: ["Le Déphasage visible"],
         ambiance: "Distances trompeuses. Ciel laiteux. Odeurs absentes. Échos répétés.",
       },
       {
@@ -815,10 +815,10 @@ export const scenario2 = {
       {
         phase: "Avant le scénario",
         evenements: [
-          "Il y a 8 ans : catastrophe de Nyx. Sealine se sacrifie. Thade survit.",
-          "Il y a 8 ans : Thade devient Archimage de l'Université. L'Université est reconstruite.",
-          "Depuis 8 ans : Thade consulte la Réserve Interdite (142 séances).",
-          "Depuis 8 ans : Thade écrit à Sealine tous les jours (cahiers bordeaux).",
+          "Il y a une trentaine d'années : catastrophe de Nyx. Sealine se sacrifie. Thade survit.",
+          "Dans les années suivantes : Thade devient le survivant officiel de Nyx, puis gravit les échelons jusqu'au rang d'archimage.",
+          "Depuis une trentaine d'années : Thade consulte la Réserve Interdite par périodes (142 séances).",
+          "Depuis une trentaine d'années : Thade écrit à Sealine tous les jours (cahiers bordeaux).",
           "Depuis plusieurs années : Thade laisse circuler des textes de la Réserve vers la Vieille Ville.",
           "Depuis plusieurs années : Elian Voss mène les expériences sur des vivants à Caldris.",
           "Récemment : le déphasage devient visible. Les zones déphasées apparaissent.",
@@ -866,7 +866,7 @@ export const scenario2 = {
         objet: "Registre de la Réserve (copie partielle)",
         scene: "La Réserve de Recherche Interdite",
         type: "Physique — copie, emportable",
-        description: "142 séances de Thade sur 8 ans. Sujets : résonance planaire, seuils, ancrages. Effondrement après la mort de Sealine.",
+        description: "142 séances de Thade étalées sur une trentaine d'années. Sujets : résonance planaire, seuils, ancrages. Effondrement après la mort de Sealine.",
         utilisable_pour: "Prouver la préparation méthodique du rituel. Présenter au Conseil.",
       },
       {
@@ -887,21 +887,21 @@ export const scenario2 = {
         objet: "Sept bocaux (témoignage ou description)",
         scene: "Le Laboratoire d'Elian Voss",
         type: "Physique — transport délicat, preuve par description possible",
-        description: "Sept bocaux contenant les restes des sept échecs d'Elian après S-01. Témoignage d'Art de la magie DD 17.",
+        description: "Sept bocaux contenant les restes des sept échecs d'Elian après S-01. Témoignage d'Art de la magie Difficile.",
         utilisable_pour: "Prouver le coût humain du rituel. Elian ou Olane peuvent témoigner.",
       },
       {
         objet: "Cahiers bordeaux du Laboratoire de Verre",
         scene: "Le Laboratoire de Verre",
         type: "Physique — emportable (volumineux)",
-        description: "Huit ans de lettres de Thade à Sealine. La plume écrit en temps réel. Le cahier ouvert est un canal de communication.",
+        description: "Une trentaine d'années de lettres de Thade à Sealine. La plume écrit en temps réel. Le cahier ouvert est un canal de communication.",
         utilisable_pour: "Prouver l'obsession de Thade. Utiliser comme armes pendant le combat final (Scénario 3).",
       },
       {
         objet: "Ardoise du 6e étage (relevé)",
         scene: "L'Assaut de la Tour",
         type: "Physique — relevé/copie, emportable",
-        description: "Équation préliminaire de S-01 datée de sept ans. Les recherches de Thade précèdent la disparition de Sealine.",
+        description: "Équation préliminaire de S-01 datée de l'année de Nyx. Les recherches de Thade précèdent la disparition de Sealine.",
         utilisable_pour: "Prouver que Thade n'a pas dérapé par chagrin — il a choisi. Présenter au Conseil.",
       },
       {
@@ -934,7 +934,7 @@ export const scenario2 = {
         id: "elian_voss",
         nom: "Elian Voss",
         lieu: "Laboratoire sous l'amphithéâtre médical",
-        disponibilite: "Si retourné (Intimidation DD 14). Disparaît si tué.",
+        disponibilite: "Si retourné (Intimidation Moyen). Disparaît si tué.",
         apporte: "Témoignage complet sur le protocole, la Larme, Caldris. Témoin le plus précieux.",
         mobilisable: "Peut témoigner au Conseil. Peut fournir des détails médicaux sur les patients S-01.",
       },
@@ -1070,9 +1070,9 @@ export const scenario2 = {
             ambiance:
               "La Place de la Fondation est le cœur civique de Valombre. Un espace pavé, bordé de bâtiments administratifs aux façades de pierre grise. Au centre, la statue des Fondateurs — sept silhouettes naines, usées par le temps. La place est noire de monde. Des badauds, des curieux, des habitants en colère. L'air porte une tension qu'on pourrait couper au couteau. Le ciel est couvert, bas, d'un gris qui n'a pas décidé s'il allait pleuvoir ou s'abaisser encore.",
             deroulement_narratif:
-              "Le Champion de la Bannière Pure se tient sur l'estrade, en robe blanche, le visage masqué. Sa voix porte sans effort. Il ne crie pas — il projette. Chaque phrase est calibrée. Il accuse les nains et les étrangers d'être responsables des maladies et du froid. Il ne ment pas sur les faits — les maladies et le froid sont réels. Il ment sur les causes. La foule boit ses mots. Des huées montent. Des nains du Centre Civique reculent vers les ruelles adjacentes. La garde mixte hésite au pied de l'estrade — Géraud Veyre, leur commandant, regarde les PJ d'un air qui dit : « Si vous avez une idée, c'est le moment. »\n\nDans les ruelles, un homme en robe sombre observe. Edran Morn. Il ne participe pas à l'émeute — il la récolte. Il parle aux plus désespérés, ceux qui ont perdu quelqu'un, ceux qui pleurent encore. Il leur murmure que les morts peuvent revenir. Si un PJ est attentif (Discrétion DD 13), il repère Edran et peut le suivre après la manifestation.\n\nLes PJ ont trois options : calmer la foule (Diplomatie DD 15), intimider les meneurs (Intimidation DD 14), ou exploiter le chaos. Chaque choix a un coût. Calmer la foule protège les nains mais laisse le Champion libre. Intimider disperse la foule mais marque les PJ comme ennemis. Exploiter le chaos avance le front « Les Factions de la Crise » de deux étapes.",
+              "Le Champion de la Bannière Pure se tient sur l'estrade, en robe blanche, le visage masqué. Sa voix porte sans effort. Il ne crie pas — il projette. Chaque phrase est calibrée. Il accuse les nains et les étrangers d'être responsables des maladies et du froid. Il ne ment pas sur les faits — les maladies et le froid sont réels. Il ment sur les causes. La foule boit ses mots. Des huées montent. Des nains du Centre Civique reculent vers les ruelles adjacentes. La garde mixte hésite au pied de l'estrade — Géraud Veyre, leur commandant, regarde les PJ d'un air qui dit : « Si vous avez une idée, c'est le moment. »\n\nDans les ruelles, un homme en robe sombre observe. Edran Morn. Il ne participe pas à l'émeute — il la récolte. Il parle aux plus désespérés, ceux qui ont perdu quelqu'un, ceux qui pleurent encore. Il leur murmure que les morts peuvent revenir. Si un PJ est attentif (Discrétion Moyen), il repère Edran et peut le suivre après la manifestation.\n\nLes PJ ont trois options : calmer la foule (Diplomatie Moyen), intimider les meneurs (Intimidation Moyen), ou exploiter le chaos. Chaque choix a un coût. Calmer la foule protège les nains mais laisse le Champion libre. Intimider disperse la foule mais marque les PJ comme ennemis. Exploiter le chaos avance le front « Les Factions de la Crise » de deux étapes.",
             notes_mj:
-              "Le Champion reçoit un soutien logistique de marchands qui veulent affaiblir les clans nains et prendre influence sur la Mine. Il n'est pas acheté — il accepte des soutiens qu'il juge utiles à sa croisade. Le MJ peut révéler ce soutien par Renseignements DD 14 ou via le Collecteur. Si l'émeute tourne à la violence, le Conseil vote la loi martiale le lendemain. Edran Morn recrute parmi les plus désespérés après la manifestation — c'est la porte d'entrée vers la scène suivante.",
+              "Le Champion reçoit un soutien logistique de marchands qui veulent affaiblir les clans nains et prendre influence sur la Mine. Il n'est pas acheté — il accepte des soutiens qu'il juge utiles à sa croisade. Le MJ peut révéler ce soutien par Renseignements Moyen ou via le Collecteur. Si l'émeute tourne à la violence, le Conseil vote la loi martiale le lendemain. Edran Morn recrute parmi les plus désespérés après la manifestation — c'est la porte d'entrée vers la scène suivante.",
           },
 
           texte_a_lire:
@@ -1084,7 +1084,7 @@ export const scenario2 = {
             situation:
               "Le Champion exploite la peur grandissante. La garde mixte (humains et nains) est divisée. Le Conseil n'a pas donné d'ordres clairs. Les nains présents sont en danger.",
             secrets: [
-              "Le Champion reçoit un soutien logistique de marchands qui veulent affaiblir les clans nains et prendre influence sur la Mine. Il n'est pas acheté — il accepte des soutiens utiles à sa croisade.",
+              "Le Champion reçoit un soutien logistique de marchands qui veulent affaiblir les clans nains et prendre influence sur la Mine. Il accepte des soutiens utiles à sa croisade.",
               "Edran Morn observe la manifestation depuis les ruelles. Il recrute parmi les plus désespérés.",
               "Si l'émeute tourne à la violence, le Front 'Les Factions de la Crise' avance de deux étapes.",
             ],
@@ -1095,14 +1095,14 @@ export const scenario2 = {
           },
 
           defis: [
-            { competence: "Diplomatie", dd: 15, reussite: "Les PJ calment la foule en rappelant que les nains sont les fondateurs de Valombre. Le Champion perd sa dynamique.", echec: "La foule ignore les PJ. L'émeute continue." },
-            { competence: "Intimidation", dd: 14, reussite: "Les PJ intimident les meneurs. La foule se disperse, mais le Champion les note comme ennemis.", echec: "Les PJ sont hués. La tension augmente." },
-            { competence: "Discrétion", dd: 13, reussite: "Les PJ repèrent Edran Morn dans la foule et peuvent le suivre après la manifestation.", echec: "Impossible de distinguer les visages dans la masse." },
+            { competence: "Diplomatie", difficulte: "Moyen", reussite: "Les PJ calment la foule en rappelant que les nains sont les fondateurs de Valombre. Le Champion perd sa dynamique.", echec: "La foule ignore les PJ. L'émeute continue." },
+            { competence: "Intimidation", difficulte: "Moyen", reussite: "Les PJ intimident les meneurs. La foule se disperse, mais le Champion les note comme ennemis.", echec: "Les PJ sont hués. La tension augmente." },
+            { competence: "Discrétion", difficulte: "Moyen", reussite: "Les PJ repèrent Edran Morn dans la foule et peuvent le suivre après la manifestation.", echec: "Impossible de distinguer les visages dans la masse." },
           ],
 
           indices: [
-            { indice: "Le soutien logistique du Champion", localisation: "Rumeurs et contacts", detection: "Renseignements DD 14", information: "Le Champion reçoit un soutien logistique de marchands qui veulent affaiblir les clans nains et prendre influence sur la Mine.", usage: "Le Champion n'est pas qu'un fanatique — il accepte des soutiens qu'il juge utiles à sa croisade." },
-            { indice: "Edran Morn dans la foule", localisation: "Ruelles de la Place", detection: "Discrétion DD 13", information: "Edran observe et recrute. Il parle aux plus désespérés après la manifestation.", usage: "Piste vers les Endeuillés et le rite de déphasage." },
+            { indice: "Le soutien logistique du Champion", localisation: "Rumeurs et contacts", detection: "Renseignements Moyen", information: "Le Champion reçoit un soutien logistique de marchands qui veulent affaiblir les clans nains et prendre influence sur la Mine.", usage: "Le Champion accepte des soutiens qu'il juge utiles à sa croisade." },
+            { indice: "Edran Morn dans la foule", localisation: "Ruelles de la Place", detection: "Discrétion Moyen", information: "Edran observe et recrute. Il parle aux plus désespérés après la manifestation.", usage: "Piste vers les Endeuillés et le rite de déphasage." },
           ],
 
           guide_mj: {
@@ -1111,7 +1111,7 @@ export const scenario2 = {
             deroulement: ["Le Champion harangue la foule.", "Les PJ interviennent ou observent.", "La garde hésite.", "Edran recrute dans les ruelles."],
             actions_utiles: ["Calmer la foule.", "Protéger les nains.", "Suivre Edran Morn.", "Parler au Champion directement."],
             fronts_heritiers: ["Front 'Les Factions de la Crise'", "Front 'La Cité sous pression'"],
-            jeu_des_pnj: "Le Champion est charismatique, froid, précis. Il ne crie pas — il projette. Géraud Veyre est un soldat fatigué qui veut des ordres clairs.",
+            jeu_des_pnj: "Le Champion est charismatique, froid, précis. Il projette. Géraud Veyre est un soldat fatigué qui veut des ordres clairs.",
             escalade: "Si l'émeute tourne à la violence, des nains sont blessés. Les Terrasses se ferment aux humains.",
             sortie: "La foule se disperse ou tourne à la violence. Les PJ ont vu le Champion, Edran et l'état de la garde.",
           },
@@ -1200,6 +1200,158 @@ export const scenario2 = {
         },
 
         {
+          id: "s2_nuit_des_dettes",
+          titre: "La Nuit des Dettes",
+          type: "Conflit",
+          resume_mj:
+            "Pendant la crise, le Syndicat accélère ses recouvrements. Des hommes de main opèrent dans plusieurs rues de la Vieille Ville : ils saisissent des biens, traînent des débiteurs hors de chez eux, brisent les doigts de ceux qui refusent. La garde ferme les yeux. Les PJ peuvent intervenir, négocier, ou utiliser le chaos pour leurs propres objectifs.",
+          idLieu: "vieille_ville_rues",
+          idsPnj: ["hommes_main_pegre", "le_collecteur", "contremaite_egouts"],
+
+          format_livre: {
+            ambiance:
+              "La Vieille Ville la nuit. Les lampes alchimiques vacillent. L'air sent la brume et la sueur. Dans trois rues différentes, des hommes de main du Syndicat font leur tournée. Ils sont calmes, organisés, méthodiques. Un porte un carnet. Un autre porte une matraque. Un troisième compte des pièces.\n\nLes débiteurs sont des gens ordinaires : un tavernier, un tailleur, une vieille femme qui a emprunté pour payer un remède. Ils n'ont pas assez. Les hommes de main le savent. Ils sont là pour ça.",
+            deroulement_narratif:
+              "Les PJ traversent la Vieille Ville et rencontrent plusieurs scènes de recouvrement simultanées. Ils ne peuvent pas être partout. Chaque scène offre un choix : intervenir, payer, ou ignorer.\n\nLe Collecteur supervise depuis l'arrière-cuisine d'une auberge. Il reçoit les paiements, note les dettes, donne les ordres. Si les PJ le confrontent, il dit : « La crise, c'est vous. Les gens n'ont plus d'argent, alors ils empruntent. Ils empruntent, alors ils doivent. Ils doivent, alors je viens. Vous voulez que j'arrête ? Trouvez-leur de l'argent. »\n\nSi les PJ ont une dette envers le Syndicat (du scénario 1), le Collecteur la mentionne. Si les PJ ont humilié Brek ou les hommes de main au scénario 1, le Collecteur facture plus cher pour tout.",
+            notes_mj:
+              "Cette scène montre le Syndicat qui exploite la crise de manière systémique. Les hommes de main sont des employés. Le Collecteur est un gestionnaire. La violence est dans le système, pas dans les coups. Les PJ ne peuvent pas tout sauver — c'est le point. Chaque choix a un coût.",
+          },
+
+          texte_a_lire:
+            "La Vieille Ville est calme d'une façon qui ne l'est pas. Des lampes vacillent. Quelque part, des gens crient. Plus loin, quelqu'un pleure. Et au coin de la rue, un homme compte des pièces dans un carnet. Il lève les yeux. « Vous êtes de passage ? Ou vous cherchez quelqu'un ? »",
+
+          objectif: "Montrer le Syndicat qui exploite la crise systématiquement. Les PJ doivent choisir quoi sauver et quoi laisser.",
+
+          contexte_mj: {
+            situation:
+              "Le Syndicat accélère ses recouvrements pendant la crise. Les gens n'ont plus d'argent, alors ils empruntent au Syndicat. Le Syndicat revient récupérer. La garde ferme les yeux parce que le Syndicat la paie aussi.",
+            secrets: [
+              "Le Collecteur supervise les recouvrements depuis une auberge de la Vieille Ville. Il reçoit les paiements et note les dettes dans un carnet.",
+              "L'un des débiteurs est un témoin utile : il a vu des caisses marquées d'un sceau universitaire passer par les égouts la nuit précédente.",
+              "Si les PJ ont une dette envers le Syndicat, le Collecteur la réclame maintenant.",
+            ],
+            rappels: [
+              "Les hommes de main sont des employés. Le recouvrement est professionnel.",
+              "Le Collecteur ne menace pas. Il facture.",
+              "Les PJ ne peuvent pas être dans trois rues à la fois.",
+            ],
+          },
+
+          defis: [
+            {
+              competence: "Intimidation",
+              difficulte: "Moyen",
+              reussite: "Les hommes de main reculent dans une rue. Les débiteurs sont libres. Le Syndicat note les PJ.",
+              echec: "Les hommes de main ne bougent pas. « Vous voulez faire la guerre au Syndicat ? Maintenant ? Pendant la crise ? Réfléchissez. »",
+            },
+            {
+              competence: "Diplomatie",
+              difficulte: "Moyen",
+              reussite: "Le Collecteur accepte de suspendre les recouvrements pour la nuit — contre une faveur future ou un service immédiat.",
+              echec: "Le Collecteur refuse. « La crise, c'est mon marché. Vous voulez que j'arrête ? Trouvez-leur de l'argent. »",
+            },
+            {
+              competence: "Renseignements",
+              difficulte: "Moyen",
+              reussite: "L'un des débiteurs, un tavernier, révèle qu'il a vu des caisses marquées d'un sceau universitaire passer par les égouts la nuit précédente. Il donne l'heure et le tunnel.",
+              echec: "Le tavernier est trop terrorisé pour parler. Il fuit dès qu'il peut.",
+            },
+          ],
+
+          indices: [
+            {
+              indice: "Les caisses dans les égouts (confirmation)",
+              localisation: "Témoignage du tavernier débiteur",
+              detection: "Renseignements Moyen (si le tavernier est sauvé)",
+              information: "Des caisses marquées d'un sceau universitaire passent par les égouts la nuit. Le tavernier a vu le tunnel et l'heure.",
+              usage: "Confirmation du circuit des ossements et piste vers Brek.",
+            },
+          ],
+
+          guide_mj: {
+            intention: "Montrer le Syndicat qui exploite la crise systématiquement. Les PJ doivent choisir quoi sauver et quoi laisser.",
+            mise_en_place: "Les PJ traversent la Vieille Ville pendant la nuit. Ils entendent les recouvrements.",
+            deroulement: [
+              "Les PJ entendent des cris dans une rue. Ils trouvent un recouvrement en cours.",
+              "Plus loin, un autre recouvrement. Et un autre.",
+              "Les PJ choisissent où intervenir. Ils ne peuvent pas être partout.",
+              "S'ils cherchent le responsable, ils trouvent le Collecteur dans une auberge.",
+            ],
+            actions_utiles: [
+              "Intervenir dans un recouvrement (Intimidation).",
+              "Négocier avec le Collecteur (Diplomatie).",
+              "Sauver un débiteur qui a des informations (Renseignements).",
+              "Utiliser le chaos pour infiltrer un bâtiment ou suivre une piste.",
+            ],
+            fronts_heritiers: [
+              "Front 'Le Syndicat serre la ville' — +1 segment si les PJ utilisent une route sans payer, +2 s'ils humilient le Collecteur.",
+              "Front 'Le Plan de Thade' — le tavernier confirme les caisses dans les égouts.",
+            ],
+            jeu_des_pnj: "Le Collecteur est courtois, précis, jamais pressant. Les hommes de main sont calmes et professionnels. Les débiteurs sont terrifiés.",
+            escalade: "Si les PJ humilient le Collecteur, le Syndicat ferme une route plus tard ou vend des informations sur les PJ à Thade.",
+            sortie: "Les PJ ont intervenu dans un ou plusieurs recouvrements, ou non. Ils ont un indice sur les caisses, ou non. Le Syndicat les a vus, ou non.",
+          },
+
+          reperes_de_jeu: {
+            indice_indispensable: "Aucun — mais le témoignage du tavernier confirme le circuit des ossements.",
+            ne_pas_bloquer_sur_un_jet: "Même si tous les jets échouent, les PJ peuvent suivre les égouts par d'autres moyens. Le Collecteur ne les tue pas — il facture.",
+            question_dramatique: "Combien de gens pouvez-vous sauver en une nuit ?",
+          },
+
+          transitions: {
+            resume: "Les PJ quittent la Vieille Ville. Les recouvrements continuent ailleurs. Le Syndicat garde sa rancune — ou sa dette.",
+            reussite: "Les PJ ont sauvé des débiteurs et obtenu un indice sur les caisses. Mais le Syndicat les a vus.",
+            echec: "Les PJ n'ont rien pu faire. Les recouvrements ont eu lieu. La Vieille Ville sait que personne ne la protège.",
+          },
+
+          navigation: {
+            indice_indispensable: "Aucun. Cette scène est optionnelle mais renforce le front Syndicat et donne un indice utile.",
+            consequence_si_manque: "Sans cette scène, le Syndicat reste en arrière-plan. Les PJ n'ont pas vu l'escalade des recouvrements.",
+            pnj_alternatifs: ["le_collecteur — peut être confronté directement", "hommes_main_pegre — peuvent être suivis jusqu'au Collecteur"],
+            front_si_ignore: "Le Syndicat serre la ville — sans cette scène, le front avance hors-champ sans opposition.",
+            scenes_alternatives: ["s2_entrepots_pleins — si les PJ vont aux entrepôts au lieu de la Vieille Ville"],
+            sorties_jouables: [
+              {
+                condition: "Les PJ veulent suivre les caisses dans les égouts",
+                sceneId: "s2_brek_ferme_les_vannes",
+                type: "indice_principal",
+                moteur: "Le tavernier a donné le tunnel et l'heure. Les PJ descendent.",
+                accroche_mj: "Le tavernier dit : « Les caisses passent par le tunnel sous la rue du Puits. Mais le tunnel, c'est à Brek. »",
+                consequence_si_refus: "Les PJ peuvent aller au Conseil sous Pression à la place.",
+              },
+              {
+                condition: "Les PJ veulent trouver des preuves documentaires",
+                sceneId: "s2_marche_noir_preuves",
+                type: "libre",
+                moteur: "Le Collecteur a mentionné qu'il possède un registre des cargaisons. Les PJ veulent l'obtenir.",
+                accroche_mj: "Le Collecteur dit : « Si vous voulez savoir ce que je transporte, j'ai un registre. Mais un registre, c'est de la marchandise. »",
+                consequence_si_refus: "Les PJ peuvent trouver les preuves par d'autres moyens (réserve interdite, laboratoire de Voss).",
+              },
+              {
+                condition: "Les PJ veulent aller au Conseil",
+                sceneId: "s2_conseil_sous_pression",
+                type: "social",
+                moteur: "Les PJ ont vu le Syndicat exploiter la crise et veulent alerter le Conseil.",
+                accroche_mj: "Les PJ arrivent au Conseil avec la preuve que le Syndicat contrôle la Vieille Ville. Mais le Conseil a d'autres urgences.",
+                consequence_si_refus: "Le Conseil se réunit sans les PJ.",
+              },
+            ],
+            fallback_mj: "Si les PJ ignorent la scène, le Syndicat avance hors-champ. Les recouvrements ont lieu. La Vieille Ville se soumet.",
+            objectif_scene: "Montrer le Syndicat qui exploite la crise et donner un indice sur les caisses dans les égouts.",
+            pression: "La crise s'aggrave. Le déphasage s'étend. Chaque nuit perdue, le Syndicat renforce son emprise.",
+            actions_pj_attendues: ["intervenir dans les recouvrements", "confronter le Collecteur", "obtenir le témoignage du tavernier"],
+            sorties_possibles: ["vers s2_brek_ferme_les_vannes (suivre les caisses)", "vers s2_marche_noir_preuves (obtenir le registre)", "vers s2_conseil_sous_pression (alerter le Conseil)"],
+            si_les_pj_bloquent: "Si les PJ refusent d'intervenir, les recouvrements ont lieu. Le front 'Le Syndicat serre la ville' avance d'un segment.",
+            conditions_sortie: [
+              "Les PJ ont intervenu dans au moins un recouvrement, ou ont choisi de ne pas intervenir.",
+              "OU les PJ ont confronté le Collecteur.",
+              "OU les PJ ont quitté la Vieille Ville sans intervenir.",
+            ],
+            transition_defaut: "Les recouvrements se terminent. Les hommes de main disparaissent dans la nuit. Le Collecteur ferme son carnet. « Bonne nuit. Si vous avez besoin de moi, vous savez où je suis. Vous savez ce que ça coûte. »",
+          },
+        },
+
+        {
           id: "s2_conseil_crise",
           titre: "Le Conseil en Crise",
           type: "Social",
@@ -1212,9 +1364,9 @@ export const scenario2 = {
             ambiance:
               "La salle du Conseil est vaste, voûtée, éclairée par des lampes d'ambre qui ne tremblent pas. Des bancs de pierre en demi-cercle font face à une table surélevée. Avel Ronce est assis derrière la table, un dossier ouvert devant lui, l'ordre du jour sous les doigts. Hessa Brunefer se tient debout à sa droite, les bras croisés, l'étole de délégation sur les épaules. Maelric de Caldris se tient à gauche, pâle, un peu raide, un carnet à la main. La patrouille mixte surveille les portes. Maera Olane est assise au fond de la salle, un dossier sous le bras, prête à parler si on lui donne la parole — et si on la protège.",
             deroulement_narratif:
-              "Avel Ronce ouvre la session en annonçant que le Conseil doit « répondre aux événements de la Place de la Fondation et aux inquiétudes de nos partenaires extérieurs ». Il ne nomme ni le Champion, ni Maelric, ni les malades. Il parle de « tensions » et de « mesures appropriées ».\n\nHessa Brunefer prend la parole la première. Elle rappelle quel article de quelle charte protège les Terrasses, exige que les clans ne soient pas punis pour les actes du Champion, et menace de fermer l'accès commercial à la mine si le Conseil place les Terrasses sous tutelle.\n\nMaelric parle ensuite. Courtois, froid, il pose une carte sur la table : Valombre n'est plus atteignable par les routes normales depuis trois semaines. Les marchands ne reviennent pas. Les messagers n'arrivent plus. Si le Conseil ne peut pas prouver qu'il contrôle la situation, Caldris imposera la quarantaine dans dix jours.\n\nAvel Ronce tente de renvoyer chaque point à « la commission compétente ». Hessa s'y oppose. Maelric s'impatiente. La salle s'enlise.\n\nSi les PJ sont présents (convocation officielle, invitation d'un membre du Conseil, ou parce qu'ils se sont invités), ils peuvent :\n\n1. Appuyer Hessa : les Terrasses ne sont pas le problème. La crise vient d'ailleurs. Persuasion DD 14. Si réussi, Avel recule sur la tutelle.\n\n2. Présenter les preuves d'Olane : si Olane est là et que les PJ la soutiennent, elle expose les irrégularités de Thade (142 consultations, les outils d'Université sur les tombes, le protocole S-01). Avel Ronce veut renvoyer ça à « la commission disciplinaire de l'Université ». Olane répond que l'Université étouffe l'affaire depuis des mois. Persuasion DD 15. Si réussi, le Conseil ouvre une enquête officielle.\n\n3. Négocier avec Maelric : les PJ proposent une preuve concrète que Valombre tient le verrou (les rites de Thorgar, les os des Thanes, le sceau). Diplomatie DD 15. Si réussi, Maelric accorde un délai supplémentaire. Si échoué, il maintient l'ultimatum.\n\n4. Demander la loi martiale : les PJ poussent le Conseil à voter des mesures d'exception pour protéger les Terrasses et interdire les rassemblements du Champion. Avel accepte avec soulagement — ça lui donne l'illusion d'agir. Mais la loi martiale avance aussi le Front « Le Conseil, la Machine à Retarder ».\n\nSi les PJ ne font rien, le Conseil ne décide rien. Avel renvoie tout en commission. Hessa repart furieuse. Maelric note l'incapacité de Valombre dans son carnet.",
+              "Avel Ronce ouvre la session en annonçant que le Conseil doit « répondre aux événements de la Place de la Fondation et aux inquiétudes de nos partenaires extérieurs ». Il ne nomme ni le Champion, ni Maelric, ni les malades. Il parle de « tensions » et de « mesures appropriées ».\n\nHessa Brunefer prend la parole la première. Elle rappelle quel article de quelle charte protège les Terrasses, exige que les clans ne soient pas punis pour les actes du Champion, et menace de fermer l'accès commercial à la mine si le Conseil place les Terrasses sous tutelle.\n\nMaelric parle ensuite. Courtois, froid, il pose une carte sur la table : Valombre n'est plus atteignable par les routes normales depuis trois semaines. Les marchands ne reviennent pas. Les messagers n'arrivent plus. Si le Conseil ne peut pas prouver qu'il contrôle la situation, Caldris imposera la quarantaine dans dix jours.\n\nAvel Ronce tente de renvoyer chaque point à « la commission compétente ». Hessa s'y oppose. Maelric s'impatiente. La salle s'enlise.\n\nSi les PJ sont présents (convocation officielle, invitation d'un membre du Conseil, ou parce qu'ils se sont invités), ils peuvent :\n\n1. Appuyer Hessa : les Terrasses ne sont pas le problème. La crise vient d'ailleurs. Persuasion Moyen. Si réussi, Avel recule sur la tutelle.\n\n2. Présenter les preuves d'Olane : si Olane est là et que les PJ la soutiennent, elle expose les irrégularités de Thade (142 consultations, les outils d'Université sur les tombes, le protocole S-01). Avel Ronce veut renvoyer ça à « la commission disciplinaire de l'Université ». Olane répond que l'Université étouffe l'affaire depuis des mois. Persuasion Moyen. Si réussi, le Conseil ouvre une enquête officielle.\n\n3. Négocier avec Maelric : les PJ proposent une preuve concrète que Valombre tient le verrou (les rites de Thorgar, les os des Thanes, le sceau). Diplomatie Moyen. Si réussi, Maelric accorde un délai supplémentaire. Si échoué, il maintient l'ultimatum.\n\n4. Demander la loi martiale : les PJ poussent le Conseil à voter des mesures d'exception pour protéger les Terrasses et interdire les rassemblements du Champion. Avel accepte avec soulagement — ça lui donne l'illusion d'agir. Mais la loi martiale avance aussi le Front « Le Conseil, la Machine à Retarder ».\n\nSi les PJ ne font rien, le Conseil ne décide rien. Avel renvoie tout en commission. Hessa repart furieuse. Maelric note l'incapacité de Valombre dans son carnet.",
             notes_mj:
-              "Cette scène donne aux PJ un accès direct aux trois forces politiques : Avel (paralysie), Hessa (défense naine), Maelric (pression extérieure). Olane est présente seulement si les PJ l'ont rencontrée dans le Scénario 1 et qu'ils la soutiennent. Si Olane n'est pas disponible, les PJ perdent l'option 2 mais peuvent encore présenter les preuves eux-mêmes avec un DD plus élevé (16 au lieu de 15). La scène peut être jouée avant ou après le Déphasage Visible — si après, Maelric peut témoigner avoir vu une rue se déformer.\n\nGestion de l'overload : si les PJ arrivent avec beaucoup de preuves, le MJ ne traite pas tout en une fois. Ordre de priorité : 1) L'ultimatum de Caldris (Maelric) — c'est l'urgence immédiate. 2) Les irrégularités de Thade (via Olane) — c'est le sujet de fond. 3) La loi martiale (Champion) — c'est la pression extérieure. Si les PJ ont plus de trois preuves, le MJ leur demande d'en choisir trois à présenter. Les autres peuvent être utilisées après le Conseil, dans une scène de suivi avec Olane ou Hessa. Le Conseil ne peut pas tout traiter en une séance — c'est réaliste et ça évite l'overload.",
+              "Cette scène donne aux PJ un accès direct aux trois forces politiques : Avel (paralysie), Hessa (défense naine), Maelric (pression extérieure). Olane est présente seulement si les PJ l'ont rencontrée dans le Scénario 1 et qu'ils la soutiennent. Si Olane n'est pas disponible, les PJ perdent l'option 2 mais peuvent encore présenter les preuves eux-mêmes avec une difficulté plus élevée (Difficile au lieu de Moyen). La scène peut être jouée avant ou après le Déphasage Visible — si après, Maelric peut témoigner avoir vu une rue se déformer.\n\nGestion de la surcharge d'informations : si les PJ arrivent avec beaucoup de preuves, le MJ ne traite pas tout en une fois. Ordre de priorité : 1) L'ultimatum de Caldris (Maelric) — c'est l'urgence immédiate. 2) Les irrégularités de Thade (via Olane) — c'est le sujet de fond. 3) La loi martiale (Champion) — c'est la pression extérieure. Si les PJ ont plus de trois preuves, le MJ leur demande d'en choisir trois à présenter. Les autres peuvent être utilisées après le Conseil, dans une scène de suivi avec Olane ou Hessa. Le Conseil ne peut pas tout traiter en une séance — c'est réaliste et cela évite la surcharge d'informations.",
           },
 
           texte_a_lire:
@@ -1228,7 +1380,7 @@ export const scenario2 = {
             secrets: [
               "Avel Ronce n'est pas corrompu — il est dépassé. Il peut devenir un allié si les PJ lui apportent une vérité simple et présentable qui le couvre politiquement.",
               "Hessa Brunefer sait que les nains possèdent une part du verrou, mais elle ne révélera rien devant Maelric sans garantie.",
-              "Maelric a vu le déphasage de ses propres yeux si la scène se joue après Le Déphasage Visible. Il peut en témoigner, ce qui crédibilise la crise.",
+              "Maelric a vu le déphasage de ses propres yeux si la scène se joue après Le Déphasage visible. Il peut en témoigner, ce qui crédibilise la crise.",
               "Olane a été découragée de témoigner par l'Université. Si les PJ ne la protègent pas, elle se tait.",
             ],
             rappels: [
@@ -1238,9 +1390,9 @@ export const scenario2 = {
           },
 
           defis: [
-            { competence: "Persuasion", dd: 14, reussite: "Les PJ appuient Hessa : Avel recule sur la tutelle des Terrasses.", echec: "Avel renvoie la question en commission. Hessa repart sans garantie." },
-            { competence: "Diplomatie", dd: 15, reussite: "Les PJ négocient avec Maelric : il accorde un délai supplémentaire de cinq jours.", echec: "Maelric maintient l'ultimatum. Dix jours, pas un de plus." },
-            { competence: "Persuasion", dd: 15, reussite: "Olane (ou les PJ) présentent les preuves sur Thade : le Conseil ouvre une enquête officielle.", echec: "Avel renvoie à la commission disciplinaire de l'Université. L'affaire reste interne." },
+            { competence: "Persuasion", difficulte: "Moyen", reussite: "Les PJ appuient Hessa : Avel recule sur la tutelle des Terrasses.", echec: "Avel renvoie la question en commission. Hessa repart sans garantie." },
+            { competence: "Diplomatie", difficulte: "Moyen", reussite: "Les PJ négocient avec Maelric : il accorde un délai supplémentaire de cinq jours.", echec: "Maelric maintient l'ultimatum. Dix jours, pas un de plus." },
+            { competence: "Persuasion", difficulte: "Moyen", reussite: "Olane (ou les PJ) présentent les preuves sur Thade : le Conseil ouvre une enquête officielle.", echec: "Avel renvoie à la commission disciplinaire de l'Université. L'affaire reste interne." },
           ],
 
           indices: [
@@ -1332,11 +1484,11 @@ export const scenario2 = {
             pression: "Sans intervention, la loi martiale est votée à la prochaine session. Le Champion gagne en influence. Le déphasage s'étend pendant les débats.",
             actions_pj_attendues: ["observer les débats et identifier les factions", "présenter des preuves si les PJ en ont", "négocier avec les conseillers", "décider quelle piste suivre après le Conseil"],
             sorties_possibles: ["vers s2_endeuilles_edran (suivre les Endeuillés)", "vers s2_dephasage_visible (explorer le déphasage)", "vers s2_conseil_sous_pression (revenir au Conseil plus tard avec des preuves)"],
-            si_les_pj_bloquent: "Si les PJ n'y vontent pas, le Conseil se réunit sans eux. Mara ou Olane peut informer du résultat. La paralysie est visible et relance l'enquête.",
+            si_les_pj_bloquent: "Si les PJ n'y vont pas, le Conseil se réunit sans eux. Mara ou Olane peut informer du résultat. La paralysie est visible et relance l'enquête.",
             conditions_sortie: [
               "Les PJ ont assisté au Conseil et identifié les blocages (Caldris, Champion, paralysie).",
               "OU les PJ ont présenté des preuves et influencé le vote.",
-              "OU les PJ n'y vontent pas — le Conseil décide sans eux, la loi martiale se rapproche.",
+              "OU les PJ n'y vont pas — le Conseil décide sans eux, la loi martiale se rapproche.",
             ],
             transition_defaut: "Le Conseil se sépare sans décision. Les conseillers quittent la salle. Dehors, la foule attend des réponses. Un crieur annonce : « Le Conseil délibère. Patience. » Que font les PJ ?",
           },
@@ -1355,7 +1507,7 @@ export const scenario2 = {
             ambiance:
               "La Cave des Endeuillés est un sous-sol humide sous un immeuble abandonné de la Vieille Ville. On y descend par un escalier étroit, marche après marche, jusqu'à une pièce voûtée qui sent la cire brûlée et la pierre humide. Des chaises dépareillées autour d'une table couverte de coulures de cire. Des portraits, des bougies, des objets des morts occupent les niches creusées dans les murs — un ruban, une pipe, une lettre pliée. L'air est lourd, chaud, presque suffocant. On parle bas ici. On pleure bas.",
             deroulement_narratif:
-              "Edran Morn se tient au fond de la cave. Robe sombre, visage marqué, mains ouvertes. Il ne prêche pas — il accueille. « Vous avez perdu quelqu'un », dit-il. « Tout le monde a perdu quelqu'un. Ici, nous ne pleurons pas. Nous ouvrons. »\n\nLes Endeuillés sont assis, une vingtaine, silencieux. Certains tiennent des photos. D'autres ont les yeux fermés. Edran accomplit les gestes du rite : il trace des runes dans l'air, lentement, avec une précision de cérémonie. Les gestes ressemblent à quelque chose — si un PJ a vu les rites d'Edhrek-Murn au Temple-Forgeron, il reconnaît les mouvements. Mais à l'envers. Religion DD 14 pour identifier l'inversion : Edran accomplit Edhrek-Murn à l'envers. Au lieu de maintenir le sceau, il le fissure.\n\nSur la table, des textes. Des pages arrachées, photocopiées, recopiées à la main. Le tampon de la Réserve de Recherche Interdite de l'Université est visible sur l'une des pages. Investigation DD 13 pour examiner les textes : ils décrivent un rite de seuil, pas un rite de deuil. Edran a trouvé ces textes — il croit qu'ils ouvrent une porte vers les morts. En réalité, ils ouvrent le seuil de la Spirale.\n\nLes PJ peuvent : convaincre Edran d'arrêter (Diplomatie DD 16 — difficile car Edran croit voir sa fille), disperser les Endeuillés par la force (Intimidation DD 13 — mais la violence les radicalise), ou détruire les textes (ce qui arrête le rite mais pousse les Endeuillés à chercher un nouveau gourou). La meilleure option est de convaincre Edran que son rite ne ramène pas les morts — il ouvre une porte vers quelque chose de pire.",
+              "Edran Morn se tient au fond de la cave. Robe sombre, visage marqué, mains ouvertes. Il ne prêche pas — il accueille. « Vous avez perdu quelqu'un », dit-il. « Tout le monde a perdu quelqu'un. Ici, nous ne pleurons pas. Nous ouvrons. »\n\nLes Endeuillés sont assis, une vingtaine, silencieux. Certains tiennent des photos. D'autres ont les yeux fermés. Edran accomplit les gestes du rite : il trace des runes dans l'air, lentement, avec une précision de cérémonie. Les gestes ressemblent à quelque chose — si un PJ a vu les rites d'Edhrek-Murn au Temple-Forgeron, il reconnaît les mouvements. Mais à l'envers. Religion Moyen pour identifier l'inversion : Edran accomplit Edhrek-Murn à l'envers. Au lieu de maintenir le sceau, il le fissure.\n\nSur la table, des textes. Des pages arrachées, photocopiées, recopiées à la main. Le tampon de la Réserve de Recherche Interdite de l'Université est visible sur l'une des pages. Investigation Moyen pour examiner les textes : ils décrivent un rite de seuil, pas un rite de deuil. Edran a trouvé ces textes — il croit qu'ils ouvrent une porte vers les morts. En réalité, ils ouvrent le seuil de la Spirale.\n\nLes PJ peuvent : convaincre Edran d'arrêter (Diplomatie Difficile — difficile car Edran croit voir sa fille), disperser les Endeuillés par la force (Intimidation Moyen — mais la violence les radicalise), ou détruire les textes (ce qui arrête le rite mais pousse les Endeuillés à chercher un nouveau gourou). La meilleure option est de convaincre Edran que son rite ne ramène pas les morts — il ouvre une porte vers quelque chose de pire.",
             notes_mj:
               "Edran est sincère dans son deuil. Il n'est pas un agent de Thade — il est une victime indirecte. Thade a laissé les textes circuler délibérément pour affaiblir le sceau par procuration. Si les PJ tuent Edran, les Endeuillés rejoignent le Champion. La violence nourrit la crise. Si les PJ ont rencontré Ursula, elle peut les aider à approcher les Endeuillés avec compassion plutôt qu'avec force.",
           },
@@ -1380,14 +1532,14 @@ export const scenario2 = {
           },
 
           defis: [
-            { competence: "Religion", dd: 14, reussite: "Le rite d'Edran est une distorsion du rite d'Edhrek-Murn. Il accomplit les gestes à l'envers — au lieu de maintenir le sceau, il le fissure.", echec: "Le rite est étrange et funéraire. Difficile d'en comprendre la mécanique." },
-            { competence: "Diplomatie", dd: 16, reussite: "Les PJ convainquent Edran que son rite ne ramène pas les morts — il ouvre une porte vers quelque chose de pire. Edran, brisé, accepte d'arrêter.", echec: "Edran refuse. « Vous ne comprenez pas. J'ai vu ma fille. Elle m'attend. »" },
-            { competence: "Intimidation", dd: 13, reussite: "Les PJ dispersent les Endeuillés par la force. Le rite s'arrête, mais les Endeuillés se radicalisent.", echec: "Les Endeuillés se défendent. La cave devient un champ de bataille." },
+            { competence: "Religion", difficulte: "Moyen", reussite: "Le rite d'Edran est une distorsion du rite d'Edhrek-Murn. Il accomplit les gestes à l'envers — au lieu de maintenir le sceau, il le fissure.", echec: "Le rite est étrange et funéraire. Difficile d'en comprendre la mécanique." },
+            { competence: "Diplomatie", difficulte: "Difficile", reussite: "Les PJ convainquent Edran que son rite ne ramène pas les morts — il ouvre une porte vers quelque chose de pire. Edran, brisé, accepte d'arrêter.", echec: "Edran refuse. « Vous ne comprenez pas. J'ai vu ma fille. Elle m'attend. »" },
+            { competence: "Intimidation", difficulte: "Moyen", reussite: "Les PJ dispersent les Endeuillés par la force. Le rite s'arrête, mais les Endeuillés se radicalisent.", echec: "Les Endeuillés se défendent. La cave devient un champ de bataille." },
           ],
 
           indices: [
-            { indice: "Les textes volés", localisation: "Cave des Endeuillés", detection: "Investigation DD 13", information: "Les textes d'Edran portent le tampon de la Réserve de Recherche Interdite de l'Université.", usage: "Preuve que Thade a laissé les textes circuler pour affaiblir le sceau par procuration." },
-            { indice: "Le rite inversé", localisation: "Gestes d'Edran", detection: "Religion DD 14", information: "Edran accomplit les gestes d'Edhrek-Murn à l'envers. Au lieu de maintenir, il fissure.", usage: "Comprendre que le rite est une arme contre le sceau, pas un rite de deuil." },
+            { indice: "Les textes volés", localisation: "Cave des Endeuillés", detection: "Investigation Moyen", information: "Les textes d'Edran portent le tampon de la Réserve de Recherche Interdite de l'Université.", usage: "Preuve que Thade a laissé les textes circuler pour affaiblir le sceau par procuration." },
+            { indice: "Le rite inversé", localisation: "Gestes d'Edran", detection: "Religion Moyen", information: "Edran accomplit les gestes d'Edhrek-Murn à l'envers. Au lieu de maintenir, il fissure.", usage: "Comprendre que le rite est une arme contre le sceau, pas un rite de deuil." },
           ],
 
           guide_mj: {
@@ -1486,7 +1638,7 @@ export const scenario2 = {
 
         {
           id: "s2_dephasage_visible",
-          titre: "Le Déphasage Visible",
+          titre: "Le Déphasage visible",
           type: "Horreur",
           resume_mj:
             "Les PJ expérimentent le déphasage en direct. Une route qu'ils connaissent se déforme. Les distances changent. Le ciel prend une teinte violette. Un écho de la Spirale filtre dans Valombre. Ils doivent traverser la zone déphasée pour atteindre leur objectif.",
@@ -1498,9 +1650,9 @@ export const scenario2 = {
             ambiance:
               "Les ruelles de la Vieille Ville sont étroites, pavées de pierres inégales, bordées de maisons penchées dont les étages se rapprochent au fil des siècles. Normalement, on y sent le pain, la fumée, l'humidité de la rivière. Mais aujourd'hui, l'air ne porte plus d'odeur. Le ciel, visible entre les toits, a pris une teinte laiteuse — pas grise, pas violette, quelque chose entre les deux. Les murs ne sont pas à la même distance. Le sol semble souple sous les pieds, comme s'il y avait une couche d'air entre la semelle et la pierre.",
             deroulement_narratif:
-              "Les PJ entrent dans la zone sans avertissement. Une rue qu'ils connaissent, qu'ils ont parcourue dix fois, se déforme. Les distances changent. Le bout de la ruelle n'est pas plus proche après cinq minutes de marche. Un son familier — le bruit d'une charrette, le cri d'un marchand — se répète trois fois, identique, puis s'arrête. Le troisième écho est légèrement différent. Perception DD 13 : c'est un son de la Spirale, pas de Valombre. La Spirale filtre par les fissures du sceau.\n\nSi les PJ utilisent Détection de la magie, ils voient des filaments violets dans l'air — des lignes fines, presque invisibles, qui descendent vers le sous-sol. Direction : le Puits de l'Abîme. Connaissances (mystères) DD 15 : le déphasage est causé par la fissuration du sceau. Plus le sceau cède, plus ces zones s'étendront.\n\nLa zone est limitée — quelques rues — mais à l'intérieur, les repères habituels ne fonctionnent plus. Survie DD 14 pour trouver un chemin stable. Si les PJ échouent, ils tournent en rond et ressortent au point de départ après 20 minutes. La zone n'est pas un piège mortel — c'est un avertissement. Les habitants de la Vieille Ville ont commencé à éviter ces rues. Ceux qui y entrent en ressortent désorientés, parfois changés.\n\nSi les PJ ont des liens avec la Spirale (objets, rêves, contacts avec Sealine), ils sont plus sensibles au déphasage. S'ils restent trop longtemps, ils subissent un effet de confusion ou entendent la voix de Sealine.",
+              "Les PJ entrent dans la zone sans avertissement. Une rue qu'ils connaissent, qu'ils ont parcourue dix fois, se déforme. Les distances changent. Le bout de la ruelle n'est pas plus proche après cinq minutes de marche. Un son familier — le bruit d'une charrette, le cri d'un marchand — se répète trois fois, identique, puis s'arrête. Le troisième écho est légèrement différent. Perception Moyen : c'est un son de la Spirale, pas de Valombre. La Spirale filtre par les fissures du sceau.\n\nSi les PJ utilisent Détection de la magie, ils voient des filaments violets dans l'air — des lignes fines, presque invisibles, qui descendent vers le sous-sol. Direction : le Puits de l'Abîme. Connaissances (mystères) Moyen : le déphasage est causé par la fissuration du sceau. Plus le sceau cède, plus ces zones s'étendront.\n\nLa zone est limitée — quelques rues — mais à l'intérieur, les repères habituels ne fonctionnent plus. Survie Moyen pour trouver un chemin stable. Si les PJ échouent, ils tournent en rond et ressortent au point de départ après 20 minutes. La zone n'est pas un piège mortel — c'est un avertissement. Les habitants de la Vieille Ville ont commencé à éviter ces rues. Ceux qui y entrent en ressortent désorientés, parfois changés.\n\nSi les PJ ont des liens avec la Spirale (objets, rêves, contacts avec Sealine), ils sont plus sensibles au déphasage. S'ils restent trop longtemps, ils subissent un effet de confusion ou entendent la voix de Sealine.",
             notes_mj:
-              "Le déphasage n'est pas une information — c'est une expérience. Le MJ doit le faire vivre sensoriellement : l'absence d'odeur, la souplesse du sol, les échos répétés, la distance qui ne diminue pas. C'est la première fois que les PJ expérimentent directement la Spirale qui filtre. Cette scène transforme la crise cosmique d'un concept abstrait en une réalité corporelle.",
+              "Le déphasage est une expérience. Le MJ doit le faire vivre sensoriellement : l'absence d'odeur, la souplesse du sol, les échos répétés, la distance qui ne diminue pas. C'est la première fois que les PJ expérimentent directement la Spirale qui filtre. Cette scène transforme la crise cosmique d'un concept abstrait en une réalité corporelle.",
           },
 
           texte_a_lire:
@@ -1523,18 +1675,18 @@ export const scenario2 = {
           },
 
           defis: [
-            { competence: "Survie", dd: 14, reussite: "Les PJ trouvent un chemin stable à travers la zone. Ils sentent les variations et évitent les pièges spatiaux.", echec: "Les PJ tournent en rond. Ils ressortent au point de départ après 20 minutes." },
-            { competence: "Connaissances (mystères)", dd: 15, reussite: "Les PJ identifient les filaments planaires et peuvent les suivre jusqu'à leur source — le Puits de l'Abîme.", echec: "Les filaments sont visibles mais incompréhensibles. Des lignes violettes dans l'air qui ne mènent nulle part." },
-            { competence: "Perception", dd: 13, reussite: "Les PJ remarquent que les échos sonores se répètent par trois. Le troisième écho est légèrement différent — c'est un son de la Spirale, pas de Valombre.", echec: "Les sons sont étranges mais sans signification claire." },
+            { competence: "Survie", difficulte: "Moyen", reussite: "Les PJ trouvent un chemin stable à travers la zone. Ils sentent les variations et évitent les pièges spatiaux.", echec: "Les PJ tournent en rond. Ils ressortent au point de départ après 20 minutes." },
+            { competence: "Connaissances (mystères)", difficulte: "Moyen", reussite: "Les PJ identifient les filaments planaires et peuvent les suivre jusqu'à leur source — le Puits de l'Abîme.", echec: "Les filaments sont visibles mais incompréhensibles. Des lignes violettes dans l'air qui ne mènent nulle part." },
+            { competence: "Perception", difficulte: "Moyen", reussite: "Les PJ remarquent que les échos sonores se répètent par trois. Le troisième écho est légèrement différent — c'est un son de la Spirale, pas de Valombre.", echec: "Les sons sont étranges mais sans signification claire." },
           ],
 
           indices: [
-            { indice: "Les filaments planaires", localisation: "Zone déphasée", detection: "Détection de la magie ou Connaissances (mystères) DD 15", information: "Des filaments violets relient la zone à un point souterrain. Direction : Puits de l'Abîme.", usage: "Preuve visuelle que le déphasage vient du sceau." },
-            { indice: "Le troisième écho", localisation: "Sons de la zone", detection: "Perception DD 13", information: "Le troisième écho d'un son n'est pas une répétition — c'est un son de la Spirale qui filtre.", usage: "Comprendre que la Spirale n'est pas un autre monde lointain. Elle est là, qui filtre par les fissures." },
+            { indice: "Les filaments planaires", localisation: "Zone déphasée", detection: "Détection de la magie ou Connaissances (mystères) Moyen", information: "Des filaments violets relient la zone à un point souterrain. Direction : Puits de l'Abîme.", usage: "Preuve visuelle que le déphasage vient du sceau." },
+            { indice: "Le troisième écho", localisation: "Sons de la zone", detection: "Perception Moyen", information: "Le troisième écho d'un son est un son de la Spirale qui filtre.", usage: "Comprendre que la Spirale filtre par les fissures." },
           ],
 
           guide_mj: {
-            intention: "Faire vivre le déphasage. Ce n'est pas une information — c'est une expérience.",
+            intention: "Faire vivre le déphasage. C'est une expérience.",
             mise_en_place: "Les PJ traversent la Vieille Ville et entrent dans une zone déphasée sans avertissement.",
             deroulement: ["Les PJ entrent dans la zone.", "Les repères spatiaux et temporels se déforment.", "Survie pour naviguer.", "Connaissances pour comprendre.", "Les PJ ressortent de l'autre côté (ou au point de départ)."],
             actions_utiles: ["Suivre les filaments vers le Puits.", "Marquer le sol pour ne pas tourner en rond.", "Utiliser Détection de la magie.", "Fermer les yeux et avancer au son."],
@@ -1612,7 +1764,7 @@ export const scenario2 = {
                 consequence_si_refus: "Les PJ peuvent ignorer les routes, mais le déphasage les affectera tôt ou tard.",
               },
             ],
-            fallback_mj: "Le Déphasage Visible est une scène d'investigation qui peut être déclenchée par les rumeurs, par Olane, ou par les PJ qui explorent la ville. Si les PJ n'y vontent jamais, le déphasage s'étend sans qu'ils comprennent sa source. Olane peut apporter l'information plus tard.",
+            fallback_mj: "Le Déphasage visible est une scène d'investigation qui peut être déclenchée par les rumeurs, par Olane, ou par les PJ qui explorent la ville. Si les PJ n'y vont jamais, le déphasage s'étend sans qu'ils comprennent sa source. Olane peut apporter l'information plus tard.",
             objectif_scene: "Comprendre que le déphasage vient du sceau et qu'il affecte la réalité de Valombre (froid, filaments planaires, distorsions).",
             pression: "Le déphasage s'étend chaque jour. Les filaments deviennent visibles. Les distorsions s'aggravent. Le front 'Le Sceau qui cède' avance sans intervention.",
             actions_pj_attendues: ["examiner les filaments planaires (Connaissances)", "mesurer l'étendue du déphasage en ville", "identifier la source (le sceau, la Tour)", "collecter des témoignages de citoyens"],
@@ -1629,7 +1781,7 @@ export const scenario2 = {
 
         {
           id: "s2_lettres_doublees",
-          titre: "Les Lettres Doublées",
+          titre: "Les Lettres doublées",
           type: "Investigation",
           resume_mj:
             "Les PJ remarquent que des lettres arrivent en double ou avec des formules anciennes. Une missive de Caldris contient des nouvelles vagues, des signatures attendues, des formules qui datent d'il y a six mois. Le greffier du Beffroi, Odran Bellec, a noté que les horloges ne correspondent plus aux envois. Yselle Vaurin, première syndique de la Guilde Marchande, reçoit des lettres de crédit qui reprennent des montants déjà payés.",
@@ -1641,7 +1793,7 @@ export const scenario2 = {
             ambiance:
               "Le bureau du Beffroi est une petite salle pleine de registres, de cloches miniatures et de poids de laiton. Odran Bellec travaille debout derrière un pupitre encombré. La lumière vient d'une fenêtre étroite qui donne sur les halles. Des piles de lettres sont triées par date — mais certaines dates ne correspondent pas au contenu.",
             deroulement_narratif:
-              "Odran montre ses registres aux PJ s'ils lui demandent ce qui ne va pas. Il a noté trois anomalies :\n\n1. Une lettre de Caldris datée du mois dernier contient des nouvelles qui correspondent à il y a six mois. Les formules, les signatures, les références aux routes — tout est ancien présenté comme récent.\n\n2. Deux lettres de la Guilde Marchande portent le même numéro de lot mais des dates différentes. Yselle Vaurin a reçu le premier exemplaire il y a trois semaines, le second hier. Le contenu est identique, mot pour mot.\n\n3. Les horloges du Beffroi indiquent toutes la même heure, mais les cloches des halles sonnent avec un décalage croissant. Odran ne sait plus quelle heure est la bonne.\n\nInvestigation DD 12 : les lettres ne sont pas des contrefaçons. Le papier, l'encre, les sceaux sont authentiques. Les lettres sont vraies — mais elles arrivent en retard ou en double, comme si le temps entre Valombre et l'extérieur se décalait.\n\nSi les PJ vont voir Yselle Vaurin (Guilde Marchande), elle confirme : les lettres de crédit arrivent en double, les montants se répètent, les maisons de commerce signalent des paiements reçus deux fois. Elle ne comprend pas. Elle soupçonne d'abord une fraude, mais les sceaux sont authentiques.\n\nSi les PJ ont déjà rencontré l'émissaire de Caldris, ils peuvent rapprocher les lettres doublées de son témoignage : les Pierres du Traité amènent les émissaires avec des souvenirs incomplets du trajet. Le déphasage ne coupe pas la communication — il la décale.",
+              "Odran montre ses registres aux PJ s'ils lui demandent ce qui ne va pas. Il a noté trois anomalies :\n\n1. Une lettre de Caldris datée du mois dernier contient des nouvelles qui correspondent à il y a six mois. Les formules, les signatures, les références aux routes — tout est ancien présenté comme récent.\n\n2. Deux lettres de la Guilde Marchande portent le même numéro de lot mais des dates différentes. Yselle Vaurin a reçu le premier exemplaire il y a trois semaines, le second hier. Le contenu est identique, mot pour mot.\n\n3. Les horloges du Beffroi indiquent toutes la même heure, mais les cloches des halles sonnent avec un décalage croissant. Odran ne sait plus quelle heure est la bonne.\n\nInvestigation Moyen : les lettres ne sont pas des contrefaçons. Le papier, l'encre, les sceaux sont authentiques. Les lettres sont vraies — mais elles arrivent en retard ou en double, comme si le temps entre Valombre et l'extérieur se décalait.\n\nSi les PJ vont voir Yselle Vaurin (Guilde Marchande), elle confirme : les lettres de crédit arrivent en double, les montants se répètent, les maisons de commerce signalent des paiements reçus deux fois. Elle ne comprend pas. Elle soupçonne d'abord une fraude, mais les sceaux sont authentiques.\n\nSi les PJ ont déjà rencontré l'émissaire de Caldris, ils peuvent rapprocher les lettres doublées de son témoignage : les Pierres du Traité amènent les émissaires avec des souvenirs incomplets du trajet. Le déphasage ne coupe pas la communication — il la décale.",
             notes_mj:
               "Cette capsule peut se jouer quand les PJ passent par le Centre Civique ou les halles. Odran est accessible sans rendez-vous. Yselle exige un minimum de politesse. Aucune scène n'est bloquée si les PJ ignorent cette capsule — mais ils perdent un indice clé sur la nature du déphasage.",
           },
@@ -1666,13 +1818,13 @@ export const scenario2 = {
           },
 
           defis: [
-            { competence: "Investigation", dd: 12, reussite: "Les lettres sont authentiques mais décalées dans le temps. Le déphasage affecte la communication écrite.", echec: "Difficile de distinguer une contrefaçon d'un décalage temporel. Les sceaux sont authentiques, c'est tout ce qu'on peut dire." },
-            { competence: "Renseignements", dd: 13, reussite: "Yselle Vaurin confirme : les lettres de crédit arrivent en double. Les maisons de commerce signalent des paiements reçus deux fois.", echec: "Yselle est occupée et renvoie les PJ. Elle parlera si on lui apporte une preuve." },
+            { competence: "Investigation", difficulte: "Moyen", reussite: "Les lettres sont authentiques mais décalées dans le temps. Le déphasage affecte la communication écrite.", echec: "Difficile de distinguer une contrefaçon d'un décalage temporel. Les sceaux sont authentiques, c'est tout ce qu'on peut dire." },
+            { competence: "Renseignements", difficulte: "Moyen", reussite: "Yselle Vaurin confirme : les lettres de crédit arrivent en double. Les maisons de commerce signalent des paiements reçus deux fois.", echec: "Yselle est occupée et renvoie les PJ. Elle parlera si on lui apporte une preuve." },
           ],
 
           indices: [
             { indice: "Lettre de Caldris décalée", localisation: "Beffroi, registre d'Odran", detection: "Lecture directe", information: "Une lettre datée du mois dernier avec un contenu vieux de six mois. Sceau authentique.", usage: "Comprendre que le déphasage décale le temps de transit des lettres." },
-            { indice: "Lettre de crédit en double", localisation: "Guilde Marchande, bureau de Yselle", detection: "Renseignements DD 13", information: "Deux exemplaires identiques, trois semaines d'écart. Même sceau, même contenu.", usage: "Confirmer que le déphasage affecte les communications commerciales." },
+            { indice: "Lettre de crédit en double", localisation: "Guilde Marchande, bureau de Yselle", detection: "Renseignements Moyen", information: "Deux exemplaires identiques, trois semaines d'écart. Même sceau, même contenu.", usage: "Confirmer que le déphasage affecte les communications commerciales." },
           ],
 
           guide_mj: {
@@ -1754,7 +1906,7 @@ export const scenario2 = {
                 consequence_si_refus: "La loi martiale est votée. Les PJ perdent en liberté de mouvement.",
               },
             ],
-            fallback_mj: "Les Lettres Doublées peuvent être découvertes par Odran Bellec (greffier du Beffroi), par Yselle Vaurin (syndique de la Guilde), ou par les PJ qui remarquent les anomalies. Si les PJ n'explorent jamais cette scène, ils manquent la preuve administrative du déphasage. Olane peut apporter l'information plus tard. La piste économique mène aux Entrepôts Pleins.",
+            fallback_mj: "Les Lettres doublées peuvent être découvertes par Odran Bellec (greffier du Beffroi), par Yselle Vaurin (syndique de la Guilde), ou par les PJ qui remarquent les anomalies. Si les PJ n'explorent jamais cette scène, ils manquent la preuve administrative du déphasage. Olane peut apporter l'information plus tard. La piste économique mène aux Entrepôts Pleins.",
             objectif_scene: "Découvrir que le déphasage affecte le temps de transit des lettres et les horloges. Collecter la preuve administrative du déphasage.",
             pression: "Les communications se dégradent. Les horloges se décalent. Les lettres de crédit doublées créent des tensions économiques. Le déphasage s'étend pendant l'enquête.",
             actions_pj_attendues: ["aller au Beffroi et parler à Odran Bellec", "aller à la Guilde Marchande et parler à Yselle Vaurin", "comparer les lettres doublées et les horloges décalées", "rattacher les anomalies au déphasage"],
@@ -1783,9 +1935,9 @@ export const scenario2 = {
             ambiance:
               "La porte de la Vieille Ville, là où la route du col rejoint les premiers quartiers. Un chariot est arrêté sur le bas-côté. Le mulet broute l'herbe sans lever la tête. Le messager, assis sur le marchepied, se tient la tête entre les mains. Il n'est pas blessé. Il est épuisé. Il a roulé toute la journée et il est revenu au point de départ.",
             deroulement_narratif:
-              "Le messager raconte : il a pris la route du col à l'aube. Il a suivi les bornes. Les bornes indiquaient la bonne direction. Le paysage était normal — champs, bosquets, un pont, un poste de route. Mais au bout de six heures, il a reconnu le mur de la Vieille Ville. Il était de retour.\n\nSi les PJ examinent la route (Investigation DD 12), les bornes sont en place, les ornières sont fraîches, mais les empreintes du chariot font une boucle qui revient sur elle-même. La route ne mène nulle part — elle ramène à Valombre.\n\nSi les PJ vont voir Odran au Beffroi, il confirme : les cloches ont sonné deux fois pour le même convoi. La première fois à l'aube, la seconde à midi. Le messager est parti et revenu sans s'en rendre compte.\n\nSi les PJ ont déjà rencontré l'émissaire de Caldris, ils peuvent rapprocher cette boucle de son témoignage : les Pierres du Traité amènent les émissaires avec des souvenirs incomplets du trajet. Le déphasage ne ferme pas les routes — il les referme sur Valombre.\n\nPerception DD 14 : l'air de la route sent le foin et la poussière, mais sans la fraîcheur du col. C'est l'odeur de la Vieille Ville, pas de la campagne. Le déphasage ne déplace pas la route — il la remplace par une copie qui ramène à la ville.",
+              "Le messager raconte : il a pris la route du col à l'aube. Il a suivi les bornes. Les bornes indiquaient la bonne direction. Le paysage était normal — champs, bosquets, un pont, un poste de route. Mais au bout de six heures, il a reconnu le mur de la Vieille Ville. Il était de retour.\n\nSi les PJ examinent la route (Investigation Moyen), les bornes sont en place, les ornières sont fraîches, mais les empreintes du chariot font une boucle qui revient sur elle-même. La route ne mène nulle part — elle ramène à Valombre.\n\nSi les PJ vont voir Odran au Beffroi, il confirme : les cloches ont sonné deux fois pour le même convoi. La première fois à l'aube, la seconde à midi. Le messager est parti et revenu sans s'en rendre compte.\n\nSi les PJ ont déjà rencontré l'émissaire de Caldris, ils peuvent rapprocher cette boucle de son témoignage : les Pierres du Traité amènent les émissaires avec des souvenirs incomplets du trajet. Le déphasage ne ferme pas les routes — il les referme sur Valombre.\n\nPerception Moyen : l'air de la route sent le foin et la poussière, mais sans la fraîcheur du col. C'est l'odeur de la Vieille Ville, pas de la campagne. Le déphasage ne déplace pas la route — il la remplace par une copie qui ramène à la ville.",
             notes_mj:
-              "Cette capsule peut se jouer quand les PJ passent par la porte de la Vieille Ville ou entendent parler d'un messager perdu. Le messager n'est pas un PNJ nommé — c'est un témoin occasionnel. La scène ne bloque rien, mais elle donne aux PJ une expérience concrète du déphasage.",
+              "Cette capsule peut se jouer quand les PJ passent par la porte de la Vieille Ville ou entendent parler d'un messager perdu. Le messager est un témoin occasionnel. La scène ne bloque rien, mais elle donne aux PJ une expérience concrète du déphasage.",
           },
 
           texte_a_lire:
@@ -1808,13 +1960,13 @@ export const scenario2 = {
           },
 
           defis: [
-            { competence: "Investigation", dd: 12, reussite: "Les ornières du chariot font une boucle qui revient sur elle-même. La route ramène à Valombre.", echec: "Les ornières sont fraîches mais leur direction est confuse. Difficile de dire si c'est une boucle ou un demi-tour." },
-            { competence: "Perception", dd: 14, reussite: "L'air de la route sent le foin et la poussière de la Vieille Ville, pas la fraîcheur du col. Le déphasage remplace la route par une copie.", echec: "L'air semble normal. Rien de particulier à signaler." },
+            { competence: "Investigation", difficulte: "Moyen", reussite: "Les ornières du chariot font une boucle qui revient sur elle-même. La route ramène à Valombre.", echec: "Les ornières sont fraîches mais leur direction est confuse. Difficile de dire si c'est une boucle ou un demi-tour." },
+            { competence: "Perception", difficulte: "Moyen", reussite: "L'air de la route sent le foin et la poussière de la Vieille Ville, pas la fraîcheur du col. Le déphasage remplace la route par une copie.", echec: "L'air semble normal. Rien de particulier à signaler." },
           ],
 
           indices: [
-            { indice: "Les ornières en boucle", localisation: "Route du col, après la porte", detection: "Investigation DD 12", information: "Les empreintes du chariot font une boucle qui revient au point de départ.", usage: "Comprendre que le déphasage referme les routes sur Valombre." },
-            { indice: "L'odeur de la route", localisation: "Route du col", detection: "Perception DD 14", information: "L'air sent la Vieille Ville, pas la campagne. La route est une copie.", usage: "Comprendre que le déphasage remplace le paysage extérieur par une version qui ramène à la ville." },
+            { indice: "Les ornières en boucle", localisation: "Route du col, après la porte", detection: "Investigation Moyen", information: "Les empreintes du chariot font une boucle qui revient au point de départ.", usage: "Comprendre que le déphasage referme les routes sur Valombre." },
+            { indice: "L'odeur de la route", localisation: "Route du col", detection: "Perception Moyen", information: "L'air sent la Vieille Ville, pas la campagne. La route est une copie.", usage: "Comprendre que le déphasage remplace le paysage extérieur par une version qui ramène à la ville." },
           ],
 
           guide_mj: {
@@ -1925,7 +2077,7 @@ export const scenario2 = {
             ambiance:
               "Les entrepôts de la Guilde Marchande bordent le quai de chargement. Des caisses de minerai sont empilées jusqu'au plafond. Des chariots attendent dans l'allée centrale, chargés et couverts. L'air sent la poussière de fer et l'huile de charrette. Un comptable coche des registres sur un pupitre de fortune, entre deux piles de caisses.",
             deroulement_narratif:
-              "Yselle Vaurin reçoit les PJ si ils se présentent comme des enquêteurs ou des alliés du Conseil. Elle montre les entrepôts : trois bâtiments pleins, un quatrième qui déborde. Les convois sont prêts, les contrats sont signés, les lettres de crédit sont payées. Mais les transporteurs reviennent sans avoir livré. Ils ne le disent pas — ils disent que les routes sont instables, que Caldris inspecte davantage, que le Conseil négocie.\n\nInvestigation DD 12 : les registres de la Guilde montrent que les mêmes maisons d'achat passent commande chaque mois pour les mêmes quantités. Les paiements arrivent, les contrats sont renouvelés, mais aucun accusé de réception extérieur n'est enregistré depuis trois mois. Les cargaisons sortent et reviennent, ou ne sortent pas du tout.\n\nSi les PJ ont vu Odran au Beffroi (capsule « Les Lettres Doublées »), ils peuvent rapprocher les lettres de crédit en double des entrepôts pleins : les paiements arrivent en double parce que le temps de transit se décale. Les cargaisons ne partent pas parce que la route ne mène nulle part.\n\nYselle ne dit pas qu'elle comprend. Elle dit qu'elle gère. Elle a des stocks, des contrats, des salariés. Elle ne peut pas annoncer que les convois ne partent plus — ce serait la panique. Elle achète du temps. Elle dit aux marchands que les routes sont en réparation, que Caldris négocie, que le Conseil prépare un accord. Elle ment pour maintenir l'ordre.\n\nSi les PJ la pressent (Intimidation DD 14 ou Persuasion DD 15), elle admet : « Les convois ne partent pas. Je ne sais pas pourquoi. Les routes semblent ouvertes, mais les chariots reviennent. Je ne peux pas le dire publiquement. La Guilde s'effondrerait en une journée. »",
+              "Yselle Vaurin reçoit les PJ s'ils se présentent comme des enquêteurs ou des alliés du Conseil. Elle montre les entrepôts : trois bâtiments pleins, un quatrième qui déborde. Les convois sont prêts, les contrats sont signés, les lettres de crédit sont payées. Mais les transporteurs reviennent sans avoir livré. Ils ne le disent pas — ils disent que les routes sont instables, que Caldris inspecte davantage, que le Conseil négocie.\n\nInvestigation Moyen : les registres de la Guilde montrent que les mêmes maisons d'achat passent commande chaque mois pour les mêmes quantités. Les paiements arrivent, les contrats sont renouvelés, mais aucun accusé de réception extérieur n'est enregistré depuis trois mois. Les cargaisons sortent et reviennent, ou ne sortent pas du tout.\n\nSi les PJ ont vu Odran au Beffroi (capsule « Les Lettres doublées »), ils peuvent rapprocher les lettres de crédit en double des entrepôts pleins : les paiements arrivent en double parce que le temps de transit se décale. Les cargaisons ne partent pas parce que la route ne mène nulle part.\n\nYselle ne dit pas qu'elle comprend. Elle dit qu'elle gère. Elle a des stocks, des contrats, des salariés. Elle ne peut pas annoncer que les convois ne partent plus — ce serait la panique. Elle achète du temps. Elle dit aux marchands que les routes sont en réparation, que Caldris négocie, que le Conseil prépare un accord. Elle ment pour maintenir l'ordre.\n\nSi les PJ la pressent (Intimidation Moyen ou Persuasion Moyen), elle admet : « Les convois ne partent pas. Je ne sais pas pourquoi. Les routes semblent ouvertes, mais les chariots reviennent. Je ne peux pas le dire publiquement. La Guilde s'effondrerait en une journée. »",
             notes_mj:
               "Cette capsule peut se jouer quand les PJ passent par le Centre Civique ou enquêtent sur l'économie. Yselle est accessible si les PJ ont un contact institutionnel. La scène ne bloque rien, mais elle montre que le déphasage a des conséquences économiques concrètes.",
           },
@@ -1950,13 +2102,13 @@ export const scenario2 = {
           },
 
           defis: [
-            { competence: "Investigation", dd: 12, reussite: "Les registres montrent que les mêmes maisons d'achat passent commande chaque mois, mais aucun accusé de réception extérieur n'est enregistré depuis trois mois.", echec: "Les registres sont volumineux et désorganisés. Difficile de voir la tendance." },
-            { competence: "Persuasion", dd: 15, reussite: "Yselle admet que les convois ne partent pas. Elle ne sait pas pourquoi. Elle ment pour maintenir l'ordre.", echec: "Yselle reste sur sa version officielle : les routes sont en réparation, Caldris négocie." },
+            { competence: "Investigation", difficulte: "Moyen", reussite: "Les registres montrent que les mêmes maisons d'achat passent commande chaque mois, mais aucun accusé de réception extérieur n'est enregistré depuis trois mois.", echec: "Les registres sont volumineux et désorganisés. Difficile de voir la tendance." },
+            { competence: "Persuasion", difficulte: "Moyen", reussite: "Yselle admet que les convois ne partent pas. Elle ne sait pas pourquoi. Elle ment pour maintenir l'ordre.", echec: "Yselle reste sur sa version officielle : les routes sont en réparation, Caldris négocie." },
           ],
 
           indices: [
-            { indice: "Registres de la Guilde", localisation: "Entrepôts, bureau de Yselle", detection: "Investigation DD 12", information: "Les mêmes commandes chaque mois, aucun accusé de réception extérieur depuis trois mois.", usage: "Comprendre que les convois ne partent pas et que la Guilde le cache." },
-            { indice: "L'aveu de Yselle", localisation: "Entrepôts, après pression", detection: "Persuasion DD 15 ou Intimidation DD 14", information: "Les convois reviennent. Les routes semblent ouvertes mais ramènent à Valombre. Yselle ment pour éviter la panique.", usage: "Confirmer que le déphasage a des conséquences économiques et que les institutions le cachent." },
+            { indice: "Registres de la Guilde", localisation: "Entrepôts, bureau de Yselle", detection: "Investigation Moyen", information: "Les mêmes commandes chaque mois, aucun accusé de réception extérieur depuis trois mois.", usage: "Comprendre que les convois ne partent pas et que la Guilde le cache." },
+            { indice: "L'aveu de Yselle", localisation: "Entrepôts, après pression", detection: "Persuasion Moyen ou Intimidation Moyen", information: "Les convois reviennent. Les routes semblent ouvertes mais ramènent à Valombre. Yselle ment pour éviter la panique.", usage: "Confirmer que le déphasage a des conséquences économiques et que les institutions le cachent." },
           ],
 
           guide_mj: {
@@ -2054,6 +2206,159 @@ export const scenario2 = {
         },
 
         {
+          id: "s2_marche_noir_preuves",
+          titre: "Le Marché Noir des Preuves",
+          type: "Négociation",
+          resume_mj:
+            "Le Collecteur possède un registre des cargaisons qui transitent par les égouts : origine, destination, cachets, lettres de crédit. Ce registre relie les caisses d'os de Thade aux marchands du Champion et aux faux papiers de Nyx. Il vend ce registre — mais le prix est un service, pas de l'argent.",
+          idLieu: "auberge_pic_brise",
+          idsPnj: ["le_collecteur"],
+
+          format_livre: {
+            ambiance:
+              "Le Collecteur reçoit les PJ dans l'arrière-cuisine du Pic Brisé. Table de bois gras, chaise unique, bougie. Il est assis. Les PJ sont debout. Il a un carner ouvert devant lui et un registre fermé à côté.\n\nL'air sent la bière et la cire à briquet. Le bruit de l'auberge filtre par la porte. Le Collecteur ne crie pas. Il parle doucement. C'est plus efficace.",
+            deroulement_narratif:
+              "Le Collecteur ouvre le registre. Il montre les entrées : des caisses longues, scellées, marquées d'un sceau universitaire, transportées par les égouts vers la Tour Arcanique. Les lettres de crédit viennent de l'Université. Les cachets de Caldris apparaissent sur certaines. Le registre relie les cargaisons de Thade aux marchands du Champion et aux faux papiers de Nyx.\n\nPuis il ferme le registre et dit : « Ça, c'est ce que j'ai. Ce que je veux, c'est autre chose. »\n\nLe prix du registre est un service : récupérer un colis saisi par la Garde au poste des Terrasses, escorter une cargaison sans poser de questions, livrer le nom de la personne qui protège Olane, ou effacer une dette d'Ursula auprès du Syndicat. Chaque option renforce l'emprise du Syndicat.",
+            notes_mj:
+              "Le registre est une preuve matérielle qui relie Thade aux ossements, aux marchands du Champion et aux faux papiers. C'est un raccourci puissant — mais chaque utilisation du Syndicat renforce son front. Le MJ doit s'assurer que le prix du registre a un coût narratif réel.",
+          },
+
+          texte_a_lire:
+            "L'arrière-cuisine du Pic Brisé. Une table, une chaise, une bougie. Le Collecteur est assis. Un registre fermé repose devant lui. « Vous voulez savoir ce que je transporte. Je le sais. Vous voulez le registre. Je le sais aussi. Alors parlons du prix. »",
+
+          objectif: "Obtenir le registre des cargaisons du Syndicat — au prix que fixe le Collecteur.",
+
+          contexte_mj: {
+            situation:
+              "Le Collecteur tient un registre de toutes les cargaisons qui transitent par les égouts. Ce registre est une preuve matérielle qui relie Thade aux ossements, aux marchands du Champion et aux faux papiers de Nyx.",
+            secrets: [
+              "Le registre contient les horaires, les cachets, les lettres de crédit et les destinations de toutes les cargaisons des six derniers mois.",
+              "Le Collecteur vend le registre, pas les informations. Le registre est unique. Qui le possède possède la preuve.",
+              "Le Collecteur a une copie cachée. Si les PJ détruisent le registre, il en sort une autre plus tard.",
+            ],
+            rappels: [
+              "Le Collecteur ne ment presque jamais. Il dit le prix, il attend, il livre.",
+              "Le prix du registre est un service, pas de l'argent.",
+              "Chaque service rendu au Syndicat fait avancer le front 'Le Syndicat serre la ville'.",
+            ],
+          },
+
+          defis: [
+            {
+              competence: "Diplomatie",
+              difficulte: "Moyen",
+              reussite: "Le Collecteur accepte de baisser le prix : un service mineur au lieu d'un service majeur. Par exemple, livrer un nom au lieu d'escorter une cargaison.",
+              echec: "Le Collecteur maintient son prix. « Le registre vaut ce qu'il vaut. Si vous voulez marchander, allez voir la Garde. Ah, oui. Vous ne pouvez pas. »",
+            },
+            {
+              competence: "Intimidation",
+              difficulte: "Difficile",
+              reussite: "Le Collecteur cède le registre sous la menace. Mais il garde une copie. Et il vend l'information que les PJ l'ont menacé à Thade — ou au Champion.",
+              echec: "Le Collecteur sourit. « Vous me menacez dans ma cuisine. Vous savez ce qui arrive aux gens qui me menacent ? Ils paient plus cher. »",
+            },
+            {
+              competence: "Persuasion",
+              difficulte: "Difficile",
+              reussite: "Les PJ convainquent le Collecteur que le registre est dangereux pour lui aussi : si Thade découvre que le Syndicat transporte des ossements volés, le Syndicat devient complice. Le Collecteur cède le registre gratuitement — pour se protéger. Mais il garde la copie.",
+              echec: "Le Collecteur écoute, puis dit : « Thade sait déjà que je transporte ses caisses. Il paie. Je transporte. Tant que ça paie, ça ne me regarde pas. »",
+            },
+          ],
+
+          indices: [
+            {
+              indice: "Le registre des cargaisons du Syndicat",
+              localisation: "Registre du Collecteur",
+              detection: "Diplomatie Moyen, Intimidation Difficile, ou Persuasion Difficile",
+              information: "Le registre relie les cargaisons d'os de Thade aux marchands du Champion et aux faux papiers de Nyx. Cachets de Caldris, lettres de crédit universitaires, horaires de passage, destinations.",
+              usage: "Preuve matérielle reliant Thade aux ossements, aux marchands du Champion et aux faux papiers. Raccourci puissant pour le Conseil ou la confrontation avec Thade.",
+            },
+          ],
+
+          guide_mj: {
+            intention: "Montrer que le Syndicat vend des preuves comme il vend tout le reste. Le registre est un outil puissant — mais chaque utilisation du Syndicat renforce son emprise.",
+            mise_en_place: "Les PJ ont entendu que le Collecteur possède un registre (de la Nuit des Dettes, de Brek, ou de la Rencontre avec la Résistance). Ils viennent l'acheter.",
+            deroulement: [
+              "Le Collecteur montre le registre. Il prouve sa valeur.",
+              "Il ferme le registre et nomme son prix.",
+              "Les PJ négocient, menacent, ou convainquent.",
+              "S'ils paient, ils obtiennent le registre — et le front Syndicat avance.",
+            ],
+            actions_utiles: [
+              "Acheter le registre au prix du Collecteur (service).",
+              "Négocier le prix (Diplomatie).",
+              "Menacer le Collecteur (Intimidation — efficace mais représailles).",
+              "Convaincre le Collecteur que le registre est dangereux pour lui (Persuasion — exploite la fissure Brek/Collecteur).",
+              "Voler le registre (possible, mais le Collecteur a une copie et vend l'info).",
+            ],
+            fronts_heritiers: [
+              "Front 'Le Syndicat serre la ville' — +1 segment si les PJ paient, +2 s'ils menacent.",
+              "Front 'Le Plan de Thade' — le registre est une preuve matérielle qui relie Thade aux ossements.",
+            ],
+            jeu_des_pnj: "Le Collecteur est courtois, précis. Il montre, il ferme, il nomme le prix. Il ne négocie pas longtemps.",
+            escalade: "Si les PJ volent le registre, le Collecteur vend leur nom à Thade ou au Champion. Si les PJ le menacent, il garde une copie et augmente ses prix.",
+            sortie: "Les PJ ont le registre, ou non. S'ils l'ont, ils ont une preuve matérielle — et une dette envers le Syndicat.",
+          },
+
+          reperes_de_jeu: {
+            indice_indispensable: "Aucun — mais le registre est un raccourci puissant qui relie plusieurs pistes.",
+            ne_pas_bloquer_sur_un_jet: "Même si les jets échouent, les PJ peuvent trouver les preuves par d'autres moyens (réserve interdite, laboratoire de Voss). Le registre est un raccourci, pas la seule voie.",
+            question_dramatique: "Combien coûte une preuve ?",
+          },
+
+          transitions: {
+            resume: "Les PJ quittent l'arrière-cuisine avec ou sans le registre. Le Collecteur range sa copie.",
+            reussite: "Les PJ ont le registre. Ils ont la preuve matérielle. Et le Syndicat a une dette ou un service de leur part.",
+            echec: "Les PJ n'ont pas le registre. Ils doivent trouver les preuves par d'autres moyens.",
+          },
+
+          navigation: {
+            indice_indispensable: "Aucun. Le registre est un raccourci, pas la seule voie.",
+            consequence_si_manque: "Sans le registre, les PJ doivent trouver les preuves par les voies institutionnelles (réserve interdite, laboratoire de Voss, archives). Plus lent, mais sans coût Syndicat.",
+            pnj_alternatifs: ["le_collecteur — seul vendeur du registre"],
+            front_si_ignore: "Le Syndicat serre la ville — si les PJ ignorent le registre, le Syndicat garde ses informations et les vend à d'autres.",
+            scenes_alternatives: ["s2_reserve_interdite — preuves par la Réserve", "s2_laboratoire_elian — preuves par le laboratoire de Voss"],
+            sorties_jouables: [
+              {
+                condition: "Les PJ ont le registre et veulent aller au Conseil",
+                sceneId: "s2_conseil_sous_pression",
+                type: "preuve_materielle",
+                moteur: "Les PJ ont la preuve matérielle que Thade transporte des ossements par le Syndicat.",
+                accroche_mj: "Le registre est lourd dans vos mains. Les cachets, les horaires, les destinations. Tout est là. Le Conseil n'aura plus d'excuses.",
+                consequence_si_refus: "Les PJ peuvent aller à la Réserve Interdite ou au laboratoire de Voss pour corroborer.",
+              },
+              {
+                condition: "Les PJ ont le registre et veulent confronter Thade",
+                sceneId: "s2_assaut_tour",
+                type: "preuve_materielle",
+                moteur: "Les PJ ont la preuve et veulent aller directement à la Tour.",
+                accroche_mj: "Le registre prouve tout. Mais Thade est à la Tour. Et la Tour est gardée.",
+                consequence_si_refus: "Les PJ peuvent aller au Conseil d'abord.",
+              },
+              {
+                condition: "Les PJ n'ont pas le registre",
+                sceneId: "s2_reserve_interdite",
+                type: "echec",
+                moteur: "Les PJ cherchent les preuves par les voies institutionnelles.",
+                accroche_mj: "Sans le registre, il faut les textes. La Réserve Interdite de l'Université.",
+                consequence_si_refus: "Les PJ peuvent aller au laboratoire de Voss.",
+              },
+            ],
+            fallback_mj: "Si les PJ n'achètent pas le registre, les preuves restent accessibles par la Réserve Interdite et le laboratoire de Voss. Le registre est un raccourci, pas un verrou.",
+            objectif_scene: "Obtenir le registre des cargaisons — au prix que fixe le Collecteur.",
+            pression: "Le déphasage s'aggrave. Le Conseil se réunit bientôt. Chaque jour perdu, les preuves deviennent plus urgentes.",
+            actions_pj_attendues: ["négocier avec le Collecteur", "accepter ou refuser le prix", "obtenir le registre ou chercher une autre voie"],
+            sorties_possibles: ["vers s2_conseil_sous_pression (avec preuve matérielle)", "vers s2_assaut_tour (confronter Thade)", "vers s2_reserve_interdite (sans registre, chercher les textes)"],
+            si_les_pj_bloquent: "Si les PJ refusent de payer, le Collecteur range le registre. « Revenez quand vous aurez de quoi payer. Ou cherchez ailleurs. Moi, je suis patient. »",
+            conditions_sortie: [
+              "Les PJ ont acheté le registre (service rendu au Syndicat).",
+              "OU les PJ ont convaincu le Collecteur de le céder (Persuasion).",
+              "OU les PJ ont quitté le Pic Brisé sans le registre.",
+            ],
+            transition_defaut: "Le Collecteur ferme le registre. « Vous savez où me trouver. Et moi, je sais où vous trouver. » La porte de l'arrière-cuisine s'ouvre sur le bruit de l'auberge.",
+          },
+        },
+
+        {
           id: "s2_conseil_sous_pression",
           titre: "Le Conseil sous Pression",
           type: "Social",
@@ -2067,7 +2372,7 @@ export const scenario2 = {
             ambiance:
               "La salle du Conseil est une longue pièce aux murs de pierre grise, éclairée par des fenêtres hautes. Des bancs de bois sombre alignés en gradins face à une table surélevée. La statue des Fondateurs domine le fond de la salle. L'air sent la cire et le bois froid. La foule gronde dehors, derrière les portes fermées. Le Champion parle quelque part sur la place, sa voix filtrée par les murs comme un bourdonnement.",
             deroulement_narratif:
-              "Avel Ronce ouvre la séance — la seconde en peu de temps. Il est pâle, fatigué, et lit la même déclaration préparée : la sécurité de Valombre est sa priorité, le Conseil prend des mesures, la garde est renforcée. Il ne dit rien de concret. Rien n'a changé depuis la première réunion, sauf que la situation a empiré. Hessa Brunefer prend la parole ensuite : les Terrasses sont stables, les mines produisent, les clans n'ont pas besoin d'une loi martiale qui les stigmatiserait. Elle s'oppose à toute mesure qui ciblerait les nains ou les étrangers.\n\nL'émissaire Maelric intervient. Il n'est pas membre du Conseil, mais il a demandé à être entendu. Il parle calmement : Caldris sait que Valombre ne répond plus normalement. Les Pierres du Traité fonctionnent, mais les communications ordinaires sont coupées. Si Valombre ne prouve pas qu'elle tient le verrou de la Spirale dans les trente jours, Caldris imposera une quarantaine totale. Pas une invasion — un blocus. Plus de commerce, plus de messagers, plus de passage. Valombre sera isolée officiellement.\n\nYselle Vaurin, si elle est présente, monte à la tribune de la Guilde Marchande. Elle confirme que les routes sont instables, que les convois sont retardés, que les lettres de crédit posent problème. Elle ne dit pas que les convois ne partent pas — elle dit que les délais s'allongent. Elle demande des garanties du Conseil pour les maisons de commerce.\n\nLe Champion n'est pas dans la salle. Mais sa voix porte dehors. Si les PJ regardent par la fenêtre, ils voient la foule sur la place, les bannières blanches, et le Champion sur l'estrade. La garde mixte hésite à disperser la manifestation.\n\nLes PJ peuvent intervenir de plusieurs manières :\n\n1. Présenter des preuves (Persuasion DD 15) : s'ils ont des indices sur Thade, les Endeuillés, ou le déphasage, ils peuvent les exposer au Conseil. Avel Ronce est réticent — les preuves contre l'Université sont politiques. Hessa est plus réceptive. Maelric écoute tout.\n\n2. Soutenir Hessa (Diplomatie DD 14) : défendre les Terrasses contre la loi martiale. Hessa devient une alliée solide. Avel accepte si la pression retombe.\n\n3. Soutenir Maelric (Diplomatie DD 13) : appuyer l'ultimatum de Caldris. Avel est furieux, mais Maelric devient un allié. Caldris enverra des observateurs.\n\n4. Confronter le Champion dehors (Intimidation DD 14 ou Persuasion DD 15) : sortir et affronter le Champion publiquement. Risqué — la foule est hostile. Mais si les PJ démasquent son soutien logistique (Renseignements DD 14 obtenu avant), le Champion perd en crédibilité.\n\n5. Rester silencieux et observer : le Conseil vote une loi martiale partielle. Les Terrasses sont placées sous surveillance. La garde ferme les accès. Les PJ perdent un allié institutionnel mais gagnent du temps.\n\nLe résultat dépend des choix. Si les PJ présentent des preuves et soutiennent Hessa, le Conseil reporte la loi martiale et autorise une enquête. Si les PJ soutiennent Maelric, Caldris envoie des observateurs mais Avel se braque. Si les PJ restent silencieux, la loi martiale passe.",
+              "Avel Ronce ouvre la séance — la seconde en peu de temps. Il est pâle, fatigué, et lit la même déclaration préparée : la sécurité de Valombre est sa priorité, le Conseil prend des mesures, la garde est renforcée. Il ne dit rien de concret. Rien n'a changé depuis la première réunion, sauf que la situation a empiré. Hessa Brunefer prend la parole ensuite : les Terrasses sont stables, les mines produisent, les clans n'ont pas besoin d'une loi martiale qui les stigmatiserait. Elle s'oppose à toute mesure qui ciblerait les nains ou les étrangers.\n\nL'émissaire Maelric intervient. Il n'est pas membre du Conseil, mais il a demandé à être entendu. Il parle calmement : Caldris sait que Valombre ne répond plus normalement. Les Pierres du Traité fonctionnent, mais les communications ordinaires sont coupées. Si Valombre ne prouve pas qu'elle tient le verrou de la Spirale dans les trente jours, Caldris imposera une quarantaine totale. Pas une invasion — un blocus. Plus de commerce, plus de messagers, plus de passage. Valombre sera isolée officiellement.\n\nYselle Vaurin, si elle est présente, monte à la tribune de la Guilde Marchande. Elle confirme que les routes sont instables, que les convois sont retardés, que les lettres de crédit posent problème. Elle ne dit pas que les convois ne partent pas — elle dit que les délais s'allongent. Elle demande des garanties du Conseil pour les maisons de commerce.\n\nLe Champion n'est pas dans la salle. Mais sa voix porte dehors. Si les PJ regardent par la fenêtre, ils voient la foule sur la place, les bannières blanches, et le Champion sur l'estrade. La garde mixte hésite à disperser la manifestation.\n\nLes PJ peuvent intervenir de plusieurs manières :\n\n1. Présenter des preuves (Persuasion Moyen) : s'ils ont des indices sur Thade, les Endeuillés, ou le déphasage, ils peuvent les exposer au Conseil. Avel Ronce est réticent — les preuves contre l'Université sont politiques. Hessa est plus réceptive. Maelric écoute tout.\n\n2. Soutenir Hessa (Diplomatie Moyen) : défendre les Terrasses contre la loi martiale. Hessa devient une alliée solide. Avel accepte si la pression retombe.\n\n3. Soutenir Maelric (Diplomatie Moyen) : appuyer l'ultimatum de Caldris. Avel est furieux, mais Maelric devient un allié. Caldris enverra des observateurs.\n\n4. Confronter le Champion dehors (Intimidation Moyen ou Persuasion Moyen) : sortir et affronter le Champion publiquement. Risqué — la foule est hostile. Mais si les PJ démasquent son soutien logistique (Renseignements Moyen obtenu avant), le Champion perd en crédibilité.\n\n5. Rester silencieux et observer : le Conseil vote une loi martiale partielle. Les Terrasses sont placées sous surveillance. La garde ferme les accès. Les PJ perdent un allié institutionnel mais gagnent du temps.\n\nLe résultat dépend des choix. Si les PJ présentent des preuves et soutiennent Hessa, le Conseil reporte la loi martiale et autorise une enquête. Si les PJ soutiennent Maelric, Caldris envoie des observateurs mais Avel se braque. Si les PJ restent silencieux, la loi martiale passe.",
             notes_mj:
               "Cette scène est le second Conseil de l'Arc II. Elle se joue après s2_conseil_crise (qui s'est terminée en paralysie ou sans décision ferme) et après les capsules de déphasage (routes, lettres, entrepôts). La justification : la première session n'a rien réglé, la situation économique et spatiale s'est dégradée, Maelric revient avec un délai plus court et Yselle Vaurin s'ajoute pour défendre la Guilde Marchande. Si les PJ n'ont pas joué s2_conseil_crise, cette scène fonctionne seule — il suffit de dire que le Conseil a déjà tenté une réunion qui n'a rien donné. Le MJ peut ajuster le contenu selon ce que les PJ ont découvert.",
           },
@@ -2088,20 +2393,20 @@ export const scenario2 = {
             ],
             rappels: [
               "Si les PJ ont des preuves sur Thade, les Endeuillés, ou le déphasage, ils peuvent les présenter au Conseil.",
-              "Si les PJ ont découvert le soutien logistique du Champion (Renseignements DD 14), ils peuvent le démasquer publiquement.",
+              "Si les PJ ont découvert le soutien logistique du Champion (Renseignements Moyen), ils peuvent le démasquer publiquement.",
               "Hessa Brunefer est un levier politique : défendre les Terrasses contre la loi martiale en fait une alliée solide.",
             ],
           },
 
           defis: [
-            { competence: "Persuasion", dd: 15, reussite: "Le Conseil écoute les preuves. Avel est réticent mais Hessa appuie. Maelric prend note. La loi martiale est reportée.", echec: "Avel refuse d'entendre des accusations contre l'Université sans preuves formelles. Le Conseil passe à autre chose." },
-            { competence: "Diplomatie", dd: 14, reussite: "Hessa accepte le soutien des PJ. Elle défend les Terrasses avec force. Avel recule sur la loi martiale.", echec: "Hessa remercie les PJ mais ne veut pas d'alliance publique. Elle négocie seule." },
-            { competence: "Intimidation", dd: 14, reussite: "Les PJ confrontent le Champion dehors. S'ils ont la preuve de son soutien logistique, la foule hésite. Le Champion perd en crédibilité.", echec: "La foule est hostile. Les PJ sont chassés de la place. Le Champion en sort renforcé." },
+            { competence: "Persuasion", difficulte: "Moyen", reussite: "Le Conseil écoute les preuves. Avel est réticent mais Hessa appuie. Maelric prend note. La loi martiale est reportée.", echec: "Avel refuse d'entendre des accusations contre l'Université sans preuves formelles. Le Conseil passe à autre chose." },
+            { competence: "Diplomatie", difficulte: "Moyen", reussite: "Hessa accepte le soutien des PJ. Elle défend les Terrasses avec force. Avel recule sur la loi martiale.", echec: "Hessa remercie les PJ mais ne veut pas d'alliance publique. Elle négocie seule." },
+            { competence: "Intimidation", difficulte: "Moyen", reussite: "Les PJ confrontent le Champion dehors. S'ils ont la preuve de son soutien logistique, la foule hésite. Le Champion perd en crédibilité.", echec: "La foule est hostile. Les PJ sont chassés de la place. Le Champion en sort renforcé." },
           ],
 
           indices: [
             { indice: "L'ultimatum de Caldris", localisation: "Salle du Conseil, intervention de Maelric", detection: "Automatique", information: "Trente jours pour prouver que Valombre tient le verrou, sinon blocus total.", usage: "Comprendre que l'isolation de Valombre est connue de l'extérieur et que le temps est compté." },
-            { indice: "L'aveu indirect de Yselle", localisation: "Tribune de la Guilde Marchande", detection: "Persuasion DD 13 ou Insight", information: "Yselle confirme que les délais de livraison s'allongent mais cache que les convois ne partent pas.", usage: "Si les PJ ont vu les entrepôts pleins, ils savent que Yselle ment." },
+            { indice: "L'aveu indirect de Yselle", localisation: "Tribune de la Guilde Marchande", detection: "Persuasion Moyen ou Insight", information: "Yselle confirme que les délais de livraison s'allongent mais cache que les convois ne partent pas.", usage: "Si les PJ ont vu les entrepôts pleins, ils savent que Yselle ment." },
           ],
 
           guide_mj: {
@@ -2183,18 +2488,178 @@ export const scenario2 = {
                 consequence_si_refus: "Sans Yselle, le Conseil n'a pas la pleine mesure de la crise économique.",
               },
             ],
-            fallback_mj: "Le Conseil sous Pression est la seconde session du Conseil. Si les PJ n'y vontent pas, la loi martiale est votée. Les PJ perdent en liberté de mouvement. Le Conseil redevient pertinent si les PJ trouvent des preuves et veulent les présenter. La piste principale mène à la Réserve Interdite ou au Laboratoire d'Elian Voss.",
+            fallback_mj: "Le Conseil sous Pression est la seconde session du Conseil. Si les PJ n'y vont pas, la loi martiale est votée. Les PJ perdent en liberté de mouvement. Le Conseil redevient pertinent si les PJ trouvent des preuves et veulent les présenter. La piste principale mène à la Réserve Interdite ou au Laboratoire d'Elian Voss.",
             objectif_scene: "Le Conseil peut voter la loi martiale. Caldris menace d'un blocus. Les PJ doivent présenter des preuves ou trouver une autre voie (Réserve, Voss).",
             pression: "La loi martiale est votée si les PJ n'agissent pas. Caldris impose la quarantaine. Le Champion gagne en pouvoir. Le déphasage s'étend.",
             actions_pj_attendues: ["présenter les preuves du déphasage au Conseil", "négocier avec les conseillers", "décider quelle piste suivre (Réserve, Voss, assaut)", "éventuellement confronter le Champion avec les preuves"],
             sorties_possibles: ["vers s2_reserve_interdite (infiltrer la Réserve)", "vers s2_laboratoire_elian (aller au Laboratoire d'Elian Voss)", "vers s2_assaut_tour (confronter le Champion — risqué)"],
-            si_les_pj_bloquent: "Si les PJ n'y vontent pas, la loi martiale est votée. Le Conseil redevient pertinent si les PJ trouvent des preuves et veulent les présenter. La piste principale mène à la Réserve ou à Voss.",
+            si_les_pj_bloquent: "Si les PJ n'y vont pas, la loi martiale est votée. Le Conseil redevient pertinent si les PJ trouvent des preuves et veulent les présenter. La piste principale mène à la Réserve ou à Voss.",
             conditions_sortie: [
               "Les PJ ont présenté les preuves et le Conseil a ajourné la loi martiale.",
               "OU les PJ ont décidé d'infiltrer la Réserve ou d'aller au Laboratoire de Voss.",
               "OU la loi martiale est votée — les PJ perdent en liberté de mouvement.",
             ],
             transition_defaut: "Le Conseil vote ou ajourne. Les conseillers quittent la salle. Hessa Brunefer murmure aux PJ : « Si vous avez des preuves, apportez-les. Sinon, c'est la loi martiale. » Que font les PJ ?",
+          },
+        },
+
+        {
+          id: "s2_brek_ferme_les_vannes",
+          titre: "Brek Ferme les Vannes",
+          type: "Action",
+          resume_mj:
+            "Les PJ descendent dans les égouts pour suivre les caisses d'os vers la Tour. Brek a verrouillé les vannes principales : les passages sont fermés, les chariots sont bloqués, les caisses s'accumulent. Brek veut savoir ce qu'il transporte — et si ça va attirer la garde dans ses tunnels. Les PJ doivent négocier, forcer, ou convaincre.",
+          idLieu: "egouts_terrasses",
+          idsPnj: ["contremaite_egouts", "hommes_main_pegre"],
+
+          format_livre: {
+            ambiance:
+              "Les égouts sous les Terrasses. L'eau a monté depuis la dernière visite. Brek a fermé trois vannes principales. Les tunnels sont silencieux — plus de chariots, plus de roues, plus de pas. Juste l'eau qui coule et le silence de quelque chose qui attend.\n\nBrek se tient à la jonction de trois tunnels. Il a une barre de fer à la main. Deux hommes de main se tiennent en retrait. Des caisses longues, scellées, s'accumulent derrière la vanne fermée. Elles portent un sceau universitaire.",
+            deroulement_narratif:
+              "Brek a arrêté les transports. Il veut savoir ce qu'il transporte. Les caisses sentent la chaux froide. Il a ouvert une caisse — des ossements. Il ne sait pas d'où ils viennent, mais il sait que ça attire l'attention. La garde a déjà fait une descente dans un tunnel secondaire. Brek veut s'en laver les mains.\n\nLe Collecteur refuse de rompre le contrat : le client paie bien. Brek est coincé entre le Collecteur qui veut continuer et la garde qui veut descendre. Les PJ arrivent au bon moment.\n\nSi les PJ convainquent Brek que les caisses sont dangereuses, il ouvre les vannes et leur donne les caisses accumulées. Si les PJ menacent, il ouvre mais ferme tout ensuite. Si les PJ paient, il ouvre mais le Collecteur l'apprend et facture les PJ. Si les PJ tuent les hommes de main, le Syndicat devient hostile.",
+            notes_mj:
+              "Cette scène est le point de rupture entre Brek et le Collecteur. Brek est pragmatique : il veut être payé et garder la garde hors de ses tunnels. Les caisses d'os attirent la garde. Brek veut s'en débarrasser. Le Collecteur veut continuer parce que le client paie. Les PJ peuvent exploiter cette fissure.",
+          },
+
+          texte_a_lire:
+            "Les égouts sont silencieux. Les vannes sont fermées. Des caisses s'accumulent derrière le fer. Brek se tient à la jonction, une barre de fer à la main. « J'ai ouvert une caisse. C'est des os. J'ai ouvert une autre. C'est des os aussi. Je transporte des os pour quelqu'un qui paie bien. Mais la garde, elle, elle paie pas — elle descend. Alors j'ai fermé les vannes. »",
+
+          objectif: "Convaincre Brek d'ouvrir les vannes et de donner les caisses accumulées — ou de devenir un allié contre le Collecteur.",
+
+          contexte_mj: {
+            situation:
+              "Brek a arrêté les transports après avoir ouvert des caisses et trouvé des ossements. La garde a fait une descente dans un tunnel secondaire. Brek veut s'en laver les mains. Le Collecteur refuse de rompre le contrat.",
+            secrets: [
+              "Brek a ouvert deux caisses. Elles contiennent des ossements humains. Il ne sait pas d'où ils viennent, mais il sait que ça attire la garde.",
+              "Le Collecteur refuse de rompre le contrat parce que le client (Thade) paie avec des lettres de crédit universitaires maquillées.",
+              "Brek a accumulé six caisses derrière les vannes fermées. C'est une preuve matérielle.",
+            ],
+            rappels: [
+              "Brek est pragmatique. Il veut être payé et garder la garde hors de ses tunnels.",
+              "La fissure entre Brek et le Collecteur est exploitable.",
+              "Si les PJ ont déjà rencontré Brek au scénario 1, il se souvient d'eux.",
+            ],
+          },
+
+          defis: [
+            {
+              competence: "Persuasion",
+              difficulte: "Moyen",
+              reussite: "Brek ouvre les vannes et donne les caisses accumulées. Il accepte de témoigner contre le Collecteur si les PJ le protègent de la garde. Il devient un allié tactique.",
+              echec: "Brek hésite. « Le Collecteur va me tomber dessus. Vous, vous partez. Moi, je reste ici. » Il ouvre les vannes mais refuse de témoigner.",
+            },
+            {
+              competence: "Intimidation",
+              difficulte: "Moyen",
+              reussite: "Brek ouvre les vannes sous la menace. Il donne les caisses. Mais il ferme tout ensuite et refuse tout contact futur. Le Syndicat devient hostile.",
+              echec: "Brek ne cille pas. « Vous me menacez alors que j'ai déjà arrêté les transports ? Vous êtes bêtes ou quoi ? »",
+            },
+            {
+              competence: "Diplomatie",
+              difficulte: "Moyen",
+              reussite: "Brek accepte un compromis : il ouvre les vannes, donne les caisses, mais refuse de témoigner. Il ferme les tunnels pendant une semaine pour laisser retomber la pression.",
+              echec: "Brek refuse. « J'ai déjà assez de problèmes avec la garde. Ajoutez pas les vôtres. »",
+            },
+          ],
+
+          indices: [
+            {
+              indice: "Les caisses accumulées derrière les vannes",
+              localisation: "Égouts sous les Terrasses",
+              detection: "Automatique en arrivant",
+              information: "Six caisses longues, scellées, marquées d'un sceau universitaire. Elles contiennent des ossements humains. C'est une preuve matérielle du circuit Cimetière → égouts → Tour.",
+              usage: "Preuve physique que Thade transporte des ossements par le Syndicat. Raccourci puissant pour le Conseil ou la confrontation.",
+            },
+            {
+              indice: "Le témoignage de Brek",
+              localisation: "Témoignage de Brek (si convaincu)",
+              detection: "Persuasion Moyen",
+              information: "Brek confirme qu'il transporte les caisses pour le compte du Collecteur, payé avec des lettres de crédit universitaires. Il a ouvert des caisses et trouvé des ossements. La garde a fait une descente.",
+              usage: "Témoignage reliant le Syndicat au circuit des ossements et prouvant que la garde est au courant.",
+            },
+          ],
+
+          guide_mj: {
+            intention: "Montrer le point de rupture entre Brek et le Collecteur. Brek est pragmatique : les caisses attirent la garde, la garde détruit son business. Les PJ peuvent exploiter cette fissure.",
+            mise_en_place: "Les PJ descendent dans les égouts après avoir obtenu un indice sur les caisses (du tavernier, du Collecteur, ou de la Nuit des Dettes). Ils trouvent les vannes fermées.",
+            deroulement: [
+              "Brek a fermé les vannes. Les caisses s'accumulent.",
+              "Brek explique : il a ouvert des caisses, trouvé des os, la garde a descendu.",
+              "Le Collecteur veut continuer. Brek veut s'en laver les mains.",
+              "Les PJ convainquent, menacent, ou paient.",
+              "S'ils convainquent Brek, il ouvre et donne les caisses. Il devient un allié tactique.",
+            ],
+            actions_utiles: [
+              "Convaincre Brek que les caisses sont dangereuses (Persuasion).",
+              "Menacer Brek (Intimidation — efficace mais hostile).",
+              "Négocier un compromis (Diplomatie).",
+              "Prendre les caisses de force (combat — possible mais le Syndicat devient hostile).",
+            ],
+            fronts_heritiers: [
+              "Front 'Le Syndicat serre la ville' — -1 segment si les PJ convainquent Brek de rompre avec le Collecteur. +1 s'ils le menacent.",
+              "Front 'Le Plan de Thade' — les caisses sont une preuve matérielle du circuit des ossements.",
+            ],
+            jeu_des_pnj: "Brek est tendu, méfiant, mais pas hostile. Il veut s'en sortir. Les hommes de main sont nerveux — ils ne savent pas ce qui se passe.",
+            escalade: "Si les PJ tuent les hommes de main, le Syndicat devient hostile. Si les PJ convainquent Brek, le Collecteur perd un allié clé.",
+            sortie: "Les PJ ont les caisses, ou non. Brek est un allié, ou non. Le Syndicat est affaibli, ou hostile.",
+          },
+
+          reperes_de_jeu: {
+            indice_indispensable: "Aucun — mais les caisses accumulées sont une preuve matérielle puissante.",
+            ne_pas_bloquer_sur_un_jet: "Même si les jets échouent, les PJ peuvent prendre les caisses de force ou trouver les preuves par d'autres moyens. Brek ne les tue pas — il négocie.",
+            question_dramatique: "Brek est-il un allié ou un obstacle ?",
+          },
+
+          transitions: {
+            resume: "Les PJ quittent les égouts avec ou sans les caisses. Brek ouvre ou ferme. Le Syndicat est affaibli ou hostile.",
+            reussite: "Les PJ ont les caisses et le témoignage de Brek. Le Syndicat est affaibli. Le Collecteur perd un allié.",
+            echec: "Les PJ n'ont pas les caisses. Brek ferme les vannes. Les caisses restent dans les égouts. La garde finira par les trouver — ou le Collecteur les récupérera.",
+          },
+
+          navigation: {
+            indice_indispensable: "Aucun. Les caisses sont un raccourci, pas la seule voie.",
+            consequence_si_manque: "Sans les caisses, les PJ doivent trouver les preuves par les voies institutionnelles (réserve interdite, laboratoire de Voss, registre du Collecteur).",
+            pnj_alternatifs: ["contremaite_egouts — Brek est le seul interlocuteur", "le_collecteur — peut être confronté après"],
+            front_si_ignore: "Le Syndicat serre la ville — si les PJ ignorent Brek, le Collecteur récupère les caisses et le transport reprend.",
+            scenes_alternatives: ["s2_marche_noir_preuves — preuves par le registre du Collecteur", "s2_reserve_interdite — preuves par la Réserve"],
+            sorties_jouables: [
+              {
+                condition: "Les PJ ont les caisses et veulent aller au Conseil",
+                sceneId: "s2_conseil_sous_pression",
+                type: "preuve_materielle",
+                moteur: "Les PJ ont les caisses d'os et le témoignage de Brek.",
+                accroche_mj: "Six caisses d'ossements, marquées d'un sceau universitaire, et un témoin qui confirme le circuit. Le Conseil n'aura plus d'excuses.",
+                consequence_si_refus: "Les PJ peuvent aller à la Réserve ou au laboratoire de Voss pour corroborer.",
+              },
+              {
+                condition: "Les PJ ont les caisses et veulent confronter Thade",
+                sceneId: "s2_assaut_tour",
+                type: "preuve_materielle",
+                moteur: "Les PJ ont les caisses et veulent aller directement à la Tour.",
+                accroche_mj: "Les caisses viennent de la Tour. Les ossements vont vers la Tour. Thade est à la Tour.",
+                consequence_si_refus: "Les PJ peuvent aller au Conseil d'abord.",
+              },
+              {
+                condition: "Les PJ n'ont pas les caisses",
+                sceneId: "s2_reserve_interdite",
+                type: "echec",
+                moteur: "Les PJ cherchent les preuves par les voies institutionnelles.",
+                accroche_mj: "Sans les caisses, il faut les textes. La Réserve Interdite.",
+                consequence_si_refus: "Les PJ peuvent aller au laboratoire de Voss.",
+              },
+            ],
+            fallback_mj: "Si les PJ ne descendent jamais dans les égouts, les preuves restent accessibles par la Réserve Interdite, le laboratoire de Voss, ou le registre du Collecteur. Les caisses sont un raccourci, pas un verrou.",
+            objectif_scene: "Obtenir les caisses accumulées et le témoignage de Brek — ou affaiblir le Syndicat en exploitant la fissure Brek/Collecteur.",
+            pression: "La garde a déjà fait une descente. Brek ne restera pas indéfini. Si les PJ attendent trop, le Collecteur récupère les caisses.",
+            actions_pj_attendues: ["convaincre Brek d'ouvrir les vannes", "obtenir les caisses et le témoignage", "exploiter la fissure Brek/Collecteur"],
+            sorties_possibles: ["vers s2_conseil_sous_pression (avec preuves matérielles)", "vers s2_assaut_tour (confronter Thade)", "vers s2_reserve_interdite (sans caisses, chercher les textes)"],
+            si_les_pj_bloquent: "Si les PJ refusent de négocier avec Brek, le Collecteur récupère les caisses et le transport reprend. Le front 'Le Syndicat serre la ville' avance.",
+            conditions_sortie: [
+              "Les PJ ont convaincu, menacé, ou payé Brek.",
+              "OU les PJ ont pris les caisses de force.",
+              "OU les PJ ont quitté les égouts sans les caisses.",
+            ],
+            transition_defaut: "Brek ouvre les vannes avec un grincement de fer rouillé. Les caisses sont là, empilées, scellées. « Prenez-les. Moi, j'ai jamais vu ces caisses. J'ai jamais vu ces os. Et vous non plus. »",
           },
         },
       ],
@@ -2212,7 +2677,7 @@ export const scenario2 = {
           titre: "La Réserve de Recherche Interdite",
           type: "Investigation",
           resume_mj:
-            "Les PJ accèdent à la Réserve de Recherche Interdite de la bibliothèque. Ils y trouvent le registre des consultations de Thade : 142 séances sur huit ans, avec un effondrement après la mort de Sealine. La trace écrite de la préparation de Thade.",
+            "Les PJ accèdent à la Réserve de Recherche Interdite de la bibliothèque. Ils y trouvent le registre des consultations de Thade : 142 séances étalées sur une trentaine d'années, avec un effondrement après la mort de Sealine. La trace écrite de la préparation de Thade.",
           idLieu: "bibliotheque_recherche_interdite",
           idsPnj: [],
           idsPnjImpliques: ["thade_coren"],
@@ -2221,23 +2686,23 @@ export const scenario2 = {
             ambiance:
               "La Réserve de Recherche Interdite est un niveau souterrain de la bibliothèque centrale de l'Université. On y accède par un escalier en colimaçon derrière une porte de chêne renforcée de fer. L'air est froid et sec — un froid de conservation, pas d'hiver. Des lampes à mana brûlent bas, projetant une lumière bleutée sur les étagères. Les livres ont des couvertures scellées de cire blanche — chaque ouvrage est verrouillé jusqu'à ce qu'un Maître de département le demande. L'air sent le papier ancien et la cire. Le silence est absolu, presque physique.",
             deroulement_narratif:
-              "Un registre est posé sur le lutrin à l'entrée. Grand, relié de cuir, les pages jaunies. Les noms des Maîtres qui ont consulté les ouvrages, par date et par sujet. Investigation DD 13 pour le lire : le nom de Thade Coren apparaît 142 fois sur huit ans. Les sujets : résonance planaire, seuils dimensionnels, ancrages rituels, théorie des sceaux. La fréquentation est dense la première année — 60 séances — puis s'effondre après la catastrophe de Nyx. Il a trouvé ce qu'il cherchait. Il n'a plus besoin de la bibliothèque.\n\nConnaissances (mystères) DD 17 pour déchiffrer les ouvrages : ils décrivent un rituel de seuil — ouvrir un passage vers un plan adjacent en utilisant des ancrages physiques. Le protocole S-01 est une application de ce rituel. Les textes sont arcaniques, obscurs, mais la théorie est claire : on peut ouvrir une porte si on a assez d'ancrages et un catalyseur.\n\nSi les PJ ont les textes des Endeuillés, ils peuvent les comparer avec les ouvrages de la Réserve. Les textes d'Edran sont des copies dégradées des mêmes pages. Thade a laissé les textes circuler — il a armé les Endeuillés avec des fragments de la théorie qu'il maîtrise depuis des années.\n\nUne note dans la marge du registre mentionne une ardoise non effacée au 6e étage de la Tour Arcanique. Équation préliminaire de S-01, datée de sept ans — avant la mort de Sealine. Thade travaillait déjà sur la théorie des seuils avant la disparition de Sealine. Mais le rituel actuel — celui qui vise à la ramener — naît après Nyx, quand la recherche devient obsession.\n\nSi Olane accompagne les PJ : elle ne lit pas les ouvrages à leur place, mais elle oriente. Elle dit : « Regardez les dates. La première année, il est venu presque tous les jours. Puis plus rien. Il a trouvé. » Elle peut aussi identifier les ouvrages les plus pertinents sans déchiffrer le contenu — elle reconnaît les titres et les sujets. Si les PJ échouent au jet de Connaissances, Olane peut faire un croquis des diagrammes clés (Investigation DD 10 de sa part, automatique pour les PJ si elle est présente).\n\nSi les PJ entrent sans Olane (Effraction DD 15) : la porte est verrouillée par un sigil mineur. Crochetage DD 15 ou Contresort DD 13. Si les PJ sont surpris par un garde (Perception du garde DD 13 vs Discrétion des PJ), procédure interne — Olane est arrêtée si elle couvre, sinon les PJ sont signalés. Sous la loi martiale, c'est un crime.\n\nSi les PJ ont le cachet de Caldris des notes de Jaren (Scénario 1) : ils peuvent le comparer avec les ouvrages. Le cachet apparaît sur trois ouvrages importés de Caldris — Thade a importé du matériel interdit via Caldris avant même la catastrophe de Nyx. C'est un indice supplémentaire : Caldris n'est pas un partenaire récent, c'est un complice de longue date.\n\nSi les PJ prennent le temps de chercher (Investigation DD 15) : une seconde note, plus discrète, mentionne que Thade a consulté un ouvrage spécifique — « De la Persistance des Âmes Liées » — trois jours avant la catastrophe de Nyx. L'ouvrage est toujours sur les étagères. Connaissances DD 14 pour le lire : il décrit comment maintenir un lien avec une personne dont le corps a traversé un seuil planaire. C'est le fondement théorique de la Larme de Vael.",
+              "Un registre est posé sur le lutrin à l'entrée. Grand, relié de cuir, les pages jaunies. Les noms des Maîtres qui ont consulté les ouvrages, par date et par sujet. Investigation Moyen pour le lire : le nom de Thade Coren apparaît 142 fois sur une trentaine d'années. Les sujets : résonance planaire, seuils dimensionnels, ancrages rituels, théorie des sceaux. La fréquentation est dense la première année — 60 séances — puis s'effondre après la catastrophe de Nyx. Il a trouvé ce qu'il cherchait. Il n'a plus besoin de la bibliothèque au même rythme.\n\nConnaissances (mystères) Difficile pour déchiffrer les ouvrages : ils décrivent un rituel de seuil — ouvrir un passage vers un plan adjacent en utilisant des ancrages physiques. Le protocole S-01 est une application de ce rituel. Les textes sont arcaniques, obscurs, mais la théorie est claire : on peut ouvrir une porte si on a assez d'ancrages et un catalyseur.\n\nSi les PJ ont les textes des Endeuillés, ils peuvent les comparer avec les ouvrages de la Réserve. Les textes d'Edran sont des copies dégradées des mêmes pages. Thade a laissé les textes circuler — il a armé les Endeuillés avec des fragments de la théorie qu'il maîtrise depuis des années.\n\nUne note dans la marge du registre mentionne une ardoise scellée au 6e étage de la Tour Arcanique. Équation préliminaire de S-01, datée de l'année de Nyx — avant la mort de Sealine. Thade travaillait déjà sur la théorie des seuils avant la disparition de Sealine. Mais le rituel actuel — celui qui vise à contrôler durablement l'ouverture — naît après Nyx, quand la recherche devient obsession.\n\nSi Olane accompagne les PJ : elle ne lit pas les ouvrages à leur place, mais elle oriente. Elle dit : « Regardez les dates. La première année, il est venu presque tous les jours. Puis plus rien. Il a trouvé. » Elle peut aussi identifier les ouvrages les plus pertinents sans déchiffrer le contenu — elle reconnaît les titres et les sujets. Si les PJ échouent au jet de Connaissances, Olane peut faire un croquis des diagrammes clés (Investigation Facile de sa part, automatique pour les PJ si elle est présente).\n\nSi les PJ entrent sans Olane (Effraction Moyen) : la porte est verrouillée par un sigil mineur. Crochetage Moyen ou Contresort Moyen. Si les PJ sont surpris par un garde (Perception du garde Moyen vs Discrétion des PJ), procédure interne — Olane est arrêtée si elle couvre, sinon les PJ sont signalés. Sous la loi martiale, c'est un crime.\n\nSi les PJ ont le cachet de Caldris des notes de Jaren (Scénario 1) : ils peuvent le comparer avec les ouvrages. Le cachet apparaît sur trois ouvrages importés de Caldris — Thade a importé du matériel interdit via Caldris avant même la catastrophe de Nyx. C'est un indice supplémentaire : Caldris n'est pas un partenaire récent, c'est un complice de longue date.\n\nSi les PJ prennent le temps de chercher (Investigation Moyen) : une seconde note, plus discrète, mentionne que Thade a consulté un ouvrage spécifique — « De la Persistance des Âmes Liées » — trois jours avant la catastrophe de Nyx. L'ouvrage est toujours sur les étagères. Connaissances Moyen pour le lire : il décrit comment maintenir un lien avec une personne dont le corps a traversé un seuil planaire. C'est le fondement théorique de la Larme de Vael.",
             notes_mj:
-              "L'accès dépend du choix du Scénario 1. Olane peut fournir un accès si les PJ sont ses alliés. Sinon, Effraction DD 15. Sous la loi martiale, l'accès non autorisé est un crime — Olane peut couvrir, mais si les PJ sont surpris sans couverture, elle est arrêtée. Le registre est visible sans jet — le nom de Thade et le nombre 142 sont lisibles dès l'entrée. Les ouvrages nécessitent Connaissances DD 17, mais Olane peut les interpréter si les PJ lui apportent des notes.\n\nCopies partielles : les PJ n'ont pas besoin de tout déchiffrer sur place. Ils peuvent emporter : le relevé du registre (142 séances, sujets, dates — copie rapide sans jet), et des croquis des diagrammes d'ancrage (Investigation DD 10 pour un croquis utilisable). Les ouvrages complets restent dans la Réserve, mais les croquis suffisent pour prouver la préparation méthodique. Olane peut interpréter les croquis plus tard. Si les PJ sont pressés, le MJ leur donne le relevé du registre automatiquement.",
+              "L'accès dépend du choix du Scénario 1. Olane peut fournir un accès si les PJ sont ses alliés. Sinon, Effraction Moyen. Sous la loi martiale, l'accès non autorisé est un crime — Olane peut couvrir, mais si les PJ sont surpris sans couverture, elle est arrêtée. Le registre est visible sans jet — le nom de Thade et le nombre 142 sont lisibles dès l'entrée. Les ouvrages nécessitent Connaissances Difficile, mais Olane peut les interpréter si les PJ lui apportent des notes.\n\nCopies partielles : les PJ n'ont pas besoin de tout déchiffrer sur place. Ils peuvent emporter : le relevé du registre (142 séances, sujets, dates — copie rapide sans jet), et des croquis des diagrammes d'ancrage (Investigation Facile pour un croquis utilisable). Les ouvrages complets restent dans la Réserve, mais les croquis suffisent pour prouver la préparation méthodique. Olane peut interpréter les croquis plus tard. Si les PJ sont pressés, le MJ leur donne le relevé du registre automatiquement.",
           },
 
           texte_a_lire:
-            "La Réserve de Recherche Interdite est un niveau souterrain de la bibliothèque centrale. Froid sec, lampes à mana basses, livres aux couvertures scellées de cire blanche. L'air sent le papier ancien et la cire.\n\nUn registre est posé sur le lutrin. Les noms des Maîtres qui ont consulté les ouvrages. Celui de Thade apparaît 142 fois sur huit ans.",
+            "La Réserve de Recherche Interdite est un niveau souterrain de la bibliothèque centrale. Froid sec, lampes à mana basses, livres aux couvertures scellées de cire blanche. L'air sent le papier ancien et la cire.\n\nUn registre est posé sur le lutrin. Les noms des Maîtres qui ont consulté les ouvrages. Celui de Thade apparaît 142 fois sur une trentaine d'années.",
 
           objectif: "Trouver la trace des recherches de Thade et comprendre ce qu'il prépare.",
 
           contexte_mj: {
             situation:
-              "La Réserve est accessible aux Maîtres de département. Olane peut fournir un accès si les PJ sont ses alliés. Sinon, Effraction DD 15. Le registre montre 142 séances de Thade, avec un effondrement après la mort de Sealine.",
+              "La Réserve est accessible aux Maîtres de département. Olane peut fournir un accès si les PJ sont ses alliés. Sinon, Effraction Moyen. Le registre montre 142 séances de Thade, avec un effondrement après la mort de Sealine.",
             secrets: [
-              "Les ouvrages consultés par Thade portent sur la résonance planaire, les seuils et les ancrages rituels. Connaissances (mystères) DD 17 pour les déchiffrer.",
-              "La fréquentation de Thade s'effondre après la mort de Sealine — il a trouvé ce qu'il cherchait et n'a plus besoin de la bibliothèque.",
-              "Une ardoise non effacée au 6e étage de la Tour contient l'équation préliminaire de S-01, datée de sept ans — avant la mort de Sealine.",
+              "Les ouvrages consultés par Thade portent sur la résonance planaire, les seuils et les ancrages rituels. Connaissances (mystères) Difficile pour les déchiffrer.",
+              "La fréquentation de Thade s'effondre après la mort de Sealine — il a trouvé ce qu'il cherchait et n'a plus besoin de la bibliothèque au même rythme.",
+              "Une ardoise scellée au 6e étage de la Tour contient l'équation préliminaire de S-01, datée de l'année de Nyx — avant la mort de Sealine.",
             ],
             rappels: [
               "Sous la loi martiale du Conseil, l'accès non autorisé est un crime. Olane peut couvrir les PJ.",
@@ -2246,17 +2711,17 @@ export const scenario2 = {
           },
 
           defis: [
-            { competence: "Investigation", dd: 13, reussite: "Le registre montre 142 séances. Les sujets : résonance planaire, seuils, ancrages. La fréquentation s'effondre après la mort de Sealine.", echec: "Le registre est illisible ou endommagé. Les PJ ne trouvent que le nom de Thade." },
-            { competence: "Connaissances (mystères)", dd: 17, reussite: "Les ouvrages décrivent un rituel de seuil : ouvrir un passage vers un plan adjacent en utilisant des ancrages physiques. Le protocole S-01 est une application de ce rituel.", echec: "Les textes sont arcaniques et obscurs. La théorie est claire mais l'application reste floue." },
-            { competence: "Investigation", dd: 15, reussite: "Une note discrète mentionne un ouvrage consulté par Thade trois jours avant Nyx : « De la Persistance des Âmes Liées ». L'ouvrage est sur les étagères. Il décrit comment maintenir un lien avec une personne dont le corps a traversé un seuil.", echec: "Les notes marginales sont illisibles. Rien d'autre à trouver." },
-            { competence: "Connaissances (mystères)", dd: 14, reussite: "L'ouvrage « De la Persistance des Âmes Liées » décrit le fondement théorique de la Larme de Vael — un dispositif qui maintient un lien à travers un seuil planaire.", echec: "L'ouvrage est dense et arcanique. Olane peut l'interpréter plus tard." },
+            { competence: "Investigation", difficulte: "Moyen", reussite: "Le registre montre 142 séances. Les sujets : résonance planaire, seuils, ancrages. La fréquentation s'effondre après la mort de Sealine.", echec: "Le registre est illisible ou endommagé. Les PJ ne trouvent que le nom de Thade." },
+            { competence: "Connaissances (mystères)", difficulte: "Difficile", reussite: "Les ouvrages décrivent un rituel de seuil : ouvrir un passage vers un plan adjacent en utilisant des ancrages physiques. Le protocole S-01 est une application de ce rituel.", echec: "Les textes sont arcaniques et obscurs. La théorie est claire mais l'application reste floue." },
+            { competence: "Investigation", difficulte: "Moyen", reussite: "Une note discrète mentionne un ouvrage consulté par Thade trois jours avant Nyx : « De la Persistance des Âmes Liées ». L'ouvrage est sur les étagères. Il décrit comment maintenir un lien avec une personne dont le corps a traversé un seuil.", echec: "Les notes marginales sont illisibles. Rien d'autre à trouver." },
+            { competence: "Connaissances (mystères)", difficulte: "Moyen", reussite: "L'ouvrage « De la Persistance des Âmes Liées » décrit le fondement théorique de la Larme de Vael — un dispositif qui maintient un lien à travers un seuil planaire.", echec: "L'ouvrage est dense et arcanique. Olane peut l'interpréter plus tard." },
           ],
 
           indices: [
-            { indice: "Le registre de Thade", localisation: "Lutrin de la Réserve", detection: "Investigation DD 13", information: "142 séances sur 8 ans. Sujets : résonance planaire, seuils, ancrages. Effondrement après la mort de Sealine.", usage: "Les premières recherches précèdent la perte ; le rituel actuel la transforme en objectif." },
-            { indice: "L'ardoise du 6e étage", localisation: "Tour Arcanique, 6e étage", detection: "Mention dans les notes de la Réserve", information: "Équation préliminaire de S-01 datée de sept ans — avant la mort de Sealine.", usage: "Thade travaillait déjà sur la théorie des seuils avant la disparition de Sealine. Mais le rituel actuel — celui qui vise à la ramener — naît après Nyx, quand la recherche devient obsession." },
-            { indice: "« De la Persistance des Âmes Liées »", localisation: "Étagères de la Réserve", detection: "Investigation DD 15 + Connaissances DD 14", information: "Ouvrage consulté par Thade trois jours avant Nyx. Décrit comment maintenir un lien avec une personne dont le corps a traversé un seuil planaire. Fondement théorique de la Larme de Vael.", usage: "Comprendre que Thade préparait la Larme avant même la disparition de Sealine. Le rituel n'est pas né du chagrin — il est né de la peur de perdre." },
-            { indice: "Cachet de Caldris sur trois ouvrages", localisation: "Étagères de la Réserve", detection: "Lecture directe si les PJ ont le cachet de Jaren", information: "Trois ouvrages importés de Caldris. Thade a importé du matériel interdit via Caldris avant la catastrophe de Nyx.", usage: "Caldris n'est pas un partenaire récent — c'est un complice de longue date." },
+            { indice: "Le registre de Thade", localisation: "Lutrin de la Réserve", detection: "Investigation Moyen", information: "142 séances étalées sur une trentaine d'années. Sujets : résonance planaire, seuils, ancrages. Effondrement après la mort de Sealine.", usage: "Les premières recherches précèdent la perte ; le rituel actuel la transforme en objectif." },
+            { indice: "La trace scellée du 6e étage", localisation: "Tour Arcanique, 6e étage", detection: "Mention dans les notes de la Réserve", information: "Équation préliminaire de S-01 datée de l'année de Nyx — avant la mort de Sealine.", usage: "Thade travaillait déjà sur la théorie des seuils avant la disparition de Sealine. Mais le rituel actuel — celui qui vise à contrôler durablement l'ouverture — naît après Nyx, quand la recherche devient obsession." },
+            { indice: "« De la Persistance des Âmes Liées »", localisation: "Étagères de la Réserve", detection: "Investigation Moyen + Connaissances Moyen", information: "Ouvrage consulté par Thade trois jours avant Nyx. Décrit comment maintenir un lien avec une personne dont le corps a traversé un seuil planaire. Fondement théorique de la Larme de Vael.", usage: "Comprendre que Thade préparait la Larme avant même la disparition de Sealine. Le rituel n'est pas né du chagrin — il est né de la peur de perdre." },
+            { indice: "Cachet de Caldris sur trois ouvrages", localisation: "Étagères de la Réserve", detection: "Lecture directe si les PJ ont le cachet de Jaren", information: "Trois ouvrages importés de Caldris. Thade a importé du matériel interdit via Caldris avant la catastrophe de Nyx.", usage: "Caldris est un complice de longue date." },
           ],
 
           guide_mj: {
@@ -2265,10 +2730,10 @@ export const scenario2 = {
             deroulement: [
               "Les PJ accèdent à la Réserve (Olane, Effraction, ou mandat).",
               "Ils trouvent le registre — 142 séances, le nom de Thade, l'effondrement après Nyx.",
-              "Ils déchiffrent les ouvrages (Connaissances DD 17) ou font des croquis (Investigation DD 10).",
+              "Ils déchiffrent les ouvrages (Connaissances Difficile) ou font des croquis (Investigation Facile).",
               "Si Olane est là, elle oriente la recherche et identifie les ouvrages pertinents.",
               "Si les PJ ont les textes des Endeuillés, comparaison immédiate.",
-              "Si les PJ cherchent plus loin (Investigation DD 15), ils trouvent « De la Persistance des Âmes Liées ».",
+              "Si les PJ cherchent plus loin (Investigation Moyen), ils trouvent « De la Persistance des Âmes Liées ».",
               "Ils comprennent : Thade a tout préparé. La théorie précède la perte. Le rituel naît après.",
             ],
             actions_utiles: [
@@ -2276,7 +2741,7 @@ export const scenario2 = {
               "Relever les passages essentiels.",
               "Faire un croquis des diagrammes.",
               "Comparer avec les textes des Endeuillés.",
-              "Chercher l'ardoise du 6e étage.",
+              "Chercher la trace scellée du 6e étage.",
               "Si Olane est là : lui demander d'identifier les ouvrages pertinents.",
               "Si les PJ ont le cachet de Caldris : comparer avec les ouvrages importés.",
             ],
@@ -2292,7 +2757,7 @@ export const scenario2 = {
           reperes_de_jeu: {
             indice_indispensable: "Les PJ doivent savoir que Thade a consulté 142 fois la Réserve et que ses recherches portaient sur les seuils planaires.",
             ne_pas_bloquer_sur_un_jet: "Le registre est visible sans jet. Le nom de Thade et le nombre 142 sont lisibles.",
-            question_dramatique: "Quand un homme brillant prépare quelque chose pendant huit ans, qui peut l'arrêter ?",
+            question_dramatique: "Quand un homme brillant prépare quelque chose pendant une trentaine d'années, qui peut l'arrêter ?",
           },
 
           transitions: {
@@ -2303,7 +2768,7 @@ export const scenario2 = {
 
           navigation: {
             indice_indispensable: "Les PJ doivent trouver les 142 séances de Thade et comprendre que le protocole S-01 est une application d'un rituel de seuil.",
-            consequence_si_manque: "Sans les 142 séances, les PJ ne savent pas que Thade travaille sur les seuils depuis 8 ans. Sans la théorie des ancrages, ils ne comprennent pas que les os des Thanes sont des ancrages physiques. Olane peut aider à interpréter.",
+            consequence_si_manque: "Sans les 142 séances, les PJ ne savent pas que Thade travaille sur les seuils depuis une trentaine d'années. Sans la théorie des ancrages, ils ne comprennent pas que les os des Thanes sont des ancrages physiques. Olane peut aider à interpréter.",
             pnj_alternatifs: ["maera_olane — peut décrypter les ouvrages et interpréter le protocole S-01", "mara_dirigeante — peut fournir un contexte sur les recherches interdites"],
             front_si_ignore: "Le Plan de Thade — sans la Réserve, les PJ ne comprennent pas l'ampleur du projet de Thade. La Tour s'active sans compréhension.",
             scenes_alternatives: ["s2_laboratoire_elian — si les PJ vont directement au laboratoire d'Elian Voss sans passer par la Réserve", "s2_assaut_tour — si les PJ assautent la Tour directement"],
@@ -2329,7 +2794,7 @@ export const scenario2 = {
                 sceneId: "s2_conseil_sous_pression",
                 type: "pnj",
                 moteur: "Les 142 séances et le protocole S-01 sont des preuves institutionnelles.",
-                accroche_mj: "142 séances. Le protocole S-01. La théorie des seuils. Tout est là. Si vous apportez ça au Conseil, vous prouvez que Thade travaille sur un rituel de seuil depuis 8 ans. Avel ne pourra plus l'ignorer.",
+                accroche_mj: "142 séances. Le protocole S-01. La théorie des seuils. Tout est là. Si vous apportez ça au Conseil, vous prouvez que Thade travaille sur un rituel de seuil depuis une trentaine d'années. Avel ne pourra plus l'ignorer.",
                 consequence_si_refus: "Sans preuve au Conseil, la loi martiale reste sur la table.",
               },
               {
@@ -2358,9 +2823,9 @@ export const scenario2 = {
               },
             ],
             fallback_mj: "La Réserve Interdite nécessite Olane pour y accéder. Si les PJ n'ont pas Olane, ils peuvent trouver Voss directement. Si les PJ n'explorent jamais la Réserve, ils manquent les 142 séances et la théorie des seuils. Voss peut apporter une partie de l'information, mais sans le contexte théorique.",
-            objectif_scene: "Découvrir les 142 séances de Thade dans la Réserve, le protocole S-01, et la théorie des seuils planaires. Comprendre que Thade a planifié pendant huit ans.",
+            objectif_scene: "Découvrir les 142 séances de Thade dans la Réserve, le protocole S-01, et la théorie des seuils planaires. Comprendre que Thade a planifié pendant une trentaine d'années.",
             pression: "La Tour s'active. Le déphasage s'étend. Si les PJ tardent, Thade accomplit le rituel. La loi martiale restreint l'accès si elle est votée.",
-            actions_pj_attendues: ["accéder à la Réserve (avec Olane ou par effraction)", "déchiffrer les 142 séances (Connaissances)", "trouver la théorie des seuils et le protocole S-01", "comprendre que Thade a planifié pendant huit ans"],
+            actions_pj_attendues: ["accéder à la Réserve (avec Olane ou par effraction)", "déchiffrer les 142 séances (Connaissances)", "trouver la théorie des seuils et le protocole S-01", "comprendre que Thade a planifié pendant une trentaine d'années"],
             sorties_possibles: ["vers s2_laboratoire_elian (Voss a la pratique)", "vers s2_assaut_tour (assaut direct de la Tour)", "vers s2_conseil_sous_pression (preuves institutionnelles au Conseil)"],
             si_les_pj_bloquent: "Nécessite Olane pour y accéder. Sans Olane, Voss directement. Sans la Réserve, Voss peut partiellement compenser. Le Magi-Tuteur peut orienter.",
             conditions_sortie: [
@@ -2368,7 +2833,7 @@ export const scenario2 = {
               "OU les PJ ont trouvé le protocole S-01 et compris la planification de Thade.",
               "OU les PJ n'ont pas Olane — ils vont directement au Laboratoire de Voss.",
             ],
-            transition_defaut: "Les PJ referment les registres de la Réserve. 142 séances. Huit ans de préparation. La théorie des seuils est claire. Et Voss a la pratique. Que font les PJ ?",
+            transition_defaut: "Les PJ referment les registres de la Réserve. 142 séances. Une trentaine d'années de préparation. La théorie des seuils est claire. Et Voss a la pratique. Que font les PJ ?",
           },
         },
 
@@ -2385,9 +2850,9 @@ export const scenario2 = {
             ambiance:
               "Sous un ancien amphithéâtre médical de l'Université, une porte métallique dissimulée derrière un panneau de bois pourri. La porte grince sur un couloir court qui descend vers une pièce basse, voûtée, éclairée par des lampes alchimiques vertes. L'odeur frappe d'abord : formol, cire, et quelque chose de doux en dessous — quelque chose d'organique qui ne devrait pas être là. Des colonnes de dossiers s'élèvent jusqu'au plafond. Des bocaux opaques alignés sur des étagères de fer. Une table de travail couverte de notes, de schémas, d'instruments de précision.",
             deroulement_narratif:
-              "À gauche, cinquante dossiers étiquetés « stabilisés ». Lecture directe : cinquante patients stabilisés par des dérivés du protocole S-01, menés après la catastrophe de Nyx. Des noms, des dates, des dosages. Les patients viennent de Caldris — le cachet de Caldris est sur chaque dossier. Sealine est S-01, la première tentative consciente de stabilisation planaire. Les patients d'Elian sont postérieurs : des reproductions et adaptations du protocole S-01. À droite, sept bocaux sans étiquette. Art de la magie DD 17 : le sérum dans les bocaux est une préparation planaire. Il stabilise le corps pendant le transit vers la Spirale. Les sept bocaux contiennent les restes des sept échecs d'Elian après S-01. Toutes ont échoué.\n\nSous une plaque amovible de la table de travail, deux dossiers cachés. Investigation DD 12 pour trouver la plaque. Le premier dossier porte un schéma ancien — un dispositif en forme de larme, avec des annotations en écriture fine et précise. Le schéma nomme la Larme de Vael. Cachet de Caldris sur le schéma. Décryptage DD 17 pour lire l'annotation : « Ne jamais alimenter cela avec des vivants. » L'écriture est celle de Sealine. Sa main. Elle savait. Elle a essayé d'empêcher Thade. Il l'a fait quand même.\n\nElian Voss est présent si les PJ arrivent de jour. Il est effrayé — un homme brisé qui sait ce qu'il a fait. Intimidation DD 14 : il révèle tout. Thade a commandé les reproductions du protocole après Nyx, Caldris fournit le matériel, la Larme est le catalyseur. Elian n'est pas un fanatique — c'est un médecin qui a franchi la ligne par peur de Thade. Si les PJ le retournent, il peut témoigner au Conseil. S'ils le tuent, ils perdent un témoin clé.\n\nSi les PJ arrivent de nuit : Elian n'est pas là. Le laboratoire est vide. Les dossiers, les bocaux et le schéma sont accessibles sans confrontation. Mais sans Elian, les PJ n'ont pas de témoin direct — ils ont des preuves matérielles mais pas de voix pour les porter au Conseil. Olane peut interpréter les dossiers médicaux (Médecine DD 12 de sa part), mais elle ne peut pas témoigner de ce qu'Elian a fait de sa propre voix.\n\nSi Elian est présent et que les PJ le menacent sans succès (échec Intimidation DD 14) : il se recroqueville et se tait. Il a plus peur de Thade que des PJ. Persuasion DD 13 (alternative) : « Je comprends. Vous étiez médecin. Vous vouliez sauver des gens. Thade vous a utilisé. » Si réussi, Elian se ouvre progressivement. Il dit : « J'ai commencé par croire que c'était de la recherche. De la vraie recherche. Puis les premiers sont morts. Et je n'ai pas arrêté. »\n\nSi les PJ ont le cachet de Caldris des notes de Jaren (Scénario 1) : Elian le reconnaît immédiatement. Il pâlit. « Où avez-vous trouvé ça ? » Il sait que le circuit est découvert. Cela facilite l'Intimidation (DD 12 au lieu de 14) — Elian sait que les PJ ont déjà des preuves.\n\nSi les PJ mentionnent Sealine ou le protocole S-01 : Elian réagit. « Vous savez pour Sealine ? Alors vous savez que tout ça... tout ça vient d'elle. De ce que Thade a perdu. » Il ne pleure pas — il est trop épuisé pour pleurer. Mais sa voix change.\n\nSi les PJ touchent aux bocaux sans précaution (échec Art de la magie DD 15) : le sérum réagit. Un écho planaire — un visage fugace dans le liquide, un murmure. Les PJ qui échouent un jet de Volonté DD 12 sont secoués (état « effrayé » pendant 1 round). Les bocaux sont instables. Le MJ peut utiliser cela pour établir le danger du protocole.\n\nSi les PJ fouillent le laboratoire plus en profondeur (Investigation DD 15) : une lettre de Thade à Elian, datée d'il y a six mois. « Les stabilisations progressent. La Larme est presque prête. Continuez les dosages. Ne laissez aucune trace. » Preuve supplémentaire de la direction consciente de Thade.",
+              "À gauche, cinquante dossiers étiquetés « stabilisés ». Lecture directe : cinquante patients stabilisés par des dérivés du protocole S-01, menés après la catastrophe de Nyx. Des noms, des dates, des dosages. Les patients viennent de Caldris — le cachet de Caldris est sur chaque dossier. Sealine est S-01, la première tentative consciente de stabilisation planaire. Les patients d'Elian sont postérieurs : des reproductions et adaptations du protocole S-01. À droite, sept bocaux sans étiquette. Art de la magie Difficile : le sérum dans les bocaux est une préparation planaire. Il stabilise le corps pendant le transit vers la Spirale. Les sept bocaux contiennent les restes des sept échecs d'Elian après S-01. Toutes ont échoué.\n\nSous une plaque amovible de la table de travail, deux dossiers cachés. Investigation Moyen pour trouver la plaque. Le premier dossier porte un schéma ancien — un dispositif en forme de larme, avec des annotations en écriture fine et précise. Le schéma nomme la Larme de Vael. Cachet de Caldris sur le schéma. Décryptage Difficile pour lire l'annotation : « Ne jamais alimenter cela avec des vivants. » L'écriture est celle de Sealine. Sa main. Elle savait. Elle a essayé d'empêcher Thade. Il l'a fait quand même.\n\nElian Voss est présent si les PJ arrivent de jour. Il est effrayé — un homme brisé qui sait ce qu'il a fait. Intimidation Moyen : il révèle tout. Thade a commandé les reproductions du protocole après Nyx, Caldris fournit le matériel, la Larme est le catalyseur. Elian n'est pas un fanatique — c'est un médecin qui a franchi la ligne par peur de Thade. Si les PJ le retournent, il peut témoigner au Conseil. S'ils le tuent, ils perdent un témoin clé.\n\nSi les PJ arrivent de nuit : Elian n'est pas là. Le laboratoire est vide. Les dossiers, les bocaux et le schéma sont accessibles sans confrontation. Mais sans Elian, les PJ n'ont pas de témoin direct — ils ont des preuves matérielles mais pas de voix pour les porter au Conseil. Olane peut interpréter les dossiers médicaux (Médecine Moyen de sa part), mais elle ne peut pas témoigner de ce qu'Elian a fait de sa propre voix.\n\nSi Elian est présent et que les PJ le menacent sans succès (échec Intimidation Moyen) : il se recroqueville et se tait. Il a plus peur de Thade que des PJ. Persuasion Moyen (alternative) : « Je comprends. Vous étiez médecin. Vous vouliez sauver des gens. Thade vous a utilisé. » Si réussi, Elian s'ouvre progressivement. Il dit : « J'ai commencé par croire que c'était de la recherche. De la vraie recherche. Puis les premiers sont morts. Et je n'ai pas arrêté. »\n\nSi les PJ ont le cachet de Caldris des notes de Jaren (Scénario 1) : Elian le reconnaît immédiatement. Il pâlit. « Où avez-vous trouvé ça ? » Il sait que le circuit est découvert. Cela facilite l'Intimidation (Moyen avec circonstance favorable) — Elian sait que les PJ ont déjà des preuves.\n\nSi les PJ mentionnent Sealine ou le protocole S-01 : Elian réagit. « Vous savez pour Sealine ? Alors vous savez que tout ça… tout ça vient d'elle. De ce que Thade a perdu. » Il ne pleure pas — il est trop épuisé pour pleurer. Mais sa voix change.\n\nSi les PJ touchent aux bocaux sans précaution (échec Art de la magie Moyen) : le sérum réagit. Un écho planaire — un visage fugace dans le liquide, un murmure. Les PJ qui échouent un jet de Volonté Moyen sont secoués (état « effrayé » pendant 1 round). Les bocaux sont instables. Le MJ peut utiliser cela pour établir le danger du protocole.\n\nSi les PJ fouillent le laboratoire plus en profondeur (Investigation Moyen) : une lettre de Thade à Elian, datée d'il y a six mois. « Les stabilisations progressent. La Larme est presque prête. Continuez les dosages. Ne laissez aucune trace. » Preuve supplémentaire de la direction consciente de Thade.",
             notes_mj:
-              "Le schéma de la Larme est visible sans jet — le nom et le cachet sont lisibles. L'annotation de Sealine nécessite Décryptage DD 17, mais Olane ou Mara peuvent la lire si les PJ leur apportent le schéma. Si les PJ ont le cachet de Caldris des notes de Jaren (Scénario 1), la confirmation est immédiate. Elian Voss est le témoin le plus précieux du scénario — le tuer ferme la porte du Conseil.",
+              "Le schéma de la Larme est visible sans jet — le nom et le cachet sont lisibles. L'annotation de Sealine nécessite Décryptage Difficile, mais Olane ou Mara peuvent la lire si les PJ leur apportent le schéma. Si les PJ ont le cachet de Caldris des notes de Jaren (Scénario 1), la confirmation est immédiate. Elian Voss est le témoin le plus précieux du scénario — le tuer ferme la porte du Conseil.",
           },
 
           texte_a_lire:
@@ -2405,24 +2870,24 @@ export const scenario2 = {
             ],
             rappels: [
               "Si les PJ ont le cachet de Caldris des notes de Jaren, la confirmation est immédiate.",
-              "Elian Voss n'est pas un fanatique. C'est un médecin qui a franchi la ligne par peur de Thade.",
+              "Elian Voss est un médecin qui a franchi la ligne par peur de Thade.",
             ],
           },
 
           defis: [
-            { competence: "Art de la magie", dd: 17, reussite: "Le sérum dans les bocaux est une préparation planaire. Il stabilise le corps pendant le transit vers la Spirale. Le protocole S-01 est une version améliorée.", echec: "Les bocaux contiennent un liquide alchimique complexe. Sa fonction exacte reste obscure." },
-            { competence: "Art de la magie", dd: 15, reussite: "Les bocaux sont instables. Manipuler sans précaution déclenche un écho planaire — un visage fugace, un murmure. Les PJ savent qu'il faut les manipuler avec soin.", echec: "Un écho planaire se déclenche. Un visage fugace dans le liquide. Volonté DD 12 ou état effrayé pendant 1 round." },
-            { competence: "Décryptage", dd: 17, reussite: "L'annotation de Sealine sur le schéma dit : 'Ne jamais alimenter cela avec des vivants.' Son écriture. Sa main.", echec: "L'annotation est ancienne et difficile à lire. Quelque chose sur des vivants." },
-            { competence: "Intimidation", dd: 14, reussite: "Elian Voss, terrifié, révèle tout : Thade a commandé le protocole, Caldris fournit le matériel, la Larme est le catalyseur.", echec: "Elian se tait. Il a plus peur de Thade que des PJ." },
-            { competence: "Persuasion", dd: 13, reussite: "Elian s'ouvre progressivement. « J'ai commencé par croire que c'était de la recherche. Puis les premiers sont morts. Et je n'ai pas arrêté. » Il accepte de témoigner.", echec: "Elian secoue la tête. « Vous ne comprenez pas. Vous n'avez pas vu ce que Thade peut faire. »" },
-            { competence: "Investigation", dd: 15, reussite: "Une lettre de Thade à Elian, datée d'il y a six mois. « Les stabilisations progressent. La Larme est presque prête. Continuez les dosages. Ne laissez aucune trace. »", echec: "Rien d'autre à trouver dans le laboratoire." },
+            { competence: "Art de la magie", difficulte: "Difficile", reussite: "Le sérum dans les bocaux est une préparation planaire. Il stabilise le corps pendant le transit vers la Spirale. Le protocole S-01 est une version améliorée.", echec: "Les bocaux contiennent un liquide alchimique complexe. Sa fonction exacte reste obscure." },
+            { competence: "Art de la magie", difficulte: "Moyen", reussite: "Les bocaux sont instables. Manipuler sans précaution déclenche un écho planaire — un visage fugace, un murmure. Les PJ savent qu'il faut les manipuler avec soin.", echec: "Un écho planaire se déclenche. Un visage fugace dans le liquide. Volonté Moyen ou état effrayé pendant 1 round." },
+            { competence: "Décryptage", difficulte: "Difficile", reussite: "L'annotation de Sealine sur le schéma dit : 'Ne jamais alimenter cela avec des vivants.' Son écriture. Sa main.", echec: "L'annotation est ancienne et difficile à lire. Quelque chose sur des vivants." },
+            { competence: "Intimidation", difficulte: "Moyen", reussite: "Elian Voss, terrifié, révèle tout : Thade a commandé le protocole, Caldris fournit le matériel, la Larme est le catalyseur.", echec: "Elian se tait. Il a plus peur de Thade que des PJ." },
+            { competence: "Persuasion", difficulte: "Moyen", reussite: "Elian s'ouvre progressivement. « J'ai commencé par croire que c'était de la recherche. Puis les premiers sont morts. Et je n'ai pas arrêté. » Il accepte de témoigner.", echec: "Elian secoue la tête. « Vous ne comprenez pas. Vous n'avez pas vu ce que Thade peut faire. »" },
+            { competence: "Investigation", difficulte: "Moyen", reussite: "Une lettre de Thade à Elian, datée d'il y a six mois. « Les stabilisations progressent. La Larme est presque prête. Continuez les dosages. Ne laissez aucune trace. »", echec: "Rien d'autre à trouver dans le laboratoire." },
           ],
 
           indices: [
-            { indice: "Le schéma de la Larme de Vael", localisation: "Dossier caché sous la plaque", detection: "Investigation DD 12", information: "La Larme est le catalyseur du rituel de seuil. Cachet de Caldris sur le schéma.", usage: "Comprendre que la Larme est l'objet central du plan de Thade." },
-            { indice: "L'annotation de Sealine", localisation: "Schéma de la Larme", detection: "Décryptage DD 17", information: "'Ne jamais alimenter cela avec des vivants.' Écriture de Sealine.", usage: "Sealine savait. Elle a essayé d'empêcher Thade. Il l'a fait quand même." },
+            { indice: "Le schéma de la Larme de Vael", localisation: "Dossier caché sous la plaque", detection: "Investigation Moyen", information: "La Larme est le catalyseur du rituel de seuil. Cachet de Caldris sur le schéma.", usage: "Comprendre que la Larme est l'objet central du plan de Thade." },
+            { indice: "L'annotation de Sealine", localisation: "Schéma de la Larme", detection: "Décryptage Difficile", information: "'Ne jamais alimenter cela avec des vivants.' Écriture de Sealine.", usage: "Sealine savait. Elle a essayé d'empêcher Thade. Il l'a fait quand même." },
             { indice: "La liste des patients", localisation: "Cinquante dossiers 'stabilisés'", detection: "Lecture directe", information: "Cinquante patients stabilisés par des dérivés du protocole S-01, menés après Nyx. Sept échecs dans les bocaux.", usage: "Thade et Elian ont reproduit S-01 sur des vivants après Sealine." },
-            { indice: "La lettre de Thade à Elian", localisation: "Table de travail, cachée", detection: "Investigation DD 15", information: "Lettre datée d'il y a six mois. Thade ordonne de continuer les dosages et de ne laisser aucune trace.", usage: "Preuve que Thade dirige consciemment les expériences. Pas un dérapage — un ordre." },
+            { indice: "La lettre de Thade à Elian", localisation: "Table de travail, cachée", detection: "Investigation Moyen", information: "Lettre datée d'il y a six mois. Thade ordonne de continuer les dosages et de ne laisser aucune trace.", usage: "Preuve que Thade dirige consciemment les expériences. Pas un dérapage — un ordre." },
           ],
 
           guide_mj: {
@@ -2431,10 +2896,10 @@ export const scenario2 = {
             deroulement: [
               "Les PJ entrent. L'odeur frappe.",
               "Ils trouvent les dossiers (50 patients) et les bocaux (7 échecs).",
-              "Ils découvrent le schéma de la Larme sous la plaque (Investigation DD 12).",
+              "Ils découvrent le schéma de la Larme sous la plaque (Investigation Moyen).",
               "Si Elian est présent : confrontation sociale. Intimidation ou Persuasion.",
               "Si Elian est absent : les PJ collectent les preuves matérielles sans témoin.",
-              "Si les PJ fouillent plus loin (Investigation DD 15) : lettre de Thade.",
+              "Si les PJ fouillent plus loin (Investigation Moyen) : lettre de Thade.",
               "Les PJ décident quoi faire d'Elian (si présent) : retourné, tué, ou laissé.",
             ],
             actions_utiles: [
@@ -2442,7 +2907,7 @@ export const scenario2 = {
               "Interroger Elian Voss (Intimidation ou Persuasion).",
               "Prendre les bocaux comme preuves (avec précaution).",
               "Comparer avec les archives médicales du Scénario 1.",
-              "Chercher la lettre de Thade (Investigation DD 15).",
+              "Chercher la lettre de Thade (Investigation Moyen).",
               "Si les PJ ont le cachet de Caldris : le montrer à Elian pour faciliter l'Intimidation.",
             ],
             fronts_heritiers: [
@@ -2559,9 +3024,9 @@ export const scenario2 = {
             ambiance:
               "La Tour Arcanique se dresse au cœur de l'Université. De l'extérieur, elle semble normale — une flèche de pierre grise, des fenêtres étroites, un toit d'ardoise. Mais en franchissant le seuil, l'air change. Il sent la lavande et l'ozone. Les premiers étages sont banals — couloirs lambrissés, salles de cours vides, tableaux anciens. Mais à mesure qu'on monte, les murs changent. Des piliers de cristal poussent entre les pierres comme des racines inversées. Des runes brillent dans les angles, d'un bleu profond. Des objets flottent dans l'air — des livres, des plumes, des tasses, immobiles, comme suspendus dans du verre. Le bourdonnement du vortex au sommet est perceptible dès le troisième étage.",
             deroulement_narratif:
-              "Les PJ montent étage par étage. Étages 1-2 : banals, transition. Des couloirs vides, des salles désertées. L'occasion de se préparer. Le MJ décrit le changement progressif : les murs passent de la pierre lambrissée à une pierre plus claire, presque translucide. Des objets flottent — des plumes, des tasses, des livres. Pas de menace. Mais l'air sent la lavande dès le deuxième étage.\n\nÉtage 3 : étudiants charmés. Trois étudiants aux yeux vides. Ils lèvent les mains et lancent des sorts — Boule de feu, Rayon de givre. Persuasion DD 16 ou Dissipation de la magie pour les libérer sans violence. Ils se réveillent désorientés. L'un d'eux dit : « Le professeur Coren a dit qu'il fallait défendre la Tour. On a obéi. On... on ne savait pas. » Les tuer compte comme victime pour l'épilogue. Si les PJ utilisent Dissipation, les étudiants tombent à genoux et pleurent. Si les PJ combattent, les étudiants meurent avec les yeux vides — pas de rage, pas de peur. Juste le vide.\n\nÉtage 4 : gardes piégés et magi-tuteur loyal. Les gardes sont protégés par des runes explosives — les attaquer déclenche les runes. Discrétion DD 16 pour les éviter par les couloirs latéraux. Les couloirs latéraux sont étroits, non modifiés par Thade — de vieux passages de service. Le magi-tuteur est un allié caché — il se présente si les PJ ne l'attaquent pas. Il porte une robe usée, des mains tremblantes, et un regard qui dit qu'il attend depuis longtemps. Il dit : « Je suis le magi-tuteur. Je garde la Tour depuis que Thade est... parti. Son esprit est au sommet. Son corps est au septième. Je peux vous guider. » Il peut expliquer la Tour, la cuve et le rituel au sommet. Si les PJ l'attaquent par erreur, il se défend mal — il n'est pas combattant. Si les PJ le blessent, il dit : « Je ne suis pas votre ennemi. Thade l'est. Ne perdez pas de temps avec moi. »\n\nÉtage 5 : créature de la Spirale. Une entité cooptée par Thade — pas hostile par nature, mais prisonnière. Elle ressemble à un voile de lumière bleutée qui prend forme quand les PJ entrent. Elle ne parle pas — elle communique par impressions, par images mentales. Diplomatie DD 15 pour la retourner. Elle se retire si les PJ la traitent avec respect. Si elle attaque, elle est puissante mais ne veut pas mourir. Si les PJ la libèrent (Diplomatie), elle enveloppe un PJ brièvement — une sensation de froid, puis de gratitude — et disparaît. Le magi-tuteur, s'il est présent, dit : « Thade l'a amenée il y a deux ans. Elle ne voulait pas venir. »\n\nÉtage 6 : ardoise. Investigation DD 10. Équation préliminaire de S-01, datée de sept ans. Thade travaillait déjà sur la théorie des seuils avant la disparition de Sealine. Mais le rituel actuel naît après Nyx, quand la recherche devient obsession. La salle est une ancienne salle de cours — des bancs, un tableau, l'ardoise au mur. L'ardoise n'a pas été effacée. Le magi-tuteur, s'il est présent, dit : « Il a écrit ça avant. Avant Sealine. Avant tout. Je ne savais pas ce que ça voulait dire. Maintenant je sais. »\n\nÉtage 7 : porte du Laboratoire de Verre. L'air sent la lavande à saturation. Le bourdonnement du vortex est audible. Derrière la porte : le corps de Thade dans la cuve. La porte est fermée mais pas verrouillée — Thade n'a pas besoin de la verrouiller. Personne n'est censé arriver jusqu'ici.",
+              "Les PJ montent étage par étage. Étages 1-2 : banals, transition. Des couloirs vides, des salles désertées. L'occasion de se préparer. Le MJ décrit le changement progressif : les murs passent de la pierre lambrissée à une pierre plus claire, presque translucide. Des objets flottent — des plumes, des tasses, des livres. Pas de menace. Mais l'air sent la lavande dès le deuxième étage.\n\nÉtage 3 : étudiants charmés. Trois étudiants aux yeux vides. Ils lèvent les mains et lancent des sorts — Boule de feu, Rayon de givre. Persuasion Difficile ou Dissipation de la magie pour les libérer sans violence. Ils se réveillent désorientés. L'un d'eux dit : « Le professeur Coren a dit qu'il fallait défendre la Tour. On a obéi. On… on ne savait pas. » Les tuer compte comme victime pour l'épilogue. Si les PJ utilisent Dissipation, les étudiants tombent à genoux et pleurent. Si les PJ combattent, les étudiants meurent avec les yeux vides — pas de rage, pas de peur. Juste le vide.\n\nÉtage 4 : gardes piégés et magi-tuteur loyal. Les gardes sont protégés par des runes explosives — les attaquer déclenche les runes. Discrétion Difficile pour les éviter par les couloirs latéraux. Les couloirs latéraux sont étroits, non modifiés par Thade — de vieux passages de service. Le magi-tuteur est un allié caché — il se présente si les PJ ne l'attaquent pas. Il porte une robe usée, des mains tremblantes, et un regard qui dit qu'il attend depuis longtemps. Il dit : « Je suis le magi-tuteur. Je garde la Tour depuis que Thade est… parti. Son esprit est au sommet. Son corps est au septième. Je peux vous guider. » Il peut expliquer la Tour, la cuve et le rituel au sommet. Si les PJ l'attaquent par erreur, il se défend mal — il n'est pas combattant. Si les PJ le blessent, il dit : « Je ne suis pas votre ennemi. Thade l'est. Ne perdez pas de temps avec moi. »\n\nÉtage 5 : créature de la Spirale. Une entité cooptée par Thade — pas hostile par nature, mais prisonnière. Elle ressemble à un voile de lumière bleutée qui prend forme quand les PJ entrent. Elle ne parle pas — elle communique par impressions, par images mentales. Diplomatie Moyen pour la retourner. Elle se retire si les PJ la traitent avec respect. Si elle attaque, elle est puissante mais ne veut pas mourir. Si les PJ la libèrent (Diplomatie), elle enveloppe un PJ brièvement — une sensation de froid, puis de gratitude — et disparaît. Le magi-tuteur, s'il est présent, dit : « Thade l'a amenée il y a deux ans. Elle ne voulait pas venir. »\n\nÉtage 6 : ardoise. Investigation Facile. Équation préliminaire de S-01, datée de l'année de Nyx. Thade travaillait déjà sur la théorie des seuils avant la disparition de Sealine. Mais le rituel actuel naît après Nyx, quand la recherche devient obsession. La salle est une ancienne salle de cours — des bancs, un tableau, l'ardoise au mur. L'ardoise est scellée depuis l'année de Nyx. Le magi-tuteur, s'il est présent, dit : « Il a écrit ça avant. Avant Sealine. Avant tout. Je ne savais pas ce que ça voulait dire. Maintenant je sais. »\n\nÉtage 7 : porte du Laboratoire de Verre. L'air sent la lavande à saturation. Le bourdonnement du vortex est audible. Derrière la porte : le corps de Thade dans la cuve. La porte est fermée mais pas verrouillée — Thade n'a pas besoin de la verrouiller. Personne n'est censé arriver jusqu'ici.",
             notes_mj:
-              "5-6 rencontres tactiques. Chaque rencontre a une option non-létale. Le MJ doit tenir le décompte du nombre de victimes — ce décompte détermine le ton de l'épilogue du Scénario 3. Personne dans la Tour n'est un ennemi volontaire — sauf Thade. Les étudiants sont des victimes. La créature est une prisonnière. Le magi-tuteur est un allié. S'ils tuent tout, l'épilogue sera sombre. S'ils minimisent les victimes, l'épilogue peut être lumineux.\n\nModularité selon le nombre de PJ :\n- 1 PJ : réduire à 3 rencontres (étages 3, 5, 6). L'étage 4 (gardes + magi-tuteur) devient une scène sociale — le magi-tuteur se présente immédiatement si le PJ n'attaque pas. Les étudiants charmés sont un seul étudiant (un sort au lieu de trois). La créature est affaiblie. Les DD de Persuasion passent à 14 au lieu de 16. Discrétion DD 14 au lieu de 16. Le PJ peut éviter toutes les rencontres sauf l'ardoise (étage 6) et la porte du Laboratoire (étage 7).\n- 2 PJ : 4 rencontres (étages 3, 4, 5, 6). Les étudiants sont deux. Les gardes sont deux. La créature est standard. DD 15 au lieu de 16.\n- 3-4 PJ : 5-6 rencontres comme écrit. DD standards (16). Toutes les rencontres sont jouées.\n\nDans tous les cas, le magi-tuteur est un allié caché qui se présente si les PJ ne l'attaquent pas. L'ardoise du 6e étage est toujours accessible. La porte du Laboratoire de Verre est toujours le point d'arrivée.",
+              "5-6 rencontres tactiques. Chaque rencontre a une option non-létale. Le MJ doit tenir le décompte du nombre de victimes — ce décompte détermine le ton de l'épilogue du Scénario 3. Personne dans la Tour n'est un ennemi volontaire — sauf Thade. Les étudiants sont des victimes. La créature est une prisonnière. Le magi-tuteur est un allié. S'ils tuent tout, l'épilogue sera sombre. S'ils minimisent les victimes, l'épilogue peut être lumineux.\n\nModularité selon le nombre de PJ :\n- 1 PJ : réduire à 3 rencontres (étages 3, 5, 6). L'étage 4 (gardes + magi-tuteur) devient une scène sociale — le magi-tuteur se présente immédiatement si le PJ n'attaque pas. Les étudiants charmés sont un seul étudiant (un sort au lieu de trois). La créature est affaiblie. Persuasion et Discrétion deviennent Moyens au lieu de Difficiles. Le PJ peut éviter toutes les rencontres sauf la trace scellée (étage 6) et la porte du Laboratoire (étage 7).\n- 2 PJ : 4 rencontres (étages 3, 4, 5, 6). Les étudiants sont deux. Les gardes sont deux. La créature est standard. Les difficultés restent Moyennes.\n- 3-4 PJ : 5-6 rencontres comme écrit. difficultés standards (Difficile). Toutes les rencontres sont jouées.\n\nDans tous les cas, le magi-tuteur est un allié caché qui se présente si les PJ ne l'attaquent pas. La trace scellée du 6e étage est toujours accessible. La porte du Laboratoire de Verre est toujours le point d'arrivée.",
           },
 
           texte_a_lire:
@@ -2573,11 +3038,11 @@ export const scenario2 = {
             situation:
               "La Tour est un dispositif rituel. Chaque étage est modifié pour canaliser l'énergie vers le sommet. Thade a charmé des étudiants, piégé des gardes et coopté une créature de la Spirale. Les PJ doivent monter étage par étage.",
             secrets: [
-              "Chaque étudiant charmé peut être libéré avec Dissipation de la magie ou Persuasion DD 16. Les tuer compte comme victime pour l'épilogue.",
-              "Les gardes piégés au 4e étage ne sont pas volontaires — les runes explosives les forcent à combattre. Les attaquer déclenche les runes. Les éviter (Discrétion DD 16) ou les désamorcer (Art de la magie DD 14) sont les options non-létales.",
-              "La créature de la Spirale au 5e étage n'est pas hostile par nature. Elle a été séduite par Thade. Parler DD 15 peut la retourner. Elle communique par impressions, pas par mots.",
+              "Chaque étudiant charmé peut être libéré avec Dissipation de la magie ou Persuasion Difficile. Les tuer compte comme victime pour l'épilogue.",
+              "Les gardes piégés au 4e étage ne sont pas volontaires — les runes explosives les forcent à combattre. Les attaquer déclenche les runes. Les éviter (Discrétion Difficile) ou les désamorcer (Art de la magie Moyen) sont les options non-létales.",
+              "La créature de la Spirale au 5e étage n'est pas hostile par nature. Elle a été séduite par Thade. Parler Moyen peut la retourner. Elle communique par impressions, pas par mots.",
               "Le magi-tuteur loyal au 4e étage est un allié caché. Il peut guider les PJ s'ils ne l'attaquent pas. Il connaît la Tour, la cuve et le rituel.",
-              "L'ardoise du 6e étage prouve que Thade travaillait sur la théorie des seuils avant la disparition de Sealine.",
+              "La trace scellée du 6e étage prouve que Thade travaillait sur la théorie des seuils avant la disparition de Sealine.",
             ],
             rappels: [
               "5-6 rencontres tactiques. Chaque rencontre a une option non-létale.",
@@ -2587,16 +3052,16 @@ export const scenario2 = {
           },
 
           defis: [
-            { competence: "Persuasion", dd: 16, reussite: "Les PJ libèrent les étudiants charmés sans violence. Ils se réveillent désorientés mais vivants. L'un dit : « Le professeur Coren a dit qu'il fallait défendre la Tour. On a obéi. »", echec: "Les étudiants sont trop profondément charmés. Seul un combat ou Dissipation les arrête." },
-            { competence: "Dissipation de la magie", dd: 14, reussite: "Le charme se dissipe. Les étudiants tombent à genoux et pleurent. Ils ne se souviennent de rien.", echec: "Le charme résiste. Les étudiants continuent d'attaquer." },
-            { competence: "Discrétion", dd: 16, reussite: "Les PJ évitent les gardes piégés par les couloirs latéraux que Thade n'a pas modifiés.", echec: "Tous les couloirs mènent aux gardes. Les PJ doivent combattre ou négocier." },
-            { competence: "Art de la magie", dd: 14, reussite: "Les runes explosives sur les gardes sont désamorcées. Les gardes s'effondrent, épuisés mais vivants.", echec: "Les runes sont trop complexes. Les attaquer les déclenche." },
-            { competence: "Diplomatie", dd: 15, reussite: "La créature de la Spirale accepte de se retirer. Elle n'est pas l'ennemie de Thade — elle est sa prisonnière. Elle enveloppe un PJ brièvement — froid, puis gratitude — et disparaît.", echec: "La créature attaque. Elle est puissante mais ne veut pas mourir." },
-            { competence: "Investigation", dd: 10, reussite: "L'ardoise du 6e étage montre l'équation préliminaire de S-01, datée de sept ans. Thade travaillait déjà sur les seuils avant la disparition de Sealine.", echec: "L'ardoise est couverte de poussière. Les équations sont partiellement effacées." },
+            { competence: "Persuasion", difficulte: "Difficile", reussite: "Les PJ libèrent les étudiants charmés sans violence. Ils se réveillent désorientés mais vivants. L'un dit : « Le professeur Coren a dit qu'il fallait défendre la Tour. On a obéi. »", echec: "Les étudiants sont trop profondément charmés. Seul un combat ou Dissipation les arrête." },
+            { competence: "Dissipation de la magie", difficulte: "Moyen", reussite: "Le charme se dissipe. Les étudiants tombent à genoux et pleurent. Ils ne se souviennent de rien.", echec: "Le charme résiste. Les étudiants continuent d'attaquer." },
+            { competence: "Discrétion", difficulte: "Difficile", reussite: "Les PJ évitent les gardes piégés par les couloirs latéraux que Thade n'a pas modifiés.", echec: "Tous les couloirs mènent aux gardes. Les PJ doivent combattre ou négocier." },
+            { competence: "Art de la magie", difficulte: "Moyen", reussite: "Les runes explosives sur les gardes sont désamorcées. Les gardes s'effondrent, épuisés mais vivants.", echec: "Les runes sont trop complexes. Les attaquer les déclenche." },
+            { competence: "Diplomatie", difficulte: "Moyen", reussite: "La créature de la Spirale accepte de se retirer. Elle n'est pas l'ennemie de Thade — elle est sa prisonnière. Elle enveloppe un PJ brièvement — froid, puis gratitude — et disparaît.", echec: "La créature attaque. Elle est puissante mais ne veut pas mourir." },
+            { competence: "Investigation", difficulte: "Facile", reussite: "La trace scellée du 6e étage montre l'équation préliminaire de S-01, datée de l'année de Nyx. Thade travaillait déjà sur les seuils avant la disparition de Sealine.", echec: "La surface scellée est couverte de poussière. Les équations sont partiellement effacées." },
           ],
 
           indices: [
-            { indice: "L'ardoise du 6e étage", localisation: "Salle de cours désertée", detection: "Investigation DD 10", information: "Équation préliminaire de S-01 datée de sept ans. Les premières recherches de Thade sur les seuils précèdent la disparition de Sealine.", usage: "Les premières recherches de Thade sur les seuils précèdent la disparition de Sealine ; le rituel actuel, lui, naît de sa perte. Thade n'a pas dérapé par chagrin — il a choisi." },
+            { indice: "La trace scellée du 6e étage", localisation: "Salle de cours désertée", detection: "Investigation Facile", information: "Équation préliminaire de S-01 datée de l'année de Nyx. Les premières recherches de Thade sur les seuils précèdent la disparition de Sealine.", usage: "Les premières recherches de Thade sur les seuils précèdent la disparition de Sealine ; le rituel actuel, lui, naît de sa perte. Thade n'a pas dérapé par chagrin — il a choisi." },
           ],
 
           guide_mj: {
@@ -2604,10 +3069,10 @@ export const scenario2 = {
             mise_en_place: "La Tour est ouverte si les PJ ont un accès (Olane) ou forcée (Effraction/combat). Le MJ décrit le changement progressif à chaque étage — la pierre qui devient translucide, les objets qui flottent, la lavande qui s'intensifie.",
             deroulement: [
               "Étages 1-2 : banals, transition. Le MJ décrit le changement de l'air et des murs.",
-              "Étage 3 : étudiants charmés. Persuasion DD 16 ou Dissipation DD 14 pour libérer. Combat = victimes.",
-              "Étage 4 : gardes piégés. Discrétion DD 16 pour éviter, Art de la magie DD 14 pour désamorcer, ou combat (runes explosives). Le magi-tuteur se présente si les PJ ne l'attaquent pas.",
-              "Étage 5 : créature de la Spirale. Diplomatie DD 15 pour la retourner. Communication par impressions.",
-              "Étage 6 : ardoise. Investigation DD 10. Preuve que Thade travaillait sur les seuils avant Sealine.",
+              "Étage 3 : étudiants charmés. Persuasion Difficile ou Dissipation Moyen pour libérer. Combat = victimes.",
+              "Étage 4 : gardes piégés. Discrétion Difficile pour éviter, Art de la magie Moyen pour désamorcer, ou combat (runes explosives). Le magi-tuteur se présente si les PJ ne l'attaquent pas.",
+              "Étage 5 : créature de la Spirale. Diplomatie Moyen pour la retourner. Communication par impressions.",
+              "Étage 6 : trace scellée. Investigation Facile. Preuve que Thade travaillait sur les seuils avant Sealine.",
               "Étage 7 : porte du Laboratoire de Verre. Pas verrouillée. Derrière : le corps de Thade dans la cuve.",
             ],
             actions_utiles: [
@@ -2616,7 +3081,7 @@ export const scenario2 = {
               "Éviter les gardes par les couloirs latéraux (Discrétion).",
               "Parler à la créature planaire (Diplomatie).",
               "Trouver et parler au magi-tuteur.",
-              "Lire l'ardoise du 6e.",
+              "Lire la trace scellée du 6e.",
               "Emmener le magi-tuteur jusqu'au 7e (il refuse de monter au sommet).",
             ],
             fronts_heritiers: ["Front 'Le Plan de Thade' — la Tour est le dispositif.", "Front 'Le Sceau qui cède' — le rituel est proche."],
@@ -2713,21 +3178,21 @@ export const scenario2 = {
           titre: "Le Laboratoire de Verre",
           type: "Révélation",
           resume_mj:
-            "Les PJ entrent dans le Laboratoire de Verre. Au centre : une cuve cylindrique en cristal. Dedans : le corps de Thade dans un liquide doré. Il est vivant, immobile, connecté à la Tour. Un mur de cahiers reliés bordeaux : Thade écrit à Sealine tous les jours depuis huit ans. La plume du cahier ouvert écrit en temps réel.",
+            "Les PJ entrent dans le Laboratoire de Verre. Au centre : une cuve cylindrique en cristal. Dedans : le corps de Thade dans un liquide doré. Il est vivant, immobile, connecté à la Tour. Un mur de cahiers reliés bordeaux : Thade écrit à Sealine, qu'il croit morte, tous les jours depuis une trentaine d'années. La plume du cahier ouvert écrit en temps réel.",
           idLieu: "laboratoire_verre",
           idsPnj: ["thade_coren", "magi_tuteur_loyal"],
 
           format_livre: {
             ambiance:
-              "La rotonde du 7e étage est baignée d'une lumière dorée qui n'a pas de source visible — elle émane des murs eux-mêmes, comme si la pierre avait absorbé huit ans de magie et ne savait plus comment ne pas briller. Une cuve cylindrique en cristal occupe le centre, douze mètres de diamètre, quatre mètres de haut. Le cristal est transparent — on voit tout. Dedans, un corps flotte dans un liquide doré, immobile. Thade Coren. Les yeux fermés. Le visage paisible. Des tubes l'alimentent — nutriments, mana, quelque chose de plus sombre. Des runes brillent sur la cuve, d'un or qui pulse lentement. L'air sent la lavande à saturation — pas un parfum, une présence. Le bourdonnement du vortex au sommet vibre dans les murs.",
+              "La rotonde du 7e étage est baignée d'une lumière dorée qui n'a pas de source visible — elle émane des murs eux-mêmes, comme si la pierre avait absorbé des décennies de magie et ne savait plus comment ne pas briller. Une cuve cylindrique en cristal occupe le centre, douze mètres de diamètre, quatre mètres de haut. Le cristal est transparent — on voit tout. Dedans, un corps flotte dans un liquide doré, immobile. Thade Coren. Les yeux fermés. Le visage paisible. Des tubes l'alimentent — nutriments, mana, quelque chose de plus sombre. Des runes brillent sur la cuve, d'un or qui pulse lentement. L'air sent la lavande à saturation — pas un parfum, une présence. Le bourdonnement du vortex au sommet vibre dans les murs.",
             deroulement_narratif:
-              "Sur le mur adjacent, des cahiers reliés bordeaux alignés par date. Des dizaines de cahiers. Huit ans de cahiers. Le dernier est ouvert sur un pupitre. Une plume écrit dedans, seule, en temps réel. L'écriture est fine, régulière, sans hésitation. Thade écrit depuis le vortex.\n\nSi les PJ lisent le cahier ouvert, ils voient que Thade parle à Sealine comme si elle était là. Il raconte sa journée. Il décrit ce qu'il fait. Il dit qu'il est proche. Il dit qu'il va la ramener. Il ne sait pas qu'il a échoué. Ou il ne veut pas le savoir.\n\nSi les PJ lisent un cahier plus ancien (au choix du MJ, un cahier de la première année) : Thade écrit différemment. Les premières lettres sont désespérées, brouillées, avec des ratures. « Sealine, je ne dors plus. Les équations ne marchent pas. J'ai essayé six variantes. Rien. Je continuerai demain. » Puis, au fil des mois, l'écriture se régularise. La douleur devient routine. La routine devient obsession. Le MJ peut lire un extrait de chaque période si les PJ feuillètent.\n\nSi les PJ écrivent dans le cahier ouvert : la plume s'arrête. Un silence. Puis l'écriture de Thade reprend, plus lente : « Qui êtes-vous ? » Si les PJ répondent, Thade peut engager une conversation par écrit. Il ne menace pas. Il explique. « Je sais ce que vous pensez. Que je suis fou. Que j'ai franchi une ligne. Mais si vous aviez vu son visage quand elle a compris qu'elle allait mourir — vous feriez la même chose. » Si les PJ lui disent qu'ils ont vu les bocaux, les patients, les expériences : la plume s'arrête. Long silence. Puis : « Je sais. Je sais tout ce que j'ai fait. » La conversation peut continuer jusqu'à ce que les PJ décident de monter.\n\nInvestigation DD 12 : le système de la cuve est clair — tubes alimentaires, runes de préservation, connexion arcanique vers le sommet. Détruire la cuve interrompt la connexion entre Thade et le vortex. Connaissances (mystères) DD 16 : détruire le corps coûte une phase au Thade du sommet. Il sera affaibli mais pas arrêté.\n\nLes PJ peuvent : détruire la cuve et le corps, lire les cahiers, écrire dans le cahier ouvert (Thade lira au sommet — c'est un canal de communication), ou emporter les cahiers comme preuve. Le magi-tuteur, s'il est présent, peut expliquer : « Son esprit est au sommet. Son corps est ici. La cuve maintient le lien. Détruisez le corps, et il sera plus faible là-haut. Mais il saura que vous êtes venus. »\n\nSi les PJ détruisent la cuve : le liquide doré s'écoule. Les runes s'éteignent. Le corps de Thade s'affaisse. La lavande disparaît brusquement — comme si quelqu'un avait ouvert une fenêtre. Le magi-tuteur, s'il est présent, détourne le regard. Il dit : « Il le saura. Montez vite. »\n\nSi les PJ choisissent de ne pas détruire le corps : le magi-tuteur hoche la tête. « Vous avez pitié de lui. C'est votre droit. Mais là-haut, il sera plus fort. »\n\nLa décision de détruire le corps est morale, pas mécanique. Les PJ regardent le visage paisible de Thade. Ils lisent les lettres à Sealine. Et ils doivent choisir : détruire le corps d'un homme qui écrit à sa femme tous les jours, ou monter au sommet sans avantage.",
+              "Sur le mur adjacent, des cahiers reliés bordeaux alignés par date. Des dizaines de cahiers. Une trentaine d'années de cahiers. Le dernier est ouvert sur un pupitre. Une plume écrit dedans, seule, en temps réel. L'écriture est fine, régulière, sans hésitation. Thade écrit depuis le vortex.\n\nSi les PJ lisent le cahier ouvert, ils voient que Thade parle à Sealine comme à une morte à qui il rend des comptes. Il raconte sa journée. Il décrit ce qu'il fait. Il dit qu'il est proche, non de la ramener, mais de tenir enfin l'équation qui a échappé à Nyx. Il sait qu'elle est morte. Ou du moins il s'est construit autour de cette certitude.\n\nSi les PJ lisent un cahier plus ancien (au choix du MJ, un cahier de la première année) : Thade écrit différemment. Les premières lettres sont désespérées, brouillées, avec des ratures. « Sealine, je ne dors plus. Les équations ne marchent pas. J'ai essayé six variantes. Rien. Je continuerai demain. » Puis, au fil des mois, l'écriture se régularise. La douleur devient routine. La routine devient obsession. Le MJ peut lire un extrait de chaque période si les PJ feuillètent.\n\nSi les PJ écrivent dans le cahier ouvert : la plume s'arrête. Un silence. Puis l'écriture de Thade reprend, plus lente : « Qui êtes-vous ? » Si les PJ répondent, Thade peut engager une conversation par écrit. Il ne menace pas. Il explique. « Je sais ce que vous pensez. Que je suis fou. Que j'ai franchi une ligne. Mais si vous aviez vu le seuil se refermer sur elle et ouvrir, une seconde, sur tout le reste — vous sauriez pourquoi je ne laisserai plus jamais ce pouvoir décider à ma place. » Si les PJ lui disent qu'ils ont vu les bocaux, les patients, les expériences : la plume s'arrête. Long silence. Puis : « Je sais. Je sais tout ce que j'ai fait. » La conversation peut continuer jusqu'à ce que les PJ décident de monter.\n\nInvestigation Moyen : le système de la cuve est clair — tubes alimentaires, runes de préservation, connexion arcanique vers le sommet. Détruire la cuve interrompt la connexion entre Thade et le vortex. Connaissances (mystères) Difficile : détruire le corps coûte une phase au Thade du sommet. Il sera affaibli mais pas arrêté.\n\nLes PJ peuvent : détruire la cuve et le corps, lire les cahiers, écrire dans le cahier ouvert (Thade lira au sommet — c'est un canal de communication), ou emporter les cahiers comme preuve. Le magi-tuteur, s'il est présent, peut expliquer : « Son esprit est au sommet. Son corps est ici. La cuve maintient le lien. Détruisez le corps, et il sera plus faible là-haut. Mais il saura que vous êtes venus. »\n\nSi les PJ détruisent la cuve : le liquide doré s'écoule. Les runes s'éteignent. Le corps de Thade s'affaisse. La lavande disparaît brusquement — comme si quelqu'un avait ouvert une fenêtre. Le magi-tuteur, s'il est présent, détourne le regard. Il dit : « Il le saura. Montez vite. »\n\nSi les PJ choisissent de ne pas détruire le corps : le magi-tuteur hoche la tête. « Vous avez pitié de lui. C'est votre droit. Mais là-haut, il sera plus fort. »\n\nLa décision de détruire le corps est morale, pas mécanique. Les PJ regardent le visage paisible de Thade. Ils lisent les lettres à Sealine. Et ils doivent choisir : détruire le corps d'un homme qui écrit à sa femme morte tous les jours, ou monter au sommet sans avantage.",
             notes_mj:
               "Aucun jet requis pour voir la cuve et les cahiers. Le corps de Thade est reconnaissable. La scène est le seuil du Scénario 3 — l'humanité de Thade révélée au moment où les PJ comprennent que l'affrontement final les attend au sommet. Si les PJ détruisent le corps, Thade au sommet perd une phase mais peut accélérer le rituel en représailles. Si les PJ écrivent dans le cahier, Thade peut répondre — c'est une dernière conversation avant le Scénario 3.",
           },
 
           texte_a_lire:
-            "La rotonde est baignée d'une lumière dorée. Une cuve cylindrique en cristal occupe le centre, douze mètres de diamètre. Dedans, un corps flotte dans un liquide doré. Thade Coren. Les yeux fermés. Le visage paisible. Des tubes l'alimentent. Des runes brillent sur la cuve.\n\nSur le mur adjacent, des cahiers reliés bordeaux alignés par date. Huit ans de cahiers. Le dernier est ouvert. Une plume écrit dedans, seule, en temps réel.",
+            "La rotonde est baignée d'une lumière dorée. Une cuve cylindrique en cristal occupe le centre, douze mètres de diamètre. Dedans, un corps flotte dans un liquide doré. Thade Coren. Les yeux fermés. Le visage paisible. Des tubes l'alimentent. Des runes brillent sur la cuve.\n\nSur le mur adjacent, des cahiers reliés bordeaux alignés par date. Une trentaine d'années de cahiers. Le dernier est ouvert. Une plume écrit dedans, seule, en temps réel.",
 
           objectif: "Décider quoi faire du corps de Thade dans la cuve.",
 
@@ -2735,8 +3200,8 @@ export const scenario2 = {
             situation:
               "Le corps de Thade est dans la cuve. Il est vivant mais immobile. Son esprit est au sommet de la Tour, dans le vortex. La cuve maintient son corps pendant que son esprit accomplit le rituel. Détruire le corps coûte une phase au Thade du sommet.",
             secrets: [
-              "Les cahiers sont des lettres à Sealine. Huit ans de lettres. Tous les jours. La plume écrit en temps réel — Thade écrit depuis le vortex.",
-              "Si les PJ lisent le cahier ouvert, ils voient que Thade parle à Sealine comme si elle était là. Il ne sait pas qu'il a échoué. Ou il ne veut pas le savoir.",
+              "Les cahiers sont des lettres à Sealine. Une trentaine d'années de lettres adressées à une morte. Tous les jours. La plume écrit en temps réel — Thade écrit depuis le vortex.",
+              "Si les PJ lisent le cahier ouvert, ils voient que Thade parle à Sealine comme à une absente à qui il doit prouver que Nyx ne se répétera pas.",
               "Détruire le corps interrompt la connexion entre Thade et le vortex. Il perd une phase de puissance au sommet.",
             ],
             rappels: [
@@ -2746,21 +3211,21 @@ export const scenario2 = {
           },
 
           defis: [
-            { competence: "Investigation", dd: 12, reussite: "Le système de la cuve est clair : tubes alimentaires, runes de préservation, connexion arcanique vers le sommet. Détruire la cuve interrompt la connexion.", echec: "La cuve est complexe. Les runes sont inconnues. Difficile de savoir quoi faire." },
-            { competence: "Connaissances (mystères)", dd: 16, reussite: "Détruire le corps coûte une phase au Thade du sommet. Il sera affaibli mais pas arrêté.", echec: "Le lien entre la cuve et le sommet est arcanique et puissant. Difficile d'évaluer l'impact." },
+            { competence: "Investigation", difficulte: "Moyen", reussite: "Le système de la cuve est clair : tubes alimentaires, runes de préservation, connexion arcanique vers le sommet. Détruire la cuve interrompt la connexion.", echec: "La cuve est complexe. Les runes sont inconnues. Difficile de savoir quoi faire." },
+            { competence: "Connaissances (mystères)", difficulte: "Difficile", reussite: "Détruire le corps coûte une phase au Thade du sommet. Il sera affaibli mais pas arrêté.", echec: "Le lien entre la cuve et le sommet est arcanique et puissant. Difficile d'évaluer l'impact." },
           ],
 
           indices: [
-            { indice: "Les cahiers de Thade", localisation: "Mur du laboratoire", detection: "Lecture directe", information: "Huit ans de lettres à Sealine. Tous les jours. La plume écrit en temps réel.", usage: "Comprendre que Thade n'a jamais renoncé. Il parle à Sealine comme si elle était là." },
+            { indice: "Les cahiers de Thade", localisation: "Mur du laboratoire", detection: "Lecture directe", information: "Une trentaine d'années de lettres à Sealine, qu'il croit morte. Tous les jours. La plume écrit en temps réel.", usage: "Comprendre que Thade a transformé son deuil en méthode et en justification." },
             { indice: "Le cahier ouvert", localisation: "Bureau adjacent", detection: "Lecture directe", information: "Thade écrit depuis le vortex. Le cahier est un canal de communication.", usage: "Les PJ peuvent écrire dans le cahier. Thade lira au sommet." },
           ],
 
           guide_mj: {
-            intention: "Révéler la vérité humaine de Thade. Il n'est pas un monstre distant. Il est un homme qui écrit à sa femme tous les jours depuis huit ans.",
+            intention: "Révéler la vérité humaine de Thade. Il n'est pas un monstre distant. Il est un homme qui écrit à sa femme morte tous les jours depuis une trentaine d'années, tout en transformant ce deuil en certitude savante.",
             mise_en_place: "Rotonde de pierre claire. Cuve centrale. Lumière dorée. Parfum de lavande. Le magi-tuteur, s'il est présent, reste près de la porte — il ne s'approche pas de la cuve.",
             deroulement: [
               "Les PJ entrent et voient la cuve. Le MJ décrit le corps de Thade — paisible, immobile, vivant.",
-              "Ils examinent la cuve (Investigation DD 12 pour comprendre le système).",
+              "Ils examinent la cuve (Investigation Moyen pour comprendre le système).",
               "Ils découvrent les cahiers. Lecture directe. Le cahier ouvert écrit en temps réel.",
               "Si les PJ feuillètent les cahiers anciens : l'évolution de l'écriture, de la douleur à l'obsession.",
               "Si les PJ écrivent dans le cahier : Thade répond. Conversation écrite possible.",
@@ -2784,7 +3249,7 @@ export const scenario2 = {
           reperes_de_jeu: {
             indice_indispensable: "Les PJ doivent savoir que le corps de Thade est dans la cuve et que le détruire affaiblit Thade au sommet.",
             ne_pas_bloquer_sur_un_jet: "La cuve et les cahiers sont visibles sans jet. Le corps de Thade est reconnaissable.",
-            question_dramatique: "Pouvez-vous détruire le corps d'un homme qui écrit à sa femme tous les jours ?",
+            question_dramatique: "Pouvez-vous détruire le corps d'un homme qui écrit à sa femme morte tous les jours ?",
           },
 
           transitions: {
@@ -2794,7 +3259,7 @@ export const scenario2 = {
           },
 
           navigation: {
-            indice_indispensable: "Les PJ doivent comprendre que le corps de Thade est dans la cuve et qu'il écrit à Sealine depuis 8 ans.",
+            indice_indispensable: "Les PJ doivent comprendre que le corps de Thade est dans la cuve et qu'il écrit à Sealine depuis une trentaine d'années.",
             consequence_si_manque: "Sans détruire le corps ou lire les cahiers, les PJ se présentent au seuil du sommet sans avantage narratif. Ils ne savent pas qui est Thade vraiment. Le Scénario 3 commence dans des conditions difficiles.",
             pnj_alternatifs: ["magi_tuteur_loyal — peut expliquer la cuve, le rituel et l'écriture automatique", "mara_dirigeante — peut recouper avec les informations de la Résistance"],
             front_si_ignore: "La Tour s'active — sans détruire le corps, Thade reste connecté à la Tour. Le seuil s'ouvre. Le Sceau qui cède — le front avance.",
@@ -2813,7 +3278,7 @@ export const scenario2 = {
                 sceneId: "s2_vers_s3_escalier_du_sommet",
                 type: "lieu",
                 moteur: "Les PJ savent qui est Thade. Ils montent avec la compréhension mais sans affaiblir Thade.",
-                accroche_mj: "Les cahiers. Huit ans de lettres à Sealine. La plume écrit en temps réel. Thade n'a jamais accepté sa mort. Il ouvre le seuil pour la retrouver. Maintenant, montez. Le sommet vous attend.",
+                accroche_mj: "Les cahiers. Une trentaine d'années de lettres à Sealine. La plume écrit en temps réel. Thade n'a jamais accepté que Nyx lui échappe. Il ouvre le seuil pour dominer ce qui l'a prise. Maintenant, montez. Le sommet vous attend.",
                 consequence_si_refus: "Si les PJ ne montent pas, le déphasage s'accélère.",
               },
               {
@@ -2829,7 +3294,7 @@ export const scenario2 = {
                 sceneId: "s2_vers_s3_escalier_du_sommet",
                 type: "libre",
                 moteur: "Les cahiers sont des preuves. Mais ils sont aussi le lien de Thade avec Sealine.",
-                accroche_mj: "Les cahiers. Huit ans de lettres. Si vous les emportez, Thade perdra son lien ? Ou sa colère sera pire ? Prenez-les. Montez. Le sommet vous attend.",
+                accroche_mj: "Les cahiers. Une trentaine d'années de lettres. Si vous les emportez, Thade perdra son lien ? Ou sa colère sera pire ? Prenez-les. Montez. Le sommet vous attend.",
                 consequence_si_refus: "Si les PJ laissent les cahiers, Thade garde son lien. Le sommet est plus difficile.",
               },
               {
@@ -2850,7 +3315,7 @@ export const scenario2 = {
               },
             ],
             fallback_mj: "Le Laboratoire de Verre est la dernière scène avant le sommet. Si les PJ détruisent le corps, Thade est affaibli. S'ils lisent les cahiers, ils comprennent qui il est. S'ils ne font rien, ils montent sans avantage. Le Magi-Tuteur est un guide précieux s'il est vivant. Dans tous les cas, le Scénario 3 commence au sommet.",
-            objectif_scene: "Découvrir le corps de Thade dans la cuve et les cahiers bordeaux (huit ans de lettres à Sealine). Comprendre qui Thade est vraiment.",
+            objectif_scene: "Découvrir le corps de Thade dans la cuve et les cahiers bordeaux (une trentaine d'années de lettres à Sealine). Comprendre qui Thade est vraiment.",
             pression: "Le vortex commence à pulser. Le sceau cède. Si les PJ tardent, Thade accomplit le rituel. Le Magi-Tuteur peut être tué si les PJ l'agressent.",
             actions_pj_attendues: ["examiner la cuve et le corps de Thade", "lire les cahiers bordeaux", "décider : détruire le corps, lire les cahiers, ou les deux", "préparer la montée vers le sommet"],
             sorties_possibles: ["vers s2_vers_s3_escalier_du_sommet (corps détruit, Thade affaibli)", "vers s2_vers_s3_escalier_du_sommet (cahiers lus, compréhension sans affaiblir)", "vers s2_vers_s3_escalier_du_sommet (vu sans agir, montée sans avantage)"],
@@ -2879,7 +3344,7 @@ export const scenario2 = {
             ambiance:
               "L'escalier est étroit, taillé dans une pierre claire qui n'est pas tout à fait du calcaire. Les marches sont usées au centre, comme si des milliers de pas les avaient creusées. Les murs sont nus — pas de tableaux, pas de runes, pas de décorations. La lumière change à chaque demi-tour : dorée au premier palier, blanche au deuxième, puis violette. L'air sent la lavande au début, puis perd toute odeur. Le bourdonnement du vortex est constant, mais il monte en intensité. Au dernier palier, il devient un son grave qui vibre dans la poitrine.",
             deroulement_narratif:
-              "Les PJ montent. Il n'y a pas d'ennemis, pas de piège, pas d'obstacle. Juste l'escalier, le son et la lumière qui change.\n\nAu premier palier, les PJ entendent la voix de Thade. Pas des mots — un murmure continu, comme une prière ou une conversation sans fin. Si les PJ ont lu les cahiers du Laboratoire de Verre, ils reconnaissent le rythme : c'est la même écriture, la même cadence, transformée en voix. Le MJ peut demander un test de Perception DD 10 pour distinguer des mots fragmentés : « Sealine », « bientôt », « je suis proche ». Si les PJ ont écrit dans le cahier, Thade peut murmurer une phrase qu'ils ont écrite — il sait qu'ils sont là.\n\nAu deuxième palier, l'odeur de lavande disparaît. L'air devient neutre, sans saveur. Les PJ qui ont traversé une zone déphasée reconnaissent la sensation : c'est l'absence d'odeur de la Spirale. Le déphasage est ici. La Tour n'est plus tout à fait dans Valombre. Le MJ décrit : les murs de l'escalier deviennent légèrement translucides. On voit le ciel violet à travers la pierre. Les marches sont solides mais la sensation sous les pieds est étrange — comme marcher sur du verre épais.\n\nSi les PJ s'arrêtent et écoutent (Perception DD 12) : un second son sous le murmure de Thade. Un bourdonnement grave, régulier, qui vibre dans la poitrine. C'est le vortex. Il est proche.\n\nSi un PJ veut faire demi-tour : il peut. L'escalier descend. Mais il n'y a rien en bas — le Laboratoire de Verre est vide, la Tour est silencieuse. Le MJ dit : « Vous pouvez redescendre. Mais Thade ne s'arrêtera pas. » Aucun PJ ne est bloqué. C'est un choix.\n\nSi les PJ ont le magi-tuteur avec eux : il s'arrête au deuxième palier. Il dit : « Je ne peux pas monter plus loin. Je ne peux pas le voir comme ça. » Il reste au palier. Si les PJ redescendent après le combat, il est toujours là.\n\nAu dernier palier, une porte. Pas de serrure, pas de barre. Elle s'ouvre quand les PJ s'approchent. Derrière : la lumière violette du sommet, le son du vortex, et la silhouette de Thade au centre de la plateforme.\n\nLe MJ demande aux PJ s'ils veulent se préparer — sorts, objets, derniers mots. C'est le dernier moment de calme. Le décompte des victimes de la Tour est rappelé : combien d'étudiants libérés, combien de gardes évités, combien de créatures retournées. Ce nombre compte pour l'épilogue. Le MJ peut aussi rappeler les preuves accumulées : les cahiers, le schéma de la Larme, l'annotation de Sealine, les bocaux, la liste des patients. Chaque preuve est une arme potentielle au sommet.",
+              "Les PJ montent. Il n'y a pas d'ennemis, pas de piège, pas d'obstacle. Juste l'escalier, le son et la lumière qui change.\n\nAu premier palier, les PJ entendent la voix de Thade. Pas des mots — un murmure continu, comme une prière ou une conversation sans fin. Si les PJ ont lu les cahiers du Laboratoire de Verre, ils reconnaissent le rythme : c'est la même écriture, la même cadence, transformée en voix. Le MJ peut demander un test de Perception Facile pour distinguer des mots fragmentés : « Sealine », « bientôt », « je suis proche ». Si les PJ ont écrit dans le cahier, Thade peut murmurer une phrase qu'ils ont écrite — il sait qu'ils sont là.\n\nAu deuxième palier, l'odeur de lavande disparaît. L'air devient neutre, sans saveur. Les PJ qui ont traversé une zone déphasée reconnaissent la sensation : c'est l'absence d'odeur de la Spirale. Le déphasage est ici. La Tour n'est plus tout à fait dans Valombre. Le MJ décrit : les murs de l'escalier deviennent légèrement translucides. On voit le ciel violet à travers la pierre. Les marches sont solides mais la sensation sous les pieds est étrange — comme marcher sur du verre épais.\n\nSi les PJ s'arrêtent et écoutent (Perception Moyen) : un second son sous le murmure de Thade. Un bourdonnement grave, régulier, qui vibre dans la poitrine. C'est le vortex. Il est proche.\n\nSi un PJ veut faire demi-tour : il peut. L'escalier descend. Mais il n'y a rien en bas — le Laboratoire de Verre est vide, la Tour est silencieuse. Le MJ dit : « Vous pouvez redescendre. Mais Thade ne s'arrêtera pas. » Aucun PJ n'est bloqué. C'est un choix.\n\nSi les PJ ont le magi-tuteur avec eux : il s'arrête au deuxième palier. Il dit : « Je ne peux pas monter plus loin. Je ne peux pas le voir comme ça. » Il reste au palier. Si les PJ redescendent après le combat, il est toujours là.\n\nAu dernier palier, une porte. Pas de serrure, pas de barre. Elle s'ouvre quand les PJ s'approchent. Derrière : la lumière violette du sommet, le son du vortex, et la silhouette de Thade au centre de la plateforme.\n\nLe MJ demande aux PJ s'ils veulent se préparer — sorts, objets, derniers mots. C'est le dernier moment de calme. Le décompte des victimes de la Tour est rappelé : combien d'étudiants libérés, combien de gardes évités, combien de créatures retournées. Ce nombre compte pour l'épilogue. Le MJ peut aussi rappeler les preuves accumulées : les cahiers, le schéma de la Larme, l'annotation de Sealine, les bocaux, la liste des patients. Chaque preuve est une arme potentielle au sommet.",
             notes_mj:
               "Cette scène n'a pas de jets. C'est un sas dramatique. Le MJ ralentit le rythme, décrit l'escalier, laisse les PJ parler entre eux. Si un PJ veut écrire dans le cahier de Thade avant de monter, c'est le moment. Si un PJ veut faire un dernier discours, c'est le moment. La porte s'ouvre seule — Thade sait qu'ils arrivent. Il les attend.",
           },
@@ -2907,7 +3372,7 @@ export const scenario2 = {
           defis: [],
 
           indices: [
-            { indice: "Le murmure de Thade", localisation: "Premier palier", detection: "Perception DD 10", information: "Un murmure continu, comme une prière. Le rythme correspond à l'écriture des cahiers.", usage: "Comprendre que Thade parle à Sealine depuis le vortex. Il ne s'est pas arrêté." },
+            { indice: "Le murmure de Thade", localisation: "Premier palier", detection: "Perception Facile", information: "Un murmure continu, comme une prière. Le rythme correspond à l'écriture des cahiers.", usage: "Comprendre que Thade parle à Sealine depuis le vortex. Il ne s'est pas arrêté." },
             { indice: "L'absence d'odeur", localisation: "Deuxième palier", detection: "Automatique", information: "L'air perd toute odeur. La lavande disparaît. C'est la sensation du déphasage.", usage: "Comprendre que le sommet de la Tour est déphasé. La Spirale est proche." },
           ],
 
@@ -2917,7 +3382,7 @@ export const scenario2 = {
             deroulement: [
               "Les PJ quittent le Laboratoire de Verre.",
               "Ils montent l'escalier. Le MJ décrit chaque palier.",
-              "Au premier palier : le murmure de Thade. Perception DD 10 pour des mots fragmentés.",
+              "Au premier palier : le murmure de Thade. Perception Facile pour des mots fragmentés.",
               "Au deuxième palier : l'absence d'odeur. Les murs translucides. Le déphasage.",
               "Le magi-tuteur s'arrête au deuxième palier. Il ne monte pas.",
               "Au dernier palier : la porte s'ouvre.",
@@ -2953,7 +3418,7 @@ export const scenario2 = {
           navigation: {
             indice_indispensable: "Les PJ doivent savoir ce qui les attend au sommet : le vortex, la Larme de Vael, et Thade lui-même.",
             consequence_si_manque: "Si les PJ montent sans préparation, ils ne savent pas qui est Thade. La confrontation est plus difficile. Le Magi-Tuteur peut les informer s'il est vivant.",
-            pnj_alternatifs: ["magi_tuteur_loyal — peut expliquer le vortex et la Larme si il accompagne les PJ"],
+            pnj_alternatifs: ["magi_tuteur_loyal — peut expliquer le vortex et la Larme s'il accompagne les PJ"],
             front_si_ignore: "Tous les fronts — le sommet est le point de non-retour. Si les PJ ne montent pas, tous les fronts avancent jusqu'à la catastrophe.",
             scenes_alternatives: [],
             sorties_jouables: [
@@ -2986,7 +3451,7 @@ export const scenario2 = {
                 sceneId: "s3_vortex",
                 type: "pnj",
                 moteur: "Le Magi-Tuteur peut expliquer le vortex et la Larme avant la confrontation.",
-                accroche_mj: "Le Magi-Tuteur s'arrête à la porte. 'Je ne peux pas monter. Mais sachez ceci : la Larme est le catalyseur. Le vortex est le seuil. Thade est les deux à la fois. Si vous détruisez la Larme, vous fermez le seuil. Mais Thade... Thade est lié à la Larme. C'est son choix.' Montez.",
+                accroche_mj: "Le Magi-Tuteur s'arrête à la porte. 'Je ne peux pas monter. Mais sachez ceci : la Larme est le catalyseur. Le vortex est le seuil. Thade est les deux à la fois. Si vous détruisez la Larme, vous fermez le seuil. Mais Thade… Thade est lié à la Larme. C'est son choix.' Montez.",
                 consequence_si_refus: "Si le Magi-Tuteur est mort, les PJ montent sans cette explication.",
               },
               {

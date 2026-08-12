@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import {
+  Landmark,
   Shield,
   Target,
   Swords,
@@ -71,6 +72,46 @@ function VueFactions() {
                     </span>
                   </p>
                 </div>
+              </div>
+            )}
+
+            {/* Lignées fondatrices */}
+            {faction.clans_fondateurs && (
+              <div className="mt-4 space-y-2">
+                <h4 className="text-xs uppercase tracking-wide text-content-muted flex items-center gap-1.5">
+                  <Landmark size={14} />
+                  {faction.clans_fondateurs.nomCollectif}
+                </h4>
+                <p className="text-xs text-content-secondary leading-relaxed">
+                  {faction.clans_fondateurs.description}
+                </p>
+                <ul className="space-y-2 text-xs">
+                  {faction.clans_fondateurs.clans.map((clan) => (
+                    <li
+                      key={clan.nom}
+                      className="border-l border-current/25 pl-2"
+                    >
+                      <p>
+                        <span className="font-semibold text-accent-light">
+                          {clan.nom}
+                        </span>
+                        <span className="text-content-muted">
+                          {" "}
+                          — {clan.domaine}
+                        </span>
+                      </p>
+                      <p className="text-content-secondary leading-relaxed">
+                        {clan.reputation}
+                      </p>
+                      <p className="text-content-muted italic">
+                        « {clan.devise} »
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-xs text-content-muted leading-relaxed">
+                  {faction.clans_fondateurs.tensions}
+                </p>
               </div>
             )}
 

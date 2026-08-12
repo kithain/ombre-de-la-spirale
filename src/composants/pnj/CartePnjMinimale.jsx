@@ -64,7 +64,7 @@ const CartePnjMinimale = memo(function CartePnjMinimale({ pnj, auClic }) {
               <img
                 src={urlImage(pnj.image)}
                 alt={pnj.nom}
-                className="w-20 h-20 rounded-lg border-2 border-surface-border/40 object-cover shadow-sm"
+                className="w-24 aspect-[4/3] rounded-lg border-2 border-surface-border/40 object-cover shadow-sm"
                 onError={(e) => {
                   e.target.style.display = "none";
                   e.target.nextSibling.style.display = "flex";
@@ -72,7 +72,7 @@ const CartePnjMinimale = memo(function CartePnjMinimale({ pnj, auClic }) {
               />
             ) : null}
             <div
-              className={`w-20 h-20 rounded-lg border-2 border-surface-border/40 items-center justify-center shadow-sm ${pnj.image ? "hidden" : "flex"}`}
+              className={`w-24 aspect-[4/3] rounded-lg border-2 border-surface-border/40 items-center justify-center shadow-sm ${pnj.image ? "hidden" : "flex"}`}
               style={{
                 background: `linear-gradient(135deg, ${theme === "bleu" ? "#1e3a8a" : theme === "rouge" ? "#7f1d1d" : "#374151"}, ${theme === "bleu" ? "#1e40af" : theme === "rouge" ? "#991b1b" : "#4b5563"})`,
               }}

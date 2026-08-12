@@ -325,6 +325,40 @@
 }
 
 @layer utilities {
+  @media (max-width: 639px) {
+    html {
+      font-size: 18px;
+    }
+
+    body {
+      line-height: 1.7;
+      background-attachment: scroll;
+    }
+
+    .text-\[9px\],
+    .text-\[10px\],
+    .text-\[11px\] {
+      font-size: 0.78rem !important;
+      line-height: 1.45 !important;
+    }
+
+    .tracking-widest {
+      letter-spacing: 0.08em !important;
+    }
+
+    .tracking-\[0\.2em\],
+    .tracking-\[0\.25em\],
+    .tracking-\[0\.3em\] {
+      letter-spacing: 0.09em !important;
+    }
+
+    select,
+    textarea,
+    input {
+      font-size: 1rem;
+    }
+  }
+
   /* Texte tronqué multi-lignes */
   .line-clamp-2 {
     display: -webkit-box;

@@ -1,7 +1,7 @@
 import { memo } from "react";
 import {
   Heart, Swords, Shield, Tag, Sparkles,
-  BookOpen, Eye, Target, User, Zap, FileText,
+  BookOpen, Eye, Target, User, Zap, FileText, Landmark,
 } from "lucide-react";
 import { cc } from "../../utilitaires/combinerClasses";
 import { formaterDegats, formaterArmure, formaterVie } from "../../data/personnages/pnjTemplate";
@@ -146,6 +146,14 @@ function NotesMj({ notes }) {
   );
 }
 
+function formaterFamilleNaine(familleNaine) {
+  if (!familleNaine) return "";
+  if (typeof familleNaine === "string") return familleNaine;
+  return [familleNaine.lignee, familleNaine.maison]
+    .filter(Boolean)
+    .join(" — ");
+}
+
 // ─── Composant principal ─────────────────────────────
 
 const STYLES_USAGE_NARRATIF = {
@@ -182,12 +190,12 @@ const FichePnj = memo(function FichePnj({ pnj }) {
           <img
             src={urlImage(pnj.image)}
             alt={pnj.nom}
-            className="w-full max-w-[280px] h-auto rounded border border-surface-border shadow-lg object-cover"
+            className="w-full max-w-[360px] aspect-[4/3] rounded border border-surface-border shadow-lg object-cover"
           />
         </div>
       )}
 
-      {(pnj.race || pnj.faction) && (
+      {(pnj.race || pnj.faction || pnj.familleNaine) && (
         <div className="flex flex-wrap items-center gap-3 text-xs text-content-subtle">
           {pnj.race && (
             <span className="inline-flex items-center gap-1.5 bg-surface/40 border border-surface-border px-2 py-1">
@@ -199,6 +207,15 @@ const FichePnj = memo(function FichePnj({ pnj }) {
             <span className="inline-flex items-center gap-1.5 bg-surface/40 border border-surface-border px-2 py-1">
               <Shield size={12} className="text-accent-light/60" />
               {pnj.faction}
+            </span>
+          )}
+          {pnj.familleNaine && (
+            <span
+              className="inline-flex items-center gap-1.5 bg-surface/40 border border-surface-border px-2 py-1"
+              title={pnj.familleNaine.role || ""}
+            >
+              <Landmark size={12} className="text-accent-light/60" />
+              {formaterFamilleNaine(pnj.familleNaine)}
             </span>
           )}
         </div>

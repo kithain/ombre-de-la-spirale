@@ -14,13 +14,13 @@ export const scenario3 = {
     ton:
       "Apothéose tragique. Le thriller devient affrontement moral. L'horreur devient choix. Le ton est grave, lent, définitif — chaque mot compte parce que c'est le dernier. Pas de rebondissement : les PJ savent tout. Reste à décider. Et le prix de chaque décision est irréversible.",
     themes: [
-      "L'amour comme catastrophe — Thade fait tout cela par amour. L'amour n'excuse rien, mais il explique tout.",
+      "La maîtrise comme catastrophe — Thade fait tout cela pour contrôler ce qu'il n'a fait qu'apercevoir à Nyx. Le deuil n'excuse rien, mais il a donné une forme intime à son obsession.",
       "La vérité comme arme — les révélations accumulées pendant la campagne sont les armes les plus puissantes contre Thade. Les cahiers, l'annotation, les patients, les bocaux.",
       "Le choix irréversible — trois options, chacune avec un prix. Aucune option n'est pure. Aucune n'est sans prix. Le choix appartient aux PJ.",
       "L'épilogue comme miroir — le monde d'après reflète les alliances, les victimes et la décision finale. La campagne se termine sur ce que les PJ ont fait, pas sur ce qu'ils ont voulu.",
     ],
     question_dramatique:
-      "Quand un homme a détruit un monde par amour, pouvez-vous le juger sans détruire ce qu'il aime ? Et si vous sauvez ce qu'il aime, que devient le monde ?",
+      "Quand un homme a détruit un monde pour prouver qu'il peut maîtriser l'inmaîtrisable, pouvez-vous l'arrêter sans répéter sa violence ? Et si la morte à qui il écrivait n'était pas morte, que devient le jugement ?",
     structure_narrative: [
       {
         phase: "1. Entrée dans le vortex",
@@ -28,7 +28,7 @@ export const scenario3 = {
       },
       {
         phase: "2. Combat contre Thade / vérités comme armes",
-        resume: "Thade combat pour gagner du temps, pas pour tuer. Trois phases : Archimage Épuisé, Larme se Fissure, Épuisement. Chaque vérité sur Sealine fissure la Larme. Les PJ peuvent gagner par la parole autant que par la force.",
+        resume: "Thade combat pour gagner du temps, pas pour tuer. Trois phases : Archimage épuisé, Larme se fissure, Épuisement. Chaque vérité sur Sealine fissure la Larme. Les PJ peuvent gagner par la parole autant que par la force.",
       },
       {
         phase: "3. Conversation avec Sealine",
@@ -47,7 +47,7 @@ export const scenario3 = {
       {
         id: "thade_coren",
         nom: "Thade Coren",
-        role: "Archimage au sommet. Combat par amour, pas par cruauté. Chaque vérité le blesse plus qu'un sort. S'effondre à la phase 3.",
+        role: "Archimage au sommet. Combat par maîtrise, pas par cruauté. Chaque vérité le blesse plus qu'un sort parce qu'elle montre le coût humain de sa méthode. S'effondre à la phase 3.",
       },
       {
         id: "sealine_coren",
@@ -76,7 +76,7 @@ export const scenario3 = {
       "Thade est dans le vortex au sommet de la Tour. Son corps est dans la cuve au 7e étage.",
       "La Larme de Vael est le catalyseur du rituel. Elle est au cœur du vortex.",
       "Thade et Elian ont reproduit S-01 sur des vivants après Sealine. Sealine a essayé de l'empêcher.",
-      "Les cahiers bordeaux : Thade écrit à Sealine tous les jours depuis huit ans.",
+      "Les cahiers bordeaux : Thade écrit à Sealine tous les jours depuis une trentaine d'années.",
       "Le décompte des victimes de la Tour déterminera le ton de l'épilogue.",
     ],
     ce_que_les_pj_doivent_decouvrir: [
@@ -99,7 +99,7 @@ export const scenario3 = {
         "Dossiers des patients et bocaux du laboratoire d'Elian Voss (Scénario 2, Acte II).",
         "Registre des 142 consultations de la Réserve Interdite (Scénario 2, Acte II).",
       ],
-      declencheur: "Persuasion DD 18 pour lire un extrait des cahiers ou révéler une vérité à Thade pendant le combat. Chaque vérité réussie fissure la Larme.",
+      declencheur: "Persuasion Difficile pour lire un extrait des cahiers ou révéler une vérité à Thade pendant le combat. Chaque vérité réussie fissure la Larme.",
       plan_b:
         "Si les PJ n'ont pas les preuves matérielles, ils peuvent citer de mémoire ce qu'ils ont vu. Le MJ accorde un avantage de circonstance si les PJ décrivent ce qu'ils ont découvert. Le magi-tuteur peut aussi témoigner.",
       consequence_si_ratee:
@@ -109,7 +109,7 @@ export const scenario3 = {
       id: "rev_sealine_presente",
       titre: "Sealine est présente dans le vortex",
       resume:
-        "Sealine n'est pas un souvenir. Elle est là, dans le vortex, lucide et présente. Elle sait ce que Thade a fait. Elle sait ce qu'elle coûte. Elle ne demande rien — elle accepte. C'est elle qui explique les trois options aux PJ. C'est elle qui dit : « Vous devez décider. Pas lui. Pas moi. Vous. »",
+        "Sealine est là, dans le vortex, lucide et présente. Elle sait ce que Thade a fait. Elle sait ce qu'elle coûte. Elle accepte. C'est elle qui explique les trois options aux PJ. C'est elle qui dit : « Vous devez décider. Pas lui. Pas moi. Vous. »",
       sources: [
         "Le vortex au sommet de la Tour (Scénario 3, phase 3 du combat).",
         "Sealine elle-même, quand elle apparaît après l'effondrement de Thade.",
@@ -126,7 +126,7 @@ export const scenario3 = {
         "Détruire la Larme : Sealine est perdue, le sceau se referme, Valombre revient à la normale avec ses cicatrices. Détacher la Larme sans la briser : le seuil filtre, la Spirale persiste, Sealine revient fragile, Valombre apprend à vivre avec. Laisser Thade ouvrir le seuil : la Spirale déferle, Valombre est transformée, Thade rejoint Sealine — ou croit enfin l'atteindre. Le monde est différent. Aucune option n'est pure. Aucune n'est sans prix.",
       sources: [
         "Sealine explique les trois options pendant la conversation à trois.",
-        "Art de la magie DD 18 pour analyser le vortex et confirmer les conséquences.",
+        "Art de la magie Difficile pour analyser le vortex et confirmer les conséquences.",
       ],
       declencheur: "La conversation à trois (Scénario 3, scène 2). Sealine présente les options. Les PJ choisissent.",
       plan_b: "Si les PJ n'ont pas parlé à Sealine, le magi-tuteur ou Olane (par communication magique) peut expliquer les options. Mais l'explication est moins complète et moins personnelle.",
@@ -145,7 +145,7 @@ export const scenario3 = {
       declencheur: "Automatique pendant la scène d'épilogue (Scénario 3, scène 3).",
       plan_b: "Aucun plan B. Le décompte est ce qu'il est. Si le MJ n'a pas tenu de décompte, il évalue globalement : peu de victimes, moyen, ou beaucoup.",
       consequence_si_ratee:
-        "Pas applicable. Le décompte n'est pas un jet — c'est un constat. Les conséquences sont narratives, pas mécaniques.",
+        "Pas applicable. Le décompte est un constat. Les conséquences sont narratives, pas mécaniques.",
     },
   ],
 
@@ -226,7 +226,7 @@ export const scenario3 = {
         statut: "obligatoire",
         axe: "Cosmique",
         dependances: ["L'Assaut de la Tour (Scénario 2)", "Le Laboratoire de Verre (Scénario 2)"],
-        revele: ["Les vérités comme armes", "La Larme est le catalyseur", "Thade combat par amour, pas par cruauté"],
+        revele: ["Les vérités comme armes", "La Larme est le catalyseur", "Thade combat par maîtrise, pas par cruauté"],
         note: "Le combat se déroule en 3 phases. Si les PJ ont détruit le corps dans la cuve, Thade est affaibli. Si les PJ ont les cahiers, ils peuvent les lire à Thade.",
       },
       {
@@ -251,7 +251,7 @@ export const scenario3 = {
   },
 
   synopsis:
-    "Tout converge au sommet de la Tour Arcanique. Thade est dans le vortex, la Larme de Vael au creux de ses mains. La Spirale est à portée. Sealine l'attend de l'autre côté. Les PJ doivent monter, affronter l'archimage et décider : détruire la Larme, sauver Sealine, ou laisser Thade ouvrir le seuil. Chaque choix a un prix. La campagne se joue ici.",
+    "Tout converge au sommet de la Tour Arcanique. Thade est dans le vortex, la Larme de Vael au creux de ses mains. La Spirale est à portée. Thade croit tenir enfin le pouvoir qui lui a échappé à Nyx. Les PJ doivent monter, affronter l'archimage et décider : détruire la Larme, sauver Sealine lorsqu'elle apparaît, ou laisser Thade ouvrir le seuil. Chaque choix a un prix. La campagne se joue ici.",
 
   evenements_mondiaux: {
     chronologie_inevitable: [
@@ -263,7 +263,7 @@ export const scenario3 = {
     consequences_echecs: [
       "Si les PJ tardent : le rituel s'accomplit. Le seuil s'ouvre. Valombre et la Spirale fusionnent.",
       "Si les PJ détruisent la Larme sans parler à Sealine : Sealine est perdue. Thade devient un archimage brisé et dangereux.",
-      "Si les PJ laissent Thade ouvrir le seuil : la Spirale déferle. Valombre est transformée. Thade franchit le seuil vers Sealine, mais ce qu'elle fera de lui appartient à l'épilogue. À quel prix ?",
+      "Si les PJ laissent Thade ouvrir le seuil : la Spirale déferle. Valombre est transformée. Thade franchit un passage qu'il croit maîtriser ; ce que Sealine fera de lui appartient à l'épilogue. À quel prix ?",
       "Si les PJ tuent Thade sans résoudre la Larme : le vortex s'effondre. Le sceau se referme. Mais la Larme reste, et quelqu'un d'autre la trouvera.",
     ],
   },
@@ -281,7 +281,7 @@ export const scenario3 = {
           titre: "Le Vortex",
           type: "Boss",
           resume_mj:
-            "Les PJ atteignent le sommet. Plateforme circulaire, marbre clair, ciel violet. Au centre, le vortex : puits horizontal d'énergie. Au cœur, la Larme de Vael. Thade se tient devant, les mains tendues. Le combat se déroule en 3 phases : Archimage Épuisé, Larme se Fissure, Épuisement.",
+            "Les PJ atteignent le sommet. Plateforme circulaire, marbre clair, ciel violet. Au centre, le vortex : puits horizontal d'énergie. Au cœur, la Larme de Vael. Thade se tient devant, les mains tendues. Le combat se déroule en 3 phases : Archimage épuisé, Larme se fissure, Épuisement.",
           idLieu: "sommet_tour_vortex",
           idsPnj: ["thade_coren", "sealine_coren", "magi_tuteur_loyal"],
 
@@ -289,13 +289,13 @@ export const scenario3 = {
             ambiance:
               "Le sommet de la Tour Arcanique est une plateforme circulaire de marbre clair, ouverte sur le ciel. Pas de murs. Pas de toit. Le ciel est violet — pas le violet du crépuscule, un violet qui n'a rien à voir avec l'heure. L'air bourdonne. Pas un vent — une vibration, basse, continue, qui monte du centre de la plateforme. Au centre, le vortex : un puits horizontal d'énergie violette, tourbillonnant, qui ne mène nulle part et partout à la fois. Au cœur du vortex, quelque chose brille. Une larme. La Larme de Vael. Le sol est chaud sous les pieds. Les runes gravées dans le marbre brillent d'un or qui pulse au rythme du bourdonnement.",
             deroulement_narratif:
-              "Thade se tient devant le vortex. Ses mains sont tendues. Son visage est paisible. Il ne regarde pas les PJ — il regarde le vortex. « Vous êtes venus », dit-il. « Je le savais. Je savais que vous viendriez. » Une pause. Puis : « Elle m'attend. »\n\nSi les PJ ont écrit dans le cahier du Laboratoire de Verre, Thade peut faire référence à leurs mots : « Vous m'avez écrit. J'ai lu. Vous ne comprenez pas. Mais je ne vous en veux pas. »\n\nPhase 1 — Archimage Épuisé : Thade combat avec des sorts puissants mais il est épuisé par le rituel. Ses attaques sont prévisibles — Boule de feu, Rayon de givre, Mur de force. Il ne cherche pas à tuer. Il cherche à gagner du temps. Chaque round qu'il gagne rapproche le rituel de son accomplissement. Les PJ peuvent le combattre ou tenter de parler.\n\nL'environnement réagit au combat. Le vortex pulse à chaque sort lancé. Les runes dans le marbre brillent plus fort quand Thade attaque. Les vents planaires — des courants d'air qui viennent du vortex — poussent les PJ vers le bord de la plateforme. Athlétisme DD 15 pour résister. Si un PJ tombe du bord, il ne meure pas — il flotte dans l'air violet pendant un round avant d'être rejeté sur la plateforme. Le sommet est déphasé : la chute ne suit pas les règles normales.\n\nPhase 2 — Larme se Fissure : Si les PJ ont détruit le corps dans la cuve, ou s'ils révèlent une vérité sur Sealine (les cahiers, l'annotation, les expériences, les patients, les bocaux), la Larme se fissure. Persuasion DD 18 pour lire un extrait des cahiers ou révéler une vérité. Chaque vérité réussie fissure la Larme un peu plus. Thade devient désespéré et imprévisible — ses sorts sont moins contrôlés, plus puissants, plus dangereux.\n\nSi les PJ ont le magi-tuteur avec eux, il peut intervenir à la phase 2 — il dit à Thade : « Maître, arrêtez. Elle ne voudrait pas ça. » Thade hésite un round. Si les PJ ont détruit le corps dans la cuve (Scénario 2), Thade perd une phase de puissance — il passe directement à la phase 2 après 2 rounds au lieu de 4.\n\nSi les PJ n'ont aucune vérité (pas de cahiers, pas de schéma, pas de bocaux, pas de patients) : le combat se déroule au force. Thade s'épuise au round 8-10. La Larme ne se fissure pas. Sealine apparaît mais le vortex est instable. Le MJ peut utiliser les répliques de Thade pour révéler l'information manquante — Thade dit : « Vous ne savez même pas ce que j'ai fait. Vous ne savez pas pour les patients. Pour les bocaux. » C'est une dernière chance pour les PJ de comprendre.\n\nPhase 3 — Épuisement : Thade s'effondre sur le marbre. Le vortex vacille. La Larme est fissurée mais pas détruite. Une forme se dessine dans l'énergie violette. Sealine. La conversation à trois commence.\n\nSi les PJ ont le magi-tuteur avec eux, il s'approche de Thade au sol. Il dit : « Maître. C'est fini. » Thade ne répond pas. Le magi-tuteur pleure en silence.",
+              "Thade se tient devant le vortex. Ses mains sont tendues. Son visage est paisible. Il ne regarde pas les PJ — il regarde le vortex. « Vous êtes venus », dit-il. « Je le savais. Je savais que vous viendriez. » Une pause. Puis : « Cette fois, le seuil obéira. »\n\nSi les PJ ont écrit dans le cahier du Laboratoire de Verre, Thade peut faire référence à leurs mots : « Vous m'avez écrit. J'ai lu. Vous ne comprenez pas. Mais je ne vous en veux pas. »\n\nPhase 1 — Archimage épuisé : Thade combat avec des sorts puissants mais il est épuisé par le rituel. Ses attaques sont prévisibles — Boule de feu, Rayon de givre, Mur de force. Il ne cherche pas à tuer. Il cherche à gagner du temps. Chaque round qu'il gagne rapproche le rituel de son accomplissement. Les PJ peuvent le combattre ou tenter de parler.\n\nL'environnement réagit au combat. Le vortex pulse à chaque sort lancé. Les runes dans le marbre brillent plus fort quand Thade attaque. Les vents planaires — des courants d'air qui viennent du vortex — poussent les PJ vers le bord de la plateforme. Athlétisme Moyen pour résister. Si un PJ tombe du bord, il ne meurt pas — il flotte dans l'air violet pendant un round avant d'être rejeté sur la plateforme. Le sommet est déphasé : la chute ne suit pas les règles normales.\n\nPhase 2 — Larme se fissure : Si les PJ ont détruit le corps dans la cuve, ou s'ils révèlent une vérité sur Sealine (les cahiers, l'annotation, les expériences, les patients, les bocaux), la Larme se fissure. Persuasion Difficile pour lire un extrait des cahiers ou révéler une vérité. Chaque vérité réussie fissure la Larme un peu plus. Thade devient désespéré et imprévisible — ses sorts sont moins contrôlés, plus puissants, plus dangereux.\n\nSi les PJ ont le magi-tuteur avec eux, il peut intervenir à la phase 2 — il dit à Thade : « Maître, arrêtez. Elle ne voudrait pas ça. » Thade hésite un round. Si les PJ ont détruit le corps dans la cuve (Scénario 2), Thade perd une phase de puissance — il passe directement à la phase 2 après 2 rounds au lieu de 4.\n\nSi les PJ n'ont aucune vérité (pas de cahiers, pas de schéma, pas de bocaux, pas de patients) : le combat se déroule par la force seule. Thade s'épuise au round 8-10. La Larme ne se fissure pas. Sealine apparaît mais le vortex est instable. Le MJ peut utiliser les répliques de Thade pour révéler l'information manquante — Thade dit : « Vous ne savez même pas ce que j'ai fait. Vous ne savez pas pour les patients. Pour les bocaux. » C'est une dernière chance pour les PJ de comprendre.\n\nPhase 3 — Épuisement : Thade s'effondre sur le marbre. Le vortex vacille. La Larme est fissurée mais pas détruite. Une forme se dessine dans l'énergie violette. Sealine. La conversation à trois commence.\n\nSi les PJ ont le magi-tuteur avec eux, il s'approche de Thade au sol. Il dit : « Maître. C'est fini. » Thade ne répond pas. Le magi-tuteur pleure en silence.",
             notes_mj:
-              "Le combat n'est pas un combat standard — c'est une course contre le rituel. Le MJ doit tenir le décompte du nombre de rounds. Au round 5, le rituel est à moitié accompli. Au round 10, le rituel s'accomplit. Les PJ ne le savent pas exactement, mais le bourdonnement du vortex augmente d'intensité à chaque round. Les vérités sont les armes les plus puissantes : chaque vérité réussie (Persuasion DD 18) compte comme 2 rounds de combat. Les PJ peuvent gagner la phase 2 sans combattre — en parlant.\n\nModularité selon le nombre de PJ :\n- 1 PJ : Thade a 2 rounds de phase 1 au lieu de 4 (ou 1 si le corps est détruit). Les vents planaires sont affaiblis — Athlétisme DD 13 au lieu de 15. Une seule vérité suffit pour passer à la phase 2. Les sorts de Thade sont moins puissants (dés réduits ou un sort par round au lieu de deux). Le rituel s'accomplit au round 8 au lieu de 10.\n- 2 PJ : Thade a 3 rounds de phase 1. Athlétisme DD 14. Deux vérités suffisent pour la phase 2. Rituel au round 9.\n- 3-4 PJ : règles standards. 4 rounds de phase 1 (2 si corps détruit). Trois vérités pour la phase 2. Rituel au round 10.\n\nDans tous les cas, les vérités sont plus puissantes que les sorts. Un PJ seul peut gagner en parlant. Le combat n'est pas obligatoire — c'est la parole qui fissure la Larme.",
+              "Le combat n'est pas un combat standard — c'est une course contre le rituel. Le MJ doit tenir le décompte du nombre de rounds. Au round 5, le rituel est à moitié accompli. Au round 10, le rituel s'accomplit. Les PJ ne le savent pas exactement, mais le bourdonnement du vortex augmente d'intensité à chaque round. Les vérités sont les armes les plus puissantes : chaque vérité réussie (Persuasion Difficile) compte comme 2 rounds de combat. Les PJ peuvent gagner la phase 2 sans combattre — en parlant.\n\nModularité selon le nombre de PJ :\n- 1 PJ : Thade a 2 rounds de phase 1 au lieu de 4 (ou 1 si le corps est détruit). Les vents planaires sont affaiblis — Athlétisme Moyen avec circonstance favorable. Une seule vérité suffit pour passer à la phase 2. Les sorts de Thade sont moins puissants (dés réduits ou un sort par round au lieu de deux). Le rituel s'accomplit au round 8 au lieu de 10.\n- 2 PJ : Thade a 3 rounds de phase 1. Athlétisme Moyen. Deux vérités suffisent pour la phase 2. Rituel au round 9.\n- 3-4 PJ : règles standards. 4 rounds de phase 1 (2 si corps détruit). Trois vérités pour la phase 2. Rituel au round 10.\n\nDans tous les cas, les vérités sont plus puissantes que les sorts. Un PJ seul peut gagner en parlant. Le combat n'est pas obligatoire — c'est la parole qui fissure la Larme.",
           },
 
           texte_a_lire:
-            "Le sommet de la Tour est ouvert sur le ciel. Le marbre est clair, presque blanc. L'air bourdonne. Un vortex se déploie au centre de la plateforme — un puits horizontal d'énergie violette, tourbillonnant, qui ne mène nulle part et partout à la fois. Au cœur du vortex, quelque chose brille. Une larme. La Larme de Vael.\n\nThade se tient devant le vortex. Ses mains sont tendues. Son visage est paisible. Il ne vous regarde pas. Il regarde le vortex.\n\n« Vous êtes venus », dit-il. « Je le savais. Je savais que vous viendriez. »\n\nUne pause. Puis : « Elle m'attend. »",
+            "Le sommet de la Tour est ouvert sur le ciel. Le marbre est clair, presque blanc. L'air bourdonne. Un vortex se déploie au centre de la plateforme — un puits horizontal d'énergie violette, tourbillonnant, qui ne mène nulle part et partout à la fois. Au cœur du vortex, quelque chose brille. Une larme. La Larme de Vael.\n\nThade se tient devant le vortex. Ses mains sont tendues. Son visage est paisible. Il ne vous regarde pas. Il regarde le vortex.\n\n« Vous êtes venus », dit-il. « Je le savais. Je savais que vous viendriez. »\n\nUne pause. Puis : « Cette fois, le seuil obéira. »",
 
           objectif: "Arrêter le rituel de Thade et décider du sort de la Larme de Vael.",
 
@@ -303,27 +303,27 @@ export const scenario3 = {
             situation:
               "Thade est au sommet, connecté au vortex. La Larme de Vael est au cœur du vortex. Le rituel est en cours. Le combat se déroule en 3 phases. Chaque vérité sur Sealine fissure la Larme.",
             secrets: [
-              "Phase 1 — Archimage Épuisé : Thade combat avec des sorts puissants mais il est épuisé par le rituel. Ses attaques sont prévisibles.",
-              "Phase 2 — Larme se Fissure : Si les PJ ont détruit le corps dans la cuve, ou s'ils révèlent une vérité sur Sealine (les cahiers, l'annotation, les expériences), la Larme se fissure. Thade devient désespéré et imprévisible.",
+              "Phase 1 — Archimage épuisé : Thade combat avec des sorts puissants mais il est épuisé par le rituel. Ses attaques sont prévisibles.",
+              "Phase 2 — Larme se fissure : Si les PJ ont détruit le corps dans la cuve, ou s'ils révèlent une vérité sur Sealine (les cahiers, l'annotation, les expériences), la Larme se fissure. Thade devient désespéré et imprévisible.",
               "Phase 3 — Épuisement : Thade s'effondre. Le vortex vacille. Sealine peut apparaître. La conversation à trois commence.",
               "Chaque vérité sur Sealine (l'annotation 'ne jamais alimenter avec des vivants', les 50 patients, les 7 bocaux) fissure la Larme un peu plus. Les PJ peuvent utiliser les vérités comme armes.",
             ],
             rappels: [
-              "Thade ne veut pas tuer les PJ. Il veut les retarder. Chaque round qu'il gagne rapproche le rituel de son accomplissement.",
+              "Thade veut retarder les PJ. Chaque round qu'il gagne rapproche le rituel de son accomplissement.",
               "Si les PJ ont les cahiers du Laboratoire de Verre, ils peuvent les lire à Thade. Chaque lettre fissure la Larme.",
               "Le magi-tuteur loyal peut intervenir si les PJ ne l'ont pas attaqué dans la Tour.",
             ],
           },
 
           defis: [
-            { competence: "Athlétisme", dd: 15, reussite: "Les PJ se frappent un chemin vers le vortex à travers les vents planaires.", echec: "Les vents repoussent les PJ. Ils doivent trouver une autre approche." },
-            { competence: "Persuasion", dd: 18, reussite: "Les PJ lisent un extrait des cahiers ou révèlent une vérité sur Sealine. La Larme se fissure. Thade vacille.", echec: "Thade refuse d'écouter. « Vous ne comprenez pas. Vous n'avez jamais perdu quelqu'un. »" },
-            { competence: "Art de la magie", dd: 18, reussite: "Les PJ identifient la structure du vortex. La Larme est le catalyseur. La retirer arrête le rituel mais libère l'énergie accumulée.", echec: "Le vortex est trop complexe. Impossible de savoir quoi faire sans risquer une catastrophe." },
+            { competence: "Athlétisme", difficulte: "Moyen", reussite: "Les PJ se frappent un chemin vers le vortex à travers les vents planaires.", echec: "Les vents repoussent les PJ. Ils doivent trouver une autre approche." },
+            { competence: "Persuasion", difficulte: "Difficile", reussite: "Les PJ lisent un extrait des cahiers ou révèlent une vérité sur Sealine. La Larme se fissure. Thade vacille.", echec: "Thade refuse d'écouter. « Vous ne comprenez pas. Vous n'avez jamais perdu quelqu'un. »" },
+            { competence: "Art de la magie", difficulte: "Difficile", reussite: "Les PJ identifient la structure du vortex. La Larme est le catalyseur. La retirer arrête le rituel mais libère l'énergie accumulée.", echec: "Le vortex est trop complexe. Impossible de savoir quoi faire sans risquer une catastrophe." },
           ],
 
           indices: [
             { indice: "Les vérités comme armes", localisation: "Cahiers, archives, laboratoire", detection: "Connaissances accumulées", information: "Chaque vérité sur Sealine fissure la Larme. L'annotation, les patients, les bocaux, les cahiers.", usage: "Les PJ peuvent gagner la phase 2 sans combattre — en parlant." },
-            { indice: "La Larme de Vael", localisation: "Cœur du vortex", detection: "Art de la magie DD 18", information: "La Larme est le catalyseur. La retirer arrête le rituel. La détruire libère l'énergie. La laisser ouvre le seuil.", usage: "Le choix final dépend de ce que les PJ font de la Larme." },
+            { indice: "La Larme de Vael", localisation: "Cœur du vortex", detection: "Art de la magie Difficile", information: "La Larme est le catalyseur. La retirer arrête le rituel. La détruire libère l'énergie. La laisser ouvre le seuil.", usage: "Le choix final dépend de ce que les PJ font de la Larme." },
           ],
 
           guide_mj: {
@@ -331,21 +331,21 @@ export const scenario3 = {
             mise_en_place: "Sommet ouvert. Ciel violet. Vortex. Thade devant. Larme au centre. Le MJ décrit l'environnement avant que Thade ne parle — la chaleur du sol, les runes qui pulsent, le bourdonnement.",
             deroulement: [
               "Phase 1 : combat arcanique. Thade puissant mais épuisé. Vents planaires. 4 rounds (2 si corps détruit).",
-              "Phase 2 : la Larme se fissure. Les PJ utilisent les vérités. Persuasion DD 18. Chaque vérité a un effet narratif et mécanique spécifique (voir deroulement_detaile).",
+              "Phase 2 : la Larme se fissure. Les PJ utilisent les vérités. Persuasion Difficile. Chaque vérité a un effet narratif et mécanique spécifique (voir deroulement_detaile).",
               "Si les PJ n'ont pas de vérités : Thade révèle l'information manquante dans ses répliques. Dernière chance de comprendre.",
               "Phase 3 : Thade s'effondre. Le vortex vacille. Sealine apparaît.",
               "Le magi-tuteur, s'il est présent, intervient à la phase 2 et pleure à la phase 3.",
             ],
             actions_utiles: [
               "Combattre Thade (force brute — plus long, plus dangereux).",
-              "Lire les cahiers à voix haute (Persuasion DD 18).",
+              "Lire les cahiers à voix haute (Persuasion Difficile).",
               "Révéler les vérités sur Sealine (annotation, patients, bocaux, cahiers, S-01, 142 consultations).",
-              "Tenter de détacher la Larme du vortex (Art de la magie DD 18).",
+              "Tenter de détacher la Larme du vortex (Art de la magie Difficile).",
               "Utiliser le magi-tuteur pour intervenir (il dit à Thade d'arrêter).",
               "Si les PJ ont écrit dans le cahier : faire référence à leurs mots.",
             ],
             fronts_heritiers: ["Tous les fronts convergent ici."],
-            jeu_des_pnj: "Thade ne combat pas par cruauté. Il combat parce que Sealine l'attend. Chaque vérité le blesse plus qu'un sort. Sealine, si elle apparaît, est calme, triste, lucide. Le magi-tuteur, s'il est présent, est déchiré entre loyauté et vérité — il intervient à la phase 2 puis pleure à la phase 3.",
+            jeu_des_pnj: "Thade combat pour prouver qu'il maîtrise enfin la Spirale. Chaque vérité le blesse plus qu'un sort parce qu'elle rappelle les vies broyées par sa méthode. Sealine, si elle apparaît, est calme, triste, lucide. Le magi-tuteur, s'il est présent, est déchiré entre loyauté et vérité — il intervient à la phase 2 puis pleure à la phase 3.",
             escalade: "Si les PJ tardent, le rituel s'accomplit. Le seuil s'ouvre. La Spirale déferle. Le bourdonnement augmente à chaque round — le MJ le décrit.",
             sortie: "Thade s'effondre. Le vortex vacille. Sealine apparaît dans le vortex. La conversation à trois commence.",
             deroulement_detaile: {
@@ -363,12 +363,12 @@ export const scenario3 = {
                     round: 2,
                     action_thade: "Rayon de givre sur le groupe. Contresort si un PJ lance un sort d'interruption.",
                     replique: "« Je n'ai plus besoin de vous convaincre. J'ai besoin de temps. »",
-                    indice_mj: "Si un PJ tente de parler, Thade écoute une action puis riposte. Il ne ignore pas — il ne peut pas s'empêcher d'écouter.",
+                    indice_mj: "Si un PJ tente de parler, Thade écoute une action puis riposte. Il ne peut pas s'empêcher d'écouter.",
                   },
                   {
                     round: 3,
                     action_thade: "Rayon de givre + Boule de feu en chaîne. Thade montre des signes de fatigue — ses sorts sont moins précis.",
-                    replique: "« Elle m'attend depuis huit ans. Huit ans. Vous ne savez pas ce que c'est. »",
+                    replique: "« J'ai vu cela une seule fois. Une seule. Trente ans pour que cela ne m'échappe plus jamais. »",
                     indice_mj: "C'est le moment où les PJ peuvent basculer vers la parole. Si un PJ commence à lire les cahiers ou à citer une vérité, passez à la phase 2.",
                   },
                   {
@@ -378,7 +378,7 @@ export const scenario3 = {
                     indice_mj: "Dernier round de la phase 1. Si les PJ n'ont pas encore parlé, le vortex pulse plus fort. Le rituel approche de la moitié.",
                   },
                 ],
-                transition_vers_phase_2: "Si un PJ lit un extrait des cahiers, cite l'annotation de Sealine, mentionne les patients ou les bocaux, ou révèle toute vérité accumulée pendant la campagne. Persuasion DD 18. Succès → la Larme se fissure. Passer à la phase 2. Échec → Thade secoue la tête et continue de combattre. Le PJ peut réessayer au round suivant.",
+                transition_vers_phase_2: "Si un PJ lit un extrait des cahiers, cite l'annotation de Sealine, mentionne les patients ou les bocaux, ou révèle toute vérité accumulée pendant la campagne. Persuasion Difficile. Succès → la Larme se fissure. Passer à la phase 2. Échec → Thade secoue la tête et continue de combattre. Le PJ peut réessayer au round suivant.",
               },
               phase_2_larme_se_fissure: {
                 duree: "Variable — jusqu'à 3 vérités réussies ou l'épuisement de Thade",
@@ -388,49 +388,49 @@ export const scenario3 = {
                     verite: "L'annotation de Sealine sur le schéma de la Larme",
                     source: "Scénario 2 — Laboratoire d'Elian Voss",
                     contenu: "« Ne jamais alimenter cela avec des vivants. » Écriture de Sealine.",
-                    effet_mecanique: "Persuasion DD 18. Succès : la Larme se fissure. Thade hurle : « Elle ne savait pas ! Elle ne savait pas ce que ça coûterait ! » Il perd sa prochaine action. Le vortex vacille.",
+                    effet_mecanique: "Persuasion Difficile. Succès : la Larme se fissure. Thade hurle : « Elle ne savait pas ! Elle ne savait pas ce que ça coûterait ! » Il perd sa prochaine action. Le vortex vacille.",
                     effet_narratif: "Thade est blessé par les mots de Sealine elle-même. C'est la vérité la plus dévastatrice — c'est elle qui le nie.",
                   },
                   {
                     verite: "Les 50 patients stabilisés d'Elian Voss",
                     source: "Scénario 2 — Laboratoire d'Elian Voss",
                     contenu: "Cinquante patients. Des reproductions du protocole S-01. Des noms, des dates, des dosages. Le cachet de Caldris sur chaque dossier.",
-                    effet_mecanique: "Persuasion DD 18. Succès : la Larme se fissure davantage. Thade : « J'ai essayé de les sauver. Tous. J'ai essayé. » Sa voix se brise. Il lance un sort imprévisible — Rayon de givre dévié qui frappe un pilier au lieu des PJ.",
-                    effet_narratif: "Thade ne nie pas. Il justifie. Mais sa justification sonne creux même à ses propres oreilles.",
+                    effet_mecanique: "Persuasion Difficile. Succès : la Larme se fissure davantage. Thade : « J'ai essayé de les sauver. Tous. J'ai essayé. » Sa voix se brise. Il lance un sort imprévisible — Rayon de givre dévié qui frappe un pilier au lieu des PJ.",
+                    effet_narratif: "Thade justifie. Mais sa justification sonne creux même à ses propres oreilles.",
                   },
                   {
                     verite: "Les 7 bocaux — les échecs d'Elian",
                     source: "Scénario 2 — Laboratoire d'Elian Voss",
                     contenu: "Sept bocaux. Sept échecs. Sept corps qui n'ont pas survécu au transit.",
-                    effet_mecanique: "Persuasion DD 18. Succès : la Larme se fissure gravement. Thade s'arrête de combattre pendant un round. Il murmure : « Sept. Ils étaient sept. » Le vortex tremble. C'est la vérité qui brise sa résistance.",
+                    effet_mecanique: "Persuasion Difficile. Succès : la Larme se fissure gravement. Thade s'arrête de combattre pendant un round. Il murmure : « Sept. Ils étaient sept. » Le vortex tremble. C'est la vérité qui brise sa résistance.",
                     effet_narratif: "Les sept bocaux sont le prix humain du rituel. Thade ne peut pas les nier. Il ne peut pas les justifier. Il peut seulement les porter.",
                   },
                   {
-                    verite: "Les cahiers bordeaux — huit ans de lettres à Sealine",
+                    verite: "Les cahiers bordeaux — une trentaine d'années de lettres à Sealine",
                     source: "Scénario 2 — Laboratoire de Verre",
-                    contenu: "Thade écrit à Sealine tous les jours depuis huit ans. Des lettres qu'elle ne lira jamais. Ou qu'il croit qu'elle lira.",
-                    effet_mecanique: "Persuasion DD 18. Succès : la Larme se fissure. Thade ne riposte pas. Il dit, doucement : « Vous avez lu mes lettres. » Pas de colère. De la honte. Il baisse les mains un instant.",
-                    effet_narratif: "Les cahiers révèlent l'homme derrière l'archimage. Thade n'est pas un monstre — il est un homme qui n'a pas su laisser partir quelqu'un.",
+                    contenu: "Thade écrit à Sealine tous les jours depuis une trentaine d'années. Des lettres qu'elle ne lira jamais. Ou qu'il croit qu'elle lira.",
+                    effet_mecanique: "Persuasion Difficile. Succès : la Larme se fissure. Thade ne riposte pas. Il dit, doucement : « Vous avez lu mes lettres. » Pas de colère. De la honte. Il baisse les mains un instant.",
+                    effet_narratif: "Les cahiers révèlent l'homme derrière l'archimage. Thade est un homme qui n'a pas su laisser partir quelqu'un.",
                   },
                   {
                     verite: "Le protocole S-01 — Sealine était la première patiente",
                     source: "Scénario 1 — Archives Médicales Scellées",
                     contenu: "S-01 = Sealine. Le protocole a été établi 28 jours avant la catastrophe de Nyx. « Méthodes conventionnelles épuisées. Explorer la littérature interdite. »",
-                    effet_mecanique: "Persuasion DD 18. Succès : la Larme se fissure. Thade : « J'ai tout fait pour elle. Tout. Chaque jour. Chaque nuit. » Il ne combat pas ce round.",
-                    effet_narratif: "L'origine de tout. Thade ne regrette pas le protocole — il regrette que ça n'ait pas marché.",
+                    effet_mecanique: "Persuasion Difficile. Succès : la Larme se fissure. Thade : « J'ai commencé parce qu'elle mourait. J'ai continué parce que personne d'autre n'osait regarder. » Il ne combat pas ce round.",
+                    effet_narratif: "L'origine de tout. Thade regrette que le protocole n'ait pas tenu, puis refuse d'admettre que l'échec aurait dû l'arrêter.",
                   },
                   {
                     verite: "Les 142 consultations de la Réserve Interdite",
                     source: "Scénario 2 — Réserve de Recherche Interdite",
-                    contenu: "Cent quarante-deux consultations sur huit ans. Seuils planaires, rituels de transit, littérature interdite.",
-                    effet_mecanique: "Persuasion DD 18. Succès : la Larme se fissure légèrement. Thade : « Chaque livre. Chaque page. Pour elle. » Il lance un sort affaibli — Boule de feu qui s'éteint à mi-chemin.",
-                    effet_narratif: "La préparation méthodique. Thade n'a pas dérapé — il a planifié. Pendant huit ans.",
+                    contenu: "Cent quarante-deux consultations étalées sur une trentaine d'années. Seuils planaires, rituels de transit, littérature interdite.",
+                    effet_mecanique: "Persuasion Difficile. Succès : la Larme se fissure légèrement. Thade : « Chaque livre. Chaque page. Pour ne plus subir. » Il lance un sort affaibli — Boule de feu qui s'éteint à mi-chemin.",
+                    effet_narratif: "La préparation méthodique. Thade n'a pas dérapé — il a planifié. Pendant une trentaine d'années.",
                   },
                 ],
                 reactions_thade_par_round: {
-                  apres_1e_verite: "Thade vacille. Ses sorts deviennent moins précis. Il crie : « Vous ne savez pas ce que c'est ! Vous n'avez jamais perdu quelqu'un ! »",
-                  apres_2e_verite: "Thade pleure. Il ne le cache pas. Ses larmes tombent sur le marbre. Il combat encore, mais ses gestes sont lents. « Je les ai tous essayés. Tous. Et rien n'a marché. Rien. »",
-                  apres_3e_verite: "Thade s'arrête. Ses mains tombent. Le vortex vacille. La Larme est fissurée. Il murmure : « Sealine... pardon. » Il s'effondre. Passer à la phase 3.",
+                  apres_1e_verite: "Thade vacille. Ses sorts deviennent moins précis. Il crie : « Vous n'étiez pas là ! Vous n'avez pas vu ce que le seuil contenait ! »",
+                  apres_2e_verite: "Thade pleure. Il ne le cache pas. Ses larmes tombent sur le marbre. Il combat encore, mais ses gestes sont lents. « J'ai repris chaque calcul. Chaque variable. Et le coût restait là. Toujours. »",
+                  apres_3e_verite: "Thade s'arrête. Ses mains tombent. Le vortex vacille. La Larme est fissurée. Il murmure : « Sealine… pardon. » Il s'effondre. Passer à la phase 3.",
                 },
                 si_aucune_verite_reussie: "Si les PJ combattent sans parler, Thade s'épuise au round 8-10. Le rituel s'accomplit au round 10. Les PJ doivent vaincre Thade avant. Sans vérités, la Larme ne se fissure pas — Sealine apparaît mais le vortex est instable et dangereux.",
               },
@@ -445,7 +445,7 @@ export const scenario3 = {
                   "Thade lève la tête. Il voit Sealine. Il ne dit rien. Il pleure en silence.",
                   "Transition vers la scène s3_conversation_trois.",
                 ],
-                replique_thade: "« Sealine... je t'ai retrouvée. » (Voix brisée. Pas de triomphe. De la fatigue.)",
+                replique_thade: "« Sealine… je t'ai retrouvée. » (Voix brisée. Pas de triomphe. De la fatigue.)",
                 replique_sealine: "« Thade. » (Un seul mot. Pas de colère. Pas de pardon. Un constat.)",
               },
             },
@@ -454,7 +454,7 @@ export const scenario3 = {
           reperes_de_jeu: {
             indice_indispensable: "Les PJ doivent savoir que les vérités sur Sealine fissurent la Larme et que la Larme est le catalyseur.",
             ne_pas_bloquer_sur_un_jet: "Même si tous les jets échouent, le combat se déroule. Les PJ peuvent combattre Thade jusqu'à l'épuisement.",
-            question_dramatique: "Pouvez-vous arrêter un homme qui ne fait tout cela que par amour ?",
+            question_dramatique: "Pouvez-vous arrêter un homme qui a confondu comprendre, contrôler et avoir raison ?",
           },
 
           transitions: {
@@ -507,22 +507,22 @@ export const scenario3 = {
                 sceneId: "s3_conversation_trois",
                 type: "pnj",
                 moteur: "Le Magi-Tuteur peut intervenir à la phase 2 et pleurer à la phase 3.",
-                accroche_mj: "Le Magi-Tuteur regarde Thade au sol. Il pleure en silence. Il dit : 'Maître... arrêtez. Elle ne voudrait pas ça.' Puis il se tourne vers les PJ. 'Je suis désolé. Je n'ai pas su l'arrêter plus tôt.' Il reste à genoux près de Thade.",
+                accroche_mj: "Le Magi-Tuteur regarde Thade au sol. Il pleure en silence. Il dit : 'Maître… arrêtez. Elle ne voudrait pas ça.' Puis il se tourne vers les PJ. 'Je suis désolé. Je n'ai pas su l'arrêter plus tôt.' Il reste à genoux près de Thade.",
                 consequence_si_refus: "Si le Magi-Tuteur est mort, les PJ n'ont pas de témoin ni de guide pour la conversation.",
               },
               {
                 condition: "Les PJ veulent tenter de détacher la Larme pendant le combat",
                 sceneId: "s3_conversation_trois",
                 type: "libre",
-                moteur: "Art de la magie DD 18 pour analyser le vortex. La Larme peut être détachée mais c'est délicat.",
-                accroche_mj: "Vous voyez la Larme au cœur du vortex. Elle pulse. Si vous la détachez maintenant, le rituel s'arrête. Mais c'est délicat. Un échec et la Larme se brise. Art de la magie DD 18.",
+                moteur: "Art de la magie Difficile pour analyser le vortex. La Larme peut être détachée mais c'est délicat.",
+                accroche_mj: "Vous voyez la Larme au cœur du vortex. Elle pulse. Si vous la détachez maintenant, le rituel s'arrête. Mais c'est délicat. Un échec et la Larme se brise. Art de la magie Difficile.",
                 consequence_si_refus: "Si les PJ ne tentent pas de détacher la Larme, le combat continue jusqu'à l'épuisement de Thade ou l'accomplissement du rituel.",
               },
             ],
             fallback_mj: "Le Vortex est le combat final. Il n'y a pas d'alternative — les PJ doivent affronter Thade. Les vérités accumulées pendant la campagne sont les armes les plus puissantes. Si les PJ n'ont pas de vérités, Thade révèle l'information manquante dans ses répliques (phase 1, round 3). Le Magi-Tuteur peut témoigner s'il est vivant. Le combat se déroule en 3 phases dans tous les cas. Sealine apparaît à la phase 3, que les PJ aient fissuré la Larme ou non.",
             objectif_scene: "Vaincre Thade Coren au sommet de la Tour. Utiliser les vérités accumulées pendant la campagne pour fissurer la Larme de Vael et affaiblir Thade.",
             pression: "Le rituel s'accomplit au round 10. Si les PJ tardent, le seuil s'ouvre et la Spirale déferle. Le Sceau qui cède arrive à son terme. Chaque round compte.",
-            actions_pj_attendues: ["combattre Thade (force brute)", "utiliser les vérités comme armes (Persuasion DD 18)", "détacher la Larme de Vael pendant le combat", "protéger le Magi-Tuteur s'il est présent"],
+            actions_pj_attendues: ["combattre Thade (force brute)", "utiliser les vérités comme armes (Persuasion Difficile)", "détacher la Larme de Vael pendant le combat", "protéger le Magi-Tuteur s'il est présent"],
             sorties_possibles: ["vers s3_conversation_trois (Thade vaincu, Sealine apparaît)", "vers s3_monde_apres (rituel accompli — le seuil s'ouvre)"],
             si_les_pj_bloquent: "Pas d'alternative au combat. Si les PJ n'ont pas de vérités, Thade révèle l'information manquante dans ses répliques. Le Magi-Tuteur peut témoigner. Sealine apparaît à la phase 3 dans tous les cas.",
             conditions_sortie: [
@@ -547,7 +547,7 @@ export const scenario3 = {
             ambiance:
               "Le vortex vacille. Le bourdonnement a diminué — pas disparu, mais atténué. Le ciel violet est toujours là, mais il tremble, comme s'il hésitait. Le marbre sous les pieds est chaud. Thade est au sol, genoux pliés, mains ouvertes. Il ne combat plus. Il regarde le vortex. La forme qui se dessine dans l'énergie violette prend des détails — une femme, des cheveux sombres, un visage calme, des vêtements simples. Elle ressemble à quelqu'un qui préparait le thé quand tout a basculé. L'air sent la lavande. Pas un parfum — une présence.",
             deroulement_narratif:
-              "Sealine se matérialise dans le vortex. Elle ne flotte pas — elle se tient, comme si le vortex était une fenêtre et elle de l'autre côté. Elle regarde Thade. Elle regarde les PJ. Elle est calme.\n\n« Thade », dit-elle. Thade lève la tête. Ses yeux sont brisés. « Sealine. » « Je sais », dit-elle. « Je sais tout. Les patients. Les bocaux. La Larme. Je sais. » Un silence. Puis : « Et je sais pourquoi. »\n\nElle se tourne vers les PJ. « Vous devez décider. Pas lui. Pas moi. Vous. »\n\nSealine explique les trois options avec une clarté tranquille :\n1. Détruire la Larme. Le sceau se referme. Le déphasage s'arrête. Sealine disparaît. Thade est brisé mais vivant. Valombre revient à la normale — avec ses cicatrices.\n2. Détacher la Larme : extraire la Larme du vortex sans la briser. Sealine revient, fragile. Le seuil reste entrouvert. La Spirale filtre de manière permanente. Valombre apprend à vivre avec. Thade est jugé mais pas exécuté.\n3. Laisser Thade ouvrir le seuil. La Spirale déferle. Valombre et la Spirale fusionnent. Le ciel reste violet. Les routes mènent partout et nulle part. Thade franchit le seuil vers Sealine — mais ce qu'elle fera de lui appartient à l'épilogue. Le monde est différent. Pas meilleur, pas pire — différent.\n\nLes PJ peuvent parler à Sealine et à Thade avant de choisir. Sealine répond avec une honnêteté absolue. Thade ne parle que si on lui adresse la parole. Il dit : « Je voulais la ramener. C'est tout. Je voulais la ramener. »\n\nSi les PJ demandent à Sealine ce qu'elle veut : elle dit : « Je ne veux rien. J'ai accepté ce qui m'est arrivé. Si vous me détruisez, je disparaîtrai. Si vous me ramenez, je reviendrai. Si vous ouvrez le seuil, je serai là. Mais je ne demande rien. C'est votre choix. » Elle ne pleure pas. Elle a pleuré tout ce qu'elle pouvait pleurer.\n\nSi les PJ demandent à Sealine si elle pardonne Thade : elle dit : « Je pardonne. Mais pardonner ne veut pas dire oublier. Les sept bocaux. Les cinquante patients. Les huit ans de mensonge. Je pardonne parce que je comprends. Mais je ne veux pas que ce pardon devienne une permission. »\n\nSi les PJ demandent à Thade s'il regrette : il dit : « Je regrette les bocaux. Je regrette les patients. Je regrette les étudiants dans la Tour. Je ne regrette pas de l'avoir essayé. Je ne regrette pas de l'avoir fait. Parce que si ça avait marché, elle serait là. » Un silence. Puis : « Mais ça n'a pas marché. »\n\nSi les PJ demandent ce qui se passe si personne ne choisit : Sealine dit : « Le rituel s'accomplit seul. Le seuil s'ouvre. Ce n'est pas l'option 3 que vous auriez choisie — c'est l'option 3 sans choix. »\n\nSi le magi-tuteur est présent : il ne parle pas pendant la conversation. Il est à genoux près de Thade. Il pleure en silence. Si les PJ lui demandent son avis, il dit : « Je ne peux pas choisir. C'est votre responsabilité. Mais si vous détruisez la Larme... Thade ne s'en remettra pas. »\n\nAucun jet. C'est une conversation et un choix. Le MJ laisse le silence s'installer après les explications. Les PJ décident quand ils sont prêts.",
+              "Sealine se matérialise dans le vortex. Elle ne flotte pas — elle se tient, comme si le vortex était une fenêtre et elle de l'autre côté. Elle regarde Thade. Elle regarde les PJ. Elle est calme.\n\n« Thade », dit-elle. Thade lève la tête. Ses yeux sont brisés. « Sealine. » Un silence impossible. Puis il murmure : « Je croyais que tu étais morte. »\n\n« Je sais », dit-elle. « Je sais tout. Les patients. Les bocaux. La Larme. Je sais. » Un silence. Puis : « Et je sais pourquoi. »\n\nElle se tourne vers les PJ. « Vous devez décider. Pas lui. Pas moi. Vous. »\n\nSealine explique les trois options avec une clarté tranquille :\n1. Détruire la Larme. Le sceau se referme. Le déphasage s'arrête. Sealine disparaît. Thade est brisé mais vivant. Valombre revient à la normale — avec ses cicatrices.\n2. Détacher la Larme : extraire la Larme du vortex sans la briser. Sealine revient, fragile. Le seuil reste entrouvert. La Spirale filtre de manière permanente. Valombre apprend à vivre avec. Thade est jugé mais pas exécuté.\n3. Laisser Thade ouvrir le seuil. La Spirale déferle. Valombre et la Spirale fusionnent. Le ciel reste violet. Les routes mènent partout et nulle part. Thade franchit un seuil qu'il croit maîtriser — mais ce que Sealine fera de lui appartient à l'épilogue. Le monde est différent. Pas meilleur, pas pire — différent.\n\nLes PJ peuvent parler à Sealine et à Thade avant de choisir. Sealine répond avec une honnêteté absolue. Thade ne parle que si on lui adresse la parole. Il murmure : « Je croyais qu'elle était morte. Je voulais que le seuil m'obéisse. C'est tout ce qu'il me restait. »\n\nSi les PJ demandent à Sealine ce qu'elle veut : elle dit : « Je ne veux rien. J'ai accepté ce qui m'est arrivé. Si vous me détruisez, je disparaîtrai. Si vous me ramenez, je reviendrai. Si vous ouvrez le seuil, je serai là. Mais je ne demande rien. C'est votre choix. » Elle ne pleure pas. Elle a pleuré tout ce qu'elle pouvait pleurer.\n\nSi les PJ demandent à Sealine si elle pardonne à Thade : elle dit : « Je pardonne. Mais pardonner ne veut pas dire oublier. Les sept bocaux. Les cinquante patients. Les trente ans de mensonge. Je pardonne parce que je comprends. Mais je ne veux pas que ce pardon devienne une permission. »\n\nSi les PJ demandent à Thade s'il regrette : il dit : « Je regrette les bocaux. Je regrette les patients. Je regrette les étudiants dans la Tour. Je ne regrette pas d'avoir essayé de comprendre. Si j'avais maîtrisé le seuil à Nyx, personne ne serait mort. » Un silence. Puis : « Mais je ne l'ai pas maîtrisé. »\n\nSi les PJ demandent ce qui se passe si personne ne choisit : Sealine dit : « Le rituel s'accomplit seul. Le seuil s'ouvre. Ce n'est pas l'option 3 que vous auriez choisie — c'est l'option 3 sans choix. »\n\nSi le magi-tuteur est présent : il ne parle pas pendant la conversation. Il est à genoux près de Thade. Il pleure en silence. Si les PJ lui demandent son avis, il dit : « Je ne peux pas choisir. C'est votre responsabilité. Mais si vous détruisez la Larme… Thade ne s'en remettra pas. »\n\nAucun jet. C'est une conversation et un choix. Le MJ laisse le silence s'installer après les explications. Les PJ décident quand ils sont prêts.",
             notes_mj:
               "Le MJ ne pousse pas les PJ vers une option. Les trois sont valides. Le MJ décrit les conséquences avec la même neutralité pour chaque option. Si les PJ hésitent, le MJ applique trois avertissements : 1) Le vortex pulse, la Larme brille plus fort. 2) Sealine prévient : « Le choix ne peut pas attendre. » 3) Thade tente de reprendre le contrôle ou la Larme s'ouvre d'elle-même. Après le troisième avertissement, le rituel s'accomplit seul — c'est l'option 3 sans choix conscient.",
           },
@@ -559,7 +559,7 @@ export const scenario3 = {
 
           contexte_mj: {
             situation:
-              "Sealine est présente dans le vortex. Elle est lucide. Elle sait tout. Elle n'accuse pas Thade, mais elle ne veut pas qu'il ouvre le seuil. Le choix appartient aux PJ.",
+              "Sealine est présente dans le vortex. Elle est lucide. Elle sait tout. Elle n'accuse pas Thade, mais elle refuse qu'il ouvre le seuil. Le choix appartient aux PJ.",
             secrets: [
               "Sealine sait que Thade et Elian ont reproduit S-01 sur des vivants après elle. Elle lui pardonne mais ne l'absout pas.",
               "Si les PJ détruisent la Larme, Sealine disparaît. Le sceau se referme. Thade est brisé mais vivant.",
@@ -638,7 +638,7 @@ export const scenario3 = {
                 sceneId: "s3_monde_apres",
                 type: "libre",
                 moteur: "La Spirale déferle. Valombre est transformée. Thade franchit le seuil vers Sealine. Le monde est différent.",
-                accroche_mj: "Vous reculez. Thade se relève. Il tend les mains vers la Larme. Le vortex s'élargit. Le ciel vire au violet profond. La Spirale déferle sur Valombre. Thade franchit le seuil. Sealine l'attend. Le monde n'est plus le même. Pas meilleur. Pas pire. Différent.",
+                accroche_mj: "Vous reculez. Thade se relève. Il tend les mains vers la Larme. Le vortex s'élargit. Le ciel vire au violet profond. La Spirale déferle sur Valombre. Thade franchit le seuil. Sealine est là, mais elle ne l'attendait pas comme une récompense. Le monde n'est plus le même. Pas meilleur. Pas pire. Différent.",
                 consequence_si_refus: "Si les PJ ne laissent pas Thade ouvrir le seuil, le rituel continue jusqu'à ce qu'ils choisissent.",
               },
               {
@@ -654,15 +654,15 @@ export const scenario3 = {
                 sceneId: "s3_monde_apres",
                 type: "echec",
                 moteur: "Sealine se retire dans le vortex. Les options sont moins claires. Les PJ doivent déduire par eux-mêmes.",
-                accroche_mj: "Sealine ne se défend pas. Elle dit : 'Je ne suis pas votre ennemie.' Puis elle se retire dans le vortex. La Larme pulse. Le rituel continue. Sans Sealine, vous devez déduire les options par vous-mêmes. Art de la magie DD 18 pour analyser le vortex. Le Magi-Tuteur peut aider s'il est là.",
+                accroche_mj: "Sealine ne se défend pas. Elle dit : 'Je ne suis pas votre ennemie.' Puis elle se retire dans le vortex. La Larme pulse. Le rituel continue. Sans Sealine, vous devez déduire les options par vous-mêmes. Art de la magie Difficile pour analyser le vortex. Le Magi-Tuteur peut aider s'il est là.",
                 consequence_si_refus: "Si les PJ attaquent Sealine puis détruisent la Larme, Sealine est perdue. Si le seuil s'ouvre, Sealine disparaît dans la Spirale. L'épilogue est plus sombre.",
               },
               {
                 condition: "Les PJ veulent parler à Thade avant de choisir",
                 sceneId: "s3_monde_apres",
                 type: "libre",
-                moteur: "Thade ne parle que si on lui adresse la parole. Il dit : 'Je voulais la ramener. C'est tout.'",
-                accroche_mj: "Thade est au sol. Il ne regarde pas les PJ. Il regarde le vortex. Si vous lui parlez, il répond. 'Je voulais la ramener. C'est tout. Je voulais la ramener.' Sa voix est brisée. Il ne combat plus. Il ne justifie plus. Il attend.",
+                moteur: "Thade ne parle que si on lui adresse la parole. Il murmure : 'Je croyais qu'elle était morte. Je voulais que le seuil m'obéisse.'",
+                accroche_mj: "Thade est au sol. Il ne regarde pas les PJ. Il regarde le vortex. Si vous lui parlez, il répond. 'Je croyais qu'elle était morte. Je voulais que le seuil m'obéisse. C'est tout ce qu'il me restait.' Sa voix est brisée. Il ne combat plus. Il ne justifie plus. Il attend.",
                 consequence_si_refus: "Si les PJ ne parlent pas à Thade, ils choisissent sans entendre sa perspective.",
               },
             ],
@@ -704,7 +704,7 @@ export const scenario3 = {
             ambiance:
               "Le ciel de Valombre change. Lentement, imperceptiblement, mais il change. Les rues se réorganisent — ou retrouvent leur place, ou deviennent autre chose. Les gens sortent des maisons, lèvent les yeux, regardent. Sur la Place de la Fondation, la statue des Fondateurs est toujours là. Les bâtiments administratifs sont toujours là. Mais le ciel n'est plus le même. Et les gens le savent. L'air sent la pierre humide, le pain, la fumée — ou la lavande, selon le choix. La Place est pleine. Pas pour une émeute. Pas pour un discours. Pour voir. Pour comprendre. Pour décider ce qu'ils font maintenant.",
             deroulement_narratif:
-              "Le MJ décrit les conséquences selon le choix des PJ :\n\nSi la Larme est détruite : le ciel reprend sa couleur normale. Le déphasage s'arrête. Les routes redeviennent fiables. Les tombes des Thanes sont restaurées — Thorgar confirme que le sceau est refermé. Thade est brisé, jugé ou exilé selon les alliances des PJ. Sealine est perdue. Valombre revient à la normale — mais avec les cicatrices. Les gens se souviennent de ce qui s'est passé.\n\n  Mara reconstruit. Elle dit : « On a perdu des gens. On a perdu du temps. Mais on est encore là. » Elle travaille avec les PJ si le décompte des victimes est bas. Elle les évite si le décompte est élevé.\n  Thorgar restaure les rites funéraires. Il dit : « Le sceau est refermé. Les morts peuvent reposer. » Si les PJ ont tué des étudiants dans la Tour, il ajoute : « Pas tous. »\n  Olane réforme l'Université. Elle ferme la Réserve de Recherche Interdite pendant un an. Elle dit : « On a fermé les yeux trop longtemps. Plus jamais. »\n  Ursula soigne les blessés — les étudiants charmés qui se réveillent, les gardes piégés qui s'effondrent.\n  Le Champion de la Bannière Pure, s'il n'a pas été arrêté, est discrédité — le ciel redevient normal, sa rhétorique de la menace ne tient plus. Il se retire ou devient une voix marginale.\n  Les Endeuillés, s'ils n'ont pas été dispersés, trouvent la paix — les tombes sont restaurées, le sceau est refermé. Ils se dispersent d'eux-mêmes.\n  Elian Voss, s'il a été retourné et est vivant, témoigne au procès de Thade. S'il est mort ou absent, les preuves matérielles suffisent mais le procès est moins personnel.\n  Le magi-tuteur, s'il a survécu, devient le gardien de la Tour. Il dit : « Je garderai la Tour vide. Pour que personne ne recommence. »\n\nSi Sealine est sauvée : le ciel garde une teinte violacère, légère, permanente. Le déphasage persiste mais est gérable — certaines rues sont trompeuses, mais la plupart sont fiables. Sealine revient, fragile, silencieuse. Thade est jugé mais pas exécuté — les PJ peuvent témoigner. Valombre apprend à vivre avec la Spirale. Les gens savent que le monde a changé, mais il n'a pas fini.\n\n  Mara reconstruit et adapte. Elle dit : « La ville est différente. On s'adapte. On s'est toujours adaptés. » Elle cartographie les rues trompeuses.\n  Thorgar accepte le changement avec réticence. Il dit : « Le sceau n'est pas refermé. Mais il n'est pas ouvert non plus. C'est... entre les deux. » Il adapte les rites funéraires pour les morts qui ne reposent plus tout à fait.\n  Olane réforme l'Université et ouvre un département d'études planaires. Elle dit : « Si la Spirale est là, autant la comprendre. »\n  Sealine vit en retrait. Elle parle peu. Elle mange. Elle dort. Elle marche dans les rues. Mais elle n'est plus tout à fait là. Les PJ peuvent la visiter.\n  Thade est jugé. Le procès est complexe — il a sauvé Sealine, mais il a tué sept personnes dans les bocaux et manipulé cinquante patients. Le MJ décide du verdict selon les alliances des PJ.\n  Le Champion, s'il n'a pas été arrêté, profite du chaos — la Spirale filtre, la ville est changée, sa rhétorique trouve un nouveau public. Il devient une voix politique.\n  Les Endeuillés, s'ils n'ont pas été dispersés, ne trouvent pas la paix — le seuil est entrouvert, les morts ne reposent pas tout à fait. Certains rejoignent le Champion. D'autres fondent un culte de la Spirale.\n\nSi le seuil s'ouvre : le ciel est violet. Les routes mènent partout et nulle part. La Spirale déferle. Valombre est transformée. Thade franchit le seuil vers Sealine — ils disparaissent dans le vortex, ou ils restent, selon ce que les PJ ont dit et ce que Sealine décide. Le monde est différent. Pas meilleur, pas pire — différent. Les gens s'adaptent. La vie continue, mais pas comme avant.\n\n  Mara reconstruit dans un monde nouveau. Elle dit : « Les rues changent. Les gens changent. Mais on reconstruit toujours. » Elle devient une leader dans une ville qui n'a plus de cartes fixes.\n  Thorgar est perdu. Les rites funéraires ne fonctionnent plus — les morts ne reposent pas, ils errent. Il dit : « Je ne sais plus comment prier. » Il peut devenir un guide spirituel pour les vivants, ou se retirer.\n  Olane embrace le nouveau monde. Elle dit : « La Spirale est là. Ce n'est plus de la théorie. C'est la réalité. » Elle devient une chercheuse planaire de premier plan.\n  Le Champion, s'il n'a pas été arrêté, est discrédité ou transformé — le monde qu'il connaissait n'existe plus. Sa rhétorique n'a plus de sens. Il disparaît ou s'adapte.\n  Les Endeuillés, s'ils n'ont pas été dispersés, sont les mieux adaptés au nouveau monde — ils attendaient les morts. Les morts sont là. Mais ce ne sont pas les morts qu'ils attendaient.\n  Sealine et Thade : si Sealine décide de rester avec Thade, ils disparaissent dans le vortex. Si Sealine décide de revenir, Thade franchit le seuil seul. Le MJ décide selon ce que les PJ ont dit pendant la conversation à trois.\n\nLe décompte des victimes de la Tour détermine le ton : peu de victimes, l'épilogue est lumineux — les gens font confiance aux PJ. Beaucoup de victimes, l'épilogue est sombre — les gens craignent les PJ. Le MJ peut décrire une scène sur la Place de la Fondation où les gens réagissent aux PJ : sourires et gratitude si le décompte est bas, regards fuyants et murmures si le décompte est élevé.\n\nLes PJ ont un dernier moment pour parler aux PNJ, visiter les lieux marquants, et décider de l'avenir de leurs personnages.\n\nFils non résolus (le MJ décide lesquels activer selon la campagne) :\n- Que devient Caldris ? La cité qui fournissait le matériel interdit n'a pas été confrontée. Si les PJ ont le cachet de Caldris et les preuves, une expédition diplomatique ou militaire est possible.\n- Que devient la Réserve de Recherche Interdite ? Olane la ferme ou la réforme. Mais les ouvrages sont toujours là. Quelqu'un d'autre pourrait les consulter.\n- Que devient le protocole S-01 ? Les recherches de Thade existent. Elian Voss les connaît. Si Elian est vivant, il peut les détruire ou les préserver.\n- Que devient la Larme de Vael ? Si elle est détruite, ses fragments restent. Si elle est détachée, elle est entre les mains de Sealine. Si le seuil s'ouvre, elle est dans la Spirale.\n- Que devient le magi-tuteur ? S'il a survécu, il garde la Tour ou part. Il porte le témoignage.",
+              "Le MJ décrit les conséquences selon le choix des PJ :\n\nSi la Larme est détruite : le ciel reprend sa couleur normale. Le déphasage s'arrête. Les routes redeviennent fiables. Les tombes des Thanes sont restaurées — Thorgar confirme que le sceau est refermé. Thade est brisé, jugé ou exilé selon les alliances des PJ. Sealine est perdue. Valombre revient à la normale — mais avec les cicatrices. Les gens se souviennent de ce qui s'est passé.\n\n  Mara reconstruit. Elle dit : « On a perdu des gens. On a perdu du temps. Mais on est encore là. » Elle travaille avec les PJ si le décompte des victimes est bas. Elle les évite si le décompte est élevé.\n  Thorgar restaure les rites funéraires. Il dit : « Le sceau est refermé. Les morts peuvent reposer. » Si les PJ ont tué des étudiants dans la Tour, il ajoute : « Pas tous. »\n  Olane réforme l'Université. Elle ferme la Réserve de Recherche Interdite pendant un an. Elle dit : « On a fermé les yeux trop longtemps. Plus jamais. »\n  Ursula soigne les blessés — les étudiants charmés qui se réveillent, les gardes piégés qui s'effondrent.\n  Le Champion de la Bannière Pure, s'il n'a pas été arrêté, est discrédité — le ciel redevient normal, sa rhétorique de la menace ne tient plus. Il se retire ou devient une voix marginale.\n  Les Endeuillés, s'ils n'ont pas été dispersés, trouvent la paix — les tombes sont restaurées, le sceau est refermé. Ils se dispersent d'eux-mêmes.\n  Elian Voss, s'il a été retourné et est vivant, témoigne au procès de Thade. S'il est mort ou absent, les preuves matérielles suffisent mais le procès est moins personnel.\n  Le magi-tuteur, s'il a survécu, devient le gardien de la Tour. Il dit : « Je garderai la Tour vide. Pour que personne ne recommence. »\n\nSi Sealine est sauvée : le ciel garde une teinte violacère, légère, permanente. Le déphasage persiste mais est gérable — certaines rues sont trompeuses, mais la plupart sont fiables. Sealine revient, fragile, silencieuse. Thade est jugé mais pas exécuté — les PJ peuvent témoigner. Valombre apprend à vivre avec la Spirale. Les gens savent que le monde a changé, mais il n'a pas fini.\n\n  Mara reconstruit et adapte. Elle dit : « La ville est différente. On s'adapte. On s'est toujours adaptés. » Elle cartographie les rues trompeuses.\n  Thorgar accepte le changement avec réticence. Il dit : « Le sceau n'est pas refermé. Mais il n'est pas ouvert non plus. C'est… entre les deux. » Il adapte les rites funéraires pour les morts qui ne reposent plus tout à fait.\n  Olane réforme l'Université et ouvre un département d'études planaires. Elle dit : « Si la Spirale est là, autant la comprendre. »\n  Sealine vit en retrait. Elle parle peu. Elle mange. Elle dort. Elle marche dans les rues. Mais elle n'est plus tout à fait là. Les PJ peuvent la visiter.\n  Thade est jugé. Le procès est complexe — il a sauvé Sealine, mais il a tué sept personnes dans les bocaux et manipulé cinquante patients. Le MJ décide du verdict selon les alliances des PJ.\n  Le Champion, s'il n'a pas été arrêté, profite du chaos — la Spirale filtre, la ville est changée, sa rhétorique trouve un nouveau public. Il devient une voix politique.\n  Les Endeuillés, s'ils n'ont pas été dispersés, ne trouvent pas la paix — le seuil est entrouvert, les morts ne reposent pas tout à fait. Certains rejoignent le Champion. D'autres fondent un culte de la Spirale.\n\nSi le seuil s'ouvre : le ciel est violet. Les routes mènent partout et nulle part. La Spirale déferle. Valombre est transformée. Thade franchit le seuil vers Sealine — ils disparaissent dans le vortex, ou ils restent, selon ce que les PJ ont dit et ce que Sealine décide. Le monde est différent. Pas meilleur, pas pire — différent. Les gens s'adaptent. La vie continue, mais pas comme avant.\n\n  Mara reconstruit dans un monde nouveau. Elle dit : « Les rues changent. Les gens changent. Mais on reconstruit toujours. » Elle devient une leader dans une ville qui n'a plus de cartes fixes.\n  Thorgar est perdu. Les rites funéraires ne fonctionnent plus — les morts ne reposent pas, ils errent. Il dit : « Je ne sais plus comment prier. » Il peut devenir un guide spirituel pour les vivants, ou se retirer.\n  Olane embrasse le nouveau monde. Elle dit : « La Spirale est là. Ce n'est plus de la théorie. C'est la réalité. » Elle devient une chercheuse planaire de premier plan.\n  Le Champion, s'il n'a pas été arrêté, est discrédité ou transformé — le monde qu'il connaissait n'existe plus. Sa rhétorique n'a plus de sens. Il disparaît ou s'adapte.\n  Les Endeuillés, s'ils n'ont pas été dispersés, sont les mieux adaptés au nouveau monde — ils attendaient les morts. Les morts sont là. Mais ce ne sont pas les morts qu'ils attendaient.\n  Sealine et Thade : si Sealine décide de rester avec Thade, ils disparaissent dans le vortex. Si Sealine décide de revenir, Thade franchit le seuil seul. Le MJ décide selon ce que les PJ ont dit pendant la conversation à trois.\n\nLe décompte des victimes de la Tour détermine le ton : peu de victimes, l'épilogue est lumineux — les gens font confiance aux PJ. Beaucoup de victimes, l'épilogue est sombre — les gens craignent les PJ. Le MJ peut décrire une scène sur la Place de la Fondation où les gens réagissent aux PJ : sourires et gratitude si le décompte est bas, regards fuyants et murmures si le décompte est élevé.\n\nLes PJ ont un dernier moment pour parler aux PNJ, visiter les lieux marquants, et décider de l'avenir de leurs personnages.\n\nFils non résolus (le MJ décide lesquels activer selon la campagne) :\n- Que devient Caldris ? La cité qui fournissait le matériel interdit n'a pas été confrontée. Si les PJ ont le cachet de Caldris et les preuves, une expédition diplomatique ou militaire est possible.\n- Que devient la Réserve de Recherche Interdite ? Olane la ferme ou la réforme. Mais les ouvrages sont toujours là. Quelqu'un d'autre pourrait les consulter.\n- Que devient le protocole S-01 ? Les recherches de Thade existent. Elian Voss les connaît. Si Elian est vivant, il peut les détruire ou les préserver.\n- Que devient la Larme de Vael ? Si elle est détruite, ses fragments restent. Si elle est détachée, elle est entre les mains de Sealine. Si le seuil s'ouvre, elle est dans la Spirale.\n- Que devient le magi-tuteur ? S'il a survécu, il garde la Tour ou part. Il porte le témoignage.",
             notes_mj:
               "Narration pure. Pas de jets. Le MJ décrit et les PJ réagissent. L'épilogue doit refléter les choix, les alliances et les pertes de toute la campagne. Le MJ peut demander aux PJ ce que leurs personnages font dans les semaines qui suivent. C'est la dernière scène de la campagne — elle mérite du temps et de l'attention.",
             matrice_epilogue: [
@@ -715,6 +715,7 @@ export const scenario3 = {
                 sceau: "refermé",
                 valombre: "normale avec cicatrices",
                 ton: "amer",
+                syndicat: "Le Syndicat survit. Les institutions s'effondrent, le Syndicat reste. Le Collecteur possède toujours ses dettes. Brek contrôle toujours les égouts. La Vieille Ville lui appartient un peu plus.",
               },
               {
                 choix: "Larme détachée (Sealine sauvée)",
@@ -723,6 +724,7 @@ export const scenario3 = {
                 sceau: "entrouvert",
                 valombre: "changée mais vivable",
                 ton: "mélancolique",
+                syndicat: "Le Syndicat s'adapte. Le déphasage persistant crée de nouvelles routes, de nouveaux besoins, de nouvelles dettes. Le Collecteur monétise la Spirale comme il a monétisé la crise. Si les PJ ont convaincu Brek de rompre avec le Collecteur, le Syndicat est affaibli. Sinon, il prospère.",
               },
               {
                 choix: "Seuil ouvert",
@@ -731,6 +733,7 @@ export const scenario3 = {
                 sceau: "aboli",
                 valombre: "fusionnée à la Spirale",
                 ton: "mythique",
+                syndicat: "Le Syndicat exploite le nouveau monde. Les routes mènent partout et nulle part — le Syndicat vend des guides. La Spirale transforme la ville — le Syndicat vend des protections. Le Collecteur ne prend pas le Conseil. Il n'en a pas besoin. Tout le monde lui doit quelque chose.",
               },
             ],
           },
@@ -747,6 +750,7 @@ export const scenario3 = {
               "Le décompte des victimes de la Tour détermine le ton de l'épilogue. Peu de victimes : l'épilogue est lumineux. Beaucoup de victimes : l'épilogue est sombre.",
               "Les PNJ survivants apparaissent : Mara, Thorgar, Olane, Ursula. Leur réaction dépend du choix et des relations construites pendant la campagne.",
               "Le Champion de la Bannière Pure, s'il n'a pas été arrêté, profite du chaos ou est discrédité selon le choix.",
+              "Le Syndicat : si les PJ ont convaincu Brek de rompre avec le Collecteur, le Syndicat est affaibli et la Vieille Ville respire. Si les PJ ont payé le Collecteur ou accumulé des dettes, le Collecteur apparaît dans l'épilogue pour réclamer. Si les PJ ont ignoré le Syndicat, il est devenu le pouvoir réel de la Vieille Ville.",
             ],
             rappels: [
               "C'est une scène de narration. Pas de jets. Le MJ décrit et les PJ réagissent.",
@@ -762,6 +766,7 @@ export const scenario3 = {
               "Les PNJ survivants apparaissent et réagissent (Mara, Thorgar, Olane, Ursula, Champion, Endeuillés, Elian, magi-tuteur).",
               "Le sort de Thade et de Sealine est révélé.",
               "Le décompte des victimes détermine le ton (lumineux ou sombre).",
+              "Le Syndicat : le MJ décrit ce que devient le Syndicat selon les choix des PJ (affaibli, prospère, ou intouchable).",
               "Les PJ ont un dernier moment pour interagir avec les PNJ.",
               "Le MJ peut évoquer les fils non résolus (Caldris, Réserve, S-01, Larme, magi-tuteur).",
               "Les PJ décident de l'avenir de leurs personnages.",
@@ -775,7 +780,7 @@ export const scenario3 = {
               "Si Sealine est revenue : la visiter.",
             ],
             fronts_heritiers: ["Tous les fronts sont résolus. Les fils non résolus sont des pistes pour le MJ, pas des obligations."],
-            jeu_des_pnj: "Mara reconstruit. Thorgar restaure ou s'adapte. Olane réforme. Ursula soigne. Chacun selon sa nature et selon le choix. Le Champion est discrédité ou renforcé. Les Endeuillés trouvent la paix ou non. Elian témoigne ou disparaît. Le magi-tuteur garde la Tour ou part.",
+            jeu_des_pnj: "Mara reconstruit. Thorgar restaure ou s'adapte. Olane réforme. Ursula soigne. Chacun selon sa nature et selon le choix. Le Champion est discrédité ou renforcé. Les Endeuillés trouvent la paix ou non. Elian témoigne ou disparaît. Le magi-tuteur garde la Tour ou part. Le Collecteur, si le Syndicat est intact, apparaît pour réclamer ses dettes ou proposer de nouveaux arrangements. Brek, si les PJ l'ont convaincu, a quitté les égouts ou travaille pour la garde. Les hommes de main se dispersent ou se regroupent sous un nouveau chef.",
             escalade: "Pas d'escalade. C'est la fin.",
             sortie: "La campagne est terminée. Les PJ quittent Valombre ou y restent. Le monde continue.",
           },
@@ -812,7 +817,7 @@ export const scenario3 = {
                 sceneId: "fin_campagne",
                 type: "reussite",
                 moteur: "Le seuil reste entrouvert. La Spirale filtre. Sealine revient fragile. Thade est jugé. Valombre apprend à vivre avec.",
-                accroche_mj: "Le ciel garde une teinte violacère, légère, permanente. Le déphasage persiste mais est gérable. Sealine est là, fragile, silencieuse. Thade est jugé mais pas exécuté. Valombre apprend à vivre avec la Spirale. Ce n'est pas une fin heureuse — c'est un nouveau commencement.",
+                accroche_mj: "Le ciel garde une teinte violacère, légère, permanente. Le déphasage persiste mais est gérable. Sealine est là, fragile, silencieuse. Thade est jugé mais pas exécuté. Valombre apprend à vivre avec la Spirale. C'est un nouveau commencement.",
                 consequence_si_refus: "Pas applicable — c'est la fin de la campagne.",
               },
               {
@@ -820,7 +825,7 @@ export const scenario3 = {
                 sceneId: "fin_campagne",
                 type: "libre",
                 moteur: "La Spirale déferle. Valombre est transformée. Le ciel est violet. Les routes mènent partout et nulle part. Thade franchit le seuil.",
-                accroche_mj: "Le ciel est violet. Les routes de Valombre mènent partout et nulle part. La Spirale et la ville fusionnent. Thade a franchi le seuil. Sealine l'attendait. Le monde est différent. Pas meilleur. Pas pire. Différent. Et les gens apprennent à vivre dans ce monde nouveau.",
+                accroche_mj: "Le ciel est violet. Les routes de Valombre mènent partout et nulle part. La Spirale et la ville fusionnent. Thade a franchi le seuil qu'il croyait maîtriser. Sealine était là, mais pas comme une promesse. Le monde est différent. Pas meilleur. Pas pire. Différent. Et les gens apprennent à vivre dans ce monde nouveau.",
                 consequence_si_refus: "Pas applicable — c'est la fin de la campagne.",
               },
               {
@@ -873,7 +878,7 @@ export const scenario3 = {
       situation:
         "Les PJ combattent Thade par la force dès la phase 1, sans lire les cahiers ni révéler les vérités sur Sealine. Ils veulent en finir vite.",
       principe:
-        "Thade peut être vaincu par la force. Ce n'est pas un échec — c'est un choix. Mais le combat est plus long, plus dangereux, et la Larme ne se fissure pas. Sealine apparaît quand même, mais la conversation est plus tendue.",
+        "Thade peut être vaincu par la force. C'est un choix. Mais le combat est plus long, plus dangereux, et la Larme ne se fissure pas. Sealine apparaît quand même, mais la conversation est plus tendue.",
       proceder: [
         {
           etape: "Le combat se déroule normalement",
@@ -913,12 +918,12 @@ export const scenario3 = {
         {
           etape: "Le retrait de la Larme",
           detail:
-            "Art de la magie DD 18 pour détacher la Larme sans la briser. Réussite : la Larme se détache du vortex. Sealine se matérialise pleinement. Le vortex se réduit mais ne disparaît pas. Échec : la Larme se fissure et se brise partiellement. Sealine revient mais le seuil est plus ouvert que prévu.",
+            "Art de la magie Difficile pour détacher la Larme sans la briser. Réussite : la Larme se détache du vortex. Sealine se matérialise pleinement. Le vortex se réduit mais ne disparaît pas. Échec : la Larme se fissure et se brise partiellement. Sealine revient mais le seuil est plus ouvert que prévu.",
         },
         {
           etape: "L'épilogue reflète le choix",
           detail:
-            "Le ciel garde une teinte violacère. Les routes sont parfois trompeuses. Sealine est là, fragile, silencieuse. Thade est jugé. Valombre apprend à vivre avec la Spirale. Ce n'est pas une fin heureuse — c'est un nouveau commencement.",
+            "Le ciel garde une teinte violacère. Les routes sont parfois trompeuses. Sealine est là, fragile, silencieuse. Thade est jugé. Valombre apprend à vivre avec la Spirale. C'est un nouveau commencement.",
         },
       ],
       a_ne_pas_faire: [
@@ -973,7 +978,7 @@ export const scenario3 = {
         {
           etape: "Les options sont moins claires",
           detail:
-            "Sans Sealine pour expliquer, les PJ doivent déduire les options par eux-mêmes. Art de la magie DD 18 pour analyser le vortex. Le magi-tuteur, s'il est présent, peut expliquer. Sinon, les PJ naviguent à l'aveugle.",
+            "Sans Sealine pour expliquer, les PJ doivent déduire les options par eux-mêmes. Art de la magie Difficile pour analyser le vortex. Le magi-tuteur, s'il est présent, peut expliquer. Sinon, les PJ naviguent à l'aveugle.",
         },
         {
           etape: "L'épilogue en tient compte",
@@ -993,17 +998,17 @@ export const scenario3 = {
     indices_recap: [
       {
         scene: "Le Vortex",
-        jet: "Persuasion DD 18",
+        jet: "Persuasion Difficile",
         info: "Lire un extrait des cahiers ou révéler une vérité sur Sealine fissure la Larme. Chaque vérité compte comme 2 rounds de combat.",
       },
       {
         scene: "Le Vortex",
-        jet: "Art de la magie DD 18",
+        jet: "Art de la magie Difficile",
         info: "Identifier la structure du vortex. La Larme est le catalyseur. La détacher arrête le rituel sans refermer complètement le seuil. La détruire libère l'énergie et referme le sceau. La laisser ouvre le seuil.",
       },
       {
         scene: "Le Vortex",
-        jet: "Athlétisme DD 15",
+        jet: "Athlétisme Moyen",
         info: "Se frapper un chemin vers le vortex à travers les vents planaires.",
       },
       {
@@ -1024,8 +1029,8 @@ export const scenario3 = {
         faction: "Université Arcanique (Archimage)",
         role_court: "Boss final / Homme brisé",
         apparition: "Acte I, scène 1",
-        info_cle: "Combat par amour, pas par cruauté. Chaque vérité le blesse. S'effondre à la phase 3.",
-        dd_clés: "Persuasion DD 18 pour les vérités. Athlétisme DD 15 pour les vents planaires.",
+        info_cle: "Combat par maîtrise, pas par cruauté. Chaque vérité le blesse. S'effondre à la phase 3.",
+        difficultes_cles: "Persuasion Difficile pour les vérités. Athlétisme Moyen pour les vents planaires.",
       },
       {
         id: "sealine_coren",
@@ -1034,7 +1039,7 @@ export const scenario3 = {
         role_court: "La Dame de la Spirale / Choix final",
         apparition: "Acte I, scène 2",
         info_cle: "Lucide, calme, présente. Sait tout. Ne demande rien. Explique les trois options.",
-        dd_clés: "Aucun jet. C'est une conversation.",
+        difficultes_cles: "Aucun jet. C'est une conversation.",
       },
       {
         id: "magi_tuteur_loyal",
@@ -1043,7 +1048,7 @@ export const scenario3 = {
         role_court: "Témoin / Allié possible",
         apparition: "Acte I, scène 1 (si survivant)",
         info_cle: "Peut intervenir à la phase 2. Peut expliquer les options si Sealine est absente.",
-        dd_clés: "Aucun jet. Son intervention est narrative.",
+        difficultes_cles: "Aucun jet. Son intervention est narrative.",
       },
     ],
     lieux_recap: [
@@ -1074,8 +1079,8 @@ export const scenario3 = {
         objet: "Cahiers bordeaux (lettres à Sealine)",
         scene: "Le Laboratoire de Verre (Scénario 2)",
         type: "Physique — emportable (volumineux)",
-        description: "Huit ans de lettres de Thade à Sealine. La plume écrit en temps réel.",
-        utilisable_pour: "Arme pendant le combat. Lire un extrait fissure la Larme. Persuasion DD 18.",
+        description: "Une trentaine d'années de lettres de Thade à Sealine. La plume écrit en temps réel.",
+        utilisable_pour: "Arme pendant le combat. Lire un extrait fissure la Larme. Persuasion Difficile.",
       },
       {
         objet: "Schéma de la Larme avec annotation de Sealine",
@@ -1095,14 +1100,14 @@ export const scenario3 = {
         objet: "Registre des 142 consultations (copie)",
         scene: "La Réserve de Recherche Interdite (Scénario 2)",
         type: "Physique — copie, emportable",
-        description: "142 séances de Thade sur 8 ans. La préparation méthodique.",
+        description: "142 séances de Thade étalées sur une trentaine d'années. La préparation méthodique.",
         utilisable_pour: "Arme pendant le combat. Prouver que Thade a choisi, pas dérapé.",
       },
       {
-        objet: "Ardoise du 6e étage (relevé)",
+        objet: "Trace scellée du 6e étage (relevé)",
         scene: "L'Assaut de la Tour (Scénario 2)",
         type: "Physique — relevé/copie, emportable",
-        description: "Équation préliminaire de S-01 datée de sept ans. Avant la disparition de Sealine.",
+        description: "Équation préliminaire de S-01 datée de l'année de Nyx. Avant la disparition de Sealine.",
         utilisable_pour: "Arme pendant le combat. Prouver que les recherches précèdent la perte.",
       },
     ],

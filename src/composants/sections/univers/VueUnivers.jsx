@@ -15,6 +15,7 @@ import {
   AlertCircle,
   Scale,
   Store,
+  Coins,
 } from "lucide-react";
 import { universeData } from "../../../data/universe/universe";
 import TitreSection from "../../interface/TitreSection";
@@ -25,6 +26,7 @@ import DetailsLieux from "./DetailsLieux";
 import StatsUnivers from "./StatsUnivers";
 import CarteVille from "./CarteVille";
 import JusticeUnivers from "./JusticeUnivers";
+import CommerceMonnaieUnivers from "./CommerceMonnaieUnivers";
 import { utiliserEtatPersistant } from "../../../hooks/utiliserEtatPersistant";
 import { obtenirPnjPourLieu } from "../../../utilitaires/liaisonsDonnees";
 import { cc } from "../../../utilitaires/combinerClasses";
@@ -36,6 +38,7 @@ const ONGLETS = [
   { id: "zones", etiquette: "Carte & Zones", icone: Map },
   { id: "justice", etiquette: "Justice", icone: Scale },
   { id: "marchands", etiquette: "Marchands", icone: Store },
+  { id: "commerce", etiquette: "Commerce & Monnaie", icone: Coins },
 ];
 
 const ICONES_SECTIONS = {
@@ -320,6 +323,10 @@ function VueUnivers() {
 
       {ongletActif === "marchands" && (
         <VueMarchands />
+      )}
+
+      {ongletActif === "commerce" && (
+        <CommerceMonnaieUnivers commerce={universeData.commerce} />
       )}
     </div>
   );

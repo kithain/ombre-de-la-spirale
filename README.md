@@ -1,6 +1,6 @@
 # L'Ombre de la Spirale — Tableau de bord MJ
 
-Application web interactive pour le Maître du Jeu de la campagne **L'Ombre de la Spirale** (Donjons & Dragons 3.5). Elle centralise tous les éléments de campagne : univers, factions, antagonistes, scénarios, fronts, horloges et outils de session.
+Application web interactive pour le Maître du Jeu de la campagne **L'Ombre de la Spirale** (Basic Roleplaying ORC (D100)). Elle centralise tous les éléments de campagne : univers, factions, antagonistes, scénarios, fronts, horloges et outils de session.
 
 **Site en ligne :** [kithain.github.io/ombre-de-la-spirale](https://kithain.github.io/ombre-de-la-spirale/)
 

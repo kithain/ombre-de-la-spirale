@@ -195,6 +195,65 @@ export const factionsData = [
         "Préserver l’autonomie des clans, transmettre les savoir-faire nains et conserver la maîtrise de leurs terres, de leurs rites et de leurs ouvrages.",
     },
 
+    clans_fondateurs: {
+      nomCollectif: "Les Sept Lignées de Kharngard",
+      description:
+        "Les Sept Lignées de Kharngard sont les grandes familles nobles issues des Thanes fondateurs. Elles ne regroupent pas toute la population naine : la plupart des mineurs, artisans, gardes et aubergistes appartiennent d’abord à une guilde, à une équipe ou à une famille commune. Les noms nobles, comme Brunefer, Brokkund ou Mordurn, sont portés par des maisons de rang, des branches sacerdotales ou des lignées chargées d’un devoir ancien. Chaque lignée entretient une tombe des Sept Thanes, sans toujours comprendre que ce devoir maintient aussi le sceau de la Spirale.",
+      clans: [
+        {
+          nom: "Durmgar",
+          domaine: "forges sacrées, acier rituel et armes de serment",
+          reputation:
+            "Fiers, austères et très attachés au Temple-Forgeron. Ils jugent la valeur d’un nain à ce qu’il accepte de porter pour les autres.",
+          devise: "Le feu ne ment pas.",
+        },
+        {
+          nom: "Brunefer",
+          domaine: "portes, murailles, soutènements et droits des Terrasses",
+          reputation:
+            "Bâtisseurs de forteresses et gardiens des chartes. Hessa porte ce nom comme une charge politique autant qu’un héritage.",
+          devise: "Ce qui tient protège.",
+        },
+        {
+          nom: "Brokkund",
+          domaine: "mines profondes, filons anciens et routes sous la roche",
+          reputation:
+            "Mineurs des niveaux bas, tenaces jusqu’à l’entêtement. Ils connaissent des galeries que même les plans officiels n’osent plus nommer.",
+          devise: "La pierre parle bas.",
+        },
+        {
+          nom: "Tharngrim",
+          domaine: "gardes de guilde, serments armés et défense des tombes",
+          reputation:
+            "Guerriers de devoir, peu bavards et difficiles à émouvoir. Ils n’aiment pas la politique, mais répondent vite quand un serment est menacé.",
+          devise: "Un serment pèse plus qu’une vie.",
+        },
+        {
+          nom: "Vornak",
+          domaine: "comptoirs, contrats, change et garanties de livraison",
+          reputation:
+            "Marchands et comptables souterrains, précis jusqu’à l’irritation. On dit qu’ils se souviennent d’une dette plus longtemps qu’une tombe.",
+          devise: "Toute valeur a son poids.",
+        },
+        {
+          nom: "Skeldrak",
+          domaine: "machines de mine, cages de descente, pompes et mécanismes",
+          reputation:
+            "Ingénieurs pratiques, inventifs et bruyants. Les autres clans se moquent de leurs outils compliqués jusqu’au jour où une galerie doit être sauvée.",
+          devise: "Le bon levier vaut dix bras.",
+        },
+        {
+          nom: "Mordurn",
+          domaine: "runes, rites funéraires, archives et mémoire des Thanes",
+          reputation:
+            "Gardiens de la mémoire ancienne, respectés et redoutés. Ils savent beaucoup de gestes, mais plus toujours leur sens véritable.",
+          devise: "Ce qui est nommé demeure.",
+        },
+      ],
+      tensions:
+        "Durmgar et Mordurn veulent préserver les rites tels qu’ils ont été transmis, Skeldrak pousse à comprendre les anciens mécanismes du sceau, Brokkund refuse que les niveaux profonds soient sacrifiés, Vornak craint l’effondrement des contrats, Brunefer défend les chartes devant le Conseil, et Tharngrim se prépare à fermer les Terrasses si les morts sont encore profanés.",
+    },
+
     alliances: [
       {
         faction: "Le Conseil de Valombre",
@@ -487,7 +546,7 @@ export const factionsData = [
     nom: "Caldris, Marche Extérieure",
     type: "Marche frontalière voisine",
     description:
-      "Caldris est une marche fortifiée située sur les routes qui relient Valombre aux royaumes de l'Est. Son autorité repose sur une noblesse militaire, des officiers de frontière et une tradition ancienne de surveillance des cols. Ils considèrent Valombre comme une partenaire nécessaire, mais aussi comme une cité imprudente dont les affaires peuvent menacer les routes communes. Depuis l'explosion de Nyx, Caldris est la seule puissance extérieure à savoir que Valombre ne répond plus normalement au monde : ses convois et messagers reviennent systématiquement sans atteindre la cité. Les émissaires caldrisiens entrent par les Pierres du Traité, un vieux dispositif rituel datant du traité entre les deux cités — deux ancrages permettant le passage de porteurs assermentés, munis d'un mandat officiel et accompagnés d'un mage de frontière. Ce n'est pas un portail confortable : les émissaires arrivent pâles, saignants du nez, avec des souvenirs incomplets du trajet. Ils peuvent entrer, mais pas ouvrir la route aux marchands, aux armées ou aux réfugiés.",
+      "Caldris est une marche fortifiée située sur les routes qui relient Valombre aux royaumes de l'Est. Son autorité repose sur une noblesse militaire, des officiers de frontière et une tradition ancienne de surveillance des cols. Ils considèrent Valombre comme une partenaire nécessaire, mais aussi comme une cité imprudente dont les affaires peuvent menacer les routes communes. Depuis l'aggravation récente du déphasage, Caldris est la seule puissance extérieure à savoir que Valombre ne répond plus normalement au monde : ses convois et messagers reviennent systématiquement sans atteindre la cité. Les émissaires caldrisiens entrent par les Pierres du Traité, un vieux dispositif rituel datant du traité entre les deux cités — deux ancrages permettant le passage de porteurs assermentés, munis d'un mandat officiel et accompagnés d'un mage de frontière. Ce n'est pas un portail confortable : les émissaires arrivent pâles, saignants du nez, avec des souvenirs incomplets du trajet. Ils peuvent entrer, mais pas ouvrir la route aux marchands, aux armées ou aux réfugiés.",
     icone: Flag,
     couleur: "text-sky-300 border-sky-900 bg-sky-950/30",
 

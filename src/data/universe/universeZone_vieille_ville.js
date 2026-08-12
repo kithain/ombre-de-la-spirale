@@ -163,6 +163,19 @@ export const zoneVieilleVille = {
       idsPnj: [],
     },
     {
+      id: "vieille_ville_rues",
+      nom: "Rues de la Vieille Ville",
+      resume:
+        "Ensemble de rues humides, étroites et mal éclairées où se croisent ouvriers, débiteurs, petits commerçants et hommes du Syndicat.",
+      details: [
+        "Les façades penchent au-dessus des pavés et laissent peu de place aux charrettes comme aux patrouilles.",
+        "Les lampes alchimiques y vacillent souvent, surtout quand la brume descend depuis les quartiers bas.",
+        "Les habitants savent quelles portes restent ouvertes, quelles boutiques prêtent encore de l’argent et quelles rues éviter après la tombée de la nuit.",
+        "Le Syndicat y mène ses recouvrements avec une discrétion méthodique, assez visible pour intimider et assez brève pour disparaître avant l’arrivée de la garde.",
+      ],
+      idsPnj: ["hommes_main_pegre", "le_collecteur"],
+    },
+    {
       id: "vieille_ville_ruelles",
       nom: "Ruelles Basses",
       resume:

@@ -5,16 +5,16 @@ export const pnjAdversairesData = [
     "id": "elian_voss",
     "usageNarratif": "scene",
     "nom": "Elian Voss",
-    "role": "Masque de l'Ordre de Nyx, chercheur du sérum S-01 et trafiquant d'identités. Il obtient des résultats réels, puis justifie leur coût humain.",
+    "role": "Médecin de l'Ordre de Nyx qui travaille sur le sérum S-01. Il sauve certains patients, mais accepte d'en sacrifier d'autres si cela fait avancer ses recherches.",
     "categorie": "ennemis",
-    "image": "/images/PNJ/pnj_elian_voss.jpg",
+    "image": "/images/PNJ/Elian Voss.png",
     "interpretation": {
-      "accroche": "Quand les PJ le rencontrent pour la première fois, Elian range un instrument, ferme un dossier, puis leur parle comme s'ils arrivaient au mauvais moment d'une expérience nécessaire.",
-      "objectif": "Prouver que sa méthode sauve plus de vies qu'elle n'en détruit, et conserver les protocoles S-01.",
-      "attitude": "Froid, précis, presque courtois. Répond par des résultats et oblige ses interlocuteurs à assumer leurs propres morts."
+      "accroche": "Il ferme un dossier avant de parler, comme si la conversation était une interruption gênante.",
+      "objectif": "Conserver ses notes, ses patients et ses protocoles, même si les PJ découvrent ce qu'ils lui ont coûté.",
+      "attitude": "Calme, froid et poli. Il parle de ses victimes comme de cas médicaux et demande toujours quelle meilleure solution les autres auraient eue."
     },
     "disposition": "tendu",
-    "impulsion": "Sauver par le calcul, sacrifier les cas perdus.",
+    "impulsion": "Prouver que ses méthodes sauvent plus de vies qu'elles n'en détruisent.",
     "degats": {
       "valeur": 1,
       "description": "Fiole instable, crise contrôlée, scalpel",
@@ -45,11 +45,11 @@ export const pnjAdversairesData = [
       "sans-limite"
     ],
     "actionsMJ": [
-      "Présenter un crime comme une statistique",
-      "Utiliser un patient comme argument moral",
-      "Détruire un registre pour garder le protocole"
+      "Présenter un crime comme une décision médicale",
+      "Mettre un patient vivant entre les PJ et la vérité",
+      "Faire disparaître un registre compromettant"
     ],
-    "description": "Elian Voss porte la part froide et calculatrice de Nyx. Il obtient des résultats réels, mais traite les patients, les registres et les victimes comme des variables qu'il faut accepter ou effacer.",
+    "description": "Homme au crâne rasé, au visage pâle et fermé. Il porte une robe noire simple, boutonnée haut, avec des gants sombres. Son bureau est couvert de fioles, de carnets, de scalpels et de dossiers soigneusement empilés. Il garde toujours un instrument ou une plume à portée de main.",
     "notes": "",
     "race": "humain",
     "faction": "Ordre de Nyx - Masques",
@@ -60,16 +60,16 @@ export const pnjAdversairesData = [
     "id": "champion_banniere_pure",
     "usageNarratif": "scene",
     "nom": "Champion de la Bannière Pure",
-    "role": "Chevalier noir et ennemi miroir. Il croit accomplir l'ancien devoir extérieur en purifiant Valombre de la Spirale.",
+    "role": "Commandant caldrisien envoyé pour reprendre le contrôle de Valombre. Il pense que la cité est déjà contaminée par la Spirale et qu'une purge brutale vaut mieux qu'une catastrophe plus grande.",
     "categorie": "ennemis",
-    "image": "/images/PNJ/pnj_champion_banniere_pure.jpg",
+    "image": "/images/PNJ/Champion.png",
     "interpretation": {
-      "accroche": "Quand les PJ le rencontrent pour la première fois, le Champion se tient droit sous sa bannière, prêt à écouter un engagement mais pas une excuse.",
-      "objectif": "Purger le verrou parce qu'il pense que ceux qui le tenaient avant lui ont échoué.",
-      "attitude": "Digne, tranchant, jamais gratuitement cruel. Méprise les demi-vérités et respecte les engagements tenus devant témoins."
+      "accroche": "Il arrive entouré de soldats, sous une grande bannière blanche frappée d'une croix noire. Il parle peu, regarde les gens en face et laisse les silences peser.",
+      "objectif": "Imposer l'autorité de Caldris sur Valombre avant que la Spirale ne déborde sur les routes du royaume.",
+      "attitude": "Froid, discipliné et sûr de son devoir. Il peut respecter le courage d'un adversaire, mais il ne tolère ni les excuses ni les demi-vérités."
     },
     "disposition": "hostile",
-    "impulsion": "Purger publiquement pour prouver que l'ancien devoir vit encore.",
+    "impulsion": "Écraser toute trace de la Spirale avant qu'elle ne contamine Caldris.",
     "degats": {
       "valeur": 3,
       "description": "Épée de maître, duel, charge sous bannière",
@@ -102,11 +102,11 @@ export const pnjAdversairesData = [
       "caldris"
     ],
     "actionsMJ": [
-      "Sauver des civils pour gagner la foule",
-      "Défier un PJ devant témoins",
-      "Transformer une nuance en trahison"
+      "Protéger des civils pour montrer qu'il n'est pas un monstre",
+      "Proposer un duel loyal à un PJ qui lui tient tête",
+      "Traiter une hésitation ou un mensonge comme une preuve de complicité"
     ],
-    "description": "Le Champion est un adversaire public et honorable, dangereux parce qu'il peut avoir raison sur certains constats. Il transforme les nuances en lâcheté et les demi-vérités en preuves de trahison.",
+    "description": "Homme grand, brun, au visage dur et soigneusement rasé. Il porte une armure noire lourde, décorée de motifs dorés et d'un large symbole en forme de croix sur le plastron. Une cape sombre tombe sur ses épaules. Il tient une épée longue à la garde ouvragée et se place toujours devant sa bannière blanche, comme s'il parlait au nom de tout Caldris.",
     "notes": "",
     "race": "humain",
     "faction": "Caldris",

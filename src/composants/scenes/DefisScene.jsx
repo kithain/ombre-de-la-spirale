@@ -4,7 +4,7 @@ import SectionScene from "./SectionScene";
 /**
  * Composant DefisScene - Affiche les défis de compétence d'une scène.
  * Accepte soit un tableau de chaînes (ancien format), soit un tableau d'objets
- * { competence, dd, reussite, echec, conditions }.
+ * { competence, difficulte, reussite, echec, conditions }.
  *
  * @param {Array} proprietes.defis - Tableau de défis
  */
@@ -23,6 +23,7 @@ function DefisScene({ defis }) {
               </li>
             );
           }
+          const difficulte = defi.difficulte;
           return (
             <li
               key={i}
@@ -33,9 +34,9 @@ function DefisScene({ defis }) {
                   <Dices className="w-3.5 h-3.5 text-blue-400" />
                   {defi.competence || "Compétence"}
                 </span>
-                {defi.dd != null && (
+                {difficulte && (
                   <span className="text-xs font-mono uppercase px-1.5 py-0.5 bg-blue-900/30 border border-blue-700/40 text-blue-300">
-                    DD {defi.dd}
+                    D100 {difficulte}
                   </span>
                 )}
               </div>

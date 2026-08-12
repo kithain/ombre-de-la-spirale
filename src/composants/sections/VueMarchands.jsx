@@ -104,7 +104,7 @@ function CarteMarchand({ pnj, lieu, zone, auClic }) {
             <img
               src={urlImage(pnj.image)}
               alt={pnj.nom}
-              className="w-16 h-16 rounded-lg border-2 border-surface-border/40 object-cover shadow-sm"
+              className="w-20 aspect-[4/3] rounded-lg border-2 border-surface-border/40 object-cover shadow-sm"
               onError={(e) => {
                 e.target.style.display = "none";
                 e.target.nextSibling.style.display = "flex";
@@ -112,7 +112,7 @@ function CarteMarchand({ pnj, lieu, zone, auClic }) {
             />
           ) : null}
           <div
-            className="w-16 h-16 rounded-lg border-2 border-surface-border/40 items-center justify-center shadow-sm bg-gradient-to-br from-surface-overlay to-surface"
+            className="w-20 aspect-[4/3] rounded-lg border-2 border-surface-border/40 items-center justify-center shadow-sm bg-gradient-to-br from-surface-overlay to-surface"
             style={{ display: pnj.image ? "none" : "flex" }}
           >
             <Store size={20} className="text-accent-light" />

@@ -5,17 +5,17 @@ export const pnjTerrassesNainesData = [
     "id": "thorgar_pretre_nain",
     "usageNarratif": "scene",
     "nom": "Thorgar, Haut Clerc du Temple-Forgeron",
-    "role": "Ancre morale de Valombre. Gardien des rites funéraires nains, sincère, courageux, conscient qu'il ne possède qu'une part de la vérité.",
+    "role": "Haut clerc du Temple-Forgeron. Il protège les rites funéraires nains et rappelle aux PJ que les morts des Terrasses ont encore des droits.",
     "categorie": "allies",
-    "image": "/images/PNJ/pnj_thorgar_pretre_nain.jpg",
+    "image": "/images/PNJ/Thorgar.png",
     "antagoniste": false,
     "interpretation": {
-      "accroche": "Quand les PJ le rencontrent pour la première fois, Thorgar termine un geste rituel avant de lever les yeux vers eux.",
-      "objectif": "Préserver la sainteté des morts et protéger les vivants, même quand les deux sont incompatibles.",
-      "attitude": "Grave et inflexible sur les questions sacrées, mais reconnaissant envers ceux qui aident. Porte une fatigue croissante."
+      "accroche": "Il termine toujours son geste rituel avant de répondre, même si la situation est urgente.",
+      "objectif": "Préserver les tombes des Thanes et empêcher que les rites nains soient traités comme un simple obstacle.",
+      "attitude": "Grave, patient et ferme. Il remercie l'aide sincère, mais ne transige pas sur les morts."
     },
     "disposition": "amical",
-    "impulsion": "Tenir les rites même quand la foi tremble.",
+    "impulsion": "Maintenir les rites, même lorsque tout pousse à les bâcler.",
     "degats": {
       "valeur": 2,
       "description": "Marteau consacré et renvoi des morts",
@@ -51,26 +51,30 @@ export const pnjTerrassesNainesData = [
       "Opposer le devoir sacré à l'efficacité",
       "Tenir une ligne que personne d'autre ne veut tenir"
     ],
-    "description": "Thorgar sert de repère moral aux Terrasses. Il protège les rites funéraires nains, nomme les morts et rappelle aux PJ que sauver la cité ne justifie pas toujours de piétiner ce qu'elle a juré d'honorer.",
+    "description": "Vieux nain à la longue barbe blanche, coiffée et tressée avec soin. Il porte une robe claire épaisse sous des pièces de cuir et de métal, et tient un marteau rituel massif. Son visage est marqué par l'âge, mais son regard reste droit et calme.",
     "notes": "",
     "race": "nain",
-    "faction": "Communauté Naine"
+    "faction": "Communauté Naine",
+    "familleNaine": {
+      "lignee": "Mordurn",
+      "role": "Famille noble gardienne des rites funéraires, de la mémoire des Thanes et des gestes d'Edhrek-Murn"
+    }
   },
 
 {
     "id": "durnik_chef_mineur",
     "usageNarratif": "levier",
     "nom": "Durnik, chef de la Guilde des Mineurs",
-    "role": "Chef de guilde pragmatique. Ouvre ou ferme l'accès aux mines.",
+    "role": "Chef de la Guilde des Mineurs. Il décide qui descend, avec quelle équipe, et sous quelles conditions.",
     "categorie": "allies",
-    "image": "/images/PNJ/pnj_durnik_chef_mineur.jpg",
+    "image": "/images/PNJ/Durnik.png",
     "interpretation": {
-      "accroche": "Quand les PJ le rencontrent pour la première fois, Durnik les jauge comme il jaugerait une galerie instable : en silence, avant de décider si elle tiendra.",
-      "objectif": "Protéger ses hommes et empêcher quiconque de rouvrir la fissure sans précautions.",
-      "attitude": "Bourru, honnête. Méprisant envers les mages qui parlent sans agir."
+      "accroche": "Il écoute d'abord en silence, les deux mains posées sur le manche de son outil.",
+      "objectif": "Protéger les mineurs et éviter une descente mal préparée dans les galeries dangereuses.",
+      "attitude": "Bourru, franc et difficile à impressionner. Il respecte les gens qui assument les risques au lieu de les minimiser."
     },
     "disposition": "neutre",
-    "impulsion": "Fermer les accès dangereux jusqu'à ce qu'on mérite sa confiance.",
+    "impulsion": "Empêcher les imprudents de tuer ses mineurs.",
     "degats": {
       "valeur": 2,
       "description": "Hache de mine, éboulement contrôlé, terrain souterrain",
@@ -106,10 +110,14 @@ export const pnjTerrassesNainesData = [
       "Faire payer l'arrogance des mages",
       "Offrir un passage sûr contre une promesse claire"
     ],
-    "description": "Durnik contrôle l'accès réel aux mines et aux mineurs. Il n'aime ni les promesses vagues ni les mages pressés, mais il respecte les gens qui assument clairement les risques souterrains.",
+    "description": "Nain robuste, barbe grise courte, épaules larges et vêtements de travail renforcés. Il porte des protections de mineur, un lourd outil à la main et des traces de poussière incrustées dans les plis du visage.",
     "notes": "",
     "race": "nain",
     "faction": "Communauté Naine",
+    "familleNaine": {
+      "lignee": "Brokkund",
+      "role": "Famille noble liée aux mines profondes, aux concessions anciennes et à l'autorité de terrain"
+    },
     "antagoniste": false
   },
 
@@ -117,14 +125,14 @@ export const pnjTerrassesNainesData = [
     "id": "garde_portail_mine",
     "usageNarratif": "levier",
     "nom": "Escouade de Gardes du Portail",
-    "role": "Soldats épuisés chargés de verrouiller l'accès.",
-    "image": "/images/PNJ/pnj_garde_portail_mine.jpg",
+    "role": "Escouade qui garde le portail des mines. Elle bloque l'accès aux profondeurs tant qu'aucune autorisation claire n'est présentée.",
+    "image": "/images/PNJ/Escouade de Gardes Du portail.png",
     "interpretation": {
-      "accroche": "Quand les PJ la rencontrent pour la première fois, l'escouade garde les mains près des armes et les yeux sur les autorisations.",
-      "objectif": "Obéir aux ordres du Conseil tout en évitant un massacre",
-      "attitude": "Nerveux et soupçonneux, craignent l'espionnage"
+      "accroche": "Les gardes barrent le passage et demandent les autorisations avant même les noms.",
+      "objectif": "Empêcher une intrusion dans les mines sans déclencher une émeute aux Terrasses.",
+      "attitude": "Nerveux, fatigués et soupçonneux. Ils peuvent laisser passer quelqu'un, mais seulement avec une garantie solide."
     },
-    "impulsion": "Verrouiller l'accès et éviter d'être responsables du désastre.",
+    "impulsion": "Tenir le portail sans devenir responsables d'un désastre.",
     "degats": {
       "valeur": 2,
       "description": "Lances, arbalètes, herses et barricades",
@@ -160,7 +168,7 @@ export const pnjTerrassesNainesData = [
       "Laisser passer quelqu'un contre garantie personnelle",
       "Déclencher l'alarme par peur"
     ],
-    "description": "L'escouade du portail verrouille l'accès aux profondeurs. Elle n'est pas cruelle, mais sa peur, sa fatigue et ses ordres peuvent transformer la mine en frontière presque impossible à franchir.",
+    "description": "Groupe de gardes en armures lourdes, rassemblés devant une porte de mine renforcée. Ils portent lances, boucliers, casques et lanternes. La poussière, la fatigue et la méfiance se voient dans leurs postures fermées.",
     "notes": "",
     "race": "groupe humanoïde",
     "faction": "Conseil / Terrasses Naines",
@@ -173,9 +181,9 @@ export const pnjTerrassesNainesData = [
     "id": "kessak_mineur",
     "usageNarratif": "levier",
     "nom": "Kessak, mineur de la Galerie 5",
-    "role": "Jeune mineur récemment affecté aux galeries supérieures après la fermeture des niveaux profonds. Il supporte mal les tâches de surface et cherche surtout à retrouver une équipe régulière.",
+    "role": "Jeune mineur des galeries supérieures. Il connaît les bruits, les courants d'air et les détails pratiques que les chefs ne remarquent plus.",
     "categorie": "allies",
-    "image": "/images/PNJ/pnj_kessak_mineur.jpg",
+    "image": "/images/PNJ/Kessak.png",
     "antagoniste": false,
     "interpretation": {
       "accroche": "Essuie régulièrement la poussière de ses mains sur son pantalon, même lorsqu'elles sont propres.",
@@ -183,7 +191,7 @@ export const pnjTerrassesNainesData = [
       "attitude": "Volontaire, un peu susceptible quand on le traite comme un débutant. Devient rapidement bavard lorsqu'on parle du travail de la mine."
     },
     "disposition": "neutre",
-    "impulsion": "Prouver qu'il est un véritable mineur et pas seulement le plus jeune de l'équipe.",
+    "impulsion": "Prouver qu'il mérite une vraie place dans une équipe de fond.",
     "degats": {
       "valeur": 1,
       "description": "Hache de mine, pierre de taille",
@@ -218,7 +226,7 @@ export const pnjTerrassesNainesData = [
       "Mentionner un bruit ou un courant d'air inhabituel comme un détail de travail",
       "Reconnaître un outil ou un équipement abandonné dans les galeries"
     ],
-    "description": "Kessak sert à donner un visage jeune et concret aux équipes de mineurs. Il parle des galeries comme d'un lieu de travail avant d'y voir un mystère ou une menace.",
+    "description": "Jeune nain roux, visage rond, vêtements de travail clairs et lampe de mine à la main. Il garde souvent les manches retroussées et les joues salies par la poussière. Son air volontaire masque mal son envie d'être pris au sérieux.",
     "notes": "Kessak peut avoir remarqué quelque chose d'étrange dans les niveaux profonds, mais il ne l'interprète pas comme un phénomène surnaturel.",
     "race": "nain",
     "faction": "Guilde des Mineurs"
@@ -228,9 +236,9 @@ export const pnjTerrassesNainesData = [
     "id": "brandin_forgeron",
     "usageNarratif": "levier",
     "nom": "Brandin, forgeron des Terrasses",
-    "role": "Forgeron indépendant spécialisé dans la réparation des outils de mine et des objets domestiques. Son atelier est plus modeste que celui du Temple-Forgeron, mais son travail est fiable.",
+    "role": "Forgeron indépendant des Terrasses. Il répare les outils, juge la qualité du métal et rend service sans se mêler de politique.",
     "categorie": "allies",
-    "image": "/images/PNJ/pnj_brandin_forgeron.jpg",
+    "image": "/images/PNJ/Brandin.png",
     "antagoniste": false,
     "interpretation": {
       "accroche": "Fait sonner les pièces métalliques du bout de l'ongle avant de donner son avis.",
@@ -238,7 +246,7 @@ export const pnjTerrassesNainesData = [
       "attitude": "Direct et appliqué. Peu impressionné par les titres, mais toujours disposé à discuter avec quelqu'un qui connaît son métier."
     },
     "disposition": "neutre",
-    "impulsion": "Laisser la qualité de son travail parler à sa place.",
+    "impulsion": "Faire un travail solide, payé honnêtement.",
     "degats": {
       "valeur": 2,
       "description": "Marteau de forge, tenailles",
@@ -273,7 +281,7 @@ export const pnjTerrassesNainesData = [
       "Proposer une réparation simple contre un service raisonnable",
       "Prêter un outil en exigeant qu'il soit rendu propre et affûté"
     ],
-    "description": "Brandin peuple les Terrasses comme artisan indépendant. Il permet d'obtenir réparations, avis sur le métal et présence quotidienne sans transformer chaque échange en intrigue majeure.",
+    "description": "Nain trapu aux bras puissants, tablier de cuir noirci et chemise retroussée. Ses mains sont marquées par les brûlures et la suie. Son atelier est simple, encombré d'outils, de fers à réparer et de pièces domestiques suspendues aux murs.",
     "notes": "Brandin respecte Thorgar comme forgeron, mais n'aime pas que chaque artisan des Terrasses soit comparé au Temple.",
     "race": "nain",
     "faction": "Communauté Naine"
@@ -283,9 +291,9 @@ export const pnjTerrassesNainesData = [
     "id": "voldrin_changeur",
     "usageNarratif": "levier",
     "nom": "Voldrin, comptable du Comptoir",
-    "role": "Comptable chargé des registres du Comptoir de Change des Terrasses. Il vérifie les pesées, les avances de salaire et les transactions de la Guilde.",
+    "role": "Comptable du Comptoir de Change. Il tient les registres de pesée, de salaire et de transaction des Terrasses.",
     "categorie": "allies",
-    "image": "/images/PNJ/pnj_voldrin_changeur.jpg",
+    "image": "/images/PNJ/Voldrin.png",
     "antagoniste": false,
     "interpretation": {
       "accroche": "Replace machinalement les objets parallèlement au bord de son bureau.",
@@ -293,7 +301,7 @@ export const pnjTerrassesNainesData = [
       "attitude": "Formel et peu démonstratif. Se montre serviable dès qu'une demande est formulée clairement."
     },
     "disposition": "neutre",
-    "impulsion": "Transformer chaque échange en une opération compréhensible et vérifiable.",
+    "impulsion": "Faire correspondre chaque pièce, chaque reçu et chaque ligne du registre.",
     "degats": {
       "valeur": 0,
       "description": "Coupe-papier",
@@ -328,7 +336,7 @@ export const pnjTerrassesNainesData = [
       "Demander quel clan ou quelle institution garantit une transaction",
       "Signaler calmement une incohérence dans un registre"
     ],
-    "description": "Voldrin donne accès aux registres économiques des Terrasses. Il sert surtout à vérifier des paiements, des garanties, des dates et les traces administratives laissées par les mouvements de la Guilde.",
+    "description": "Nain brun à lunettes, barbe courte et soigneusement peignée. Il travaille derrière un bureau couvert de registres, de plumes et de petits poids de mesure. Ses manches sont propres malgré l'encre, et tout sur sa table est aligné au cordeau.",
     "notes": "Voldrin n'est pas incorruptible par principe : il veut surtout qu'une personne identifiable assume officiellement chaque arrangement.",
     "race": "nain",
     "faction": "Guilde des Mineurs"
@@ -338,9 +346,9 @@ export const pnjTerrassesNainesData = [
     "id": "grodrin_serveur",
     "usageNarratif": "levier",
     "nom": "Grodrin, serveur du Marteau d'Étain",
-    "role": "Serveur expérimenté du Marteau d'Étain. Il connaît les habitudes des clients réguliers, sait qui s'assoit avec qui et intervient avant que les discussions ne deviennent des disputes.",
+    "role": "Serveur du Marteau d'Étain. Il connaît les habitués, les places préférées et les querelles qui couvent dans la salle.",
     "categorie": "allies",
-    "image": "/images/PNJ/pnj_grodrin_serveur.jpg",
+    "image": "/images/PNJ/Grodrin.png",
     "antagoniste": false,
     "interpretation": {
       "accroche": "Pose les chopes exactement au même endroit devant chaque habitué.",
@@ -348,7 +356,7 @@ export const pnjTerrassesNainesData = [
       "attitude": "Peu bavard pendant le service, mais pas mystérieux. Son humour sec apparaît lorsque la salle se calme."
     },
     "disposition": "neutre",
-    "impulsion": "Garder les chopes pleines et les querelles assez petites pour rester verbales.",
+    "impulsion": "Servir vite et empêcher les disputes de devenir des bagarres.",
     "degats": {
       "valeur": 1,
       "description": "Poing, plateau en bois",
@@ -383,7 +391,7 @@ export const pnjTerrassesNainesData = [
       "Indiquer discrètement quel habitué connaît le sujet recherché",
       "Se souvenir de ce qu'une personne commande, mais pas nécessairement de ce qu'elle raconte"
     ],
-    "description": "Grodrin rend le Marteau d'Étain vivant et lisible. Il connaît les habitudes de salle, les clients réguliers et les petites tensions avant qu'elles ne deviennent des bagarres.",
+    "description": "Nain large, barbe grise et tablier de tavernier porté sur une chemise claire. Il tient souvent une chope ou un torchon à la main. Son visage semble fermé au premier abord, mais ses yeux suivent toute la salle.",
     "notes": "Grodrin peut fournir des renseignements simples sur les allées et venues, mais il n'est ni informateur professionnel ni marchand de secrets.",
     "race": "nain",
     "faction": "Communauté Naine / Marteau d'Étain"
@@ -393,9 +401,9 @@ export const pnjTerrassesNainesData = [
     "id": "brogar_eclaireur",
     "usageNarratif": "levier",
     "nom": "Brogar, ancien arpenteur des mines",
-    "role": "Mineur retraité qui relevait autrefois les distances, les pentes et les anciennes galeries. Il passe encore régulièrement au Marteau d'Étain pour commenter les nouveaux plans.",
+    "role": "Ancien arpenteur des mines. Il se souvient des vieux plans, des pentes oubliées et des noms de galeries que les jeunes ne connaissent plus.",
     "categorie": "allies",
-    "image": "/images/PNJ/pnj_brogar_eclaireur.jpg",
+    "image": "/images/PNJ/Brogar.png",
     "antagoniste": false,
     "interpretation": {
       "accroche": "Sort de sa poche un morceau de craie dès que quelqu'un décrit un trajet.",
@@ -403,7 +411,7 @@ export const pnjTerrassesNainesData = [
       "attitude": "Familier et volontiers critique. Corrige les imprécisions avec plaisir, mais ne cherche pas à rabaisser ses interlocuteurs."
     },
     "disposition": "amical",
-    "impulsion": "Comparer les nouveaux chemins avec ceux qu'il a connus autrefois.",
+    "impulsion": "Prouver que son expérience des galeries sert encore.",
     "degats": {
       "valeur": 1,
       "description": "Canne ferrée de mineur",
@@ -438,7 +446,7 @@ export const pnjTerrassesNainesData = [
       "Tracer un itinéraire approximatif à la craie sur une table",
       "Expliquer pourquoi un passage a été abandonné pour une raison parfaitement ordinaire"
     ],
-    "description": "Brogar fournit une mémoire pratique des galeries. Il peut commenter un plan, reconnaître une pente ou donner un avis de terrain sans devenir un guide permanent.",
+    "description": "Très vieux nain à la barbe blanche broussailleuse, visage ridé et vêtements de mine usés. Il garde près de lui une carte, un morceau de craie ou un outil de mesure. Ses mains tremblent parfois, mais son regard reste vif dès qu'on parle de galeries.",
     "notes": "Brogar connaît les anciennes galeries, mais ses informations datent parfois de plusieurs décennies.",
     "race": "nain",
     "faction": "Communauté Naine"
@@ -448,9 +456,9 @@ export const pnjTerrassesNainesData = [
     "id": "torm_garde_mine",
     "usageNarratif": "levier",
     "nom": "Torm, gardien de l'Entrée",
-    "role": "Garde nain affecté au contrôle de la cage de descente. Il vérifie les équipes, les lampes, le matériel et les autorisations avant chaque départ.",
+    "role": "Gardien de l'entrée de la mine. Il vérifie les noms, les lampes et l'équipement avant chaque descente.",
     "categorie": "allies",
-    "image": "/images/PNJ/pnj_torm_garde_mine.jpg",
+    "image": "/images/PNJ/Torm.png",
     "antagoniste": false,
     "interpretation": {
       "accroche": "Vérifie systématiquement la mèche des lampes pendant qu'on lui parle.",
@@ -458,7 +466,7 @@ export const pnjTerrassesNainesData = [
       "attitude": "Professionnel et patient avec les erreurs honnêtes. Devient inflexible dès qu'une personne plaisante avec les règles de sécurité."
     },
     "disposition": "neutre",
-    "impulsion": "Vérifier les noms, les lampes et les autorisations, toujours dans le même ordre.",
+    "impulsion": "Ne laisser descendre personne sans matériel correct.",
     "degats": {
       "valeur": 2,
       "description": "Hache de garde, poignard de ceinture",
@@ -494,7 +502,7 @@ export const pnjTerrassesNainesData = [
       "Inspecter l'équipement d'un visiteur avant de discuter de son accès",
       "Trouver un accompagnateur officiel pour quelqu'un qui s'est montré respectueux"
     ],
-    "description": "Torm rend l'entrée de la mine concrète et procédurale. Il vérifie les noms, les lampes et les autorisations, rappelant que descendre est un acte encadré avant d'être une aventure.",
+    "description": "Nain massif en armure de mine, barbe noire et regard sévère. Il porte une lanterne lourde, des plaques de métal sur les épaules et plusieurs outils attachés à la ceinture. Sa posture bloque naturellement le passage.",
     "notes": "Torm ne cherche pas à empêcher les PJ de passer. Il cherche à ne pas être tenu responsable s'ils descendent sans préparation.",
     "race": "nain",
     "faction": "Guilde des Mineurs"
@@ -504,9 +512,9 @@ export const pnjTerrassesNainesData = [
     "id": "hessa_brunefer",
     "usageNarratif": "scene",
     "nom": "Hessa Brunefer, Déléguée des Terrasses",
-    "role": "Voix des clans nains devant le Conseil de Valombre. Elle défend les droits, les coutumes et les galeries des Terrasses contre les empiétements de la cité haute. Lucide sur la fragilité de la position naine, elle négocie pied à pied pour que les siens ne soient ni sacrifiés ni placés sous tutelle.",
+    "role": "Déléguée des clans nains au Conseil. Elle défend les droits des Terrasses, les coutumes funéraires et l'accès aux galeries.",
     "categorie": "allies",
-    "image": "/images/PNJ/pnj_hessa_brunefer.jpg",
+    "image": "/images/PNJ/Hessa_Brunefer.png",
     "antagoniste": false,
     "interpretation": {
       "accroche": "Rappelle d'une phrase sèche quel article de quelle charte protège les Terrasses avant de répondre.",
@@ -551,19 +559,23 @@ export const pnjTerrassesNainesData = [
       "Demander aux PJ une garantie concrète avant d'engager les clans",
       "Révéler ce que les nains savent — ou ont oublié — des tombes des Thanes"
     ],
-    "description": "Naine au port grave, barbe tressée de fils d'argent marquant son rang. Porte les couleurs de son clan sous une étole de délégation. Parle lentement, pèse chaque mot.",
+    "description": "Naine d'âge mûr au port droit, barbe tressée de fils d'argent et cheveux tirés en arrière. Elle porte des vêtements de délégation richement brodés, une étole sombre et des bijoux de clan. Son visage reste calme, mais son regard est dur.",
     "notes": "Hessa peut basculer en alliée précieuse si les PJ respectent les coutumes des Terrasses, ou se replier sur la défense des seuls clans si Valombre les trahit. Liée aux menaces « La Réputation de Valombre » (Front 3) et « Le Conseil, la Machine à Retarder » (Front 4).",
     "race": "naine",
-    "faction": "Terrasses naines / Clans"
+    "faction": "Terrasses naines / Clans",
+    "familleNaine": {
+      "lignee": "Brunefer",
+      "role": "Famille noble des chartes, des droits des Terrasses, des murailles sociales et de la négociation politique"
+    }
   },
 
 {
     "id": "armurier_dvalin",
     "usageNarratif": "levier",
     "nom": "Dvalin Forgefer, armurier des Terrasses",
-    "role": "Armurier nain installé près de la Place des Terrasses. Il fabrique et vend armures, armes et boucliers de qualité supérieure, mais ses prix sont élevés. Travaux sur commande uniquement pour les pièces complexes.",
+    "role": "Armurier réputé des Terrasses. Il vend des armes et armures de grande qualité, mais refuse de livrer une pièce médiocre.",
     "categorie": "allies",
-    "image": "/images/PNJ/pnj_armurier_dvalin.jpg",
+    "image": "/images/PNJ/Dvalin Forgefer.png",
     "antagoniste": false,
     "interpretation": {
       "accroche": "Dvalin examine toujours une arme ou une armure qu'on lui présente avant de regarder son interlocuteur. Il teste le tranchant, pèse la lame, fait sonner le métal.",
@@ -593,7 +605,7 @@ export const pnjTerrassesNainesData = [
       "Proposer une pièce de qualité supérieure à un prix qui fait hésiter",
       "Accepter un paiement en minerai brut plutôt qu'en monnaie"
     ],
-    "description": "Nain massif aux mains couvertes de brûlures anciennes. Il porte un tablier de cuir noirci et travaille entouré de pièces finies suspendues aux murs. Son armurerie sent l'huile de protection et le charbon.",
+    "description": "Nain massif à la barbe rousse, assis dans une armurerie éclairée par les braises. Il porte un tablier épais, des manches de travail et de lourds bracelets de cuir. Autour de lui pendent armes, boucliers et pièces d'armure soigneusement entretenues.",
     "notes": "Dvalin vend des armures de plates, des boucliers de qualité naine et des armes en acier forgé. Ses prix sont 30 à 50% plus élevés que la norme, mais ses pièces ne se brisent pas. Il accepte les commandes spéciales si le client fournit les matériaux. Il ne fait pas de crédit.",
     "race": "nain",
     "faction": "Communauté Naine"

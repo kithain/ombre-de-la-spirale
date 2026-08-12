@@ -5,17 +5,17 @@ export const pnjSpiraleData = [
     "id": "sealine_coren",
     "usageNarratif": "scene",
     "nom": "Sealine Vael, la Dame des Soupirs",
-    "role": "Mage de soin de l'Ordre de Nyx et amante de Thade, devenue pivot émotionnel de la trilogie. Lors de la catastrophe de Nyx, elle servit d'ancre vivante et referma la brèche sur elle-même pour sauver le quartier. Depuis, elle est piégée au-delà du seuil, ni tout à fait morte ni vivante.",
+    "role": "Ancienne mage de soin de l'Ordre de Nyx. Elle est piégée au-delà du seuil depuis la catastrophe qui a détruit l'Ordre et brisé Thade.",
     "categorie": "allies",
-    "image": "/images/PNJ/pnj_sealine_coren.jpg",
+    "image": "/images/PNJ/Sealine.png",
     "antagoniste": false,
     "interpretation": {
-      "accroche": "Quand les PJ la rencontrent pour la première fois, Sealine apparaît dans un calme impossible, comme si la Spirale avait suspendu le temps autour de sa voix.",
-      "objectif": "Que Thade s'arrête par choix, pas par défaite. Que la Larme reste scellée et la brèche refermée. Qu'il accepte sa mort au lieu d'en faire payer le prix à Valombre.",
-      "attitude": "Précise, calme, un peu d'humour. Parle comme quelqu'un qui pense sans interruption depuis qu'elle est de l'autre côté du seuil. Derrière chaque mot, l'amour pour Thade et le refus de le laisser se détruire pour elle."
+      "accroche": "Elle apparaît dans une lumière violette, immobile, avec une voix douce qui ne tremble pas.",
+      "objectif": "Empêcher Thade d'ouvrir le seuil et de faire payer sa perte à toute la ville.",
+      "attitude": "Calme, lucide et triste sans être faible. Elle ne supplie pas : elle dit la vérité et laisse les PJ choisir."
     },
     "disposition": "amical",
-    "impulsion": "Empêcher Thade de se sacrifier — et le monde avec lui — pour la ramener.",
+    "impulsion": "Empêcher Thade de transformer son deuil en catastrophe pour Valombre.",
     "degats": {
       "valeur": 1,
       "description": "Contact planaire, froid de vérité, trouble intérieur",
@@ -51,7 +51,7 @@ export const pnjSpiraleData = [
       "Montrer le coût humain de rouvrir le seuil",
       "Offrir une issue morale plus difficile qu'une victoire militaire"
     ],
-    "description": "Sealine est la vérité vivante au-delà du seuil. Elle porte à la fois l'amour de Thade, la mémoire de la catastrophe de Nyx et le refus que son retour serve d'excuse à la destruction de Valombre.",
+    "description": "Jeune femme aux longs cheveux sombres, vêtue d'une robe claire presque blanche. Sa silhouette paraît légèrement translucide, entourée d'une lumière violette. Son visage est calme, grave, presque immobile, comme si le temps ne passait plus autour d'elle.",
     "notes": "",
     "race": "humaine, ancienne mage de l'Ordre de Nyx, piégée au-delà du seuil",
     "faction": "Ordre de Nyx (origine) / Spirale"
@@ -61,11 +61,11 @@ export const pnjSpiraleData = [
     "id": "marchand_orthen",
     "usageNarratif": "levier",
     "nom": "Orthen, marchand du Village des Oubliés",
-    "role": "Premier contact des PJ dans le Village. Normalité rassurante dans un endroit qui ne l'est pas.",
+    "role": "Marchand du Village des Oubliés. Il accueille les étrangers, échange des nouvelles et aide les PJ à comprendre la vie quotidienne dans la Spirale.",
     "categorie": "allies",
-    "image": "/images/PNJ/pnj_marchand_orthen.jpg",
+    "image": "/images/PNJ/Orthen.png",
     "interpretation": {
-      "accroche": "Quand les PJ le rencontrent pour la première fois, Orthen leur pose une question sur Valombre avant même de parler de prix.",
+      "accroche": "Il demande des nouvelles de Valombre avant même de parler de prix.",
       "objectif": "Continuer à vivre. Avoir des nouvelles du monde.",
       "attitude": "Curieux et accueillant, un peu mélancolique. Pose beaucoup de questions sur 'là-haut'."
     },
@@ -104,7 +104,7 @@ export const pnjSpiraleData = [
       "Troquer une route contre des nouvelles",
       "Humaniser la Spirale"
     ],
-    "description": "Orthen donne au Village des Oubliés une normalité humaine. Il sert de premier contact, de guide social et de rappel que la Spirale contient aussi des vies ordinaires.",
+    "description": "Homme brun, barbe courte, chemise simple et foulard de travail. Il se tient derrière un comptoir modeste, dans une échoppe éclairée par une lumière violette venue de l'extérieur. Son sourire est sincère, mais son regard cherche toujours des nouvelles.",
     "notes": "",
     "race": "humain",
     "faction": "Village des Oubliés",
@@ -115,16 +115,16 @@ export const pnjSpiraleData = [
     "id": "lia_enfant_nee_spirale",
     "usageNarratif": "levier",
     "nom": "Lia",
-    "role": "Incarnation de ce que la Spirale fait aux innocents. Pas de l'horreur : de la normalité décalée.",
+    "role": "Enfant née dans le Village des Oubliés. Elle voit la Spirale comme quelque chose de normal et pose des questions qui dérangent les adultes.",
     "categorie": "allies",
-    "image": "/images/PNJ/pnj_lia_enfant_nee_spirale.jpg",
+    "image": "/images/PNJ/Lia.png",
     "interpretation": {
-      "accroche": "Quand les PJ la rencontrent pour la première fois, Lia les observe avec une curiosité tranquille, comme s'ils étaient les êtres étranges de son monde.",
+      "accroche": "Elle observe les PJ sans peur, comme s'ils étaient les créatures étranges de son monde.",
       "objectif": "Comprendre le monde 'd'en haut' dont les adultes parlent.",
       "attitude": "Curieuse, directe, sans filtre. Pas effrayée : c'est son monde normal."
     },
     "disposition": "amical",
-    "impulsion": "Comprendre le monde impossible d'en haut.",
+    "impulsion": "Comprendre le monde d'en haut dont les adultes parlent.",
     "degats": {
       "valeur": 0,
       "description": "Aucun, mais ses perceptions attirent l'attention",
@@ -157,7 +157,7 @@ export const pnjSpiraleData = [
       "Répéter une phrase de Sealine sans la comprendre",
       "Mettre les PJ face à ce qu'ils appellent normal"
     ],
-    "description": "Lia montre la Spirale sans horreur spectaculaire. Son innocence, ses perceptions décalées et ses questions simples rendent le monde d'en haut aussi étrange que celui d'en bas.",
+    "description": "Fillette aux cheveux bruns bouclés, vêtue d'une robe simple couleur lin. Elle se tient dans une lumière claire, avec la ville déformée derrière elle. Son visage est ouvert, curieux, sans peur devant ce que les adultes trouvent impossible.",
     "notes": "",
     "race": "humaine née planaire",
     "faction": "Village des Oubliés",
@@ -168,11 +168,11 @@ export const pnjSpiraleData = [
     "id": "pell_ancien_garde",
     "usageNarratif": "levier",
     "nom": "Pell, ancien garde de Valombre",
-    "role": "Gardien résigné du Village. Ne sait plus quel roi règne, mais sait encore se battre.",
+    "role": "Ancien garde de Valombre, aujourd'hui protecteur du Village des Oubliés. Il se souvient encore de son devoir, mais plus toujours de son époque.",
     "categorie": "allies",
-    "image": "/images/PNJ/pnj_pell_ancien_garde.jpg",
+    "image": "/images/PNJ/Pell.png",
     "interpretation": {
-      "accroche": "Quand les PJ le rencontrent pour la première fois, Pell se place naturellement entre eux et les habitants du Village.",
+      "accroche": "Il se place entre les PJ et les habitants avant même de poser une question.",
       "objectif": "Protéger les habitants. Peut-être un jour retrouver Valombre.",
       "attitude": "Résigné, méthodique. Un sursaut de vie quand les PJ parlent du monde d'en haut."
     },
@@ -212,7 +212,7 @@ export const pnjSpiraleData = [
       "Se placer entre les PJ et les civils",
       "Oublier un nom au pire moment"
     ],
-    "description": "Pell est la protection fatiguée du Village des Oubliés. Ancien soldat détaché de son époque, il défend les habitants tout en perdant peu à peu ses repères sur Valombre.",
+    "description": "Homme robuste, barbe sombre, cheveux grisonnants et armure ancienne bien entretenue. Il porte une cape sombre et garde une main près de son arme. Son visage est fatigué, mais sa posture reste celle d'un soldat en faction.",
     "notes": "",
     "race": "humain",
     "faction": "Village des Oubliés",
@@ -223,14 +223,14 @@ export const pnjSpiraleData = [
     "id": "creature_spirale_cooptee",
     "usageNarratif": "scene",
     "nom": "La Présence Cooptée",
-    "role": "Ce qui franchit le seuil affaibli et s'installe dans les galeries inférieures. Sans intention humaine mais dotée d'effets cohérents et croissants, la Spirale réécrit peu à peu les distances, les lois physiques et les êtres qu'elle absorbe. Elle n'attaque pas : elle assimile.",
+    "role": "Manifestation de la Spirale dans les galeries. Ce n'est pas une personne : c'est une présence qui déforme les lieux, les distances et les corps.",
     "categorie": "monstres",
-    "image": "/images/PNJ/pnj_creature_spirale_cooptee.jpg",
+    "image": "/images/PNJ/La présence Cooptée.png",
     "antagoniste": true,
     "interpretation": {
-      "accroche": "Précède son apparition par un silence qui aspire les sons et une lumière qui éclaire moins loin qu'elle ne devrait.",
+      "accroche": "Avant qu'elle apparaisse, les sons s'étouffent et la lumière semble éclairer moins loin.",
       "objectif": "Occuper le vide laissé par le sceau et étendre la géométrie de la Spirale à tout ce qu'elle touche.",
-      "attitude": "Sans malveillance ni pitié. Indifférente comme une marée. Ne négocie pas, ne menace pas : elle est simplement en train d'arriver."
+      "attitude": "Sans colère, sans parole et sans pitié. Elle ne négocie pas : elle avance, transforme et absorbe."
     },
     "disposition": "hostile",
     "impulsion": "Étendre la Spirale et assimiler ce qui reste piégé dans les galeries.",
@@ -272,7 +272,7 @@ export const pnjSpiraleData = [
       "Absorber une section de galerie avec ses outils, ses structures et ceux qui s'y trouvent",
       "Coopter une présence ou un être croisé pour étendre son emprise"
     ],
-    "description": "Pas une forme, mais un endroit qui a cessé d'obéir. Couloirs qui rejoignent ce qu'ils ne devraient pas toucher, ciel laiteux au fond d'une mine, échos d'une voix presque familière. On ne la combat pas : on la contient ou on la fuit.",
+    "description": "Forme violette et lumineuse, comme une déchirure en spirale suspendue dans l'air. Autour d'elle, la pierre paraît liquide, les couloirs se tordent et des silhouettes floues semblent se superposer dans la lumière. Elle n'a ni visage ni corps stable.",
     "notes": "Force environnementale, pas un adversaire à abattre. Ses « cases de vie » représentent des paliers de confinement plutôt que des blessures. Liée à Sealine Vael, prisonnière au-delà du seuil. Pivot de la menace « La Spirale en Expansion » (Front 5) et de la menace « Le Glissement de l'Ancrage » (Front 6). Le déphasage de Valombre est l'expression surface de ce que la Présence fait en profondeur : la Spirale n'a pas envahi, elle a glissé l'ancrage de la cité entière.",
     "race": "manifestation planaire de la Spirale",
     "faction": "La Spirale"
